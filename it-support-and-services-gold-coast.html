@@ -8,6 +8,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-KQRG3BSF');</script>
 <!-- End Google Tag Manager -->
+
 <!-- Lucide Icons -->
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
 
@@ -602,6 +603,143 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
     .fade-up.visible { opacity: 1; transform: translateY(0); }
 
+    /* ── CONTENT DETAIL SECTIONS ── */
+    .content-detail-section {
+      background: white;
+      padding: 80px 0;
+      border-bottom: 1px solid #f1f5f9;
+    }
+    .content-detail-section--alt {
+      background: #f8fafb;
+    }
+    .content-detail-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 56px;
+      align-items: center;
+    }
+    .content-detail-grid--reverse {
+      direction: rtl;
+    }
+    .content-detail-grid--reverse > * {
+      direction: ltr;
+    }
+    .content-detail-label {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.68rem;
+      font-weight: 500;
+      color: #00c8e0;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      display: block;
+      margin-bottom: 12px;
+    }
+    .content-detail-h2 {
+      font-size: 1.7rem;
+      font-weight: 700;
+      color: #0d1f3c;
+      line-height: 1.25;
+      margin-bottom: 20px;
+      letter-spacing: -0.01em;
+    }
+    .content-detail-text p {
+      font-size: 0.97rem;
+      color: #4a5568;
+      line-height: 1.8;
+      margin-bottom: 16px;
+    }
+    .content-detail-text p:last-child {
+      margin-bottom: 0;
+    }
+    @media (max-width: 900px) {
+      .content-detail-grid,
+      .content-detail-grid--reverse {
+        grid-template-columns: 1fr;
+        direction: ltr;
+        gap: 32px;
+      }
+    }
+
+    /* ── PROCESS SECTION ── */
+    .process-section {
+      background: #e6fafd;
+      padding: 80px 0;
+      border-bottom: 1px solid #c8f0f7;
+    }
+    .process-header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .process-label {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.68rem;
+      font-weight: 500;
+      color: #00c8e0;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      display: block;
+      margin-bottom: 12px;
+    }
+    .process-h2 {
+      font-size: 1.7rem;
+      font-weight: 700;
+      color: #0d1f3c;
+      line-height: 1.25;
+      margin-bottom: 12px;
+      letter-spacing: -0.01em;
+    }
+    .process-intro {
+      font-size: 1rem;
+      color: #4a5568;
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+    .process-image-wrap {
+      margin-bottom: 40px;
+    }
+    .process-body {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+    .process-body p {
+      font-size: 0.97rem;
+      color: #4a5568;
+      line-height: 1.8;
+      margin-bottom: 16px;
+    }
+    .process-body p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* ── MANAGED IT SECTION ── */
+    .managed-section {
+      background: white;
+      padding: 80px 0;
+      border-bottom: 1px solid #f1f5f9;
+    }
+    .managed-inner {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+    .managed-h2 {
+      font-size: 1.7rem;
+      font-weight: 700;
+      color: #0d1f3c;
+      line-height: 1.25;
+      margin-bottom: 24px;
+      letter-spacing: -0.01em;
+    }
+    .managed-body p {
+      font-size: 0.97rem;
+      color: #4a5568;
+      line-height: 1.8;
+      margin-bottom: 16px;
+    }
+    .managed-body p:last-child {
+      margin-bottom: 0;
+    }
+
     /* ── MOBILE STICKY BAR ── */
     .mobile-sticky-bar {
       display: none;
@@ -637,6 +775,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       .cta-banner h2 { font-size: 1.6rem; }
     }
   </style>
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="IT Support & Services Gold Coast | Bcom IT Solutions">
+  <meta property="og:description" content="Professional IT support and services for Gold Coast businesses. On-site and remote helpdesk, managed IT, hardware repair & more. Call 07 3041 8993.">
+  <meta property="og:url" content="https://bcomservices.com.au/it-support-and-services-gold-coast.html">
+  <meta property="og:image" content="https://bcomservices.com.au/bcom-logo.webp">
+  <meta property="og:site_name" content="Bcom IT Solutions">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="IT Support & Services Gold Coast | Bcom IT Solutions">
+  <meta name="twitter:description" content="Professional IT support and services for Gold Coast businesses. On-site and remote helpdesk, managed IT, hardware repair & more. Call 07 3041 8993.">
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
@@ -665,16 +812,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="util-bar">
       <div class="util-bar__inner container">
         <span class="util-bar__left">
-          <i data-lucide="map-pin"></i>
+          <i aria-hidden="true" data-lucide="map-pin"></i>
           Gold Coast, QLD &nbsp;·&nbsp; Mon–Fri 8am–5pm
         </span>
         <span class="util-bar__right">
           <a href="mailto:support@bcomservices.com" class="util-link">
-            <i data-lucide="mail"></i> support@bcomservices.com
+            <i aria-hidden="true" data-lucide="mail"></i> support@bcomservices.com
           </a>
           <span class="util-divider">|</span>
           <a href="tel:0730418993" class="util-link">
-            <i data-lucide="phone"></i> <a href="tel:0730418993">07 3041 8993</a>
+            <i aria-hidden="true" data-lucide="phone"></i> <a href="tel:0730418993">07 3041 8993</a>
           </a>
         </span>
       </div>
@@ -705,40 +852,40 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
           <li class="nav-item nav-item--dropdown" id="dropdown-residential">
             <button class="nav-link nav-link--dropdown" aria-haspopup="true" aria-expanded="false" aria-controls="menu-residential">
-              Residential <i data-lucide="chevron-down" class="chevron"></i>
+              Residential <i aria-hidden="true" data-lucide="chevron-down" class="chevron"></i>
             </button>
             <div class="dropdown-menu" id="menu-residential" role="menu">
               <p class="dropdown-label">Home Services</p>
               <a href="computer-repairs-gold-coast.html" class="dropdown-item" role="menuitem">
-                <span class="dropdown-item__icon"><i data-lucide="wrench"></i></span>
+                <span class="dropdown-item__icon"><i aria-hidden="true" data-lucide="wrench"></i></span>
                 <span class="dropdown-item__text"><strong>Computer Repair</strong><span>On-site repair &amp; software support</span></span>
               </a>
               <a href="computer-networking-service-gold-coast.html" class="dropdown-item" role="menuitem">
-                <span class="dropdown-item__icon"><i data-lucide="wifi"></i></span>
+                <span class="dropdown-item__icon"><i aria-hidden="true" data-lucide="wifi"></i></span>
                 <span class="dropdown-item__text"><strong>Networking &amp; WiFi</strong><span>Installation, mesh systems &amp; troubleshooting</span></span>
               </a>
-              <a href="home-users.html" class="dropdown-footer" role="menuitem">View all residential services <i data-lucide="arrow-right"></i></a>
+              <a href="home-users.html" class="dropdown-footer" role="menuitem">View all residential services <i aria-hidden="true" data-lucide="arrow-right"></i></a>
             </div>
           </li>
           <li class="nav-item nav-item--dropdown" id="dropdown-business">
             <button class="nav-link nav-link--dropdown" aria-haspopup="true" aria-expanded="false" aria-controls="menu-business">
-              Business <i data-lucide="chevron-down" class="chevron"></i>
+              Business <i aria-hidden="true" data-lucide="chevron-down" class="chevron"></i>
             </button>
             <div class="dropdown-menu" id="menu-business" role="menu">
               <p class="dropdown-label">Business Services</p>
               <a href="it-support-and-services-gold-coast.html" class="dropdown-item" role="menuitem">
-                <span class="dropdown-item__icon"><i data-lucide="monitor"></i></span>
+                <span class="dropdown-item__icon"><i aria-hidden="true" data-lucide="monitor"></i></span>
                 <span class="dropdown-item__text"><strong>IT Support &amp; Services</strong><span>Managed IT for Gold Coast businesses</span></span>
               </a>
               <a href="telecommunications-contractor-gold-coast.html" class="dropdown-item" role="menuitem">
-                <span class="dropdown-item__icon"><i data-lucide="phone-call"></i></span>
+                <span class="dropdown-item__icon"><i aria-hidden="true" data-lucide="phone-call"></i></span>
                 <span class="dropdown-item__text"><strong>Telecommunications</strong><span>Cabling, NBN &amp; phone systems</span></span>
               </a>
               <a href="computer-consultant-gold-coast.html" class="dropdown-item" role="menuitem">
-                <span class="dropdown-item__icon"><i data-lucide="lightbulb"></i></span>
+                <span class="dropdown-item__icon"><i aria-hidden="true" data-lucide="lightbulb"></i></span>
                 <span class="dropdown-item__text"><strong>IT Consulting</strong><span>Strategy, planning &amp; advisory</span></span>
               </a>
-              <a href="business.html" class="dropdown-footer" role="menuitem">View all business services <i data-lucide="arrow-right"></i></a>
+              <a href="business.html" class="dropdown-footer" role="menuitem">View all business services <i aria-hidden="true" data-lucide="arrow-right"></i></a>
             </div>
           </li>
           <li class="nav-item"><a href="support.html" class="nav-link"><span class="status-dot" aria-hidden="true"></span>Support</a></li>
@@ -746,7 +893,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </ul>
         <a href="contact.html" class="btn-primary nav-cta">Contact Us</a>
         <button class="nav-hamburger" id="nav-hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-drawer">
-          <i data-lucide="menu"></i>
+          <i aria-hidden="true" data-lucide="menu"></i>
         </button>
       </div>
     </nav>
@@ -759,26 +906,26 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </svg>
           <span class="nav-logo__text"><span class="nav-logo__bcom">BCOM</span><span class="nav-logo__its"> IT SOLUTIONS</span></span>
         </a>
-        <button class="mobile-drawer__close" id="mobile-drawer-close" aria-label="Close navigation menu"><i data-lucide="x"></i></button>
+        <button class="mobile-drawer__close" id="mobile-drawer-close" aria-label="Close navigation menu"><i aria-hidden="true" data-lucide="x"></i></button>
       </div>
       <nav class="mobile-drawer__nav" aria-label="Mobile navigation">
         <ul role="list">
           <li><a href="index.html" class="mobile-link">Home</a></li>
           <li class="mobile-accordion">
-            <button class="mobile-link mobile-link--accordion" aria-expanded="false">Residential <i data-lucide="chevron-down" class="chevron"></i></button>
+            <button class="mobile-link mobile-link--accordion" aria-expanded="false">Residential <i aria-hidden="true" data-lucide="chevron-down" class="chevron"></i></button>
             <ul class="mobile-accordion__panel" role="list" hidden>
-              <li><a href="computer-repairs-gold-coast.html" class="mobile-sub-link"><i data-lucide="wrench"></i> Computer Repair</a></li>
-              <li><a href="computer-networking-service-gold-coast.html" class="mobile-sub-link"><i data-lucide="wifi"></i> Networking &amp; WiFi</a></li>
-              <li><a href="home-users.html" class="mobile-sub-link mobile-sub-link--all">View all residential services <i data-lucide="arrow-right"></i></a></li>
+              <li><a href="computer-repairs-gold-coast.html" class="mobile-sub-link"><i aria-hidden="true" data-lucide="wrench"></i> Computer Repair</a></li>
+              <li><a href="computer-networking-service-gold-coast.html" class="mobile-sub-link"><i aria-hidden="true" data-lucide="wifi"></i> Networking &amp; WiFi</a></li>
+              <li><a href="home-users.html" class="mobile-sub-link mobile-sub-link--all">View all residential services <i aria-hidden="true" data-lucide="arrow-right"></i></a></li>
             </ul>
           </li>
           <li class="mobile-accordion">
-            <button class="mobile-link mobile-link--accordion" aria-expanded="false">Business <i data-lucide="chevron-down" class="chevron"></i></button>
+            <button class="mobile-link mobile-link--accordion" aria-expanded="false">Business <i aria-hidden="true" data-lucide="chevron-down" class="chevron"></i></button>
             <ul class="mobile-accordion__panel" role="list" hidden>
-              <li><a href="it-support-and-services-gold-coast.html" class="mobile-sub-link"><i data-lucide="monitor"></i> IT Support &amp; Services</a></li>
-              <li><a href="telecommunications-contractor-gold-coast.html" class="mobile-sub-link"><i data-lucide="phone-call"></i> Telecommunications</a></li>
-              <li><a href="computer-consultant-gold-coast.html" class="mobile-sub-link"><i data-lucide="lightbulb"></i> IT Consulting</a></li>
-              <li><a href="business.html" class="mobile-sub-link mobile-sub-link--all">View all business services <i data-lucide="arrow-right"></i></a></li>
+              <li><a href="it-support-and-services-gold-coast.html" class="mobile-sub-link"><i aria-hidden="true" data-lucide="monitor"></i> IT Support &amp; Services</a></li>
+              <li><a href="telecommunications-contractor-gold-coast.html" class="mobile-sub-link"><i aria-hidden="true" data-lucide="phone-call"></i> Telecommunications</a></li>
+              <li><a href="computer-consultant-gold-coast.html" class="mobile-sub-link"><i aria-hidden="true" data-lucide="lightbulb"></i> IT Consulting</a></li>
+              <li><a href="business.html" class="mobile-sub-link mobile-sub-link--all">View all business services <i aria-hidden="true" data-lucide="arrow-right"></i></a></li>
             </ul>
           </li>
           <li><a href="support.html" class="mobile-link"><span class="status-dot" aria-hidden="true"></span>Support</a></li>
@@ -889,9 +1036,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <!-- end Google Calendar Appointment Scheduling -->
         </div>
         <div class="hero-trust-strip fade-up" style="transition-delay:0.4s">
-          <span class="hero-trust-item"><i data-lucide="zap"></i> Same-day on-site</span>
-          <span class="hero-trust-item"><i data-lucide="monitor"></i> Remote support</span>
-          <span class="hero-trust-item"><i data-lucide="shield-check"></i> No fix, no fee</span>
+          <span class="hero-trust-item"><i aria-hidden="true" data-lucide="zap"></i> Same-day on-site</span>
+          <span class="hero-trust-item"><i aria-hidden="true" data-lucide="monitor"></i> Remote support</span>
+          <span class="hero-trust-item"><i aria-hidden="true" data-lucide="shield-check"></i> No fix, no fee</span>
         </div>
       </div>
     </div>
@@ -922,42 +1069,42 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="container">
       <div class="services-header fade-up">
         <h2>Our IT Support Services on the Gold Coast</h2>
-        <p>From day-to-day remote helpdesk to full managed IT, we provide comprehensive IT support for Gold Coast businesses of all sizes — with fast, local response times.</p>
+        <p>From day-to-day remote helpdesk to full managed IT, we provide a full range of IT support for Gold Coast businesses of all sizes — with fast, local response times.</p>
       </div>
       <div class="services-grid">
 
         <div class="service-card fade-up" style="transition-delay:0.05s">
-          <div class="icon-circle"><i data-lucide="monitor"></i></div>
+          <div class="icon-circle"><i aria-hidden="true" data-lucide="monitor"></i></div>
           <h3>Remote IT Support Gold Coast</h3>
           <p>Fast remote helpdesk support for Gold Coast businesses. We can diagnose and resolve most software, connectivity, and user issues without an on-site visit — saving you time and downtime.</p>
         </div>
 
         <div class="service-card fade-up" style="transition-delay:0.1s">
-          <div class="icon-circle"><i data-lucide="wrench"></i></div>
+          <div class="icon-circle"><i aria-hidden="true" data-lucide="wrench"></i></div>
           <h3>On-site Technical Support Gold Coast</h3>
           <p>When the issue needs hands-on attention, we dispatch a local Gold Coast technician. Most call-outs are attended within 2–4 hours across Southport, Robina, Burleigh Heads, Nerang and surrounds.</p>
         </div>
 
         <div class="service-card fade-up" style="transition-delay:0.15s">
-          <div class="icon-circle"><i data-lucide="cpu"></i></div>
+          <div class="icon-circle"><i aria-hidden="true" data-lucide="cpu"></i></div>
           <h3>Hardware &amp; Software Troubleshooting Gold Coast</h3>
           <p>Slow computers, failing hardware, software errors, driver conflicts — we diagnose and fix the full range of hardware and software issues for Gold Coast businesses quickly and reliably.</p>
         </div>
 
         <div class="service-card fade-up" style="transition-delay:0.2s">
-          <div class="icon-circle"><i data-lucide="clipboard"></i></div>
+          <div class="icon-circle"><i aria-hidden="true" data-lucide="clipboard"></i></div>
           <h3>IT Consulting &amp; Strategy Gold Coast</h3>
           <p>Not sure what technology your business needs? Our <a href="computer-consultant-gold-coast.html" style="color:#00c8e0;font-weight:600;">IT consulting Gold Coast</a> team provides honest, vendor-neutral advice on infrastructure, cloud, and technology planning.</p>
         </div>
 
         <div class="service-card fade-up" style="transition-delay:0.25s">
-          <div class="icon-circle"><i data-lucide="shield-check"></i></div>
+          <div class="icon-circle"><i aria-hidden="true" data-lucide="shield-check"></i></div>
           <h3>Managed IT Services Gold Coast</h3>
           <p>Proactive managed IT for Gold Coast businesses — network monitoring, patch management, backup verification, and regular health checks. We keep your systems running before problems arise.</p>
         </div>
 
         <div class="service-card fade-up" style="transition-delay:0.3s">
-          <div class="icon-circle"><i data-lucide="shield-alert"></i></div>
+          <div class="icon-circle"><i aria-hidden="true" data-lucide="shield-alert"></i></div>
           <h3>Virus &amp; Malware Removal Gold Coast</h3>
           <p>Suspected ransomware, virus, or malware on your Gold Coast business network? We provide rapid response, containment, removal, and post-incident hardening to prevent recurrence.</p>
         </div>
@@ -1000,7 +1147,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="why-grid">
 
         <div class="why-card fade-up" style="transition-delay:0.05s">
-          <div class="why-card__icon"><i data-lucide="zap"></i></div>
+          <div class="why-card__icon"><i aria-hidden="true" data-lucide="zap"></i></div>
           <div class="why-card__text">
             <h3>Fast Response</h3>
             <p>Most Gold Coast call-outs within 2–4 hours. We understand that downtime costs money, so we prioritise rapid response across all Gold Coast suburbs.</p>
@@ -1008,7 +1155,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
 
         <div class="why-card fade-up" style="transition-delay:0.1s">
-          <div class="why-card__icon"><i data-lucide="map-pin"></i></div>
+          <div class="why-card__icon"><i aria-hidden="true" data-lucide="map-pin"></i></div>
           <div class="why-card__text">
             <h3>Locally Based</h3>
             <p>Gold Coast team, not an interstate call centre. When you call us, you speak to a local technician who knows the Gold Coast business landscape.</p>
@@ -1016,7 +1163,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
 
         <div class="why-card fade-up" style="transition-delay:0.15s">
-          <div class="why-card__icon"><i data-lucide="check-circle"></i></div>
+          <div class="why-card__icon"><i aria-hidden="true" data-lucide="check-circle"></i></div>
           <div class="why-card__text">
             <h3>Transparent Pricing</h3>
             <p>Fixed rates, no hidden fees. We provide a clear assessment before any work begins so you always know what you are paying for.</p>
@@ -1024,13 +1171,122 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
 
         <div class="why-card fade-up" style="transition-delay:0.2s">
-          <div class="why-card__icon"><i data-lucide="shield-check"></i></div>
+          <div class="why-card__icon"><i aria-hidden="true" data-lucide="shield-check"></i></div>
           <div class="why-card__text">
             <h3>No Fix, No Fee</h3>
             <p>If we cannot fix your IT issue, you do not pay a call-out fee. We stand behind our work and believe in earning your trust on every job.</p>
           </div>
         </div>
 
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 4B — ON-SITE SUPPORT DETAIL (new expanded content)
+       ============================================================ -->
+  <section class="content-detail-section" aria-label="On-site IT support for Gold Coast businesses">
+    <div class="container">
+      <div class="content-detail-grid fade-up">
+        <div class="content-detail-text">
+          <span class="content-detail-label">On-site IT Support Gold Coast</span>
+          <h2 class="content-detail-h2">What Happens When a Technician Visits Your Gold Coast Office</h2>
+          <p>When a problem cannot be resolved remotely, having a local technician arrive quickly makes a real difference. A small accounting firm in Robina, for example, cannot afford to wait two days for someone to fly up from Brisbane. That is why Bcom IT Solutions keeps a team based on the Gold Coast, ready to attend most call-outs within two to four hours.</p>
+          <p>When a technician arrives, the first step is always a clear assessment. We look at what is actually happening before we start any work, and we explain what we find in plain language. There are no surprise charges. You know the cost before we begin. If we cannot fix the issue, you do not pay a call-out fee.</p>
+          <p>On-site visits cover a wide range of situations. A workstation that will not start. A printer that has stopped communicating with the network. A server that is throwing errors. A new staff member who needs their computer set up and connected to the business systems. In each case, a local Gold Coast technician handles the job from start to finish, without handing it off to a remote team overseas.</p>
+          <p>After the work is done, we do not just leave. We walk you through what was found, what was fixed, and what you can do to avoid the same issue in future. That kind of handover matters for small and medium businesses in suburbs like Burleigh Heads, Helensvale, and Varsity Lakes, where the owner or office manager often wears many hats and needs to understand what is happening with their technology.</p>
+          <p>If your business has multiple sites across the Gold Coast — say, a main office in Southport and a second location in Coomera — we can coordinate visits to both on the same day in most cases. Call us on <a href="tel:0730418993" style="color:#00c8e0;font-weight:600;">07 3041 8993</a> to discuss your requirements.</p>
+        </div>
+        <div class="content-detail-image">
+          <img
+            src="it-support-onsite-gold-coast.webp"
+            alt="IT support technician providing on-site computer support at a Gold Coast business office"
+            width="800"
+            height="450"
+            loading="lazy"
+            decoding="async"
+            style="width:100%;height:auto;border-radius:16px;box-shadow:0 8px 32px rgba(0,0,0,0.12);"
+          >
+          <p style="font-size:0.78rem;color:#94a3b8;margin-top:10px;font-family:'DM Mono',monospace;text-align:center;">On-site IT support — Gold Coast technicians attending your business premises</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 4C — HOW IT SUPPORT WORKS INFOGRAPHIC
+       ============================================================ -->
+  <section class="process-section" aria-label="How IT support works — Gold Coast">
+    <div class="container">
+      <div class="process-header fade-up">
+        <span class="process-label">Simple Process</span>
+        <h2 class="process-h2">How Our IT Support Process Works</h2>
+        <p class="process-intro">From the moment you contact us to the moment your systems are running again, we keep things straightforward. No jargon, no unnecessary steps, no waiting around.</p>
+      </div>
+      <div class="process-image-wrap fade-up" style="transition-delay:0.1s">
+        <img
+          src="it-support-process-infographic.webp"
+          alt="Infographic showing the four-step IT support process for Gold Coast businesses — contact, diagnose, fix, back online"
+          width="1200"
+          height="675"
+          loading="lazy"
+          decoding="async"
+          style="width:100%;height:auto;border-radius:16px;box-shadow:0 4px 24px rgba(0,0,0,0.08);"
+        >
+      </div>
+      <div class="process-body fade-up" style="transition-delay:0.2s">
+        <p>The process starts when you get in touch — by phone, email, or our online booking calendar. You do not need to diagnose the problem yourself. Just tell us what you are seeing and we take it from there. A technician will ask a few quick questions to understand the situation, then either connect remotely or schedule an on-site visit, whichever is faster for your circumstances.</p>
+        <p>Diagnosis is the most important step. Rushing to a fix without understanding the cause often means the same problem comes back within weeks. We take the time to identify what is actually wrong, whether that is a failing hard drive, a misconfigured network setting, a software conflict, or something more straightforward like a corrupted user profile. Gold Coast businesses in fast-paced industries like construction, real estate, and hospitality cannot afford repeat issues, so getting the diagnosis right the first time matters.</p>
+        <p>Once we know what the problem is, we fix it. For most software and configuration issues, that happens in a single session. Hardware replacements may require sourcing a part, but we keep common components in stock and can usually turn around a repair the same day or the next morning. After the fix, we verify everything is working correctly before we close the job — we do not consider it done until you do.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 4D — REMOTE SUPPORT DETAIL
+       ============================================================ -->
+  <section class="content-detail-section content-detail-section--alt" aria-label="Remote IT helpdesk support for Gold Coast businesses">
+    <div class="container">
+      <div class="content-detail-grid content-detail-grid--reverse fade-up">
+        <div class="content-detail-image">
+          <img
+            src="it-support-remote-gold-coast.webp"
+            alt="Remote IT support session active on a Gold Coast business computer — technician resolving issue from local office"
+            width="800"
+            height="450"
+            loading="lazy"
+            decoding="async"
+            style="width:100%;height:auto;border-radius:16px;box-shadow:0 8px 32px rgba(0,0,0,0.12);"
+          >
+          <p style="font-size:0.78rem;color:#94a3b8;margin-top:10px;font-family:'DM Mono',monospace;text-align:center;">Remote IT helpdesk — fast resolution without waiting for an on-site visit</p>
+        </div>
+        <div class="content-detail-text">
+          <span class="content-detail-label">Remote Helpdesk Gold Coast</span>
+          <h2 class="content-detail-h2">Remote IT Support — Fast Help Without the Wait</h2>
+          <p>Many IT problems do not require a technician to be physically present. Software errors, email configuration issues, slow system performance, user account problems, and connectivity faults can often be diagnosed and resolved in minutes through a secure remote session. For Gold Coast businesses, this means less downtime and a faster return to normal operations.</p>
+          <p>Remote IT support works by connecting to your computer or server through an encrypted, permission-based session. You can see everything the technician is doing on your screen at all times. The connection is closed the moment the session ends. There is no ongoing access and no background monitoring unless you have specifically signed up for a managed IT plan.</p>
+          <p>A typical remote session for a Gold Coast business might involve resetting a staff member's email account after a password change broke the connection, clearing a software conflict that was causing a point-of-sale system to crash, or reconfiguring a VPN that stopped working after a Windows update. These are the kinds of issues that interrupt a working day and are frustrating to deal with alone — but straightforward for an experienced technician to resolve remotely in under an hour.</p>
+          <p>Remote support is also well suited to businesses with staff working from home across the Gold Coast. Whether someone is in Palm Beach, Nerang, or Coolangatta, we can connect to their device and resolve the issue without them needing to bring it in or wait for a technician to drive out. For businesses managing a mix of office and remote workers, this flexibility is genuinely useful.</p>
+          <p>To get started with remote IT support, call us on <a href="tel:0730418993" style="color:#00c8e0;font-weight:600;">07 3041 8993</a> or <a href="https://calendar.app.google/m8dAw93AtSM9usTw8" target="_blank" rel="noopener noreferrer" style="color:#00c8e0;font-weight:600;">book a consultation online</a>. We will assess whether remote support is the right approach for your situation and get connected quickly.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 4E — MANAGED IT & CYBERSECURITY DETAIL
+       ============================================================ -->
+  <section class="managed-section" aria-label="Managed IT services and cybersecurity for Gold Coast businesses">
+    <div class="container">
+      <div class="managed-inner fade-up">
+        <h2 class="managed-h2">Managed IT Services and Cybersecurity on the Gold Coast</h2>
+        <div class="managed-body">
+          <p>Reactive IT support — calling someone when something breaks — works for some businesses. But for Gold Coast businesses that rely on their systems every day, a more proactive approach tends to produce better outcomes. Managed IT services mean your systems are monitored continuously, patches are applied on schedule, and potential issues are identified before they cause downtime.</p>
+          <p>A managed IT plan typically covers network monitoring, server health checks, workstation patch management, backup verification, and access to remote helpdesk support during business hours. For a small business in Southport or a medium-sized operation in Robina, this kind of ongoing oversight can prevent the kind of cascading failures that happen when routine maintenance is skipped for months at a time.</p>
+          <p>Cybersecurity is an increasingly important part of IT management for Gold Coast businesses. Phishing attacks, ransomware, and credential theft are not problems reserved for large corporations. Small businesses are frequently targeted precisely because their defences tend to be lighter. A single successful phishing email can lock a business out of its own files, expose client data, and result in significant recovery costs.</p>
+          <p>Practical cybersecurity for a Gold Coast small business does not have to be expensive or complicated. It starts with the basics: strong passwords and multi-factor authentication on all accounts, up-to-date software and operating systems, a reliable backup that is tested regularly, and staff who know how to spot a suspicious email. We help Gold Coast businesses put these foundations in place and then build on them as the business grows.</p>
+          <p>If your business has experienced a security incident — or you are concerned that your current setup is not as secure as it should be — call us on <a href="tel:0730418993" style="color:#00c8e0;font-weight:600;">07 3041 8993</a>. We can carry out a straightforward assessment and give you an honest picture of where the risks are and what it would take to address them.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -1095,7 +1351,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="faq-item">
           <button class="faq-question" aria-expanded="false" aria-controls="faq-1">
             <h3>What IT support services does Bcom IT Solutions provide on the Gold Coast?</h3>
-            <i data-lucide="chevron-down" class="chevron"></i>
+            <i aria-hidden="true" data-lucide="chevron-down" class="chevron"></i>
           </button>
           <div class="faq-answer" id="faq-1" hidden>
             <p>Bcom IT Solutions provides managed IT support, remote helpdesk, on-site technical support, hardware and software troubleshooting, virus and malware removal, cybersecurity, and IT consulting and strategy for Gold Coast businesses. We also offer <a href="telecommunications-contractor-gold-coast.html" style="color:#00c8e0;">telecommunications services Gold Coast</a> including VoIP and data cabling. We cover all Gold Coast suburbs — call us on <a href="tel:0730418993">07 3041 8993</a>.</p>
@@ -1105,7 +1361,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="faq-item">
           <button class="faq-question" aria-expanded="false" aria-controls="faq-2">
             <h3>How quickly can a technician attend our Gold Coast business?</h3>
-            <i data-lucide="chevron-down" class="chevron"></i>
+            <i aria-hidden="true" data-lucide="chevron-down" class="chevron"></i>
           </button>
           <div class="faq-answer" id="faq-2" hidden>
             <p>In most cases we can have a technician on-site within 2 to 4 hours of your call. We prioritise same-day service across Southport, Robina, Burleigh Heads, Nerang, Helensvale and all surrounding Gold Coast suburbs.</p>
@@ -1115,7 +1371,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="faq-item">
           <button class="faq-question" aria-expanded="false" aria-controls="faq-3">
             <h3>Do you offer remote IT support for Gold Coast businesses?</h3>
-            <i data-lucide="chevron-down" class="chevron"></i>
+            <i aria-hidden="true" data-lucide="chevron-down" class="chevron"></i>
           </button>
           <div class="faq-answer" id="faq-3" hidden>
             <p>Yes. We provide remote helpdesk support for Gold Coast businesses, allowing us to diagnose and resolve many issues without an on-site visit. For issues that require a physical presence, we dispatch a local technician the same day in most cases.</p>
@@ -1125,7 +1381,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="faq-item">
           <button class="faq-question" aria-expanded="false" aria-controls="faq-4">
             <h3>What is your no fix, no fee policy?</h3>
-            <i data-lucide="chevron-down" class="chevron"></i>
+            <i aria-hidden="true" data-lucide="chevron-down" class="chevron"></i>
           </button>
           <div class="faq-answer" id="faq-4" hidden>
             <p>If we cannot resolve your IT issue, you do not pay a call-out fee. We provide a clear assessment before any work begins, with transparent fixed-rate pricing and no hidden charges. We believe in earning your trust on every job.</p>
@@ -1135,7 +1391,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="faq-item">
           <button class="faq-question" aria-expanded="false" aria-controls="faq-5">
             <h3>How do I book IT support for my Gold Coast business?</h3>
-            <i data-lucide="chevron-down" class="chevron"></i>
+            <i aria-hidden="true" data-lucide="chevron-down" class="chevron"></i>
           </button>
           <div class="faq-answer" id="faq-5" hidden>
             <p>You can book using our online booking calendar above, call us on <a href="tel:0730418993" style="color:#00c8e0;">07 3041 8993</a>, or email <a href="mailto:support@bcomservices.com" style="color:#00c8e0;">support@bcomservices.com</a>. We are available Monday to Friday 8am to 5pm with Saturday appointments available.</p>
@@ -1176,13 +1432,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </script>
           <!-- end Google Calendar Appointment Scheduling -->
           <a href="tel:0730418993" class="btn-primary" style="display:inline-flex;align-items:center;gap:8px;">
-            <i data-lucide="phone"></i> Call <a href="tel:0730418993">07 3041 8993</a>
+            <i aria-hidden="true" data-lucide="phone"></i> Call <a href="tel:0730418993">07 3041 8993</a>
           </a>
         </div>
         <div class="cta-reassurance fade-up" style="transition-delay:0.4s">
-          <span><i data-lucide="clock"></i> Fast Response</span>
-          <span><i data-lucide="map-pin"></i> Gold Coast Local</span>
-          <span><i data-lucide="shield-check"></i> No Fix, No Fee</span>
+          <span><i aria-hidden="true" data-lucide="clock"></i> Fast Response</span>
+          <span><i aria-hidden="true" data-lucide="map-pin"></i> Gold Coast Local</span>
+          <span><i aria-hidden="true" data-lucide="shield-check"></i> No Fix, No Fee</span>
         </div>
       </div>
     </div>
@@ -1208,11 +1464,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </a>
             <p class="footer-tagline">Gold Coast's trusted IT partner for homes and businesses.</p>
             <div class="footer-stars" aria-label="Rated 5 stars on Google">
-              <i data-lucide="star" class="star-filled"></i>
-              <i data-lucide="star" class="star-filled"></i>
-              <i data-lucide="star" class="star-filled"></i>
-              <i data-lucide="star" class="star-filled"></i>
-              <i data-lucide="star" class="star-filled"></i>
+              <i aria-hidden="true" data-lucide="star" class="star-filled"></i>
+              <i aria-hidden="true" data-lucide="star" class="star-filled"></i>
+              <i aria-hidden="true" data-lucide="star" class="star-filled"></i>
+              <i aria-hidden="true" data-lucide="star" class="star-filled"></i>
+              <i aria-hidden="true" data-lucide="star" class="star-filled"></i>
               <span class="footer-stars__label">Rated 5-star on Google</span>
             </div>
             <p class="footer-abn">ABN: 92 636 893 108</p>
@@ -1220,26 +1476,26 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div class="footer-col">
             <p class="footer-heading">Home Services</p>
             <ul class="footer-links" role="list">
-              <li><a href="computer-repairs-gold-coast.html" class="footer-link"><i data-lucide="wrench"></i> Computer Repair Gold Coast</a></li>
-              <li><a href="computer-networking-service-gold-coast.html" class="footer-link"><i data-lucide="wifi"></i> Networking &amp; WiFi Gold Coast</a></li>
-              <li><a href="home-users.html" class="footer-link"><i data-lucide="home"></i> Residential IT Support</a></li>
+              <li><a href="computer-repairs-gold-coast.html" class="footer-link"><i aria-hidden="true" data-lucide="wrench"></i> Computer Repair Gold Coast</a></li>
+              <li><a href="computer-networking-service-gold-coast.html" class="footer-link"><i aria-hidden="true" data-lucide="wifi"></i> Networking &amp; WiFi Gold Coast</a></li>
+              <li><a href="home-users.html" class="footer-link"><i aria-hidden="true" data-lucide="home"></i> Residential IT Support</a></li>
             </ul>
           </div>
           <div class="footer-col">
             <p class="footer-heading">Business Services</p>
             <ul class="footer-links" role="list">
-              <li><a href="it-support-and-services-gold-coast.html" class="footer-link"><i data-lucide="monitor"></i> IT Support Gold Coast</a></li>
-              <li><a href="telecommunications-contractor-gold-coast.html" class="footer-link"><i data-lucide="phone-call"></i> Telecommunications Gold Coast</a></li>
-              <li><a href="computer-consultant-gold-coast.html" class="footer-link"><i data-lucide="lightbulb"></i> IT Consulting Gold Coast</a></li>
-              <li><a href="business.html" class="footer-link"><i data-lucide="building-2"></i> Business IT Hub</a></li>
+              <li><a href="it-support-and-services-gold-coast.html" class="footer-link"><i aria-hidden="true" data-lucide="monitor"></i> IT Support Gold Coast</a></li>
+              <li><a href="telecommunications-contractor-gold-coast.html" class="footer-link"><i aria-hidden="true" data-lucide="phone-call"></i> Telecommunications Gold Coast</a></li>
+              <li><a href="computer-consultant-gold-coast.html" class="footer-link"><i aria-hidden="true" data-lucide="lightbulb"></i> IT Consulting Gold Coast</a></li>
+              <li><a href="business.html" class="footer-link"><i aria-hidden="true" data-lucide="building-2"></i> Business IT Hub</a></li>
             </ul>
           </div>
           <div class="footer-col">
             <p class="footer-heading">Get in Touch</p>
             <ul class="footer-links footer-links--contact" role="list">
-              <li><a href="tel:0730418993" class="footer-link footer-link--contact"><i data-lucide="phone"></i> 07 3041 8993</a></li>
-              <li><a href="mailto:support@bcomservices.com" class="footer-link footer-link--contact"><i data-lucide="mail"></i> support@bcomservices.com</a></li>
-              <li class="footer-link footer-link--location"><i data-lucide="map-pin"></i> Gold Coast, Queensland</li>
+              <li><a href="tel:0730418993" class="footer-link footer-link--contact"><i aria-hidden="true" data-lucide="phone"></i> 07 3041 8993</a></li>
+              <li><a href="mailto:support@bcomservices.com" class="footer-link footer-link--contact"><i aria-hidden="true" data-lucide="mail"></i> support@bcomservices.com</a></li>
+              <li class="footer-link footer-link--location"><i aria-hidden="true" data-lucide="map-pin"></i> Gold Coast, Queensland</li>
             </ul>
             <p class="footer-heading footer-heading--areas">Service Areas</p>
             <p class="footer-areas">Southport &middot; Burleigh Heads &middot; Robina &middot; Nerang &middot; Helensvale &middot; Coomera &middot; Palm Beach &middot; Varsity Lakes &middot; Coolangatta &middot; Surfers Paradise &middot; Broadbeach</p>
@@ -1250,7 +1506,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="footer-review">
       <div class="container">
         <a href="https://g.page/r/CSc3yhyrbZCaEBM/review" target="_blank" rel="noopener noreferrer" class="footer-review__btn" aria-label="Leave a Google review for Bcom IT Solutions">
-          <i data-lucide="star" class="star-filled"></i> Leave us a Google Review
+          <i aria-hidden="true" data-lucide="star" class="star-filled"></i> Leave us a Google Review
         </a>
         <p class="footer-review__helper">Your review helps Gold Coast locals find us — thank you!</p>
       </div>
@@ -1316,10 +1572,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
        ============================================================ -->
   <div class="mobile-sticky-bar" role="complementary" aria-label="Quick contact">
     <a href="tel:0730418993" class="sticky-call">
-      <i data-lucide="phone"></i> Call Now
+      <i aria-hidden="true" data-lucide="phone"></i> Call Now
     </a>
     <a href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ21JsFI48SyH1NJO3oZkyuch15utQ__rWaeHMgfxSppgM_GaVeKRe6Kn0v2oN4XjRgl5D256Up7?gv=true" target="_blank" rel="noopener noreferrer" class="sticky-book">
-      <i data-lucide="calendar"></i> Book Online
+      <i aria-hidden="true" data-lucide="calendar"></i> Book Online
     </a>
   </div>
 
