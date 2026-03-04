@@ -101,6 +101,33 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .mobile-sticky-bar a{flex:1;text-align:center;padding:12px 8px;border-radius:8px;font-family:'DM Sans',sans-serif;font-size:0.95rem;font-weight:700;text-decoration:none;display:flex;align-items:center;justify-content:center;gap:8px}
     .mobile-sticky-bar .sticky-call{background:#0d1f3c;color:white}
     .mobile-sticky-bar .sticky-book{background:#00c8e0;color:#0d1f3c}
+    /* ── CC DETAIL SECTIONS ── */
+    .cc-detail-section{background:white;padding:80px 0;border-bottom:1px solid #f1f5f9}
+    .cc-detail-section--alt{background:#f8fafb}
+    .cc-detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+    .cc-detail-grid--reverse{direction:rtl}
+    .cc-detail-grid--reverse>*{direction:ltr}
+    .cc-detail-label{font-family:'DM Mono',monospace;font-size:0.68rem;font-weight:500;color:#00c8e0;text-transform:uppercase;letter-spacing:0.12em;display:block;margin-bottom:12px}
+    .cc-detail-h2{font-size:1.7rem;font-weight:700;color:#0d1f3c;line-height:1.25;margin-bottom:20px;letter-spacing:-0.01em}
+    .cc-detail-text p{font-size:0.97rem;color:#4a5568;line-height:1.8;margin-bottom:16px}
+    .cc-detail-text p:last-child{margin-bottom:0}
+    /* ── CC PROCESS SECTION ── */
+    .cc-process-section{background:#e6fafd;padding:80px 0;border-bottom:1px solid #c8f0f7}
+    .cc-process-header{text-align:center;margin-bottom:40px}
+    .cc-process-label{font-family:'DM Mono',monospace;font-size:0.68rem;font-weight:500;color:#00c8e0;text-transform:uppercase;letter-spacing:0.12em;display:block;margin-bottom:12px}
+    .cc-process-h2{font-size:1.7rem;font-weight:700;color:#0d1f3c;line-height:1.25;margin-bottom:12px;letter-spacing:-0.01em}
+    .cc-process-intro{font-size:1rem;color:#4a5568;max-width:600px;margin:0 auto;line-height:1.7}
+    .cc-process-image-wrap{margin-bottom:40px}
+    .cc-process-body{max-width:760px;margin:0 auto}
+    .cc-process-body p{font-size:0.97rem;color:#4a5568;line-height:1.8;margin-bottom:16px}
+    .cc-process-body p:last-child{margin-bottom:0}
+    /* ── CC MANAGED SECTION ── */
+    .cc-managed-section{background:white;padding:80px 0;border-bottom:1px solid #f1f5f9}
+    .cc-managed-inner{max-width:760px;margin:0 auto}
+    .cc-managed-h2{font-size:1.7rem;font-weight:700;color:#0d1f3c;line-height:1.25;margin-bottom:24px;letter-spacing:-0.01em}
+    .cc-managed-body p{font-size:0.97rem;color:#4a5568;line-height:1.8;margin-bottom:16px}
+    .cc-managed-body p:last-child{margin-bottom:0}
+    @media(max-width:900px){.cc-detail-grid,.cc-detail-grid--reverse{grid-template-columns:1fr;direction:ltr;gap:32px}}
     @media(max-width:900px){.services-grid{grid-template-columns:1fr 1fr}.why-grid{grid-template-columns:1fr}}
     @media(max-width:600px){.services-grid{grid-template-columns:1fr}.takeaways-inner ul{grid-template-columns:1fr}.mobile-sticky-bar{display:flex}body{padding-bottom:72px}.hero h1{font-size:1.9rem}.cta-banner{clip-path:none;padding:64px 0 48px}.cta-banner h2{font-size:1.6rem}}
   </style>
@@ -219,6 +246,105 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="why-card fade-up" style="transition-delay:0.1s"><div class="why-card__icon"><i aria-hidden="true" data-lucide="map-pin"></i></div><div class="why-card__text"><h3>Gold Coast Local</h3><p>We are based on the Gold Coast and understand the local business environment. We can meet with you on-site at your Gold Coast premises or conduct sessions remotely via video call.</p></div></div>
         <div class="why-card fade-up" style="transition-delay:0.15s"><div class="why-card__icon"><i aria-hidden="true" data-lucide="target"></i></div><div class="why-card__text"><h3>Practical, Actionable Outcomes</h3><p>We do not produce reports that gather dust. Every IT consulting engagement with a Gold Coast business results in a clear, prioritised action plan that you can implement immediately.</p></div></div>
         <div class="why-card fade-up" style="transition-delay:0.2s"><div class="why-card__icon"><i aria-hidden="true" data-lucide="users"></i></div><div class="why-card__text"><h3>Ongoing Relationship</h3><p>We build long-term relationships with Gold Coast businesses. Many of our consulting clients also use our managed IT support services, giving them a single trusted technology partner.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4B — CONSULTING ENGAGEMENT DETAIL -->
+  <section class="cc-detail-section" aria-label="What to expect from an IT consulting engagement on the Gold Coast">
+    <div class="container">
+      <div class="cc-detail-grid fade-up">
+        <div class="cc-detail-text">
+          <span class="cc-detail-label">IT Consulting Gold Coast</span>
+          <h2 class="cc-detail-h2">What to Expect from an IT Consulting Engagement</h2>
+          <p>An IT consulting engagement with a Gold Coast business starts with a discovery session. This is a straightforward conversation — not a sales pitch. We ask about the business, how it currently uses technology, what is working, what is not, and where the owner or manager wants to take things over the next year or two. For a small professional services firm in Robina, that might mean moving off an ageing server. For a growing retail business in Burleigh Heads, it might mean getting a handle on cybersecurity before something goes wrong.</p>
+          <p>From the discovery session, we put together a clear picture of the current state of the IT environment. This includes the hardware, the software, the network, the backup arrangements, and the way staff use technology day to day. We are not looking for problems to fix for the sake of it. We are looking for the things that are actually holding the business back or creating unnecessary risk.</p>
+          <p>The strategy and roadmap stage is where the consulting work takes shape. We identify the changes that will make the most difference, put them in order of priority, and attach realistic timeframes and costs to each one. The result is a document the business owner can actually use — not a lengthy report full of technical language, but a plain-language plan that explains what needs to happen, why, and roughly what it will cost.</p>
+          <p>Some Gold Coast businesses want to implement the recommendations themselves. Others want us to manage the work. Either way works. We can hand over the roadmap and be available for questions, or we can stay involved and oversee each stage of the implementation. Many businesses find that having an IT consultant involved during the rollout avoids the problems that come from trying to manage a technology change without specialist knowledge. Call <a href="tel:0730418993" style="color:#00c8e0;font-weight:600;">07 3041 8993</a> to discuss what an IT consulting engagement would look like for your business.</p>
+        </div>
+        <div class="cc-detail-image">
+          <img
+            src="it-consultant-meeting-gold-coast.webp"
+            alt="IT consultant reviewing technology strategy with a Gold Coast business owner in a modern office with coastal views"
+            width="800"
+            height="450"
+            loading="lazy"
+            decoding="async"
+            style="width:100%;height:auto;border-radius:16px;box-shadow:0 8px 32px rgba(0,0,0,0.12);"
+          >
+          <p style="font-size:0.78rem;color:#94a3b8;margin-top:10px;font-family:'DM Mono',monospace;text-align:center;">IT strategy consultation — Gold Coast business premises</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4C — CONSULTING PROCESS INFOGRAPHIC -->
+  <section class="cc-process-section" aria-label="Our IT consulting process for Gold Coast businesses">
+    <div class="container">
+      <div class="cc-process-header fade-up">
+        <span class="cc-process-label">Our Process</span>
+        <h2 class="cc-process-h2">Our IT Consulting Process</h2>
+        <p class="cc-process-intro">Every IT consulting engagement follows the same four steps — from understanding your business to making sure the changes we recommend actually stick.</p>
+      </div>
+      <div class="cc-process-image-wrap fade-up" style="transition-delay:0.1s">
+        <img
+          src="it-consulting-process-infographic.webp"
+          alt="Infographic showing the four-step IT consulting process for Gold Coast businesses"
+          width="1200"
+          height="675"
+          loading="lazy"
+          decoding="async"
+          style="width:100%;height:auto;border-radius:16px;box-shadow:0 4px 24px rgba(0,0,0,0.08);"
+        >
+      </div>
+      <div class="cc-process-body fade-up" style="transition-delay:0.2s">
+        <p>The discovery session is where we learn about the business before offering any advice. We ask about the size of the team, the software and hardware in use, how data is stored and backed up, and what the business owner is trying to achieve. This is a relaxed conversation, not a formal audit. It takes around an hour and gives us everything we need to start forming a picture of where the business sits with its technology.</p>
+        <p>The strategy and roadmap stage is where we turn that picture into a plan. We identify the highest-priority issues and opportunities, explain the options available, and put together a roadmap that is realistic for the size and budget of the business. A small Gold Coast business does not need an enterprise-grade IT strategy. It needs a clear, affordable plan that addresses the things that matter most right now and sets up the business for growth over the next few years.</p>
+        <p>Implementation support means we stay involved as the changes are made. This might mean managing a cloud migration, overseeing a hardware refresh, or being available to answer questions as the business rolls out new software. The review and adjust stage that follows is about checking that everything is working as expected and updating the roadmap as the business changes. Technology does not stand still, and neither should the plan.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4D — CYBERSECURITY DETAIL -->
+  <section class="cc-detail-section cc-detail-section--alt" aria-label="Cybersecurity consulting for Gold Coast businesses">
+    <div class="container">
+      <div class="cc-detail-grid cc-detail-grid--reverse fade-up">
+        <div class="cc-detail-image">
+          <img
+            src="cybersecurity-assessment-gold-coast.webp"
+            alt="IT consultant presenting a cybersecurity assessment to a Gold Coast business owner on a large monitor"
+            width="800"
+            height="450"
+            loading="lazy"
+            decoding="async"
+            style="width:100%;height:auto;border-radius:16px;box-shadow:0 8px 32px rgba(0,0,0,0.12);"
+          >
+          <p style="font-size:0.78rem;color:#94a3b8;margin-top:10px;font-family:'DM Mono',monospace;text-align:center;">Cybersecurity assessment — Gold Coast business</p>
+        </div>
+        <div class="cc-detail-text">
+          <span class="cc-detail-label">Cybersecurity Consulting Gold Coast</span>
+          <h2 class="cc-detail-h2">Cybersecurity and Cloud Consulting for Gold Coast Businesses</h2>
+          <p>Cybersecurity is one of the most common reasons Gold Coast businesses seek IT consulting advice. The risks are real and growing, and most small to medium businesses are more exposed than they realise. A cybersecurity assessment looks at the full picture — not just the firewall or the antivirus software, but the way staff handle passwords, how email is configured, whether backups are actually working, and what would happen if a device was lost or stolen.</p>
+          <p>The output of a cybersecurity assessment is a prioritised action plan, not a list of alarming statistics. We explain each risk in plain language, describe what could happen if it is not addressed, and recommend a practical fix. Some items can be resolved quickly and cheaply — enabling multi-factor authentication, for example, costs nothing and stops a large proportion of account takeover attacks. Others require more investment, and we help the business understand what is worth spending money on and what can wait.</p>
+          <p>Cloud migration consulting is closely related. Many Gold Coast businesses are still running on-premise servers that are ageing, expensive to maintain, and harder to secure than cloud alternatives. Moving to Microsoft 365 or a cloud-based server environment can reduce costs, improve reliability, and make the business easier to secure. We advise on which platform suits the business, plan the migration, and help manage the changeover so that staff experience minimal disruption.</p>
+          <p>AI integration is a newer area of IT consulting, but one that is becoming relevant for a growing number of Gold Coast businesses. The practical applications are not always obvious from the outside, but there are often straightforward opportunities to save time on repetitive tasks, improve how information is organised, or get better use out of software the business already pays for. We help identify where AI tools can make a genuine difference and advise on how to use them safely. <a href="https://calendar.app.google/m8dAw93AtSM9usTw8" target="_blank" rel="noopener noreferrer" style="color:#00c8e0;font-weight:600;">Book a consultation online</a> or call <a href="tel:0730418993" style="color:#00c8e0;font-weight:600;">07 3041 8993</a> to discuss your requirements.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4E — TECHNOLOGY PLANNING -->
+  <section class="cc-managed-section" aria-label="IT strategy and technology planning for Gold Coast businesses">
+    <div class="container">
+      <div class="cc-managed-inner fade-up">
+        <h2 class="cc-managed-h2">IT Strategy and Technology Planning for Gold Coast Businesses</h2>
+        <div class="cc-managed-body">
+          <p>Technology planning is something many small Gold Coast businesses put off until something breaks. The problem with that approach is that unplanned technology changes are almost always more disruptive and more expensive than planned ones. A server that fails without a replacement plan in place can take a business offline for days. A software subscription that ends without a migration plan can leave staff unable to access critical data. An IT strategy prevents these situations by making sure the business is always a step ahead of its technology.</p>
+          <p>A technology roadmap does not need to be complicated. For a small business in Varsity Lakes or Palm Beach, it might be a one-page document that lists the hardware due for replacement in the next two years, the software licences that need reviewing, and the security improvements that are on the to-do list. For a larger business with multiple sites across the Gold Coast, it might be more detailed — covering infrastructure, cloud services, staff devices, and a plan for managing technology as the business grows.</p>
+          <p>IT procurement advice is part of this process. Buying the wrong hardware or signing up for the wrong software subscription is a common and avoidable mistake. We advise on what to buy, where to buy it, and what to avoid. We do not receive commissions from vendors, which means our advice is genuinely independent. A Gold Coast business owner can be confident that the hardware or software we recommend is the right choice for their situation, not the choice that earns us a referral fee.</p>
+          <p>Business continuity planning is another area where an IT consultant adds real value. Most Gold Coast businesses have some kind of backup in place, but far fewer have tested whether that backup can actually be restored in a reasonable timeframe. A business continuity plan covers not just backups, but the full process of getting the business operational again after a failure — whether that is a hardware fault, a ransomware attack, a flood, or a power outage. We develop practical plans that are proportionate to the size and risk profile of the business.</p>
+          <p>If your Gold Coast business is overdue for a technology review, or if you are facing a specific IT decision and want independent advice, we are easy to reach. Call us on <a href="tel:0730418993" style="color:#00c8e0;font-weight:600;">07 3041 8993</a> or <a href="https://calendar.app.google/m8dAw93AtSM9usTw8" target="_blank" rel="noopener noreferrer" style="color:#00c8e0;font-weight:600;">book a consultation online</a>.</p>
+        </div>
       </div>
     </div>
   </section>
