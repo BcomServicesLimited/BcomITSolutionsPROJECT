@@ -1,0 +1,439 @@
+/* ============================================================
+   BCOM IT SOLUTIONS — DESIGN SYSTEM
+   bcomservices.com.au | Gold Coast, Queensland
+   ============================================================ */
+
+/* ------------------------------------------------------------
+   GOOGLE FONTS
+   ------------------------------------------------------------ */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap');
+
+/* ------------------------------------------------------------
+   CSS VARIABLES
+   ------------------------------------------------------------ */
+:root {
+  /* Brand Colours */
+  --navy:        #0d1f3c;   /* text, logo, borders — never a background */
+  --dark-bg:     #1e3a5f;   /* ALL dark backgrounds: hero, footer, CTA banners */
+  --cyan:        #00c8e0;   /* CTAs, accents, highlights */
+  --cyan-light:  #e6fafd;   /* section bg tint */
+  --cyan-dim:    rgba(0, 200, 224, 0.12);
+  --white:       #ffffff;
+  --off-white:   #f8fafb;
+  --util-bar:    #f0f9fb;   /* utility bar above nav */
+
+  /* Text Colours */
+  --text-dark:   #1a2636;
+  --text-mid:    #4a5568;
+  --text-light:  #94a3b8;
+
+  /* Status Colours */
+  --success:     #10b981;
+  --warning:     #f59e0b;
+  --danger:      #f87171;
+
+  /* Typography */
+  --font-body:   'DM Sans', sans-serif;
+  --font-mono:   'DM Mono', monospace;
+
+  /* Spacing Scale */
+  --space-1:   4px;
+  --space-2:   8px;
+  --space-3:   12px;
+  --space-4:   16px;
+  --space-6:   24px;
+  --space-8:   32px;
+  --space-12:  48px;
+  --space-16:  64px;
+  --space-24:  96px;
+}
+
+/* ------------------------------------------------------------
+   RESET & BASE
+   ------------------------------------------------------------ */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--text-mid);
+  background-color: var(--white);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ------------------------------------------------------------
+   TYPOGRAPHY
+   ------------------------------------------------------------ */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-body);
+  color: var(--navy);
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  color: var(--navy);
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--text-mid);
+}
+
+a {
+  color: var(--cyan);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--navy);
+}
+
+code, .mono {
+  font-family: var(--font-mono);
+}
+
+/* ------------------------------------------------------------
+   LAYOUT
+   ------------------------------------------------------------ */
+.container {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.container-sm {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+section {
+  padding: 80px 0;
+}
+
+/* ------------------------------------------------------------
+   SECTION BACKGROUNDS
+   ------------------------------------------------------------ */
+.section-white {
+  background-color: #ffffff;
+}
+
+.section-light {
+  background-color: #f8fafb;
+}
+
+.section-cyan {
+  background-color: #e6fafd;
+}
+
+.section-dark {
+  background-color: var(--dark-bg);
+  color: white;
+}
+
+.section-dark h1,
+.section-dark h2,
+.section-dark h3,
+.section-dark h4,
+.section-dark p {
+  color: white;
+}
+
+.section-darkest {
+  background-color: #162f4e;
+  color: white;
+}
+
+.section-darkest h1,
+.section-darkest h2,
+.section-darkest h3,
+.section-darkest h4,
+.section-darkest p {
+  color: white;
+}
+
+/* ------------------------------------------------------------
+   BUTTONS
+   ------------------------------------------------------------ */
+.btn-primary,
+.btn-outline,
+.btn-white,
+.btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 24px;
+  border-radius: 8px;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: 2px solid transparent;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+/* Primary — cyan bg */
+.btn-primary {
+  background-color: var(--cyan);
+  color: var(--navy);
+  border-color: var(--cyan);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 200, 224, 0.35);
+  color: var(--navy);
+}
+
+/* Outline — navy border */
+.btn-outline {
+  background-color: transparent;
+  color: var(--navy);
+  border-color: var(--navy);
+}
+
+.btn-outline:hover {
+  background-color: var(--navy);
+  color: white;
+}
+
+/* White — for dark sections */
+.btn-white {
+  background-color: white;
+  color: var(--navy);
+  border-color: white;
+}
+
+.btn-white:hover {
+  background-color: var(--cyan);
+  color: var(--navy);
+  border-color: var(--cyan);
+}
+
+/* Ghost — for dark sections */
+.btn-ghost {
+  background-color: transparent;
+  color: white;
+  border-color: white;
+}
+
+.btn-ghost:hover {
+  background-color: white;
+  color: var(--navy);
+}
+
+/* ------------------------------------------------------------
+   CARDS
+   ------------------------------------------------------------ */
+.card {
+  background-color: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 24px;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.12);
+  border-left: 4px solid var(--cyan);
+}
+
+.card-glow:hover {
+  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.12),
+              0 0 0 1px rgba(0, 200, 224, 0.2);
+}
+
+/* ------------------------------------------------------------
+   ICON CIRCLES (service cards)
+   ------------------------------------------------------------ */
+.icon-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background-color: var(--cyan-dim);
+  margin-bottom: 16px;
+  transition: background-color 0.2s ease;
+}
+
+.icon-circle.green {
+  background-color: rgba(16, 185, 129, 0.12);
+}
+
+.card:hover .icon-circle {
+  background-color: var(--cyan);
+}
+
+.card:hover .icon-circle [data-lucide] {
+  stroke: #1e3a5f;
+}
+
+/* ------------------------------------------------------------
+   LUCIDE ICON STYLES
+   ------------------------------------------------------------ */
+[data-lucide] {
+  width: 20px;
+  height: 20px;
+  stroke: currentColor;
+  stroke-width: 1.75;
+  fill: none;
+  vertical-align: middle;
+  transition: transform 0.2s ease;
+}
+
+.icon-lg [data-lucide] {
+  width: 28px;
+  height: 28px;
+}
+
+.card:hover [data-lucide="wrench"] {
+  transform: rotate(15deg);
+}
+
+.card:hover [data-lucide="map-pin"] {
+  transform: translateY(-3px);
+}
+
+.card:hover [data-lucide="arrow-right"] {
+  transform: translateX(4px);
+}
+
+/* ------------------------------------------------------------
+   STATUS DOT
+   ------------------------------------------------------------ */
+.status-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background: var(--success);
+  border-radius: 50%;
+  margin-right: 6px;
+  animation: status-pulse 2s infinite;
+}
+
+@keyframes status-pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%       { opacity: 0.5; transform: scale(0.85); }
+}
+
+/* ------------------------------------------------------------
+   STAR ICONS
+   ------------------------------------------------------------ */
+.star-filled {
+  fill: var(--warning);
+  stroke: var(--warning);
+}
+
+/* ------------------------------------------------------------
+   GRADIENT UTILITIES
+   ------------------------------------------------------------ */
+.text-gradient {
+  background: linear-gradient(90deg, #00c8e0, #00e5ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.section-angle-top {
+  clip-path: polygon(0 4%, 100% 0%, 100% 100%, 0% 100%);
+  margin-top: -40px;
+  padding-top: 120px;
+}
+
+/* ------------------------------------------------------------
+   ANIMATIONS
+   ------------------------------------------------------------ */
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-4px); }
+}
+
+@keyframes shimmer {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.7; }
+}
+
+/* ------------------------------------------------------------
+   GOOGLE CALENDAR BUTTON OVERRIDE
+   ------------------------------------------------------------ */
+.google-calendar-scheduling-button {
+  background: var(--cyan) !important;
+  color: var(--navy) !important;
+  border-radius: 8px !important;
+  font-family: var(--font-body) !important;
+  font-weight: 600 !important;
+}
+
+/* ------------------------------------------------------------
+   RESPONSIVE BREAKPOINTS
+   Desktop: >960px | Tablet: 768–960px | Mobile: <768px
+   ------------------------------------------------------------ */
+
+/* Tablet */
+@media (max-width: 960px) {
+  .container,
+  .container-sm {
+    padding: 0 32px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .container,
+  .container-sm {
+    padding: 0 20px;
+  }
+
+  section {
+    padding: 48px 0;
+  }
+
+  .section-angle-top {
+    clip-path: polygon(0 2%, 100% 0%, 100% 100%, 0% 100%);
+    margin-top: -20px;
+    padding-top: 80px;
+  }
+}

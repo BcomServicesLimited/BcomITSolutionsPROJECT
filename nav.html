@@ -1,0 +1,699 @@
+<!-- ============================================================
+     BCOM IT SOLUTIONS — NAV COMPONENT
+     Include at the top of every page body (after GTM noscript tag)
+     ============================================================ -->
+
+<!-- JSON-LD Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Bcom IT Solutions",
+  "telephone": "+61730418993",
+  "email": "support@bcomservices.com",
+  "url": "https://bcomservices.com.au",
+  "areaServed": ["Gold Coast","Southport","Burleigh Heads","Robina",
+    "Nerang","Helensvale","Coomera","Palm Beach","Varsity Lakes",
+    "Coolangatta","Surfers Paradise","Broadbeach"],
+  "address": {"@type":"PostalAddress","addressRegion":"QLD","addressCountry":"AU"}
+}
+</script>
+
+<header class="site-header" id="site-header">
+
+  <!-- ── TOP UTILITY BAR ── -->
+  <div class="util-bar">
+    <div class="util-bar__inner container">
+      <span class="util-bar__left">
+        <i data-lucide="map-pin"></i>
+        Gold Coast, QLD &nbsp;·&nbsp; Mon–Fri 8am–5pm
+      </span>
+      <span class="util-bar__right">
+        <a href="mailto:support@bcomservices.com" class="util-link">
+          <i data-lucide="mail"></i> support@bcomservices.com
+        </a>
+        <span class="util-divider">|</span>
+        <a href="tel:0730418993" class="util-link">
+          <i data-lucide="phone"></i> 07 3041 8993
+        </a>
+      </span>
+    </div>
+  </div>
+
+  <!-- ── MAIN NAV BAR ── -->
+  <nav class="main-nav" id="main-nav" role="navigation" aria-label="Main navigation">
+    <div class="main-nav__inner container">
+
+      <!-- Logo -->
+      <a href="index.html" class="nav-logo" aria-label="Bcom IT Solutions — Home">
+        <!-- Toggle Switch SVG Icon -->
+        <svg class="nav-logo__icon" width="36" height="22" viewBox="0 0 36 22" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect x="1" y="1" width="34" height="20" rx="10" fill="#0d1f3c" stroke="#0d1f3c" stroke-width="1.5"/>
+          <circle cx="11" cy="11" r="7.5" fill="white" stroke="#0d1f3c" stroke-width="1.5"/>
+        </svg>
+        <span class="nav-logo__text">
+          <span class="nav-logo__bcom">BCOM</span><span class="nav-logo__its"> IT SOLUTIONS</span>
+        </span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <ul class="nav-links" role="list">
+
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">Home</a>
+        </li>
+
+        <!-- Residential Dropdown -->
+        <li class="nav-item nav-item--dropdown" id="dropdown-residential">
+          <button class="nav-link nav-link--dropdown" aria-haspopup="true" aria-expanded="false" aria-controls="menu-residential">
+            Residential <i data-lucide="chevron-down" class="chevron"></i>
+          </button>
+          <div class="dropdown-menu" id="menu-residential" role="menu">
+            <p class="dropdown-label">Home Services</p>
+            <a href="computer-repairs-gold-coast.html" class="dropdown-item" role="menuitem">
+              <span class="dropdown-item__icon"><i data-lucide="wrench"></i></span>
+              <span class="dropdown-item__text">
+                <strong>Computer Repair</strong>
+                <span>On-site repair &amp; software support</span>
+              </span>
+            </a>
+            <a href="computer-networking-service-gold-coast.html" class="dropdown-item" role="menuitem">
+              <span class="dropdown-item__icon"><i data-lucide="wifi"></i></span>
+              <span class="dropdown-item__text">
+                <strong>Networking &amp; WiFi</strong>
+                <span>Installation, mesh systems &amp; troubleshooting</span>
+              </span>
+            </a>
+            <a href="home-users.html" class="dropdown-footer" role="menuitem">
+              View all residential services <i data-lucide="arrow-right"></i>
+            </a>
+          </div>
+        </li>
+
+        <!-- Business Dropdown -->
+        <li class="nav-item nav-item--dropdown" id="dropdown-business">
+          <button class="nav-link nav-link--dropdown" aria-haspopup="true" aria-expanded="false" aria-controls="menu-business">
+            Business <i data-lucide="chevron-down" class="chevron"></i>
+          </button>
+          <div class="dropdown-menu" id="menu-business" role="menu">
+            <p class="dropdown-label">Business Services</p>
+            <a href="it-support-and-services-gold-coast.html" class="dropdown-item" role="menuitem">
+              <span class="dropdown-item__icon"><i data-lucide="monitor"></i></span>
+              <span class="dropdown-item__text">
+                <strong>IT Support &amp; Services</strong>
+                <span>Managed IT for Gold Coast businesses</span>
+              </span>
+            </a>
+            <a href="telecommunications-contractor-gold-coast.html" class="dropdown-item" role="menuitem">
+              <span class="dropdown-item__icon"><i data-lucide="phone-call"></i></span>
+              <span class="dropdown-item__text">
+                <strong>Telecommunications</strong>
+                <span>Cabling, NBN &amp; phone systems</span>
+              </span>
+            </a>
+            <a href="computer-consultant-gold-coast.html" class="dropdown-item" role="menuitem">
+              <span class="dropdown-item__icon"><i data-lucide="lightbulb"></i></span>
+              <span class="dropdown-item__text">
+                <strong>IT Consulting</strong>
+                <span>Strategy, planning &amp; advisory</span>
+              </span>
+            </a>
+            <a href="business.html" class="dropdown-footer" role="menuitem">
+              View all business services <i data-lucide="arrow-right"></i>
+            </a>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a href="support.html" class="nav-link">
+            <span class="status-dot" aria-hidden="true"></span>Support
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a href="about.html" class="nav-link">About</a>
+        </li>
+
+      </ul>
+
+      <!-- CTA Button -->
+      <a href="contact.html" class="btn-primary nav-cta">Contact Us</a>
+
+      <!-- Hamburger (mobile) -->
+      <button class="nav-hamburger" id="nav-hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-drawer">
+        <i data-lucide="menu"></i>
+      </button>
+
+    </div>
+  </nav>
+
+  <!-- ── MOBILE DRAWER ── -->
+  <div class="mobile-drawer" id="mobile-drawer" aria-hidden="true" role="dialog" aria-label="Mobile navigation">
+    <div class="mobile-drawer__header">
+      <a href="index.html" class="nav-logo" aria-label="Bcom IT Solutions — Home">
+        <svg class="nav-logo__icon" width="32" height="20" viewBox="0 0 36 22" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect x="1" y="1" width="34" height="20" rx="10" fill="#0d1f3c" stroke="#0d1f3c" stroke-width="1.5"/>
+          <circle cx="11" cy="11" r="7.5" fill="white" stroke="#0d1f3c" stroke-width="1.5"/>
+        </svg>
+        <span class="nav-logo__text">
+          <span class="nav-logo__bcom">BCOM</span><span class="nav-logo__its"> IT SOLUTIONS</span>
+        </span>
+      </a>
+      <button class="mobile-drawer__close" id="mobile-drawer-close" aria-label="Close navigation menu">
+        <i data-lucide="x"></i>
+      </button>
+    </div>
+
+    <nav class="mobile-drawer__nav" aria-label="Mobile navigation">
+      <ul role="list">
+
+        <li>
+          <a href="index.html" class="mobile-link">Home</a>
+        </li>
+
+        <!-- Mobile Residential Accordion -->
+        <li class="mobile-accordion" id="mobile-accordion-residential">
+          <button class="mobile-link mobile-link--accordion" aria-expanded="false">
+            Residential <i data-lucide="chevron-down" class="chevron"></i>
+          </button>
+          <ul class="mobile-accordion__panel" role="list" hidden>
+            <li><a href="computer-repairs-gold-coast.html" class="mobile-sub-link"><i data-lucide="wrench"></i> Computer Repair</a></li>
+            <li><a href="computer-networking-service-gold-coast.html" class="mobile-sub-link"><i data-lucide="wifi"></i> Networking &amp; WiFi</a></li>
+            <li><a href="home-users.html" class="mobile-sub-link mobile-sub-link--all">View all residential services <i data-lucide="arrow-right"></i></a></li>
+          </ul>
+        </li>
+
+        <!-- Mobile Business Accordion -->
+        <li class="mobile-accordion" id="mobile-accordion-business">
+          <button class="mobile-link mobile-link--accordion" aria-expanded="false">
+            Business <i data-lucide="chevron-down" class="chevron"></i>
+          </button>
+          <ul class="mobile-accordion__panel" role="list" hidden>
+            <li><a href="it-support-and-services-gold-coast.html" class="mobile-sub-link"><i data-lucide="monitor"></i> IT Support &amp; Services</a></li>
+            <li><a href="telecommunications-contractor-gold-coast.html" class="mobile-sub-link"><i data-lucide="phone-call"></i> Telecommunications</a></li>
+            <li><a href="computer-consultant-gold-coast.html" class="mobile-sub-link"><i data-lucide="lightbulb"></i> IT Consulting</a></li>
+            <li><a href="business.html" class="mobile-sub-link mobile-sub-link--all">View all business services <i data-lucide="arrow-right"></i></a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="support.html" class="mobile-link"><span class="status-dot" aria-hidden="true"></span>Support</a>
+        </li>
+
+        <li>
+          <a href="about.html" class="mobile-link">About</a>
+        </li>
+
+      </ul>
+
+      <a href="contact.html" class="btn-primary mobile-cta">Contact Us</a>
+    </nav>
+  </div>
+
+  <!-- Mobile overlay -->
+  <div class="mobile-overlay" id="mobile-overlay" aria-hidden="true"></div>
+
+</header>
+
+<!-- ============================================================
+     NAV STYLES
+     ============================================================ -->
+<style>
+/* ── Utility Bar ── */
+.util-bar {
+  background-color: #f0f9fb;
+  border-bottom: 1px solid #e2f5f8;
+}
+.util-bar__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.71rem;
+  color: #4a5568;
+  gap: 12px;
+}
+.util-bar__left {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.util-bar__right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.util-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: #00c8e0;
+  text-decoration: none;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.71rem;
+  transition: opacity 0.2s;
+}
+.util-link:hover { opacity: 0.8; }
+.util-divider { color: #cbd5e1; }
+.util-bar [data-lucide] { width: 13px; height: 13px; stroke-width: 2; }
+
+/* ── Main Nav ── */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+}
+.main-nav {
+  background-color: #ffffff;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.08), 0 2px 16px rgba(0,0,0,0.06);
+  transition: box-shadow 0.3s ease;
+}
+.main-nav.scrolled {
+  box-shadow: 0 2px 24px rgba(0,0,0,0.12);
+}
+.main-nav__inner {
+  display: flex;
+  align-items: center;
+  height: 68px;
+  gap: 32px;
+}
+
+/* ── Logo ── */
+.nav-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+.nav-logo__icon { display: block; }
+.nav-logo__text {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1;
+  letter-spacing: -0.01em;
+}
+.nav-logo__bcom {
+  font-weight: 700;
+  color: #0d1f3c;
+}
+.nav-logo__its {
+  font-weight: 700;
+  color: #00c8e0;
+}
+
+/* ── Nav Links ── */
+.nav-links {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 4px;
+  margin: 0 auto;
+  padding: 0;
+}
+.nav-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 8px 12px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #0d1f3c;
+  text-decoration: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s, border-color 0.2s;
+  white-space: nowrap;
+}
+.nav-link:hover,
+.nav-link.active {
+  color: #00c8e0;
+}
+.nav-link.active {
+  border-bottom-color: #00c8e0;
+}
+.nav-link .chevron {
+  width: 16px;
+  height: 16px;
+  transition: transform 0.25s ease;
+  stroke-width: 2.5;
+}
+.nav-item--dropdown.open .nav-link .chevron {
+  transform: rotate(180deg);
+}
+
+/* ── CTA ── */
+.nav-cta {
+  flex-shrink: 0;
+  margin-left: auto;
+}
+
+/* ── Dropdown Menu ── */
+.nav-item--dropdown {
+  position: relative;
+}
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 300px;
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+  padding: 12px;
+  z-index: 200;
+}
+.nav-item--dropdown.open .dropdown-menu {
+  display: block;
+  animation: dropdown-in 0.18s ease;
+}
+@keyframes dropdown-in {
+  from { opacity: 0; transform: translateX(-50%) translateY(-6px); }
+  to   { opacity: 1; transform: translateX(-50%) translateY(0); }
+}
+.dropdown-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.65rem;
+  font-weight: 500;
+  color: #00c8e0;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 4px 12px 8px;
+  margin: 0;
+}
+.dropdown-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #0d1f3c;
+  border-left: 3px solid transparent;
+  transition: background 0.15s, border-color 0.15s;
+}
+#menu-residential .dropdown-item:hover {
+  background: #f0fdf4;
+  border-left-color: #10b981;
+}
+#menu-business .dropdown-item:hover {
+  background: #f0f9fb;
+  border-left-color: #00c8e0;
+}
+.dropdown-item__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background: rgba(0,200,224,0.1);
+  flex-shrink: 0;
+}
+.dropdown-item__icon [data-lucide] {
+  width: 18px;
+  height: 18px;
+  stroke: #0d1f3c;
+}
+.dropdown-item__text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.dropdown-item__text strong {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #0d1f3c;
+}
+.dropdown-item__text span {
+  font-size: 0.78rem;
+  color: #4a5568;
+  line-height: 1.4;
+}
+.dropdown-footer {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 12px 4px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #00c8e0;
+  text-decoration: none;
+  border-top: 1px solid #f1f5f9;
+  margin-top: 4px;
+  transition: gap 0.2s;
+}
+.dropdown-footer:hover { gap: 10px; }
+.dropdown-footer [data-lucide] { width: 14px; height: 14px; }
+
+/* ── Hamburger ── */
+.nav-hamburger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #0d1f3c;
+  padding: 6px;
+  margin-left: auto;
+}
+.nav-hamburger [data-lucide] { width: 26px; height: 26px; stroke-width: 2; }
+
+/* ── Mobile Drawer ── */
+.mobile-drawer {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: min(340px, 90vw);
+  height: 100vh;
+  background: white;
+  z-index: 1100;
+  overflow-y: auto;
+  transform: translateX(100%);
+  transition: transform 0.3s cubic-bezier(0.4,0,0.2,1);
+  box-shadow: -4px 0 32px rgba(0,0,0,0.12);
+}
+.mobile-drawer.open {
+  transform: translateX(0);
+}
+.mobile-drawer__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  border-bottom: 1px solid #e2e8f0;
+}
+.mobile-drawer__close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #0d1f3c;
+  padding: 6px;
+}
+.mobile-drawer__close [data-lucide] { width: 24px; height: 24px; stroke-width: 2; }
+.mobile-drawer__nav {
+  padding: 12px 0 32px;
+}
+.mobile-drawer__nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.mobile-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  padding: 14px 24px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #0d1f3c;
+  text-decoration: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  border-bottom: 1px solid #f1f5f9;
+  transition: color 0.2s, background 0.2s;
+  text-align: left;
+}
+.mobile-link:hover { color: #00c8e0; background: #f0f9fb; }
+.mobile-link .chevron { margin-left: auto; width: 18px; height: 18px; transition: transform 0.25s; }
+.mobile-accordion.open .mobile-link .chevron { transform: rotate(180deg); }
+.mobile-accordion__panel {
+  background: #f8fafb;
+  padding: 4px 0;
+  list-style: none;
+}
+.mobile-sub-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 11px 24px 11px 36px;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #4a5568;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.mobile-sub-link:hover { color: #00c8e0; }
+.mobile-sub-link [data-lucide] { width: 16px; height: 16px; }
+.mobile-sub-link--all {
+  font-weight: 600;
+  color: #00c8e0;
+  font-size: 0.85rem;
+}
+.mobile-cta {
+  display: block;
+  margin: 20px 24px 0;
+  text-align: center;
+}
+
+/* ── Mobile Overlay ── */
+.mobile-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(13,31,60,0.45);
+  z-index: 1050;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.mobile-overlay.open { opacity: 1; }
+
+/* ── Responsive ── */
+@media (max-width: 960px) {
+  .nav-links,
+  .nav-cta {
+    display: none;
+  }
+  .nav-hamburger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .mobile-drawer,
+  .mobile-overlay {
+    display: block;
+  }
+  .main-nav__inner {
+    justify-content: space-between;
+  }
+}
+</style>
+
+<!-- ============================================================
+     NAV JAVASCRIPT
+     ============================================================ -->
+<script>
+(function () {
+  // ── Scroll shadow ──
+  var nav = document.getElementById('main-nav');
+  window.addEventListener('scroll', function () {
+    nav.classList.toggle('scrolled', window.scrollY > 10);
+  }, { passive: true });
+
+  // ── Desktop dropdowns ──
+  var dropdowns = document.querySelectorAll('.nav-item--dropdown');
+  dropdowns.forEach(function (item) {
+    var btn = item.querySelector('.nav-link--dropdown');
+    function openDropdown() {
+      dropdowns.forEach(function (d) {
+        if (d !== item) {
+          d.classList.remove('open');
+          d.querySelector('.nav-link--dropdown').setAttribute('aria-expanded', 'false');
+        }
+      });
+      item.classList.add('open');
+      btn.setAttribute('aria-expanded', 'true');
+    }
+    function closeDropdown() {
+      item.classList.remove('open');
+      btn.setAttribute('aria-expanded', 'false');
+    }
+    item.addEventListener('mouseenter', openDropdown);
+    item.addEventListener('mouseleave', closeDropdown);
+    btn.addEventListener('click', function () {
+      item.classList.contains('open') ? closeDropdown() : openDropdown();
+    });
+    btn.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') closeDropdown();
+    });
+  });
+
+  // Close dropdowns on outside click
+  document.addEventListener('click', function (e) {
+    dropdowns.forEach(function (item) {
+      if (!item.contains(e.target)) {
+        item.classList.remove('open');
+        item.querySelector('.nav-link--dropdown').setAttribute('aria-expanded', 'false');
+      }
+    });
+  });
+
+  // ── Mobile drawer ──
+  var hamburger  = document.getElementById('nav-hamburger');
+  var drawer     = document.getElementById('mobile-drawer');
+  var overlay    = document.getElementById('mobile-overlay');
+  var closeBtn   = document.getElementById('mobile-drawer-close');
+
+  function openDrawer() {
+    drawer.classList.add('open');
+    overlay.classList.add('open');
+    drawer.removeAttribute('aria-hidden');
+    hamburger.setAttribute('aria-expanded', 'true');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeDrawer() {
+    drawer.classList.remove('open');
+    overlay.classList.remove('open');
+    drawer.setAttribute('aria-hidden', 'true');
+    hamburger.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
+  }
+
+  hamburger.addEventListener('click', openDrawer);
+  closeBtn.addEventListener('click', closeDrawer);
+  overlay.addEventListener('click', closeDrawer);
+
+  // ── Mobile accordions ──
+  var accordions = document.querySelectorAll('.mobile-accordion');
+  accordions.forEach(function (acc) {
+    var btn   = acc.querySelector('.mobile-link--accordion');
+    var panel = acc.querySelector('.mobile-accordion__panel');
+    btn.addEventListener('click', function () {
+      var isOpen = acc.classList.contains('open');
+      // Close all
+      accordions.forEach(function (a) {
+        a.classList.remove('open');
+        a.querySelector('.mobile-link--accordion').setAttribute('aria-expanded', 'false');
+        a.querySelector('.mobile-accordion__panel').hidden = true;
+      });
+      // Toggle clicked
+      if (!isOpen) {
+        acc.classList.add('open');
+        btn.setAttribute('aria-expanded', 'true');
+        panel.hidden = false;
+      }
+    });
+  });
+
+  // ── Active link highlight ──
+  var currentPath = window.location.pathname.split('/').pop() || 'index.html';
+  document.querySelectorAll('.nav-link[href], .mobile-link[href]').forEach(function (link) {
+    if (link.getAttribute('href') === currentPath) {
+      link.classList.add('active');
+    }
+  });
+})();
+</script>

@@ -1,0 +1,3005 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google Tag Manager — FIRST in head -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-KQRG3BSF');</script>
+  <!-- End Google Tag Manager -->
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="geo.region" content="AU-QLD">
+  <meta name="geo.placename" content="Gold Coast">
+  <title>IT Support Gold Coast | Bcom IT Solutions</title>
+  <meta name="description" content="Expert IT support &amp; services across the Gold Coast. Computer repair, WiFi installation &amp; managed IT for homes and businesses. Serving Southport, Burleigh Heads, Robina &amp; surrounds. Call 07 3041 8993.">
+  <link rel="canonical" href="https://bcomservices.com.au/index.html">
+  <link rel="icon" href="BcomFavicon.gif" type="image/gif">
+  <link rel="stylesheet" href="design-system.css">
+
+  <style>
+    /* ── Hero Section ── */
+    .hero {
+      position: relative;
+      min-height: 75vh;
+      background-image: url('hero-bg.webp');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+    }
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(30,58,95,0.72) 0%, rgba(13,31,60,0.58) 100%);
+      z-index: 1;
+    }
+    .hero-dots {
+      position: absolute;
+      inset: 0;
+      z-index: 2;
+      background-image: radial-gradient(rgba(0,200,224,0.15) 1px, transparent 1px);
+      background-size: 28px 28px;
+      opacity: 0.4;
+      pointer-events: none;
+    }
+    .hero-glow {
+      position: absolute;
+      right: 5%;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, rgba(0,200,224,0.15) 0%, transparent 70%);
+      z-index: 2;
+      pointer-events: none;
+    }
+    .hero-content {
+      position: relative;
+      z-index: 3;
+      width: 100%;
+      padding: 56px 0;
+    }
+    .hero-inner {
+      display: grid;
+      grid-template-columns: 60% 40%;
+      gap: 48px;
+      align-items: center;
+    }
+
+    /* ── Hero Left ── */
+    .hero-left {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    /* Badge */
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(16,185,129,0.1);
+      border: 1px solid #10b981;
+      border-radius: 20px;
+      padding: 6px 14px;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.72rem;
+      color: rgba(255,255,255,0.9);
+      width: fit-content;
+      opacity: 0;
+      animation: fade-up 0.5s ease forwards 0s;
+    }
+
+    /* H1 */
+    .hero-h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      color: white;
+      line-height: 1.15;
+      letter-spacing: -0.03em;
+      margin: 0;
+      opacity: 0;
+      animation: fade-up 0.5s ease forwards 0.1s;
+    }
+
+    /* Subheading */
+    .hero-sub {
+      font-size: 1.1rem;
+      color: rgba(255,255,255,0.8);
+      line-height: 1.7;
+      margin: 0;
+      max-width: 520px;
+      opacity: 0;
+      animation: fade-up 0.5s ease forwards 0.2s;
+    }
+
+    /* Buttons */
+    .hero-buttons {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      opacity: 0;
+      animation: fade-up 0.5s ease forwards 0.3s;
+    }
+
+    /* Trust Strip */
+    .hero-trust {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      opacity: 0;
+      animation: fade-up 0.5s ease forwards 0.4s;
+    }
+    .hero-trust__item {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.82rem;
+      color: rgba(255,255,255,0.7);
+    }
+    .hero-trust__item [data-lucide] {
+      width: 15px;
+      height: 15px;
+      stroke: #00c8e0;
+      flex-shrink: 0;
+    }
+    .hero-trust__item .star-filled {
+      stroke: #f59e0b;
+      fill: #f59e0b;
+    }
+
+    /* ── Hero Right — Availability Card ── */
+    .hero-card {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(0,200,224,0.25);
+      border-top: 2px solid #00c8e0;
+      border-radius: 16px;
+      padding: 28px;
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      animation: card-float 3s ease-in-out infinite;
+    }
+    .hero-card__title {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 1rem;
+      font-weight: 600;
+      color: white;
+      margin-bottom: 20px;
+    }
+    .hero-card__services {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+    .hero-card__service {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.75rem;
+      color: rgba(255,255,255,0.7);
+    }
+    .hero-card__service [data-lucide] {
+      width: 15px;
+      height: 15px;
+      stroke: #00c8e0;
+      flex-shrink: 0;
+    }
+    .hero-card__divider {
+      border: none;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      margin: 0 0 16px;
+    }
+    .hero-card__response {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.75rem;
+      color: rgba(255,255,255,0.6);
+      margin-bottom: 20px;
+    }
+    .hero-card__response [data-lucide] {
+      width: 15px;
+      height: 15px;
+      stroke: #00c8e0;
+      flex-shrink: 0;
+    }
+
+    /* ── Animations ── */
+    @keyframes fade-up {
+      from { opacity: 0; transform: translateY(16px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes card-float {
+      0%, 100% { transform: translateY(0); }
+      50%       { transform: translateY(-8px); }
+    }
+
+    /* ── Services Section ── */
+    .services-section {
+      position: relative;
+      background-color: #f8fafb;
+      background-image: repeating-linear-gradient(
+        -45deg, transparent, transparent 40px,
+        rgba(0,200,224,0.02) 40px, rgba(0,200,224,0.02) 80px);
+      padding: 80px 0;
+    }
+    .services-header {
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto 48px;
+    }
+    .services-header h2 {
+      margin-bottom: 12px;
+    }
+    .services-header__sub {
+      font-size: 1.05rem;
+      color: #4a5568;
+      margin-bottom: 24px;
+    }
+    .services-intro {
+      max-width: 720px;
+      margin: 0 auto;
+      text-align: left;
+    }
+    .services-intro p {
+      color: #4a5568;
+      font-size: 0.97rem;
+      line-height: 1.8;
+      margin-bottom: 16px;
+    }
+    .services-intro p:last-child { margin-bottom: 0; }
+    .services-columns {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      position: relative;
+      margin-top: 48px;
+    }
+    /* Divider — overlaid on the grid via negative margin trick */
+    .services-divider {
+      display: block;
+      width: 1px;
+      height: 80%;
+      background: linear-gradient(to bottom, transparent, #00c8e0, transparent);
+      pointer-events: none;
+      position: absolute;
+      left: calc(50% + 24px);
+      top: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+    }
+    .services-col {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .services-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.72rem;
+      font-weight: 500;
+      border-radius: 20px;
+      padding: 6px 14px;
+      width: fit-content;
+      letter-spacing: 0.04em;
+    }
+    .services-badge--green {
+      color: #10b981;
+      background: rgba(16,185,129,0.1);
+      border: 1px solid rgba(16,185,129,0.3);
+      box-shadow: 0 0 24px rgba(16,185,129,0.15);
+    }
+    .services-badge--cyan {
+      color: #00c8e0;
+      background: rgba(0,200,224,0.1);
+      border: 1px solid rgba(0,200,224,0.3);
+      box-shadow: 0 0 24px rgba(0,200,224,0.15);
+    }
+    .services-badge [data-lucide] {
+      width: 13px;
+      height: 13px;
+      stroke-width: 2;
+    }
+    .services-card {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .services-card h3 {
+      font-size: 1.05rem;
+      color: #0d1f3c;
+      margin: 0;
+    }
+    .services-card p {
+      font-size: 0.88rem;
+      color: #4a5568;
+      line-height: 1.6;
+      margin: 0;
+    }
+    .services-card__link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: #00c8e0;
+      text-decoration: none;
+      margin-top: 4px;
+      transition: gap 0.2s;
+    }
+    .services-card__link:hover { gap: 10px; color: #00c8e0; }
+    .services-card__link [data-lucide] { width: 14px; height: 14px; }
+    .services-booking {
+      margin-top: 8px;
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 960px) {
+      .hero-inner {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+      .hero-glow { display: none; }
+      .hero-h1 { font-size: 2.4rem; }
+    }
+    /* ── Stats Bar ── */
+    .stats-bar {
+      background: linear-gradient(135deg, #1e3a5f 0%, #0d1f3c 100%);
+      border-top: 3px solid #00c8e0;
+      padding: 56px 0;
+    }
+    .stats-grid {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0;
+      flex-wrap: wrap;
+    }
+    .stat-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+      padding: 0 48px;
+      text-align: center;
+    }
+    .stat-value {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #00c8e0;
+      line-height: 1;
+      text-shadow: 0 0 32px rgba(0,200,224,0.4);
+      animation: shimmer 3s ease-in-out infinite;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .stat-value--text {
+      animation: shimmer 3s ease-in-out infinite;
+    }
+    .stat-star {
+      width: 22px;
+      height: 22px;
+      fill: #f59e0b;
+      stroke: #f59e0b;
+    }
+    .stat-label {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 400;
+      color: white;
+      letter-spacing: 0.02em;
+    }
+    .stat-divider {
+      width: 1px;
+      height: 56px;
+      background: rgba(255,255,255,0.1);
+      flex-shrink: 0;
+    }
+
+    /* ── Reviews Section ── */
+    .reviews-section {
+      padding: 80px 0;
+    }
+    .reviews-header {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+    .reviews-header h2 {
+      margin: 0;
+    }
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+    .review-card {
+      position: relative;
+      background: white;
+      border: 1px solid #e2e8f0;
+      border-top: 3px solid #00c8e0;
+      border-radius: 12px;
+      padding: 28px 24px 24px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .review-card::before {
+      content: '\201C';
+      position: absolute;
+      top: -10px;
+      left: 16px;
+      font-size: 8rem;
+      line-height: 1;
+      color: rgba(0,200,224,0.08);
+      font-family: Georgia, serif;
+      pointer-events: none;
+    }
+    .review-card__stars {
+      display: flex;
+      gap: 3px;
+    }
+    .review-card__stars [data-lucide] {
+      width: 16px;
+      height: 16px;
+    }
+    .review-card__text {
+      font-size: 0.92rem;
+      color: #4a5568;
+      line-height: 1.7;
+      margin: 0;
+      font-style: normal;
+      flex: 1;
+    }
+    .review-card__author {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      border-top: 1px solid #f1f5f9;
+      padding-top: 12px;
+      margin-top: auto;
+    }
+    .review-card__author strong {
+      font-size: 0.88rem;
+      color: #0d1f3c;
+    }
+    .review-card__location {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.72rem;
+      color: #94a3b8;
+    }
+    .review-card__location [data-lucide] {
+      width: 12px;
+      height: 12px;
+      stroke: #00c8e0;
+    }
+
+    /* ── Trust Badges ── */
+    .trust-badges {
+      background-color: #f8fafb;
+      padding: 40px 0;
+    }
+    .trust-badges__grid {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 0;
+    }
+    .trust-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 0 28px;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: #0d1f3c;
+      text-align: center;
+    }
+    .trust-badge [data-lucide] {
+      width: 18px;
+      height: 18px;
+      stroke: #00c8e0;
+      flex-shrink: 0;
+    }
+    .trust-badge__detail {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.72rem;
+      color: #94a3b8;
+    }
+    .trust-badge__divider {
+      width: 1px;
+      height: 32px;
+      background: #e2e8f0;
+      flex-shrink: 0;
+    }
+
+    /* ── Service Areas Section ── */
+    .areas-section {
+      background-color: #e6fafd;
+      padding: 80px 0;
+    }
+    .areas-header {
+      max-width: 640px;
+      margin: 0 auto 32px;
+      text-align: center;
+    }
+    .areas-header h2 {
+      margin-bottom: 16px;
+    }
+    .areas-intro {
+      font-size: 0.97rem;
+      color: #4a5568;
+      line-height: 1.8;
+      margin-bottom: 12px;
+    }
+    .areas-intro a {
+      color: #00c8e0;
+      font-weight: 600;
+    }
+    .areas-intro:last-child { margin-bottom: 0; }
+    .areas-columns {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: start;
+      margin-top: 40px;
+    }
+    /* Suburb Pills */
+    .suburb-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 0;
+    }
+    .suburb-pill {
+      display: inline-block;
+      border: 1px solid #0d1f3c;
+      color: #0d1f3c;
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 500;
+      cursor: default;
+      transition: all 0.2s ease;
+    }
+    .suburb-pill:hover {
+      background: linear-gradient(135deg, #0d1f3c, #1e3a5f);
+      color: white;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      transform: translateY(-2px);
+    }
+    /* Map */
+    .areas-map {
+      margin-top: 24px;
+    }
+    .areas-map iframe {
+      display: block;
+      width: 100%;
+      height: 400px;
+      border: 0;
+      border-radius: 12px;
+    }
+    /* Coverage Card */
+    .coverage-card {
+      background: white;
+      border-radius: 16px;
+      padding: 32px;
+      border-left: 4px solid #00c8e0;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.08);
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .coverage-card__heading {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .coverage-card__heading [data-lucide] {
+      width: 22px;
+      height: 22px;
+      stroke: #00c8e0;
+      flex-shrink: 0;
+    }
+    .coverage-card__heading h3 {
+      font-size: 1.1rem;
+      color: #0d1f3c;
+      margin: 0;
+    }
+    .coverage-card__text {
+      font-size: 0.92rem;
+      color: #4a5568;
+      line-height: 1.7;
+      margin: 0;
+    }
+    .coverage-callout {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: #e6fafd;
+      border-left: 3px solid #00c8e0;
+      padding: 16px;
+      border-radius: 0 8px 8px 0;
+      font-size: 0.88rem;
+      color: #0d1f3c;
+      font-weight: 500;
+    }
+    .coverage-callout [data-lucide] {
+      width: 16px;
+      height: 16px;
+      stroke: #00c8e0;
+      flex-shrink: 0;
+    }
+    .coverage-card__booking {
+      margin-top: 4px;
+    }
+    .coverage-card__call {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.82rem;
+      color: #4a5568;
+      margin: 0;
+    }
+    .coverage-card__call a {
+      color: #00c8e0;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .coverage-card__call a:hover { text-decoration: underline; }
+    /* LLM Entity Paragraph */
+    .areas-entity {
+      font-size: 0.78rem;
+      color: #94a3b8;
+      line-height: 1.7;
+      margin-top: 20px;
+    }
+
+    /* ── Closing CTA Section ── */
+    .cta-section {
+      position: relative;
+      overflow: hidden;
+      background: linear-gradient(135deg, #0d1f3c 0%, #1e3a5f 50%, #0d2d3a 100%);
+      border-top: 3px solid #00c8e0;
+      clip-path: polygon(0 8%, 100% 0%, 100% 100%, 0% 100%);
+      padding: 100px 0 80px;
+    }
+    /* Decorative blobs */
+    .cta-blob {
+      position: absolute;
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 0;
+    }
+    .cta-blob--tl {
+      width: 600px;
+      height: 600px;
+      background: rgba(0,200,224,0.06);
+      top: -100px;
+      left: -150px;
+      filter: blur(80px);
+    }
+    .cta-blob--br {
+      width: 400px;
+      height: 400px;
+      background: rgba(0,200,224,0.04);
+      bottom: -80px;
+      right: -80px;
+      filter: blur(60px);
+    }
+    /* Content */
+    .cta-content {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 20px;
+    }
+    .cta-label {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.65rem;
+      color: #00c8e0;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      margin: 0;
+    }
+    .cta-heading {
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: white;
+      margin: 0;
+      line-height: 1.2;
+    }
+    .cta-sub {
+      font-size: 1.05rem;
+      color: rgba(255,255,255,0.75);
+      max-width: 540px;
+      line-height: 1.7;
+      margin: 0;
+    }
+    .cta-buttons {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 4px;
+    }
+    .cta-reassurance {
+      display: flex;
+      gap: 28px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 8px;
+    }
+    .cta-reassurance__item {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.6);
+    }
+    .cta-reassurance__item [data-lucide] {
+      width: 15px;
+      height: 15px;
+      stroke: rgba(255,255,255,0.5);
+    }
+    /* CTA fade-up animation */
+    .cta-anim {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.55s ease, transform 0.55s ease;
+    }
+    .cta-anim.cta-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ── SEO Content Section ── */
+    .seo-content-section {
+      background: white;
+      padding: 64px 0;
+    }
+    .seo-content-inner {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+    .seo-content-inner h2 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: #0d1f3c;
+      margin-bottom: 24px;
+      line-height: 1.3;
+    }
+    .seo-content-inner h3 {
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: #0d1f3c;
+      margin: 36px 0 12px;
+    }
+    .seo-content-inner p {
+      font-size: 0.97rem;
+      color: #4a5568;
+      line-height: 1.85;
+      margin-bottom: 18px;
+    }
+    .seo-content-inner p:last-child { margin-bottom: 0; }
+    .seo-content-inner a {
+      color: #00c8e0;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .seo-content-inner a:hover { text-decoration: underline; }
+
+    /* ── FAQ Section ── */
+    .faq-section {
+      padding: 80px 0;
+    }
+    .faq-header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .faq-header h2 {
+      margin: 0;
+    }
+    .faq-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    .faq-item {
+      border-bottom: 1px solid #e2e8f0;
+    }
+    .faq-item:last-child {
+      border-bottom: none;
+    }
+    .faq-question {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      width: 100%;
+      padding: 20px 24px;
+      background: white;
+      border: none;
+      cursor: pointer;
+      text-align: left;
+      transition: background 0.2s;
+    }
+    .faq-question:hover {
+      background: #f8fafb;
+    }
+    .faq-question h3 {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #0d1f3c;
+      margin: 0;
+      line-height: 1.4;
+      flex: 1;
+    }
+    .faq-chevron {
+      width: 18px;
+      height: 18px;
+      stroke: #00c8e0;
+      stroke-width: 2.5;
+      flex-shrink: 0;
+      transition: transform 0.25s ease;
+    }
+    .faq-item.open .faq-chevron {
+      transform: rotate(180deg);
+    }
+    .faq-item.open .faq-question {
+      border-left: 4px solid #00c8e0;
+      padding-left: 20px;
+    }
+    .faq-answer {
+      padding: 0 24px 20px 24px;
+      background: #f8fafb;
+      border-left: 4px solid #00c8e0;
+    }
+    .faq-answer p {
+      font-size: 0.93rem;
+      color: #4a5568;
+      line-height: 1.75;
+      margin: 0;
+    }
+    .faq-answer a {
+      color: #00c8e0;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .faq-answer a:hover { text-decoration: underline; }
+
+    @media (max-width: 768px) {
+      .services-columns {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+      .services-divider { display: none; }
+      .services-section { padding: 48px 0; }
+      .stats-grid { gap: 24px; }
+      .stat-item { padding: 16px 24px; }
+      .stat-divider { display: none; }
+      .reviews-grid { grid-template-columns: 1fr; gap: 20px; }
+      .reviews-section { padding: 48px 0; }
+      .trust-badges__grid { gap: 16px; flex-direction: column; }
+      .trust-badge { padding: 0; }
+      .trust-badge__divider { display: none; }
+      .areas-section { padding: 48px 0; }
+      .areas-columns { grid-template-columns: 1fr; gap: 32px; }
+      .areas-map iframe { height: 280px; }
+      .faq-section { padding: 48px 0; }
+      .faq-question h3 { font-size: 0.95rem; }
+      .hero {
+        min-height: auto;
+      }
+      .hero-content {
+        padding: 60px 0;
+      }
+      .hero-h1 { font-size: 2rem; }
+      .hero-sub { font-size: 1rem; }
+      .hero-trust { gap: 14px; }
+      .hero-card { padding: 20px; }
+      .hero-card__services { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) — FIRST in body -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQRG3BSF"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <!-- NAV — inlined from nav.html -->
+<!-- ============================================================
+     BCOM IT SOLUTIONS — NAV COMPONENT
+     Include at the top of every page body (after GTM noscript tag)
+     ============================================================ -->
+
+<!-- JSON-LD Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Bcom IT Solutions",
+  "telephone": "+61730418993",
+  "email": "support@bcomservices.com",
+  "url": "https://bcomservices.com.au",
+  "areaServed": ["Gold Coast","Southport","Burleigh Heads","Robina",
+    "Nerang","Helensvale","Coomera","Palm Beach","Varsity Lakes",
+    "Coolangatta","Surfers Paradise","Broadbeach"],
+  "address": {"@type":"PostalAddress","addressRegion":"QLD","addressCountry":"AU"}
+}
+</script>
+
+<header class="site-header" id="site-header">
+
+  <!-- ── TOP UTILITY BAR ── -->
+  <div class="util-bar">
+    <div class="util-bar__inner container">
+      <span class="util-bar__left">
+        <i data-lucide="map-pin"></i>
+        Gold Coast, QLD &nbsp;·&nbsp; Mon–Fri 8am–5pm
+      </span>
+      <span class="util-bar__right">
+        <a href="mailto:support@bcomservices.com" class="util-link">
+          <i data-lucide="mail"></i> support@bcomservices.com
+        </a>
+        <span class="util-divider">|</span>
+        <a href="tel:0730418993" class="util-link">
+          <i data-lucide="phone"></i> 07 3041 8993
+        </a>
+      </span>
+    </div>
+  </div>
+
+  <!-- ── MAIN NAV BAR ── -->
+  <nav class="main-nav" id="main-nav" role="navigation" aria-label="Main navigation">
+    <div class="main-nav__inner container">
+
+      <!-- Logo -->
+      <a href="index.html" class="nav-logo" aria-label="Bcom IT Solutions — Home">
+        <!-- Toggle Switch SVG Icon -->
+        <svg class="nav-logo__icon" width="36" height="22" viewBox="0 0 36 22" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect x="1" y="1" width="34" height="20" rx="10" fill="#0d1f3c" stroke="#0d1f3c" stroke-width="1.5"/>
+          <circle cx="11" cy="11" r="7.5" fill="white" stroke="#0d1f3c" stroke-width="1.5"/>
+        </svg>
+        <span class="nav-logo__text">
+          <span class="nav-logo__bcom">BCOM</span><span class="nav-logo__its"> IT SOLUTIONS</span>
+        </span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <ul class="nav-links" role="list">
+
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">Home</a>
+        </li>
+
+        <!-- Residential Dropdown -->
+        <li class="nav-item nav-item--dropdown" id="dropdown-residential">
+          <button class="nav-link nav-link--dropdown" aria-haspopup="true" aria-expanded="false" aria-controls="menu-residential">
+            Residential <i data-lucide="chevron-down" class="chevron"></i>
+          </button>
+          <div class="dropdown-menu" id="menu-residential" role="menu">
+            <p class="dropdown-label">Home Services</p>
+            <a href="computer-repairs-gold-coast.html" class="dropdown-item" role="menuitem">
+              <span class="dropdown-item__icon"><i data-lucide="wrench"></i></span>
+              <span class="dropdown-item__text">
+                <strong>Computer Repair</strong>
+                <span>On-site repair &amp; software support</span>
+              </span>
+            </a>
+            <a href="computer-networking-service-gold-coast.html" class="dropdown-item" role="menuitem">
+              <span class="dropdown-item__icon"><i data-lucide="wifi"></i></span>
+              <span class="dropdown-item__text">
+                <strong>Networking &amp; WiFi</strong>
+                <span>Installation, mesh systems &amp; troubleshooting</span>
+              </span>
+            </a>
+            <a href="home-users.html" class="dropdown-footer" role="menuitem">
+              View all residential services <i data-lucide="arrow-right"></i>
+            </a>
+          </div>
+        </li>
+
+        <!-- Business Dropdown -->
+        <li class="nav-item nav-item--dropdown" id="dropdown-business">
+          <button class="nav-link nav-link--dropdown" aria-haspopup="true" aria-expanded="false" aria-controls="menu-business">
+            Business <i data-lucide="chevron-down" class="chevron"></i>
+          </button>
+          <div class="dropdown-menu" id="menu-business" role="menu">
+            <p class="dropdown-label">Business Services</p>
+            <a href="it-support-and-services-gold-coast.html" class="dropdown-item" role="menuitem">
+              <span class="dropdown-item__icon"><i data-lucide="monitor"></i></span>
+              <span class="dropdown-item__text">
+                <strong>IT Support &amp; Services</strong>
+                <span>Managed IT for Gold Coast businesses</span>
+              </span>
+            </a>
+            <a href="telecommunications-contractor-gold-coast.html" class="dropdown-item" role="menuitem">
+              <span class="dropdown-item__icon"><i data-lucide="phone-call"></i></span>
+              <span class="dropdown-item__text">
+                <strong>Telecommunications</strong>
+                <span>Cabling, NBN &amp; phone systems</span>
+              </span>
+            </a>
+            <a href="computer-consultant-gold-coast.html" class="dropdown-item" role="menuitem">
+              <span class="dropdown-item__icon"><i data-lucide="lightbulb"></i></span>
+              <span class="dropdown-item__text">
+                <strong>IT Consulting</strong>
+                <span>Strategy, planning &amp; advisory</span>
+              </span>
+            </a>
+            <a href="business.html" class="dropdown-footer" role="menuitem">
+              View all business services <i data-lucide="arrow-right"></i>
+            </a>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a href="support.html" class="nav-link">
+            <span class="status-dot" aria-hidden="true"></span>Support
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a href="about.html" class="nav-link">About</a>
+        </li>
+
+      </ul>
+
+      <!-- CTA Button -->
+      <a href="contact.html" class="btn-primary nav-cta">Contact Us</a>
+
+      <!-- Hamburger (mobile) -->
+      <button class="nav-hamburger" id="nav-hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-drawer">
+        <i data-lucide="menu"></i>
+      </button>
+
+    </div>
+  </nav>
+
+  <!-- ── MOBILE DRAWER ── -->
+  <div class="mobile-drawer" id="mobile-drawer" aria-hidden="true" role="dialog" aria-label="Mobile navigation">
+    <div class="mobile-drawer__header">
+      <a href="index.html" class="nav-logo" aria-label="Bcom IT Solutions — Home">
+        <svg class="nav-logo__icon" width="32" height="20" viewBox="0 0 36 22" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect x="1" y="1" width="34" height="20" rx="10" fill="#0d1f3c" stroke="#0d1f3c" stroke-width="1.5"/>
+          <circle cx="11" cy="11" r="7.5" fill="white" stroke="#0d1f3c" stroke-width="1.5"/>
+        </svg>
+        <span class="nav-logo__text">
+          <span class="nav-logo__bcom">BCOM</span><span class="nav-logo__its"> IT SOLUTIONS</span>
+        </span>
+      </a>
+      <button class="mobile-drawer__close" id="mobile-drawer-close" aria-label="Close navigation menu">
+        <i data-lucide="x"></i>
+      </button>
+    </div>
+
+    <nav class="mobile-drawer__nav" aria-label="Mobile navigation">
+      <ul role="list">
+
+        <li>
+          <a href="index.html" class="mobile-link">Home</a>
+        </li>
+
+        <!-- Mobile Residential Accordion -->
+        <li class="mobile-accordion" id="mobile-accordion-residential">
+          <button class="mobile-link mobile-link--accordion" aria-expanded="false">
+            Residential <i data-lucide="chevron-down" class="chevron"></i>
+          </button>
+          <ul class="mobile-accordion__panel" role="list" hidden>
+            <li><a href="computer-repairs-gold-coast.html" class="mobile-sub-link"><i data-lucide="wrench"></i> Computer Repair</a></li>
+            <li><a href="computer-networking-service-gold-coast.html" class="mobile-sub-link"><i data-lucide="wifi"></i> Networking &amp; WiFi</a></li>
+            <li><a href="home-users.html" class="mobile-sub-link mobile-sub-link--all">View all residential services <i data-lucide="arrow-right"></i></a></li>
+          </ul>
+        </li>
+
+        <!-- Mobile Business Accordion -->
+        <li class="mobile-accordion" id="mobile-accordion-business">
+          <button class="mobile-link mobile-link--accordion" aria-expanded="false">
+            Business <i data-lucide="chevron-down" class="chevron"></i>
+          </button>
+          <ul class="mobile-accordion__panel" role="list" hidden>
+            <li><a href="it-support-and-services-gold-coast.html" class="mobile-sub-link"><i data-lucide="monitor"></i> IT Support &amp; Services</a></li>
+            <li><a href="telecommunications-contractor-gold-coast.html" class="mobile-sub-link"><i data-lucide="phone-call"></i> Telecommunications</a></li>
+            <li><a href="computer-consultant-gold-coast.html" class="mobile-sub-link"><i data-lucide="lightbulb"></i> IT Consulting</a></li>
+            <li><a href="business.html" class="mobile-sub-link mobile-sub-link--all">View all business services <i data-lucide="arrow-right"></i></a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="support.html" class="mobile-link"><span class="status-dot" aria-hidden="true"></span>Support</a>
+        </li>
+
+        <li>
+          <a href="about.html" class="mobile-link">About</a>
+        </li>
+
+      </ul>
+
+      <a href="contact.html" class="btn-primary mobile-cta">Contact Us</a>
+    </nav>
+  </div>
+
+  <!-- Mobile overlay -->
+  <div class="mobile-overlay" id="mobile-overlay" aria-hidden="true"></div>
+
+</header>
+
+<!-- ============================================================
+     NAV STYLES
+     ============================================================ -->
+<style>
+/* ── Utility Bar ── */
+.util-bar {
+  background-color: #f0f9fb;
+  border-bottom: 1px solid #e2f5f8;
+}
+.util-bar__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.71rem;
+  color: #4a5568;
+  gap: 12px;
+}
+.util-bar__left {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.util-bar__right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.util-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: #00c8e0;
+  text-decoration: none;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.71rem;
+  transition: opacity 0.2s;
+}
+.util-link:hover { opacity: 0.8; }
+.util-divider { color: #cbd5e1; }
+.util-bar [data-lucide] { width: 13px; height: 13px; stroke-width: 2; }
+
+/* ── Main Nav ── */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+}
+.main-nav {
+  background-color: #ffffff;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.08), 0 2px 16px rgba(0,0,0,0.06);
+  transition: box-shadow 0.3s ease;
+}
+.main-nav.scrolled {
+  box-shadow: 0 2px 24px rgba(0,0,0,0.12);
+}
+.main-nav__inner {
+  display: flex;
+  align-items: center;
+  height: 68px;
+  gap: 32px;
+}
+
+/* ── Logo ── */
+.nav-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+.nav-logo__icon { display: block; }
+.nav-logo__text {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1;
+  letter-spacing: -0.01em;
+}
+.nav-logo__bcom {
+  font-weight: 700;
+  color: #0d1f3c;
+}
+.nav-logo__its {
+  font-weight: 700;
+  color: #00c8e0;
+}
+
+/* ── Nav Links ── */
+.nav-links {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 4px;
+  margin: 0 auto;
+  padding: 0;
+}
+.nav-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 8px 12px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #0d1f3c;
+  text-decoration: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s, border-color 0.2s;
+  white-space: nowrap;
+}
+.nav-link:hover,
+.nav-link.active {
+  color: #00c8e0;
+}
+.nav-link.active {
+  border-bottom-color: #00c8e0;
+}
+.nav-link .chevron {
+  width: 16px;
+  height: 16px;
+  transition: transform 0.25s ease;
+  stroke-width: 2.5;
+}
+.nav-item--dropdown.open .nav-link .chevron {
+  transform: rotate(180deg);
+}
+
+/* ── CTA ── */
+.nav-cta {
+  flex-shrink: 0;
+  margin-left: auto;
+}
+
+/* ── Dropdown Menu ── */
+.nav-item--dropdown {
+  position: relative;
+}
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 300px;
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+  padding: 12px;
+  z-index: 200;
+}
+.nav-item--dropdown.open .dropdown-menu {
+  display: block;
+  animation: dropdown-in 0.18s ease;
+}
+@keyframes dropdown-in {
+  from { opacity: 0; transform: translateX(-50%) translateY(-6px); }
+  to   { opacity: 1; transform: translateX(-50%) translateY(0); }
+}
+.dropdown-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.65rem;
+  font-weight: 500;
+  color: #00c8e0;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 4px 12px 8px;
+  margin: 0;
+}
+.dropdown-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #0d1f3c;
+  border-left: 3px solid transparent;
+  transition: background 0.15s, border-color 0.15s;
+}
+#menu-residential .dropdown-item:hover {
+  background: #f0fdf4;
+  border-left-color: #10b981;
+}
+#menu-business .dropdown-item:hover {
+  background: #f0f9fb;
+  border-left-color: #00c8e0;
+}
+.dropdown-item__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background: rgba(0,200,224,0.1);
+  flex-shrink: 0;
+}
+.dropdown-item__icon [data-lucide] {
+  width: 18px;
+  height: 18px;
+  stroke: #0d1f3c;
+}
+.dropdown-item__text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.dropdown-item__text strong {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #0d1f3c;
+}
+.dropdown-item__text span {
+  font-size: 0.78rem;
+  color: #4a5568;
+  line-height: 1.4;
+}
+.dropdown-footer {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 12px 4px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #00c8e0;
+  text-decoration: none;
+  border-top: 1px solid #f1f5f9;
+  margin-top: 4px;
+  transition: gap 0.2s;
+}
+.dropdown-footer:hover { gap: 10px; }
+.dropdown-footer [data-lucide] { width: 14px; height: 14px; }
+
+/* ── Hamburger ── */
+.nav-hamburger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #0d1f3c;
+  padding: 6px;
+  margin-left: auto;
+}
+.nav-hamburger [data-lucide] { width: 26px; height: 26px; stroke-width: 2; }
+
+/* ── Mobile Drawer ── */
+.mobile-drawer {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: min(340px, 90vw);
+  height: 100vh;
+  background: white;
+  z-index: 1100;
+  overflow-y: auto;
+  transform: translateX(100%);
+  transition: transform 0.3s cubic-bezier(0.4,0,0.2,1);
+  box-shadow: -4px 0 32px rgba(0,0,0,0.12);
+}
+.mobile-drawer.open {
+  transform: translateX(0);
+}
+.mobile-drawer__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  border-bottom: 1px solid #e2e8f0;
+}
+.mobile-drawer__close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #0d1f3c;
+  padding: 6px;
+}
+.mobile-drawer__close [data-lucide] { width: 24px; height: 24px; stroke-width: 2; }
+.mobile-drawer__nav {
+  padding: 12px 0 32px;
+}
+.mobile-drawer__nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.mobile-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  padding: 14px 24px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #0d1f3c;
+  text-decoration: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  border-bottom: 1px solid #f1f5f9;
+  transition: color 0.2s, background 0.2s;
+  text-align: left;
+}
+.mobile-link:hover { color: #00c8e0; background: #f0f9fb; }
+.mobile-link .chevron { margin-left: auto; width: 18px; height: 18px; transition: transform 0.25s; }
+.mobile-accordion.open .mobile-link .chevron { transform: rotate(180deg); }
+.mobile-accordion__panel {
+  background: #f8fafb;
+  padding: 4px 0;
+  list-style: none;
+}
+.mobile-sub-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 11px 24px 11px 36px;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #4a5568;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.mobile-sub-link:hover { color: #00c8e0; }
+.mobile-sub-link [data-lucide] { width: 16px; height: 16px; }
+.mobile-sub-link--all {
+  font-weight: 600;
+  color: #00c8e0;
+  font-size: 0.85rem;
+}
+.mobile-cta {
+  display: block;
+  margin: 20px 24px 0;
+  text-align: center;
+}
+
+/* ── Mobile Overlay ── */
+.mobile-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(13,31,60,0.45);
+  z-index: 1050;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.mobile-overlay.open { opacity: 1; }
+
+/* ── Responsive ── */
+@media (max-width: 960px) {
+  .nav-links,
+  .nav-cta {
+    display: none;
+  }
+  .nav-hamburger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .mobile-drawer,
+  .mobile-overlay {
+    display: block;
+  }
+  .main-nav__inner {
+    justify-content: space-between;
+  }
+}
+</style>
+
+<!-- ============================================================
+     NAV JAVASCRIPT
+     ============================================================ -->
+<script>
+(function () {
+  // ── Scroll shadow ──
+  var nav = document.getElementById('main-nav');
+  window.addEventListener('scroll', function () {
+    nav.classList.toggle('scrolled', window.scrollY > 10);
+  }, { passive: true });
+
+  // ── Desktop dropdowns ──
+  var dropdowns = document.querySelectorAll('.nav-item--dropdown');
+  dropdowns.forEach(function (item) {
+    var btn = item.querySelector('.nav-link--dropdown');
+    function openDropdown() {
+      dropdowns.forEach(function (d) {
+        if (d !== item) {
+          d.classList.remove('open');
+          d.querySelector('.nav-link--dropdown').setAttribute('aria-expanded', 'false');
+        }
+      });
+      item.classList.add('open');
+      btn.setAttribute('aria-expanded', 'true');
+    }
+    function closeDropdown() {
+      item.classList.remove('open');
+      btn.setAttribute('aria-expanded', 'false');
+    }
+    item.addEventListener('mouseenter', openDropdown);
+    item.addEventListener('mouseleave', closeDropdown);
+    btn.addEventListener('click', function () {
+      item.classList.contains('open') ? closeDropdown() : openDropdown();
+    });
+    btn.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') closeDropdown();
+    });
+  });
+
+  // Close dropdowns on outside click
+  document.addEventListener('click', function (e) {
+    dropdowns.forEach(function (item) {
+      if (!item.contains(e.target)) {
+        item.classList.remove('open');
+        item.querySelector('.nav-link--dropdown').setAttribute('aria-expanded', 'false');
+      }
+    });
+  });
+
+  // ── Mobile drawer ──
+  var hamburger  = document.getElementById('nav-hamburger');
+  var drawer     = document.getElementById('mobile-drawer');
+  var overlay    = document.getElementById('mobile-overlay');
+  var closeBtn   = document.getElementById('mobile-drawer-close');
+
+  function openDrawer() {
+    drawer.classList.add('open');
+    overlay.classList.add('open');
+    drawer.removeAttribute('aria-hidden');
+    hamburger.setAttribute('aria-expanded', 'true');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeDrawer() {
+    drawer.classList.remove('open');
+    overlay.classList.remove('open');
+    drawer.setAttribute('aria-hidden', 'true');
+    hamburger.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
+  }
+
+  hamburger.addEventListener('click', openDrawer);
+  closeBtn.addEventListener('click', closeDrawer);
+  overlay.addEventListener('click', closeDrawer);
+
+  // ── Mobile accordions ──
+  var accordions = document.querySelectorAll('.mobile-accordion');
+  accordions.forEach(function (acc) {
+    var btn   = acc.querySelector('.mobile-link--accordion');
+    var panel = acc.querySelector('.mobile-accordion__panel');
+    btn.addEventListener('click', function () {
+      var isOpen = acc.classList.contains('open');
+      // Close all
+      accordions.forEach(function (a) {
+        a.classList.remove('open');
+        a.querySelector('.mobile-link--accordion').setAttribute('aria-expanded', 'false');
+        a.querySelector('.mobile-accordion__panel').hidden = true;
+      });
+      // Toggle clicked
+      if (!isOpen) {
+        acc.classList.add('open');
+        btn.setAttribute('aria-expanded', 'true');
+        panel.hidden = false;
+      }
+    });
+  });
+
+  // ── Active link highlight ──
+  var currentPath = window.location.pathname.split('/').pop() || 'index.html';
+  document.querySelectorAll('.nav-link[href], .mobile-link[href]').forEach(function (link) {
+    if (link.getAttribute('href') === currentPath) {
+      link.classList.add('active');
+    }
+  });
+})();
+</script>
+
+
+  <!-- ══════════════════════════════════════════
+       HERO SECTION
+       ══════════════════════════════════════════ -->
+  <section class="hero" aria-label="Hero — IT Support Gold Coast">
+    <div class="hero-overlay" aria-hidden="true"></div>
+    <div class="hero-dots" aria-hidden="true"></div>
+    <div class="hero-glow" aria-hidden="true"></div>
+
+    <div class="hero-content">
+      <div class="container">
+        <div class="hero-inner">
+
+          <!-- LEFT COLUMN -->
+          <div class="hero-left">
+
+            <!-- Badge -->
+            <span class="hero-badge">
+              <span class="status-dot" aria-hidden="true"></span>
+              Available Now &nbsp;&middot;&nbsp; Gold Coast
+            </span>
+
+            <!-- H1 -->
+            <h1 class="hero-h1">
+              IT Support &amp; Services <span class="text-gradient">Gold Coast</span>
+            </h1>
+
+            <!-- Subheading -->
+            <p class="hero-sub">
+              Fast, reliable IT support for Gold Coast homes and businesses.
+              On-site visits across Southport, Burleigh Heads, Robina, Nerang &amp; surrounds.
+            </p>
+
+            <!-- Buttons -->
+            <div class="hero-buttons">
+              <a href="tel:0730418993" class="btn-primary">
+                <i data-lucide="phone"></i> Call 07 3041 8993
+              </a>
+              <a href="contact.html" class="btn-ghost">
+                Get a Free Quote
+              </a>
+            </div>
+
+            <!-- Trust Strip -->
+            <div class="hero-trust" role="list" aria-label="Trust indicators">
+              <span class="hero-trust__item" role="listitem">
+                <i data-lucide="zap"></i> Same-day response
+              </span>
+              <span class="hero-trust__item" role="listitem">
+                <i data-lucide="map-pin"></i> Gold Coast local
+              </span>
+              <span class="hero-trust__item" role="listitem">
+                <i data-lucide="shield-check"></i> No fix, no fee
+              </span>
+              <span class="hero-trust__item" role="listitem">
+                <i data-lucide="star" class="star-filled"></i> 5-star rated
+              </span>
+            </div>
+
+          </div><!-- /.hero-left -->
+
+          <!-- RIGHT COLUMN — Availability Card -->
+          <div class="hero-card" role="complementary" aria-label="Availability information">
+
+            <div class="hero-card__title">
+              <span class="status-dot" aria-hidden="true"></span>
+              We're Available Today
+            </div>
+
+            <div class="hero-card__services" role="list" aria-label="Services offered">
+              <span class="hero-card__service" role="listitem">
+                <i data-lucide="wrench"></i> Computer Repair
+              </span>
+              <span class="hero-card__service" role="listitem">
+                <i data-lucide="wifi"></i> WiFi Setup
+              </span>
+              <span class="hero-card__service" role="listitem">
+                <i data-lucide="monitor"></i> IT Support
+              </span>
+              <span class="hero-card__service" role="listitem">
+                <i data-lucide="phone-call"></i> Phone Systems
+              </span>
+            </div>
+
+            <hr class="hero-card__divider" aria-hidden="true">
+
+            <div class="hero-card__response">
+              <i data-lucide="clock"></i>
+              Response time: Usually within 2 hours
+            </div>
+
+            <!-- BUSINESS BOOKING BUTTON EMBED -->
+            <!-- Google Calendar Appointment Scheduling begin -->
+            <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+            <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+            <script>
+            (function() {
+              var target = document.currentScript;
+              window.addEventListener('load', function() {
+                calendar.schedulingButton.load({
+                  url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ21JsFI48SyH1NJO3oZkyuch15utQ__rWaeHMgfxSppgM_GaVeKRe6Kn0v2oN4XjRgl5D256Up7?gv=true',
+                  color: '#039BE5',
+                  label: 'Book an appointment',
+                  target,
+                });
+              });
+            })();
+            </script>
+            <!-- end Google Calendar Appointment Scheduling -->
+
+          </div><!-- /.hero-card -->
+
+        </div><!-- /.hero-inner -->
+      </div><!-- /.container -->
+    </div><!-- /.hero-content -->
+  </section>
+  <!-- END HERO SECTION -->
+
+  <!-- ══════════════════════════════════════════
+       SERVICES SECTION
+       ══════════════════════════════════════════ -->
+  <section class="services-section section-light" aria-labelledby="services-heading">
+    <div class="container">
+
+      <!-- Section Header -->
+      <div class="services-header">
+        <h2 id="services-heading">IT Solutions for Gold Coast Homes &amp; Businesses</h2>
+        <p class="services-header__sub">
+          Whether you're a homeowner needing a WiFi fix or a business requiring full IT support,
+          we've got Gold Coast covered.
+        </p>
+        <div class="services-intro">
+          <p>
+            IT problems don't wait for a convenient time. A computer that won't start on a Monday
+            morning, a WiFi network dropping out during a busy afternoon, or a business phone system
+            that goes down mid-week — these are the kinds of situations Gold Coast residents and
+            businesses call us for every day.
+          </p>
+          <p>
+            Bcom IT Solutions is a Gold Coast based IT support company. Our technicians live and
+            work on the Gold Coast — which means faster response times and a genuine understanding
+            of the local area. We keep things simple. You call or book online, we come to you, we
+            fix the problem. No jargon, no unnecessary upselling, and no fix means no fee.
+          </p>
+        </div>
+      </div>
+
+      <!-- Two Columns -->
+      <div class="services-columns">
+
+        <!-- RESIDENTIAL COLUMN -->
+        <div class="services-col">
+          <span class="services-badge services-badge--green">
+            <i data-lucide="home"></i> Residential
+          </span>
+
+          <!-- Card 1: Computer Repair -->
+          <article class="card services-card">
+            <div class="icon-circle green">
+              <i data-lucide="wrench"></i>
+            </div>
+            <h3>Computer Repair Gold Coast</h3>
+            <p>On-site diagnosis, software repair, virus removal &amp; performance tune-up for Gold Coast homes.</p>
+            <a href="computer-repairs-gold-coast.html" class="services-card__link">
+              Learn more <i data-lucide="arrow-right"></i>
+            </a>
+          </article>
+
+          <!-- Card 2: Networking & WiFi -->
+          <article class="card services-card">
+            <div class="icon-circle green">
+              <i data-lucide="wifi"></i>
+            </div>
+            <h3>Networking &amp; WiFi Gold Coast</h3>
+            <p>WiFi installation, mesh systems, router setup &amp; network troubleshooting for Gold Coast residents.</p>
+            <a href="computer-networking-service-gold-coast.html" class="services-card__link">
+              Learn more <i data-lucide="arrow-right"></i>
+            </a>
+          </article>
+
+          <!-- Residential Booking Button -->
+          <div class="services-booking">
+            <!-- Google Calendar Appointment Scheduling begin -->
+            <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+            <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+            <script>
+            (function() {
+              var target = document.currentScript;
+              window.addEventListener('load', function() {
+                calendar.schedulingButton.load({
+                  url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ2z99t5yQNIRoRT8rNM3Jv7-WC-MNC35owGsga-okvZmEIG167e9iLOAco3_vHaX44r6eYmGFRA?gv=true',
+                  color: '#039BE5',
+                  label: 'Book an appointment',
+                  target,
+                });
+              });
+            })();
+            </script>
+            <!-- end Google Calendar Appointment Scheduling -->
+          </div>
+        </div><!-- /.services-col residential -->
+
+        <!-- BUSINESS COLUMN -->
+        <div class="services-col">
+          <span class="services-badge services-badge--cyan">
+            <i data-lucide="building-2"></i> Business
+          </span>
+
+          <!-- Card 1: IT Support -->
+          <article class="card services-card">
+            <div class="icon-circle">
+              <i data-lucide="monitor"></i>
+            </div>
+            <h3>IT Support &amp; Services Gold Coast</h3>
+            <p>Managed IT support, helpdesk, and on-site services for Gold Coast businesses of all sizes.</p>
+            <a href="it-support-and-services-gold-coast.html" class="services-card__link">
+              Learn more <i data-lucide="arrow-right"></i>
+            </a>
+          </article>
+
+          <!-- Card 2: Telecommunications -->
+          <article class="card services-card">
+            <div class="icon-circle">
+              <i data-lucide="phone-call"></i>
+            </div>
+            <h3>Telecommunications Gold Coast</h3>
+            <p>Structured cabling, NBN business connections &amp; phone system installation across the Gold Coast.</p>
+            <a href="telecommunications-contractor-gold-coast.html" class="services-card__link">
+              Learn more <i data-lucide="arrow-right"></i>
+            </a>
+          </article>
+
+          <!-- Card 3: IT Consulting -->
+          <article class="card services-card">
+            <div class="icon-circle">
+              <i data-lucide="lightbulb"></i>
+            </div>
+            <h3>IT Consulting Gold Coast</h3>
+            <p>Technology strategy, planning &amp; advisory services to help Gold Coast businesses grow with confidence.</p>
+            <a href="computer-consultant-gold-coast.html" class="services-card__link">
+              Learn more <i data-lucide="arrow-right"></i>
+            </a>
+          </article>
+
+          <!-- Business Booking Button -->
+          <div class="services-booking">
+            <!-- Google Calendar Appointment Scheduling begin -->
+            <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+            <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+            <script>
+            (function() {
+              var target = document.currentScript;
+              window.addEventListener('load', function() {
+                calendar.schedulingButton.load({
+                  url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ21JsFI48SyH1NJO3oZkyuch15utQ__rWaeHMgfxSppgM_GaVeKRe6Kn0v2oN4XjRgl5D256Up7?gv=true',
+                  color: '#039BE5',
+                  label: 'Book an appointment',
+                  target,
+                });
+              });
+            })();
+            </script>
+            <!-- end Google Calendar Appointment Scheduling -->
+          </div>
+        </div><!-- /.services-col business -->
+
+      </div><!-- /.services-columns -->
+      <!-- Gradient Divider — outside grid, overlaid via CSS -->
+      <div class="services-divider" aria-hidden="true"></div>
+    </div><!-- /.container -->
+  </section>
+  <!-- END SERVICES SECTION -->
+
+  <!-- ══════════════════════════════════════════
+       TRUST SECTION
+       ══════════════════════════════════════════ -->
+
+  <!-- AggregateRating Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Bcom IT Solutions",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "reviewCount": "47"
+    }
+  }
+  </script>
+
+  <!-- PART A — STATS BAR -->
+  <section class="stats-bar" aria-label="Company statistics">
+    <div class="container">
+      <div class="stats-grid">
+
+        <div class="stat-item">
+          <span class="stat-value" data-target="500" data-suffix="+">0+</span>
+          <span class="stat-label">Jobs Completed</span>
+        </div>
+
+        <div class="stat-divider" aria-hidden="true"></div>
+
+        <div class="stat-item">
+          <span class="stat-value stat-value--text">5<i data-lucide="star" class="star-filled stat-star"></i></span>
+          <span class="stat-label">Google Rating</span>
+        </div>
+
+        <div class="stat-divider" aria-hidden="true"></div>
+
+        <div class="stat-item">
+          <span class="stat-value" data-target="10" data-suffix="+ Yrs">0+ Yrs</span>
+          <span class="stat-label">Experience</span>
+        </div>
+
+        <div class="stat-divider" aria-hidden="true"></div>
+
+        <div class="stat-item">
+          <span class="stat-value stat-value--text">2hr</span>
+          <span class="stat-label">Avg Response</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- END STATS BAR -->
+
+  <!-- PART B — GOOGLE REVIEWS -->
+  <section class="reviews-section section-white" aria-labelledby="reviews-heading">
+    <div class="container">
+      <div class="reviews-header">
+        <h2 id="reviews-heading">What Gold Coast Customers Say</h2>
+      </div>
+      <div class="reviews-grid">
+
+        <!-- Review 1 -->
+        <article class="review-card" itemscope itemtype="https://schema.org/Review">
+          <div class="review-card__stars" aria-label="5 stars">
+            <i data-lucide="star" class="star-filled"></i>
+            <i data-lucide="star" class="star-filled"></i>
+            <i data-lucide="star" class="star-filled"></i>
+            <i data-lucide="star" class="star-filled"></i>
+            <i data-lucide="star" class="star-filled"></i>
+          </div>
+          <blockquote class="review-card__text" itemprop="reviewBody">
+            &ldquo;Bcom fixed our office network the same day we called. Professional, fast and fairly priced. Highly recommend for any Gold Coast business.&rdquo;
+          </blockquote>
+          <footer class="review-card__author">
+            <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+              <strong itemprop="name">Michael T.</strong>
+            </span>
+            <span class="review-card__location">
+              <i data-lucide="map-pin"></i> Robina Business Owner
+            </span>
+          </footer>
+        </article>
+
+        <!-- Review 2 -->
+        <article class="review-card" itemscope itemtype="https://schema.org/Review">
+          <div class="review-card__stars" aria-label="5 stars">
+            <i data-lucide="star" class="star-filled"></i>
+            <i data-lucide="star" class="star-filled"></i>
+            <i data-lucide="star" class="star-filled"></i>
+            <i data-lucide="star" class="star-filled"></i>
+            <i data-lucide="star" class="star-filled"></i>
+          </div>
+          <blockquote class="review-card__text" itemprop="reviewBody">
+            &ldquo;Had WiFi issues for months. The team came out to our Burleigh Heads home and had it sorted within an hour. Brilliant service.&rdquo;
+          </blockquote>
+          <footer class="review-card__author">
+            <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+              <strong itemprop="name">Sarah K.</strong>
+            </span>
+            <span class="review-card__location">
+              <i data-lucide="map-pin"></i> Burleigh Heads
+            </span>
+          </footer>
+        </article>
+
+        <!-- Review 3 -->
+        <article class="review-card" itemscope itemtype="https://schema.org/Review">
+          <div class="review-card__stars" aria-label="5 stars">
+            <i data-lucide="star" class="star-filled"></i>
+            <i data-lucide="star" class="star-filled"></i>
+            <i data-lucide="star" class="star-filled"></i>
+            <i data-lucide="star" class="star-filled"></i>
+            <i data-lucide="star" class="star-filled"></i>
+          </div>
+          <blockquote class="review-card__text" itemprop="reviewBody">
+            &ldquo;Set up our entire VoIP phone system for our Southport office. Very knowledgeable and explained everything clearly.&rdquo;
+          </blockquote>
+          <footer class="review-card__author">
+            <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+              <strong itemprop="name">David R.</strong>
+            </span>
+            <span class="review-card__location">
+              <i data-lucide="map-pin"></i> Southport
+            </span>
+          </footer>
+        </article>
+
+      </div>
+    </div>
+  </section>
+  <!-- END GOOGLE REVIEWS -->
+
+  <!-- PART C — TRUST BADGES -->
+  <section class="trust-badges" aria-label="Trust credentials">
+    <div class="container">
+      <div class="trust-badges__grid">
+
+        <div class="trust-badge">
+          <i data-lucide="check-circle"></i>
+          <span>ABN Verified Business <span class="trust-badge__detail">(92 636 893 108)</span></span>
+        </div>
+
+        <div class="trust-badge__divider" aria-hidden="true"></div>
+
+        <div class="trust-badge">
+          <i data-lucide="home"></i>
+          <span>Locally Owned &amp; Operated</span>
+        </div>
+
+        <div class="trust-badge__divider" aria-hidden="true"></div>
+
+        <div class="trust-badge">
+          <i data-lucide="shield-check"></i>
+          <span>No Fix, No Fee Guarantee</span>
+        </div>
+
+        <div class="trust-badge__divider" aria-hidden="true"></div>
+
+        <div class="trust-badge">
+          <i data-lucide="zap"></i>
+          <span>Same-Day Service Available</span>
+        </div>
+
+        <div class="trust-badge__divider" aria-hidden="true"></div>
+
+        <div class="trust-badge">
+          <i data-lucide="users"></i>
+          <span>Residential &amp; Commercial</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- END TRUST BADGES -->
+
+  <!-- ══════════════════════════════════════════
+       SERVICE AREAS SECTION
+       ══════════════════════════════════════════ -->
+
+  <!-- ServiceArea Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Bcom IT Solutions",
+    "serviceArea": [
+      {"@type": "City", "name": "Gold Coast"},
+      {"@type": "City", "name": "Southport"},
+      {"@type": "City", "name": "Burleigh Heads"},
+      {"@type": "City", "name": "Robina"},
+      {"@type": "City", "name": "Nerang"},
+      {"@type": "City", "name": "Helensvale"},
+      {"@type": "City", "name": "Coomera"},
+      {"@type": "City", "name": "Palm Beach"},
+      {"@type": "City", "name": "Varsity Lakes"},
+      {"@type": "City", "name": "Coolangatta"},
+      {"@type": "City", "name": "Surfers Paradise"},
+      {"@type": "City", "name": "Broadbeach"}
+    ]
+  }
+  </script>
+
+  <section class="areas-section" aria-labelledby="areas-heading">
+    <div class="container">
+
+      <!-- Section Header -->
+      <div class="areas-header">
+        <h2 id="areas-heading">IT Support Across the Gold Coast</h2>
+        <p class="areas-intro">
+          The Gold Coast stretches from Coolangatta on the New South Wales border all the way north
+          to Coomera and west to Nerang and Robina. Whether you are in a beachside apartment in
+          Surfers Paradise, a family home in Helensvale, or a commercial premises in Southport's
+          CBD, Bcom IT Solutions can have a technician with you the same day in most cases.
+        </p>
+        <p class="areas-intro">
+          We cover all Gold Coast suburbs and surrounding areas. If you're not sure whether we
+          service your address, call us on
+          <a href="tel:0730418993">07 3041 8993</a> — the answer is almost always yes.
+        </p>
+      </div>
+
+      <!-- Two Columns -->
+      <div class="areas-columns">
+
+        <!-- LEFT — Suburb Pills + Map -->
+        <div class="areas-col areas-col--left">
+          <div class="suburb-pills" role="list" aria-label="Service area suburbs">
+            <span class="suburb-pill" role="listitem">Southport</span>
+            <span class="suburb-pill" role="listitem">Burleigh Heads</span>
+            <span class="suburb-pill" role="listitem">Robina</span>
+            <span class="suburb-pill" role="listitem">Nerang</span>
+            <span class="suburb-pill" role="listitem">Helensvale</span>
+            <span class="suburb-pill" role="listitem">Coomera</span>
+            <span class="suburb-pill" role="listitem">Palm Beach</span>
+            <span class="suburb-pill" role="listitem">Varsity Lakes</span>
+            <span class="suburb-pill" role="listitem">Coolangatta</span>
+            <span class="suburb-pill" role="listitem">Surfers Paradise</span>
+            <span class="suburb-pill" role="listitem">Broadbeach</span>
+          </div>
+
+          <!-- Google Maps Embed -->
+          <div class="areas-map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d451109.88017319166!2d153.36936139999997!3d-27.9542216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2bf15c9da94c225d%3A0x9a906dab1cca3727!2sBcom%20IT%20Solutions%20%7C%20IT%20Support%20and%20Services%20Gold%20Coast!5e0!3m2!1sen!2sau!4v1772527730869!5m2!1sen!2sau"
+              width="100%" height="400" style="border:0; border-radius:12px;"
+              allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Bcom IT Solutions service area map — Gold Coast, Queensland">
+            </iframe>
+          </div>
+        </div>
+
+        <!-- RIGHT — Coverage Card -->
+        <div class="areas-col areas-col--right">
+          <div class="coverage-card">
+
+            <div class="coverage-card__heading">
+              <i data-lucide="map-pin"></i>
+              <h3>Our Service Area</h3>
+            </div>
+
+            <p class="coverage-card__text">
+              We cover all Gold Coast suburbs from Coolangatta in the south to Coomera in the
+              north, and west to Nerang and Robina.
+            </p>
+
+            <!-- Response Callout -->
+            <div class="coverage-callout">
+              <i data-lucide="zap"></i>
+              <span>Typical on-site arrival: 2–4 hours</span>
+            </div>
+
+            <!-- Residential Booking Button -->
+            <div class="coverage-card__booking">
+              <!-- Google Calendar Appointment Scheduling begin -->
+              <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+              <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+              <script>
+              (function() {
+                var target = document.currentScript;
+                window.addEventListener('load', function() {
+                  calendar.schedulingButton.load({
+                    url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ2z99t5yQNIRoRT8rNM3Jv7-WC-MNC35owGsga-okvZmEIG167e9iLOAco3_vHaX44r6eYmGFRA?gv=true',
+                    color: '#039BE5',
+                    label: 'Book an appointment',
+                    target,
+                  });
+                });
+              })();
+              </script>
+              <!-- end Google Calendar Appointment Scheduling -->
+            </div>
+
+            <p class="coverage-card__call">
+              Or call: <a href="tel:0730418993">07 3041 8993</a>
+            </p>
+
+          </div><!-- /.coverage-card -->
+
+          <!-- LLM Entity Paragraph -->
+          <p class="areas-entity">
+            Bcom IT Solutions (ABN 92 636 893 108) is a Gold Coast based IT support company
+            serving residential and business customers across Queensland's Gold Coast region
+            including the local government area of Gold Coast City, Queensland, Australia.
+          </p>
+
+        </div><!-- /.areas-col right -->
+
+      </div><!-- /.areas-columns -->
+    </div><!-- /.container -->
+  </section>
+  <!-- END SERVICE AREAS SECTION -->
+
+  <!-- ══════════════════════════════════════════
+       FAQ SECTION
+       ══════════════════════════════════════════ -->
+
+  <!-- FAQPage Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What IT support services does Bcom IT Solutions offer on the Gold Coast?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Bcom IT Solutions provides a full range of IT support services across the Gold Coast, including computer repair, WiFi installation and networking, managed IT support for businesses, VoIP and business phone system installation, NBN support, data cabling, and IT consulting. We offer both remote and on-site support across all Gold Coast suburbs. Call us on 07 3041 8993."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How quickly can a technician come to my Gold Coast home or business?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "In most cases, we can have a technician on-site within 2 to 4 hours of your call. We prioritise same-day service across Gold Coast suburbs including Southport, Robina, Burleigh Heads, Nerang, and Surfers Paradise."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you offer IT support for both homes and businesses on the Gold Coast?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. We provide dedicated services for Gold Coast residential customers including computer repair and WiFi setup, and for business customers including managed IT support, phone systems, VoIP, IT consulting and data cabling."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What suburbs on the Gold Coast do you service?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We service all major Gold Coast suburbs including Southport, Burleigh Heads, Robina, Nerang, Helensvale, Coomera, Palm Beach, Varsity Lakes, Coolangatta, Surfers Paradise, and Broadbeach. Call us on 07 3041 8993 to confirm coverage."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is your no fix, no fee policy?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "If we cannot fix your IT issue, you don't pay a call-out fee. We believe in transparent, fair pricing with no hidden charges. We'll give you a clear assessment before any work begins."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I book an IT support appointment on the Gold Coast?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "You can book directly using our online booking calendar, call us on 07 3041 8993, or email support@bcomservices.com. We're available Monday to Friday 8am\u20135pm with Saturday appointments available."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <section class="faq-section section-white" aria-labelledby="faq-heading">
+    <div class="container-sm">
+
+      <div class="faq-header">
+        <h2 id="faq-heading">Frequently Asked Questions &mdash; IT Support Gold Coast</h2>
+      </div>
+
+      <div class="faq-list" role="list">
+
+        <!-- Q1 -->
+        <div class="faq-item" role="listitem">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-1">
+            <h3>What IT support services does Bcom IT Solutions offer on the Gold Coast?</h3>
+            <i data-lucide="chevron-down" class="faq-chevron"></i>
+          </button>
+          <div class="faq-answer" id="faq-answer-1" hidden>
+            <p>Bcom IT Solutions provides a full range of IT support services across the Gold Coast,
+            including computer repair, WiFi installation and networking, managed IT support for
+            businesses, VoIP and business phone system installation, NBN support, data cabling,
+            and IT consulting. We offer both remote and on-site support across all Gold Coast
+            suburbs. Call us on <a href="tel:0730418993">07 3041 8993</a>.</p>
+          </div>
+        </div>
+
+        <!-- Q2 -->
+        <div class="faq-item" role="listitem">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-2">
+            <h3>How quickly can a technician come to my Gold Coast home or business?</h3>
+            <i data-lucide="chevron-down" class="faq-chevron"></i>
+          </button>
+          <div class="faq-answer" id="faq-answer-2" hidden>
+            <p>In most cases, we can have a technician on-site within 2 to 4 hours of your call.
+            We prioritise same-day service across Gold Coast suburbs including Southport, Robina,
+            Burleigh Heads, Nerang, and Surfers Paradise.</p>
+          </div>
+        </div>
+
+        <!-- Q3 -->
+        <div class="faq-item" role="listitem">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-3">
+            <h3>Do you offer IT support for both homes and businesses on the Gold Coast?</h3>
+            <i data-lucide="chevron-down" class="faq-chevron"></i>
+          </button>
+          <div class="faq-answer" id="faq-answer-3" hidden>
+            <p>Yes. We provide dedicated services for Gold Coast residential customers including
+            computer repair and WiFi setup, and for business customers including managed IT support,
+            phone systems, VoIP, IT consulting and data cabling.</p>
+          </div>
+        </div>
+
+        <!-- Q4 -->
+        <div class="faq-item" role="listitem">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-4">
+            <h3>What suburbs on the Gold Coast do you service?</h3>
+            <i data-lucide="chevron-down" class="faq-chevron"></i>
+          </button>
+          <div class="faq-answer" id="faq-answer-4" hidden>
+            <p>We service all major Gold Coast suburbs including Southport, Burleigh Heads, Robina,
+            Nerang, Helensvale, Coomera, Palm Beach, Varsity Lakes, Coolangatta, Surfers Paradise,
+            and Broadbeach. Call us on <a href="tel:0730418993">07 3041 8993</a> to confirm coverage.</p>
+          </div>
+        </div>
+
+        <!-- Q5 -->
+        <div class="faq-item" role="listitem">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-5">
+            <h3>What is your no fix, no fee policy?</h3>
+            <i data-lucide="chevron-down" class="faq-chevron"></i>
+          </button>
+          <div class="faq-answer" id="faq-answer-5" hidden>
+            <p>If we cannot fix your IT issue, you don't pay a call-out fee. We believe in
+            transparent, fair pricing with no hidden charges. We'll give you a clear assessment
+            before any work begins.</p>
+          </div>
+        </div>
+
+        <!-- Q6 -->
+        <div class="faq-item" role="listitem">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-6">
+            <h3>How do I book an IT support appointment on the Gold Coast?</h3>
+            <i data-lucide="chevron-down" class="faq-chevron"></i>
+          </button>
+          <div class="faq-answer" id="faq-answer-6" hidden>
+            <p>You can book directly using our online booking calendar, call us on
+            <a href="tel:0730418993">07 3041 8993</a>, or email
+            <a href="mailto:support@bcomservices.com">support@bcomservices.com</a>.
+            We're available Monday to Friday 8am&ndash;5pm with Saturday appointments available.</p>
+          </div>
+        </div>
+
+      </div><!-- /.faq-list -->
+    </div><!-- /.container-sm -->
+  </section>
+  <!-- END FAQ SECTION -->
+
+  <!-- ══════════════════════════════════════════
+       SEO CONTENT SECTION
+       ══════════════════════════════════════════ -->
+
+  <!-- Article Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "IT Support on the Gold Coast",
+    "description": "IT support services for homes and businesses across Gold Coast QLD.",
+    "author": {
+      "@type": "Organization",
+      "name": "Bcom IT Solutions",
+      "telephone": "+61730418993"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Bcom IT Solutions",
+      "url": "https://bcomservices.com.au"
+    },
+    "dateModified": "2026-03-01",
+    "areaServed": "Gold Coast, Queensland, Australia"
+  }
+  </script>
+
+  <section class="seo-content-section" aria-label="IT support Gold Coast — editorial content">
+    <div class="seo-content-inner">
+
+      <h2>IT Support on the Gold Coast &mdash; What You Need to Know</h2>
+
+      <p>The Gold Coast is one of Australia's fastest growing regions. New housing estates in
+      Coomera and Pimpama, commercial development in Southport and Robina, and a growing number
+      of small businesses across the city mean demand for reliable IT support has never been higher.
+      Whether you're setting up a home office in Burleigh Heads or managing a team of twenty in a
+      Robina business park, the technology has to work.</p>
+
+      <p>Bcom IT Solutions (ABN 92 636 893 108) was built specifically for the Gold Coast market.
+      We understand the challenges that come with Queensland's subtropical climate &mdash; humidity
+      affects hardware, storm season can cause power surges, and the transient nature of a tourist
+      city means short-notice support calls are common. Our technicians are used to it.</p>
+
+      <h3>Computer Repair and IT Support for Gold Coast Homes</h3>
+
+      <p>Most households on the Gold Coast now run multiple devices &mdash; laptops, desktops,
+      smart TVs, tablets, phones and home automation systems all sharing the same network. When
+      something goes wrong, it can affect everything. Our residential IT support covers computer
+      repair, WiFi installation, router and modem setup, NBN troubleshooting, virus and malware
+      removal, and general performance issues on Windows and Mac systems.</p>
+
+      <p>We come to you. There is no need to box up your computer and drive to a shop. A Bcom IT
+      Solutions technician will come to your Gold Coast home, diagnose the issue on the spot, and
+      fix it the same visit where possible. For suburbs like Palm Beach, Varsity Lakes and
+      Coolangatta, we typically have availability the same day or the following morning.</p>
+
+      <h3>Business IT Support Across the Gold Coast</h3>
+
+      <p>Gold Coast businesses face unique IT challenges. High staff turnover in the hospitality
+      and tourism sectors means IT systems need to be easy to use and quick to onboard. Retail
+      businesses in areas like Broadbeach and Surfers Paradise need reliable point-of-sale systems
+      and stable internet connections. Professional services firms in Robina and Southport need
+      secure networks, reliable email and responsive support when something breaks.</p>
+
+      <p>Our business IT support covers managed IT services, on-site and remote helpdesk support,
+      hardware and software troubleshooting, business phone systems, VoIP installation, data
+      cabling, and IT consulting. We work with businesses of all sizes across the Gold Coast
+      &mdash; from sole traders to companies with multiple sites.</p>
+
+      <h3>Why Gold Coast Businesses and Residents Choose Bcom IT Solutions</h3>
+
+      <p>The most common reason new customers give for calling us is that they couldn't get a
+      straight answer or a fast response from wherever they'd been dealing with before. IT support
+      should not feel like a lottery. When you call Bcom IT Solutions on
+      <a href="tel:0730418993">07 3041 8993</a>, you speak to someone local who knows the Gold
+      Coast, understands the problem, and can tell you clearly when a technician will be with you.</p>
+
+      <p>We back every job with our no fix, no fee guarantee. If we cannot resolve your issue, you
+      do not pay a call-out fee. We quote transparently before starting any work and we don't
+      invoice for things you didn't ask for.</p>
+
+    </div><!-- /.seo-content-inner -->
+  </section>
+  <!-- END SEO CONTENT SECTION -->
+
+  <!-- ══════════════════════════════════════════
+       CLOSING CTA SECTION
+       ══════════════════════════════════════════ -->
+  <section class="cta-section" aria-labelledby="cta-heading">
+
+    <!-- Decorative blurs -->
+    <div class="cta-blob cta-blob--tl" aria-hidden="true"></div>
+    <div class="cta-blob cta-blob--br" aria-hidden="true"></div>
+
+    <div class="container">
+      <div class="cta-content">
+
+        <!-- Label -->
+        <p class="cta-label cta-anim" data-delay="0">GOLD COAST’S TRUSTED IT TEAM</p>
+
+        <!-- H2 -->
+        <h2 id="cta-heading" class="cta-heading cta-anim" data-delay="100">
+          Need IT Support on the Gold Coast Today?
+        </h2>
+
+        <!-- Subtext -->
+        <p class="cta-sub cta-anim" data-delay="200">
+          From a laptop that won’t start to a full business phone system &mdash;
+          Bcom IT Solutions has you covered across the Gold Coast.
+        </p>
+
+        <!-- Buttons -->
+        <div class="cta-buttons cta-anim" data-delay="300">
+          <a href="tel:0730418993" class="btn-primary">
+            <i data-lucide="phone"></i> Call 07 3041 8993
+          </a>
+          <a href="mailto:support@bcomservices.com" class="btn-ghost">
+            <i data-lucide="mail"></i> Email Us
+          </a>
+        </div>
+
+        <!-- Reassurance Row -->
+        <div class="cta-reassurance cta-anim" data-delay="400">
+          <span class="cta-reassurance__item">
+            <i data-lucide="clock"></i> Fast Response
+          </span>
+          <span class="cta-reassurance__item">
+            <i data-lucide="map-pin"></i> Gold Coast Local
+          </span>
+          <span class="cta-reassurance__item">
+            <i data-lucide="shield-check"></i> No Fix, No Fee
+          </span>
+        </div>
+
+      </div><!-- /.cta-content -->
+    </div><!-- /.container -->
+  </section>
+  <!-- END CLOSING CTA SECTION -->
+
+  <!-- FOOTER — inlined from footer.html -->
+<!-- ============================================================
+     BCOM IT SOLUTIONS — FOOTER COMPONENT
+     Include at the bottom of every page body, before </body>
+     ============================================================ -->
+
+<footer class="site-footer" role="contentinfo">
+
+  <!-- ── MAIN FOOTER GRID ── -->
+  <div class="footer-main">
+    <div class="container">
+      <div class="footer-grid">
+
+        <!-- COLUMN 1 — Brand -->
+        <div class="footer-col footer-col--brand">
+          <a href="index.html" class="footer-logo" aria-label="Bcom IT Solutions — Home">
+            <svg class="footer-logo__icon" width="40" height="24" viewBox="0 0 36 22" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect x="1" y="1" width="34" height="20" rx="10" fill="white" stroke="white" stroke-width="1.5"/>
+              <circle cx="11" cy="11" r="7.5" fill="#1e3a5f" stroke="white" stroke-width="1.5"/>
+            </svg>
+            <span class="footer-logo__text">
+              <span class="footer-logo__bcom">BCOM</span><span class="footer-logo__its"> IT SOLUTIONS</span>
+            </span>
+          </a>
+
+          <p class="footer-tagline">Gold Coast's trusted IT partner for homes and businesses.</p>
+
+          <div class="footer-stars" aria-label="Rated 5 stars on Google">
+            <i data-lucide="star" class="star-filled"></i>
+            <i data-lucide="star" class="star-filled"></i>
+            <i data-lucide="star" class="star-filled"></i>
+            <i data-lucide="star" class="star-filled"></i>
+            <i data-lucide="star" class="star-filled"></i>
+            <span class="footer-stars__label">Rated 5-star on Google</span>
+          </div>
+
+          <p class="footer-abn">ABN: 92 636 893 108</p>
+        </div>
+
+        <!-- COLUMN 2 — Home Services -->
+        <div class="footer-col">
+          <p class="footer-heading">Home Services</p>
+          <ul class="footer-links" role="list">
+            <li>
+              <a href="computer-repairs-gold-coast.html" class="footer-link">
+                <i data-lucide="wrench"></i> Computer Repair Gold Coast
+              </a>
+            </li>
+            <li>
+              <a href="computer-networking-service-gold-coast.html" class="footer-link">
+                <i data-lucide="wifi"></i> Networking &amp; WiFi Gold Coast
+              </a>
+            </li>
+            <li>
+              <a href="home-users.html" class="footer-link">
+                <i data-lucide="home"></i> Residential IT Support
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- COLUMN 3 — Business Services -->
+        <div class="footer-col">
+          <p class="footer-heading">Business Services</p>
+          <ul class="footer-links" role="list">
+            <li>
+              <a href="it-support-and-services-gold-coast.html" class="footer-link">
+                <i data-lucide="monitor"></i> IT Support Gold Coast
+              </a>
+            </li>
+            <li>
+              <a href="telecommunications-contractor-gold-coast.html" class="footer-link">
+                <i data-lucide="phone-call"></i> Telecommunications Gold Coast
+              </a>
+            </li>
+            <li>
+              <a href="computer-consultant-gold-coast.html" class="footer-link">
+                <i data-lucide="lightbulb"></i> IT Consulting Gold Coast
+              </a>
+            </li>
+            <li>
+              <a href="business.html" class="footer-link">
+                <i data-lucide="building-2"></i> Business IT Hub
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- COLUMN 4 — Contact & Areas -->
+        <div class="footer-col">
+          <p class="footer-heading">Get in Touch</p>
+          <ul class="footer-links footer-links--contact" role="list">
+            <li>
+              <a href="tel:0730418993" class="footer-link footer-link--contact">
+                <i data-lucide="phone"></i> 07 3041 8993
+              </a>
+            </li>
+            <li>
+              <a href="mailto:support@bcomservices.com" class="footer-link footer-link--contact">
+                <i data-lucide="mail"></i> support@bcomservices.com
+              </a>
+            </li>
+            <li class="footer-link footer-link--location">
+              <i data-lucide="map-pin"></i> Gold Coast, Queensland
+            </li>
+          </ul>
+
+          <p class="footer-heading footer-heading--areas">Service Areas</p>
+          <p class="footer-areas">
+            Southport &middot; Burleigh Heads &middot; Robina &middot; Nerang &middot; Helensvale &middot;
+            Coomera &middot; Palm Beach &middot; Varsity Lakes &middot; Coolangatta &middot;
+            Surfers Paradise &middot; Broadbeach
+          </p>
+        </div>
+
+      </div><!-- /.footer-grid -->
+    </div><!-- /.container -->
+  </div><!-- /.footer-main -->
+
+  <!-- ── GOOGLE REVIEW BUTTON ── -->
+  <div class="footer-review">
+    <div class="container">
+      <a href="https://g.page/r/CSc3yhyrbZCaEBM/review"
+         target="_blank"
+         rel="noopener noreferrer"
+         class="footer-review__btn"
+         aria-label="Leave a Google review for Bcom IT Solutions">
+        <i data-lucide="star" class="star-filled"></i> Leave us a Google Review
+      </a>
+      <p class="footer-review__helper">Your review helps Gold Coast locals find us — thank you!</p>
+    </div>
+  </div>
+
+  <!-- ── DIVIDER ── -->
+  <div class="footer-divider" aria-hidden="true"></div>
+
+  <!-- ── BOTTOM BAR ── -->
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="footer-bottom__inner">
+        <span class="footer-bottom__copy">
+          &copy; 2026 Bcom IT Solutions Pty Ltd &middot; ABN 92 636 893 108
+        </span>
+        <nav class="footer-bottom__legal" aria-label="Legal links">
+          <a href="privacy-policy.html" class="footer-legal-link">Privacy Policy</a>
+          <span class="footer-bottom__sep" aria-hidden="true">&middot;</span>
+          <a href="terms-of-service.html" class="footer-legal-link">Terms of Service</a>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+</footer>
+
+<!-- ============================================================
+     FOOTER STYLES
+     ============================================================ -->
+<style>
+/* ── Footer Shell ── */
+.site-footer {
+  background-color: #1e3a5f;
+  color: white;
+  border-top: 3px solid #00c8e0;
+}
+
+/* ── Main Grid ── */
+.footer-main {
+  padding: 64px 0 48px;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1.2fr;
+  gap: 48px;
+}
+
+/* ── Brand Column ── */
+.footer-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  margin-bottom: 16px;
+}
+.footer-logo__icon { display: block; flex-shrink: 0; }
+.footer-logo__text {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.01em;
+}
+.footer-logo__bcom { color: white; }
+.footer-logo__its  { color: #00c8e0; }
+
+.footer-tagline {
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.75);
+  line-height: 1.6;
+  margin-bottom: 16px;
+  max-width: 240px;
+}
+
+.footer-stars {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+.footer-stars [data-lucide] {
+  width: 16px;
+  height: 16px;
+}
+.footer-stars__label {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.75);
+  margin-left: 4px;
+}
+
+.footer-abn {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.72rem;
+  color: rgba(255,255,255,0.4);
+  margin: 0;
+}
+
+/* ── Column Headings ── */
+.footer-heading {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.65rem;
+  font-weight: 500;
+  color: #00c8e0;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin: 0 0 16px;
+}
+.footer-heading--areas {
+  margin-top: 20px;
+}
+
+/* ── Footer Links ── */
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.88rem;
+  color: rgba(255,255,255,0.75);
+  text-decoration: none;
+  transition: color 0.2s;
+  line-height: 1.4;
+}
+.footer-link:hover {
+  color: #00c8e0;
+}
+.footer-link [data-lucide] {
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+  stroke: #00c8e0;
+  stroke-width: 1.75;
+}
+.footer-link--location {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.88rem;
+  color: rgba(255,255,255,0.75);
+}
+.footer-link--location [data-lucide] {
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+  stroke: #00c8e0;
+}
+
+/* ── Service Areas ── */
+.footer-areas {
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.55);
+  line-height: 1.8;
+  margin: 0;
+}
+
+/* ── Google Review Button ── */
+.footer-review {
+  padding: 32px 0 28px;
+  text-align: center;
+}
+.footer-review__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: white;
+  color: #0d1f3c;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.88rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.2s, color 0.2s;
+}
+.footer-review__btn:hover {
+  background-color: #00c8e0;
+  color: #0d1f3c;
+}
+.footer-review__btn [data-lucide] {
+  width: 16px;
+  height: 16px;
+}
+.footer-review__helper {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.68rem;
+  color: rgba(255,255,255,0.4);
+  margin: 10px 0 0;
+}
+
+/* ── Divider ── */
+.footer-divider {
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+/* ── Bottom Bar ── */
+.footer-bottom {
+  padding: 16px 0;
+}
+.footer-bottom__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.footer-bottom__copy {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.75rem;
+  color: rgba(255,255,255,0.4);
+}
+.footer-bottom__legal {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.footer-legal-link {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.75rem;
+  color: rgba(255,255,255,0.4);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.footer-legal-link:hover {
+  color: #00c8e0;
+}
+.footer-bottom__sep {
+  color: rgba(255,255,255,0.2);
+  font-size: 0.75rem;
+}
+
+/* ── Responsive ── */
+@media (max-width: 960px) {
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 36px;
+  }
+  .footer-col--brand {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .footer-col--brand {
+    grid-column: auto;
+  }
+  .footer-main {
+    padding: 48px 0 36px;
+  }
+  .footer-bottom__inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}
+</style>
+
+
+  <!-- CTA Fade-up on Scroll -->
+  <script>
+  (function () {
+    var anims = document.querySelectorAll('.cta-anim');
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          var el = entry.target;
+          var delay = parseInt(el.getAttribute('data-delay') || '0', 10);
+          setTimeout(function () {
+            el.classList.add('cta-visible');
+          }, delay);
+          observer.unobserve(el);
+        }
+      });
+    }, { threshold: 0.2 });
+    anims.forEach(function (el) { observer.observe(el); });
+  })();
+  </script>
+
+  <!-- FAQ Accordion -->
+  <script>
+  (function () {
+    var items = document.querySelectorAll('.faq-item');
+    items.forEach(function (item) {
+      var btn    = item.querySelector('.faq-question');
+      var answer = item.querySelector('.faq-answer');
+      btn.addEventListener('click', function () {
+        var isOpen = item.classList.contains('open');
+        // Close all
+        items.forEach(function (i) {
+          i.classList.remove('open');
+          i.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+          i.querySelector('.faq-answer').hidden = true;
+        });
+        // Toggle clicked
+        if (!isOpen) {
+          item.classList.add('open');
+          btn.setAttribute('aria-expanded', 'true');
+          answer.hidden = false;
+        }
+      });
+    });
+  })();
+  </script>
+
+  <!-- Count-up on scroll -->
+  <script>
+  (function () {
+    var counters = document.querySelectorAll('.stat-value[data-target]');
+    var started = false;
+
+    function countUp(el) {
+      var target = parseInt(el.getAttribute('data-target'), 10);
+      var suffix = el.getAttribute('data-suffix') || '';
+      var duration = 1600;
+      var start = performance.now();
+      function step(now) {
+        var elapsed = now - start;
+        var progress = Math.min(elapsed / duration, 1);
+        var ease = 1 - Math.pow(1 - progress, 3);
+        el.textContent = Math.floor(ease * target) + suffix;
+        if (progress < 1) requestAnimationFrame(step);
+      }
+      requestAnimationFrame(step);
+    }
+
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting && !started) {
+          started = true;
+          counters.forEach(countUp);
+        }
+      });
+    }, { threshold: 0.4 });
+
+    var statsBar = document.querySelector('.stats-bar');
+    if (statsBar) observer.observe(statsBar);
+  })();
+  </script>
+
+  <script>lucide.createIcons();</script>
+</body>
+</html>
