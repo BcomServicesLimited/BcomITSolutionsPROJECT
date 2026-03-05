@@ -813,6 +813,23 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     }
     .areas-booking { text-align: center; }
 
+    /* ── FAQ ACCORDION ── */
+    .faq-section { background: white; padding: 80px 0; }
+    .faq-inner { max-width: 760px; margin: 0 auto; padding: 0 24px; }
+    .faq-inner > h2 { font-size: 1.9rem; font-weight: 700; color: #0d1f3c; margin-bottom: 40px; }
+    .faq-item { border-bottom: 1px solid #e2e8f0; }
+    .faq-question {
+      width: 100%; background: none; border: none; cursor: pointer;
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 20px 0; text-align: left; gap: 16px;
+    }
+    .faq-question h3 { font-size: 1rem; font-weight: 600; color: #0d1f3c; margin: 0; line-height: 1.5; }
+    .faq-chevron { flex-shrink: 0; width: 20px; height: 20px; stroke: #00c8e0; transition: transform 0.3s ease; }
+    .faq-question[aria-expanded="true"] .faq-chevron { transform: rotate(180deg); }
+    .faq-answer { padding: 0 0 20px; }
+    .faq-answer p { font-size: 0.95rem; color: #4a5568; line-height: 1.75; margin: 0; }
+    .faq-answer a { color: #0077b6; text-decoration: underline; }
+
     /* ── FADE-UP ── */
     .fade-up { opacity: 0; transform: translateY(24px); transition: opacity 0.55s ease, transform 0.55s ease; }
     .fade-up.visible { opacity: 1; transform: translateY(0); }
@@ -1109,6 +1126,64 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </script>
         <!-- end Google Calendar Appointment Scheduling -->
       </div>
+    </div>
+  </section>
+
+  <!-- SECTION 6 — FAQ -->
+  <section class="faq-section" aria-label="Performance Optimisation Gold Coast FAQ">
+    <div class="faq-inner">
+      <h2 class="fade-up">Performance Optimisation Gold Coast &mdash; Frequently Asked Questions</h2>
+
+      <div class="faq-item fade-up">
+        <button class="faq-question" aria-expanded="false">
+          <h3>Why is my computer so slow and can you fix it at my Gold Coast home?</h3>
+          <svg class="faq-chevron" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </button>
+        <div class="faq-answer" hidden>
+          <p>The most common causes of a slow computer are too many startup programs, a nearly full hard drive, malware or junk software, an aging or failing drive, or overheating. In most cases we can diagnose and fix the issue in a single visit to your Gold Coast home. We find the actual cause rather than just recommending an upgrade. Call <a href="tel:0730418993">07 3041 8993</a> and we&rsquo;ll talk through what you&rsquo;re seeing before you book.</p>
+        </div>
+      </div>
+
+      <div class="faq-item fade-up" style="transition-delay:0.05s">
+        <button class="faq-question" aria-expanded="false">
+          <h3>My computer takes forever to start up &mdash; is that fixable?</h3>
+          <svg class="faq-chevron" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </button>
+        <div class="faq-answer" hidden>
+          <p>Yes, this is one of the most common jobs we do across Gold Coast homes. Slow startups are usually caused by too many programs loading at boot, a nearly full or fragmented drive, or Windows Update running in the background. We identify and fix the cause on-site &mdash; most customers notice the difference immediately. Call <a href="tel:0730418993">07 3041 8993</a> to book.</p>
+        </div>
+      </div>
+
+      <div class="faq-item fade-up" style="transition-delay:0.1s">
+        <button class="faq-question" aria-expanded="false">
+          <h3>Do I need more RAM or a new hard drive to speed up my computer?</h3>
+          <svg class="faq-chevron" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </button>
+        <div class="faq-answer" hidden>
+          <p>Not always. Many slow computers are slow because of software issues &mdash; startup programs, bloatware, malware or a full drive &mdash; not because the hardware is inadequate. We diagnose the real cause first. If a RAM or storage upgrade would genuinely help, we&rsquo;ll tell you honestly and quote before doing anything. We won&rsquo;t recommend hardware you don&rsquo;t need.</p>
+        </div>
+      </div>
+
+      <div class="faq-item fade-up" style="transition-delay:0.15s">
+        <button class="faq-question" aria-expanded="false">
+          <h3>My computer is getting hot and shutting down &mdash; can you fix that at my Gold Coast home?</h3>
+          <svg class="faq-chevron" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </button>
+        <div class="faq-answer" hidden>
+          <p>Yes. Overheating is a very common cause of slowdowns and unexpected shutdowns, and it can cause long-term damage if left unchecked. We come to your Gold Coast home, clean out dust from the fans and vents, check the thermal paste on the processor, and verify the cooling system is working correctly. Most overheating issues are fully resolved in a single visit. Call <a href="tel:0730418993">07 3041 8993</a> to book.</p>
+        </div>
+      </div>
+
+      <div class="faq-item fade-up" style="transition-delay:0.2s">
+        <button class="faq-question" aria-expanded="false">
+          <h3>How much does a computer performance tune-up cost on the Gold Coast?</h3>
+          <svg class="faq-chevron" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </button>
+        <div class="faq-answer" hidden>
+          <p>We charge a call-out fee covering the visit and the initial diagnosis. The tune-up work is included in the call-out for most standard jobs. If parts are needed &mdash; such as a new drive or additional RAM &mdash; we quote separately before ordering anything. We always confirm the cost upfront before we start. Call <a href="tel:0730418993">07 3041 8993</a> for a quote or to discuss your situation first.</p>
+        </div>
+      </div>
+
     </div>
   </section>
 
@@ -1514,6 +1589,30 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <a href="tel:0730418993" class="sticky-call"><i aria-hidden="true" data-lucide="phone"></i> Call Now</a>
     <a href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2z99t5yQNIRoRT8rNM3Jv7-WC-MNC35owGsga-okvZmEIG167e9iLOAco3_vHaX44r6eYmGFRA?gv=true" target="_blank" rel="noopener noreferrer" class="sticky-book"><i aria-hidden="true" data-lucide="calendar"></i> Book Online</a>
   </div>
+
+  <!-- FAQ ACCORDION JS -->
+  <script>
+  (function () {
+    var items = document.querySelectorAll('.faq-question');
+    items.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var expanded = btn.getAttribute('aria-expanded') === 'true';
+        // close all
+        items.forEach(function (b) {
+          b.setAttribute('aria-expanded', 'false');
+          var ans = b.parentElement.querySelector('.faq-answer');
+          if (ans) ans.hidden = true;
+        });
+        // open clicked if it was closed
+        if (!expanded) {
+          btn.setAttribute('aria-expanded', 'true');
+          var answer = btn.parentElement.querySelector('.faq-answer');
+          if (answer) answer.hidden = false;
+        }
+      });
+    });
+  })();
+  </script>
 
   <!-- SCRIPTS -->
   <script>
