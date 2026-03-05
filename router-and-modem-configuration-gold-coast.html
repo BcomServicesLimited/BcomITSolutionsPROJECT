@@ -698,6 +698,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     .suburb-pill { border: 1px solid #0d1f3c; color: #0d1f3c; font-size: 0.82rem; font-weight: 500; padding: 6px 14px; border-radius: 999px; background: white; }
     @media (max-width: 900px) { .services-grid { grid-template-columns: 1fr 1fr; } }
     @media (max-width: 600px) { .services-grid { grid-template-columns: 1fr; } }
+    /* ── WHY CHOOSE US ── */
+    .why-section { background: #f8fafb; padding: 80px 0; }
+    .why-header { text-align: center; margin-bottom: 48px; }
+    .why-header h2 { font-size: 1.9rem; font-weight: 700; color: #0d1f3c; margin-bottom: 12px; }
+    .why-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+    .why-card { background: white; border-radius: 16px; padding: 32px; border-left: 4px solid #00c8e0; box-shadow: 0 4px 20px rgba(0,0,0,0.05); display: flex; gap: 20px; align-items: flex-start; }
+    .why-card__icon { width: 48px; height: 48px; background: #e6fafd; border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .why-card__icon [data-lucide] { width: 22px; height: 22px; stroke: #00c8e0; stroke-width: 1.75; }
+    .why-card__text h3 { font-size: 1rem; font-weight: 700; color: #0d1f3c; margin-bottom: 6px; }
+    .why-card__text p { font-size: 0.9rem; color: #4a5568; line-height: 1.6; margin: 0; }
+    @media (max-width: 700px) { .why-grid { grid-template-columns: 1fr; } }
 </style>
 
 <!-- NAV JAVASCRIPT -->
@@ -881,6 +892,50 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <p style="font-size:0.95rem;color:#4a5568;max-width:580px;margin:0 auto;line-height:1.7;">We support the router or modem you already have and can supply a replacement if needed. Call <a href="tel:0730418993" style="color:#00c8e0;font-weight:600;">07 3041 8993</a> before buying new hardware &mdash; we&rsquo;ll tell you whether a replacement is actually necessary.</p>
       </div>
 
+    </div>
+  </section>
+
+  <!-- SECTION 4 — WHY CHOOSE US -->
+  <section class="why-section" aria-label="Why Gold Coast Residents Choose Bcom IT Solutions for Router Setup">
+    <div class="container">
+      <div class="why-header fade-up">
+        <h2>Why Gold Coast Residents Choose Bcom IT Solutions for Router Setup</h2>
+      </div>
+      <div class="why-grid">
+
+        <div class="why-card fade-up" style="transition-delay:0.05s">
+          <div class="why-card__icon"><i aria-hidden="true" data-lucide="gauge"></i></div>
+          <div class="why-card__text">
+            <h3>We Fix the Actual Problem</h3>
+            <p>Slow internet is often a configuration issue, not a hardware problem. We diagnose before recommending a replacement &mdash; many Gold Coast customers leave with a faster connection and the same router.</p>
+          </div>
+        </div>
+
+        <div class="why-card fade-up" style="transition-delay:0.1s">
+          <div class="why-card__icon"><i aria-hidden="true" data-lucide="globe"></i></div>
+          <div class="why-card__text">
+            <h3>NBN-Specific Configuration</h3>
+            <p>Different NBN connection types need different settings. We configure your router correctly for your specific NBN type and run a speed test before leaving to confirm your plan speeds are coming through.</p>
+          </div>
+        </div>
+
+        <div class="why-card fade-up" style="transition-delay:0.15s">
+          <div class="why-card__icon"><i aria-hidden="true" data-lucide="zap"></i></div>
+          <div class="why-card__text">
+            <h3>Fast Response Gold Coast</h3>
+            <p>Most Gold Coast call-outs within 2&ndash;4 hours. Same-day router setup available across all suburbs.</p>
+          </div>
+        </div>
+
+        <div class="why-card fade-up" style="transition-delay:0.2s">
+          <div class="why-card__icon"><i aria-hidden="true" data-lucide="shield-check"></i></div>
+          <div class="why-card__text">
+            <h3>Fully Working Before We Leave</h3>
+            <p>Every device reconnected, speed confirmed, settings documented. We don&rsquo;t leave until your Gold Coast internet connection is performing as it should.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 
