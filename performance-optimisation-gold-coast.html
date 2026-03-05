@@ -735,6 +735,38 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       .takeaways-inner ul { grid-template-columns: 1fr; }
     }
 
+    /* ── SERVICES GRID ── */
+    .services-section { background: white; padding: 80px 0; }
+    .services-header { text-align: center; margin-bottom: 48px; }
+    .services-header h2 { font-size: 1.9rem; font-weight: 700; color: #0d1f3c; margin-bottom: 12px; }
+    .services-header p { font-size: 1rem; color: #4a5568; max-width: 600px; margin: 0 auto; line-height: 1.7; }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+      margin-bottom: 48px;
+    }
+    .service-card {
+      background: #f8fafb;
+      border-radius: 16px;
+      padding: 32px;
+      border-top: 3px solid #00c8e0;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .service-card:hover { transform: translateY(-4px); box-shadow: 0 8px 32px rgba(0,0,0,0.1); }
+    .icon-circle {
+      width: 48px; height: 48px; background: #e6fafd;
+      border-radius: 12px; display: flex; align-items: center;
+      justify-content: center; margin-bottom: 16px;
+    }
+    .icon-circle [data-lucide] { width: 22px; height: 22px; stroke: #00c8e0; }
+    .service-card h3 { font-size: 1.05rem; font-weight: 700; color: #0d1f3c; margin-bottom: 10px; }
+    .service-card p { font-size: 0.92rem; color: #4a5568; line-height: 1.65; margin: 0; }
+    .services-booking { text-align: center; }
+    @media (max-width: 900px) { .services-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 600px) { .services-grid { grid-template-columns: 1fr; } }
+
     /* ── FADE-UP ── */
     .fade-up { opacity: 0; transform: translateY(24px); transition: opacity 0.55s ease, transform 0.55s ease; }
     .fade-up.visible { opacity: 1; transform: translateY(0); }
@@ -879,6 +911,74 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <li>Same-day and next-day appointments available across all Gold Coast suburbs</li>
         <li>Locally owned and operated &mdash; ABN 92 636 893 108</li>
       </ul>
+    </div>
+  </section>
+
+  <!-- SECTION 3 — SERVICES GRID -->
+  <section class="services-section" aria-label="Performance Optimisation Services Gold Coast">
+    <div class="container">
+      <div class="services-header fade-up">
+        <h2>Performance Optimisation Services Gold Coast</h2>
+        <p>A slow computer is one of the most frustrating things to deal with &mdash; and most of the time the fix is simpler than people expect. Our Gold Coast technicians find the real cause and fix it at your home, without pushing unnecessary upgrades. This service is part of our broader <a href="computer-repairs-gold-coast.html">computer repair Gold Coast</a> offering. If your computer is also crashing or showing errors, we can diagnose everything in the same visit.</p>
+      </div>
+      <div class="services-grid">
+
+        <div class="service-card fade-up" style="transition-delay:0.05s">
+          <div class="icon-circle"><i aria-hidden="true" data-lucide="zap-off"></i></div>
+          <h3>Slow Computer Diagnosis &amp; Fix Gold Coast</h3>
+          <p>We identify exactly what is causing your Gold Coast computer to run slowly and fix it on the spot &mdash; no guesswork, no unnecessary parts.</p>
+        </div>
+
+        <div class="service-card fade-up" style="transition-delay:0.1s">
+          <div class="icon-circle"><i aria-hidden="true" data-lucide="timer"></i></div>
+          <h3>Startup Speed Optimisation Gold Coast</h3>
+          <p>Slow to boot? We remove unnecessary startup programs, clean up background processes and get your Gold Coast computer starting fast.</p>
+        </div>
+
+        <div class="service-card fade-up" style="transition-delay:0.15s">
+          <div class="icon-circle"><i aria-hidden="true" data-lucide="trash-2"></i></div>
+          <h3>Bloatware &amp; Junk Software Removal Gold Coast</h3>
+          <p>Unwanted software, trial programs and toolbars slowing you down &mdash; all identified and cleanly removed from your Gold Coast computer.</p>
+        </div>
+
+        <div class="service-card fade-up" style="transition-delay:0.2s">
+          <div class="icon-circle"><i aria-hidden="true" data-lucide="thermometer"></i></div>
+          <h3>Overheating Diagnosis &amp; Fix Gold Coast</h3>
+          <p>Overheating causes slowdowns, shutdowns and long-term damage. We clean dust, check fans and replace thermal paste at your Gold Coast home.</p>
+        </div>
+
+        <div class="service-card fade-up" style="transition-delay:0.25s">
+          <div class="icon-circle"><i aria-hidden="true" data-lucide="hard-drive"></i></div>
+          <h3>Hard Drive &amp; SSD Health Check Gold Coast</h3>
+          <p>We check your drive for failing sectors, slow read speeds and early warning signs &mdash; catching problems before they cause data loss.</p>
+        </div>
+
+        <div class="service-card fade-up" style="transition-delay:0.3s">
+          <div class="icon-circle"><i aria-hidden="true" data-lucide="globe"></i></div>
+          <h3>Browser &amp; Internet Speed Optimisation Gold Coast</h3>
+          <p>Slow browser, too many extensions or corrupted cache dragging you down &mdash; we clean it up and get your Gold Coast browsing back to full speed.</p>
+        </div>
+
+      </div>
+      <div class="services-booking fade-up">
+        <!-- Google Calendar Appointment Scheduling begin -->
+        <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+        <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+        <script>
+        (function() {
+          var target = document.currentScript;
+          window.addEventListener('load', function() {
+            calendar.schedulingButton.load({
+              url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ2z99t5yQNIRoRT8rNM3Jv7-WC-MNC35owGsga-okvZmEIG167e9iLOAco3_vHaX44r6eYmGFRA?gv=true',
+              color: '#039BE5',
+              label: 'Book an appointment',
+              target,
+            });
+          });
+        })();
+        </script>
+        <!-- end Google Calendar Appointment Scheduling -->
+      </div>
     </div>
   </section>
 
