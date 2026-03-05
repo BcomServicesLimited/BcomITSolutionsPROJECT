@@ -62,7 +62,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     min-height: 65vh;
     background-image: url('hero-bg-network-security.webp');
     background-size: cover;
-    background-position: center center;
+    background-position: center 30%;
     display: flex;
     align-items: center;
     overflow: hidden;
@@ -1256,6 +1256,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 }
 </style>
 
+
+  <!-- SCRIPTS -->
+  <script>
+  (function () {
+    var els = document.querySelectorAll('.fade-up');
+    var obs = new IntersectionObserver(function (entries) { entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } }); }, { threshold: 0.15 });
+    els.forEach(function (el) { obs.observe(el); });
+  })();
+  </script>
 
   <script>lucide.createIcons();</script>
 </body>
