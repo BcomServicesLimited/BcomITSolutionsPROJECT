@@ -680,6 +680,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     .takeaways-inner li { display: flex; align-items: flex-start; gap: 10px; font-size: 0.92rem; color: #1e3a5f; line-height: 1.5; }
     .takeaways-inner li::before { content: ''; width: 8px; height: 8px; background: #00c8e0; border-radius: 50%; flex-shrink: 0; margin-top: 6px; }
     @media (max-width: 600px) { .takeaways-inner ul { grid-template-columns: 1fr; } }
+    /* ── SERVICES GRID ── */
+    .services-section { background: white; padding: 80px 0; }
+    .services-header { text-align: center; margin-bottom: 48px; }
+    .services-header h2 { font-size: 1.9rem; font-weight: 700; color: #0d1f3c; margin-bottom: 12px; }
+    .services-header p { font-size: 1rem; color: #4a5568; max-width: 600px; margin: 0 auto; line-height: 1.7; }
+    .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; margin-bottom: 48px; }
+    .service-card { background: #f8fafb; border-radius: 16px; padding: 32px; border-top: 3px solid #00c8e0; box-shadow: 0 4px 20px rgba(0,0,0,0.05); transition: transform 0.2s, box-shadow 0.2s; }
+    .service-card:hover { transform: translateY(-4px); box-shadow: 0 8px 32px rgba(0,0,0,0.1); }
+    .service-card .icon-circle { margin-bottom: 20px; }
+    .service-card h3 { font-size: 1rem; font-weight: 700; color: #0d1f3c; margin-bottom: 10px; line-height: 1.3; }
+    .service-card p { font-size: 0.9rem; color: #4a5568; line-height: 1.7; margin: 0; }
+    .services-booking { text-align: center; }
+    .icon-circle { width: 52px; height: 52px; background: #e6fafd; border-radius: 14px; display: flex; align-items: center; justify-content: center; }
+    .icon-circle [data-lucide] { width: 24px; height: 24px; stroke: #00c8e0; stroke-width: 1.75; }
+    .suburb-pills { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-bottom: 40px; }
+    .suburb-pill { border: 1px solid #0d1f3c; color: #0d1f3c; font-size: 0.82rem; font-weight: 500; padding: 6px 14px; border-radius: 999px; background: white; }
+    @media (max-width: 900px) { .services-grid { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 600px) { .services-grid { grid-template-columns: 1fr; } }
 </style>
 
 <!-- NAV JAVASCRIPT -->
@@ -777,6 +795,92 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <li>Same-day and next-day appointments across all Gold Coast suburbs</li>
         <li>Locally owned and operated &mdash; ABN 92 636 893 108</li>
       </ul>
+    </div>
+  </section>
+
+  <!-- SECTION 3 — SERVICES GRID -->
+  <section class="services-section" aria-label="Router and Modem Setup Services Gold Coast">
+    <div class="container">
+      <div class="services-header fade-up">
+        <h2>Router &amp; Modem Setup Services Gold Coast</h2>
+        <p>A poorly configured router is one of the most common causes of slow internet on the Gold Coast &mdash; even on fast NBN plans. We set up new hardware correctly and fix existing setups that aren&rsquo;t performing. This service is part of our <a href="computer-networking-service-gold-coast.html" style="color:#00c8e0;font-weight:600;">networking &amp; WiFi Gold Coast</a> offering. If you need full wireless coverage across a large home, see our <a href="home-wifi-setup-and-troubleshooting-gold-coast.html" style="color:#00c8e0;font-weight:600;">WiFi installation &amp; configuration Gold Coast</a> service.</p>
+      </div>
+      <div class="services-grid">
+
+        <div class="service-card fade-up" style="transition-delay:0.05s">
+          <div class="icon-circle"><i aria-hidden="true" data-lucide="router"></i></div>
+          <h3>New Router Installation &amp; Setup Gold Coast</h3>
+          <p>New router unboxed, connected to your NBN modem, fully configured and all devices reconnected &mdash; ASUS, Netgear, TP-Link, D-Link and other leading brands supported at your Gold Coast home.</p>
+        </div>
+
+        <div class="service-card fade-up" style="transition-delay:0.1s">
+          <div class="icon-circle"><i aria-hidden="true" data-lucide="globe"></i></div>
+          <h3>NBN Modem Configuration Gold Coast</h3>
+          <p>ISP-supplied or aftermarket NBN modems configured correctly for your connection type &mdash; FTTP, FTTN, HFC or Fixed Wireless &mdash; and tested at your Gold Coast home.</p>
+        </div>
+
+        <div class="service-card fade-up" style="transition-delay:0.15s">
+          <div class="icon-circle"><i aria-hidden="true" data-lucide="settings"></i></div>
+          <h3>Router Optimisation &amp; Performance Tuning Gold Coast</h3>
+          <p>Slow internet despite a fast NBN plan? We audit your router settings, fix channel congestion, update firmware and configure QoS to maximise real-world speeds at your Gold Coast home.</p>
+        </div>
+
+        <div class="service-card fade-up" style="transition-delay:0.2s">
+          <div class="icon-circle"><i aria-hidden="true" data-lucide="users"></i></div>
+          <h3>Guest Network &amp; Parental Controls Setup Gold Coast</h3>
+          <p>Guest network configured with isolated access, parental controls set up for specific devices or time schedules, and admin password secured &mdash; all handled at your Gold Coast home.</p>
+        </div>
+
+        <div class="service-card fade-up" style="transition-delay:0.25s">
+          <div class="icon-circle"><i aria-hidden="true" data-lucide="shield"></i></div>
+          <h3>Router Security Hardening Gold Coast</h3>
+          <p>Default passwords changed, remote management disabled, firewall settings reviewed and firmware updated &mdash; your Gold Coast router secured against common vulnerabilities.</p>
+        </div>
+
+        <div class="service-card fade-up" style="transition-delay:0.3s">
+          <div class="icon-circle"><i aria-hidden="true" data-lucide="repeat"></i></div>
+          <h3>Router Replacement &amp; Migration Gold Coast</h3>
+          <p>Upgrading from an old router? We transfer all your settings, reconnect every device and dispose of the old hardware &mdash; seamless switchover at your Gold Coast home with no downtime.</p>
+        </div>
+
+      </div>
+
+      <div class="services-booking fade-up">
+        <!-- Google Calendar Appointment Scheduling begin -->
+        <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+        <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+        <script>
+        (function() {
+          var target = document.currentScript;
+          window.addEventListener('load', function() {
+            calendar.schedulingButton.load({
+              url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ2z99t5yQNIRoRT8rNM3Jv7-WC-MNC35owGsga-okvZmEIG167e9iLOAco3_vHaX44r6eYmGFRA?gv=true',
+              color: '#039BE5',
+              label: 'Book an appointment',
+              target,
+            });
+          });
+        })();
+        </script>
+        <!-- end Google Calendar Appointment Scheduling -->
+      </div>
+
+      <div style="text-align:center;margin-top:48px;">
+        <h3 style="font-size:1.1rem;font-weight:700;color:#0d1f3c;margin-bottom:20px;">Router &amp; Modem Brands We Support on the Gold Coast</h3>
+        <div class="suburb-pills">
+          <span class="suburb-pill">ASUS</span>
+          <span class="suburb-pill">Netgear</span>
+          <span class="suburb-pill">TP-Link</span>
+          <span class="suburb-pill">D-Link</span>
+          <span class="suburb-pill">Linksys</span>
+          <span class="suburb-pill">Cisco</span>
+          <span class="suburb-pill">Technicolor</span>
+          <span class="suburb-pill">Sagemcom</span>
+          <span class="suburb-pill">Billion</span>
+        </div>
+        <p style="font-size:0.95rem;color:#4a5568;max-width:580px;margin:0 auto;line-height:1.7;">We support the router or modem you already have and can supply a replacement if needed. Call <a href="tel:0730418993" style="color:#00c8e0;font-weight:600;">07 3041 8993</a> before buying new hardware &mdash; we&rsquo;ll tell you whether a replacement is actually necessary.</p>
+      </div>
+
     </div>
   </section>
 
