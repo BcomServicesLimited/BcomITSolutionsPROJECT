@@ -186,6 +186,43 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     @media (max-width: 600px) {
       .takeaways-inner ul { grid-template-columns: 1fr; }
     }
+
+    /* ── SERVICES GRID ── */
+    .services-section { background: white; padding: 80px 0; }
+    .services-header { text-align: center; margin-bottom: 48px; }
+    .services-header h2 { font-size: 1.9rem; font-weight: 700; color: #0d1f3c; margin-bottom: 12px; }
+    .services-header p { font-size: 1rem; color: #4a5568; max-width: 600px; margin: 0 auto; line-height: 1.7; }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+      margin-bottom: 48px;
+    }
+    .service-card {
+      background: #f8fafb;
+      border-radius: 16px;
+      padding: 32px;
+      border-top: 3px solid #00c8e0;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .service-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+    }
+    .service-card .icon-circle { margin-bottom: 20px; }
+    .service-card h3 { font-size: 1rem; font-weight: 700; color: #0d1f3c; margin-bottom: 10px; line-height: 1.3; }
+    .service-card p { font-size: 0.9rem; color: #4a5568; line-height: 1.7; margin: 0; }
+    .services-booking { text-align: center; }
+    .icon-circle {
+      width: 48px; height: 48px;
+      background: #e6fafd;
+      border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .icon-circle [data-lucide] { width: 22px; height: 22px; stroke: #00c8e0; stroke-width: 1.75; }
+    @media (max-width: 900px) { .services-grid { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 600px) { .services-grid { grid-template-columns: 1fr; } }
   </style>
 
   <!-- BreadcrumbList Schema -->
@@ -850,6 +887,75 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <li>Same-day and next-day appointments available across all Gold Coast suburbs</li>
         <li>Locally owned and operated &mdash; ABN 92 636 893 108</li>
       </ul>
+    </div>
+  </section>
+
+  <!-- SECTION 3 — SERVICES GRID -->
+  <section class="services-section" aria-label="Software Installation &amp; Configuration Services Gold Coast">
+    <div class="container">
+      <div class="services-header fade-up">
+        <h2>Software Installation &amp; Configuration Services Gold Coast</h2>
+        <p>Getting software to work the way it should takes more than just clicking Install. Our Gold Coast technicians set everything up correctly at your home &mdash; signed in, configured, tested and ready to use. This service is part of our broader <a href="computer-repairs-gold-coast.html" style="color:#00c8e0;font-weight:600;">computer repair Gold Coast</a> offering. If your computer is also running slowly after a new install, we can address that in the same visit.</p>
+      </div>
+      <div class="services-grid">
+
+        <div class="service-card fade-up" style="transition-delay:0.05s">
+          <div class="icon-circle"><i aria-hidden="true" data-lucide="monitor"></i></div>
+          <h3>Windows Installation &amp; Setup Gold Coast</h3>
+          <p>Clean Windows install or upgrade, fully updated and configured at your Gold Coast home &mdash; drivers, settings and preferences all sorted.</p>
+        </div>
+
+        <div class="service-card fade-up" style="transition-delay:0.1s">
+          <div class="icon-circle"><i aria-hidden="true" data-lucide="mail"></i></div>
+          <h3>Microsoft 365 Setup Gold Coast</h3>
+          <p>Word, Excel, Outlook, Teams and OneDrive installed, licensed and signed in &mdash; configured correctly across all your Gold Coast devices.</p>
+        </div>
+
+        <div class="service-card fade-up" style="transition-delay:0.15s">
+          <div class="icon-circle"><i aria-hidden="true" data-lucide="printer"></i></div>
+          <h3>Printer &amp; Scanner Installation Gold Coast</h3>
+          <p>Wired and wireless printers installed with correct drivers, connected to your network, tested and printing before we leave.</p>
+        </div>
+
+        <div class="service-card fade-up" style="transition-delay:0.2s">
+          <div class="icon-circle"><i aria-hidden="true" data-lucide="at-sign"></i></div>
+          <h3>Email Account Configuration Gold Coast</h3>
+          <p>Gmail, Outlook, iCloud and other accounts set up on your computer, phone or tablet &mdash; folders, signatures and settings included.</p>
+        </div>
+
+        <div class="service-card fade-up" style="transition-delay:0.25s">
+          <div class="icon-circle"><i aria-hidden="true" data-lucide="hard-drive"></i></div>
+          <h3>Backup Software Setup Gold Coast</h3>
+          <p>Automatic backups configured to an external drive or cloud so your Gold Coast home computer&rsquo;s files are always protected.</p>
+        </div>
+
+        <div class="service-card fade-up" style="transition-delay:0.3s">
+          <div class="icon-circle"><i aria-hidden="true" data-lucide="repeat"></i></div>
+          <h3>New PC Setup &amp; Data Transfer Gold Coast</h3>
+          <p>Getting a new computer? We move your files, accounts, programs and settings from your old device &mdash; nothing gets left behind.</p>
+        </div>
+
+      </div>
+
+      <div class="services-booking fade-up">
+        <!-- Google Calendar Appointment Scheduling begin -->
+        <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+        <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+        <script>
+        (function() {
+          var target = document.currentScript;
+          window.addEventListener('load', function() {
+            calendar.schedulingButton.load({
+              url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ2z99t5yQNIRoRT8rNM3Jv7-WC-MNC35owGsga-okvZmEIG167e9iLOAco3_vHaX44r6eYmGFRA?gv=true',
+              color: '#039BE5',
+              label: 'Book an appointment',
+              target,
+            });
+          });
+        })();
+        </script>
+        <!-- end Google Calendar Appointment Scheduling -->
+      </div>
     </div>
   </section>
 
