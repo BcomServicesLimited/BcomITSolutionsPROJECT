@@ -351,11 +351,86 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .btn-secondary:hover { border-color: #00c8e0; background: rgba(0,200,224,0.08); transform: translateY(-2px); }
     .btn-secondary [data-lucide] { width: 18px; height: 18px; stroke: white; }
     .last-updated { text-align: center; font-family: 'DM Mono', monospace; font-size: 0.72rem; color: #94a3b8; padding: 16px 0; background: white; }
+    /* ── CONTENT DETAIL SECTIONS ── */
+    .content-detail-section { background: white; padding: 80px 0; border-bottom: 1px solid #f1f5f9; }
+    .content-detail-section--alt { background: #f8fafb; }
+    .content-detail-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; }
+    .content-detail-grid--reverse { direction: rtl; }
+    .content-detail-grid--reverse > * { direction: ltr; }
+    .content-detail-label { font-family: 'DM Mono', monospace; font-size: 0.68rem; font-weight: 500; color: #00c8e0; text-transform: uppercase; letter-spacing: 0.12em; display: block; margin-bottom: 12px; }
+    .content-detail-h2 { font-size: 1.7rem; font-weight: 700; color: #0d1f3c; line-height: 1.25; margin-bottom: 20px; letter-spacing: -0.01em; }
+    .content-detail-text p { font-size: 0.97rem; color: #4a5568; line-height: 1.8; margin-bottom: 16px; }
+    .content-detail-text p:last-child { margin-bottom: 0; }
+    @media (max-width: 900px) {
+      .content-detail-grid, .content-detail-grid--reverse { grid-template-columns: 1fr; direction: ltr; gap: 32px; }
+    }
+
+    /* ── PROCESS SECTION ── */
+    .process-section { background: #e6fafd; padding: 80px 0; border-bottom: 1px solid #c8f0f7; }
+    .process-header { text-align: center; margin-bottom: 40px; }
+    .process-label { font-family: 'DM Mono', monospace; font-size: 0.68rem; font-weight: 500; color: #00c8e0; text-transform: uppercase; letter-spacing: 0.12em; display: block; margin-bottom: 12px; }
+    .process-h2 { font-size: 1.7rem; font-weight: 700; color: #0d1f3c; line-height: 1.25; margin-bottom: 12px; letter-spacing: -0.01em; }
+    .process-intro { font-size: 1rem; color: #4a5568; max-width: 600px; margin: 0 auto; line-height: 1.7; }
+    .process-body { max-width: 760px; margin: 0 auto; }
+    .process-body p { font-size: 0.97rem; color: #4a5568; line-height: 1.8; margin-bottom: 16px; }
+    .process-body p:last-child { margin-bottom: 0; }
+
+    /* ── MANAGED SECTION ── */
+    .managed-section { background: white; padding: 80px 0; border-bottom: 1px solid #f1f5f9; }
+    .managed-inner { max-width: 760px; margin: 0 auto; }
+    .managed-h2 { font-size: 1.7rem; font-weight: 700; color: #0d1f3c; line-height: 1.25; margin-bottom: 24px; letter-spacing: -0.01em; }
+    .managed-body p { font-size: 0.97rem; color: #4a5568; line-height: 1.8; margin-bottom: 16px; }
+    .managed-body p:last-child { margin-bottom: 0; }
+
+    /* ── MOBILE STICKY BAR ── */
+    .mobile-sticky-bar {
+      display: none; position: fixed; bottom: 0; left: 0; right: 0;
+      z-index: 2000; background: white; border-top: 2px solid #00c8e0;
+      padding: 10px 16px; gap: 10px;
+    }
+    .mobile-sticky-bar a {
+      flex: 1; text-align: center; padding: 12px 8px; border-radius: 8px;
+      font-family: 'DM Sans', sans-serif; font-size: 0.95rem; font-weight: 700;
+      text-decoration: none; display: flex; align-items: center; justify-content: center; gap: 8px;
+    }
+    .mobile-sticky-bar .sticky-call { background: #0d1f3c; color: white; }
+    .mobile-sticky-bar .sticky-book { background: #00c8e0; color: #0d1f3c; }
     @media (max-width: 768px) {
+      .mobile-sticky-bar { display: flex; }
+      body { padding-bottom: 72px; }
+      .hero h1 { font-size: 1.9rem; }
       .cta-banner { clip-path: none; padding: 64px 0 48px; }
       .cta-banner h2 { font-size: 1.6rem; }
     }
   </style>
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Software Installation &amp; Configuration Gold Coast | Bcom IT Solutions">
+  <meta property="og:description" content="Software installation and configuration at your Gold Coast home. Windows, Microsoft 365, printers, email, backup and more. Same-day available. Call 07 3041 8993.">
+  <meta property="og:url" content="https://bcomservices.com.au/software-installation-configuration-gold-coast.html">
+  <meta property="og:image" content="https://bcomservices.com.au/hero-bg-software-installation.webp">
+  <meta property="og:site_name" content="Bcom IT Solutions">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Software Installation &amp; Configuration Gold Coast | Bcom IT Solutions">
+  <meta name="twitter:description" content="Software installation and configuration at your Gold Coast home. Windows, Microsoft 365, printers, email, backup and more. Same-day available. Call 07 3041 8993.">
+  <meta name="twitter:image" content="https://bcomservices.com.au/hero-bg-software-installation.webp">
+
+  <!-- WebPage Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Software Installation & Configuration Gold Coast | Bcom IT Solutions",
+    "description": "Software installation and configuration at your Gold Coast home. Windows, Microsoft 365, printers, email, backup and more. Same-day available.",
+    "url": "https://bcomservices.com.au/software-installation-configuration-gold-coast.html",
+    "inLanguage": "en-AU",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Bcom IT Solutions",
+      "url": "https://bcomservices.com.au"
+    }
+  }
+  </script>
 
   <!-- BreadcrumbList Schema -->
   <script type="application/ld+json">
@@ -1135,6 +1210,104 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
+  <!-- SECTION 4B — WHAT TO EXPECT -->
+  <section class="content-detail-section" aria-label="What to expect from a software installation visit on the Gold Coast">
+    <div class="container">
+      <div class="content-detail-grid fade-up">
+        <div class="content-detail-text">
+          <span class="content-detail-label">Software Installation &amp; Configuration Gold Coast</span>
+          <h2 class="content-detail-h2">What Happens During a Software Installation Visit</h2>
+          <p>Software installation and configuration on the Gold Coast is a hands-on service. A technician comes to your home, works through each item on your list, and does not leave until everything is set up and working. That means signed in, tested, and explained to you in plain language before the visit ends.</p>
+          <p>The visit starts with a quick conversation. The technician asks what you need, checks what is already on the computer, and confirms the plan before touching anything. If there are licensing issues or compatibility problems, they are identified upfront. There are no surprises and no work begins without your approval.</p>
+          <p>For a household in Varsity Lakes setting up a new computer, the technician might install Windows, configure Microsoft 365, set up a Gmail account in Outlook, connect a wireless printer, and run a test print &mdash; all in a single visit. For a retired couple in Palm Beach who bought a new laptop, the same visit might include transferring files from the old machine, setting up iCloud, and walking through how to use the new device.</p>
+          <p>Every setup is tested before the technician leaves. If something is not working correctly, it gets fixed on the spot. You will not be handed a device and told to figure out the rest yourself. The goal is to leave your Gold Coast home with software that works the way you need it to. Call <a href="tel:0730418993" style="color:#00c8e0;font-weight:600;">07 3041 8993</a> to arrange a visit.</p>
+        </div>
+        <div class="content-detail-image">
+          <img
+            src="software-install-technician-gold-coast.webp"
+            alt="IT technician helping with software installation and configuration at a Gold Coast home"
+            width="800"
+            height="450"
+            loading="lazy"
+            decoding="async"
+            style="width:100%;height:auto;border-radius:16px;box-shadow:0 8px 32px rgba(0,0,0,0.12);"
+          >
+          <p style="font-size:0.78rem;color:#94a3b8;margin-top:10px;font-family:'DM Mono',monospace;text-align:center;">Software installation &amp; configuration &mdash; done right at your Gold Coast home</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4C — HOW IT WORKS -->
+  <section class="process-section" aria-label="How software installation and configuration works on the Gold Coast">
+    <div class="container">
+      <div class="process-header fade-up">
+        <span class="process-label">How It Works</span>
+        <h2 class="process-h2">How Our Software Installation Service Works</h2>
+        <p class="process-intro">From your first call to a fully configured computer &mdash; here is what the software installation process looks like for Gold Coast residents.</p>
+      </div>
+      <div class="process-body fade-up" style="transition-delay:0.1s">
+        <img
+          src="software-installation-process-infographic.webp"
+          alt="Infographic showing the 4-step software installation and configuration process on the Gold Coast"
+          width="800"
+          height="450"
+          loading="lazy"
+          decoding="async"
+          style="width:100%;height:auto;border-radius:12px;margin-bottom:32px;box-shadow:0 4px 20px rgba(0,0,0,0.08);"
+        >
+        <p>The process starts with a call or an online booking. You describe what you need &mdash; whether it is a fresh Windows install, Microsoft 365 setup, a printer that will not connect, or a full new computer setup &mdash; and we confirm the visit time. Same-day appointments are available across all Gold Coast suburbs, and we aim to be with you within 2 to 4 hours of your call where possible.</p>
+        <p>When the technician arrives, they start with a quick check of your current setup. This helps them understand what is already installed, what licences you have, and whether there are any compatibility issues to work around. It usually takes no more than a few minutes, and you will know the full cost before any work begins.</p>
+        <p>The installation and configuration work is done in front of you. You can watch, ask questions, and flag anything that does not look right. Once each item is set up, the technician tests it thoroughly &mdash; sending a test email, printing a test page, opening a document in Word, checking that OneDrive is syncing. Nothing is marked as done until it actually works.</p>
+        <p>Before leaving, the technician walks you through what has been set up and how to use it. If you have questions about how to find your files, how to add another email account later, or how to check that your backups are running, they will answer them on the spot. The visit ends when you are satisfied, not when the clock runs out. For bookings across Southport, Robina, Helensvale, Coomera and all other Gold Coast suburbs, call <a href="tel:0730418993" style="color:#00c8e0;font-weight:600;">07 3041 8993</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4D — COMMON SCENARIOS -->
+  <section class="content-detail-section content-detail-section--alt" aria-label="Common software installation scenarios for Gold Coast homes">
+    <div class="container">
+      <div class="content-detail-grid content-detail-grid--reverse fade-up">
+        <div class="content-detail-image">
+          <img
+            src="software-setup-printer-email-gold-coast.webp"
+            alt="Technician setting up a wireless printer and email configuration at a Gold Coast home"
+            width="800"
+            height="450"
+            loading="lazy"
+            decoding="async"
+            style="width:100%;height:auto;border-radius:16px;box-shadow:0 8px 32px rgba(0,0,0,0.12);"
+          >
+          <p style="font-size:0.78rem;color:#94a3b8;margin-top:10px;font-family:'DM Mono',monospace;text-align:center;">Printer &amp; email setup &mdash; configured and tested before we leave</p>
+        </div>
+        <div class="content-detail-text">
+          <span class="content-detail-label">Common Software Setups Gold Coast</span>
+          <h2 class="content-detail-h2">Software Setups We Handle Every Day Across the Gold Coast</h2>
+          <p>Microsoft 365 is one of the most common software installation requests we receive across the Gold Coast. Licensing errors, sign-in loops, Outlook not connecting to email, OneDrive not syncing &mdash; these are all issues that look straightforward but can take hours to sort out without the right knowledge. A technician who has seen the same problem dozens of times across Burleigh Heads, Nerang and Broadbeach can usually resolve it in under an hour.</p>
+          <p>Printer setup is another frequent call. A wireless printer that will not connect to the home network, a scanner that the computer does not recognise, or a printer that worked on the old computer but not the new one &mdash; these are all solvable on-site. The technician installs the correct drivers, connects the device to the network, and runs a test print before leaving. If the scanner needs to be configured separately, that is done in the same visit.</p>
+          <p>Email account configuration is something many Gold Coast residents find frustrating. Setting up Gmail, Outlook or iCloud on a new computer involves more than just entering a password. Folders need to be synced, signatures need to be set up, and on some accounts two-factor authentication needs to be configured correctly. Getting it wrong means emails that do not arrive, or a sent folder that does not match between devices. Getting it right means everything works consistently across your computer, phone and tablet.</p>
+          <p>New computer setup and data transfer is a service that combines several of these tasks into one visit. When a household in Coolangatta or Surfers Paradise buys a new laptop, the old one still has years of files, photos, emails and bookmarks on it. Transferring everything correctly &mdash; not just copying files, but making sure accounts are signed in and programs are configured &mdash; takes time and care. We do it in a single visit and check that nothing has been missed before we leave.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4E — GETTING THE MOST FROM YOUR SOFTWARE -->
+  <section class="managed-section" aria-label="Getting the most from software installation on the Gold Coast">
+    <div class="container">
+      <div class="managed-inner fade-up">
+        <h2 class="managed-h2">Getting the Most from Your Software After Installation</h2>
+        <div class="managed-body">
+          <p>Having software installed correctly is the first step. Knowing how to use it confidently is what makes the difference day to day. That is why every software installation visit on the Gold Coast includes a walkthrough at the end. The technician shows you how to find your files, how to open the programs you need, and how to do the things you asked about &mdash; whether that is attaching a document to an email, saving to OneDrive, or printing from a phone.</p>
+          <p>For Gold Coast residents who are less familiar with technology, this part of the visit is often the most valuable. It is one thing to have Outlook set up correctly. It is another to feel confident using it. The technician does not rush through the explanation. If you need to see something twice, they show it twice. If you have a question that comes up after they have left, you can call and ask.</p>
+          <p>Backup software is worth mentioning separately. Many Gold Coast homes have years of photos, documents and emails stored on a single computer with no backup in place. When the hard drive fails &mdash; and eventually most do &mdash; everything on it is gone. Setting up a reliable backup during a software installation visit takes 15 to 20 minutes and can save years of irreplaceable files. We can configure automatic backups to an external drive, to cloud storage, or to both. The backup runs in the background and you do not need to think about it again.</p>
+          <p>Antivirus and security software is another item worth addressing during the same visit. A freshly installed Windows computer is not automatically protected. Many Gold Coast residents assume that because they have not downloaded anything suspicious, their computer is safe. In practice, a computer without up-to-date security software is vulnerable from the moment it connects to the internet. We install and configure the right protection for your situation, explain what it does, and make sure it is set to update automatically.</p>
+          <p>If you are working from home in Robina or Helensvale, or running a small home-based business, software setup also includes making sure your tools work together. That might mean configuring Outlook to work with your business email, setting up Teams or Zoom for video calls, or making sure your files are accessible from both your desktop and your laptop. We handle all of it in a single visit and do not leave until everything is connected and working. Call <a href="tel:0730418993" style="color:#00c8e0;font-weight:600;">07 3041 8993</a> to book.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- SECTION 6 — FAQ -->
   <section class="faq-section" aria-label="Software Installation &amp; Configuration Gold Coast — FAQ">
     <div class="container">
@@ -1742,6 +1915,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     ]
   }
   </script>
+
+  <!-- MOBILE STICKY ACTION BAR -->
+  <div class="mobile-sticky-bar" role="complementary" aria-label="Quick contact">
+    <a href="tel:0730418993" class="sticky-call"><i aria-hidden="true" data-lucide="phone"></i> Call Now</a>
+    <a href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2z99t5yQNIRoRT8rNM3Jv7-WC-MNC35owGsga-okvZmEIG167e9iLOAco3_vHaX44r6eYmGFRA?gv=true" target="_blank" rel="noopener noreferrer" class="sticky-book"><i aria-hidden="true" data-lucide="calendar"></i> Book Online</a>
+  </div>
 
   <script>
   (function () {
