@@ -152,6 +152,54 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     height: 15px;
     stroke: #00c8e0;
   }
+  /* ── KEY TAKEAWAYS ── */
+  .takeaways-section {
+    background: #e6fafd;
+    padding: 48px 0;
+    border-bottom: 1px solid #c8f0f7;
+  }
+  .takeaways-inner {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+  .takeaways-inner h2 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #0d1f3c;
+    margin-bottom: 16px;
+    font-family: 'DM Mono', monospace;
+    letter-spacing: 0.02em;
+  }
+  .takeaways-inner ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 32px;
+  }
+  .takeaways-inner li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 0.92rem;
+    color: #1e3a5f;
+    line-height: 1.5;
+  }
+  .takeaways-inner li::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: #00c8e0;
+    border-radius: 50%;
+    flex-shrink: 0;
+    margin-top: 6px;
+  }
+  @media (max-width: 600px) {
+    .takeaways-inner ul { grid-template-columns: 1fr; }
+  }
+
   /* ── BREADCRUMB ── */
   .breadcrumb-bar {
     background: #f8fafb;
@@ -793,6 +841,26 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <span class="hero-trust-item"><i aria-hidden="true" data-lucide="lock"></i> No loose ends left open</span>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- SECTION 2 — KEY TAKEAWAYS -->
+  <section class="takeaways-section" aria-label="Network Security &amp; Firewall Gold Coast — Quick Summary">
+    <div class="takeaways-inner">
+      <h2>Network Security &amp; Firewall Gold Coast — Quick Summary</h2>
+      <ul>
+        <li>Full home network security audit — we check what's exposed and fix it</li>
+        <li>WPA3 or WPA2 encryption configured correctly on all WiFi bands</li>
+        <li>Default router passwords and admin credentials replaced with strong, unique passwords</li>
+        <li>Firewall rules reviewed and hardened on your router or dedicated firewall device</li>
+        <li>Guest network configured with full isolation from your main network and devices</li>
+        <li>Remote management and UPnP disabled unless specifically required</li>
+        <li>Connected device inventory — we identify every device on your network so nothing unknown is present</li>
+        <li>Router firmware updated to the latest security release</li>
+        <li>Advice on ongoing security practices for your Gold Coast household</li>
+        <li>Same-day and next-day appointments across all Gold Coast suburbs</li>
+        <li>Locally owned and operated — ABN 92 636 893 108</li>
+      </ul>
     </div>
   </section>
 
