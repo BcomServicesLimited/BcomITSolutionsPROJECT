@@ -78,13 +78,15 @@
   .contact-options .container { max-width:1100px; margin:0 auto; padding:0 24px; }
   .contact-options h2 { font-size:clamp(1.4rem,3vw,2rem); font-weight:700; color:#0d1f3c; margin:0 0 32px; }
   .contact-cards { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; }
-  .contact-card { background:#f8fafb; border-radius:14px; padding:32px 28px; border:1px solid #e2e8f0; display:flex; flex-direction:column; align-items:flex-start; gap:12px; }
+  .contact-card { background:#fff; border-radius:14px; padding:32px 28px; border:1px solid #e2e8f0; display:flex; flex-direction:column; align-items:flex-start; gap:12px; }
   .contact-card__icon { width:48px; height:48px; background:#e6fafd; border-radius:12px; display:flex; align-items:center; justify-content:center; }
   .contact-card__icon [data-lucide] { width:22px; height:22px; stroke:#00c8e0; }
   .contact-card h3 { font-size:1.05rem; font-weight:700; color:#0d1f3c; margin:0; }
-  .contact-card__number { font-family:'DM Mono',monospace; font-size:1.5rem; font-weight:600; color:#0d1f3c; line-height:1; }
+  .contact-card__detail { font-size:0.95rem; color:#0d1f3c; font-weight:500; margin:0; }
   .contact-card__sub { font-size:0.85rem; color:#64748b; line-height:1.5; margin:0; }
-  .contact-card .btn-primary, .contact-card .btn-outline { margin-top:auto; }
+  .contact-card__btn { display:inline-flex; align-items:center; gap:8px; margin-top:auto; padding:10px 22px; background:#039BE5; color:#fff; font-family:'DM Sans',sans-serif; font-size:0.9rem; font-weight:600; border-radius:6px; text-decoration:none; transition:background 0.15s; }
+  .contact-card__btn:hover { background:#0288d1; color:#fff; }
+  .contact-card__btn [data-lucide] { width:16px; height:16px; stroke:#fff; }
   .common-issues { background:#fff; padding:56px 0; border-top:1px solid #e2e8f0; }
   .common-issues .container { max-width:1100px; margin:0 auto; padding:0 24px; }
   .common-issues h2 { font-size:clamp(1.4rem,3vw,2rem); font-weight:700; color:#0d1f3c; margin:0 0 32px; }
@@ -704,19 +706,19 @@
         <div class="contact-card">
           <div class="contact-card__icon"><i data-lucide="phone" aria-hidden="true"></i></div>
           <h3>Call Us Now</h3>
-          <p class="contact-card__number">07 3041 8993</p>
+          <p class="contact-card__detail">07 3041 8993</p>
           <p class="contact-card__sub">Mon&ndash;Fri 8am&ndash;5pm &middot; Sat by appointment</p>
-          <a href="tel:0730418993" class="btn-primary" aria-label="Call Bcom IT Solutions">
-            <i data-lucide="phone" aria-hidden="true"></i> Call Now
+          <a href="tel:0730418993" class="contact-card__btn" aria-label="Call Bcom IT Solutions">
+            <i data-lucide="phone" aria-hidden="true"></i> Call now
           </a>
         </div>
         <div class="contact-card">
           <div class="contact-card__icon"><i data-lucide="mail" aria-hidden="true"></i></div>
           <h3>Email Support</h3>
-          <p class="contact-card__number" style="font-size:1rem;">support@bcomservices.com</p>
+          <p class="contact-card__detail">support@bcomservices.com</p>
           <p class="contact-card__sub">We aim to respond within 2 hours</p>
-          <a href="mailto:support@bcomservices.com" class="btn-outline" aria-label="Email Bcom IT Solutions">
-            <i data-lucide="mail" aria-hidden="true"></i> Send Email
+          <a href="mailto:support@bcomservices.com" class="contact-card__btn" aria-label="Email Bcom IT Solutions">
+            <i data-lucide="mail" aria-hidden="true"></i> Send email
           </a>
         </div>
         <div class="contact-card">
