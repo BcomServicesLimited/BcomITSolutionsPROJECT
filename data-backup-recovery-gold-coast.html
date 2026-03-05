@@ -827,6 +827,47 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       font-weight: 500;
     }
     .areas-booking { text-align: center; }
+    /* ── FAQ ACCORDION ── */
+    .faq-section { background: white; padding: 80px 0; }
+    .faq-section h2 { font-size: 1.9rem; font-weight: 700; color: #0d1f3c; margin-bottom: 40px; }
+    .faq-list { max-width: 760px; }
+    .faq-item { border-bottom: 1px solid #e2e8f0; }
+    .faq-question {
+      width: 100%;
+      background: none;
+      border: none;
+      padding: 20px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      cursor: pointer;
+      text-align: left;
+    }
+    .faq-question h3 {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #0d1f3c;
+      margin: 0;
+      line-height: 1.4;
+    }
+    .faq-question [data-lucide] {
+      width: 18px; height: 18px;
+      stroke: #00c8e0;
+      flex-shrink: 0;
+      transition: transform 0.3s ease;
+    }
+    .faq-item.open .faq-question [data-lucide] { transform: rotate(180deg); }
+    .faq-answer {
+      font-size: 0.95rem;
+      color: #4a5568;
+      line-height: 1.8;
+      padding-bottom: 20px;
+      max-width: 680px;
+    }
+    .faq-answer a { color: #00c8e0; text-decoration: none; }
+    .faq-answer a:hover { text-decoration: underline; }
+    .faq-answer[hidden] { display: none; }
   </style>
 
 <!-- NAV JAVASCRIPT -->
@@ -1113,6 +1154,85 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         })();
         </script>
         <!-- end Google Calendar Appointment Scheduling -->
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 6 — FAQ ACCORDION -->
+  <section class="faq-section" aria-label="Data Backup &amp; Recovery Gold Coast FAQ">
+    <div class="container">
+      <h2 class="fade-up">Data Backup &amp; Recovery Gold Coast &mdash; Frequently Asked Questions</h2>
+      <div class="faq-list">
+
+        <div class="faq-item fade-up">
+          <button class="faq-question" aria-expanded="false">
+            <h3>Can you recover files from a dead or clicking hard drive at my Gold Coast home?</h3>
+            <i aria-hidden="true" data-lucide="chevron-down"></i>
+          </button>
+          <div class="faq-answer" hidden>
+            In many cases yes. Clicking, dead or unrecognised drives can often be assessed
+            on-site at your Gold Coast home. We&rsquo;ll tell you honestly what&rsquo;s recoverable before
+            any work begins. Where on-site recovery isn&rsquo;t possible we&rsquo;ll advise on the next
+            best option. Call <a href="tel:0730418993">07 3041 8993</a> &mdash; the sooner we
+            assess it, the better the recovery chances.
+          </div>
+        </div>
+
+        <div class="faq-item fade-up" style="transition-delay:0.05s">
+          <button class="faq-question" aria-expanded="false">
+            <h3>I accidentally deleted important photos and documents &mdash; can you get them back?</h3>
+            <i aria-hidden="true" data-lucide="chevron-down"></i>
+          </button>
+          <div class="faq-answer" hidden>
+            Possibly, yes. Deleted files often remain on the drive until they&rsquo;re overwritten
+            by new data, so the sooner you stop using the device the better. We come to your
+            Gold Coast home, run specialist recovery tools and retrieve what we can &mdash; you&rsquo;ll
+            know what&rsquo;s recoverable before we charge anything. Call
+            <a href="tel:0730418993">07 3041 8993</a> to arrange a same-day visit.
+          </div>
+        </div>
+
+        <div class="faq-item fade-up" style="transition-delay:0.1s">
+          <button class="faq-question" aria-expanded="false">
+            <h3>What&rsquo;s the best way to back up my files at my Gold Coast home?</h3>
+            <i aria-hidden="true" data-lucide="chevron-down"></i>
+          </button>
+          <div class="faq-answer" hidden>
+            The best setup for most Gold Coast households is a combination of an external
+            hard drive for local backups and a cloud service like OneDrive or Google Drive for
+            off-site protection. We come to your home, configure both, test that backups are
+            running automatically and show you how to check they&rsquo;re working &mdash; all before we
+            leave. Call <a href="tel:0730418993">07 3041 8993</a> to book a visit.
+          </div>
+        </div>
+
+        <div class="faq-item fade-up" style="transition-delay:0.15s">
+          <button class="faq-question" aria-expanded="false">
+            <h3>Can you back up my computer before you repair it?</h3>
+            <i aria-hidden="true" data-lucide="chevron-down"></i>
+          </button>
+          <div class="faq-answer" hidden>
+            Yes &mdash; this is always our first step before any repair work. We back up your
+            files to an external drive or cloud storage before touching anything else. If you
+            don&rsquo;t have an external drive we can advise on a suitable option before the visit.
+            Just mention it when you call <a href="tel:0730418993">07 3041 8993</a> to book.
+          </div>
+        </div>
+
+        <div class="faq-item fade-up" style="transition-delay:0.2s">
+          <button class="faq-question" aria-expanded="false">
+            <h3>How much does data recovery cost on the Gold Coast?</h3>
+            <i aria-hidden="true" data-lucide="chevron-down"></i>
+          </button>
+          <div class="faq-answer" hidden>
+            Cost depends on the type and severity of the data loss. We always assess the
+            situation and tell you what&rsquo;s possible before quoting. There&rsquo;s no charge for
+            recovery work we&rsquo;re unable to complete &mdash; if we can&rsquo;t get your files back, you
+            don&rsquo;t pay the call-out fee. Call <a href="tel:0730418993">07 3041 8993</a>
+            to discuss your situation before booking.
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
@@ -1514,6 +1634,25 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </style>
 
 
+  <script>
+    // FAQ accordion
+    document.querySelectorAll('.faq-question').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var item = btn.closest('.faq-item');
+        var isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item').forEach(function(i) {
+          i.classList.remove('open');
+          i.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+          i.querySelector('.faq-answer').hidden = true;
+        });
+        if (!isOpen) {
+          item.classList.add('open');
+          btn.setAttribute('aria-expanded', 'true');
+          item.querySelector('.faq-answer').hidden = false;
+        }
+      });
+    });
+  </script>
   <script>
     // Fade-up on scroll
     (function() {
