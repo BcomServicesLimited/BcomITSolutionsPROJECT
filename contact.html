@@ -66,8 +66,9 @@
   /* ── Contact Method Cards ── */
   .contact-methods { background:#fff; padding:56px 0; }
   .contact-methods .container { max-width:1100px; margin:0 auto; padding:0 24px; }
-  .method-cards { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; }
-  .method-card { background:#fff; border-radius:14px; padding:32px 28px; border:1px solid #e2e8f0; display:flex; flex-direction:column; align-items:flex-start; gap:12px; }
+  .method-cards { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; align-items:stretch; }
+  .method-card { background:#fff; border-radius:14px; padding:32px 28px; border:1px solid #e2e8f0; display:flex; flex-direction:column; align-items:flex-start; gap:12px; height:100%; box-sizing:border-box; }
+  .method-card__spacer { flex:1; }
   .method-card__icon { width:48px; height:48px; background:#e6fafd; border-radius:12px; display:flex; align-items:center; justify-content:center; }
   .method-card__icon [data-lucide] { width:22px; height:22px; stroke:#00c8e0; }
   .method-card h3 { font-size:1.05rem; font-weight:700; color:#0d1f3c; margin:0; }
@@ -661,6 +662,7 @@
           <h3>Call Us</h3>
           <p class="method-card__detail">07 3041 8993</p>
           <p class="method-card__sub">Mon&ndash;Fri 8am&ndash;5pm &middot; Sat by appointment</p>
+          <div class="method-card__spacer"></div>
           <a href="tel:0730418993" class="method-card__btn" aria-label="Call Bcom IT Solutions">
             <i data-lucide="phone" aria-hidden="true"></i> Call now
           </a>
@@ -671,6 +673,7 @@
           <h3>Email Us</h3>
           <p class="method-card__detail">support@bcomservices.com</p>
           <p class="method-card__sub">Replies within 2 business hours</p>
+          <div class="method-card__spacer"></div>
           <a href="mailto:support@bcomservices.com" class="method-card__btn" aria-label="Email Bcom IT Solutions">
             <i data-lucide="mail" aria-hidden="true"></i> Send email
           </a>
@@ -680,6 +683,7 @@
           <div class="method-card__icon"><i data-lucide="calendar" aria-hidden="true"></i></div>
           <h3>Book Online</h3>
           <p class="method-card__sub">Choose a time that suits you</p>
+          <div class="method-card__spacer"></div>
 <!-- Google Calendar Appointment Scheduling begin -->
 <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
 <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
