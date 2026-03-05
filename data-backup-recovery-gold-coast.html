@@ -698,6 +698,53 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       .hero h1 { font-size: 1.9rem; }
       .hero-content { padding: 40px 0; }
     }
+    /* ── KEY TAKEAWAYS ── */
+    .takeaways-section {
+      background: #e6fafd;
+      padding: 48px 0;
+      border-bottom: 1px solid #c8f0f7;
+    }
+    .takeaways-inner {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+    .takeaways-inner h2 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #0d1f3c;
+      margin-bottom: 16px;
+      font-family: 'DM Mono', monospace;
+      letter-spacing: 0.02em;
+    }
+    .takeaways-inner ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px 32px;
+    }
+    .takeaways-inner li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 0.92rem;
+      color: #1e3a5f;
+      line-height: 1.5;
+    }
+    .takeaways-inner li::before {
+      content: '';
+      width: 8px;
+      height: 8px;
+      background: #00c8e0;
+      border-radius: 50%;
+      flex-shrink: 0;
+      margin-top: 6px;
+    }
+    @media (max-width: 600px) {
+      .takeaways-inner ul { grid-template-columns: 1fr; }
+    }
   </style>
 
 <!-- NAV JAVASCRIPT -->
@@ -802,6 +849,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <span class="hero-trust-item"><i aria-hidden="true" data-lucide="shield-check"></i> No fix, no fee</span>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- SECTION 2 — KEY TAKEAWAYS -->
+  <section class="takeaways-section" aria-label="Data Backup &amp; Recovery Gold Coast &mdash; Quick Summary">
+    <div class="takeaways-inner">
+      <h2>Data Backup &amp; Recovery Gold Coast &mdash; Quick Summary</h2>
+      <ul>
+        <li>Data recovery from failed, corrupted or accidentally wiped hard drives and SSDs</li>
+        <li>Deleted file recovery &mdash; photos, documents and emails retrieved where possible</li>
+        <li>External hard drive and USB recovery &mdash; damaged or unrecognised drives assessed on-site</li>
+        <li>Automatic backup setup &mdash; external drive or cloud backup configured and running before we leave</li>
+        <li>Microsoft OneDrive, Google Drive and iCloud backup configured across all your devices</li>
+        <li>Pre-repair data backup &mdash; we back up your files before any repair work begins</li>
+        <li>Data transfer to a new computer &mdash; all files, photos and documents moved across safely</li>
+        <li>Same-day and next-day appointments available across all Gold Coast suburbs</li>
+        <li>Locally owned and operated &mdash; ABN 92 636 893 108</li>
+      </ul>
     </div>
   </section>
 
