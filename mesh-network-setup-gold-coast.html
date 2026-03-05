@@ -682,6 +682,54 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       -webkit-text-fill-color: transparent;
       background-clip: text;
     }
+
+    /* ── KEY TAKEAWAYS ── */
+    .takeaways-section {
+      background: #e6fafd;
+      padding: 48px 0;
+      border-bottom: 1px solid #c8f0f7;
+    }
+    .takeaways-inner {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+    .takeaways-inner h2 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #0d1f3c;
+      margin-bottom: 16px;
+      font-family: 'DM Mono', monospace;
+      letter-spacing: 0.02em;
+    }
+    .takeaways-inner ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px 32px;
+    }
+    .takeaways-inner li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 0.92rem;
+      color: #1e3a5f;
+      line-height: 1.5;
+    }
+    .takeaways-inner li::before {
+      content: '';
+      width: 8px;
+      height: 8px;
+      background: #00c8e0;
+      border-radius: 50%;
+      flex-shrink: 0;
+      margin-top: 6px;
+    }
+    @media (max-width: 600px) {
+      .takeaways-inner ul { grid-template-columns: 1fr; }
+    }
 </style>
 
 <!-- NAV JAVASCRIPT -->
@@ -758,6 +806,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <span class="hero-trust-item"><i aria-hidden="true" data-lucide="shield-check"></i> Fully configured before we leave</span>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- SECTION 2 — KEY TAKEAWAYS -->
+  <section class="takeaways-section" aria-label="Mesh WiFi Systems Gold Coast — Quick Summary">
+    <div class="takeaways-inner">
+      <h2>Mesh WiFi Systems Gold Coast — Quick Summary</h2>
+      <ul>
+        <li>Mesh WiFi systems supplied, installed and fully configured at your Gold Coast home &mdash; no dead spots, no complicated setup left for you</li>
+        <li>Eero, TP-Link Deco, Netgear Orbi, Google Nest WiFi and Synology Mesh supplied and supported</li>
+        <li>Node placement assessed for your home layout &mdash; walls, floors and interference sources all considered before positioning</li>
+        <li>Seamless roaming configured &mdash; your devices switch automatically between nodes without dropping connection</li>
+        <li>Backhaul setup &mdash; wired backhaul configured where Ethernet is available for faster, more reliable node-to-node communication</li>
+        <li>Guest network, parental controls and security settings configured</li>
+        <li>All devices connected before we leave &mdash; computers, phones, smart TVs, printers and smart home gear</li>
+        <li>Same-day and next-day appointments across all Gold Coast suburbs</li>
+        <li>Locally owned and operated &mdash; ABN 92 636 893 108</li>
+      </ul>
     </div>
   </section>
 
