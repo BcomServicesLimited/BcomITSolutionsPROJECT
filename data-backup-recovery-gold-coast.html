@@ -809,6 +809,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     .why-card__text h3 { font-size: 1rem; font-weight: 700; color: #0d1f3c; margin-bottom: 6px; }
     .why-card__text p { font-size: 0.9rem; color: #4a5568; line-height: 1.6; margin: 0; }
     @media (max-width: 700px) { .why-grid { grid-template-columns: 1fr; } }
+    /* ── SERVICE AREAS ── */
+    .areas-section { background: #e6fafd; padding: 80px 0; border-top: 1px solid #c8f0f7; }
+    .areas-section h2 { font-size: 1.9rem; font-weight: 700; color: #0d1f3c; margin-bottom: 20px; }
+    .areas-section p { font-size: 1rem; color: #4a5568; line-height: 1.8; margin-bottom: 32px; max-width: 680px; }
+    .areas-section p a { color: #00c8e0; text-decoration: none; }
+    .areas-section p a:hover { text-decoration: underline; }
+    .suburb-pills { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 40px; }
+    .suburb-pill {
+      background: white;
+      border: 1px solid #c8f0f7;
+      border-radius: 20px;
+      padding: 6px 16px;
+      font-size: 0.85rem;
+      color: #1e3a5f;
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 500;
+    }
+    .areas-booking { text-align: center; }
   </style>
 
 <!-- NAV JAVASCRIPT -->
@@ -1048,6 +1066,53 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             you don&rsquo;t pay the call-out fee.</p>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 5 — SERVICE AREAS -->
+  <section class="areas-section" aria-label="Data Backup &amp; Recovery Gold Coast Service Areas">
+    <div class="container">
+      <h2 class="fade-up">Data Backup &amp; Recovery Available Across the Gold Coast</h2>
+      <p class="fade-up" style="transition-delay:0.1s">Bcom IT Solutions (ABN 92 636 893 108) provides on-site data backup and
+      recovery services across the entire Gold Coast. Whether you&rsquo;re in Southport,
+      Robina, Burleigh Heads, Nerang, Helensvale, Coomera or Palm Beach, our local
+      technicians come to you. If your drive has failed, acting quickly improves
+      recovery chances &mdash; call <a href="tel:0730418993">07 3041 8993</a> and we&rsquo;ll
+      aim to get to you the same day. For computer repairs alongside data work, our
+      <a href="on-site-computer-repair-gold-coast.html">on-site computer repair
+      Gold Coast</a> team can handle both in the same visit.</p>
+      <div class="suburb-pills fade-up" style="transition-delay:0.2s">
+        <span class="suburb-pill">Southport</span>
+        <span class="suburb-pill">Burleigh Heads</span>
+        <span class="suburb-pill">Robina</span>
+        <span class="suburb-pill">Nerang</span>
+        <span class="suburb-pill">Helensvale</span>
+        <span class="suburb-pill">Coomera</span>
+        <span class="suburb-pill">Palm Beach</span>
+        <span class="suburb-pill">Varsity Lakes</span>
+        <span class="suburb-pill">Coolangatta</span>
+        <span class="suburb-pill">Surfers Paradise</span>
+        <span class="suburb-pill">Broadbeach</span>
+      </div>
+      <div class="areas-booking fade-up" style="transition-delay:0.3s">
+        <!-- Google Calendar Appointment Scheduling begin -->
+        <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+        <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+        <script>
+        (function() {
+          var target = document.currentScript;
+          window.addEventListener('load', function() {
+            calendar.schedulingButton.load({
+              url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ2z99t5yQNIRoRT8rNM3Jv7-WC-MNC35owGsga-okvZmEIG167e9iLOAco3_vHaX44r6eYmGFRA?gv=true',
+              color: '#039BE5',
+              label: 'Book an appointment',
+              target,
+            });
+          });
+        })();
+        </script>
+        <!-- end Google Calendar Appointment Scheduling -->
       </div>
     </div>
   </section>
