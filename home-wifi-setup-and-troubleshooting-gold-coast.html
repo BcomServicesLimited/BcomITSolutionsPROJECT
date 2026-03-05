@@ -674,6 +674,54 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       -webkit-text-fill-color: transparent;
       background-clip: text;
     }
+
+    /* ── KEY TAKEAWAYS ── */
+    .takeaways-section {
+      background: #e6fafd;
+      padding: 48px 0;
+      border-bottom: 1px solid #c8f0f7;
+    }
+    .takeaways-inner {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+    .takeaways-inner h2 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #0d1f3c;
+      margin-bottom: 16px;
+      font-family: 'DM Mono', monospace;
+      letter-spacing: 0.02em;
+    }
+    .takeaways-inner ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px 32px;
+    }
+    .takeaways-inner li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 0.92rem;
+      color: #1e3a5f;
+      line-height: 1.5;
+    }
+    .takeaways-inner li::before {
+      content: '';
+      width: 8px;
+      height: 8px;
+      background: #00c8e0;
+      border-radius: 50%;
+      flex-shrink: 0;
+      margin-top: 6px;
+    }
+    @media (max-width: 600px) {
+      .takeaways-inner ul { grid-template-columns: 1fr; }
+    }
 </style>
 
 <!-- NAV JAVASCRIPT -->
@@ -766,6 +814,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     els.forEach(function (el) { io.observe(el); });
   })();
   </script>
+
+  <!-- SECTION 2 — KEY TAKEAWAYS -->
+  <section class="takeaways-section" aria-label="WiFi Installation &amp; Configuration Gold Coast — Quick Summary">
+    <div class="takeaways-inner">
+      <h2>WiFi Installation &amp; Configuration Gold Coast — Quick Summary</h2>
+      <ul>
+        <li>New WiFi access point or router supplied, installed and fully configured at your Gold Coast home</li>
+        <li>Ubiquiti UniFi, Grandstream, TP-Link, Netgear, ASUS and other leading brands supplied and supported</li>
+        <li>Not just mesh &mdash; we recommend the right solution for your home, whether that&rsquo;s a single high-performance access point, a dual-band router or a full Ubiquiti UniFi setup</li>
+        <li>Existing router reconfigured or replaced &mdash; passwords, bands, guest networks and security settings all handled</li>
+        <li>NBN modem integration &mdash; we make sure your new WiFi works correctly with your NBN connection type (FTTP, FTTN, HFC, Fixed Wireless)</li>
+        <li>Device connection assistance &mdash; we connect your computers, phones, smart TVs and other devices before we leave</li>
+        <li>Dead spot diagnosis &mdash; we identify areas of poor signal and recommend the right fix for your Gold Coast home layout</li>
+        <li>Same-day and next-day appointments available across all Gold Coast suburbs</li>
+        <li>Locally owned and operated &mdash; ABN 92 636 893 108</li>
+      </ul>
+    </div>
+  </section>
 
   <!-- ============================================================
      BCOM IT SOLUTIONS — FOOTER COMPONENT
