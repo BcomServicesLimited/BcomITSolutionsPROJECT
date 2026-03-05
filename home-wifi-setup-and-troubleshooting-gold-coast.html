@@ -801,6 +801,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     .why-card__text h3 { font-size: 1rem; font-weight: 700; color: #0d1f3c; margin-bottom: 6px; }
     .why-card__text p { font-size: 0.9rem; color: #4a5568; line-height: 1.6; margin: 0; }
     @media (max-width: 700px) { .why-grid { grid-template-columns: 1fr; } }
+
+    /* ── SITUATIONS WE SEE ── */
+    .situations-section { background: #f8fafb; padding: 60px 0; }
+    .situations-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+    .situations-card { display: flex; flex-direction: column; }
+    .situations-result { margin-top: auto; padding-top: 16px; font-size: 0.9rem; color: #0d1f3c; line-height: 1.6; }
+    @media (max-width: 900px) { .situations-grid { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 600px) { .situations-grid { grid-template-columns: 1fr; } }
 </style>
 
 <!-- NAV JAVASCRIPT -->
@@ -1064,6 +1076,52 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             and the signal is confirmed in every room you need it.</p>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4B — SITUATIONS WE SEE -->
+  <section class="situations-section" aria-label="WiFi Installation Gold Coast — Situations We See Every Week">
+    <div class="container">
+      <div class="services-header fade-up">
+        <h2>WiFi Installation &amp; Configuration Gold Coast — Situations We See Every Week</h2>
+      </div>
+      <div class="situations-grid">
+
+        <div class="service-card situations-card fade-up" style="transition-delay:0.05s">
+          <div class="icon-circle"><i aria-hidden="true" data-lucide="wifi-off"></i></div>
+          <h3>Brand new router, still no signal upstairs</h3>
+          <p>A Southport homeowner had just bought a mid-range router from a
+          big box retailer and still couldn&rsquo;t get a usable signal on the
+          second floor or in the back of the house. The router was sitting
+          in the wrong location and was configured on the wrong channel for
+          their street.</p>
+          <p class="situations-result"><strong>Relocated, reconfigured and channel-optimised. Full signal
+          throughout the home without buying additional hardware.</strong></p>
+        </div>
+
+        <div class="service-card situations-card fade-up" style="transition-delay:0.1s">
+          <div class="icon-circle"><i aria-hidden="true" data-lucide="zap"></i></div>
+          <h3>NBN connected but WiFi running at a fraction of the speed</h3>
+          <p>A Robina family was paying for a 100Mbps NBN plan but getting
+          less than 20Mbps on their devices. Their ISP-supplied modem
+          was using outdated WiFi settings and the router was placed
+          inside a kitchen cabinet next to the microwave.</p>
+          <p class="situations-result"><strong>TP-Link access point installed and configured. Speeds
+          consistently above 90Mbps across all rooms.</strong></p>
+        </div>
+
+        <div class="service-card situations-card fade-up" style="transition-delay:0.15s">
+          <div class="icon-circle"><i aria-hidden="true" data-lucide="home"></i></div>
+          <h3>Wanted a proper setup, not another consumer mesh system</h3>
+          <p>A Burleigh Heads resident had been through two different mesh
+          systems and found both unreliable for working from home. They
+          wanted something more robust but didn&rsquo;t know where to start
+          with Ubiquiti UniFi or what equipment they actually needed.</p>
+          <p class="situations-result"><strong>Single Ubiquiti UniFi U6 Pro access point installed and
+          configured. Stable, fast and managed from a single app.</strong></p>
+        </div>
+
       </div>
     </div>
   </section>
