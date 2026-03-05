@@ -795,6 +795,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     .why-card p { font-size: 0.92rem; color: #4a5568; line-height: 1.65; margin: 0; }
     @media (max-width: 700px) { .why-grid { grid-template-columns: 1fr; } }
 
+    /* ── SERVICE AREAS ── */
+    .areas-section { background: #e6fafd; padding: 80px 0; border-top: 1px solid #c8f0f7; }
+    .areas-inner { max-width: 760px; margin: 0 auto; padding: 0 24px; }
+    .areas-inner h2 { font-size: 1.9rem; font-weight: 700; color: #0d1f3c; margin-bottom: 20px; }
+    .areas-inner p { font-size: 1rem; color: #4a5568; line-height: 1.75; margin-bottom: 32px; }
+    .areas-inner a { color: #0077b6; text-decoration: underline; }
+    .suburb-pills { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 40px; }
+    .suburb-pill {
+      background: white;
+      border: 1px solid #c8f0f7;
+      border-radius: 999px;
+      padding: 6px 16px;
+      font-size: 0.88rem;
+      color: #1e3a5f;
+      font-weight: 500;
+    }
+    .areas-booking { text-align: center; }
+
     /* ── FADE-UP ── */
     .fade-up { opacity: 0; transform: translateY(24px); transition: opacity 0.55s ease, transform 0.55s ease; }
     .fade-up.visible { opacity: 1; transform: translateY(0); }
@@ -1050,6 +1068,46 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </div>
         </div>
 
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 5 — SERVICE AREAS -->
+  <section class="areas-section" aria-label="Performance Optimisation Gold Coast Service Areas">
+    <div class="areas-inner">
+      <h2 class="fade-up">Performance Optimisation Available Across the Gold Coast</h2>
+      <p class="fade-up" style="transition-delay:0.1s">Bcom IT Solutions (ABN 92 636 893 108) provides on-site computer performance optimisation across the entire Gold Coast. Whether you&rsquo;re in Southport, Robina, Burleigh Heads, Nerang, Helensvale, Coomera or Palm Beach, our local technicians come to you and fix the problem at your home. Call <a href="tel:0730418993">07 3041 8993</a> to book a same-day or next-day visit. If your slow computer also needs a repair or has a virus, our <a href="on-site-computer-repair-gold-coast.html">on-site computer repair Gold Coast</a> team can handle everything in the same visit.</p>
+      <div class="suburb-pills fade-up" style="transition-delay:0.15s">
+        <span class="suburb-pill">Southport</span>
+        <span class="suburb-pill">Burleigh Heads</span>
+        <span class="suburb-pill">Robina</span>
+        <span class="suburb-pill">Nerang</span>
+        <span class="suburb-pill">Helensvale</span>
+        <span class="suburb-pill">Coomera</span>
+        <span class="suburb-pill">Palm Beach</span>
+        <span class="suburb-pill">Varsity Lakes</span>
+        <span class="suburb-pill">Coolangatta</span>
+        <span class="suburb-pill">Surfers Paradise</span>
+        <span class="suburb-pill">Broadbeach</span>
+      </div>
+      <div class="areas-booking fade-up" style="transition-delay:0.2s">
+        <!-- Google Calendar Appointment Scheduling begin -->
+        <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+        <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+        <script>
+        (function() {
+          var target = document.currentScript;
+          window.addEventListener('load', function() {
+            calendar.schedulingButton.load({
+              url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ2z99t5yQNIRoRT8rNM3Jv7-WC-MNC35owGsga-okvZmEIG167e9iLOAco3_vHaX44r6eYmGFRA?gv=true',
+              color: '#039BE5',
+              label: 'Book an appointment',
+              target,
+            });
+          });
+        })();
+        </script>
+        <!-- end Google Calendar Appointment Scheduling -->
       </div>
     </div>
   </section>
