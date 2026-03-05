@@ -847,6 +847,39 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       .need-col-consider { display: none; }
       .need-table td, .need-table th { padding: 10px 12px; }
     }
+
+    /* ── WHAT TO EXPECT ── */
+    .expect-section { background: #e6fafd; padding: 60px 0; }
+    .expect-header { text-align: center; margin-bottom: 48px; }
+    .expect-header h2 { font-size: 1.9rem; font-weight: 700; color: #0d1f3c; margin-bottom: 10px; }
+    .expect-header p { font-size: 1rem; color: #4a5568; line-height: 1.7; }
+    .expect-steps { display: flex; flex-direction: column; gap: 36px; max-width: 780px; margin: 0 auto; }
+    .expect-step { display: grid; grid-template-columns: 48px 52px 1fr; align-items: flex-start; gap: 20px; }
+    .expect-step-num {
+      font-family: var(--font-mono, 'DM Mono', monospace);
+      font-size: 2rem; font-weight: 700; color: #00c8e0;
+      line-height: 1; padding-top: 4px;
+    }
+    .expect-step-icon {
+      width: 44px; height: 44px; border-radius: 12px;
+      background: white; border: 1.5px solid #e2e8f0;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+    .expect-step-icon [data-lucide] { width: 20px; height: 20px; stroke: #00c8e0; }
+    .expect-step-body h3 { font-size: 1.05rem; font-weight: 700; color: #0d1f3c; margin: 0 0 8px; }
+    .expect-step-body p { font-size: 0.95rem; color: #4a5568; line-height: 1.75; margin: 0; }
+    .expect-step-body a { color: #00c8e0; font-weight: 600; text-decoration: none; }
+    .expect-step-body a:hover { text-decoration: underline; }
+    .expect-closing {
+      font-family: var(--font-mono, 'DM Mono', monospace);
+      font-size: 0.8rem; color: #64748b;
+      text-align: center; margin-top: 44px; line-height: 1.7;
+    }
+    @media (max-width: 600px) {
+      .expect-step { grid-template-columns: 36px 40px 1fr; gap: 12px; }
+      .expect-step-num { font-size: 1.5rem; }
+    }
 </style>
 
 <!-- NAV JAVASCRIPT -->
@@ -1256,6 +1289,64 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <p class="need-closing fade-up">Not sure? Call <a href="tel:0730418993">07 3041 8993</a> and describe
       what&rsquo;s happening &mdash; we&rsquo;ll point you in the right direction before you book.</p>
+    </div>
+  </section>
+
+  <!-- SECTION 6 — WHAT TO EXPECT -->
+  <section class="expect-section" aria-label="What to Expect From a Gold Coast WiFi Installation Visit">
+    <div class="container">
+      <div class="expect-header fade-up">
+        <h2>What to Expect From a Gold Coast WiFi Installation Visit</h2>
+        <p>Here&rsquo;s exactly what happens from the moment you call to the moment we leave.</p>
+      </div>
+      <div class="expect-steps">
+
+        <div class="expect-step fade-up">
+          <div class="expect-step-num">01</div>
+          <div class="expect-step-icon">
+            <i data-lucide="phone" aria-hidden="true"></i>
+          </div>
+          <div class="expect-step-body">
+            <h3>You Call and We Talk Through Your Home</h3>
+            <p>When you call <a href="tel:0730418993">07 3041 8993</a> we&rsquo;ll ask about your home layout, how many floors you have, where your NBN connection point is, and what devices you need connected. This lets us arrive with the right equipment &mdash; we don&rsquo;t do a site visit just to come back the next day with the right gear. We confirm same-day or next-day availability and give you a rough cost estimate before you book.</p>
+          </div>
+        </div>
+
+        <div class="expect-step fade-up">
+          <div class="expect-step-num">02</div>
+          <div class="expect-step-icon">
+            <i data-lucide="map-pin" aria-hidden="true"></i>
+          </div>
+          <div class="expect-step-body">
+            <h3>We Arrive and Assess Your Home</h3>
+            <p>We arrive within the agreed window and do a quick walkthrough of your home before touching anything. We check the NBN box location, identify where the router or access point will perform best, and look for anything that might interfere &mdash; thick walls, steel framing, appliances. We bring a range of equipment including Ubiquiti UniFi, TP-Link and Grandstream hardware so we can install the right product on the day.</p>
+          </div>
+        </div>
+
+        <div class="expect-step fade-up">
+          <div class="expect-step-num">03</div>
+          <div class="expect-step-icon">
+            <i data-lucide="wifi" aria-hidden="true"></i>
+          </div>
+          <div class="expect-step-body">
+            <h3>We Install and Configure Everything</h3>
+            <p>We mount or position the access point or router, connect it to your NBN modem, and configure it fully &mdash; network name, password, bands, channels, guest network and security settings. If you&rsquo;re moving to Ubiquiti UniFi we set up the controller and walk you through the app. We explain every setting in plain English and confirm the cost before we start any work.</p>
+          </div>
+        </div>
+
+        <div class="expect-step fade-up">
+          <div class="expect-step-num">04</div>
+          <div class="expect-step-icon">
+            <i data-lucide="check-circle" aria-hidden="true"></i>
+          </div>
+          <div class="expect-step-body">
+            <h3>Every Device Connected Before We Leave</h3>
+            <p>We test signal strength in every room you need coverage, run a speed test to confirm your NBN speeds are coming through correctly, and connect your computers, phones, smart TVs and other devices to the new network. We write down the network name and password for you and explain how to add new devices yourself going forward.</p>
+          </div>
+        </div>
+
+      </div>
+      <p class="expect-closing fade-up">Most Gold Coast WiFi installation visits take 1&ndash;2 hours. Same-day appointments available across all suburbs.</p>
     </div>
   </section>
 
