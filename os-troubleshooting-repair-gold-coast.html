@@ -522,6 +522,68 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   /* ── FADE-UP ── */
   .fade-up { opacity: 0; transform: translateY(24px); transition: opacity 0.5s ease, transform 0.5s ease; }
   .fade-up.visible { opacity: 1; transform: none; }
+
+  /* ── ARTICLE SPLIT SECTIONS ── */
+  .article-section {
+    padding: 80px 0;
+  }
+  .article-section.bg-alt {
+    background: #f8fafb;
+  }
+  .article-split {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    align-items: center;
+  }
+  .article-split.reverse {
+    direction: rtl;
+  }
+  .article-split.reverse > * {
+    direction: ltr;
+  }
+  .article-text h2 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #0d1f3c;
+    margin-bottom: 20px;
+    line-height: 1.25;
+  }
+  .article-text p {
+    font-size: 1rem;
+    color: #374151;
+    line-height: 1.8;
+    margin-bottom: 16px;
+  }
+  .article-text p:last-child {
+    margin-bottom: 0;
+  }
+  .article-image {
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+  }
+  .article-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 16px;
+  }
+  .article-image figcaption {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.72rem;
+    color: #94a3b8;
+    text-align: center;
+    padding: 10px 16px 0;
+  }
+  @media (max-width: 768px) {
+    .article-split,
+    .article-split.reverse {
+      grid-template-columns: 1fr;
+      direction: ltr;
+      gap: 32px;
+    }
+  }
 </style>
 </head>
 <body>
@@ -1194,6 +1256,52 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           })();
           </script>
           <!-- end Google Calendar Appointment Scheduling -->
+    </div>
+  </div>
+</section>
+
+
+<!-- SECTION 4A — ARTICLE: HOW OS TROUBLESHOOTING WORKS -->
+<section class="article-section">
+  <div class="container">
+    <div class="article-split">
+      <div class="article-text">
+        <h2>How OS Troubleshooting Works at Your Gold Coast Home</h2>
+        <p>When your computer starts behaving strangely, the operating system is often the place to start looking. OS troubleshooting on the Gold Coast begins with a structured diagnostic process — not guesswork. A technician will look at how the system boots, what errors appear, which processes are consuming resources, and whether the fault is tied to a recent change like a software install or a Windows update.</p>
+        <p>The first step is always to gather information. A computer that crashes randomly tells a different story to one that fails to boot at all. A system that runs slowly after a Windows update is a different problem to one that slows down only when a specific application is open. Understanding the pattern of the fault is what allows a technician to go directly to the source rather than spending time on areas that are not relevant.</p>
+        <p>Once the fault is identified, the repair approach depends on what is found. Some OS issues can be resolved by rolling back a driver or removing a conflicting application. Others require a repair installation of Windows, where the operating system files are refreshed without touching your personal data. In more serious cases — such as a corrupted boot sector or a failed system partition — a clean reinstall may be the right path. Before any reinstall, your files are backed up first.</p>
+        <p>Gold Coast homes vary a lot in how they use computers. A household in Varsity Lakes might have a family desktop running Windows 11 that the kids use for school and gaming. A home office in Robina might rely on a MacBook for client work and video calls. A retiree in Palm Beach might have an older Windows 10 machine that has never had a proper service. Each situation calls for a different approach, and a good technician will tailor the repair to what the device actually needs — not a one-size-fits-all fix.</p>
+        <p>Most OS troubleshooting visits take between one and three hours. If the fault is straightforward, the repair is often completed in a single visit. If a reinstall is needed and the device is slow, the process may take longer — but you will always know what is happening and why before any work begins. Call <a href="tel:0730418993">07 3041 8993</a> to talk through your situation before booking.</p>
+      </div>
+      <figure class="article-image">
+        <img src="os-troubleshooting-technician-gold-coast.webp"
+             alt="OS troubleshooting technician diagnosing a laptop at a Gold Coast home"
+             width="800" height="450" loading="lazy">
+        <figcaption>OS troubleshooting and repair — we come to your Gold Coast home</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 4B — ARTICLE: BOOT FAILURES AND RECOVERY -->
+<section class="article-section bg-alt">
+  <div class="container">
+    <div class="article-split reverse">
+      <div class="article-text">
+        <h2>Boot Failures, Blue Screens and Windows Recovery on the Gold Coast</h2>
+        <p>A computer that will not start is one of the most stressful faults a Gold Coast household can face. Whether it is a laptop that shows a black screen on startup, a desktop that cycles through a restart loop, or a machine stuck on a blue screen with an error code, these faults are almost always fixable — and in most cases, your data can be recovered intact.</p>
+        <p>Boot failures on Windows systems are commonly caused by a few specific things. A corrupted boot configuration file (BCD) is one of the most frequent culprits. This file tells Windows where to find the operating system when the computer starts. If it becomes damaged — through a power cut during an update, a failed disk write, or a system crash — the computer cannot find Windows and will not load. The fix is to repair or rebuild the BCD using Windows recovery tools, which can often be done without reinstalling anything.</p>
+        <p>Blue screen errors (BSOD) are another common OS fault. Each blue screen carries a stop code that points to a specific type of failure. A MEMORY_MANAGEMENT error suggests a RAM or driver issue. A CRITICAL_PROCESS_DIED error usually means a core Windows process has failed, often due to a corrupted system file. An INACCESSIBLE_BOOT_DEVICE error indicates the system cannot read the drive it needs to start. A technician who knows how to read these codes can go directly to the cause rather than spending hours trying random fixes.</p>
+        <p>Windows updates are a common trigger for boot failures across the Gold Coast. A major feature update or a cumulative security patch can occasionally leave a system in a broken state — particularly on older hardware or machines that have not been maintained. In these cases, rolling back the update through the Windows recovery environment is often the fastest path to a working computer. If the update cannot be rolled back, a repair installation of Windows will restore the system files without removing your personal data.</p>
+        <p>macOS systems can also develop boot faults, though they are less common. A Mac that shows a folder with a question mark on startup has lost its connection to the startup disk. A Mac stuck on the loading bar may have a corrupted system volume. Apple's built-in recovery environment provides tools to repair the disk and reinstall macOS, and a technician familiar with both platforms can work through these issues at your Gold Coast home without needing to take the machine away.</p>
+        <p>If your computer will not start and you are worried about your files, do not attempt multiple restarts or try to force the system to load. Each failed boot attempt can sometimes make recovery harder. The safest step is to stop and call <a href="tel:0730418993">07 3041 8993</a>. A technician can assess the situation and tell you honestly what is possible before any work begins.</p>
+      </div>
+      <figure class="article-image">
+        <img src="os-repair-boot-failure-gold-coast.webp"
+             alt="Windows recovery environment on a laptop during OS repair Gold Coast"
+             width="800" height="450" loading="lazy">
+        <figcaption>Windows recovery and boot failure repair — Gold Coast home service</figcaption>
+      </figure>
     </div>
   </div>
 </section>
