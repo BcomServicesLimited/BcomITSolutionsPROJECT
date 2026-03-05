@@ -868,6 +868,124 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     .faq-answer a { color: #00c8e0; text-decoration: none; }
     .faq-answer a:hover { text-decoration: underline; }
     .faq-answer[hidden] { display: none; }
+    /* ── CLOSING CTA ── */
+    .cta-banner {
+      background: linear-gradient(135deg, #0d1f3c 0%, #1e3a5f 50%, #0d2d3a 100%);
+      border-top: 3px solid #00c8e0;
+      padding: 80px 0 60px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      clip-path: polygon(0 0, 100% 0, 100% 92%, 0 100%);
+    }
+    .cta-banner::before {
+      content: '';
+      position: absolute;
+      top: -120px; left: -120px;
+      width: 400px; height: 400px;
+      background: radial-gradient(circle, rgba(0,200,224,0.12) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .cta-banner::after {
+      content: '';
+      position: absolute;
+      bottom: -80px; right: -80px;
+      width: 320px; height: 320px;
+      background: radial-gradient(circle, rgba(0,200,224,0.08) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .cta-banner__inner { position: relative; z-index: 2; }
+    .cta-label {
+      display: inline-block;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #00c8e0;
+      margin-bottom: 16px;
+    }
+    .cta-banner h2 {
+      font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+      font-weight: 700;
+      color: white;
+      line-height: 1.2;
+      margin-bottom: 16px;
+      letter-spacing: -0.02em;
+    }
+    .cta-banner__sub {
+      font-size: 1rem;
+      color: rgba(255,255,255,0.75);
+      line-height: 1.7;
+      max-width: 520px;
+      margin: 0 auto 36px;
+    }
+    .cta-banner__btns {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-bottom: 36px;
+    }
+    .cta-btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #00c8e0;
+      color: #0d1f3c;
+      font-weight: 700;
+      font-size: 0.95rem;
+      padding: 14px 28px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.2s, transform 0.2s;
+    }
+    .cta-btn-primary:hover { background: #00b3c8; transform: translateY(-2px); }
+    .cta-btn-primary [data-lucide] { width: 18px; height: 18px; stroke: #0d1f3c; }
+    .cta-btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: transparent;
+      color: white;
+      font-weight: 600;
+      font-size: 0.95rem;
+      padding: 13px 28px;
+      border-radius: 8px;
+      border: 2px solid rgba(255,255,255,0.35);
+      text-decoration: none;
+      transition: border-color 0.2s, transform 0.2s;
+    }
+    .cta-btn-secondary:hover { border-color: #00c8e0; transform: translateY(-2px); }
+    .cta-btn-secondary [data-lucide] { width: 18px; height: 18px; stroke: white; }
+    .cta-reassurance {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+    .cta-reassurance__item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.82rem;
+      color: rgba(255,255,255,0.65);
+    }
+    .cta-reassurance__item [data-lucide] { width: 15px; height: 15px; stroke: #00c8e0; }
+    .cta-updated {
+      text-align: center;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.72rem;
+      color: rgba(255,255,255,0.3);
+      padding: 24px 0 40px;
+    }
+    @media (max-width: 768px) {
+      .cta-banner { clip-path: none; padding: 60px 0 48px; }
+      .cta-banner__btns { flex-direction: column; align-items: stretch; }
+      .cta-btn-primary, .cta-btn-secondary { justify-content: center; }
+    }
   </style>
 
 <!-- NAV JAVASCRIPT -->
@@ -1236,6 +1354,32 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </div>
   </section>
+
+  <!-- SECTION 7 — CLOSING CTA -->
+  <section class="cta-banner" aria-label="Book a Gold Coast Data Backup or Recovery Technician">
+    <div class="container">
+      <div class="cta-banner__inner">
+        <p class="cta-label">Gold Coast&rsquo;s Trusted IT Team</p>
+        <h2>Lost Data or Need a Backup? Call a Gold Coast Technician Today</h2>
+        <p class="cta-banner__sub">Bcom IT Solutions recovers lost files and sets up reliable backups
+        across all Gold Coast suburbs. We come to you &mdash; call us or book online today.</p>
+        <div class="cta-banner__btns">
+          <a href="tel:0730418993" class="cta-btn-primary">
+            <i aria-hidden="true" data-lucide="phone"></i> Call 07 3041 8993
+          </a>
+          <a href="mailto:support@bcomservices.com" class="cta-btn-secondary">
+            <i aria-hidden="true" data-lucide="mail"></i> Email Us
+          </a>
+        </div>
+        <div class="cta-reassurance">
+          <span class="cta-reassurance__item"><i aria-hidden="true" data-lucide="clock"></i> Same-day response</span>
+          <span class="cta-reassurance__item"><i aria-hidden="true" data-lucide="map-pin"></i> Gold Coast local</span>
+          <span class="cta-reassurance__item"><i aria-hidden="true" data-lucide="shield-check"></i> No fix, no fee</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <p class="cta-updated">Last updated: March 2026</p>
 
   <!-- ============================================================
      BCOM IT SOLUTIONS — FOOTER COMPONENT
