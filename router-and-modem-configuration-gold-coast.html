@@ -709,6 +709,23 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     .why-card__text h3 { font-size: 1rem; font-weight: 700; color: #0d1f3c; margin-bottom: 6px; }
     .why-card__text p { font-size: 0.9rem; color: #4a5568; line-height: 1.6; margin: 0; }
     @media (max-width: 700px) { .why-grid { grid-template-columns: 1fr; } }
+    /* ── AREAS + EXPECT ── */
+    .areas-part { padding: 60px 0 40px; background: #e6fafd; }
+    .areas-part h2 { font-size: 1.9rem; font-weight: 700; color: #0d1f3c; margin-bottom: 20px; text-align: center; }
+    .areas-part p { font-size: 1rem; color: #1e3a5f; line-height: 1.75; max-width: 680px; margin: 0 auto 32px; text-align: center; }
+    .areas-booking { text-align: center; margin-top: 32px; }
+    .expect-part { padding: 40px 0 60px; background: #f8fafb; }
+    .expect-part h2 { font-size: 1.9rem; font-weight: 700; color: #0d1f3c; margin-bottom: 8px; text-align: center; }
+    .expect-intro { text-align: center; color: #4a5568; font-size: 1rem; margin-bottom: 48px; }
+    .expect-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
+    .expect-step { display: flex; gap: 20px; align-items: flex-start; background: white; border-radius: 16px; padding: 28px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); }
+    .expect-num { font-family: 'DM Mono', monospace; font-size: 2.4rem; font-weight: 700; color: #00c8e0; line-height: 1; flex-shrink: 0; min-width: 52px; }
+    .expect-icon { width: 44px; height: 44px; background: #e6fafd; border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .expect-icon [data-lucide] { width: 20px; height: 20px; stroke: #00c8e0; stroke-width: 1.75; }
+    .expect-body h3 { font-size: 1rem; font-weight: 700; color: #0d1f3c; margin-bottom: 6px; }
+    .expect-body p { font-size: 0.9rem; color: #4a5568; line-height: 1.65; margin: 0; }
+    .expect-closing { text-align: center; margin-top: 40px; font-family: 'DM Mono', monospace; font-size: 0.82rem; color: #718096; }
+    @media (max-width: 700px) { .expect-grid { grid-template-columns: 1fr; } }
 </style>
 
 <!-- NAV JAVASCRIPT -->
@@ -938,6 +955,97 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </div>
   </section>
+
+  <!-- SECTION 5 — SERVICE AREAS + WHAT TO EXPECT -->
+  <div>
+    <!-- PART A: SERVICE AREAS -->
+    <div class="areas-part">
+      <div class="container">
+        <h2>Router &amp; Modem Setup Across the Gold Coast</h2>
+        <p>Bcom IT Solutions (ABN 92 636 893 108) sets up and configures routers and modems across the entire Gold Coast. From Southport and Robina to Burleigh Heads, Nerang, Coomera and Palm Beach &mdash; we come to your home and get it working correctly. If your internet is slow we&rsquo;ll diagnose whether the issue is your router, your modem, your NBN connection or something else entirely before recommending a fix.<br><br>Call <a href="tel:0730418993" style="color:#00c8e0;font-weight:600;">07 3041 8993</a> to book. For WiFi dead spots throughout the home, see our <a href="mesh-network-setup-gold-coast.html" style="color:#00c8e0;font-weight:600;">mesh WiFi systems Gold Coast</a> service.</p>
+        <div class="suburb-pills">
+          <span class="suburb-pill">Southport</span>
+          <span class="suburb-pill">Burleigh Heads</span>
+          <span class="suburb-pill">Robina</span>
+          <span class="suburb-pill">Nerang</span>
+          <span class="suburb-pill">Helensvale</span>
+          <span class="suburb-pill">Coomera</span>
+          <span class="suburb-pill">Palm Beach</span>
+          <span class="suburb-pill">Varsity Lakes</span>
+          <span class="suburb-pill">Coolangatta</span>
+          <span class="suburb-pill">Surfers Paradise</span>
+          <span class="suburb-pill">Broadbeach</span>
+        </div>
+        <div class="areas-booking fade-up">
+          <!-- Google Calendar Appointment Scheduling begin -->
+          <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+          <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+          <script>
+          (function() {
+            var target = document.currentScript;
+            window.addEventListener('load', function() {
+              calendar.schedulingButton.load({
+                url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ2z99t5yQNIRoRT8rNM3Jv7-WC-MNC35owGsga-okvZmEIG167e9iLOAco3_vHaX44r6eYmGFRA?gv=true',
+                color: '#039BE5',
+                label: 'Book an appointment',
+                target,
+              });
+            });
+          })();
+          </script>
+          <!-- end Google Calendar Appointment Scheduling -->
+        </div>
+      </div>
+    </div>
+
+    <!-- PART B: WHAT TO EXPECT -->
+    <div class="expect-part">
+      <div class="container">
+        <h2>What to Expect From a Gold Coast Router Setup Visit</h2>
+        <p class="expect-intro">Here&rsquo;s exactly what happens from the moment you call to the moment we leave.</p>
+        <div class="expect-grid">
+
+          <div class="expect-step fade-up" style="transition-delay:0.05s">
+            <div class="expect-num">01</div>
+            <div class="expect-icon"><i aria-hidden="true" data-lucide="phone"></i></div>
+            <div class="expect-body">
+              <h3>You Call and Describe the Problem</h3>
+              <p>When you call <a href="tel:0730418993" style="color:#00c8e0;font-weight:600;">07 3041 8993</a> we ask what&rsquo;s happening &mdash; new hardware to set up, slow speeds, dropouts, or something else. We ask about your NBN connection type if you know it and confirm same-day or next-day availability. Most router jobs are straightforward and we can give you a rough cost estimate before booking.</p>
+            </div>
+          </div>
+
+          <div class="expect-step fade-up" style="transition-delay:0.1s">
+            <div class="expect-num">02</div>
+            <div class="expect-icon"><i aria-hidden="true" data-lucide="map-pin"></i></div>
+            <div class="expect-body">
+              <h3>We Arrive With the Right Tools</h3>
+              <p>We bring a laptop, network testing tools, common router firmware files and patch cables. If you have new hardware still in the box we unpack and set it up &mdash; if you want us to supply hardware we can discuss options on the call.</p>
+            </div>
+          </div>
+
+          <div class="expect-step fade-up" style="transition-delay:0.15s">
+            <div class="expect-num">03</div>
+            <div class="expect-icon"><i aria-hidden="true" data-lucide="settings"></i></div>
+            <div class="expect-body">
+              <h3>We Configure and Optimise</h3>
+              <p>We connect the router to your NBN modem, configure all bands and channels, set a strong WiFi password and network name, enable the firewall and update firmware. We explain each setting clearly and confirm the full cost before starting any work beyond the initial diagnosis.</p>
+            </div>
+          </div>
+
+          <div class="expect-step fade-up" style="transition-delay:0.2s">
+            <div class="expect-num">04</div>
+            <div class="expect-icon"><i aria-hidden="true" data-lucide="check-circle"></i></div>
+            <div class="expect-body">
+              <h3>Speed Tested, Every Device Reconnected</h3>
+              <p>We run an NBN speed test to confirm your plan speeds are coming through correctly, then reconnect all your devices &mdash; computers, phones, smart TVs and printers. We note down your network name and password and leave you knowing how to log in to your router if you need to in the future.</p>
+            </div>
+          </div>
+
+        </div>
+        <p class="expect-closing">Most Gold Coast router setup visits take 45 minutes to 1.5 hours. Same-day appointments available across all suburbs.</p>
+      </div>
+    </div>
+  </div>
 
   <!-- ============================================================
      BCOM IT SOLUTIONS — FOOTER COMPONENT
