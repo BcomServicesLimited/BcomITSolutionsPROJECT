@@ -880,6 +880,28 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       .expect-step { grid-template-columns: 36px 40px 1fr; gap: 12px; }
       .expect-step-num { font-size: 1.5rem; }
     }
+
+    /* ── FAQ ── */
+    .faq-section { background: white; padding: 80px 0; }
+    .faq-header { text-align: center; margin-bottom: 48px; }
+    .faq-header h2 { font-size: 1.9rem; font-weight: 700; color: #0d1f3c; margin-bottom: 12px; }
+    .faq-list { max-width: 760px; margin: 0 auto; border: 1px solid #e2e8f0; border-radius: 16px; overflow: hidden; }
+    .faq-item { border-bottom: 1px solid #e2e8f0; }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-item.open .faq-question { border-left: 4px solid #00c8e0; background: #f8fafb; }
+    .faq-question {
+      width: 100%; display: flex; align-items: center; justify-content: space-between;
+      gap: 16px; padding: 20px 24px; background: none; border: none;
+      cursor: pointer; text-align: left;
+    }
+    .faq-question h3 { font-size: 1rem; font-weight: 600; color: #0d1f3c; margin: 0; line-height: 1.4; }
+    .faq-question .chevron { width: 20px; height: 20px; stroke: #00c8e0; flex-shrink: 0; transition: transform 0.25s; }
+    .faq-item.open .faq-question .chevron { transform: rotate(180deg); }
+    .faq-answer { padding: 0 24px 20px; background: #f8fafb; }
+    .faq-answer p { font-size: 0.92rem; color: #4a5568; line-height: 1.75; margin: 0; }
+    .faq-answer p a { color: #00c8e0; font-weight: 600; text-decoration: none; }
+    .faq-answer p a:hover { text-decoration: underline; }
+    .faq-answer[hidden] { display: none; }
 </style>
 
 <!-- NAV JAVASCRIPT -->
@@ -1350,6 +1372,68 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
+  <!-- SECTION 7 — FAQ -->
+  <section class="faq-section" aria-label="WiFi Installation &amp; Configuration Gold Coast — FAQ">
+    <div class="container">
+      <div class="faq-header fade-up">
+        <h2>WiFi Installation &amp; Configuration Gold Coast &mdash; Frequently Asked Questions</h2>
+      </div>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq-1">
+            <h3>Do I need a mesh system or will a single access point be enough for my Gold Coast home?</h3>
+            <i aria-hidden="true" data-lucide="chevron-down" class="chevron"></i>
+          </button>
+          <div class="faq-answer" id="faq-1" hidden>
+            <p>It depends on your home size and layout. For most Gold Coast homes under around 200&ndash;250 sqm with a standard layout, a single high-performance access point &mdash; such as a Ubiquiti UniFi U6 Pro or a TP-Link EAP670 &mdash; will deliver faster and more reliable WiFi than a budget mesh system. Mesh systems make more sense for larger homes, split-level layouts or homes where running a single cable to an optimal location isn&rsquo;t practical. We assess your home before recommending anything. Call <a href="tel:0730418993">07 3041 8993</a> to discuss.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq-2">
+            <h3>Can you supply and install Ubiquiti UniFi at my Gold Coast home?</h3>
+            <i aria-hidden="true" data-lucide="chevron-down" class="chevron"></i>
+          </button>
+          <div class="faq-answer" id="faq-2" hidden>
+            <p>Yes. We supply, install and configure Ubiquiti UniFi access points and routers for Gold Coast homes. UniFi is an excellent choice for homeowners who want prosumer-grade performance and a proper management interface without the complexity of a full enterprise setup. We handle everything &mdash; hardware, controller setup, configuration and device connection &mdash; and walk you through the UniFi app before we leave. Call <a href="tel:0730418993">07 3041 8993</a> to discuss which UniFi hardware suits your home.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq-3">
+            <h3>My new router still has poor signal in parts of my Gold Coast home &mdash; what can you do?</h3>
+            <i aria-hidden="true" data-lucide="chevron-down" class="chevron"></i>
+          </button>
+          <div class="faq-answer" id="faq-3" hidden>
+            <p>A lot, in most cases. Poor signal after a new router install is almost always caused by placement, channel interference or incorrect band settings &mdash; not the router itself. We reposition the router or access point to the optimal location, analyse the channel environment in your street, and configure the bands correctly for your home&rsquo;s layout. In many cases this fixes the problem without any additional hardware. Call <a href="tel:0730418993">07 3041 8993</a> and describe what you&rsquo;re seeing &mdash; we&rsquo;ll advise before you book.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq-4">
+            <h3>Can you configure my WiFi to work correctly with my NBN connection?</h3>
+            <i aria-hidden="true" data-lucide="chevron-down" class="chevron"></i>
+          </button>
+          <div class="faq-answer" id="faq-4" hidden>
+            <p>Yes &mdash; NBN integration is part of every WiFi installation we do on the Gold Coast. Different NBN connection types (FTTP, FTTN, HFC, Fixed Wireless) require different modem and router configurations. We make sure your new WiFi hardware is set up correctly for your specific NBN type and run a speed test before we leave to confirm you&rsquo;re getting the speeds you&rsquo;re paying for.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq-5">
+            <h3>How much does WiFi installation and configuration cost on the Gold Coast?</h3>
+            <i aria-hidden="true" data-lucide="chevron-down" class="chevron"></i>
+          </button>
+          <div class="faq-answer" id="faq-5" hidden>
+            <p>Cost depends on the hardware required and the complexity of your setup. We give you a quote covering both equipment and labour before we start any work &mdash; no surprises. If you already have hardware you&rsquo;re happy with, we can configure it for a standard call-out fee. Call <a href="tel:0730418993">07 3041 8993</a> to discuss your setup and get a rough estimate before booking.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
   <!-- ============================================================
      BCOM IT SOLUTIONS — FOOTER COMPONENT
      Include at the bottom of every page body, before </body>
@@ -1755,6 +1839,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
     }, { threshold: 0.12 });
     els.forEach(function (el) { io.observe(el); });
+  })();
+  </script>
+  <script>
+  (function () {
+    var items = document.querySelectorAll('.faq-item');
+    items.forEach(function (item) {
+      var btn    = item.querySelector('.faq-question');
+      var answer = item.querySelector('.faq-answer');
+      btn.addEventListener('click', function () {
+        var isOpen = item.classList.contains('open');
+        items.forEach(function (i) { i.classList.remove('open'); i.querySelector('.faq-question').setAttribute('aria-expanded','false'); i.querySelector('.faq-answer').hidden = true; });
+        if (!isOpen) { item.classList.add('open'); btn.setAttribute('aria-expanded','true'); answer.hidden = false; }
+      });
+    });
   })();
   </script>
   <script>lucide.createIcons();</script>
