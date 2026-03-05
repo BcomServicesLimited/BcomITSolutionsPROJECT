@@ -22,6 +22,124 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link rel="icon" type="image/gif" href="BcomFavicon.gif">
   <link rel="stylesheet" href="design-system.css">
 
+  <style>
+    /* ── HERO ── */
+    .hero {
+      position: relative;
+      min-height: 65vh;
+      background-image: url('hero-bg-software-installation.webp');
+      background-size: cover;
+      background-position: center center;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(30,58,95,0.88) 0%, rgba(13,31,60,0.75) 100%);
+      z-index: 1;
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: radial-gradient(rgba(0,200,224,0.07) 1px, transparent 1px);
+      background-size: 28px 28px;
+      z-index: 2;
+      pointer-events: none;
+    }
+    .hero-content {
+      position: relative;
+      z-index: 3;
+      padding: 56px 0;
+      max-width: 680px;
+    }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(0,200,224,0.35);
+      border-radius: 24px;
+      padding: 6px 16px;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.72rem;
+      color: rgba(255,255,255,0.9);
+      letter-spacing: 0.04em;
+      margin-bottom: 20px;
+    }
+    .hero h1 {
+      font-size: 2.6rem;
+      font-weight: 700;
+      color: white;
+      line-height: 1.15;
+      margin-bottom: 16px;
+      letter-spacing: -0.02em;
+    }
+    .hero-sub {
+      font-size: 1.05rem;
+      color: rgba(255,255,255,0.8);
+      line-height: 1.7;
+      margin-bottom: 28px;
+      max-width: 560px;
+    }
+    .hero-cta-row {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-bottom: 24px;
+    }
+    .hero-call-link {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.9rem;
+      color: #00c8e0;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .hero-call-link:hover { color: white; }
+    .hero-trust-strip {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .hero-trust-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.82rem;
+      color: rgba(255,255,255,0.7);
+      font-family: 'DM Sans', sans-serif;
+    }
+    .hero-trust-item [data-lucide] {
+      width: 15px;
+      height: 15px;
+      stroke: #00c8e0;
+    }
+
+    /* ── BREADCRUMB ── */
+    .breadcrumb-bar {
+      background: #f8fafb;
+      border-bottom: 1px solid #e2e8f0;
+      padding: 10px 0;
+    }
+    .breadcrumb {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      flex-wrap: wrap;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.72rem;
+      color: #94a3b8;
+    }
+    .breadcrumb a { color: #00c8e0; text-decoration: none; }
+    .breadcrumb a:hover { text-decoration: underline; }
+    .breadcrumb [data-lucide] { width: 12px; height: 12px; stroke: #cbd5e1; }
+  </style>
+
   <!-- BreadcrumbList Schema -->
   <script type="application/ld+json">
 {
@@ -598,38 +716,74 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 })();
 </script>
 
+  <!-- BREADCRUMB -->
+  <nav class="breadcrumb-bar" aria-label="Breadcrumb">
+    <div class="container">
+      <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="index.html" itemprop="item"><span itemprop="name">Home</span></a>
+          <meta itemprop="position" content="1">
+        </li>
+        <i data-lucide="chevron-right" aria-hidden="true"></i>
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="home-users.html" itemprop="item"><span itemprop="name">Residential IT Services</span></a>
+          <meta itemprop="position" content="2">
+        </li>
+        <i data-lucide="chevron-right" aria-hidden="true"></i>
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="computer-repairs-gold-coast.html" itemprop="item"><span itemprop="name">Computer Repair Gold Coast</span></a>
+          <meta itemprop="position" content="3">
+        </li>
+        <i data-lucide="chevron-right" aria-hidden="true"></i>
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <span itemprop="name">Software Installation &amp; Configuration Gold Coast</span>
+          <meta itemprop="position" content="4">
+        </li>
+      </ol>
+    </div>
+  </nav>
+
   <!-- HERO -->
-  <section style="background:#f8fafb;padding:80px 0;text-align:center;" aria-label="Hero — Software Installation &amp; Configuration">
-    <div class="container" style="max-width:760px;margin:0 auto;padding:0 24px;">
-      <span class="hero-badge" style="display:inline-flex;align-items:center;gap:8px;background:#e6fafd;color:#0d1f3c;font-family:'DM Mono',monospace;font-size:0.72rem;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;padding:6px 14px;border-radius:20px;margin-bottom:24px;">
-        <span class="status-dot" aria-hidden="true"></span>
-        Home Services · Gold Coast
-      </span>
-      <h1 style="font-size:clamp(1.8rem,4vw,2.8rem);font-weight:800;color:#0d1f3c;line-height:1.15;margin:0 0 20px;">
-        Software Installation &amp; Configuration <span class="text-gradient">Gold Coast</span>
-      </h1>
-      <p class="hero-sub" style="font-size:1.05rem;color:#4a5568;max-width:560px;margin:0 auto 32px;">
-        This page is coming soon. In the meantime, call us on
-        <a href="tel:0730418993" style="color:#00c8e0;font-weight:600;">07 3041 8993</a> or
-        book online below.
-      </p>
-      <!-- Google Calendar Appointment Scheduling begin -->
-<link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
-<script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
-<script>
-(function() {
-  var target = document.currentScript;
-  window.addEventListener('load', function() {
-    calendar.schedulingButton.load({
-      url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ2z99t5yQNIRoRT8rNM3Jv7-WC-MNC35owGsga-okvZmEIG167e9iLOAco3_vHaX44r6eYmGFRA?gv=true',
-      color: '#039BE5',
-      label: 'Book an appointment',
-      target,
-    });
-  });
-})();
-</script>
-<!-- end Google Calendar Appointment Scheduling -->
+  <section class="hero" aria-label="Software Installation &amp; Configuration Gold Coast">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge fade-up">
+          <span class="status-dot"></span> Home Services &middot; Gold Coast
+        </div>
+        <h1 class="fade-up" style="transition-delay:0.1s">
+          Software Installation &amp; Configuration <span class="text-gradient">Gold Coast</span>
+        </h1>
+        <p class="hero-sub fade-up" style="transition-delay:0.2s">
+          We install and configure software correctly at your Gold Coast home &mdash;
+          Windows, Microsoft 365, printers, email, backup and more. Done right,
+          explained clearly, working before we leave. Same-day service available.
+        </p>
+        <div class="hero-cta-row fade-up" style="transition-delay:0.3s">
+          <!-- Google Calendar Appointment Scheduling begin -->
+          <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+          <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+          <script>
+          (function() {
+            var target = document.currentScript;
+            window.addEventListener('load', function() {
+              calendar.schedulingButton.load({
+                url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ2z99t5yQNIRoRT8rNM3Jv7-WC-MNC35owGsga-okvZmEIG167e9iLOAco3_vHaX44r6eYmGFRA?gv=true',
+                color: '#039BE5',
+                label: 'Book an appointment',
+                target,
+              });
+            });
+          })();
+          </script>
+          <!-- end Google Calendar Appointment Scheduling -->
+          <a href="tel:0730418993" class="hero-call-link">or call <a href="tel:0730418993">07 3041 8993</a></a>
+        </div>
+        <div class="hero-trust-strip fade-up" style="transition-delay:0.4s">
+          <span class="hero-trust-item"><i aria-hidden="true" data-lucide="zap"></i> Same-day response</span>
+          <span class="hero-trust-item"><i aria-hidden="true" data-lucide="map-pin"></i> Gold Coast local</span>
+          <span class="hero-trust-item"><i aria-hidden="true" data-lucide="shield-check"></i> No fix, no fee</span>
+        </div>
+      </div>
     </div>
   </section>
 
