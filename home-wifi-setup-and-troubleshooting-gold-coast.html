@@ -902,6 +902,38 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     .faq-answer p a { color: #00c8e0; font-weight: 600; text-decoration: none; }
     .faq-answer p a:hover { text-decoration: underline; }
     .faq-answer[hidden] { display: none; }
+
+    /* ── CTA BANNER ── */
+    .cta-banner {
+      background: linear-gradient(135deg, #0d1f3c 0%, #1e3a5f 50%, #0d2d3a 100%);
+      border-top: 3px solid #00c8e0;
+      clip-path: polygon(0 6%, 100% 0%, 100% 100%, 0% 100%);
+      padding: 100px 0 80px;
+      position: relative; overflow: hidden; text-align: center;
+    }
+    .cta-banner::before {
+      content: ''; position: absolute;
+      width: 600px; height: 600px;
+      background: rgba(0,200,224,0.06);
+      border-radius: 50%; top: -200px; left: -200px;
+      filter: blur(80px); pointer-events: none; z-index: 0;
+    }
+    .cta-banner::after {
+      content: ''; position: absolute;
+      width: 400px; height: 400px;
+      background: rgba(0,200,224,0.04);
+      border-radius: 50%; bottom: -100px; right: -100px;
+      filter: blur(60px); pointer-events: none; z-index: 0;
+    }
+    .cta-banner__inner { position: relative; z-index: 1; }
+    .cta-label { font-family: 'DM Mono', monospace; font-size: 0.65rem; color: #00c8e0; text-transform: uppercase; letter-spacing: 0.15em; display: block; margin-bottom: 16px; }
+    .cta-banner h2 { font-size: 2.2rem; font-weight: 700; color: white; margin-bottom: 16px; line-height: 1.2; }
+    .cta-banner p { font-size: 1.05rem; color: rgba(255,255,255,0.75); max-width: 540px; margin: 0 auto 32px; line-height: 1.7; }
+    .cta-buttons { display: flex; align-items: center; justify-content: center; gap: 16px; flex-wrap: wrap; margin-bottom: 32px; }
+    .cta-reassurance { display: flex; align-items: center; justify-content: center; gap: 24px; flex-wrap: wrap; }
+    .cta-reassurance span { display: flex; align-items: center; gap: 6px; font-size: 0.85rem; color: rgba(255,255,255,0.6); }
+    .cta-reassurance [data-lucide] { width: 16px; height: 16px; stroke: rgba(255,255,255,0.5); }
+    .last-updated { text-align: center; font-family: 'DM Mono', monospace; font-size: 0.72rem; color: #94a3b8; padding: 16px 0; background: white; }
 </style>
 
 <!-- NAV JAVASCRIPT -->
@@ -1433,6 +1465,34 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </div>
   </section>
+
+  <!-- SECTION 8 — CLOSING CTA -->
+  <section class="cta-banner" aria-label="Get Your Home WiFi Installed Correctly on the Gold Coast Today">
+    <div class="container">
+      <div class="cta-banner__inner">
+        <span class="cta-label fade-up">Gold Coast&rsquo;s Trusted IT Team</span>
+        <h2 class="fade-up" style="transition-delay:0.1s">Get Your Home WiFi Installed Correctly on the Gold Coast Today</h2>
+        <p class="fade-up" style="transition-delay:0.2s">
+          Bcom IT Solutions supplies and installs Ubiquiti UniFi, Grandstream, TP-Link and other leading brands across all Gold Coast suburbs. Configured properly, working before we leave.
+        </p>
+        <div class="cta-buttons fade-up" style="transition-delay:0.3s">
+          <a href="tel:0730418993" class="btn-primary" style="display:inline-flex;align-items:center;gap:8px;">
+            <i aria-hidden="true" data-lucide="phone"></i> Call 07 3041 8993
+          </a>
+          <a href="mailto:support@bcomservices.com" class="btn-primary" style="display:inline-flex;align-items:center;gap:8px;background:#1e3a5f;border-color:#00c8e0;">
+            <i aria-hidden="true" data-lucide="mail"></i> Email Us
+          </a>
+        </div>
+        <div class="cta-reassurance fade-up" style="transition-delay:0.4s">
+          <span><i aria-hidden="true" data-lucide="clock"></i> Same-day response</span>
+          <span><i aria-hidden="true" data-lucide="map-pin"></i> Gold Coast local</span>
+          <span><i aria-hidden="true" data-lucide="shield-check"></i> Fully configured before we leave</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <p class="last-updated">Last updated: March 2026</p>
 
   <!-- ============================================================
      BCOM IT SOLUTIONS — FOOTER COMPONENT
