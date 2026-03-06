@@ -303,6 +303,58 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .faq-answer { padding: 0 24px 20px; font-size: 0.9rem; color: #4a5568; line-height: 1.75; }
     .faq-answer[hidden] { display: none; }
     .faq-answer a { color: #0d1f3c; font-weight: 600; }
+
+    /* ── CLOSING CTA BANNER ── */
+    .cta-banner {
+      background: linear-gradient(135deg, #0d1f3c 0%, #1e3a5f 50%, #0d2d3a 100%);
+      border-top: 3px solid #00c8e0;
+      padding: 80px 0 72px;
+      position: relative;
+      overflow: hidden;
+      clip-path: polygon(0 6%, 100% 0%, 100% 100%, 0% 100%);
+    }
+    .cta-banner::before {
+      content: '';
+      position: absolute; top: -120px; right: -120px;
+      width: 400px; height: 400px;
+      background: radial-gradient(circle, rgba(0,200,224,0.12) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .cta-banner::after {
+      content: '';
+      position: absolute; bottom: -80px; left: -80px;
+      width: 300px; height: 300px;
+      background: radial-gradient(circle, rgba(0,200,224,0.08) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .cta-inner { position: relative; z-index: 2; text-align: center; max-width: 680px; margin: 0 auto; padding: 0 24px; }
+    .cta-label { font-family: 'DM Mono', monospace; font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: #00c8e0; margin-bottom: 16px; display: block; }
+    .cta-banner h2 { font-size: 2rem; font-weight: 700; color: white; line-height: 1.25; margin-bottom: 16px; }
+    .cta-sub { font-size: 1rem; color: rgba(255,255,255,0.75); line-height: 1.7; margin-bottom: 36px; }
+    .cta-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-bottom: 40px; }
+    .btn-cta-primary {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: #00c8e0; color: #0d1f3c; font-weight: 700; font-size: 0.95rem;
+      padding: 14px 28px; border-radius: 8px; text-decoration: none;
+      transition: background 0.2s, transform 0.2s;
+    }
+    .btn-cta-primary:hover { background: #00b4c8; transform: translateY(-2px); }
+    .btn-cta-primary [data-lucide] { width: 18px; height: 18px; stroke: #0d1f3c; }
+    .btn-outline-white {
+      display: inline-flex; align-items: center; gap: 8px;
+      border: 2px solid rgba(255,255,255,0.5); color: white; font-weight: 600; font-size: 0.95rem;
+      padding: 14px 28px; border-radius: 8px; text-decoration: none;
+      transition: border-color 0.2s, transform 0.2s;
+    }
+    .btn-outline-white:hover { border-color: white; transform: translateY(-2px); }
+    .btn-outline-white [data-lucide] { width: 18px; height: 18px; stroke: white; }
+    .cta-reassurance { display: flex; gap: 32px; justify-content: center; flex-wrap: wrap; }
+    .cta-reassurance-item { display: flex; align-items: center; gap: 8px; color: rgba(255,255,255,0.8); font-size: 0.85rem; }
+    .cta-reassurance-item [data-lucide] { width: 16px; height: 16px; stroke: #00c8e0; }
+    @media (max-width: 768px) { .cta-banner { clip-path: none; } .cta-banner h2 { font-size: 1.6rem; } }
+
+    /* ── LAST UPDATED ── */
+    .last-updated { text-align: center; padding: 16px 0 24px; font-family: 'DM Mono', monospace; font-size: 0.78rem; color: #94a3b8; }
   </style>
 
   <!-- BreadcrumbList Schema -->
@@ -1225,6 +1277,32 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </div>
   </section>
+
+  <!-- SECTION 7 — CLOSING CTA -->
+  <section class="cta-banner" aria-label="Contact Bcom IT Solutions Gold Coast">
+    <div class="cta-inner">
+      <span class="cta-label">Gold Coast's Trusted IT Team</span>
+      <h2>Eliminate WiFi Dead Spots in Your Gold Coast Home Today</h2>
+      <p class="cta-sub">Bcom IT Solutions extends WiFi to every corner of Gold Coast homes — right solution for your layout, signal tested before we leave.</p>
+      <div class="cta-buttons">
+        <a href="tel:0730418993" class="btn-cta-primary">
+          <i aria-hidden="true" data-lucide="phone"></i>
+          Call 07 3041 8993
+        </a>
+        <a href="mailto:support@bcomservices.com" class="btn-outline-white">
+          <i aria-hidden="true" data-lucide="mail"></i>
+          Email Us
+        </a>
+      </div>
+      <div class="cta-reassurance">
+        <span class="cta-reassurance-item"><i aria-hidden="true" data-lucide="signal"></i> Full coverage everywhere</span>
+        <span class="cta-reassurance-item"><i aria-hidden="true" data-lucide="map-pin"></i> Gold Coast local</span>
+        <span class="cta-reassurance-item"><i aria-hidden="true" data-lucide="shield-check"></i> Tested before we leave</span>
+      </div>
+    </div>
+  </section>
+
+  <p class="last-updated">Last updated: March 2026</p>
 
   <!-- ============================================================
      BCOM IT SOLUTIONS — FOOTER COMPONENT
