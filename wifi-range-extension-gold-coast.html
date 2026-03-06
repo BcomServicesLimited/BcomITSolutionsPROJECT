@@ -1372,6 +1372,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </style>
 
 
+  <script>
+  // Fade-up animation observer
+  const fadeObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        fadeObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.fade-up').forEach(el => fadeObserver.observe(el));
+  </script>
   <script>lucide.createIcons();</script>
 </body>
 </html>
