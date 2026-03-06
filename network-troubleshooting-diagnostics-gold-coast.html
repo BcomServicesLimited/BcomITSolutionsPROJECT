@@ -688,6 +688,54 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       .hero h1 { font-size: 1.9rem; }
     }
 
+    /* ── KEY TAKEAWAYS ── */
+    .takeaways-section {
+      background: #e6fafd;
+      padding: 48px 0;
+      border-bottom: 1px solid #c8f0f7;
+    }
+    .takeaways-inner {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+    .takeaways-inner h2 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #0d1f3c;
+      margin-bottom: 16px;
+      font-family: 'DM Mono', monospace;
+      letter-spacing: 0.02em;
+    }
+    .takeaways-inner ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px 32px;
+    }
+    .takeaways-inner li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 0.92rem;
+      color: #1e3a5f;
+      line-height: 1.5;
+    }
+    .takeaways-inner li::before {
+      content: '';
+      width: 8px;
+      height: 8px;
+      background: #00c8e0;
+      border-radius: 50%;
+      flex-shrink: 0;
+      margin-top: 6px;
+    }
+    @media (max-width: 600px) {
+      .takeaways-inner ul { grid-template-columns: 1fr; }
+    }
+
 </style>
 
 <!-- NAV JAVASCRIPT -->
@@ -790,6 +838,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <span class="hero-trust-item"><i aria-hidden="true" data-lucide="shield-check"></i> Fixed before we leave</span>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- SECTION 2 — KEY TAKEAWAYS -->
+  <section class="takeaways-section" aria-label="Network Troubleshooting &amp; Diagnostics Gold Coast — Quick Summary">
+    <div class="takeaways-inner">
+      <h2>Network Troubleshooting &amp; Diagnostics Gold Coast &mdash; Quick Summary</h2>
+      <ul>
+        <li>Intermittent dropouts, slow speeds and total connection failures diagnosed and fixed at your Gold Coast home</li>
+        <li>Root cause identified &mdash; we find the actual problem, not just the most obvious one</li>
+        <li>NBN connection tested end-to-end &mdash; from the wall socket to your devices &mdash; to isolate where the fault sits</li>
+        <li>Router, modem, cabling and ISP line all assessed as part of the diagnosis</li>
+        <li>Single device connection problems diagnosed &mdash; why one phone, laptop or smart TV won&rsquo;t connect when everything else can</li>
+        <li>Speed inconsistencies investigated &mdash; why your connection is fast at some times and slow at others</li>
+        <li>ISP fault escalation assistance &mdash; we document findings and help you report line faults to your provider with the right technical detail</li>
+        <li>Same-day and next-day appointments across all Gold Coast suburbs</li>
+        <li>Locally owned and operated &mdash; ABN 92 636 893 108</li>
+      </ul>
     </div>
   </section>
 
