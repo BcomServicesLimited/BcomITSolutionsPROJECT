@@ -152,6 +152,36 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     height: 15px;
     stroke: #00c8e0;
   }
+  /* ── SERVICES GRID ── */
+  .services-section { background: white; padding: 80px 0; }
+  .services-header { text-align: center; margin-bottom: 48px; }
+  .services-header h2 { font-size: 1.9rem; font-weight: 700; color: #0d1f3c; margin-bottom: 12px; }
+  .services-header p { font-size: 1rem; color: #4a5568; max-width: 600px; margin: 0 auto; line-height: 1.7; }
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    margin-bottom: 48px;
+  }
+  .service-card {
+    background: #f8fafb;
+    border-radius: 16px;
+    padding: 32px;
+    border-top: 3px solid #00c8e0;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .service-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+  }
+  .service-card .icon-circle { margin-bottom: 20px; }
+  .service-card h3 { font-size: 1rem; font-weight: 700; color: #0d1f3c; margin-bottom: 10px; line-height: 1.3; }
+  .service-card p { font-size: 0.9rem; color: #4a5568; line-height: 1.7; margin: 0; }
+  .services-booking { text-align: center; }
+  @media (max-width: 900px) { .services-grid { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 600px) { .services-grid { grid-template-columns: 1fr; } }
+
   /* ── KEY TAKEAWAYS ── */
   .takeaways-section {
     background: #e6fafd;
@@ -840,7 +870,76 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- SECTION 2 — KEY TAKEAWAYS -->
+  <!-- SECTION 2 — SERVICES GRID -->
+  <section class="services-section" aria-label="Network Security and Firewall Services Gold Coast">
+    <div class="container">
+      <div class="services-header fade-up">
+        <h2>What We Secure Across the Gold Coast</h2>
+        <p>Most Gold Coast home networks leave the front door open without the owner realising &mdash; default passwords, unencrypted bands, remote access left enabled and unknown devices on the network. We audit and fix all of it at your home. This service is part of our <a href="computer-networking-service-gold-coast.html" style="color:#00c8e0;font-weight:600;">networking &amp; WiFi Gold Coast</a> offering. If you've recently been scammed or had unauthorised access to your devices, see our <a href="virus-and-malware-removal-services-gold-coast.html" style="color:#00c8e0;font-weight:600;">virus &amp; malware removal Gold Coast</a> service.</p>
+      </div>
+      <div class="services-grid">
+
+        <div class="service-card fade-up" style="transition-delay:0.05s">
+          <div class="icon-circle"><i aria-hidden="true" data-lucide="shield"></i></div>
+          <h3>Home Network Security Audit Gold Coast</h3>
+          <p>We check your entire Gold Coast home network for vulnerabilities &mdash; weak passwords, outdated firmware, exposed ports, unknown devices and insecure settings &mdash; and fix everything we find.</p>
+        </div>
+
+        <div class="service-card fade-up" style="transition-delay:0.1s">
+          <div class="icon-circle"><i aria-hidden="true" data-lucide="lock"></i></div>
+          <h3>WiFi Encryption &amp; Password Hardening Gold Coast</h3>
+          <p>WPA3 or WPA2-AES encryption configured on all bands, default WiFi and admin passwords replaced with strong unique credentials on your Gold Coast home router.</p>
+        </div>
+
+        <div class="service-card fade-up" style="transition-delay:0.15s">
+          <div class="icon-circle"><i aria-hidden="true" data-lucide="users"></i></div>
+          <h3>Guest Network Isolation Gold Coast</h3>
+          <p>Guest network configured with complete isolation from your main network &mdash; visitors get internet access, nothing else. Your Gold Coast home devices stay protected.</p>
+        </div>
+
+        <div class="service-card fade-up" style="transition-delay:0.2s">
+          <div class="icon-circle"><i aria-hidden="true" data-lucide="shield-off"></i></div>
+          <h3>Firewall Configuration &amp; Rule Review Gold Coast</h3>
+          <p>Router firewall rules reviewed, unnecessary ports closed, remote management and UPnP disabled &mdash; your Gold Coast network firewall hardened against external threats.</p>
+        </div>
+
+        <div class="service-card fade-up" style="transition-delay:0.25s">
+          <div class="icon-circle"><i aria-hidden="true" data-lucide="search"></i></div>
+          <h3>Connected Device Audit Gold Coast</h3>
+          <p>We identify every device currently connected to your Gold Coast home network &mdash; known and unknown. Anything that shouldn't be there gets removed and access blocked.</p>
+        </div>
+
+        <div class="service-card fade-up" style="transition-delay:0.3s">
+          <div class="icon-circle"><i aria-hidden="true" data-lucide="refresh-cw"></i></div>
+          <h3>Router Firmware &amp; Security Updates Gold Coast</h3>
+          <p>Router firmware updated to the latest security release, auto-update configured where supported &mdash; keeping your Gold Coast home network protected as new vulnerabilities are discovered.</p>
+        </div>
+
+      </div>
+
+      <div class="services-booking fade-up">
+        <!-- Google Calendar Appointment Scheduling begin -->
+        <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+        <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+        <script>
+        (function() {
+          var target = document.currentScript;
+          window.addEventListener('load', function() {
+            calendar.schedulingButton.load({
+              url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ2z99t5yQNIRoRT8rNM3Jv7-WC-MNC35owGsga-okvZmEIG167e9iLOAco3_vHaX44r6eYmGFRA?gv=true',
+              color: '#039BE5',
+              label: 'Book an appointment',
+              target,
+            });
+          });
+        })();
+        </script>
+        <!-- end Google Calendar Appointment Scheduling -->
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3 — KEY TAKEAWAYS -->
   <section class="takeaways-section" aria-label="Network Security &amp; Firewall Gold Coast — Quick Summary">
     <div class="takeaways-inner">
       <h2>Network Security &amp; Firewall Gold Coast — Quick Summary</h2>
