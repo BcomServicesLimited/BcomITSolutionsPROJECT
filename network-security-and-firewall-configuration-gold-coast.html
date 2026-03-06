@@ -209,6 +209,63 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .why-card__text p { font-size: 0.9rem; color: #4a5568; line-height: 1.6; margin: 0; }
   @media (max-width: 700px) { .why-grid { grid-template-columns: 1fr; } }
 
+  /* ── SERVICE AREAS ── */
+  .areas-section { background: #e6fafd; padding: 60px 0 40px; }
+  .areas-header { text-align: center; margin-bottom: 40px; }
+  .areas-header h2 { font-size: 1.9rem; font-weight: 700; color: #0d1f3c; margin-bottom: 12px; }
+  .areas-header p { font-size: 1rem; color: #4a5568; max-width: 640px; margin: 0 auto; line-height: 1.7; }
+  .suburb-pills { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-bottom: 40px; }
+  .suburb-pill {
+    border: 1px solid #0d1f3c;
+    color: #0d1f3c;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s, transform 0.2s;
+    cursor: default;
+  }
+  .suburb-pill:hover {
+    background: linear-gradient(135deg, #0d1f3c, #1e3a5f);
+    color: white;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transform: translateY(-2px);
+  }
+  .areas-booking { text-align: center; margin-top: 32px; }
+
+  /* ── WHAT TO EXPECT ── */
+  .expect-section { background: #f8fafb; padding: 40px 0 60px; }
+  .expect-header { text-align: center; margin-bottom: 40px; }
+  .expect-header h2 { font-size: 1.9rem; font-weight: 700; color: #0d1f3c; margin-bottom: 12px; }
+  .expect-intro { font-size: 1rem; color: #4a5568; max-width: 600px; margin: 0 auto; line-height: 1.7; }
+  .expect-steps { max-width: 760px; margin: 0 auto; display: flex; flex-direction: column; gap: 36px; }
+  .expect-step { display: flex; gap: 24px; align-items: flex-start; }
+  .expect-step__num {
+    font-family: 'DM Mono', monospace;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #00c8e0;
+    line-height: 1;
+    min-width: 48px;
+    flex-shrink: 0;
+  }
+  .expect-step__icon {
+    width: 44px; height: 44px;
+    background: #e6fafd;
+    border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+  }
+  .expect-step__icon [data-lucide] { width: 20px; height: 20px; stroke: #00c8e0; stroke-width: 1.75; }
+  .expect-step__text h3 { font-size: 1rem; font-weight: 700; color: #0d1f3c; margin-bottom: 8px; }
+  .expect-step__text p { font-size: 0.95rem; color: #4a5568; line-height: 1.75; margin: 0; }
+  .expect-closing { max-width: 760px; margin: 40px auto 0; text-align: center; font-family: 'DM Mono', monospace; font-size: 0.82rem; color: #00c8e0; line-height: 1.7; }
+  @media (max-width: 600px) {
+    .expect-step { flex-direction: column; gap: 12px; }
+    .expect-step__num { font-size: 1.6rem; }
+  }
+
   /* ── KEY TAKEAWAYS ── */
   .takeaways-section {
     background: #e6fafd;
@@ -1028,6 +1085,103 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       </div>
     </div>
+  </section>
+
+  <!-- SECTION 5 — SERVICE AREAS + WHAT TO EXPECT -->
+  <section aria-label="Network Security Service Areas and What to Expect Gold Coast">
+
+    <!-- PART A: SERVICE AREAS -->
+    <div class="areas-section">
+      <div class="container">
+        <div class="areas-header fade-up">
+          <h2>Network Security &amp; Firewall Configuration Across the Gold Coast</h2>
+          <p>Bcom IT Solutions (ABN 92 636 893 108) provides home network security audits and firewall configuration across the entire Gold Coast. Whether you're in Southport, Robina, Burleigh Heads, Nerang, Helensvale, Coomera or Palm Beach &mdash; we come to your home, audit your network and close every vulnerability we find. If you've had a scam incident or suspect unauthorised access to your network, call <a href="tel:0730418993" style="color:#00c8e0;font-weight:600;">07 3041 8993</a> and we'll aim to get to you the same day. For full WiFi setup or router replacement, see our <a href="router-and-modem-configuration-gold-coast.html" style="color:#00c8e0;font-weight:600;">router &amp; modem setup Gold Coast</a> service.</p>
+        </div>
+        <div class="suburb-pills">
+          <span class="suburb-pill">Southport</span>
+          <span class="suburb-pill">Burleigh Heads</span>
+          <span class="suburb-pill">Robina</span>
+          <span class="suburb-pill">Nerang</span>
+          <span class="suburb-pill">Helensvale</span>
+          <span class="suburb-pill">Coomera</span>
+          <span class="suburb-pill">Palm Beach</span>
+          <span class="suburb-pill">Varsity Lakes</span>
+          <span class="suburb-pill">Coolangatta</span>
+          <span class="suburb-pill">Surfers Paradise</span>
+          <span class="suburb-pill">Broadbeach</span>
+        </div>
+        <div class="areas-booking fade-up">
+          <!-- Google Calendar Appointment Scheduling begin -->
+          <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+          <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+          <script>
+          (function() {
+            var target = document.currentScript;
+            window.addEventListener('load', function() {
+              calendar.schedulingButton.load({
+                url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ2z99t5yQNIRoRT8rNM3Jv7-WC-MNC35owGsga-okvZmEIG167e9iLOAco3_vHaX44r6eYmGFRA?gv=true',
+                color: '#039BE5',
+                label: 'Book an appointment',
+                target,
+              });
+            });
+          })();
+          </script>
+          <!-- end Google Calendar Appointment Scheduling -->
+        </div>
+      </div>
+    </div>
+
+    <!-- PART B: WHAT TO EXPECT -->
+    <div class="expect-section">
+      <div class="container">
+        <div class="expect-header fade-up">
+          <h2>What to Expect From a Gold Coast Network Security Visit</h2>
+          <p class="expect-intro">Here's exactly what happens from the moment you call to the moment we leave.</p>
+        </div>
+        <div class="expect-steps">
+
+          <div class="expect-step fade-up">
+            <div class="expect-step__num">01</div>
+            <div class="expect-step__icon"><i aria-hidden="true" data-lucide="phone"></i></div>
+            <div class="expect-step__text">
+              <h3>You Call and Describe Your Concern</h3>
+              <p>When you call <a href="tel:0730418993" style="color:#00c8e0;font-weight:600;">07 3041 8993</a> we ask what prompted the security check &mdash; a scam incident, suspicious activity, a new home or just wanting peace of mind. We ask about your router brand and NBN setup so we arrive prepared. Same-day or next-day availability confirmed on the call.</p>
+            </div>
+          </div>
+
+          <div class="expect-step fade-up" style="transition-delay:0.1s">
+            <div class="expect-step__num">02</div>
+            <div class="expect-step__icon"><i aria-hidden="true" data-lucide="map-pin"></i></div>
+            <div class="expect-step__text">
+              <h3>We Arrive and Connect to Your Network</h3>
+              <p>We arrive within the agreed window and connect our audit tools to your Gold Coast home network. We check connected devices, open ports, encryption settings, firmware versions and admin credentials &mdash; a systematic check from the outside in.</p>
+            </div>
+          </div>
+
+          <div class="expect-step fade-up" style="transition-delay:0.2s">
+            <div class="expect-step__num">03</div>
+            <div class="expect-step__icon"><i aria-hidden="true" data-lucide="shield"></i></div>
+            <div class="expect-step__text">
+              <h3>We Fix Every Vulnerability We Find</h3>
+              <p>We talk you through what we've found before touching anything. With your go-ahead we update passwords, fix encryption, close open ports, disable remote access, update firmware and configure guest network isolation &mdash; working through each item in plain English.</p>
+            </div>
+          </div>
+
+          <div class="expect-step fade-up" style="transition-delay:0.3s">
+            <div class="expect-step__num">04</div>
+            <div class="expect-step__icon"><i aria-hidden="true" data-lucide="check-circle"></i></div>
+            <div class="expect-step__text">
+              <h3>Signed Off and Documented</h3>
+              <p>Once complete we run the audit again to confirm every item is closed. We give you a plain-English summary of what was found and fixed, new credentials written down, and advice on what to watch for going forward.</p>
+            </div>
+          </div>
+
+        </div>
+        <p class="expect-closing">Most Gold Coast network security visits take 1&ndash;2 hours.<br>Same-day appointments available across all suburbs.</p>
+      </div>
+    </div>
+
   </section>
 
   <!-- ============================================================
