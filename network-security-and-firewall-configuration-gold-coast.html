@@ -182,6 +182,33 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   @media (max-width: 900px) { .services-grid { grid-template-columns: 1fr 1fr; } }
   @media (max-width: 600px) { .services-grid { grid-template-columns: 1fr; } }
 
+  /* ── WHY CHOOSE US ── */
+  .why-section { background: #f8fafb; padding: 80px 0; }
+  .why-header { text-align: center; margin-bottom: 48px; }
+  .why-header h2 { font-size: 1.9rem; font-weight: 700; color: #0d1f3c; margin-bottom: 12px; }
+  .why-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+  .why-card {
+    background: white;
+    border-radius: 16px;
+    padding: 32px;
+    border-left: 4px solid #00c8e0;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+  }
+  .why-card__icon {
+    width: 48px; height: 48px;
+    background: #e6fafd;
+    border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+  }
+  .why-card__icon [data-lucide] { width: 22px; height: 22px; stroke: #00c8e0; stroke-width: 1.75; }
+  .why-card__text h3 { font-size: 1rem; font-weight: 700; color: #0d1f3c; margin-bottom: 6px; }
+  .why-card__text p { font-size: 0.9rem; color: #4a5568; line-height: 1.6; margin: 0; }
+  @media (max-width: 700px) { .why-grid { grid-template-columns: 1fr; } }
+
   /* ── KEY TAKEAWAYS ── */
   .takeaways-section {
     background: #e6fafd;
@@ -958,6 +985,50 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
+
+  <!-- SECTION 4 — WHY CHOOSE US -->
+  <section class="why-section" aria-label="Why Gold Coast Residents Choose Bcom IT Solutions for Network Security">
+    <div class="container">
+      <div class="why-header fade-up">
+        <h2>Why Gold Coast Residents Choose Bcom IT Solutions for Network Security</h2>
+      </div>
+      <div class="why-grid">
+
+        <div class="why-card fade-up">
+          <div class="why-card__icon"><i aria-hidden="true" data-lucide="eye"></i></div>
+          <div class="why-card__text">
+            <h3>We Show You What We Find</h3>
+            <p>We don't just fix and leave. We walk you through every vulnerability we found on your Gold Coast network and explain what each one meant in plain English &mdash; so you understand why it mattered.</p>
+          </div>
+        </div>
+
+        <div class="why-card fade-up" style="transition-delay:0.1s">
+          <div class="why-card__icon"><i aria-hidden="true" data-lucide="shield-check"></i></div>
+          <div class="why-card__text">
+            <h3>Nothing Left Open</h3>
+            <p>We work through a security checklist covering every common home network weakness. We don't call it done until every item is closed &mdash; no loose ends left on your Gold Coast network.</p>
+          </div>
+        </div>
+
+        <div class="why-card fade-up" style="transition-delay:0.15s">
+          <div class="why-card__icon"><i aria-hidden="true" data-lucide="zap"></i></div>
+          <div class="why-card__text">
+            <h3>Fast Response Gold Coast</h3>
+            <p>Most Gold Coast call-outs within 2&ndash;4 hours. Same-day network security service available across all suburbs.</p>
+          </div>
+        </div>
+
+        <div class="why-card fade-up" style="transition-delay:0.2s">
+          <div class="why-card__icon"><i aria-hidden="true" data-lucide="home"></i></div>
+          <div class="why-card__text">
+            <h3>We Come to You</h3>
+            <p>No need to touch your router settings yourself or describe your setup over the phone. We come to your Gold Coast home and do it properly on-site.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
 
   <!-- ============================================================
      BCOM IT SOLUTIONS — FOOTER COMPONENT
