@@ -241,6 +241,23 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .services-booking { text-align: center; }
     @media (max-width: 900px) { .services-grid { grid-template-columns: 1fr 1fr; } }
     @media (max-width: 600px) { .services-grid { grid-template-columns: 1fr; } }
+
+    /* ── WHY CHOOSE US ── */
+    .why-section { background: #f8fafb; padding: 80px 0; }
+    .why-header { text-align: center; margin-bottom: 48px; }
+    .why-header h2 { font-size: 1.9rem; font-weight: 700; color: #0d1f3c; margin-bottom: 12px; }
+    .why-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+    .why-card {
+      background: white;
+      border-radius: 16px;
+      padding: 32px;
+      border-left: 4px solid #00c8e0;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    }
+    .why-card .icon-circle { margin-bottom: 16px; }
+    .why-card h3 { font-size: 1.05rem; font-weight: 700; color: #0d1f3c; margin-bottom: 10px; }
+    .why-card p { font-size: 0.9rem; color: #4a5568; line-height: 1.7; margin: 0; }
+    @media (max-width: 700px) { .why-grid { grid-template-columns: 1fr; } }
   </style>
 
   <!-- BreadcrumbList Schema -->
@@ -971,6 +988,42 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         })();
         </script>
         <!-- end Google Calendar Appointment Scheduling -->
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4 — WHY CHOOSE US -->
+  <section class="why-section" aria-label="Why Choose Bcom IT Solutions for WiFi Extension Gold Coast">
+    <div class="container">
+      <div class="why-header fade-up">
+        <h2>Why Gold Coast Residents Choose Bcom IT Solutions for WiFi Extension</h2>
+      </div>
+      <div class="why-grid">
+
+        <div class="why-card fade-up" style="transition-delay:0.05s">
+          <div class="icon-circle"><i aria-hidden="true" data-lucide="search"></i></div>
+          <h3>We Find the Right Fix, Not the Easiest One</h3>
+          <p>A cheap plug-in extender is the easiest answer — it's rarely the right one. We assess your Gold Coast home layout and recommend the solution that actually solves the problem properly.</p>
+        </div>
+
+        <div class="why-card fade-up" style="transition-delay:0.1s">
+          <div class="icon-circle"><i aria-hidden="true" data-lucide="signal"></i></div>
+          <h3>Signal Tested in Every Problem Room</h3>
+          <p>We don't pack up until we've tested signal strength in every area you reported as a dead spot. You see the results on-screen before we leave your Gold Coast home.</p>
+        </div>
+
+        <div class="why-card fade-up" style="transition-delay:0.15s">
+          <div class="icon-circle"><i aria-hidden="true" data-lucide="zap"></i></div>
+          <h3>Fast Response Gold Coast</h3>
+          <p>Most Gold Coast call-outs within 2–4 hours. Same-day WiFi extension service available across all suburbs.</p>
+        </div>
+
+        <div class="why-card fade-up" style="transition-delay:0.2s">
+          <div class="icon-circle"><i aria-hidden="true" data-lucide="shield-check"></i></div>
+          <h3>Honest Advice Before You Buy</h3>
+          <p>If your dead spot problem can be fixed by repositioning your existing router we'll tell you — before recommending any new hardware at all.</p>
+        </div>
+
       </div>
     </div>
   </section>
