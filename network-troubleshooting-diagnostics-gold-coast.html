@@ -861,6 +861,53 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     }
     @media (max-width: 700px) { .expect-steps { grid-template-columns: 1fr; } }
 
+    /* ── FAQ ACCORDION ── */
+    .faq-section { background: white; padding: 80px 0; }
+    .faq-header { text-align: center; margin-bottom: 48px; }
+    .faq-header h2 { font-size: 1.9rem; font-weight: 700; color: #0d1f3c; margin-bottom: 0; }
+    .faq-list { max-width: 760px; margin: 0 auto; display: flex; flex-direction: column; gap: 0; }
+    .faq-item {
+      border-bottom: 1px solid #e2e8f0;
+    }
+    .faq-item:first-child { border-top: 1px solid #e2e8f0; }
+    .faq-btn {
+      width: 100%;
+      background: none;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 20px 0;
+      text-align: left;
+    }
+    .faq-btn h3 {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #0d1f3c;
+      margin: 0;
+      line-height: 1.4;
+    }
+    .faq-btn [data-lucide] {
+      width: 18px;
+      height: 18px;
+      stroke: #00c8e0;
+      flex-shrink: 0;
+      transition: transform 0.25s ease;
+    }
+    .faq-item.open .faq-btn [data-lucide] { transform: rotate(180deg); }
+    .faq-answer {
+      display: none;
+      padding: 0 0 20px;
+      font-size: 0.95rem;
+      color: #4a5568;
+      line-height: 1.8;
+    }
+    .faq-answer a { color: #00c8e0; text-decoration: none; }
+    .faq-answer a:hover { text-decoration: underline; }
+    .faq-item.open .faq-answer { display: block; }
+
 </style>
 
 <!-- NAV JAVASCRIPT -->
@@ -1187,6 +1234,68 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </div>
 
+  </section>
+
+  <!-- SECTION 6 — FAQ -->
+  <section class="faq-section" aria-label="Network Troubleshooting &amp; Diagnostics Gold Coast FAQ">
+    <div class="container">
+      <div class="faq-header fade-up">
+        <h2>Network Troubleshooting &amp; Diagnostics Gold Coast &mdash; Frequently Asked Questions</h2>
+      </div>
+      <div class="faq-list" role="list">
+
+        <div class="faq-item" role="listitem">
+          <button class="faq-btn" aria-expanded="false">
+            <h3>My internet keeps dropping out &mdash; where do I even start?</h3>
+            <i aria-hidden="true" data-lucide="chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            The honest answer is that a dropout could be caused by several different things and you usually can&rsquo;t tell which from the symptoms alone. The most common causes on the Gold Coast are a failing modem or router, a loose or damaged cable between the wall socket and modem, an NBN line fault, or router settings that cause the connection to drop under load. We test each of these systematically when we visit &mdash; starting at the NBN connection point and working inward &mdash; so you get an actual answer rather than a guess. Call <a href="tel:0730418993">07 3041 8993</a> to book.
+          </div>
+        </div>
+
+        <div class="faq-item" role="listitem">
+          <button class="faq-btn" aria-expanded="false">
+            <h3>My internet is very slow even though I&rsquo;m on a fast NBN plan &mdash; is that an ISP problem or something in my home?</h3>
+            <i aria-hidden="true" data-lucide="chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            It can be either, and the way to find out is a wired speed test directly at the NBN connection point &mdash; bypassing your router entirely. If speeds are fine there, the problem is in your home equipment. If speeds are also slow there, the fault is on your ISP&rsquo;s side. We run this test as part of every slow internet diagnosis on the Gold Coast and give you the result in plain English before recommending anything. Call <a href="tel:0730418993">07 3041 8993</a> to book.
+          </div>
+        </div>
+
+        <div class="faq-item" role="listitem">
+          <button class="faq-btn" aria-expanded="false">
+            <h3>One device won&rsquo;t connect to my network but everything else can &mdash; what causes that?</h3>
+            <i aria-hidden="true" data-lucide="chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            This is usually one of three things &mdash; a device-level network adapter problem, a saved WiFi profile on the device that has become corrupted, or the router blocking the device due to a MAC address filter or DHCP lease issue. It&rsquo;s almost always fixable without new hardware. We diagnose the cause at your Gold Coast home and have most single-device connection problems resolved in under 30 minutes. Call <a href="tel:0730418993">07 3041 8993</a> to book.
+          </div>
+        </div>
+
+        <div class="faq-item" role="listitem">
+          <button class="faq-btn" aria-expanded="false">
+            <h3>My ISP says the fault isn&rsquo;t on their end &mdash; can you check whether that&rsquo;s true?</h3>
+            <i aria-hidden="true" data-lucide="chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            Yes. ISP fault attribution is one of the more frustrating parts of dealing with a network problem, and providers don&rsquo;t always get it right. We run independent tests at the NBN connection point &mdash; testing sync speed, line attenuation, packet loss and connection stability &mdash; that tell us whether the fault is inside or outside your home. If the evidence points to your ISP we document the findings with the technical detail needed to escalate effectively. Call <a href="tel:0730418993">07 3041 8993</a> to arrange a visit.
+          </div>
+        </div>
+
+        <div class="faq-item" role="listitem">
+          <button class="faq-btn" aria-expanded="false">
+            <h3>How much does network troubleshooting and diagnostics cost on the Gold Coast?</h3>
+            <i aria-hidden="true" data-lucide="chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            We charge a call-out fee that covers the visit and the full diagnostic. If the fix requires additional hardware &mdash; a new router, modem or cabling &mdash; we quote that separately before doing anything. If we can&rsquo;t identify or resolve the fault, you don&rsquo;t pay the call-out fee. Call <a href="tel:0730418993">07 3041 8993</a> for a quote or to describe your situation before booking.
+          </div>
+        </div>
+
+      </div>
+    </div>
   </section>
 
   <!-- ============================================================
@@ -1595,6 +1704,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       });
     }, { threshold: 0.12 });
     els.forEach(function (el) { obs.observe(el); });
+  })();
+  </script>
+  <script>
+  (function () {
+    document.querySelectorAll('.faq-btn').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var item = btn.closest('.faq-item');
+        var isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item.open').forEach(function (el) {
+          el.classList.remove('open');
+          el.querySelector('.faq-btn').setAttribute('aria-expanded', 'false');
+        });
+        if (!isOpen) {
+          item.classList.add('open');
+          btn.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
   })();
   </script>
   <script>lucide.createIcons();</script>
