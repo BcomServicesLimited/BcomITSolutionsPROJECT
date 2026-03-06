@@ -211,6 +211,36 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     @media (max-width: 600px) {
       .takeaways-inner ul { grid-template-columns: 1fr; }
     }
+
+    /* ── SERVICES GRID ── */
+    .services-section { background: white; padding: 80px 0; }
+    .services-header { text-align: center; margin-bottom: 48px; }
+    .services-header h2 { font-size: 1.9rem; font-weight: 700; color: #0d1f3c; margin-bottom: 12px; }
+    .services-header p { font-size: 1rem; color: #4a5568; max-width: 600px; margin: 0 auto; line-height: 1.7; }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+      margin-bottom: 48px;
+    }
+    .service-card {
+      background: #f8fafb;
+      border-radius: 16px;
+      padding: 32px;
+      border-top: 3px solid #00c8e0;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .service-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+    }
+    .service-card .icon-circle { margin-bottom: 20px; }
+    .service-card h3 { font-size: 1rem; font-weight: 700; color: #0d1f3c; margin-bottom: 10px; line-height: 1.3; }
+    .service-card p { font-size: 0.9rem; color: #4a5568; line-height: 1.7; margin: 0; }
+    .services-booking { text-align: center; }
+    @media (max-width: 900px) { .services-grid { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 600px) { .services-grid { grid-template-columns: 1fr; } }
   </style>
 
   <!-- BreadcrumbList Schema -->
@@ -873,6 +903,75 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <li>Same-day and next-day appointments across all Gold Coast suburbs</li>
         <li>Locally owned and operated — ABN 92 636 893 108</li>
       </ul>
+    </div>
+  </section>
+
+  <!-- SECTION 3 — SERVICES GRID -->
+  <section class="services-section" aria-label="WiFi Range Extension Services Gold Coast">
+    <div class="container">
+      <div class="services-header fade-up">
+        <h2>WiFi Range Extension Solutions Across the Gold Coast</h2>
+        <p>Cheap plug-in range extenders create more problems than they solve — they halve your bandwidth, create a separate network name and cause devices to stick to a weak signal rather than roaming correctly. We assess your Gold Coast home and recommend the right solution. This service is part of our <a href="computer-networking-service-gold-coast.html">networking &amp; WiFi Gold Coast</a> offering. If you need coverage across the whole home from scratch, see our <a href="home-wifi-setup-and-troubleshooting-gold-coast.html">WiFi installation &amp; configuration Gold Coast</a> service.</p>
+      </div>
+      <div class="services-grid">
+
+        <div class="service-card fade-up" style="transition-delay:0.05s">
+          <div class="icon-circle"><i aria-hidden="true" data-lucide="wifi"></i></div>
+          <h3>Wired Access Point Extension Gold Coast</h3>
+          <p>The best range extension solution — we run or use an existing Ethernet cable to add a properly configured access point in the dead spot area of your Gold Coast home. Full speed, seamless roaming.</p>
+        </div>
+
+        <div class="service-card fade-up" style="transition-delay:0.1s">
+          <div class="icon-circle"><i aria-hidden="true" data-lucide="plug"></i></div>
+          <h3>Powerline Adapter Setup Gold Coast</h3>
+          <p>No Ethernet cable and can't run one? Powerline adapters use your home's existing electrical wiring to carry the network signal — we supply, install and configure them at your Gold Coast home.</p>
+        </div>
+
+        <div class="service-card fade-up" style="transition-delay:0.15s">
+          <div class="icon-circle"><i aria-hidden="true" data-lucide="cable"></i></div>
+          <h3>MoCA Adapter Installation Gold Coast</h3>
+          <p>If your Gold Coast home has coaxial cable points (used for Foxtel or old cable TV), MoCA adapters deliver fast, reliable network extension without running new cables.</p>
+        </div>
+
+        <div class="service-card fade-up" style="transition-delay:0.2s">
+          <div class="icon-circle"><i aria-hidden="true" data-lucide="signal"></i></div>
+          <h3>Mesh Node Addition Gold Coast</h3>
+          <p>Already have a mesh system but still have dead spots? We add and correctly configure an additional node — positioned for maximum coverage in the problem areas of your Gold Coast home.</p>
+        </div>
+
+        <div class="service-card fade-up" style="transition-delay:0.25s">
+          <div class="icon-circle"><i aria-hidden="true" data-lucide="map-pin"></i></div>
+          <h3>Outdoor &amp; Garage WiFi Extension Gold Coast</h3>
+          <p>Need WiFi in the backyard, garage, shed or granny flat? We extend your Gold Coast home network outdoors using weatherproof access points or the right indoor solution for your specific layout.</p>
+        </div>
+
+        <div class="service-card fade-up" style="transition-delay:0.3s">
+          <div class="icon-circle"><i aria-hidden="true" data-lucide="activity"></i></div>
+          <h3>WiFi Signal Audit &amp; Dead Spot Diagnosis Gold Coast</h3>
+          <p>Not sure why you have dead spots? We perform a full signal audit of your Gold Coast home — mapping coverage, identifying the cause and recommending the most cost-effective fix before any hardware is purchased.</p>
+        </div>
+
+      </div>
+
+      <div class="services-booking fade-up">
+        <!-- Google Calendar Appointment Scheduling begin -->
+        <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+        <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+        <script>
+        (function() {
+          var target = document.currentScript;
+          window.addEventListener('load', function() {
+            calendar.schedulingButton.load({
+              url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ2z99t5yQNIRoRT8rNM3Jv7-WC-MNC35owGsga-okvZmEIG167e9iLOAco3_vHaX44r6eYmGFRA?gv=true',
+              color: '#039BE5',
+              label: 'Book an appointment',
+              target,
+            });
+          });
+        })();
+        </script>
+        <!-- end Google Calendar Appointment Scheduling -->
+      </div>
     </div>
   </section>
 
