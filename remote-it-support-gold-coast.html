@@ -1205,8 +1205,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </style>
 
 
-  <script><script>
-// Fade-up observer
+  <script>
+// Fade-up observer — also immediately shows elements already in viewport
 (function() {
   var els = document.querySelectorAll('.fade-up');
   if (!els.length) return;
@@ -1214,10 +1214,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     entries.forEach(function(e) {
       if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
     });
-  }, { threshold: 0.12 });
+  }, { threshold: 0.05 });
   els.forEach(function(el) { io.observe(el); });
+  // Fallback: force visible for elements already in viewport
+  setTimeout(function() {
+    els.forEach(function(el) {
+      var r = el.getBoundingClientRect();
+      if (r.top < window.innerHeight && r.bottom > 0) {
+        el.classList.add('visible');
+      }
+    });
+  }, 100);
 })();
 </script>
-lucide.createIcons();</script>
+<script>lucide.createIcons();</script>
 </body>
 </html>
