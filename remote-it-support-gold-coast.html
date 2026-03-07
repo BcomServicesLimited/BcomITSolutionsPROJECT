@@ -1028,6 +1028,108 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
+  <!-- ── SERVICE AREAS + WHAT TO EXPECT ── -->
+  <section class="areas-expect-section" aria-label="Remote IT Support Service Areas and Process">
+    <div class="container">
+
+      <!-- PART A: Service Areas -->
+      <div class="areas-block">
+        <h2>Remote IT Support for Gold Coast Businesses Everywhere</h2>
+        <p class="areas-body">Bcom IT Solutions (ABN 92 636 893 108) provides remote IT support to businesses across the Gold Coast — from Southport and Robina CBD offices to Burleigh Heads, Nerang, Coomera and Varsity Lakes business parks. Because we connect remotely, your location on the Gold Coast doesn't affect response time. No call-out fee, billed in 30-minute increments. If your issue needs an on-site visit, we can follow up in person the same day. Call <a href="tel:0730418993">07 3041 8993</a> during business hours or book a remote session online.</p>
+
+        <div class="suburb-pills" aria-label="Gold Coast service areas">
+          <span class="suburb-pill">Southport</span>
+          <span class="suburb-pill">Burleigh Heads</span>
+          <span class="suburb-pill">Robina</span>
+          <span class="suburb-pill">Nerang</span>
+          <span class="suburb-pill">Helensvale</span>
+          <span class="suburb-pill">Coomera</span>
+          <span class="suburb-pill">Varsity Lakes</span>
+          <span class="suburb-pill">Coolangatta</span>
+          <span class="suburb-pill">Surfers Paradise</span>
+          <span class="suburb-pill">Broadbeach</span>
+        </div>
+
+        <div class="areas-booking">
+          <!-- Google Calendar Appointment Scheduling begin -->
+          <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+          <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+          <script>
+          (function() {
+            var target = document.currentScript;
+            window.addEventListener('load', function() {
+              calendar.schedulingButton.load({
+                url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ21JsFI48SyH1NJO3oZkyuch15utQ__rWaeHMgfxSppgM_GaVeKRe6Kn0v2oN4XjRgl5D256Up7?gv=true',
+                color: '#039BE5',
+                label: 'Book an appointment',
+                target,
+              });
+            });
+          })();
+          </script>
+          <!-- end Google Calendar Appointment Scheduling -->
+        </div>
+      </div>
+
+      <!-- PART B: What to Expect -->
+      <div class="expect-block">
+        <h2>How a Remote Support Session Works for Your Gold Coast Business</h2>
+        <p class="expect-intro">Here's exactly what happens from the moment you call to the moment the issue is resolved.</p>
+
+        <div class="expect-steps">
+
+          <div class="expect-step fade-up">
+            <div class="expect-step__num">1</div>
+            <div class="expect-step__icon">
+              <i data-lucide="phone" aria-hidden="true"></i>
+            </div>
+            <div class="expect-step__body">
+              <h3>Call Us and Describe the Problem</h3>
+              <p>Call <a href="tel:0730418993">07 3041 8993</a> and tell us what's happening — which staff member is affected, what software or system is involved and how long it's been down. We confirm whether remote support is the right approach and give you an estimate of time and cost before starting.</p>
+            </div>
+          </div>
+
+          <div class="expect-step fade-up">
+            <div class="expect-step__num">2</div>
+            <div class="expect-step__icon">
+              <i data-lucide="download" aria-hidden="true"></i>
+            </div>
+            <div class="expect-step__body">
+              <h3>Download Splashtop SOS From Our Support Page</h3>
+              <p>Head to <a href="support.html">our support page</a> and download the Splashtop SOS app — it takes less than a minute and nothing is permanently installed on your machine. The app generates a unique 9-digit session code. Read that code to us over the phone and we connect straight away.</p>
+            </div>
+          </div>
+
+          <div class="expect-step fade-up">
+            <div class="expect-step__num">3</div>
+            <div class="expect-step__icon">
+              <i data-lucide="search" aria-hidden="true"></i>
+            </div>
+            <div class="expect-step__body">
+              <h3>We Diagnose and Fix — You Watch in Real Time</h3>
+              <p>We work through the problem directly on the device — checking logs, replicating the fault, applying the fix and testing the result. You can watch everything we do on screen. We explain what we find as we go — no black-box fixes, no unexplained changes to your system.</p>
+            </div>
+          </div>
+
+          <div class="expect-step fade-up">
+            <div class="expect-step__num">4</div>
+            <div class="expect-step__icon">
+              <i data-lucide="check-circle" aria-hidden="true"></i>
+            </div>
+            <div class="expect-step__body">
+              <h3>Close the App — Session Over</h3>
+              <p>Once the job is confirmed fixed, close the Splashtop SOS app. The session ends immediately and completely — no background processes, no way for us to reconnect without a new code from you. If the issue needs an on-site visit instead, we brief you on findings and arrange attendance the same day.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <p class="expect-closing">Most Gold Coast business remote support sessions take 30–60 minutes. Billed in 30-minute increments. No call-out fee.</p>
+      </div>
+
+    </div>
+  </section>
+
   <!-- ============================================================
      BCOM IT SOLUTIONS — FOOTER COMPONENT
      Include at the bottom of every page body, before </body>
@@ -1640,6 +1742,162 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   .splashtop-prompt {
     flex-direction: column;
     gap: 12px;
+  }
+}
+/* ── Service Areas + What to Expect ── */
+.areas-expect-section {
+  background: #e6fafd;
+  padding: 80px 0;
+}
+.areas-expect-section .container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+/* Part A — Service Areas */
+.areas-block {
+  margin-bottom: 72px;
+}
+.areas-block h2 {
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  font-weight: 700;
+  color: #0d1f3c;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.areas-body {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 36px;
+  font-size: 1rem;
+  color: #4a5568;
+  line-height: 1.7;
+}
+.areas-body a {
+  color: #00c8e0;
+  text-decoration: none;
+}
+.areas-body a:hover {
+  text-decoration: underline;
+}
+.suburb-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 36px;
+}
+.suburb-pill {
+  display: inline-block;
+  background: #ffffff;
+  border: 1.5px solid #00c8e0;
+  color: #0d1f3c;
+  border-radius: 999px;
+  padding: 6px 18px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+.areas-booking {
+  display: flex;
+  justify-content: center;
+}
+/* Part B — What to Expect */
+.expect-block h2 {
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  font-weight: 700;
+  color: #0d1f3c;
+  text-align: center;
+  margin-bottom: 12px;
+}
+.expect-intro {
+  text-align: center;
+  font-size: 1rem;
+  color: #4a5568;
+  line-height: 1.7;
+  margin-bottom: 48px;
+}
+.expect-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-bottom: 36px;
+}
+.expect-step {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  padding: 32px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0,0,0,.05);
+  margin-bottom: 16px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.expect-step:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 32px rgba(0,0,0,.1);
+}
+.expect-step__num {
+  flex-shrink: 0;
+  font-family: 'DM Mono', monospace;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #00c8e0;
+  line-height: 1;
+  min-width: 32px;
+  padding-top: 2px;
+}
+.expect-step__icon {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  background: #e6fafd;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.expect-step__icon i {
+  width: 22px;
+  height: 22px;
+  color: #00c8e0;
+}
+.expect-step__body h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #0d1f3c;
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+.expect-step__body p {
+  font-size: 0.9rem;
+  color: #4a5568;
+  line-height: 1.6;
+  margin: 0;
+}
+.expect-step__body a {
+  color: #00c8e0;
+  text-decoration: none;
+}
+.expect-step__body a:hover {
+  text-decoration: underline;
+}
+.expect-closing {
+  text-align: center;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.8rem;
+  color: #4a5568;
+  letter-spacing: 0.02em;
+  margin: 0;
+}
+@media (max-width: 640px) {
+  .expect-step {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .expect-step__num {
+    font-size: 1.25rem;
   }
 }
 /* ── Services Grid ── */
