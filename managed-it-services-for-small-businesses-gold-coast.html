@@ -991,6 +991,204 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
+  <!-- SECTION 4 — SERVICES GRID -->
+<style>
+/* ── SERVICES SECTION ── */
+.services-section {
+  background: #ffffff;
+  padding: 80px 0;
+  border-bottom: 1px solid #f1f5f9;
+}
+.services-section h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #0d1f3c;
+  line-height: 1.25;
+  margin-bottom: 16px;
+  letter-spacing: -0.01em;
+}
+.services-intro {
+  font-size: 1rem;
+  color: #475569;
+  line-height: 1.75;
+  max-width: 720px;
+  margin-bottom: 40px;
+}
+.services-intro a {
+  color: #00c8e0;
+  font-weight: 600;
+  text-decoration: none;
+}
+.services-intro a:hover { color: #0d1f3c; }
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 40px;
+}
+.service-card {
+  background: #f8fafb;
+  border-radius: 14px;
+  border: 1px solid #e2e8f0;
+  border-top: 3px solid #00c8e0;
+  padding: 28px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+.service-card:hover {
+  box-shadow: 0 8px 32px rgba(0,200,224,0.12);
+  transform: translateY(-3px);
+}
+.service-card__icon {
+  width: 44px;
+  height: 44px;
+  background: #e6fafd;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.service-card__icon [data-lucide] {
+  width: 22px;
+  height: 22px;
+  stroke: #00c8e0;
+}
+.service-card h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #0d1f3c;
+  margin: 0;
+  line-height: 1.3;
+}
+.service-card p {
+  font-size: 0.9rem;
+  color: #475569;
+  line-height: 1.65;
+  margin: 0;
+}
+.services-booking {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 48px;
+}
+/* ── WHAT IS NOT INCLUDED PANEL ── */
+.not-included {
+  background: #e6fafd;
+  border-radius: 16px;
+  border: 1px solid #c8f0f7;
+  padding: 36px 40px;
+}
+.not-included h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #0d1f3c;
+  margin-bottom: 14px;
+}
+.not-included p {
+  font-size: 0.95rem;
+  color: #334155;
+  line-height: 1.75;
+  margin-bottom: 20px;
+}
+.not-included .mono-note {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.82rem;
+  color: #475569;
+  line-height: 1.65;
+}
+.not-included .mono-note a {
+  color: #00c8e0;
+  font-weight: 600;
+  text-decoration: none;
+}
+.not-included .mono-note a:hover { color: #0d1f3c; }
+@media (max-width: 900px) {
+  .services-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 600px) {
+  .services-grid { grid-template-columns: 1fr; }
+  .services-section { padding: 56px 0; }
+  .not-included { padding: 28px 24px; }
+}
+</style>
+
+  <section class="services-section" aria-label="Managed IT Services Included">
+    <div class="container">
+      <h2>What Is Included in Managed IT for Gold Coast Businesses</h2>
+      <p class="services-intro">Every managed IT package is tailored to your Gold Coast business &mdash; the devices covered, software managed and scope of support are agreed upfront. The following services are included as standard across all managed IT engagements. On-site support visits are available when needed and charged at our standard rate, prioritised within the 4-hour SLA. This service is part of our broader <a href="it-support-and-services-gold-coast.html">IT support &amp; services Gold Coast</a> offering.</p>
+
+      <div class="services-grid">
+
+        <div class="service-card">
+          <div class="service-card__icon"><i aria-hidden="true" data-lucide="monitor"></i></div>
+          <h3>Remote Device Monitoring Gold Coast</h3>
+          <p>All covered devices and servers monitored remotely around the clock. Performance issues, hardware warnings, failed services and security alerts identified and acted on before they cause downtime at your Gold Coast business.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-card__icon"><i aria-hidden="true" data-lucide="headphones"></i></div>
+          <h3>Help Desk &amp; Remote Support Gold Coast</h3>
+          <p>Your Gold Coast team can call or email for IT support and receive a response within the 4-hour SLA. Remote support handled via secure connection &mdash; most issues resolved without an on-site visit.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-card__icon"><i aria-hidden="true" data-lucide="shield"></i></div>
+          <h3>Cybersecurity Monitoring Gold Coast</h3>
+          <p>Threat detection and security monitoring across all covered devices on your Gold Coast business network. Security alerts reviewed and responded to as part of your managed IT package &mdash; not as a separate billable event.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-card__icon"><i aria-hidden="true" data-lucide="refresh-cw"></i></div>
+          <h3>Proactive Maintenance &amp; Updates Gold Coast</h3>
+          <p>Windows updates, driver updates, software patching and routine maintenance scheduled and applied across your Gold Coast business devices &mdash; proactively managed so your team never has to think about it.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-card__icon"><i aria-hidden="true" data-lucide="hard-drive"></i></div>
+          <h3>Backup Monitoring Gold Coast</h3>
+          <p>Your business backups checked and verified regularly &mdash; not just assumed to be working. Backup failures flagged and resolved before you need to rely on them at your Gold Coast business.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-card__icon"><i aria-hidden="true" data-lucide="mail"></i></div>
+          <h3>Microsoft 365 Management Gold Coast</h3>
+          <p>User accounts, licences, Outlook, Teams, OneDrive and SharePoint monitored and maintained for your Gold Coast business &mdash; including new user setup, licence changes and access management.</p>
+        </div>
+
+      </div>
+
+      <div class="services-booking">
+        <!-- Google Calendar Appointment Scheduling begin -->
+<link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+<script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+<script>
+(function() {
+  var target = document.currentScript;
+  window.addEventListener('load', function() {
+    calendar.schedulingButton.load({
+      url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ21JsFI48SyH1NJO3oZkyuch15utQ__rWaeHMgfxSppgM_GaVeKRe6Kn0v2oN4XjRgl5D256Up7?gv=true',
+      color: '#039BE5',
+      label: 'Book an appointment',
+      target,
+    });
+  });
+})();
+</script>
+<!-- end Google Calendar Appointment Scheduling -->
+      </div>
+
+      <div class="not-included">
+        <h3>On-site Visits and Major Projects</h3>
+        <p>On-site support visits are not included in the monthly managed IT fee but are available when needed and prioritised within the 4-hour SLA. On-site visits are charged at our standard call-out fee and hourly rate. Major projects &mdash; hardware upgrades, infrastructure replacements, new office setups and network installations &mdash; are quoted separately. Your managed IT package covers day-to-day monitoring, support and maintenance. Everything else is quoted clearly before any work begins.</p>
+        <p class="mono-note">Not sure what your Gold Coast business needs? Call <a href="tel:0730418993">07 3041 8993</a> and we will walk you through what a managed IT package would look like for your team size and setup &mdash; no obligation.</p>
+      </div>
+
+    </div>
+  </section>
+
   <!-- ============================================================
      BCOM IT SOLUTIONS — FOOTER COMPONENT
      Include at the bottom of every page body, before </body>
