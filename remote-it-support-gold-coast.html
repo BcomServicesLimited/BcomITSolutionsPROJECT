@@ -930,7 +930,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         <div class="why-card fade-up">
           <div class="why-card__icon"><i aria-hidden="true" data-lucide="clock"></i></div>
-          <div>
+          <div class="why-card__text">
             <h3>Staff Back Up Fast</h3>
             <p>Every minute your team can&rsquo;t work costs your business money. We prioritise fast connection and resolution &mdash; most Gold Coast business remote support jobs are fixed within the hour of your call.</p>
           </div>
@@ -938,7 +938,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         <div class="why-card fade-up">
           <div class="why-card__icon"><i aria-hidden="true" data-lucide="eye"></i></div>
-          <div>
+          <div class="why-card__text">
             <h3>You Stay in Control</h3>
             <p>We connect only with your explicit permission and you can watch everything we do on screen in real time. No black-box remote access &mdash; full transparency throughout every Gold Coast support session.</p>
           </div>
@@ -946,7 +946,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         <div class="why-card fade-up">
           <div class="why-card__icon"><i aria-hidden="true" data-lucide="zap"></i></div>
-          <div>
+          <div class="why-card__text">
             <h3>Same-day Response</h3>
             <p>We aim to respond to Gold Coast business remote support requests within the hour during business hours. No ticket queues, no offshore call centres.</p>
           </div>
@@ -954,7 +954,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         <div class="why-card fade-up">
           <div class="why-card__icon"><i aria-hidden="true" data-lucide="map-pin"></i></div>
-          <div>
+          <div class="why-card__text">
             <h3>Local Gold Coast Technicians</h3>
             <p>We&rsquo;re a Gold Coast business supporting Gold Coast businesses. If remote support can&rsquo;t fix the issue, we can be at your premises the same day.</p>
           </div>
@@ -1388,28 +1388,27 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 /* ── Takeaways ── */
 .takeaways-section{background:#e6fafd;padding:60px 0 50px}
 .takeaways-section .container{max-width:1100px;margin:0 auto;padding:0 24px}
-.takeaways-section h2{font-family:'DM Mono',monospace;font-size:clamp(1.1rem,2.5vw,1.4rem);color:#0d1f3c;margin:0 0 32px;line-height:1.35}
-.takeaways-inner{display:grid;grid-template-columns:1fr 1fr;gap:0 48px}
-.takeaways-inner ul{list-style:none;margin:0;padding:0}
+.takeaways-section h2{font-family:'DM Mono',monospace;font-si/* ── Key Takeaways ── */
+.takeaways-section{background:#e6fafd;padding:60px 0}
+.takeaways-inner{display:grid;grid-template-columns:1fr 1fr;gap:0 48px;max-width:760px;margin:0 auto;padding:0 24px}
+.takeaways-inner ul{list-style:none;margin:0;padding:0;grid-template-columns:1fr}
 .takeaways-inner ul li{position:relative;padding:10px 0 10px 22px;border-bottom:1px solid rgba(0,200,224,.18);color:#2d3748;font-size:.97rem;line-height:1.55}
 .takeaways-inner ul li:last-child{border-bottom:none}
 .takeaways-inner ul li::before{content:'';position:absolute;left:0;top:50%;transform:translateY(-50%);width:8px;height:8px;border-radius:50%;background:#00c8e0}
-@media(max-width:600px){.takeaways-inner{grid-template-columns:1fr}}
-
-/* ── Services Grid ── */
+@media(max-width:600px){.takeaways-inner{grid-template-columns:1fr}}/* ── Services Grid ── */
 .services-section{background:#fff;padding:80px 0}
 .services-section .container{max-width:1100px;margin:0 auto;padding:0 24px}
-.services-header{margin-bottom:40px}
-.services-header p{color:#4a5568;font-size:1.05rem;line-height:1.7;max-width:820px;margin:0}
+.services-header{margin-bottom:48px;text-align:center}
+.services-header p{color:#4a5568;font-size:1rem;line-height:1.7;max-width:600px;margin:0 auto}
 .services-header p a{color:#00c8e0;text-decoration:none;border-bottom:1px solid rgba(0,200,224,.35)}
 .services-header p a:hover{border-bottom-color:#00c8e0}
 .services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-bottom:48px}
-.service-card{background:#f8fafb;border-radius:16px;padding:32px;border-top:3px solid #00c8e0;transition:transform .25s,box-shadow .25s}
-.service-card:hover{transform:translateY(-4px);box-shadow:0 12px 32px rgba(0,200,224,.15)}
+.service-card{background:#f8fafb;border-radius:16px;padding:32px;border-top:3px solid #00c8e0;box-shadow:0 4px 20px rgba(0,0,0,.05);transition:transform 0.2s, box-shadow 0.2s}
+.service-card:hover{transform:translateY(-4px);box-shadow:0 8px 32px rgba(0,0,0,.1)}
 .service-card__icon{width:48px;height:48px;background:#e6fafd;border-radius:12px;display:flex;align-items:center;justify-content:center;margin-bottom:20px}
 .service-card__icon svg{width:24px;height:24px;stroke:#00c8e0}
-.service-card h3{font-size:1.05rem;color:#0d1f3c;margin:0 0 12px;line-height:1.35}
-.service-card p{color:#4a5568;font-size:.93rem;line-height:1.6;margin:0}
+.service-card h3{font-size:1rem;font-weight:700;color:#0d1f3c;margin-bottom:10px;line-height:1.3}
+.service-card p{color:#4a5568;font-size:0.9rem;line-height:1.7;margin:0}
 .services-booking{text-align:center;margin-top:16px}
 /* What We Can Fix Remotely */
 .fix-remotely{background:#f0f9fb;border-radius:12px;padding:32px;margin-top:48px}
@@ -1429,11 +1428,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 .why-section .container{max-width:1100px;margin:0 auto;padding:0 24px}
 .why-section h2{font-size:clamp(1.5rem,3vw,2rem);color:#0d1f3c;margin:0 0 40px;line-height:1.25}
 .why-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px}
-.why-card{background:#fff;border-radius:16px;padding:32px;border-left:4px solid #00c8e0;display:flex;gap:20px;align-items:flex-start}
-.why-card__icon{flex-shrink:0;width:44px;height:44px;background:#e6fafd;border-radius:10px;display:flex;align-items:center;justify-content:center}
+.why-card{background:white;border-radius:16px;padding:32px;border-left:4px solid #00c8e0;box-shadow:0 4px 20px rgba(0,0,0,.05);display:flex;gap:20px;align-items:flex-start}
+.why-card__icon{flex-shrink:0;width:48px;height:48px;background:#e6fafd;border-radius:12px;display:flex;align-items:center;justify-content:center}
 .why-card__icon svg{width:22px;height:22px;stroke:#00c8e0}
-.why-card h3{font-size:1rem;color:#0d1f3c;margin:0 0 10px;line-height:1.3}
-.why-card p{color:#4a5568;font-size:.93rem;line-height:1.6;margin:0}
+.why-card__text h3{font-size:1rem;color:#0d1f3c;margin:0 0 10px;line-height:1.3}
+.why-card__text p{color:#4a5568;font-size:.93rem;line-height:1.6;margin:0}
 @media(max-width:700px){.why-grid{grid-template-columns:1fr}}
 </style>
 </body>
