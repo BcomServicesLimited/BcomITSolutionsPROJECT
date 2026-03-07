@@ -309,6 +309,170 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 .why-card__text h3 { font-size: 1rem; font-weight: 700; color: #0d1f3c; margin-bottom: 6px; }
 .why-card__text p { font-size: 0.9rem; color: #4a5568; line-height: 1.6; margin: 0; }
 @media (max-width: 700px) { .why-grid { grid-template-columns: 1fr; } }
+
+/* ── SERVICE AREAS + WHAT TO EXPECT ── */
+.onsite-areas-expect-section {
+  background: #e6fafd;
+  padding: 80px 0;
+}
+.onsite-areas-expect-section .container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+/* Part A — Service Areas */
+.onsite-areas-block {
+  margin-bottom: 72px;
+}
+.onsite-areas-block h2 {
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  font-weight: 700;
+  color: #0d1f3c;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.onsite-areas-body {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 36px;
+  font-size: 1rem;
+  color: #4a5568;
+  line-height: 1.7;
+}
+.onsite-areas-body a {
+  color: #00c8e0;
+  text-decoration: none;
+}
+.onsite-areas-body a:hover {
+  text-decoration: underline;
+}
+.onsite-suburb-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 28px;
+}
+.onsite-suburb-pill {
+  display: inline-block;
+  background: #ffffff;
+  border: 1.5px solid #00c8e0;
+  color: #0d1f3c;
+  border-radius: 999px;
+  padding: 6px 18px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+.onsite-booking-note {
+  text-align: center;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.75rem;
+  color: #4a5568;
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
+}
+.onsite-booking-note a {
+  color: #00c8e0;
+  text-decoration: none;
+  font-weight: 600;
+}
+.onsite-areas-booking {
+  display: flex;
+  justify-content: center;
+}
+/* Part B — What to Expect */
+.onsite-expect-block h2 {
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  font-weight: 700;
+  color: #0d1f3c;
+  text-align: center;
+  margin-bottom: 12px;
+}
+.onsite-expect-intro {
+  text-align: center;
+  font-size: 1rem;
+  color: #4a5568;
+  line-height: 1.7;
+  margin-bottom: 48px;
+}
+.onsite-expect-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-bottom: 36px;
+}
+.onsite-expect-step {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  padding: 32px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0,0,0,.05);
+  margin-bottom: 16px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.onsite-expect-step:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 32px rgba(0,0,0,.1);
+}
+.onsite-expect-step__num {
+  flex-shrink: 0;
+  font-family: 'DM Mono', monospace;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #00c8e0;
+  line-height: 1;
+  min-width: 32px;
+  padding-top: 2px;
+}
+.onsite-expect-step__icon {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  background: #e6fafd;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.onsite-expect-step__icon i {
+  width: 22px;
+  height: 22px;
+  color: #00c8e0;
+}
+.onsite-expect-step__body h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #0d1f3c;
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+.onsite-expect-step__body p {
+  font-size: 0.9rem;
+  color: #4a5568;
+  line-height: 1.6;
+  margin: 0;
+}
+.onsite-expect-closing {
+  text-align: center;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.8rem;
+  color: #4a5568;
+  letter-spacing: 0.02em;
+  white-space: pre-line;
+  margin: 0;
+}
+@media (max-width: 640px) {
+  .onsite-expect-step {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .onsite-expect-step__num {
+    font-size: 1.25rem;
+  }
+}
 </style>
 </head>
 <body>
@@ -1057,6 +1221,112 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
 
     </div>
+  </div>
+</section>
+
+<!-- SERVICE AREAS + WHAT TO EXPECT -->
+<section class="onsite-areas-expect-section" aria-label="On-site IT Support Service Areas and Process Gold Coast">
+  <div class="container">
+
+    <!-- PART A: Service Areas -->
+    <div class="onsite-areas-block">
+      <h2>On-site Technical Support Across the Gold Coast</h2>
+      <p class="onsite-areas-body">Bcom IT Solutions (ABN 92 636 893 108) provides on-site IT support to businesses across the entire Gold Coast. Whether you're in Southport, Robina, Burleigh Heads, Nerang, Helensvale, Coomera or Varsity Lakes &mdash; our local Gold Coast technicians can be at your premises fast. Critical faults are prioritised for same-day attendance where possible. Standard non-critical faults are typically scheduled within 1&ndash;2 business days. Managed IT customers receive a guaranteed 4-hour response time. For critical faults call <a href="tel:0730418993">07 3041 8993</a> immediately &mdash; do not book online.</p>
+
+      <div class="onsite-suburb-pills" aria-label="Gold Coast service areas">
+        <span class="onsite-suburb-pill">Southport</span>
+        <span class="onsite-suburb-pill">Burleigh Heads</span>
+        <span class="onsite-suburb-pill">Robina</span>
+        <span class="onsite-suburb-pill">Nerang</span>
+        <span class="onsite-suburb-pill">Helensvale</span>
+        <span class="onsite-suburb-pill">Coomera</span>
+        <span class="onsite-suburb-pill">Varsity Lakes</span>
+        <span class="onsite-suburb-pill">Coolangatta</span>
+        <span class="onsite-suburb-pill">Surfers Paradise</span>
+        <span class="onsite-suburb-pill">Broadbeach</span>
+      </div>
+
+      <p class="onsite-booking-note">For critical faults &mdash; call <a href="tel:0730418993">07 3041 8993</a> directly. Do not book online.</p>
+
+      <div class="onsite-areas-booking">
+        <!-- Google Calendar Appointment Scheduling begin -->
+        <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+        <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+        <script>
+        (function() {
+          var target = document.currentScript;
+          window.addEventListener('load', function() {
+            calendar.schedulingButton.load({
+              url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ21JsFI48SyH1NJO3oZkyuch15utQ__rWaeHMgfxSppgM_GaVeKRe6Kn0v2oN4XjRgl5D256Up7?gv=true',
+              color: '#039BE5',
+              label: 'Book an appointment',
+              target,
+            });
+          });
+        })();
+        </script>
+        <!-- end Google Calendar Appointment Scheduling -->
+      </div>
+    </div>
+
+    <!-- PART B: What to Expect -->
+    <div class="onsite-expect-block">
+      <h2>What to Expect From an On-site IT Support Visit</h2>
+      <p class="onsite-expect-intro">Here's exactly what happens from the moment you call to the moment the fault is resolved.</p>
+
+      <div class="onsite-expect-steps">
+
+        <div class="onsite-expect-step fade-up">
+          <div class="onsite-expect-step__num">1</div>
+          <div class="onsite-expect-step__icon">
+            <i data-lucide="phone" aria-hidden="true"></i>
+          </div>
+          <div class="onsite-expect-step__body">
+            <h3>Call and Describe the Fault</h3>
+            <p>Call <a href="tel:0730418993">07 3041 8993</a> and describe what's happening &mdash; which systems are affected, how many staff are impacted and how long it has been down. We triage on the call &mdash; if the fault can be resolved remotely we will tell you before booking a visit. Critical faults are prioritised immediately. Standard faults are scheduled within 1&ndash;2 business days.</p>
+          </div>
+        </div>
+
+        <div class="onsite-expect-step fade-up">
+          <div class="onsite-expect-step__num">2</div>
+          <div class="onsite-expect-step__icon">
+            <i data-lucide="map-pin" aria-hidden="true"></i>
+          </div>
+          <div class="onsite-expect-step__body">
+            <h3>We Confirm Attendance and Arrival Time</h3>
+            <p>We confirm the attending technician, estimated arrival window and full cost before the visit. No surprises on time or fee &mdash; call-out fee plus 1-hour increments, agreed upfront. Managed IT customers receive confirmation within the 4-hour SLA.</p>
+          </div>
+        </div>
+
+        <div class="onsite-expect-step fade-up">
+          <div class="onsite-expect-step__num">3</div>
+          <div class="onsite-expect-step__icon">
+            <i data-lucide="wrench" aria-hidden="true"></i>
+          </div>
+          <div class="onsite-expect-step__body">
+            <h3>We Arrive and Diagnose On-site</h3>
+            <p>We arrive within the agreed window and work through the fault systematically &mdash; hardware, software, network and configuration all checked in a logical sequence. We explain what we find as we go so you're not left wondering what's being done to your systems.</p>
+          </div>
+        </div>
+
+        <div class="onsite-expect-step fade-up">
+          <div class="onsite-expect-step__num">4</div>
+          <div class="onsite-expect-step__icon">
+            <i data-lucide="check-circle" aria-hidden="true"></i>
+          </div>
+          <div class="onsite-expect-step__body">
+            <h3>Fixed and Confirmed Before We Leave</h3>
+            <p>We test the fix with the affected staff before signing off. If the fault requires parts or a return visit we brief you clearly on next steps, expected timeline and any additional cost &mdash; nothing proceeds without your approval.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <p class="onsite-expect-closing">Critical faults: same-day attendance where possible.
+Standard faults: typically 1&ndash;2 business days.
+Managed IT customers: 4-hour response time guaranteed.</p>
+    </div>
+
   </div>
 </section>
 
