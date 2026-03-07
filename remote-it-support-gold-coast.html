@@ -830,6 +830,110 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </section>
 
   <!-- ── SERVICES GRID ── -->
+  <section class="services-section" aria-label="Remote IT Support Services Gold Coast">
+    <div class="container">
+      <div class="services-header">
+        <p>Downtime costs your business money — and remote support is the fastest and most affordable way to fix most IT problems. No call-out fee, billed in 30-minute increments, and we’re connected and working within minutes of your call. For issues that genuinely need a technician on the ground, see our <a href="on-site-technical-support-gold-coast.html">on-site technical support Gold Coast</a> service. Remote support is part of our broader <a href="it-support-and-services-gold-coast.html">IT support &amp; services Gold Coast</a> offering.</p>
+      </div>
+      <div class="services-grid">
+
+        <div class="service-card fade-up">
+          <div class="service-card__icon">
+            <i data-lucide="monitor" aria-hidden="true"></i>
+          </div>
+          <h3>Remote Workstation Support Gold Coast</h3>
+          <p>Software faults, configuration errors and performance issues on Windows and Mac workstations resolved remotely — your Gold Coast staff back up and running fast, billed only for the time it takes.</p>
+        </div>
+
+        <div class="service-card fade-up">
+          <div class="service-card__icon">
+            <i data-lucide="mail" aria-hidden="true"></i>
+          </div>
+          <h3>Microsoft 365 Remote Support Gold Coast</h3>
+          <p>Outlook not connecting, Teams failing, OneDrive not syncing, licensing errors — Microsoft 365 issues fixed remotely for Gold Coast businesses without disrupting the rest of your team.</p>
+        </div>
+
+        <div class="service-card fade-up">
+          <div class="service-card__icon">
+            <i data-lucide="wifi" aria-hidden="true"></i>
+          </div>
+          <h3>Remote Network &amp; Connectivity Support Gold Coast</h3>
+          <p>VPN access problems, mapped drive failures, shared printer issues and network connectivity faults diagnosed and resolved remotely for your Gold Coast business.</p>
+        </div>
+
+        <div class="service-card fade-up">
+          <div class="service-card__icon">
+            <i data-lucide="shield" aria-hidden="true"></i>
+          </div>
+          <h3>Remote Security &amp; Access Management Gold Coast</h3>
+          <p>Password resets, account lockouts, two-factor authentication setup and basic security configuration handled remotely — fast turnaround for Gold Coast staff who are locked out and can’t work.</p>
+        </div>
+
+        <div class="service-card fade-up">
+          <div class="service-card__icon">
+            <i data-lucide="settings" aria-hidden="true"></i>
+          </div>
+          <h3>Software Installation &amp; Configuration Gold Coast</h3>
+          <p>Business software installed, licensed and configured remotely on your Gold Coast workstations — no need to schedule a site visit for routine software setup and updates.</p>
+        </div>
+
+        <div class="service-card fade-up">
+          <div class="service-card__icon">
+            <i data-lucide="phone-call" aria-hidden="true"></i>
+          </div>
+          <h3>Remote-to-On-site Escalation Gold Coast</h3>
+          <p>If we can’t resolve the issue remotely we escalate to an on-site visit — same technician, full context carried over, no starting from scratch at your Gold Coast premises.</p>
+        </div>
+
+      </div>
+
+      <!-- Business booking button -->
+      <div class="services-booking">
+        <!-- Google Calendar Appointment Scheduling begin -->
+        <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+        <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+        <script>
+        (function() {
+          var target = document.currentScript;
+          window.addEventListener('load', function() {
+            calendar.schedulingButton.load({
+              url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ21JsFI48SyH1NJO3oZkyuch15utQ__rWaeHMgfxSppgM_GaVeKRe6Kn0v2oN4XjRgl5D256Up7?gv=true',
+              color: '#039BE5',
+              label: 'Book an appointment',
+              target,
+            });
+          });
+        })();
+        </script>
+        <!-- end Google Calendar Appointment Scheduling -->
+      </div>
+
+      <!-- What We Can Fix Remotely -->
+      <div class="fix-remotely">
+        <h3>What We Can Fix Remotely for Gold Coast Businesses</h3>
+        <div class="fix-remotely__grid">
+          <ul>
+            <li>Outlook not sending or receiving email</li>
+            <li>Microsoft 365 sign-in and licensing errors</li>
+            <li>Teams audio, video or connection issues</li>
+            <li>OneDrive and SharePoint sync problems</li>
+            <li>VPN not connecting</li>
+            <li>Mapped network drives dropping off</li>
+          </ul>
+          <ul>
+            <li>Slow or freezing Windows workstations</li>
+            <li>Software crashes and error messages</li>
+            <li>Printer not found or driver errors</li>
+            <li>User account and password issues</li>
+            <li>Two-factor authentication problems</li>
+            <li>New software installation and setup</li>
+          </ul>
+        </div>
+        <p class="fix-remotely__note">Not sure if your issue can be fixed remotely? Call <a href="tel:0730418993">07 3041 8993</a> and describe what’s happening — we’ll tell you before you book.</p>
+      </div>
+
+    </div>
+  </section>
 
   <!-- ── WHY CHOOSE US ── -->
 
@@ -1254,6 +1358,154 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </script>
 <script>lucide.createIcons();</script>
 <style>
+/* ── Services Grid ── */
+.services-section {
+  background: #ffffff;
+  padding: 80px 0;
+}
+.services-section .container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+.services-header {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 48px;
+}
+.services-header p {
+  color: #4a5568;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+.services-header a {
+  color: #00c8e0;
+  text-decoration: none;
+}
+.services-header a:hover {
+  text-decoration: underline;
+}
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 48px;
+}
+.service-card {
+  background: #f8fafb;
+  border-radius: 16px;
+  border-top: 3px solid #00c8e0;
+  padding: 32px;
+  box-shadow: 0 4px 20px rgba(0,0,0,.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.service-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 32px rgba(0,0,0,.1);
+}
+.service-card__icon {
+  width: 48px;
+  height: 48px;
+  background: #e6fafd;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+.service-card__icon i {
+  width: 22px;
+  height: 22px;
+  color: #00c8e0;
+}
+.service-card h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #0d1f3c;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+.service-card p {
+  font-size: 0.9rem;
+  color: #4a5568;
+  line-height: 1.6;
+  margin: 0;
+}
+.services-booking {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 48px;
+}
+/* Fix Remotely sub-section */
+.fix-remotely {
+  background: #f0f9fb;
+  border-radius: 16px;
+  padding: 40px;
+  margin-top: 8px;
+}
+.fix-remotely h3 {
+  font-family: 'DM Mono', monospace;
+  font-size: 1rem;
+  color: #0d1f3c;
+  margin-bottom: 24px;
+  text-align: center;
+}
+.fix-remotely__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 40px;
+  margin-bottom: 24px;
+}
+.fix-remotely__grid ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.fix-remotely__grid ul li {
+  position: relative;
+  padding-left: 18px;
+  font-size: 0.9rem;
+  color: #4a5568;
+  line-height: 1.55;
+  margin-bottom: 8px;
+}
+.fix-remotely__grid ul li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 7px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #00c8e0;
+}
+.fix-remotely__note {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.82rem;
+  color: #94a3b8;
+  text-align: center;
+  margin: 0;
+}
+.fix-remotely__note a {
+  color: #00c8e0;
+  text-decoration: none;
+}
+.fix-remotely__note a:hover {
+  text-decoration: underline;
+}
+@media (max-width: 900px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+  .fix-remotely__grid {
+    grid-template-columns: 1fr;
+  }
+}
 /* ── Takeaways ── */
 .takeaways-section {
   background: #e6fafd;
