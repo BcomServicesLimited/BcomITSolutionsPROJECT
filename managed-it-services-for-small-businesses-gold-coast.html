@@ -820,6 +820,177 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
+  <!-- SECTION 3 — WHAT IS MANAGED IT EXPLAINER -->
+<style>
+/* ── EXPLAINER SECTION ── */
+.explainer-section {
+  background: #f8fafb;
+  padding: 80px 0;
+  border-bottom: 1px solid #f1f5f9;
+}
+.explainer-section h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #0d1f3c;
+  line-height: 1.25;
+  margin-bottom: 20px;
+  letter-spacing: -0.01em;
+}
+.explainer-intro {
+  font-size: 1.05rem;
+  color: #334155;
+  line-height: 1.75;
+  max-width: 720px;
+  margin-bottom: 48px;
+}
+.explainer-section h3.explainer-sub {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #0d1f3c;
+  margin-bottom: 28px;
+  letter-spacing: -0.01em;
+}
+.compare-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 40px;
+}
+.compare-card {
+  background: #ffffff;
+  border-radius: 14px;
+  border: 1px solid #e2e8f0;
+  border-top: 3px solid #00c8e0;
+  padding: 28px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+.compare-card:hover {
+  box-shadow: 0 8px 32px rgba(0,200,224,0.12);
+  transform: translateY(-3px);
+}
+.compare-card__icon {
+  width: 44px;
+  height: 44px;
+  background: #e6fafd;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.compare-card__icon [data-lucide] {
+  width: 22px;
+  height: 22px;
+  stroke: #00c8e0;
+}
+.compare-card h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #0d1f3c;
+  margin: 0;
+}
+.compare-card__row {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.compare-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.compare-label--without {
+  color: #94a3b8;
+}
+.compare-label--with {
+  color: #00c8e0;
+}
+.compare-card__row p {
+  font-size: 0.9rem;
+  color: #475569;
+  line-height: 1.6;
+  margin: 0;
+}
+.explainer-closing {
+  font-size: 1rem;
+  color: #334155;
+  line-height: 1.75;
+  max-width: 720px;
+}
+.explainer-closing a {
+  color: #00c8e0;
+  font-weight: 600;
+  text-decoration: none;
+}
+.explainer-closing a:hover { color: #0d1f3c; }
+@media (max-width: 900px) {
+  .compare-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 600px) {
+  .compare-grid { grid-template-columns: 1fr; }
+  .explainer-section { padding: 56px 0; }
+}
+</style>
+
+  <section class="explainer-section" aria-label="What Is Managed IT">
+    <div class="container">
+      <h2>What Is Managed IT &mdash; and Is It Right for Your Gold Coast Business?</h2>
+      <p class="explainer-intro">Most Gold Coast small businesses manage IT reactively. Something breaks, you call for help, pay an invoice, and hope it does not happen again. This approach has three problems: downtime costs your business money while you wait for support, you have no visibility over the health of your systems until something fails, and IT costs are unpredictable &mdash; a bad month can mean several large invoices arriving at once.</p>
+
+      <h3 class="explainer-sub">What Managed IT Changes</h3>
+
+      <div class="compare-grid">
+
+        <div class="compare-card">
+          <div class="compare-card__icon"><i aria-hidden="true" data-lucide="eye"></i></div>
+          <h3>Visibility</h3>
+          <div class="compare-card__row">
+            <span class="compare-label compare-label--without">Without managed IT:</span>
+            <p>You find out about IT problems when staff report them &mdash; usually after they have already caused disruption.</p>
+          </div>
+          <div class="compare-card__row">
+            <span class="compare-label compare-label--with">With managed IT:</span>
+            <p>We monitor your devices and systems around the clock and resolve issues proactively &mdash; before they affect your team.</p>
+          </div>
+        </div>
+
+        <div class="compare-card">
+          <div class="compare-card__icon"><i aria-hidden="true" data-lucide="dollar-sign"></i></div>
+          <h3>Cost Predictability</h3>
+          <div class="compare-card__row">
+            <span class="compare-label compare-label--without">Without managed IT:</span>
+            <p>IT support costs vary month to month. A server fault or security incident can mean a large unexpected invoice.</p>
+          </div>
+          <div class="compare-card__row">
+            <span class="compare-label compare-label--with">With managed IT:</span>
+            <p>A fixed per-device monthly fee covers your routine IT support. You know your IT cost before the month begins.</p>
+          </div>
+        </div>
+
+        <div class="compare-card">
+          <div class="compare-card__icon"><i aria-hidden="true" data-lucide="clock"></i></div>
+          <h3>Response Time</h3>
+          <div class="compare-card__row">
+            <span class="compare-label compare-label--without">Without managed IT:</span>
+            <p>Standard ad hoc customers are typically scheduled 1&ndash;2 business days out for non-critical faults.</p>
+          </div>
+          <div class="compare-card__row">
+            <span class="compare-label compare-label--with">With managed IT:</span>
+            <p>Managed customers receive a 4-hour response SLA for both remote and on-site support &mdash; for every fault, not just critical ones.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <p class="explainer-closing">Managed IT is not the right fit for every Gold Coast business. If your team rarely has IT issues and your current setup is stable, ad hoc support may be more cost-effective. If IT problems are a recurring cost, your team regularly waits for support, or you have no visibility over whether your backups and security are actually working &mdash; managed IT is worth the conversation. Call <a href="tel:0730418993">07 3041 8993</a> and we will give you an honest assessment.</p>
+    </div>
+  </section>
+
   <!-- ============================================================
      BCOM IT SOLUTIONS — FOOTER COMPONENT
      Include at the bottom of every page body, before </body>
