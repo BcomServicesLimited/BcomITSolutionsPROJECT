@@ -936,6 +936,54 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </section>
 
   <!-- ── WHY CHOOSE US ── -->
+  <section class="why-section" aria-label="Why Gold Coast Businesses Choose Bcom IT Solutions for Remote Support">
+    <div class="container">
+      <h2>Why Gold Coast Businesses Choose Bcom IT Solutions for Remote Support</h2>
+      <div class="why-grid">
+
+        <div class="why-card fade-up">
+          <div class="why-card__icon">
+            <i data-lucide="dollar-sign" aria-hidden="true"></i>
+          </div>
+          <div class="why-card__text">
+            <h3>More Affordable Than On-site</h3>
+            <p>No call-out fee and billed in 30-minute increments — compared to on-site visits which carry a call-out fee and are charged at 1-hour minimums. For most software and configuration problems, remote support costs significantly less.</p>
+          </div>
+        </div>
+
+        <div class="why-card fade-up">
+          <div class="why-card__icon">
+            <i data-lucide="shield-check" aria-hidden="true"></i>
+          </div>
+          <div class="why-card__text">
+            <h3>No Permanent Access to Your Machine</h3>
+            <p>We use Splashtop SOS — no software is installed on your device. The application runs only for the duration of the session. You supply a 9-digit code that changes every time, which means we cannot connect without your active permission. When the job is done, close the app and the session ends completely.</p>
+          </div>
+        </div>
+
+        <div class="why-card fade-up">
+          <div class="why-card__icon">
+            <i data-lucide="zap" aria-hidden="true"></i>
+          </div>
+          <div class="why-card__text">
+            <h3>Connected and Working Within Minutes</h3>
+            <p>Call us, get the session code from our support page, and we’re connected within minutes. No scheduling an on-site visit, no waiting for a technician to drive across the Gold Coast.</p>
+          </div>
+        </div>
+
+        <div class="why-card fade-up">
+          <div class="why-card__icon">
+            <i data-lucide="map-pin" aria-hidden="true"></i>
+          </div>
+          <div class="why-card__text">
+            <h3>Local Technicians, On-site If Needed</h3>
+            <p>We’re a Gold Coast business. If remote support can’t fix the issue, we can be at your premises the same day — no starting the diagnosis from scratch.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
 
   <!-- ============================================================
      BCOM IT SOLUTIONS — FOOTER COMPONENT
@@ -1358,6 +1406,81 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </script>
 <script>lucide.createIcons();</script>
 <style>
+/* ── Why Choose Us ── */
+.why-section {
+  background: #f8fafb;
+  padding: 80px 0;
+}
+.why-section .container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+.why-section h2 {
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  font-weight: 700;
+  color: #0d1f3c;
+  text-align: center;
+  margin-bottom: 48px;
+}
+.why-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+.why-card {
+  background: #ffffff;
+  border-radius: 16px;
+  border-left: 4px solid #00c8e0;
+  padding: 32px;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  box-shadow: 0 4px 20px rgba(0,0,0,.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.why-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 32px rgba(0,0,0,.1);
+}
+.why-card__icon {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  background: #e6fafd;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.why-card__icon i {
+  width: 22px;
+  height: 22px;
+  color: #00c8e0;
+}
+.why-card__text h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #0d1f3c;
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+.why-card__text p {
+  font-size: 0.9rem;
+  color: #4a5568;
+  line-height: 1.6;
+  margin: 0;
+}
+@media (max-width: 700px) {
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
+  .why-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+}
 /* ── Services Grid ── */
 .services-section {
   background: #ffffff;
