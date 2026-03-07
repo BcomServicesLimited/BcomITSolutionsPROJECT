@@ -1130,6 +1130,68 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
+  <!-- ── FAQ ── -->
+  <section class="faq-section" aria-label="Remote IT Support Gold Coast — Frequently Asked Questions">
+    <div class="container">
+      <div class="faq-header fade-up">
+        <h2>Remote IT Support Gold Coast — Frequently Asked Questions</h2>
+      </div>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false" aria-controls="rfaq-1">
+            <h3>Is remote IT support secure for my Gold Coast business?</h3>
+            <i aria-hidden="true" data-lucide="chevron-down" class="chevron"></i>
+          </button>
+          <div class="faq-answer" id="rfaq-1" hidden>
+            <p>Yes — and the way we do it is more transparent than most. We use Splashtop SOS, which runs as a temporary application on your device for the duration of the session only. Nothing is installed permanently and we have no stored access to your machine. Each session requires a unique 9-digit code generated fresh on your device — you read that code to us over the phone, and we cannot connect without it. When you close the app, the session ends completely. There is no way for us to reconnect until you open the app again and give us a new code. You can also download Splashtop SOS in advance from our <a href="support.html">support page</a>.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false" aria-controls="rfaq-2">
+            <h3>How much does remote IT support cost compared to an on-site visit?</h3>
+            <i aria-hidden="true" data-lucide="chevron-down" class="chevron"></i>
+          </button>
+          <div class="faq-answer" id="rfaq-2" hidden>
+            <p>Remote support is significantly more affordable for most Gold Coast businesses. There is no call-out fee for remote jobs, and we bill in 30-minute increments — so if your issue takes 30 minutes to fix, that's all you pay for. On-site visits carry a call-out fee and are charged at 1-hour minimums. For software faults, configuration problems and most account issues, remote support resolves the problem in less time and at a fraction of the on-site cost. Call <a href="tel:0730418993">07 3041 8993</a> for a quote.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false" aria-controls="rfaq-3">
+            <h3>What if the issue can't be fixed remotely?</h3>
+            <i aria-hidden="true" data-lucide="chevron-down" class="chevron"></i>
+          </button>
+          <div class="faq-answer" id="rfaq-3" hidden>
+            <p>We'll tell you straight away and arrange an on-site visit for the same day or next day. Because we've already diagnosed the problem remotely, we arrive at your Gold Coast premises knowing exactly what we're dealing with — no repeat diagnosis, no wasted time. If we can't make meaningful progress before escalating, the remote session time is not charged.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false" aria-controls="rfaq-4">
+            <h3>Can you support multiple staff members or devices in one session?</h3>
+            <i aria-hidden="true" data-lucide="chevron-down" class="chevron"></i>
+          </button>
+          <div class="faq-answer" id="rfaq-4" hidden>
+            <p>Yes. If multiple workstations are affected — a Microsoft 365 issue, a VPN configuration rollout or a software fault across several machines — we can work across multiple devices in a single session. We agree scope and cost with you before starting. Call <a href="tel:0730418993">07 3041 8993</a> to discuss your situation.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false" aria-controls="rfaq-5">
+            <h3>Do you offer ongoing remote IT support for Gold Coast businesses?</h3>
+            <i aria-hidden="true" data-lucide="chevron-down" class="chevron"></i>
+          </button>
+          <div class="faq-answer" id="rfaq-5" hidden>
+            <p>Yes. Beyond one-off support calls we can provide ongoing remote IT support on a scheduled or as-needed basis — covering regular maintenance and fast-response support when issues arise. Call <a href="tel:0730418993">07 3041 8993</a> to discuss what a regular arrangement would look like for your business.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
   <!-- ============================================================
      BCOM IT SOLUTIONS — FOOTER COMPONENT
      Include at the bottom of every page body, before </body>
@@ -1549,6 +1611,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   }, 100);
 })();
 </script>
+<script>
+(function () {
+  var items = document.querySelectorAll('.faq-item');
+  items.forEach(function (item) {
+    var btn    = item.querySelector('.faq-question');
+    var answer = item.querySelector('.faq-answer');
+    btn.addEventListener('click', function () {
+      var isOpen = item.classList.contains('open');
+      items.forEach(function (i) { i.classList.remove('open'); i.querySelector('.faq-question').setAttribute('aria-expanded','false'); i.querySelector('.faq-answer').hidden = true; });
+      if (!isOpen) { item.classList.add('open'); btn.setAttribute('aria-expanded','true'); answer.hidden = false; }
+    });
+  });
+})();
+</script>
 <script>lucide.createIcons();</script>
 <style>
 /* ── Why Choose Us ── */
@@ -1900,6 +1976,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     font-size: 1.25rem;
   }
 }
+/* ── FAQ ── */
+.faq-section { background: white; padding: 80px 0; }
+.faq-section .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+.faq-header { text-align: center; margin-bottom: 48px; }
+.faq-header h2 { font-size: clamp(1.4rem, 3vw, 2rem); font-weight: 700; color: #0d1f3c; margin-bottom: 12px; }
+.faq-list { max-width: 760px; margin: 0 auto; border: 1px solid #e2e8f0; border-radius: 16px; overflow: hidden; }
+.faq-item { border-bottom: 1px solid #e2e8f0; }
+.faq-item:last-child { border-bottom: none; }
+.faq-item.open .faq-question { border-left: 4px solid #00c8e0; background: #f8fafb; }
+.faq-question {
+  width: 100%; background: none; border: none; text-align: left;
+  padding: 20px 24px; display: flex; align-items: center;
+  justify-content: space-between; gap: 16px; cursor: pointer;
+  transition: background 0.2s, border-left 0.2s;
+}
+.faq-question h3 { font-size: 1rem; font-weight: 600; color: #0d1f3c; margin: 0; line-height: 1.4; }
+.faq-question .chevron { width: 20px; height: 20px; stroke: #00c8e0; flex-shrink: 0; transition: transform 0.25s; }
+.faq-item.open .faq-question .chevron { transform: rotate(180deg); }
+.faq-answer { padding: 0 24px 20px; background: #f8fafb; }
+.faq-answer p { font-size: 0.92rem; color: #4a5568; line-height: 1.75; margin: 0; }
+.faq-answer p a { color: #00c8e0; text-decoration: none; }
+.faq-answer p a:hover { text-decoration: underline; }
+.faq-answer[hidden] { display: none; }
 /* ── Services Grid ── */
 .services-section {
   background: #ffffff;
