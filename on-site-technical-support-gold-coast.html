@@ -473,6 +473,29 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     font-size: 1.25rem;
   }
 }
+
+/* ── FAQ ── */
+.ots-faq-section { background: white; padding: 80px 0; }
+.ots-faq-section .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+.ots-faq-header { text-align: center; margin-bottom: 48px; }
+.ots-faq-header h2 { font-size: clamp(1.4rem, 3vw, 2rem); font-weight: 700; color: #0d1f3c; margin-bottom: 12px; }
+.ots-faq-list { max-width: 760px; margin: 0 auto; border: 1px solid #e2e8f0; border-radius: 16px; overflow: hidden; }
+.ots-faq-item { border-bottom: 1px solid #e2e8f0; }
+.ots-faq-item:last-child { border-bottom: none; }
+.ots-faq-item.open .ots-faq-question { border-left: 4px solid #00c8e0; background: #f8fafb; }
+.ots-faq-question {
+  width: 100%; background: none; border: none; text-align: left;
+  padding: 20px 24px; display: flex; align-items: center;
+  justify-content: space-between; gap: 16px; cursor: pointer;
+}
+.ots-faq-question h3 { font-size: 1rem; font-weight: 600; color: #0d1f3c; margin: 0; line-height: 1.4; }
+.ots-faq-question .chevron { width: 20px; height: 20px; stroke: #00c8e0; flex-shrink: 0; transition: transform 0.25s; }
+.ots-faq-item.open .ots-faq-question .chevron { transform: rotate(180deg); }
+.ots-faq-answer { padding: 0 24px 20px; background: #f8fafb; }
+.ots-faq-answer p { font-size: 0.92rem; color: #4a5568; line-height: 1.75; margin: 0; }
+.ots-faq-answer p a { color: #00c8e0; text-decoration: none; }
+.ots-faq-answer p a:hover { text-decoration: underline; }
+.ots-faq-answer[hidden] { display: none; }
 </style>
 </head>
 <body>
@@ -1330,6 +1353,68 @@ Managed IT customers: 4-hour response time guaranteed.</p>
   </div>
 </section>
 
+<!-- FAQ -->
+<section class="ots-faq-section" aria-label="On-site Technical Support Gold Coast FAQ">
+  <div class="container">
+    <div class="ots-faq-header fade-up">
+      <h2>On-site Technical Support Gold Coast — Frequently Asked Questions</h2>
+    </div>
+    <div class="ots-faq-list">
+
+      <div class="ots-faq-item">
+        <button class="ots-faq-question" aria-expanded="false" aria-controls="otsfaq-1">
+          <h3>How quickly can you get to my Gold Coast business?</h3>
+          <i aria-hidden="true" data-lucide="chevron-down" class="chevron"></i>
+        </button>
+        <div class="ots-faq-answer" id="otsfaq-1" hidden>
+          <p>It depends on the nature of the fault. For critical faults — complete network outages, server or NAS failures, POS or payment system failures, or situations where all staff cannot work — we prioritise same-day attendance where possible. This is not guaranteed but it is our priority. Call <a href="tel:0730418993">07 3041 8993</a> immediately for critical faults — do not book online. For standard non-critical faults, typical scheduling is 1–2 business days. Managed IT customers receive a guaranteed 4-hour response time. Ask us about managed IT support if response time is important to your business.</p>
+        </div>
+      </div>
+
+      <div class="ots-faq-item">
+        <button class="ots-faq-question" aria-expanded="false" aria-controls="otsfaq-2">
+          <h3>How is on-site IT support charged?</h3>
+          <i aria-hidden="true" data-lucide="chevron-down" class="chevron"></i>
+        </button>
+        <div class="ots-faq-answer" id="otsfaq-2" hidden>
+          <p>On-site visits are charged at a call-out fee plus 1-hour increments. We confirm the full expected cost before attending — no surprises. If the fault requires parts we quote those separately before ordering anything. If we attend and cannot identify or resolve the fault, you don't pay the call-out fee. For issues that may be resolvable without a visit, our <a href="remote-it-support-gold-coast.html">remote IT support</a> service has no call-out fee and is billed in 30-minute increments — often faster and more affordable for software and configuration faults.</p>
+        </div>
+      </div>
+
+      <div class="ots-faq-item">
+        <button class="ots-faq-question" aria-expanded="false" aria-controls="otsfaq-3">
+          <h3>What is a critical fault and how do I report one?</h3>
+          <i aria-hidden="true" data-lucide="chevron-down" class="chevron"></i>
+        </button>
+        <div class="ots-faq-answer" id="otsfaq-3" hidden>
+          <p>We define a critical fault as any situation where your entire team cannot work, your network or internet connection is completely down, your server or NAS is inaccessible, or your POS or payment system has failed. For these situations, call <a href="tel:0730418993">07 3041 8993</a> immediately and tell us it is a critical fault. We triage immediately and prioritise same-day attendance where our schedule allows. Do not book online for critical faults — call directly.</p>
+        </div>
+      </div>
+
+      <div class="ots-faq-item">
+        <button class="ots-faq-question" aria-expanded="false" aria-controls="otsfaq-4">
+          <h3>Do I need a support contract to book on-site IT support?</h3>
+          <i aria-hidden="true" data-lucide="chevron-down" class="chevron"></i>
+        </button>
+        <div class="ots-faq-answer" id="otsfaq-4" hidden>
+          <p>No. We provide ad hoc on-site support to Gold Coast businesses with no ongoing contract required. You call when you need us and pay per visit. If your business would benefit from a faster guaranteed response time and proactive maintenance, ask us about managed IT support — managed customers receive a 4-hour response time SLA and regular scheduled maintenance. Call <a href="tel:0730418993">07 3041 8993</a> to discuss what would suit your business.</p>
+        </div>
+      </div>
+
+      <div class="ots-faq-item">
+        <button class="ots-faq-question" aria-expanded="false" aria-controls="otsfaq-5">
+          <h3>Can you support both Windows and Mac in our Gold Coast office?</h3>
+          <i aria-hidden="true" data-lucide="chevron-down" class="chevron"></i>
+        </button>
+        <div class="ots-faq-answer" id="otsfaq-5" hidden>
+          <p>Yes. We support Windows and Mac workstations, Windows Server environments, NAS devices, business networking equipment and most business peripherals. If you have a mixed environment we can support the whole office in a single visit. Call <a href="tel:0730418993">07 3041 8993</a> to describe your setup before booking if you want to confirm coverage first.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 <!-- ============================================================
      BCOM IT SOLUTIONS — FOOTER COMPONENT
      Include at the bottom of every page body, before </body>
@@ -1727,6 +1812,28 @@ Managed IT customers: 4-hour response time guaranteed.</p>
 </style>
 
 
+<script>
+(function () {
+  var items = document.querySelectorAll('.ots-faq-item');
+  items.forEach(function (item) {
+    var btn    = item.querySelector('.ots-faq-question');
+    var answer = item.querySelector('.ots-faq-answer');
+    btn.addEventListener('click', function () {
+      var isOpen = item.classList.contains('open');
+      items.forEach(function (i) {
+        i.classList.remove('open');
+        i.querySelector('.ots-faq-question').setAttribute('aria-expanded', 'false');
+        i.querySelector('.ots-faq-answer').hidden = true;
+      });
+      if (!isOpen) {
+        item.classList.add('open');
+        btn.setAttribute('aria-expanded', 'true');
+        answer.hidden = false;
+      }
+    });
+  });
+})();
+</script>
 <script>lucide.createIcons();</script>
 <script type="application/ld+json">
 {
