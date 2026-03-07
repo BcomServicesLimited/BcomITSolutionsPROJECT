@@ -985,6 +985,49 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
+  <!-- ── SPLASHTOP SOS ── -->
+  <section class="splashtop-section" aria-label="How Our Remote Connection Works — Splashtop SOS">
+    <div class="container">
+
+      <h2>How Our Remote Connection Works — Splashtop SOS</h2>
+      <p class="splashtop-intro">We use Splashtop SOS for all remote support sessions. It's designed specifically for on-demand support — not unattended access — which means your Gold Coast business machines are never accessible without your knowledge or permission.</p>
+
+      <div class="splashtop-grid">
+
+        <div class="splashtop-card fade-up">
+          <div class="splashtop-card__number">01</div>
+          <div class="splashtop-card__body">
+            <h3>You Download the App</h3>
+            <p>Visit our <a href="support.html">support page</a> and download the Splashtop SOS application. No installation — it runs directly without being installed on your machine. Takes under 60 seconds to be ready.</p>
+          </div>
+        </div>
+
+        <div class="splashtop-card fade-up">
+          <div class="splashtop-card__number">02</div>
+          <div class="splashtop-card__body">
+            <h3>You Give Us Your 9-Digit Code</h3>
+            <p>The app generates a unique 9-digit session code that changes every time it is opened. You read that code to us over the phone. We cannot connect to your machine without it — there is no stored access, no saved credentials, no backdoor.</p>
+          </div>
+        </div>
+
+        <div class="splashtop-card fade-up">
+          <div class="splashtop-card__number">03</div>
+          <div class="splashtop-card__body">
+            <h3>Session Ends When You Close the App</h3>
+            <p>Once the job is done, close the Splashtop SOS app. The session ends immediately and completely. No background processes, nothing left running, no way for us to reconnect until you open the app and give us a new code.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="splashtop-prompt">
+        <i data-lucide="shield-check" aria-hidden="true"></i>
+        <p>Ready to get started? Download Splashtop SOS from our <a href="support.html">support page</a> before calling — it takes less than a minute.</p>
+      </div>
+
+    </div>
+  </section>
+
   <!-- ============================================================
      BCOM IT SOLUTIONS — FOOTER COMPONENT
      Include at the bottom of every page body, before </body>
@@ -1478,6 +1521,124 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   .why-card {
     flex-direction: column;
     align-items: flex-start;
+    gap: 12px;
+  }
+}
+/* ── Splashtop SOS Section ── */
+.splashtop-section {
+  background: #ffffff;
+  padding: 80px 0;
+}
+.splashtop-section .container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+.splashtop-section h2 {
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  font-weight: 700;
+  color: #0d1f3c;
+  text-align: center;
+  margin-bottom: 16px;
+}
+.splashtop-intro {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 48px;
+  font-size: 1rem;
+  color: #4a5568;
+  line-height: 1.7;
+}
+.splashtop-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 32px;
+}
+.splashtop-card {
+  background: #f8fafb;
+  border-radius: 16px;
+  border-top: 3px solid #00c8e0;
+  padding: 32px;
+  box-shadow: 0 4px 20px rgba(0,0,0,.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.splashtop-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 32px rgba(0,0,0,.1);
+}
+.splashtop-card__number {
+  font-family: 'DM Mono', monospace;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #00c8e0;
+  line-height: 1;
+}
+.splashtop-card__body h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #0d1f3c;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+.splashtop-card__body p {
+  font-size: 0.9rem;
+  color: #4a5568;
+  line-height: 1.6;
+  margin: 0;
+}
+.splashtop-card__body a {
+  color: #00c8e0;
+  text-decoration: none;
+}
+.splashtop-card__body a:hover {
+  text-decoration: underline;
+}
+.splashtop-prompt {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  background: #e6fafd;
+  border: 1.5px solid #00c8e0;
+  border-radius: 12px;
+  padding: 24px 28px;
+  margin-top: 8px;
+}
+.splashtop-prompt i {
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  color: #00c8e0;
+  margin-top: 2px;
+}
+.splashtop-prompt p {
+  font-size: 0.95rem;
+  color: #0d1f3c;
+  line-height: 1.6;
+  margin: 0;
+  font-weight: 500;
+}
+.splashtop-prompt a {
+  color: #00c8e0;
+  text-decoration: none;
+}
+.splashtop-prompt a:hover {
+  text-decoration: underline;
+}
+@media (max-width: 860px) {
+  .splashtop-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 560px) {
+  .splashtop-grid {
+    grid-template-columns: 1fr;
+  }
+  .splashtop-prompt {
+    flex-direction: column;
     gap: 12px;
   }
 }
