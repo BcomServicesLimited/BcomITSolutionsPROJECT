@@ -938,6 +938,67 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 }
 @media (max-width: 860px) { .expect-steps { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 560px) { .expect-steps { grid-template-columns: 1fr; } }
+
+/* ── FAQ ACCORDION ── */
+.faq-section {
+  background: #ffffff;
+  padding: 80px 0;
+}
+.faq-header { text-align: center; margin-bottom: 48px; }
+.faq-header h2 { font-size: clamp(1.4rem, 3vw, 2rem); font-weight: 700; color: #0d1f3c; margin: 0; }
+.faq-list {
+  max-width: 760px;
+  margin: 0 auto;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  overflow: hidden;
+}
+.faq-item { border-bottom: 1px solid #e2e8f0; }
+.faq-item:last-child { border-bottom: none; }
+.faq-question {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 20px 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  transition: background 0.2s;
+}
+.faq-question h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #0d1f3c;
+  margin: 0;
+  line-height: 1.4;
+}
+.faq-question .chevron {
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  stroke: #00c8e0;
+  transition: transform 0.25s ease;
+}
+.faq-item.open .faq-question {
+  background: #f8fafb;
+  border-left: 4px solid #00c8e0;
+}
+.faq-item.open .faq-question .chevron { transform: rotate(180deg); }
+.faq-answer {
+  padding: 0 24px 20px;
+  background: #f8fafb;
+}
+.faq-answer p {
+  font-size: 0.95rem;
+  color: #4a5568;
+  line-height: 1.75;
+  margin: 0;
+}
+.faq-answer a { color: #00c8e0; text-decoration: none; }
+.faq-answer a:hover { text-decoration: underline; }
 </style>
 
 <!-- NAV JAVASCRIPT -->
@@ -1274,6 +1335,68 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       <p class="expect-closing fade-up">Most hardware and software troubleshooting jobs are resolved in one session. Remote diagnosis available for software faults.</p>
 
+    </div>
+  </section>
+
+  <!-- SECTION 6 — FAQ ACCORDION -->
+  <section class="faq-section" aria-label="Hardware and Software Troubleshooting FAQ">
+    <div class="container">
+      <div class="faq-header fade-up">
+        <h2>Hardware &amp; Software Troubleshooting Gold Coast &mdash; Frequently Asked Questions</h2>
+      </div>
+      <div class="faq-list" role="list">
+
+        <div class="faq-item" id="hst-faq-1" role="listitem">
+          <button class="faq-question" aria-expanded="false" aria-controls="hst-faq-1-answer">
+            <h3>Do you support Apple Macs as well as Windows PCs for Gold Coast businesses?</h3>
+            <i aria-hidden="true" class="chevron" data-lucide="chevron-down"></i>
+          </button>
+          <div class="faq-answer" id="hst-faq-1-answer" hidden>
+            <p>Yes. We support Windows PCs and laptops, Apple iMacs, MacBooks and Mac Minis, and Google Chromebooks &mdash; often in the same office visit. If your Gold Coast business runs a mixed environment, we can troubleshoot across all platforms without needing separate specialists. We support macOS Ventura, Sonoma and Sequoia alongside Windows 10 and 11, and ChromeOS managed devices.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" id="hst-faq-2" role="listitem">
+          <button class="faq-question" aria-expanded="false" aria-controls="hst-faq-2-answer">
+            <h3>My staff member&rsquo;s computer keeps crashing &mdash; is it hardware or software?</h3>
+            <i aria-hidden="true" class="chevron" data-lucide="chevron-down"></i>
+          </button>
+          <div class="faq-answer" id="hst-faq-2-answer" hidden>
+            <p>It could be either, and the symptoms often look the same from the outside. Random crashes and blue screens are most commonly caused by failing RAM, a deteriorating hard drive or SSD, overheating, a corrupted Windows or macOS installation, or a driver conflict. We diagnose the actual cause &mdash; running hardware health checks and reviewing system logs &mdash; rather than guessing. Call <a href="tel:0730418993">07 3041 8993</a> and describe what the device is doing &mdash; we&rsquo;ll advise whether remote or on-site diagnosis is the right approach.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" id="hst-faq-3" role="listitem">
+          <button class="faq-question" aria-expanded="false" aria-controls="hst-faq-3-answer">
+            <h3>Is it worth repairing an old business computer or should I replace it?</h3>
+            <i aria-hidden="true" class="chevron" data-lucide="chevron-down"></i>
+          </button>
+          <div class="faq-answer" id="hst-faq-3-answer" hidden>
+            <p>It depends on the fault and the age of the device. A failing drive in a 2-year-old machine is almost always worth replacing. The same fault in a 7-year-old machine running an unsupported OS is usually not. We give you an honest assessment before starting any repair &mdash; cost of the fix, expected remaining lifespan of the device, and what a replacement would cost. You make the call with full information. We don&rsquo;t charge for the assessment if we attend and the device isn&rsquo;t worth repairing.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" id="hst-faq-4" role="listitem">
+          <button class="faq-question" aria-expanded="false" aria-controls="hst-faq-4-answer">
+            <h3>Can you fix software problems on Google Chromebooks for our team?</h3>
+            <i aria-hidden="true" class="chevron" data-lucide="chevron-down"></i>
+          </button>
+          <div class="faq-answer" id="hst-faq-4-answer" hidden>
+            <p>Yes. We troubleshoot ChromeOS faults including login failures, sync issues, update problems and application errors. We also support Google Workspace configuration &mdash; Gmail, Drive, Meet and Classroom &mdash; and can resolve account access and admin console issues for Gold Coast businesses using Google&rsquo;s tools. Call <a href="tel:0730418993">07 3041 8993</a> to discuss your situation.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" id="hst-faq-5" role="listitem">
+          <button class="faq-question" aria-expanded="false" aria-controls="hst-faq-5-answer">
+            <h3>Can software troubleshooting be done remotely for our Gold Coast business?</h3>
+            <i aria-hidden="true" class="chevron" data-lucide="chevron-down"></i>
+          </button>
+          <div class="faq-answer" id="hst-faq-5-answer" hidden>
+            <p>Yes &mdash; and for most software, OS and application faults it&rsquo;s the fastest option. We connect securely using Splashtop SOS, diagnose and fix the issue directly on the device, and most jobs are resolved within the hour. There&rsquo;s no call-out fee for remote jobs and billing is in 30-minute increments. Hardware faults need an on-site visit, but for software issues remote is usually the right first step. See our <a href="remote-it-support-gold-coast.html">remote IT support Gold Coast</a> page for details, or call <a href="tel:0730418993">07 3041 8993</a> and we&rsquo;ll advise.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 
@@ -1674,6 +1797,31 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </style>
 
 
+  <script>
+  (function() {
+    var items = document.querySelectorAll('.faq-item');
+    items.forEach(function(item) {
+      var btn = item.querySelector('.faq-question');
+      var answer = item.querySelector('.faq-answer');
+      if (!btn || !answer) return;
+      btn.addEventListener('click', function() {
+        var isOpen = item.classList.contains('open');
+        items.forEach(function(i) {
+          i.classList.remove('open');
+          var a = i.querySelector('.faq-answer');
+          var b = i.querySelector('.faq-question');
+          if (a) a.hidden = true;
+          if (b) b.setAttribute('aria-expanded', 'false');
+        });
+        if (!isOpen) {
+          item.classList.add('open');
+          answer.hidden = false;
+          btn.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+  })();
+  </script>
   <script>lucide.createIcons();</script>
 </body>
 </html>
