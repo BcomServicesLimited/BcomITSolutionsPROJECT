@@ -1295,6 +1295,157 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
+<style>
+/* ── FAQ ACCORDION ── */
+.faq-section {
+  background: #ffffff;
+  padding: 80px 0;
+}
+.faq-header { text-align: center; margin-bottom: 48px; }
+.faq-header h2 { font-size: clamp(1.4rem, 3vw, 2rem); font-weight: 700; color: #0d1f3c; margin: 0; }
+.faq-list {
+  max-width: 760px;
+  margin: 0 auto;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  overflow: hidden;
+}
+.faq-item { border-bottom: 1px solid #e2e8f0; }
+.faq-item:last-child { border-bottom: none; }
+.faq-question {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 20px 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  transition: background 0.2s;
+}
+.faq-question h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #0d1f3c;
+  margin: 0;
+  line-height: 1.4;
+}
+.faq-question .chevron {
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  stroke: #00c8e0;
+  transition: transform 0.25s ease;
+}
+.faq-item.open .faq-question {
+  background: #f8fafb;
+  border-left: 4px solid #00c8e0;
+}
+.faq-item.open .faq-question .chevron { transform: rotate(180deg); }
+.faq-answer {
+  padding: 0 24px 20px;
+  background: #f8fafb;
+}
+.faq-answer p {
+  font-size: 0.95rem;
+  color: #4a5568;
+  line-height: 1.75;
+  margin: 0;
+}
+.faq-answer a { color: #00c8e0; text-decoration: none; }
+.faq-answer a:hover { text-decoration: underline; }
+</style>
+
+  <!-- SECTION 6 — FAQ ACCORDION -->
+  <section class="faq-section" aria-label="IT Consulting and Strategy FAQ">
+    <div class="container">
+      <div class="faq-header fade-up">
+        <h2>IT Consulting &amp; Strategy Gold Coast &mdash; Frequently Asked Questions</h2>
+      </div>
+      <div class="faq-list" role="list">
+
+        <div class="faq-item" id="itc-faq-1" role="listitem">
+          <button class="faq-question" aria-expanded="false" aria-controls="itc-faq-1-answer">
+            <h3>What is IT consulting and does my Gold Coast business need it?</h3>
+            <i aria-hidden="true" class="chevron" data-lucide="chevron-down"></i>
+          </button>
+          <div class="faq-answer" id="itc-faq-1-answer" hidden>
+            <p>IT consulting is independent advice on technology decisions &mdash; what to buy, what to change, what to stop paying for and how to plan IT spend over the next 1&ndash;3 years. Most Gold Coast small businesses do not have a dedicated IT manager, which means technology decisions get made reactively &mdash; when something breaks or a vendor calls. A consulting engagement gives you a clear picture of your current setup, honest advice on what needs to change and a prioritised action plan you can actually implement. If you are about to spend significant money on technology, or your current IT feels like it is working against you rather than for you, it is worth a conversation. Call <a href="tel:0730418993">07 3041 8993</a> and describe your situation &mdash; we will tell you honestly if consulting makes sense. For a full overview of our consulting services see our <a href="computer-consultant-gold-coast.html">IT consulting Gold Coast</a> hub page.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" id="itc-faq-2" role="listitem">
+          <button class="faq-question" aria-expanded="false" aria-controls="itc-faq-2-answer">
+            <h3>How is IT consulting charged?</h3>
+            <i aria-hidden="true" class="chevron" data-lucide="chevron-down"></i>
+          </button>
+          <div class="faq-answer" id="itc-faq-2-answer" hidden>
+            <p>We charge an hourly rate for consulting engagements, confirmed before the session begins. For larger engagements covering a full IT audit or technology roadmap we provide a fixed-fee quote upfront so there are no surprises. Call <a href="tel:0730418993">07 3041 8993</a> to discuss the scope of what you need and we will give you a clear cost estimate before you commit to anything.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" id="itc-faq-3" role="listitem">
+          <button class="faq-question" aria-expanded="false" aria-controls="itc-faq-3-answer">
+            <h3>Do you sell hardware or software as part of your consulting service?</h3>
+            <i aria-hidden="true" class="chevron" data-lucide="chevron-down"></i>
+          </button>
+          <div class="faq-answer" id="itc-faq-3-answer" hidden>
+            <p>No. Our consulting advice is independent &mdash; we do not earn commissions from hardware vendors or software companies, and we do not profit from the products we recommend. If our advice leads to a procurement decision, we can assist with vendor evaluation and purchasing guidance, but the advice itself is always based on what is right for your Gold Coast business. This is the key difference between independent IT consulting and advice from a vendor or reseller.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" id="itc-faq-4" role="listitem">
+          <button class="faq-question" aria-expanded="false" aria-controls="itc-faq-4-answer">
+            <h3>Can you review our existing IT setup and tell us what to change?</h3>
+            <i aria-hidden="true" class="chevron" data-lucide="chevron-down"></i>
+          </button>
+          <div class="faq-answer" id="itc-faq-4-answer" hidden>
+            <p>Yes &mdash; an IT audit and review is one of the most common consulting engagements we do for Gold Coast businesses. We review your hardware, software, licensing, security posture and IT spend, identify what is working, what is underperforming and what you are paying for unnecessarily, and deliver a prioritised list of recommended changes with cost estimates. Call <a href="tel:0730418993">07 3041 8993</a> or book online to discuss what an audit would involve for your specific setup.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" id="itc-faq-5" role="listitem">
+          <button class="faq-question" aria-expanded="false" aria-controls="itc-faq-5-answer">
+            <h3>We are setting up a new Gold Coast business &mdash; can you help us choose the right technology from the start?</h3>
+            <i aria-hidden="true" class="chevron" data-lucide="chevron-down"></i>
+          </button>
+          <div class="faq-answer" id="itc-faq-5-answer" hidden>
+            <p>Yes. Getting the technology foundation right for a new business is significantly cheaper than fixing it later. We advise on hardware, software platforms (Microsoft 365 vs Google Workspace), cloud storage, networking, security and support arrangements &mdash; matched to your team size, workflows and budget. A single consulting session at startup can save thousands in poor technology decisions down the track. Call <a href="tel:0730418993">07 3041 8993</a> to discuss your new Gold Coast business setup.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <script>
+  (function() {
+    var items = document.querySelectorAll('.faq-item');
+    items.forEach(function(item) {
+      var btn = item.querySelector('.faq-question');
+      var answer = item.querySelector('.faq-answer');
+      if (!btn || !answer) return;
+      btn.addEventListener('click', function() {
+        var isOpen = item.classList.contains('open');
+        items.forEach(function(i) {
+          i.classList.remove('open');
+          var a = i.querySelector('.faq-answer');
+          var b = i.querySelector('.faq-question');
+          if (a) a.hidden = true;
+          if (b) b.setAttribute('aria-expanded', 'false');
+        });
+        if (!isOpen) {
+          item.classList.add('open');
+          answer.hidden = false;
+          btn.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+  })();
+  </script>
+
   <!-- ============================================================
      BCOM IT SOLUTIONS — FOOTER COMPONENT
      Include at the bottom of every page body, before </body>
