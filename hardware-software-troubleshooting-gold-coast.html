@@ -999,6 +999,115 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 }
 .faq-answer a { color: #00c8e0; text-decoration: none; }
 .faq-answer a:hover { text-decoration: underline; }
+
+/* ── CLOSING CTA BANNER ── */
+.cta-banner {
+  position: relative;
+  background: linear-gradient(135deg, #0d1f3c 0%, #1e3a5f 50%, #0d2d3a 100%);
+  border-top: 3px solid #00c8e0;
+  clip-path: polygon(0 6%, 100% 0%, 100% 100%, 0% 100%);
+  padding: 100px 0 80px;
+  text-align: center;
+  overflow: hidden;
+}
+.cta-banner::before {
+  content: '';
+  position: absolute;
+  top: -120px;
+  left: -120px;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(0,200,224,0.12) 0%, transparent 70%);
+  pointer-events: none;
+}
+.cta-banner::after {
+  content: '';
+  position: absolute;
+  bottom: -80px;
+  right: -80px;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(0,200,224,0.08) 0%, transparent 70%);
+  pointer-events: none;
+}
+.cta-banner .container { position: relative; z-index: 1; }
+.cta-label {
+  display: inline-block;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #00c8e0;
+  margin-bottom: 16px;
+}
+.cta-banner h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 16px;
+  line-height: 1.2;
+}
+.cta-subtext {
+  font-size: 1rem;
+  color: rgba(255,255,255,0.75);
+  max-width: 540px;
+  margin: 0 auto 32px;
+  line-height: 1.7;
+}
+.cta-buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+.btn-white {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 28px;
+  background: rgba(255,255,255,0.12);
+  border: 1.5px solid rgba(255,255,255,0.4);
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s, border-color 0.2s;
+}
+.btn-white:hover { background: rgba(255,255,255,0.2); border-color: rgba(255,255,255,0.7); }
+.btn-white [data-lucide] { width: 18px; height: 18px; stroke: #ffffff; }
+.reassurance-row {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.reassurance-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.6);
+}
+.reassurance-item [data-lucide] { width: 16px; height: 16px; stroke: rgba(255,255,255,0.5); flex-shrink: 0; }
+.last-updated-bar {
+  background: #ffffff;
+  text-align: center;
+  padding: 10px 0;
+}
+.last-updated-bar p {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.72rem;
+  color: #94a3b8;
+  margin: 0;
+}
+@media (max-width: 768px) {
+  .cta-banner { clip-path: none; padding: 64px 0 48px; }
+  .cta-banner h2 { font-size: 1.6rem; }
+  .reassurance-row { gap: 16px; }
+}
 </style>
 
 <!-- NAV JAVASCRIPT -->
@@ -1399,6 +1508,34 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </div>
   </section>
+
+  <!-- SECTION 7 — CLOSING CTA -->
+  <section class="cta-banner" aria-label="Contact Bcom IT Solutions for hardware and software troubleshooting">
+    <div class="container">
+      <p class="cta-label">GOLD COAST&rsquo;S TRUSTED IT TEAM</p>
+      <h2>Get Your Gold Coast Team&rsquo;s Devices Working Again Today</h2>
+      <p class="cta-subtext">Hardware and software troubleshooting for Windows, Mac and Chromebook at Gold Coast businesses &mdash; root cause found, honest advice, remote or on-site whichever is fastest.</p>
+      <div class="cta-buttons">
+        <a href="tel:0730418993" class="btn-primary">
+          <i aria-hidden="true" data-lucide="phone"></i>
+          Call 07 3041 8993
+        </a>
+        <a href="mailto:support@bcomservices.com" class="btn-white">
+          <i aria-hidden="true" data-lucide="mail"></i>
+          Email Us
+        </a>
+      </div>
+      <div class="reassurance-row">
+        <span class="reassurance-item"><i aria-hidden="true" data-lucide="cpu"></i> Windows, Mac &amp; Chromebook</span>
+        <span class="reassurance-item"><i aria-hidden="true" data-lucide="search"></i> Root cause identified</span>
+        <span class="reassurance-item"><i aria-hidden="true" data-lucide="shield-check"></i> Honest repair vs replace advice</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="last-updated-bar">
+    <p>Last updated: March 2026</p>
+  </div>
 
   <!-- ============================================================
      BCOM IT SOLUTIONS — FOOTER COMPONENT
