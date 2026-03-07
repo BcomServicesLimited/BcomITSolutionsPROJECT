@@ -1029,6 +1029,91 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
+<style>
+/* ── WHY CHOOSE US ── */
+.why-section { background: #f8fafb; padding: 80px 0; }
+.why-header { text-align: center; margin-bottom: 48px; }
+.why-header h2 { font-size: 1.9rem; font-weight: 700; color: #0d1f3c; margin-bottom: 12px; }
+.why-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+.why-card {
+  background: white;
+  border-radius: 16px;
+  padding: 32px;
+  border-left: 4px solid #00c8e0;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.why-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 24px rgba(0,0,0,0.09);
+}
+.why-card__icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: #e6fafd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.why-card__icon [data-lucide] {
+  width: 22px;
+  height: 22px;
+  stroke: #00c8e0;
+}
+.why-card__text h3 { font-size: 1rem; font-weight: 700; color: #0d1f3c; margin: 0 0 8px; line-height: 1.3; }
+.why-card__text p { font-size: 0.9rem; color: #4a5568; line-height: 1.7; margin: 0; }
+@media (max-width: 700px) { .why-grid { grid-template-columns: 1fr; } }
+</style>
+
+  <!-- SECTION 4 — WHY CHOOSE US -->
+  <section class="why-section" aria-label="Why Gold Coast Businesses Choose Bcom IT Solutions for IT Consulting">
+    <div class="container">
+      <div class="why-header fade-up">
+        <h2>Why Gold Coast Businesses Choose Bcom IT Solutions for IT Consulting</h2>
+      </div>
+      <div class="why-grid">
+
+        <div class="why-card fade-up" style="transition-delay:0.05s">
+          <div class="why-card__icon"><i aria-hidden="true" data-lucide="lightbulb"></i></div>
+          <div class="why-card__text">
+            <h3>Independent &mdash; No Vendor Bias</h3>
+            <p>We do not sell hardware or earn commissions from software vendors. Our advice is based entirely on what is right for your Gold Coast business &mdash; not what benefits us to recommend.</p>
+          </div>
+        </div>
+
+        <div class="why-card fade-up" style="transition-delay:0.1s">
+          <div class="why-card__icon"><i aria-hidden="true" data-lucide="clipboard"></i></div>
+          <div class="why-card__text">
+            <h3>Advice You Can Actually Act On</h3>
+            <p>We do not deliver reports that sit in a drawer. Our consulting engagements end with a clear, prioritised action list &mdash; what to do first, what it will cost and what outcome to expect for your Gold Coast business.</p>
+          </div>
+        </div>
+
+        <div class="why-card fade-up" style="transition-delay:0.15s">
+          <div class="why-card__icon"><i aria-hidden="true" data-lucide="map-pin"></i></div>
+          <div class="why-card__text">
+            <h3>Gold Coast Local</h3>
+            <p>We understand the Gold Coast business environment &mdash; not a national consultancy giving generic advice. When you need follow-up support or implementation help, we are nearby.</p>
+          </div>
+        </div>
+
+        <div class="why-card fade-up" style="transition-delay:0.2s">
+          <div class="why-card__icon"><i aria-hidden="true" data-lucide="users"></i></div>
+          <div class="why-card__text">
+            <h3>We Work With Your Existing Team</h3>
+            <p>Whether you have internal IT staff, an existing IT provider or no IT support at all &mdash; we work alongside your current setup, not against it.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
   <!-- ============================================================
      BCOM IT SOLUTIONS — FOOTER COMPONENT
      Include at the bottom of every page body, before </body>
