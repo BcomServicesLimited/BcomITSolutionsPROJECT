@@ -515,6 +515,44 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   margin: 32px 0;
   display: block;
 }
+
+/* ── CTA Banner ── */
+.cta-banner {
+  background: linear-gradient(135deg, #0d1f3c 0%, #1e3a5f 50%, #0d2d3a 100%);
+  border-top: 3px solid #00c8e0;
+  clip-path: polygon(0 6%, 100% 0%, 100% 100%, 0% 100%);
+  padding: 100px 0 80px;
+  position: relative; overflow: hidden; text-align: center;
+}
+.cta-banner::before {
+  content: ''; position: absolute;
+  width: 600px; height: 600px;
+  background: rgba(0,200,224,0.06);
+  border-radius: 50%; top: -200px; left: -200px;
+  filter: blur(80px); pointer-events: none; z-index: 0;
+}
+.cta-banner::after {
+  content: ''; position: absolute;
+  width: 400px; height: 400px;
+  background: rgba(0,200,224,0.04);
+  border-radius: 50%; bottom: -100px; right: -100px;
+  filter: blur(60px); pointer-events: none; z-index: 0;
+}
+.cta-banner .container { position: relative; z-index: 1; }
+.cta-banner__inner { position: relative; z-index: 1; }
+.cta-label { font-family: 'DM Mono', monospace; font-size: 0.65rem; color: #00c8e0; text-transform: uppercase; letter-spacing: 0.15em; display: block; margin-bottom: 16px; }
+.cta-banner h2 { font-size: 2.2rem; font-weight: 700; color: white; margin-bottom: 16px; line-height: 1.2; }
+.cta-banner p { font-size: 1.05rem; color: rgba(255,255,255,0.75); max-width: 540px; margin: 0 auto 32px; line-height: 1.7; }
+.cta-buttons { display: flex; align-items: center; justify-content: center; gap: 16px; flex-wrap: wrap; margin-bottom: 32px; }
+.cta-reassurance { display: flex; align-items: center; justify-content: center; gap: 24px; flex-wrap: wrap; }
+.cta-reassurance span { display: flex; align-items: center; gap: 6px; font-size: 0.85rem; color: rgba(255,255,255,0.6); }
+.cta-reassurance [data-lucide] { width: 16px; height: 16px; stroke: rgba(255,255,255,0.5); }
+/* ── Last Updated ── */
+.last-updated { text-align: center; font-family: 'DM Mono', monospace; font-size: 0.72rem; color: #94a3b8; padding: 16px 0; background: white; }
+@media (max-width: 768px) {
+  .cta-banner { clip-path: none; padding: 64px 0 48px; }
+  .cta-banner h2 { font-size: 1.6rem; }
+}
 </style>
 </head>
 <body>
@@ -1470,6 +1508,35 @@ Managed IT customers: 4-hour response time guaranteed.</p>
     </div>
   </div>
 </section>
+
+<!-- CLOSING CTA -->
+<section class="cta-banner" aria-label="Get a Local Gold Coast Technician to Your Business Fast">
+  <div class="container">
+    <div class="cta-banner__inner">
+      <span class="cta-label fade-up">GOLD COAST'S TRUSTED IT TEAM</span>
+      <h2 class="fade-up" style="transition-delay:0.1s">Get a Local Gold Coast Technician to Your Business Fast</h2>
+      <p class="fade-up" style="transition-delay:0.2s">
+        On-site IT support for Gold Coast businesses &mdash; critical faults prioritised for same-day attendance, local technicians, no fix no fee.
+        Call-out fee plus 1-hour increments, cost confirmed before we start.
+      </p>
+      <div class="cta-buttons fade-up" style="transition-delay:0.3s">
+        <a href="tel:0730418993" class="btn-primary" style="display:inline-flex;align-items:center;gap:8px;">
+          <i aria-hidden="true" data-lucide="phone"></i> Call 07 3041 8993
+        </a>
+        <a href="mailto:support@bcomservices.com" class="btn-white" style="display:inline-flex;align-items:center;gap:8px;">
+          <i aria-hidden="true" data-lucide="mail"></i> Email Us
+        </a>
+      </div>
+      <div class="cta-reassurance fade-up" style="transition-delay:0.4s">
+        <span><i aria-hidden="true" data-lucide="zap"></i> Same-day for critical faults</span>
+        <span><i aria-hidden="true" data-lucide="map-pin"></i> Local Gold Coast technicians</span>
+        <span><i aria-hidden="true" data-lucide="shield-check"></i> No fix, no fee</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<p class="last-updated">Last updated: March 2026</p>
 
 <!-- ============================================================
      BCOM IT SOLUTIONS — FOOTER COMPONENT
