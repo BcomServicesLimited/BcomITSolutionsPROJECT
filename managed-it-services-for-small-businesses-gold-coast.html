@@ -600,132 +600,123 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <style>
 /* ── HERO ── */
-.hero-mit {
+.hero {
   position: relative;
-  min-height: 75vh;
-  display: flex;
-  align-items: center;
+  min-height: 65vh;
   background-image: url('assets/images/managed-it-services-hero.webp');
   background-size: cover;
-  background-position: center;
+  background-position: center center;
+  display: flex;
+  align-items: center;
   overflow: hidden;
 }
-.hero-mit__overlay {
+.hero::before {
+  content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(30,58,95,0.72) 0%, rgba(13,31,60,0.58) 100%);
-  background-image:
-    radial-gradient(circle at 1px 1px, rgba(255,255,255,0.04) 1px, transparent 0);
-  background-size: cover, 28px 28px;
-}
-.hero-mit .container {
-  position: relative;
+  background: linear-gradient(105deg, rgba(30,58,95,0.88) 0%, rgba(13,31,60,0.50) 100%);
   z-index: 1;
-  max-width: 760px;
-  margin: 0 auto;
-  padding: 56px 24px;
-  text-align: center;
 }
-.hero-mit .hero-badge {
+.hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(rgba(0,200,224,0.07) 1px, transparent 1px);
+  background-size: 28px 28px;
+  z-index: 2;
+  pointer-events: none;
+}
+.hero-content {
+  position: relative;
+  z-index: 3;
+  padding: 56px 0;
+  max-width: 680px;
+}
+.hero-badge {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: rgba(230,250,253,0.15);
-  border: 1px solid rgba(0,200,224,0.4);
-  color: #e6fafd;
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(0,200,224,0.35);
+  border-radius: 24px;
+  padding: 6px 16px;
   font-family: 'DM Mono', monospace;
   font-size: 0.72rem;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  padding: 6px 14px;
-  border-radius: 20px;
-  margin-bottom: 24px;
+  color: rgba(255,255,255,0.9);
+  letter-spacing: 0.04em;
+  margin-bottom: 20px;
 }
-.status-dot {
-  width: 7px;
-  height: 7px;
-  background: #00c8e0;
-  border-radius: 50%;
-  animation: pulse-dot 2s ease-in-out infinite;
-  flex-shrink: 0;
+.hero h1 {
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: white;
+  line-height: 1.15;
+  margin-bottom: 16px;
+  letter-spacing: -0.02em;
 }
-@keyframes pulse-dot {
-  0%, 100% { opacity: 1; transform: scale(1); }
-  50% { opacity: 0.5; transform: scale(0.85); }
-}
-.hero-mit h1 {
-  font-size: clamp(1.9rem, 4.5vw, 3rem);
-  font-weight: 800;
-  color: #ffffff;
-  line-height: 1.12;
-  margin: 0 0 20px;
-}
-.hero-mit .hero-sub {
+.hero-sub {
   font-size: 1.05rem;
-  color: rgba(255,255,255,0.88);
-  max-width: 580px;
-  margin: 0 auto 32px;
+  color: rgba(255,255,255,0.8);
   line-height: 1.7;
+  margin-bottom: 28px;
+  max-width: 560px;
 }
 .hero-cta-row {
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 16px;
   flex-wrap: wrap;
-  margin-bottom: 40px;
+  margin-bottom: 24px;
 }
-.hero-cta-row .hero-phone {
-  font-size: 0.95rem;
-  color: rgba(255,255,255,0.75);
-  text-decoration: none;
-}
-.hero-cta-row .hero-phone a {
+.hero-call-link {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.9rem;
   color: #00c8e0;
-  font-weight: 600;
   text-decoration: none;
+  font-weight: 500;
 }
+.hero-call-link:hover { color: white; }
 .hero-trust-strip {
   display: flex;
-  gap: 24px;
-  justify-content: center;
+  align-items: center;
+  gap: 20px;
   flex-wrap: wrap;
-  padding-top: 8px;
 }
 .hero-trust-item {
   display: flex;
   align-items: center;
-  gap: 7px;
+  gap: 6px;
   font-size: 0.82rem;
-  color: rgba(255,255,255,0.75);
-  font-family: 'DM Mono', monospace;
+  color: rgba(255,255,255,0.7);
+  font-family: 'DM Sans', sans-serif;
 }
 .hero-trust-item [data-lucide] {
   width: 15px;
   height: 15px;
   stroke: #00c8e0;
-  flex-shrink: 0;
 }
-@media (max-width: 600px) {
-  .hero-mit { min-height: 60vh; }
-  .hero-trust-strip { gap: 14px; }
-  .hero-trust-item { font-size: 0.76rem; }
+/* ── FADE-UP ANIMATION ── */
+.fade-up {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.55s ease, transform 0.55s ease;
 }
+.fade-up.visible { opacity: 1; transform: translateY(0); }
 </style>
 
   <!-- SECTION 1 — HERO -->
-  <section class="hero-mit" aria-label="Managed IT Services Gold Coast — Bcom IT Solutions">
-    <div class="hero-mit__overlay" aria-hidden="true"></div>
+  <section class="hero" aria-label="Managed IT Services Gold Coast — Bcom IT Solutions">
     <div class="container">
-      <span class="hero-badge">
-        <span class="status-dot" aria-hidden="true"></span>
-        Business IT &middot; Gold Coast
-      </span>
-      <h1>Managed IT Services <span class="text-gradient">Gold Coast</span></h1>
-      <p class="hero-sub">Tired of dealing with IT problems after they&rsquo;ve already cost you time and money? Bcom IT Solutions provides managed IT services for Gold Coast small businesses with 5&ndash;20 staff &mdash; proactive monitoring, help desk support, cybersecurity, backup monitoring and Microsoft 365 management, all for a predictable monthly fee per device. Month to month, no lock-in contracts.</p>
-      <div class="hero-cta-row">
-        <!-- Google Calendar Appointment Scheduling begin -->
+      <div class="hero-content">
+        <div class="hero-badge fade-up">
+          <span class="status-dot"></span> Business IT &middot; Gold Coast
+        </div>
+        <h1 class="fade-up" style="transition-delay:0.1s">
+          Managed IT Services <span class="text-gradient">Gold Coast</span>
+        </h1>
+        <p class="hero-sub fade-up" style="transition-delay:0.2s">Tired of dealing with IT problems after they&rsquo;ve already cost you time and money? Bcom IT Solutions provides managed IT services for Gold Coast small businesses with 5&ndash;20 staff &mdash; proactive monitoring, help desk support, cybersecurity, backup monitoring and Microsoft 365 management, all for a predictable monthly fee per device. Month to month, no lock-in contracts.</p>
+        <div class="hero-cta-row fade-up" style="transition-delay:0.3s">
+          <!-- Google Calendar Appointment Scheduling begin -->
 <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
 <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
 <script>
@@ -742,12 +733,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 })();
 </script>
 <!-- end Google Calendar Appointment Scheduling -->
-        <span class="hero-phone">or call <a href="tel:0730418993">07 3041 8993</a></span>
-      </div>
-      <div class="hero-trust-strip">
-        <span class="hero-trust-item"><i aria-hidden="true" data-lucide="shield-check"></i> Proactive &mdash; problems fixed before they cause downtime</span>
-        <span class="hero-trust-item"><i aria-hidden="true" data-lucide="clock"></i> 4-hour response SLA</span>
-        <span class="hero-trust-item"><i aria-hidden="true" data-lucide="dollar-sign"></i> Predictable monthly cost, no surprises</span>
+          <a href="tel:0730418993" class="hero-call-link">or call 07 3041 8993</a>
+        </div>
+        <div class="hero-trust-strip fade-up" style="transition-delay:0.4s">
+          <span class="hero-trust-item"><i aria-hidden="true" data-lucide="shield-check"></i> Proactive &mdash; problems fixed before they cause downtime</span>
+          <span class="hero-trust-item"><i aria-hidden="true" data-lucide="clock"></i> 4-hour response SLA</span>
+          <span class="hero-trust-item"><i aria-hidden="true" data-lucide="dollar-sign"></i> Predictable monthly cost, no surprises</span>
+        </div>
       </div>
     </div>
   </section>
@@ -1225,6 +1217,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </style>
 
 
+  <script>
+  // Fade-up on scroll
+  (function () {
+    var els = document.querySelectorAll('.fade-up');
+    var obs = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
+    }, { threshold: 0.15 });
+    els.forEach(function (el) { obs.observe(el); });
+  })();
+  </script>
   <script>lucide.createIcons();</script>
 </body>
 </html>
