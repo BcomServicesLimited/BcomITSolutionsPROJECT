@@ -282,6 +282,33 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 @media (max-width: 640px) {
   .response-cols { grid-template-columns: 1fr; }
 }
+
+/* ── WHY CHOOSE US ── */
+.why-section { background: #f8fafb; padding: 80px 0; }
+.why-header { text-align: center; margin-bottom: 48px; }
+.why-header h2 { font-size: 1.9rem; font-weight: 700; color: #0d1f3c; margin-bottom: 12px; }
+.why-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+.why-card {
+  background: white;
+  border-radius: 16px;
+  padding: 32px;
+  border-left: 4px solid #00c8e0;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+.why-card__icon {
+  width: 48px; height: 48px;
+  background: #e6fafd;
+  border-radius: 12px;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.why-card__icon [data-lucide] { width: 22px; height: 22px; stroke: #00c8e0; stroke-width: 1.75; }
+.why-card__text h3 { font-size: 1rem; font-weight: 700; color: #0d1f3c; margin-bottom: 6px; }
+.why-card__text p { font-size: 0.9rem; color: #4a5568; line-height: 1.6; margin: 0; }
+@media (max-width: 700px) { .why-grid { grid-template-columns: 1fr; } }
 </style>
 </head>
 <body>
@@ -983,6 +1010,50 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <li>General configuration and setup</li>
         </ul>
         <p class="response-note">Managed IT customers receive a 4-hour response time. <a href="it-support-and-services-gold-coast.html">Ask us about managed IT support</a> for your Gold Coast business.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section class="why-section" aria-label="Why Gold Coast Businesses Choose Bcom IT Solutions for On-site Support">
+  <div class="container">
+    <div class="why-header fade-up">
+      <h2>Why Gold Coast Businesses Choose Bcom IT Solutions for On-site Support</h2>
+    </div>
+    <div class="why-grid">
+
+      <div class="why-card fade-up">
+        <div class="why-card__icon"><i aria-hidden="true" data-lucide="map-pin"></i></div>
+        <div class="why-card__text">
+          <h3>Local Gold Coast Technicians</h3>
+          <p>Our technicians are based on the Gold Coast — not interstate contractors, not an outsourced call centre. When you need someone on-site fast, we're already nearby.</p>
+        </div>
+      </div>
+
+      <div class="why-card fade-up" style="transition-delay:0.1s">
+        <div class="why-card__icon"><i aria-hidden="true" data-lucide="zap"></i></div>
+        <div class="why-card__text">
+          <h3>Critical Faults Prioritised</h3>
+          <p>Complete outages, server failures and POS failures go to the top of the queue. We triage every call and prioritise same-day attendance for Gold Coast business faults where all staff are affected or revenue is at risk.</p>
+        </div>
+      </div>
+
+      <div class="why-card fade-up" style="transition-delay:0.15s">
+        <div class="why-card__icon"><i aria-hidden="true" data-lucide="search"></i></div>
+        <div class="why-card__text">
+          <h3>Remote First, On-site When Needed</h3>
+          <p>We always ask whether the issue can be resolved remotely before booking a visit — remote support is faster and cheaper for many faults. If it needs an on-site visit, we tell you straight and get there quickly.</p>
+        </div>
+      </div>
+
+      <div class="why-card fade-up" style="transition-delay:0.2s">
+        <div class="why-card__icon"><i aria-hidden="true" data-lucide="shield-check"></i></div>
+        <div class="why-card__text">
+          <h3>No Fix, No Fee</h3>
+          <p>If we attend your Gold Coast premises and cannot identify or resolve the fault, you don't pay the call-out fee.</p>
+        </div>
       </div>
 
     </div>
