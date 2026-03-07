@@ -1512,6 +1512,175 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
+  <!-- SECTION 7 — FAQ ACCORDION -->
+<style>
+/* ── FAQ SECTION ── */
+.faq-section {
+  background: #ffffff;
+  padding: 80px 0;
+  border-bottom: 1px solid #f1f5f9;
+}
+.faq-section h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #0d1f3c;
+  line-height: 1.25;
+  margin-bottom: 40px;
+  letter-spacing: -0.01em;
+}
+.faq-list {
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  overflow: hidden;
+}
+.faq-item {
+  border-bottom: 1px solid #e2e8f0;
+}
+.faq-item:last-child { border-bottom: none; }
+.faq-item.is-open {
+  border-left: 4px solid #00c8e0;
+  background: #f8fafb;
+}
+.faq-question {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 22px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  cursor: pointer;
+  text-align: left;
+}
+.faq-question h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #0d1f3c;
+  margin: 0;
+  line-height: 1.4;
+}
+.faq-question:hover h3 { color: #00c8e0; }
+.faq-chevron {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  stroke: #00c8e0;
+  transition: transform 0.25s ease;
+}
+.faq-item.is-open .faq-chevron { transform: rotate(180deg); }
+.faq-answer {
+  padding: 0 24px 22px;
+  font-size: 0.95rem;
+  color: #334155;
+  line-height: 1.75;
+}
+.faq-answer a {
+  color: #00c8e0;
+  font-weight: 600;
+  text-decoration: none;
+}
+.faq-answer a:hover { color: #0d1f3c; }
+@media (max-width: 600px) {
+  .faq-section { padding: 56px 0; }
+  .faq-question { padding: 18px 16px; }
+  .faq-answer { padding: 0 16px 18px; }
+}
+</style>
+
+  <section class="faq-section" aria-label="Managed IT Services FAQ">
+    <div class="container">
+      <h2>Managed IT Services Gold Coast &mdash; Frequently Asked Questions</h2>
+
+      <div class="faq-list">
+
+        <div class="faq-item" id="mit-faq-1">
+          <button class="faq-question" aria-expanded="false" aria-controls="mit-faq-1-answer">
+            <h3>What is managed IT and how is it different from regular IT support?</h3>
+            <svg class="faq-chevron" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="faq-answer" id="mit-faq-1-answer" hidden>
+            <p>Regular IT support &mdash; sometimes called break-fix &mdash; means you call for help when something goes wrong and pay per visit or per hour. Managed IT means we proactively monitor your Gold Coast business devices and systems, handle maintenance and updates, and provide help desk support as part of a fixed monthly fee. The difference is visibility and predictability: with managed IT we often identify and resolve issues before your staff notice them, and your IT costs are consistent month to month rather than spiking when something fails. For Gold Coast businesses with 5&ndash;20 staff who deal with recurring IT issues or unexpected support costs, managed IT is usually more cost-effective than ad hoc support over the course of a year.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" id="mit-faq-2">
+          <button class="faq-question" aria-expanded="false" aria-controls="mit-faq-2-answer">
+            <h3>How much does managed IT cost for a Gold Coast business?</h3>
+            <svg class="faq-chevron" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="faq-answer" id="mit-faq-2-answer" hidden>
+            <p>Managed IT is priced per device per month. The monthly cost depends on the number of devices covered and the scope of services included in your package. We provide an itemised quote after a brief discovery call &mdash; you know the exact monthly cost before agreeing to anything. There is no lock-in contract; managed IT with Bcom IT Solutions is month to month. Call <a href="tel:0730418993">07 3041 8993</a> to discuss your device count and requirements and we will give you a clear cost estimate.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" id="mit-faq-3">
+          <button class="faq-question" aria-expanded="false" aria-controls="mit-faq-3-answer">
+            <h3>What is the 4-hour response SLA and what does it cover?</h3>
+            <svg class="faq-chevron" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="faq-answer" id="mit-faq-3-answer" hidden>
+            <p>All managed IT customers receive a 4-hour response SLA for both remote and on-site support requests. This means that when a staff member raises a support issue &mdash; whether it is a software fault, a connectivity problem or a device failure &mdash; we respond within 4 hours. This applies to every support request, not just critical faults. By comparison, standard ad hoc customers are typically scheduled 1&ndash;2 business days out for non-critical issues. The 4-hour SLA applies during standard Gold Coast business hours.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" id="mit-faq-4">
+          <button class="faq-question" aria-expanded="false" aria-controls="mit-faq-4-answer">
+            <h3>Are on-site visits included in the managed IT monthly fee?</h3>
+            <svg class="faq-chevron" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="faq-answer" id="mit-faq-4-answer" hidden>
+            <p>On-site visits are not included in the monthly fee but are available when needed and prioritised within the 4-hour SLA. They are charged at our standard call-out fee and hourly rate. Most routine support issues are resolved remotely without an on-site visit. When an on-site visit is required, managed IT customers go to the front of the queue and receive prioritised scheduling over ad hoc customers. Major projects &mdash; hardware upgrades, infrastructure replacements or new office setups &mdash; are quoted separately before any work begins.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" id="mit-faq-5">
+          <button class="faq-question" aria-expanded="false" aria-controls="mit-faq-5-answer">
+            <h3>Is there a minimum contract term for managed IT?</h3>
+            <svg class="faq-chevron" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="faq-answer" id="mit-faq-5-answer" hidden>
+            <p>No. Our managed IT services are month to month &mdash; there is no minimum contract term and no penalty for leaving. We believe the service should earn your business every month. If the arrangement is not working for your Gold Coast business, you can cancel with standard notice. We have found that Gold Coast businesses on managed IT tend to stay because the value is clear &mdash; fewer disruptions, predictable costs and faster response when issues do arise. Call <a href="tel:0730418993">07 3041 8993</a> to discuss what a managed IT package would look like for your team.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" id="mit-faq-6">
+          <button class="faq-question" aria-expanded="false" aria-controls="mit-faq-6-answer">
+            <h3>We only have 5 staff &mdash; is managed IT worth it for a small Gold Coast business?</h3>
+            <svg class="faq-chevron" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="faq-answer" id="mit-faq-6-answer" hidden>
+            <p>It depends on how often IT affects your team. If your staff rarely have IT issues and your setup is stable, ad hoc support is probably more cost-effective. If IT problems are a recurring disruption &mdash; even a few hours of downtime per month adds up across a team of 5 &mdash; managed IT is worth comparing. The break-even point is usually lower than businesses expect once you factor in the time cost of downtime, not just the invoice cost of support. Call <a href="tel:0730418993">07 3041 8993</a> and describe your current situation &mdash; we will give you an honest assessment of whether managed IT makes financial sense for your Gold Coast business before you commit to anything.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+<script>
+(function() {
+  var items = document.querySelectorAll('.faq-item');
+  items.forEach(function(item) {
+    var btn = item.querySelector('.faq-question');
+    var answer = item.querySelector('.faq-answer');
+    btn.addEventListener('click', function() {
+      var isOpen = item.classList.contains('is-open');
+      items.forEach(function(i) {
+        i.classList.remove('is-open');
+        i.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+        i.querySelector('.faq-answer').hidden = true;
+      });
+      if (!isOpen) {
+        item.classList.add('is-open');
+        btn.setAttribute('aria-expanded', 'true');
+        answer.hidden = false;
+      }
+    });
+  });
+})();
+</script>
+
   <!-- ============================================================
      BCOM IT SOLUTIONS — FOOTER COMPONENT
      Include at the bottom of every page body, before </body>
