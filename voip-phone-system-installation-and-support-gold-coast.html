@@ -904,6 +904,143 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   .why-voip-card__text p { font-size: 0.9rem; color: #4a5568; line-height: 1.6; margin: 0; }
   @media (max-width: 640px) { .why-voip-grid { grid-template-columns: 1fr; } }
 
+  /* ── SERVICE AREAS (VOIP) ── */
+  .areas-voip-section {
+    background: #e6fafd;
+    padding: 80px 0;
+    border-bottom: 1px solid #c8f0f7;
+  }
+  .areas-voip-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+  .areas-voip-inner h2 {
+    font-size: 1.65rem;
+    font-weight: 700;
+    color: #0d1f3c;
+    line-height: 1.25;
+    margin-bottom: 16px;
+    letter-spacing: -0.01em;
+  }
+  .areas-voip-inner p {
+    font-size: 0.97rem;
+    color: #4a5568;
+    line-height: 1.8;
+    max-width: 720px;
+    margin-bottom: 32px;
+  }
+  .areas-voip-inner p a { color: #00c8e0; font-weight: 600; text-decoration: none; }
+  .areas-voip-inner p a:hover { color: #0d1f3c; }
+  .areas-voip-inner .suburb-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 36px;
+  }
+  .areas-voip-inner .suburb-pill {
+    border: 1px solid #0d1f3c;
+    color: #0d1f3c;
+    padding: 8px 16px;
+    border-radius: 100px;
+    font-size: 0.88rem;
+    font-weight: 500;
+    background: white;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    cursor: default;
+  }
+  .areas-voip-inner .suburb-pill:hover {
+    background: linear-gradient(135deg, #0d1f3c, #1e3a5f);
+    color: white;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  }
+  .areas-voip-booking { text-align: center; }
+  /* ── WHAT TO EXPECT (VOIP) ── */
+  .expect-voip-section {
+    background: #ffffff;
+    padding: 80px 0;
+    border-bottom: 1px solid #f1f5f9;
+  }
+  .expect-voip-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+  .expect-voip-inner h2 {
+    font-size: 1.65rem;
+    font-weight: 700;
+    color: #0d1f3c;
+    line-height: 1.25;
+    margin-bottom: 12px;
+    letter-spacing: -0.01em;
+  }
+  .expect-voip-intro {
+    font-size: 0.97rem;
+    color: #4a5568;
+    line-height: 1.8;
+    margin-bottom: 48px;
+    max-width: 660px;
+  }
+  .expect-voip-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+  }
+  .expect-voip-step {
+    display: grid;
+    grid-template-columns: 48px 52px 1fr;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .expect-voip-step-num {
+    font-family: 'DM Mono', monospace;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #00c8e0;
+    line-height: 1;
+    padding-top: 4px;
+  }
+  .expect-voip-step-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    background: #e6fafd;
+    border: 1.5px solid #c8f0f7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  .expect-voip-step-icon [data-lucide] {
+    width: 20px;
+    height: 20px;
+    stroke: #00c8e0;
+  }
+  .expect-voip-step-body h3 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #0d1f3c;
+    margin: 0 0 8px;
+  }
+  .expect-voip-step-body p {
+    font-size: 0.95rem;
+    color: #4a5568;
+    line-height: 1.75;
+    margin: 0;
+  }
+  .expect-voip-closing {
+    text-align: center;
+    font-family: 'DM Mono', monospace;
+    font-size: 0.82rem;
+    color: #00c8e0;
+    margin-top: 48px;
+  }
+  @media (max-width: 600px) {
+    .expect-voip-step { grid-template-columns: 36px 40px 1fr; gap: 12px; }
+    .expect-voip-step-num { font-size: 1.5rem; }
+    .areas-voip-inner h2, .expect-voip-inner h2 { font-size: 1.35rem; }
+  }
+
 </style>
 
   <!-- HERO -->
@@ -1145,6 +1282,95 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
 
       </div>
+    </div>
+  </section>
+
+  <!-- SECTION 7 — SERVICE AREAS + WHAT TO EXPECT -->
+
+  <!-- PART A: Service Areas -->
+  <section class="areas-voip-section" aria-label="VoIP Phone System Setup Across the Gold Coast">
+    <div class="areas-voip-inner">
+      <h2>VoIP Phone System Setup Across the Gold Coast</h2>
+      <p>Bcom IT Solutions (ABN 92 636 893 108) sets up and supports VoIP phone systems for businesses across the Gold Coast &mdash; Southport, Robina, Burleigh Heads, Nerang, Helensvale, Coomera and Varsity Lakes. Because our platform is cloud-based, most configuration and onboarding can be completed remotely &mdash; minimising disruption to your Gold Coast business. On-site handset installation is available where needed. Our VoIP service can be bundled with managed IT for a single monthly bill. Call <a href="tel:0730418993">07 3041 8993</a> to discuss your requirements or book a consultation online.</p>
+      <div class="suburb-pills">
+        <span class="suburb-pill">Southport</span>
+        <span class="suburb-pill">Burleigh Heads</span>
+        <span class="suburb-pill">Robina</span>
+        <span class="suburb-pill">Nerang</span>
+        <span class="suburb-pill">Helensvale</span>
+        <span class="suburb-pill">Coomera</span>
+        <span class="suburb-pill">Varsity Lakes</span>
+        <span class="suburb-pill">Coolangatta</span>
+        <span class="suburb-pill">Surfers Paradise</span>
+        <span class="suburb-pill">Broadbeach</span>
+      </div>
+      <div class="areas-voip-booking">
+        <!-- Google Calendar Appointment Scheduling begin -->
+        <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+        <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+        <script>
+        (function() {
+          var target = document.currentScript;
+          window.addEventListener('load', function() {
+            calendar.schedulingButton.load({
+              url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ21JsFI48SyH1NJO3oZkyuch15utQ__rWaeHMgfxSppgM_GaVeKRe6Kn0v2oN4XjRgl5D256Up7?gv=true',
+              color: '#039BE5',
+              label: 'Book an appointment',
+              target,
+            });
+          });
+        })();
+        </script>
+        <!-- end Google Calendar Appointment Scheduling -->
+      </div>
+    </div>
+  </section>
+
+  <!-- PART B: What to Expect -->
+  <section class="expect-voip-section" aria-label="What to Expect When Setting Up VoIP for Your Gold Coast Business">
+    <div class="expect-voip-inner">
+      <h2>What to Expect When Setting Up VoIP for Your Gold Coast Business</h2>
+      <p class="expect-voip-intro">Here is what the setup process looks like from your first call to your team making and receiving calls on the new system.</p>
+      <div class="expect-voip-steps">
+
+        <div class="expect-voip-step fade-up">
+          <div class="expect-voip-step-num">01</div>
+          <div class="expect-voip-step-icon"><i aria-hidden="true" data-lucide="phone"></i></div>
+          <div class="expect-voip-step-body">
+            <h3>Call and Describe Your Requirements</h3>
+            <p>Call <a href="tel:0730418993" style="color:#00c8e0;font-weight:600;">07 3041 8993</a> and tell us how many users you need, whether you want to keep your existing phone numbers, whether you use Microsoft Teams, and whether you have existing SIP handsets. We provide an itemised quote &mdash; monthly cost, one-time setup fee and handset costs if applicable &mdash; before you agree to anything.</p>
+          </div>
+        </div>
+
+        <div class="expect-voip-step fade-up">
+          <div class="expect-voip-step-num">02</div>
+          <div class="expect-voip-step-icon"><i aria-hidden="true" data-lucide="settings"></i></div>
+          <div class="expect-voip-step-body">
+            <h3>We Configure Your Platform and Numbers</h3>
+            <p>We set up your cloud PBX environment, allocate or port your existing numbers, configure call routing, hunt groups, voicemail, AI attendant and any Teams direct routing required. Most configuration is completed remotely &mdash; no site visit needed at this stage for software setup.</p>
+          </div>
+        </div>
+
+        <div class="expect-voip-step fade-up">
+          <div class="expect-voip-step-num">03</div>
+          <div class="expect-voip-step-icon"><i aria-hidden="true" data-lucide="monitor"></i></div>
+          <div class="expect-voip-step-body">
+            <h3>Handsets Installed and Teams Connected</h3>
+            <p>If you are using physical handsets we program and install them at your Gold Coast premises. If you are using Teams direct routing we connect your Microsoft 365 environment to our platform and test all call flows. Both can be done in the same visit if needed.</p>
+          </div>
+        </div>
+
+        <div class="expect-voip-step fade-up">
+          <div class="expect-voip-step-num">04</div>
+          <div class="expect-voip-step-icon"><i aria-hidden="true" data-lucide="check-circle"></i></div>
+          <div class="expect-voip-step-body">
+            <h3>Live Testing and Staff Onboarding</h3>
+            <p>We test every number, every extension, every call flow and every AI feature before handover. We walk your Gold Coast team through making calls, transferring, checking voicemail and using any AI features &mdash; so your staff are confident from day one, not learning as they go.</p>
+          </div>
+        </div>
+
+      </div>
+      <p class="expect-voip-closing">Most VoIP setups completed within 1&ndash;3 business days from order. Number porting timeframes depend on your existing carrier.</p>
     </div>
   </section>
 
