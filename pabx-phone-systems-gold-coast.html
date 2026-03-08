@@ -661,6 +661,42 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
+  <!-- SECTION 3: PABX EXPLAINER -->
+  <section class="pabx-explainer-section" aria-label="What Is a PABX">
+    <div class="container" style="max-width:1100px;margin:0 auto;padding:0 40px;">
+      <h2>What Is a PABX and How Long Should One Last?</h2>
+      <p class="pabx-explainer-intro">
+        PABX stands for Private Automatic Branch Exchange &mdash; the on-site hardware unit that manages all internal and external phone calls for your business. Rather than every desk having its own phone line, the PABX connects to one or more external lines and routes calls internally between all extensions. It handles everything from transferring calls and setting up hunt groups to managing voicemail, auto-attendant and DDI numbers. A well-maintained PABX from a quality brand will run reliably for 10&ndash;15 years or more. The decision to repair, upgrade or replace depends on the age of the system, parts availability and whether the current capacity still fits your business.
+      </p>
+      <div class="pabx-explainer-grid">
+        <div class="pabx-exp-card">
+          <div class="pabx-exp-icon">
+            <i aria-hidden="true" data-lucide="server"></i>
+          </div>
+          <h3>New PABX Installation</h3>
+          <p>A new LG Ericsson PABX system correctly sized for your current team with headroom for growth. We supply, install and fully configure the system &mdash; handsets, lines, hunt groups, voicemail and auto-attendant &mdash; at your Gold Coast business premises. Cabling included where required.</p>
+        </div>
+        <div class="pabx-exp-card">
+          <div class="pabx-exp-icon">
+            <i aria-hidden="true" data-lucide="refresh-cw"></i>
+          </div>
+          <h3>PABX Upgrade</h3>
+          <p>Your existing PABX chassis may still have years of life left but need more capacity, updated handsets or firmware upgrades to support current features. We assess your existing system and advise whether an upgrade is cost-effective before recommending a replacement.</p>
+        </div>
+        <div class="pabx-exp-card">
+          <div class="pabx-exp-icon">
+            <i aria-hidden="true" data-lucide="wrench"></i>
+          </div>
+          <h3>PABX Repair</h3>
+          <p>Intermittent faults, failed line cards, dead handsets and system errors on existing Alcatel-Lucent, LG Ericsson, Panasonic and NEC systems diagnosed and repaired &mdash; extending the working life of a system that still meets your Gold Coast business needs.</p>
+        </div>
+      </div>
+      <p class="pabx-explainer-note">
+        Not sure whether your existing PABX is worth repairing, upgrading or replacing? Call <a href="tel:0730418993">07 3041 8993</a> and describe your system &mdash; brand, approximate age and the fault or requirement. We will give you an honest assessment before you spend money on either option.
+      </p>
+    </div>
+  </section>
+
   <!-- ============================================================
      BCOM IT SOLUTIONS — FOOTER COMPONENT
      Include at the bottom of every page body, before </body>
@@ -1202,6 +1238,91 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     .takeaways-inner-pabx {
       grid-template-columns: 1fr;
     }
+  }
+
+  /* ── PABX EXPLAINER SECTION ── */
+  .pabx-explainer-section {
+    background: #ffffff;
+    padding: 80px 0;
+  }
+  .pabx-explainer-section h2 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #0d1f3c;
+    margin: 0 0 20px;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+  }
+  .pabx-explainer-intro {
+    font-size: 1rem;
+    color: #374151;
+    line-height: 1.75;
+    max-width: 820px;
+    margin: 0 0 48px;
+  }
+  .pabx-explainer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-bottom: 40px;
+  }
+  .pabx-exp-card {
+    background: #e6fafd;
+    border-radius: 12px;
+    border-top: 3px solid #00c8e0;
+    padding: 28px 24px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .pabx-exp-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(0,200,224,0.12);
+  }
+  .pabx-exp-icon {
+    width: 44px;
+    height: 44px;
+    background: rgba(0,200,224,0.12);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+  }
+  .pabx-exp-icon [data-lucide] {
+    width: 22px;
+    height: 22px;
+    stroke: #00c8e0;
+  }
+  .pabx-exp-card h3 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #0d1f3c;
+    margin: 0 0 10px;
+  }
+  .pabx-exp-card p {
+    font-size: 0.9rem;
+    color: #374151;
+    line-height: 1.65;
+    margin: 0;
+  }
+  .pabx-explainer-note {
+    font-size: 0.9rem;
+    color: #374151;
+    line-height: 1.7;
+    max-width: 820px;
+    border-top: 1px solid #e2e8f0;
+    padding-top: 28px;
+  }
+  .pabx-explainer-note a {
+    color: #00c8e0;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .pabx-explainer-note a:hover { text-decoration: underline; }
+  @media (max-width: 900px) {
+    .pabx-explainer-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 600px) {
+    .pabx-explainer-grid { grid-template-columns: 1fr; }
   }
 </style>
 
