@@ -847,6 +847,43 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
+  <!-- SECTION 7: WHY CHOOSE US -->
+  <section class="pabx-why-section" aria-label="Why Gold Coast Businesses Choose Bcom IT Solutions for PABX">
+    <div class="container" style="max-width:1100px;margin:0 auto;padding:0 40px;">
+      <h2>Why Gold Coast Businesses Choose Bcom IT Solutions for PABX</h2>
+      <div class="pabx-why-grid">
+        <div class="pabx-why-card">
+          <div class="pabx-why-icon">
+            <i aria-hidden="true" data-lucide="server"></i>
+          </div>
+          <h3>Full PABX Lifecycle Coverage</h3>
+          <p>Installation, relocation, upgrade, repair and expansion &mdash; we cover the complete lifecycle of your on-site PABX system. One Gold Coast provider for everything from commissioning a new system to moving it across town to repairing it ten years later.</p>
+        </div>
+        <div class="pabx-why-card">
+          <div class="pabx-why-icon">
+            <i aria-hidden="true" data-lucide="search"></i>
+          </div>
+          <h3>Honest Repair vs Replace Assessment</h3>
+          <p>We tell you whether your existing PABX is worth repairing or upgrading before recommending a new system. If the fault is a single failed line card and the rest of the system is sound, we will repair it &mdash; not push you toward a $3,000 replacement.</p>
+        </div>
+        <div class="pabx-why-card">
+          <div class="pabx-why-icon">
+            <i aria-hidden="true" data-lucide="cpu"></i>
+          </div>
+          <h3>LG Ericsson Specialists</h3>
+          <p>LG Ericsson is our preferred brand for new PABX installations on the Gold Coast. We know these systems in detail &mdash; correctly sized for your current team with room to expand, fully configured and supported after installation.</p>
+        </div>
+        <div class="pabx-why-card">
+          <div class="pabx-why-icon">
+            <i aria-hidden="true" data-lucide="map-pin"></i>
+          </div>
+          <h3>Local Gold Coast Technicians</h3>
+          <p>Our PABX technicians are based on the Gold Coast &mdash; not interstate contractors. When a fault needs urgent attention or a relocation needs careful coordination, we are nearby and we take responsibility for the outcome.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ============================================================
      BCOM IT SOLUTIONS — FOOTER COMPONENT
      Include at the bottom of every page body, before </body>
@@ -1727,6 +1764,66 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   }
   @media (max-width: 600px) {
     .pabx-relocation-grid { grid-template-columns: 1fr; }
+  }
+
+  /* ── PABX WHY CHOOSE US ── */
+  .pabx-why-section {
+    background: #f8fafb;
+    padding: 80px 0;
+  }
+  .pabx-why-section h2 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #0d1f3c;
+    margin: 0 0 40px;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+  }
+  .pabx-why-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+  .pabx-why-card {
+    background: #ffffff;
+    border-radius: 12px;
+    border-left: 4px solid #00c8e0;
+    padding: 28px 24px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .pabx-why-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(0,200,224,0.10);
+  }
+  .pabx-why-icon {
+    width: 44px;
+    height: 44px;
+    background: rgba(0,200,224,0.10);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+  }
+  .pabx-why-icon [data-lucide] {
+    width: 22px;
+    height: 22px;
+    stroke: #00c8e0;
+  }
+  .pabx-why-card h3 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #0d1f3c;
+    margin: 0 0 10px;
+  }
+  .pabx-why-card p {
+    font-size: 0.9rem;
+    color: #374151;
+    line-height: 1.65;
+    margin: 0;
+  }
+  @media (max-width: 640px) {
+    .pabx-why-grid { grid-template-columns: 1fr; }
   }
 </style>
 
