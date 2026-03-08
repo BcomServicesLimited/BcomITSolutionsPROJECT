@@ -1426,6 +1426,149 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     .dc-faq-question { padding: 16px 18px; }
     .dc-faq-item.open .dc-faq-answer { padding: 0 18px 16px; }
   }
+
+  /* ── CLOSING CTA ── */
+  .dc-cta-banner {
+    position: relative;
+    background: linear-gradient(135deg, #0d1f3c 0%, #1e3a5f 55%, #0d2d3a 100%);
+    border-top: 3px solid #00c8e0;
+    clip-path: polygon(0 6%, 100% 0%, 100% 100%, 0% 100%);
+    padding: 100px 0 72px;
+    overflow: hidden;
+  }
+  .dc-cta-banner::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse at 20% 50%, rgba(0,200,224,0.12) 0%, transparent 60%),
+      radial-gradient(ellipse at 80% 20%, rgba(30,58,95,0.4) 0%, transparent 50%);
+    z-index: 0;
+  }
+  .dc-cta-inner {
+    position: relative;
+    z-index: 1;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 40px;
+    text-align: center;
+  }
+  .dc-cta-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #00c8e0;
+    margin: 0 0 16px;
+  }
+  .dc-cta-banner h2 {
+    font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+    font-weight: 800;
+    color: #ffffff;
+    margin: 0 0 18px;
+    letter-spacing: -0.02em;
+    line-height: 1.15;
+  }
+  .dc-cta-sub {
+    font-size: 1rem;
+    color: rgba(255,255,255,0.78);
+    line-height: 1.7;
+    max-width: 620px;
+    margin: 0 auto 36px;
+  }
+  .dc-cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+  .dc-cta-btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #00c8e0;
+    color: #0d1f3c;
+    font-weight: 700;
+    font-size: 0.97rem;
+    padding: 14px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.2s ease, transform 0.2s ease;
+  }
+  .dc-cta-btn-primary:hover {
+    background: #00b8ce;
+    transform: translateY(-2px);
+  }
+  .dc-cta-btn-primary [data-lucide] {
+    width: 17px;
+    height: 17px;
+    stroke: #0d1f3c;
+  }
+  .dc-cta-btn-ghost {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: transparent;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 0.97rem;
+    padding: 14px 28px;
+    border-radius: 8px;
+    border: 2px solid rgba(255,255,255,0.35);
+    text-decoration: none;
+    transition: border-color 0.2s ease, background 0.2s ease, transform 0.2s ease;
+  }
+  .dc-cta-btn-ghost:hover {
+    border-color: #00c8e0;
+    background: rgba(0,200,224,0.08);
+    transform: translateY(-2px);
+  }
+  .dc-cta-btn-ghost [data-lucide] {
+    width: 17px;
+    height: 17px;
+    stroke: #ffffff;
+  }
+  .dc-cta-reassurance {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    flex-wrap: wrap;
+    border-top: 1px solid rgba(255,255,255,0.12);
+    padding-top: 28px;
+    margin-bottom: 20px;
+  }
+  .dc-cta-reassurance-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: 'DM Mono', monospace;
+    font-size: 0.74rem;
+    font-weight: 600;
+    color: rgba(255,255,255,0.72);
+    letter-spacing: 0.03em;
+  }
+  .dc-cta-reassurance-item [data-lucide] {
+    width: 15px;
+    height: 15px;
+    stroke: #00c8e0;
+    flex-shrink: 0;
+  }
+  .dc-cta-last-updated {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.68rem;
+    color: rgba(255,255,255,0.35);
+    letter-spacing: 0.06em;
+  }
+  @media (max-width: 640px) {
+    .dc-cta-banner {
+      clip-path: none;
+      padding: 72px 0 56px;
+    }
+    .dc-cta-inner { padding: 0 24px; }
+    .dc-cta-reassurance { gap: 18px; }
+  }
 </style>
 
 <!-- NAV JAVASCRIPT -->
@@ -1961,6 +2104,40 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
 
+
+  <!-- SECTION 9: CLOSING CTA -->
+  <section class="dc-cta-banner" aria-label="Data Cabling for Gold Coast Businesses — Contact Bcom IT Solutions">
+    <div class="dc-cta-inner">
+      <p class="dc-cta-label">Gold Coast&#8217;s Trusted Cabling Team</p>
+      <h2>Data Cabling for Gold Coast Businesses &mdash; Any Size Job</h2>
+      <p class="dc-cta-sub">Structured data cabling for Gold Coast small and medium businesses &mdash; new fit-outs, relocations, WiFi access point runs, outdoor cabling, data cabinet supply and installation, and cabinet cleanup. No job too small. Cat5e, Cat6 and fibre. Tested and documented at sign-off.</p>
+      <div class="dc-cta-buttons">
+        <a href="tel:0730418993" class="dc-cta-btn-primary">
+          <i aria-hidden="true" data-lucide="phone"></i>
+          Call 07 3041 8993
+        </a>
+        <a href="mailto:support@bcomservices.com" class="dc-cta-btn-ghost">
+          <i aria-hidden="true" data-lucide="mail"></i>
+          Email Us
+        </a>
+      </div>
+      <div class="dc-cta-reassurance">
+        <span class="dc-cta-reassurance-item">
+          <i aria-hidden="true" data-lucide="cable"></i>
+          Cat5e, Cat6 and fibre
+        </span>
+        <span class="dc-cta-reassurance-item">
+          <i aria-hidden="true" data-lucide="check-circle"></i>
+          Tested and documented at sign-off
+        </span>
+        <span class="dc-cta-reassurance-item">
+          <i aria-hidden="true" data-lucide="plus-circle"></i>
+          No job too small
+        </span>
+      </div>
+      <p class="dc-cta-last-updated">Last updated: March 2026</p>
+    </div>
+  </section>
 
   <!-- ============================================================
      BCOM IT SOLUTIONS — FOOTER COMPONENT
