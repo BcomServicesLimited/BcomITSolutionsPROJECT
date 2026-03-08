@@ -1073,6 +1073,90 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     .nbn-services-section h2 { font-size: 1.35rem; }
     .nbn-conn-types { padding: 22px 18px; }
   }
+
+  /* ── NBN WHY CHOOSE US ── */
+  .nbn-why-section {
+    background: #ffffff;
+    padding: 64px 0;
+  }
+  .nbn-why-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+  .nbn-why-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #00c8e0;
+    margin: 0 0 10px;
+  }
+  .nbn-why-section h2 {
+    font-size: 1.65rem;
+    font-weight: 800;
+    color: #0d1f3c;
+    margin: 0 0 32px;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+    max-width: 760px;
+  }
+  .nbn-why-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .nbn-why-card {
+    background: #f8fafb;
+    border-left: 4px solid #00c8e0;
+    border-radius: 12px;
+    padding: 28px 26px;
+    transition: transform 0.18s ease, box-shadow 0.18s ease;
+  }
+  .nbn-why-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(0,200,224,0.10);
+  }
+  .nbn-why-card-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 12px;
+  }
+  .nbn-why-card-icon {
+    width: 40px;
+    height: 40px;
+    background: #e6fafd;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  .nbn-why-card-icon [data-lucide] {
+    width: 20px;
+    height: 20px;
+    stroke: #00c8e0;
+  }
+  .nbn-why-card h3 {
+    font-size: 1.02rem;
+    font-weight: 700;
+    color: #0d1f3c;
+    margin: 0;
+    line-height: 1.3;
+  }
+  .nbn-why-card p {
+    font-size: 0.9rem;
+    color: #4a5568;
+    line-height: 1.7;
+    margin: 0;
+  }
+  @media (max-width: 640px) {
+    .nbn-why-inner { padding: 0 24px; }
+    .nbn-why-grid { grid-template-columns: 1fr; }
+    .nbn-why-section h2 { font-size: 1.35rem; }
+  }
 </style>
 
 <!-- NAV JAVASCRIPT -->
@@ -1380,6 +1464,57 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </div>
   </section>
+
+  <!-- SECTION 5: WHY CHOOSE US -->
+  <section class="nbn-why-section" aria-label="Why Gold Coast businesses call Bcom IT Solutions for internet support">
+    <div class="nbn-why-inner">
+      <p class="nbn-why-label">Why Choose Us</p>
+      <h2>Why Gold Coast Businesses Call Bcom IT Solutions for Internet Support</h2>
+      <div class="nbn-why-grid">
+        <!-- Card 1 -->
+        <div class="nbn-why-card">
+          <div class="nbn-why-card-header">
+            <div class="nbn-why-card-icon">
+              <i data-lucide="map-pin" aria-hidden="true"></i>
+            </div>
+            <h3>We Actually Show Up</h3>
+          </div>
+          <p>Your internet provider does not have on-site support staff for Gold Coast businesses. We do. A local technician attends your premises, tests your connection end-to-end and diagnoses the fault in person &mdash; the one thing a call centre cannot do.</p>
+        </div>
+        <!-- Card 2 -->
+        <div class="nbn-why-card">
+          <div class="nbn-why-card-header">
+            <div class="nbn-why-card-icon">
+              <i data-lucide="file-text" aria-hidden="true"></i>
+            </div>
+            <h3>Documented Evidence Your Telco Cannot Dismiss</h3>
+          </div>
+          <p>We produce documented test results &mdash; sync speed, attenuation, packet loss, noise margin &mdash; that give your internet provider a specific, technical fault to act on. Vague reports of &ldquo;slow internet&rdquo; get deprioritised. Documented evidence with specific measurements gets escalated.</p>
+        </div>
+        <!-- Card 3 -->
+        <div class="nbn-why-card">
+          <div class="nbn-why-card-header">
+            <div class="nbn-why-card-icon">
+              <i data-lucide="phone-call" aria-hidden="true"></i>
+            </div>
+            <h3>We Handle the Telco Conversation</h3>
+          </div>
+          <p>Dealing with a large telco&rsquo;s technical support process is time-consuming and frustrating for a business owner. We raise the fault ticket, speak to the technical team in their language and follow up on your behalf &mdash; so you can get on with running your Gold Coast business.</p>
+        </div>
+        <!-- Card 4 -->
+        <div class="nbn-why-card">
+          <div class="nbn-why-card-header">
+            <div class="nbn-why-card-icon">
+              <i data-lucide="clock" aria-hidden="true"></i>
+            </div>
+            <h3>Faster Than Waiting for the Telco</h3>
+          </div>
+          <p>NBN technician appointments through your provider can be days or weeks away. Our Gold Coast technicians are typically available same day or next day &mdash; meaning your business internet issue gets attention immediately rather than sitting in a queue.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
 
 
 
