@@ -563,6 +563,127 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   .nav-chevron { margin-left: auto; }
 }
 
+  /* ── SERVICES GRID ── */
+  .services-section-phone {
+    background: #ffffff;
+    padding: 80px 0;
+  }
+  .services-grid-phone {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-bottom: 40px;
+  }
+  .service-card-phone {
+    background: #f8fafb;
+    border-radius: 14px;
+    border-top: 3px solid #00c8e0;
+    padding: 28px 24px;
+    box-shadow: 0 2px 8px rgba(13,31,60,0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .service-card-phone:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(13,31,60,0.10);
+  }
+  .service-card-phone .sc-icon {
+    width: 44px;
+    height: 44px;
+    background: #e6fafd;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 14px;
+  }
+  .service-card-phone .sc-icon [data-lucide] {
+    width: 22px;
+    height: 22px;
+    stroke: #00c8e0;
+  }
+  .service-card-phone h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #0d1f3c;
+    margin-bottom: 10px;
+    line-height: 1.3;
+  }
+  .service-card-phone p {
+    font-size: 0.88rem;
+    color: #374151;
+    line-height: 1.65;
+    margin: 0;
+  }
+  .phone-booking-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 48px;
+  }
+  /* ── PHONE VS DATA CABLING ── */
+  .cabling-compare-section {
+    background: #e6fafd;
+    padding: 56px 0;
+  }
+  .cabling-compare-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    margin-bottom: 24px;
+  }
+  .cabling-compare-col {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 28px 24px;
+    box-shadow: 0 2px 8px rgba(13,31,60,0.05);
+  }
+  .cabling-compare-col h4 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 14px;
+    line-height: 1.3;
+  }
+  .cabling-compare-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .cabling-compare-col li {
+    font-size: 0.88rem;
+    color: #374151;
+    line-height: 1.6;
+    padding-left: 16px;
+    position: relative;
+    margin-bottom: 6px;
+  }
+  .cabling-compare-col li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 8px;
+    width: 6px;
+    height: 6px;
+    background: #00c8e0;
+    border-radius: 50%;
+  }
+  .cabling-note {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.78rem;
+    color: #64748b;
+    text-align: center;
+    border-top: 1px solid #c8f0f7;
+    padding-top: 20px;
+  }
+  .cabling-note a { color: #00c8e0; }
+  @media (max-width: 900px) {
+    .services-grid-phone { grid-template-columns: repeat(2, 1fr); }
+    .cabling-compare-grid { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 600px) {
+    .services-grid-phone { grid-template-columns: 1fr; }
+  }
+
   /* ── KEY TAKEAWAYS ── */
   .takeaways-section-phone {
     background: #e6fafd;
@@ -808,6 +929,99 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <li>Part of our full telecommunications services offering for Gold Coast businesses</li>
         <li>Locally owned and operated &mdash; ABN 92 636 893 108</li>
       </ul>
+    </div>
+  </section>
+
+  <!-- SECTION 3 — SERVICES GRID -->
+  <section class="services-section-phone" aria-label="Phone Line Installation Services Gold Coast">
+    <div class="container">
+      <h2 style="font-size:clamp(1.5rem,3vw,2rem);font-weight:700;color:#0d1f3c;margin-bottom:16px;line-height:1.2;">Phone Line Installation &amp; Cabling Services Gold Coast</h2>
+      <p style="font-size:1rem;color:#374151;line-height:1.7;max-width:680px;margin-bottom:36px;">Phone cabling done properly means clean runs, correctly terminated outlets, accurate labelling and a test result before the job is signed off. Sloppy cabling causes intermittent faults, failed handsets and problems that are expensive to trace months later. We install phone cabling for Gold Coast businesses as part of a phone system installation or as a standalone job. For structured data cabling and Cat6 network cabling see our <a href="network-cabling-for-offices-gold-coast.html" style="color:#00c8e0;font-weight:600;">data cabling Gold Coast</a> page. Phone line cabling is part of our broader <a href="telecommunications-contractor-gold-coast.html" style="color:#00c8e0;font-weight:600;">telecommunications services Gold Coast</a> offering.</p>
+
+      <div class="services-grid-phone">
+        <div class="service-card-phone">
+          <div class="sc-icon"><i aria-hidden="true" data-lucide="building"></i></div>
+          <h3>New Office Fit-out Cabling Gold Coast</h3>
+          <p>All phone outlets installed and tested throughout your new Gold Coast office before furniture arrives and phone systems are connected &mdash; clean cable runs through walls and ceilings, every outlet labelled and confirmed working.</p>
+        </div>
+        <div class="service-card-phone">
+          <div class="sc-icon"><i aria-hidden="true" data-lucide="truck"></i></div>
+          <h3>Office Relocation Cabling Gold Coast</h3>
+          <p>Existing cabling assessed at the new Gold Coast premises &mdash; extended, rerouted or replaced to match your floor plan and handset layout. We work with your relocation timeline to have cabling complete before move-in day.</p>
+        </div>
+        <div class="service-card-phone">
+          <div class="sc-icon"><i aria-hidden="true" data-lucide="plus-circle"></i></div>
+          <h3>Additional Phone Outlet Installation Gold Coast</h3>
+          <p>Extra phone points added to existing Gold Coast offices &mdash; additional desks, meeting rooms, reception areas or back-of-house positions installed without major disruption to the working environment.</p>
+        </div>
+        <div class="service-card-phone">
+          <div class="sc-icon"><i aria-hidden="true" data-lucide="plug"></i></div>
+          <h3>Phone System Cabling Gold Coast</h3>
+          <p>Cabling installed as part of a complete phone system installation &mdash; coordinated with PBX or VoIP handset placement so every run is positioned correctly the first time and nothing needs to be redone after the system is configured.</p>
+        </div>
+        <div class="service-card-phone">
+          <div class="sc-icon"><i aria-hidden="true" data-lucide="search"></i></div>
+          <h3>Cabling Audit &amp; Fault Diagnosis Gold Coast</h3>
+          <p>Existing phone cabling at Gold Coast business premises tested and audited &mdash; identifying faulty runs, mislabelled outlets, loose terminations and cabling that does not meet current requirements before it causes a handset or system failure.</p>
+        </div>
+        <div class="service-card-phone">
+          <div class="sc-icon"><i aria-hidden="true" data-lucide="wrench"></i></div>
+          <h3>Cable Management &amp; Remediation Gold Coast</h3>
+          <p>Messy, exposed or incorrectly run phone cabling at Gold Coast offices tidied, rerouted and brought up to standard &mdash; including cable tray installation, consolidation of cable runs and correct termination of existing outlets.</p>
+        </div>
+      </div>
+
+      <!-- Business booking button -->
+      <div class="phone-booking-wrap">
+        <!-- Google Calendar Appointment Scheduling begin -->
+        <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+        <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+        <script>
+        (function() {
+          var target = document.currentScript;
+          window.addEventListener('load', function() {
+            calendar.schedulingButton.load({
+              url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ21JsFI48SyH1NJO3oZkyuch15utQ__rWaeHMgfxSppgM_GaVeKRe6Kn0v2oN4XjRgl5D256Up7?gv=true',
+              color: '#039BE5',
+              label: 'Book an appointment',
+              target,
+            });
+          });
+        })();
+        </script>
+        <!-- end Google Calendar Appointment Scheduling -->
+        <span style="font-family:'DM Mono',monospace;font-size:0.82rem;color:#64748b;">Or call <a href="tel:0730418993" style="color:#00c8e0;font-weight:600;">07 3041 8993</a></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4 — PHONE VS DATA CABLING COMPARISON -->
+  <section class="cabling-compare-section" aria-label="Phone Line Cabling vs Structured Data Cabling">
+    <div class="container">
+      <h3 style="font-size:clamp(1.2rem,2.5vw,1.6rem);font-weight:700;color:#0d1f3c;margin-bottom:28px;line-height:1.3;text-align:center;">Phone Line Cabling vs Structured Data Cabling &mdash; Which Do You Need?</h3>
+      <div class="cabling-compare-grid">
+        <div class="cabling-compare-col">
+          <h4 style="color:#00c8e0;">Phone Line Cabling</h4>
+          <ul>
+            <li>Analogue and digital phone lines for desk handsets</li>
+            <li>PABX, PBX and VoIP handset connections</li>
+            <li>Extension outlets for existing phone systems</li>
+            <li>Internal phone wiring between PBX and handset locations</li>
+            <li>This page &mdash; phone-line-installation-cabling-gold-coast.html</li>
+          </ul>
+        </div>
+        <div class="cabling-compare-col">
+          <h4 style="color:#0d1f3c;">Structured Data Cabling</h4>
+          <ul>
+            <li>Cat5e and Cat6 cabling for computers and network devices</li>
+            <li>Patch panels, data outlets and server room cabling</li>
+            <li>Network switches and access point cabling runs</li>
+            <li>Suitable for both data and VoIP handsets on IP networks</li>
+            <li>See our data cabling Gold Coast page for this service</li>
+          </ul>
+        </div>
+      </div>
+      <p class="cabling-note">Not sure which type of cabling you need? Call <a href="tel:0730418993">07 3041 8993</a> and describe your phone system and office setup &mdash; we will advise the right approach.</p>
     </div>
   </section>
 
