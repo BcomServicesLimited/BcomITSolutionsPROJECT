@@ -562,6 +562,149 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   .mega-panel-footer { display: none; }
   .nav-chevron { margin-left: auto; }
 }
+
+  /* ══════════════════════════════════════════════════════════
+     DATA CABLING PAGE — SCOPED STYLES
+     All classes prefixed dc- to avoid conflicts
+  ══════════════════════════════════════════════════════════ */
+
+  /* ── HERO ── */
+  .dc-hero {
+    position: relative;
+    min-height: 75vh;
+    display: flex;
+    align-items: center;
+    background-image: url('assets/images/data-cabling-hero.webp');
+    background-size: cover;
+    background-position: center 30%;
+    overflow: hidden;
+  }
+  .dc-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      135deg,
+      rgba(30,58,95,0.72) 0%,
+      rgba(13,31,60,0.58) 100%
+    );
+    z-index: 0;
+  }
+  .dc-hero-inner {
+    position: relative;
+    z-index: 1;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 56px 40px;
+    width: 100%;
+  }
+  .dc-hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(0,200,224,0.15);
+    border: 1px solid rgba(0,200,224,0.35);
+    color: #e6fafd;
+    font-family: 'DM Mono', monospace;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 6px 14px;
+    border-radius: 20px;
+    margin-bottom: 24px;
+  }
+  .dc-hero-badge .status-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #00c8e0;
+    display: inline-block;
+    animation: pulse-dot 2s infinite;
+  }
+  @keyframes pulse-dot {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.4; }
+  }
+  .dc-hero h1 {
+    font-size: clamp(2rem, 4.5vw, 3.2rem);
+    font-weight: 800;
+    color: #ffffff;
+    line-height: 1.1;
+    margin: 0 0 20px;
+    letter-spacing: -0.03em;
+    max-width: 700px;
+  }
+  .dc-hero h1 .text-gradient {
+    background: linear-gradient(90deg, #00c8e0, #7ee8f5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .dc-hero-sub {
+    font-size: 1.05rem;
+    color: rgba(255,255,255,0.82);
+    line-height: 1.7;
+    max-width: 600px;
+    margin: 0 0 32px;
+  }
+  .dc-hero-actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+  .dc-hero-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #00c8e0;
+    color: #0d1f3c;
+    font-weight: 700;
+    font-size: 0.95rem;
+    padding: 13px 26px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.2s ease, transform 0.2s ease;
+  }
+  .dc-hero-cta:hover {
+    background: #00b8ce;
+    transform: translateY(-2px);
+  }
+  .dc-hero-cta [data-lucide] {
+    width: 17px;
+    height: 17px;
+    stroke: #0d1f3c;
+  }
+  /* trust strip */
+  .dc-trust-strip {
+    display: flex;
+    gap: 28px;
+    flex-wrap: wrap;
+    border-top: 1px solid rgba(255,255,255,0.15);
+    padding-top: 24px;
+  }
+  .dc-trust-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: 'DM Mono', monospace;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: rgba(255,255,255,0.78);
+    letter-spacing: 0.03em;
+  }
+  .dc-trust-item [data-lucide] {
+    width: 15px;
+    height: 15px;
+    stroke: #00c8e0;
+    flex-shrink: 0;
+  }
+  @media (max-width: 640px) {
+    .dc-hero-inner { padding: 48px 24px; }
+    .dc-hero h1 { font-size: 1.9rem; }
+    .dc-trust-strip { gap: 16px; }
+  }
 </style>
 
 <!-- NAV JAVASCRIPT -->
@@ -598,22 +741,31 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 })();
 </script>
 
-  <!-- HERO -->
-  <section style="background:#f8fafb;padding:80px 0;text-align:center;" aria-label="Hero — Data Cabling">
-    <div class="container" style="max-width:760px;margin:0 auto;padding:0 24px;">
-      <span class="hero-badge" style="display:inline-flex;align-items:center;gap:8px;background:#e6fafd;color:#0d1f3c;font-family:'DM Mono',monospace;font-size:0.72rem;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;padding:6px 14px;border-radius:20px;margin-bottom:24px;">
+  <!-- SECTION 1: HERO -->
+  <section class="dc-hero" aria-label="Data Cabling Gold Coast — Bcom IT Solutions">
+    <div class="dc-hero-overlay" aria-hidden="true"></div>
+    <img
+      src="assets/images/data-cabling-hero.webp"
+      alt="Data cabling and structured cabling Gold Coast — Bcom IT Solutions"
+      loading="lazy"
+      style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-1;opacity:0;"
+      aria-hidden="true"
+    />
+    <div class="dc-hero-inner">
+      <span class="dc-hero-badge">
         <span class="status-dot" aria-hidden="true"></span>
-        Business IT · Gold Coast
+        Business IT &middot; Gold Coast
       </span>
-      <h1 style="font-size:clamp(1.8rem,4vw,2.8rem);font-weight:800;color:#0d1f3c;line-height:1.15;margin:0 0 20px;">
-        Data Cabling <span class="text-gradient">Gold Coast</span>
-      </h1>
-      <p class="hero-sub" style="font-size:1.05rem;color:#4a5568;max-width:560px;margin:0 auto 32px;">
-        This page is coming soon. In the meantime, call us on
-        <a href="tel:0730418993" style="color:#00c8e0;font-weight:600;">07 3041 8993</a> or
-        book online below.
+      <h1>Data Cabling <span class="text-gradient">Gold Coast</span></h1>
+      <p class="dc-hero-sub">
+        Structured data cabling for Gold Coast small and medium businesses &mdash; new office fit-outs, office relocations, WiFi access point runs, outdoor cabling, data cabinet supply and installation, and data cabinet cleanup. No job too small. Cat5e, Cat6 and fibre. Tested and certified before sign-off.
       </p>
-      <!-- Google Calendar Appointment Scheduling begin -->
+      <div class="dc-hero-actions">
+        <a href="tel:0730418993" class="dc-hero-cta">
+          <i aria-hidden="true" data-lucide="phone"></i>
+          Call 07 3041 8993
+        </a>
+        <!-- Google Calendar Appointment Scheduling begin -->
 <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
 <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
 <script>
@@ -630,6 +782,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 })();
 </script>
 <!-- end Google Calendar Appointment Scheduling -->
+      </div>
+      <div class="dc-trust-strip">
+        <span class="dc-trust-item">
+          <i aria-hidden="true" data-lucide="cable"></i>
+          Cat5e, Cat6 and fibre
+        </span>
+        <span class="dc-trust-item">
+          <i aria-hidden="true" data-lucide="wifi"></i>
+          WiFi access point cabling
+        </span>
+        <span class="dc-trust-item">
+          <i aria-hidden="true" data-lucide="server"></i>
+          Data cabinet supply and install
+        </span>
+      </div>
     </div>
   </section>
 
