@@ -913,6 +913,134 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   .faq-phone-answer p a:hover { color: #0d1f3c; }
   .faq-phone-answer[hidden] { display: none; }
 
+  /* ── CLOSING CTA ── */
+  .cta-phone-banner {
+    position: relative;
+    background: linear-gradient(135deg, #0d1f3c 0%, #1e3a5f 50%, #0d2d3a 100%);
+    border-top: 3px solid #00c8e0;
+    clip-path: polygon(0 6%, 100% 0%, 100% 100%, 0% 100%);
+    padding: 110px 24px 80px;
+    text-align: center;
+    overflow: hidden;
+  }
+  .cta-phone-banner::before {
+    content: '';
+    position: absolute;
+    top: -60px; left: -60px;
+    width: 320px; height: 320px;
+    background: radial-gradient(circle, rgba(0,200,224,0.12) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .cta-phone-banner::after {
+    content: '';
+    position: absolute;
+    bottom: -80px; right: -40px;
+    width: 400px; height: 400px;
+    background: radial-gradient(circle, rgba(0,200,224,0.08) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .cta-phone-inner {
+    position: relative;
+    z-index: 1;
+    max-width: 720px;
+    margin: 0 auto;
+  }
+  .cta-phone-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #00c8e0;
+    margin-bottom: 16px;
+  }
+  .cta-phone-banner h2 {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #ffffff;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    letter-spacing: -0.02em;
+  }
+  .cta-phone-sub {
+    font-size: 1rem;
+    color: rgba(255,255,255,0.75);
+    line-height: 1.7;
+    margin-bottom: 36px;
+    max-width: 580px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .cta-phone-btns {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+  .cta-phone-btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #00c8e0;
+    color: #0d1f3c;
+    font-weight: 700;
+    font-size: 0.97rem;
+    padding: 14px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.2s, transform 0.15s;
+  }
+  .cta-phone-btn-primary:hover { background: #00b4ca; transform: translateY(-2px); }
+  .cta-phone-btn-primary [data-lucide] { width: 18px; height: 18px; stroke: #0d1f3c; }
+  .cta-phone-btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: transparent;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 0.97rem;
+    padding: 14px 28px;
+    border-radius: 8px;
+    border: 1.5px solid rgba(255,255,255,0.35);
+    text-decoration: none;
+    transition: border-color 0.2s, background 0.2s, transform 0.15s;
+  }
+  .cta-phone-btn-secondary:hover { border-color: #00c8e0; background: rgba(0,200,224,0.08); transform: translateY(-2px); }
+  .cta-phone-btn-secondary [data-lucide] { width: 18px; height: 18px; stroke: #ffffff; }
+  .cta-phone-reassurance {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px 40px;
+    border-top: 1px solid rgba(255,255,255,0.12);
+    padding-top: 28px;
+  }
+  .cta-phone-reassurance-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.88rem;
+    color: rgba(255,255,255,0.8);
+    font-weight: 500;
+  }
+  .cta-phone-reassurance-item [data-lucide] { width: 16px; height: 16px; stroke: #00c8e0; flex-shrink: 0; }
+  .last-updated-phone {
+    text-align: center;
+    font-family: 'DM Mono', monospace;
+    font-size: 0.75rem;
+    color: #94a3b8;
+    padding: 16px 24px;
+    background: #ffffff;
+    border-bottom: 1px solid #f1f5f9;
+  }
+  @media (max-width: 640px) {
+    .cta-phone-banner { clip-path: none; padding: 60px 20px 60px; }
+    .cta-phone-banner h2 { font-size: 1.5rem; }
+    .cta-phone-btns { flex-direction: column; align-items: center; }
+  }
+
   /* ── KEY TAKEAWAYS ── */
   .takeaways-section-phone {
     background: #e6fafd;
@@ -1450,6 +1578,41 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     });
   })();
   </script>
+
+
+  <!-- SECTION 8 — CLOSING CTA -->
+  <section class="cta-phone-banner" aria-label="Contact Bcom IT Solutions for Phone Line Cabling Gold Coast">
+    <div class="cta-phone-inner">
+      <p class="cta-phone-label">Gold Coast&#39;s Trusted Telecommunications Team</p>
+      <h2>Get Your Gold Coast Office Cabling Done Right First Time</h2>
+      <p class="cta-phone-sub">Phone line installation and cabling for Gold Coast businesses &mdash; new fit-outs, office relocations and handset additions. Every outlet tested and labelled before sign-off. Standalone cabling jobs welcome.</p>
+      <div class="cta-phone-btns">
+        <a href="tel:0730418993" class="cta-phone-btn-primary">
+          <i aria-hidden="true" data-lucide="phone"></i>
+          Call 07 3041 8993
+        </a>
+        <a href="mailto:support@bcomservices.com" class="cta-phone-btn-secondary">
+          <i aria-hidden="true" data-lucide="mail"></i>
+          Email Us
+        </a>
+      </div>
+      <div class="cta-phone-reassurance">
+        <div class="cta-phone-reassurance-item">
+          <i aria-hidden="true" data-lucide="plug"></i>
+          Phone cabling for all system types
+        </div>
+        <div class="cta-phone-reassurance-item">
+          <i aria-hidden="true" data-lucide="check-circle"></i>
+          Tested and labelled at sign-off
+        </div>
+        <div class="cta-phone-reassurance-item">
+          <i aria-hidden="true" data-lucide="map-pin"></i>
+          Local Gold Coast tradespeople
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="last-updated-phone">Last updated: March 2026</div>
 
   <!-- ============================================================
      BCOM IT SOLUTIONS — FOOTER COMPONENT
