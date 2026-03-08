@@ -701,6 +701,53 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     .hero-voip h1 { font-size: 1.9rem; }
     .hero-voip .hero-content { padding: 40px 0; }
   }
+  /* ── KEY TAKEAWAYS ── */
+  .takeaways-section {
+    background: #e6fafd;
+    padding: 48px 0;
+    border-bottom: 1px solid #c8f0f7;
+  }
+  .takeaways-inner {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+  .takeaways-inner h2 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #0d1f3c;
+    margin-bottom: 16px;
+    font-family: 'DM Mono', monospace;
+    letter-spacing: 0.02em;
+  }
+  .takeaways-inner ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px 32px;
+  }
+  .takeaways-inner li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 0.9rem;
+    color: #1e3a5f;
+    line-height: 1.55;
+  }
+  .takeaways-inner li::before {
+    content: '';
+    flex-shrink: 0;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #00c8e0;
+    margin-top: 6px;
+  }
+  @media (max-width: 640px) {
+    .takeaways-inner ul { grid-template-columns: 1fr; }
+  }
   /* ── PRICING SECTION ── */
   .pricing-section { background: #f8fafb; padding: 80px 0; }
   .pricing-header { text-align: center; margin-bottom: 48px; }
