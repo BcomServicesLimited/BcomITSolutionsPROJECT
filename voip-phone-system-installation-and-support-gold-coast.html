@@ -782,6 +782,100 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   .pricing-note a:hover { color: #0d1f3c; }
   @media (max-width: 900px) { .pricing-grid { grid-template-columns: 1fr 1fr; } }
   @media (max-width: 600px) { .pricing-grid { grid-template-columns: 1fr; } }
+
+  /* ── VOIP SERVICES SECTION ── */
+  .voip-services-section { background: white; padding: 80px 0; }
+  .voip-services-header { text-align: center; margin-bottom: 48px; }
+  .voip-services-header h2 { font-size: 1.9rem; font-weight: 700; color: #0d1f3c; margin-bottom: 12px; }
+  .voip-services-header p { font-size: 1rem; color: #4a5568; max-width: 640px; margin: 0 auto; line-height: 1.7; }
+  .voip-services-header a { color: #00c8e0; text-decoration: underline; }
+  .voip-services-header a:hover { color: #0d1f3c; }
+  .voip-services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    margin-bottom: 48px;
+  }
+  .voip-services-booking { text-align: center; }
+  @media (max-width: 900px) { .voip-services-grid { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 600px) { .voip-services-grid { grid-template-columns: 1fr; } }
+  /* ── TEAMS HIGHLIGHT SECTION ── */
+  .teams-highlight-section {
+    background: #e6fafd;
+    padding: 64px 0;
+    border-top: 1px solid #c8f0f7;
+    border-bottom: 1px solid #c8f0f7;
+  }
+  .teams-highlight-h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #0d1f3c;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .teams-highlight-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 32px;
+  }
+  .teams-highlight-col {
+    background: white;
+    border-radius: 12px;
+    padding: 28px 32px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+  }
+  .teams-col-heading {
+    font-size: 0.95rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+    letter-spacing: 0.01em;
+  }
+  .teams-col-heading--accent { color: #00c8e0; }
+  .teams-col-heading--primary { color: #0d1f3c; }
+  .teams-highlight-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .teams-highlight-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 0.92rem;
+    color: #1e3a5f;
+    line-height: 1.6;
+    padding: 6px 0;
+    border-bottom: 1px solid #f0f4f8;
+  }
+  .teams-highlight-list li:last-child { border-bottom: none; }
+  .teams-highlight-list li::before {
+    content: '';
+    flex-shrink: 0;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #00c8e0;
+    margin-top: 7px;
+  }
+  .teams-highlight-note {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.78rem;
+    color: #64748b;
+    line-height: 1.7;
+    text-align: center;
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 16px 0 0;
+    border-top: 1px solid #c8f0f7;
+  }
+  .teams-highlight-note a { color: #00c8e0; text-decoration: none; font-weight: 600; }
+  .teams-highlight-note a:hover { color: #0d1f3c; }
+  @media (max-width: 640px) {
+    .teams-highlight-grid { grid-template-columns: 1fr; gap: 20px; }
+    .teams-highlight-h3 { font-size: 1.25rem; }
+  }
+
 </style>
 
   <!-- HERO -->
@@ -882,6 +976,106 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <p class="pricing-note fade-up">All pricing excludes GST. Fair use policy applies to unlimited call inclusions &mdash; standard business call volumes are covered. International calls outside Australia and New Zealand charged separately at standard rates. Call <a href="tel:0730418993">07 3041 8993</a> for a full quote based on your team size and requirements.</p>
     </div>
   </section>
+
+  <!-- SECTION 4 — SERVICES GRID -->
+  <section class="voip-services-section" aria-label="VoIP Phone System Services for Gold Coast Businesses">
+    <div class="container">
+      <div class="voip-services-header fade-up">
+        <h2>VoIP Phone System Services for Gold Coast Businesses</h2>
+        <p>We run our own cloud PBX platform &mdash; not a third-party reseller &mdash; so we control the service, the pricing and the support. VoIP can be bundled with our managed IT services for Gold Coast businesses, meaning your phone system and IT support are covered by a single provider on a single monthly bill. For traditional on-site and cloud PBX installations see our <a href="business-phone-systems-gold-coast.html">business phone systems Gold Coast</a> page. VoIP is part of our broader <a href="telecommunications-contractor-gold-coast.html">telecommunications services Gold Coast</a> offering.</p>
+      </div>
+      <div class="voip-services-grid">
+
+        <div class="service-card fade-up" style="transition-delay:0.05s">
+          <div class="icon-circle"><i aria-hidden="true" data-lucide="cloud"></i></div>
+          <h3>Cloud PBX VoIP Setup Gold Coast</h3>
+          <p>Full setup and configuration of your Gold Coast business on our own cloud PBX platform &mdash; number allocation or porting, handset programming, call routing, hunt groups, voicemail and auto-attendant all configured and ready on day one.</p>
+        </div>
+
+        <div class="service-card fade-up" style="transition-delay:0.1s">
+          <div class="icon-circle"><i aria-hidden="true" data-lucide="monitor"></i></div>
+          <h3>Microsoft Teams Direct Routing Gold Coast</h3>
+          <p>Connect our VoIP platform to your Microsoft Teams environment via direct routing &mdash; your Gold Coast team makes and receives business calls directly inside Teams on PC, Mac or mobile without a separate phone app or handset.</p>
+        </div>
+
+        <div class="service-card fade-up" style="transition-delay:0.15s">
+          <div class="icon-circle"><i aria-hidden="true" data-lucide="smartphone"></i></div>
+          <h3>Yealink &amp; Teams Phone Supply Gold Coast</h3>
+          <p>Supply and configuration of certified Microsoft Teams phones including Yealink Teams Phones for Gold Coast businesses &mdash; fully integrated with Teams and your cloud PBX, no separate SIP configuration required.</p>
+        </div>
+
+        <div class="service-card fade-up" style="transition-delay:0.2s">
+          <div class="icon-circle"><i aria-hidden="true" data-lucide="bot"></i></div>
+          <h3>AI Attendant Setup Gold Coast</h3>
+          <p>Intelligent auto-attendant configured for your Gold Coast business &mdash; handles and routes incoming calls, manages out-of-hours responses and reduces the need for a dedicated receptionist to answer every call.</p>
+        </div>
+
+        <div class="service-card fade-up" style="transition-delay:0.25s">
+          <div class="icon-circle"><i aria-hidden="true" data-lucide="mail"></i></div>
+          <h3>Voicemail Transcription &amp; Sentiment Analysis Gold Coast</h3>
+          <p>Voicemails transcribed to text and delivered to email &mdash; no more listening to every message. AI-powered sentiment analysis available for Gold Coast businesses that want visibility into the tone and outcome of customer calls.</p>
+        </div>
+
+        <div class="service-card fade-up" style="transition-delay:0.3s">
+          <div class="icon-circle"><i aria-hidden="true" data-lucide="layers"></i></div>
+          <h3>VoIP + Managed IT Bundle Gold Coast</h3>
+          <p>Combine your VoIP phone system and IT support into a single managed package &mdash; one provider, one monthly bill, one point of contact for everything. Ask us about bundling VoIP with managed IT services for your Gold Coast business.</p>
+        </div>
+
+      </div>
+
+      <div class="voip-services-booking fade-up">
+        <!-- Google Calendar Appointment Scheduling begin -->
+        <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+        <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+        <script>
+        (function() {
+          var target = document.currentScript;
+          window.addEventListener('load', function() {
+            calendar.schedulingButton.load({
+              url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ21JsFI48SyH1NJO3oZkyuch15utQ__rWaeHMgfxSppgM_GaVeKRe6Kn0v2oN4XjRgl5D256Up7?gv=true',
+              color: '#039BE5',
+              label: 'Book an appointment',
+              target,
+            });
+          });
+        })();
+        </script>
+        <!-- end Google Calendar Appointment Scheduling -->
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 5 — TEAMS INTEGRATION HIGHLIGHT -->
+  <section class="teams-highlight-section" aria-label="Microsoft Teams as Your Business Phone — Gold Coast">
+    <div class="container">
+      <h3 class="teams-highlight-h3">Microsoft Teams as Your Business Phone &mdash; Gold Coast</h3>
+      <div class="teams-highlight-grid">
+        <div class="teams-highlight-col">
+          <h4 class="teams-col-heading teams-col-heading--accent">What Teams Direct Routing Does</h4>
+          <ul class="teams-highlight-list">
+            <li>Makes and receives business calls inside Microsoft Teams</li>
+            <li>No separate phone app or additional softphone needed</li>
+            <li>Works on PC, Mac, iOS and Android</li>
+            <li>Your existing Teams chat, meetings and calls in one place</li>
+            <li>Calls use your business number, not your mobile number</li>
+          </ul>
+        </div>
+        <div class="teams-highlight-col">
+          <h4 class="teams-col-heading teams-col-heading--primary">What You Need</h4>
+          <ul class="teams-highlight-list">
+            <li>Microsoft 365 Business or Enterprise licence with Teams</li>
+            <li>Our VoIP platform connected via direct routing (we handle setup)</li>
+            <li>A Teams-compatible device &mdash; PC, Mac, mobile or Yealink Teams Phone</li>
+            <li>No on-site PBX hardware required</li>
+            <li>Existing SIP phones can still be used alongside Teams</li>
+          </ul>
+        </div>
+      </div>
+      <p class="teams-highlight-note fade-up">Already using Microsoft 365 and Teams? Direct routing is the fastest way to replace your existing phone system without changing how your team works. Call <a href="tel:0730418993">07 3041 8993</a> to discuss your setup.</p>
+    </div>
+  </section>
+
 
   <!-- ============================================================
      BCOM IT SOLUTIONS — FOOTER COMPONENT
