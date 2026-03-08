@@ -562,6 +562,108 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   .mega-panel-footer { display: none; }
   .nav-chevron { margin-left: auto; }
 }
+
+  /* ── HERO ── */
+  .hero-phone-line {
+    position: relative;
+    min-height: 75vh;
+    background-image: url('assets/images/phone-line-installation-hero.webp');
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+  .hero-phone-line::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(30,58,95,0.72) 0%, rgba(13,31,60,0.58) 100%);
+    z-index: 1;
+  }
+  .hero-phone-line::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(rgba(0,200,224,0.07) 1px, transparent 1px);
+    background-size: 28px 28px;
+    z-index: 2;
+    pointer-events: none;
+  }
+  .hero-phone-line .hero-content {
+    position: relative;
+    z-index: 3;
+    padding: 56px 0;
+    max-width: 680px;
+  }
+  .hero-phone-line .hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(0,200,224,0.35);
+    border-radius: 24px;
+    padding: 6px 16px;
+    font-family: 'DM Mono', monospace;
+    font-size: 0.72rem;
+    color: rgba(255,255,255,0.9);
+    letter-spacing: 0.04em;
+    margin-bottom: 20px;
+  }
+  .hero-phone-line h1 {
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: white;
+    line-height: 1.15;
+    margin-bottom: 16px;
+    letter-spacing: -0.02em;
+  }
+  .hero-phone-line .hero-sub {
+    font-size: 1.05rem;
+    color: rgba(255,255,255,0.8);
+    line-height: 1.7;
+    margin-bottom: 28px;
+    max-width: 560px;
+  }
+  .hero-phone-line .hero-cta-row {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+  }
+  .hero-phone-line .hero-call-link {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.9rem;
+    color: #00c8e0;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .hero-phone-line .hero-call-link:hover { color: white; }
+  .hero-phone-line .hero-trust-strip {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .hero-phone-line .hero-trust-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.82rem;
+    color: rgba(255,255,255,0.7);
+    font-family: 'DM Sans', sans-serif;
+  }
+  .hero-phone-line .hero-trust-item [data-lucide] {
+    width: 15px;
+    height: 15px;
+    stroke: #00c8e0;
+  }
+  @media (max-width: 640px) {
+    .hero-phone-line { min-height: 60vh; }
+    .hero-phone-line h1 { font-size: 1.9rem; }
+    .hero-phone-line .hero-content { padding: 40px 0; }
+  }
 </style>
 
 <!-- NAV JAVASCRIPT -->
@@ -599,38 +701,46 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </script>
 
   <!-- HERO -->
-  <section style="background:#f8fafb;padding:80px 0;text-align:center;" aria-label="Hero — Phone Line Installation &amp; Cabling">
-    <div class="container" style="max-width:760px;margin:0 auto;padding:0 24px;">
-      <span class="hero-badge" style="display:inline-flex;align-items:center;gap:8px;background:#e6fafd;color:#0d1f3c;font-family:'DM Mono',monospace;font-size:0.72rem;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;padding:6px 14px;border-radius:20px;margin-bottom:24px;">
-        <span class="status-dot" aria-hidden="true"></span>
-        Business IT · Gold Coast
-      </span>
-      <h1 style="font-size:clamp(1.8rem,4vw,2.8rem);font-weight:800;color:#0d1f3c;line-height:1.15;margin:0 0 20px;">
-        Phone Line Installation &amp; Cabling <span class="text-gradient">Gold Coast</span>
-      </h1>
-      <p class="hero-sub" style="font-size:1.05rem;color:#4a5568;max-width:560px;margin:0 auto 32px;">
-        This page is coming soon. In the meantime, call us on
-        <a href="tel:0730418993" style="color:#00c8e0;font-weight:600;">07 3041 8993</a> or
-        book online below.
-      </p>
-      <!-- Google Calendar Appointment Scheduling begin -->
-<link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
-<script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
-<script>
-(function() {
-  var target = document.currentScript;
-  window.addEventListener('load', function() {
-    calendar.schedulingButton.load({
-      url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ21JsFI48SyH1NJO3oZkyuch15utQ__rWaeHMgfxSppgM_GaVeKRe6Kn0v2oN4XjRgl5D256Up7?gv=true',
-      color: '#039BE5',
-      label: 'Book an appointment',
-      target,
-    });
-  });
-})();
-</script>
-<!-- end Google Calendar Appointment Scheduling -->
+  <section class="hero-phone-line" aria-label="Phone Line Installation &amp; Cabling Gold Coast">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge fade-up">
+          <span class="status-dot" aria-hidden="true"></span> Business IT &middot; Gold Coast
+        </div>
+        <h1 class="fade-up" style="transition-delay:0.1s">
+          Phone Line Installation &amp; Cabling <span class="text-gradient">Gold Coast</span>
+        </h1>
+        <p class="hero-sub fade-up" style="transition-delay:0.2s">
+          Need phone lines run through your Gold Coast office &mdash; for a new fit-out, office move, additional handsets or a new phone system installation? Bcom IT Solutions installs internal phone cabling for Gold Coast businesses &mdash; neat, correctly labelled and tested before we leave. We work alongside your phone system installation or as a standalone cabling job.
+        </p>
+        <div class="hero-cta-row fade-up" style="transition-delay:0.3s">
+          <!-- Google Calendar Appointment Scheduling begin -->
+          <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+          <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+          <script>
+          (function() {
+            var target = document.currentScript;
+            window.addEventListener('load', function() {
+              calendar.schedulingButton.load({
+                url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ21JsFI48SyH1NJO3oZkyuch15utQ__rWaeHMgfxSppgM_GaVeKRe6Kn0v2oN4XjRgl5D256Up7?gv=true',
+                color: '#039BE5',
+                label: 'Book an appointment',
+                target,
+              });
+            });
+          })();
+          </script>
+          <!-- end Google Calendar Appointment Scheduling -->
+          <a href="tel:0730418993" class="hero-call-link">or call <a href="tel:0730418993">07 3041 8993</a></a>
+        </div>
+        <div class="hero-trust-strip fade-up" style="transition-delay:0.4s">
+          <span class="hero-trust-item"><i aria-hidden="true" data-lucide="plug"></i> Internal phone cabling for offices</span>
+          <span class="hero-trust-item"><i aria-hidden="true" data-lucide="check-circle"></i> Tested and labelled before sign-off</span>
+          <span class="hero-trust-item"><i aria-hidden="true" data-lucide="map-pin"></i> Gold Coast local</span>
+        </div>
+      </div>
     </div>
+    <img src="assets/images/phone-line-installation-hero.webp" alt="Phone line installation and cabling Gold Coast — Bcom IT Solutions" loading="lazy" style="display:none;" aria-hidden="true">
   </section>
 
   <!-- ============================================================
