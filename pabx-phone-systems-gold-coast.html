@@ -811,6 +811,42 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
+  <!-- SECTION 6: PABX RELOCATION -->
+  <section class="pabx-relocation-section" aria-label="PABX Office Relocation Gold Coast">
+    <div class="container" style="max-width:1100px;margin:0 auto;padding:0 40px;">
+      <h2>Moving Your Gold Coast Office? Your PABX Needs a Plan</h2>
+      <p class="pabx-relocation-intro">
+        Relocating a PABX is not the same as relocating a PC. It is a hardware system with physical line connections, internal wiring, programmed configuration and sometimes ageing components that need careful handling. Businesses that move their PABX without planning often arrive at the new premises to discover missing cabling, incorrect line connections, lost programming or a system fault triggered by the move. We handle PABX relocations as a planned, documented job &mdash; not an afterthought on moving day.
+      </p>
+      <div class="pabx-relocation-grid">
+        <div class="pabx-reloc-card">
+          <div class="pabx-reloc-icon">
+            <i aria-hidden="true" data-lucide="clipboard"></i>
+          </div>
+          <h3>Pre-Move Assessment</h3>
+          <p>We visit your new Gold Coast premises before moving day &mdash; checking existing cabling, confirming the new location for the PABX cabinet, identifying what cabling needs to be run and noting anything that needs attention before the system arrives. You know exactly what is needed before a single cable is touched.</p>
+        </div>
+        <div class="pabx-reloc-card">
+          <div class="pabx-reloc-icon">
+            <i aria-hidden="true" data-lucide="truck"></i>
+          </div>
+          <h3>Professional Disconnection and Reinstallation</h3>
+          <p>The PABX is professionally disconnected, all programming documented, the unit transported safely and reinstalled at the new Gold Coast premises. Lines reconnected, handsets programmed to the new layout, all features tested before the job is signed off.</p>
+        </div>
+        <div class="pabx-reloc-card">
+          <div class="pabx-reloc-icon">
+            <i aria-hidden="true" data-lucide="check-circle"></i>
+          </div>
+          <h3>Minimum Downtime</h3>
+          <p>We plan the relocation around your move date so your Gold Coast business has phone service restored as quickly as possible. For businesses that cannot afford downtime we discuss same-day reinstallation options during the pre-move assessment.</p>
+        </div>
+      </div>
+      <p class="pabx-relocation-note">
+        Planning an office move on the Gold Coast? Call <a href="tel:0730418993">07 3041 8993</a> as early as possible &mdash; the more lead time we have, the smoother the PABX relocation.
+      </p>
+    </div>
+  </section>
+
   <!-- ============================================================
      BCOM IT SOLUTIONS — FOOTER COMPONENT
      Include at the bottom of every page body, before </body>
@@ -1606,6 +1642,91 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   @media (max-width: 600px) {
     .pabx-services-grid { grid-template-columns: 1fr; }
     .pabx-brands-grid { grid-template-columns: 1fr; }
+  }
+
+  /* ── PABX RELOCATION SECTION ── */
+  .pabx-relocation-section {
+    background: #ffffff;
+    padding: 80px 0;
+  }
+  .pabx-relocation-section h2 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #0d1f3c;
+    margin: 0 0 20px;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+  }
+  .pabx-relocation-intro {
+    font-size: 1rem;
+    color: #374151;
+    line-height: 1.75;
+    max-width: 820px;
+    margin: 0 0 48px;
+  }
+  .pabx-relocation-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-bottom: 36px;
+  }
+  .pabx-reloc-card {
+    background: #e6fafd;
+    border-radius: 12px;
+    border-top: 3px solid #00c8e0;
+    padding: 28px 24px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .pabx-reloc-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(0,200,224,0.12);
+  }
+  .pabx-reloc-icon {
+    width: 44px;
+    height: 44px;
+    background: rgba(0,200,224,0.12);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+  }
+  .pabx-reloc-icon [data-lucide] {
+    width: 22px;
+    height: 22px;
+    stroke: #00c8e0;
+  }
+  .pabx-reloc-card h3 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #0d1f3c;
+    margin: 0 0 10px;
+  }
+  .pabx-reloc-card p {
+    font-size: 0.9rem;
+    color: #374151;
+    line-height: 1.65;
+    margin: 0;
+  }
+  .pabx-relocation-note {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.82rem;
+    color: #64748b;
+    border-top: 1px solid #e2e8f0;
+    padding-top: 24px;
+    line-height: 1.6;
+  }
+  .pabx-relocation-note a {
+    color: #00c8e0;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .pabx-relocation-note a:hover { text-decoration: underline; }
+  @media (max-width: 900px) {
+    .pabx-relocation-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 600px) {
+    .pabx-relocation-grid { grid-template-columns: 1fr; }
   }
 </style>
 
