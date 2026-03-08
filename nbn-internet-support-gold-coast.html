@@ -1559,6 +1559,73 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     .nbn-cta-section h2 { font-size: 1.4rem; }
     .nbn-cta-reassurance { gap: 16px; }
   }
+
+  /* ── NBN ARTICLE SECTIONS ── */
+  .nbn-article-section {
+    padding: 64px 0;
+  }
+  .nbn-article-section.bg-white { background: #ffffff; }
+  .nbn-article-section.bg-light { background: #f8fafb; }
+  .nbn-article-inner {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+  .nbn-article-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #00c8e0;
+    margin: 0 0 10px;
+  }
+  .nbn-article-section h3.nbn-article-h3 {
+    font-size: 1.45rem;
+    font-weight: 800;
+    color: #0d1f3c;
+    margin: 0 0 20px;
+    letter-spacing: -0.02em;
+    line-height: 1.25;
+  }
+  .nbn-article-section h4.nbn-article-h4 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #1e3a5f;
+    margin: 28px 0 10px;
+    letter-spacing: -0.01em;
+  }
+  .nbn-article-section p {
+    font-size: 0.97rem;
+    color: #374151;
+    line-height: 1.8;
+    margin: 0 0 18px;
+  }
+  .nbn-article-section p a {
+    color: #00c8e0;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .nbn-article-section p a:hover { text-decoration: underline; }
+  .nbn-article-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 28px 0;
+    display: block;
+  }
+  .nbn-article-img-caption {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.72rem;
+    color: #9ca3af;
+    text-align: center;
+    margin: -18px 0 24px;
+  }
+  @media (max-width: 600px) {
+    .nbn-article-inner { padding: 0 24px; }
+    .nbn-article-section h3.nbn-article-h3 { font-size: 1.2rem; }
+    .nbn-article-section h4.nbn-article-h4 { font-size: 0.97rem; }
+  }
 </style>
 
 <!-- NAV JAVASCRIPT -->
@@ -1747,6 +1814,60 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </p>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- ARTICLE 1: Router faults, NBN entry point, relocation -->
+  <section class="nbn-article-section bg-white" aria-label="NBN internet fault diagnosis and router replacement Gold Coast">
+    <div class="nbn-article-inner">
+      <p class="nbn-article-label">NBN &amp; Internet Support — Gold Coast</p>
+      <h3 class="nbn-article-h3">When the Problem Is Not the NBN &mdash; And When It Is</h3>
+
+      <p>Gold Coast businesses dealing with slow or unreliable internet often hear the same thing from their provider: the line is fine on our end. That answer is frustrating, and it is not always wrong. But it is also not always right. The reality is that internet faults in a business premises can originate from several different points in the connection path, and a remote line check from a call centre does not tell you which one.</p>
+
+      <p>Understanding where the fault actually sits is the difference between a 10-minute fix and three weeks of back-and-forth with a call centre that keeps closing your ticket.</p>
+
+      <h4 class="nbn-article-h4">The NBN connection point and what sits beyond it</h4>
+
+      <p>Every Gold Coast business connected to the NBN has a physical entry point on the premises &mdash; an NTD (Network Termination Device) for FTTP, FTTC and HFC connections, or a wall socket for FTTN and FTTB. The NBN Co network ends at that point. Everything from there to your router, your switches, your access points and your devices is your responsibility &mdash; and your provider&rsquo;s responsibility stops at the NBN handoff.</p>
+
+      <p>This boundary matters because it determines who fixes what. If the signal at the NBN entry point is degraded &mdash; low sync speed, high noise margin, excessive attenuation &mdash; that is a network fault and your provider must fix it. If the signal at the entry point is fine but performance degrades between the NTD and your router, the fault is in your internal setup.</p>
+
+      <p>A call centre cannot test this boundary remotely. They can check line status from their end, but they cannot measure what is happening at the NTD inside your Robina or Southport office. That requires someone on-site with the right test equipment.</p>
+
+      <img src="assets/images/nbn-internet-fault-diagnosis-infographic-gold-coast.webp"
+           alt="NBN internet fault diagnosis infographic Gold Coast — where is your internet fault"
+           loading="lazy"
+           width="860" height="483"
+           class="nbn-article-img">
+      <p class="nbn-article-img-caption">Where is your internet fault? An on-site technician tests each point &mdash; a call centre cannot.</p>
+
+      <h4 class="nbn-article-h4">Telco-supplied routers: the most common overlooked cause</h4>
+
+      <p>When a Gold Coast business signs up with an internet provider, they typically receive a router in the mail. Telstra, Aussie Broadband, On The Net and most other providers supply a consumer-grade device &mdash; a Technicolor, Sagemcom or similar &mdash; configured for a residential household. These devices work adequately for a home with a few devices. They are not designed for an office with 15 workstations, a VoIP phone system, multiple access points and a cloud-based accounting platform all running simultaneously.</p>
+
+      <p>The symptoms are recognisable: the internet works fine in the morning, slows down between 10am and 2pm when everyone is online, drops out intermittently, or performs poorly for specific applications like video calls or cloud file sync. The provider runs a line check, finds nothing wrong and closes the ticket.</p>
+
+      <p>The router is often the actual problem. Consumer routers have limited NAT table capacity, weak QoS (Quality of Service) management and basic wireless radios. Under business load, they struggle. Replacing a telco-supplied consumer router with a business-grade device &mdash; a Ubiquiti UniFi, Cisco Meraki, Netgear Business or similar &mdash; frequently resolves performance issues that months of telco support calls could not.</p>
+
+      <p>We carry replacement routers and can configure a business-grade device at your Gold Coast premises on the same visit as the fault diagnosis. If your existing router is the problem, you leave with a working solution rather than another open ticket.</p>
+
+      <img src="assets/images/nbn-internet-support-router-replacement-gold-coast.webp"
+           alt="NBN internet support router replacement Gold Coast — business-grade router configuration"
+           loading="lazy"
+           width="860" height="483"
+           class="nbn-article-img">
+      <p class="nbn-article-img-caption">Configuring a business-grade router at a Gold Coast office &mdash; Surfers Paradise skyline in the background.</p>
+
+      <h4 class="nbn-article-h4">Relocating an internet connection within an office</h4>
+
+      <p>Office relocations and internal fit-out changes frequently require moving the internet connection point. The NBN NTD is fixed &mdash; it is installed at the point where the NBN Co technician terminated the connection, which may not be where your new reception desk, server cabinet or main workstation area is located.</p>
+
+      <p>We relocate internet connections within Gold Coast business premises &mdash; running a new cable from the NTD to the required location, configuring the router at the new position and testing the connection end-to-end. This is a common requirement for businesses in Broadbeach, Varsity Lakes and Helensvale that are reconfiguring their office layout without moving premises entirely.</p>
+
+      <p>If you are moving to a new office &mdash; particularly in a multi-tenancy building in Surfers Paradise or Southport &mdash; the NBN connection type at the new address may be different from what you currently have. FTTB is common in older Gold Coast commercial buildings, and performance can vary considerably depending on the building&rsquo;s internal copper infrastructure. We can check the connection type at your new address before you move and advise on what to expect.</p>
+
+      <p>Our on-site technician call-out fee on the Gold Coast is $282.00 + GST for the first hour. If you want to talk through the situation before booking, call <a href="tel:0730418993">07 3041 8993</a> &mdash; we can often advise whether an on-site visit is the right approach or whether there is something simpler to check first.</p>
     </div>
   </section>
 
@@ -2021,6 +2142,57 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         On-site visits typically available same day or next day on the Gold Coast. Call <a href="tel:0730418993">07 3041 8993</a> &mdash; do not spend another day on hold.
       </p>
 
+    </div>
+  </section>
+
+  <!-- ARTICLE 2: Real-world scenario — Nerang accounting practice -->
+  <section class="nbn-article-section bg-light" aria-label="NBN internet fault resolution Gold Coast business example">
+    <div class="nbn-article-inner">
+      <p class="nbn-article-label">Real-World Example &mdash; Gold Coast</p>
+      <h3 class="nbn-article-h3">A Typical Gold Coast Business Internet Fault &mdash; And How It Gets Resolved</h3>
+
+      <p>To make this concrete, here is a scenario that reflects the kind of call we receive regularly. A small professional services business in Nerang &mdash; an accounting practice with eight staff &mdash; has been experiencing slow internet for six weeks. They are on a 100/20 NBN plan with a major provider. The provider has run remote checks twice, found nothing wrong and closed both tickets. The business owner has spent approximately four hours on hold across three separate calls.</p>
+
+      <p>The symptoms are specific: speeds are fine before 9am, degrade noticeably between 9am and 5pm, and video calls drop out regularly during the afternoon. File uploads to their cloud accounting platform take noticeably longer than they did six months ago.</p>
+
+      <h4 class="nbn-article-h4">What the on-site visit finds</h4>
+
+      <p>A technician attends the premises. The first test is at the NBN NTD &mdash; a direct speed test bypassing the router entirely. Sync speed is 98/18, which is normal for a 100/20 plan. The NBN signal is clean. The fault is not with the NBN network.</p>
+
+      <p>The router is a consumer device supplied by the provider. A quick check of the router&rsquo;s admin panel shows it has been running continuously for 214 days without a reboot. The NAT table is at 89% capacity. There are 47 active connections &mdash; workstations, phones, a printer, two access points and several staff members&rsquo; personal mobile devices. The router&rsquo;s CPU is running at 94% during business hours.</p>
+
+      <p>The router is the problem. It is not faulty in the traditional sense &mdash; it has not failed. It is simply undersized for the load being placed on it.</p>
+
+      <img src="assets/images/nbn-internet-support-onsite-technician-gold-coast.webp"
+           alt="NBN internet support on-site technician Gold Coast — testing connection at business premises"
+           loading="lazy"
+           width="860" height="483"
+           class="nbn-article-img">
+      <p class="nbn-article-img-caption">On-site NBN connection testing at a Gold Coast business &mdash; testing at the NTD before the router.</p>
+
+      <h4 class="nbn-article-h4">The fix</h4>
+
+      <p>The consumer router is replaced with a business-grade device on the same visit. The new router is configured with the correct connection type settings, DNS servers, QoS rules to prioritise VoIP and video conferencing traffic, and a guest network for personal devices separated from the business network. The access points are reconfigured to connect to the new router.</p>
+
+      <p>A speed test after the replacement shows 97/19 &mdash; close to the full plan speed &mdash; during peak business hours. The video call dropout issue is resolved. The cloud accounting platform performs as expected.</p>
+
+      <p>The provider&rsquo;s line was fine all along. The fault was in the equipment they supplied.</p>
+
+      <h4 class="nbn-article-h4">Why this matters for Gold Coast businesses</h4>
+
+      <p>This scenario plays out regularly in offices across the Gold Coast &mdash; in Coomera, Coolangatta, Burleigh Heads and everywhere in between. The provider&rsquo;s support process is not designed to diagnose equipment performance under business load. Their remote checks confirm the line is active and syncing. They do not check whether the router they supplied is capable of handling the number of devices and the type of traffic your business generates.</p>
+
+      <p>An on-site technician can see what a remote check cannot. The router&rsquo;s admin panel, the NAT table, the CPU load, the QoS settings, the number of connected devices &mdash; these are only visible from inside the network. A call centre agent working from a remote diagnostic tool has none of this information.</p>
+
+      <h4 class="nbn-article-h4">When the fault is with the NBN network</h4>
+
+      <p>Not every fault is in the customer&rsquo;s equipment. We also attend premises where the NBN signal at the entry point is genuinely degraded &mdash; low downstream sync on an FTTN connection, high noise margin on a copper run, or intermittent signal on an HFC connection. In these cases, the fault is with the NBN Co network or the provider&rsquo;s infrastructure, and the provider is responsible for fixing it.</p>
+
+      <p>The difference between a business getting this resolved quickly and a business spending weeks on hold is documentation. A provider&rsquo;s technical team responds to specific measurements &mdash; &ldquo;downstream sync speed is 22 Mbps on a 100 Mbps plan, noise margin is 18 dB above threshold at the NTD&rdquo; &mdash; rather than a customer reporting that the internet is slow. We produce that documentation on-site and raise the fault ticket with the specific evidence attached.</p>
+
+      <p>Businesses in Helensvale and Nerang on FTTN connections are particularly affected by this issue, as performance on copper-based connections can degrade over time and is sensitive to environmental factors including heat and moisture &mdash; both of which are relevant on the Gold Coast.</p>
+
+      <p>If your Gold Coast business internet has been slow, dropping out or failing for more than a few days and your provider has not resolved it, an on-site visit is the most direct path to a diagnosis. Call <a href="tel:0730418993">07 3041 8993</a> and describe what is happening &mdash; we will advise whether an on-site visit is the right approach and what to expect from the process.</p>
     </div>
   </section>
 
