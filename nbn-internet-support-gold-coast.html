@@ -1325,6 +1325,99 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     .nbn-areas-section h2 { font-size: 1.35rem; }
     .nbn-steps-grid { grid-template-columns: 1fr; }
   }
+
+  /* ── NBN FAQ ACCORDION ── */
+  .nbn-faq-section {
+    background: #f8fafb;
+    padding: 64px 0;
+  }
+  .nbn-faq-inner {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+  .nbn-faq-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #00c8e0;
+    margin: 0 0 10px;
+  }
+  .nbn-faq-section h2 {
+    font-size: 1.65rem;
+    font-weight: 800;
+    color: #0d1f3c;
+    margin: 0 0 32px;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+  }
+  .nbn-faq-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .nbn-faq-item {
+    background: #ffffff;
+    border: 1px solid rgba(0,200,224,0.25);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .nbn-faq-question {
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 18px 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    cursor: pointer;
+    text-align: left;
+  }
+  .nbn-faq-question h3 {
+    font-size: 0.97rem;
+    font-weight: 700;
+    color: #0d1f3c;
+    margin: 0;
+    line-height: 1.4;
+  }
+  .nbn-faq-chevron {
+    flex-shrink: 0;
+    width: 18px;
+    height: 18px;
+    stroke: #00c8e0;
+    transition: transform 0.25s ease;
+  }
+  .nbn-faq-item.open .nbn-faq-chevron {
+    transform: rotate(180deg);
+  }
+  .nbn-faq-answer {
+    display: none;
+    padding: 0 22px 18px;
+    font-size: 0.92rem;
+    color: #4a5568;
+    line-height: 1.75;
+  }
+  .nbn-faq-answer a {
+    color: #00c8e0;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .nbn-faq-answer a:hover { text-decoration: underline; }
+  .nbn-faq-item.open .nbn-faq-answer {
+    display: block;
+  }
+  @media (max-width: 600px) {
+    .nbn-faq-inner { padding: 0 24px; }
+    .nbn-faq-section h2 { font-size: 1.35rem; }
+    .nbn-faq-question { padding: 16px 18px; }
+    .nbn-faq-answer { padding: 0 18px 16px; }
+  }
 </style>
 
 <!-- NAV JAVASCRIPT -->
@@ -1789,6 +1882,93 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     </div>
   </section>
+
+  <!-- SECTION 7: FAQ -->
+  <section class="nbn-faq-section" aria-label="NBN and internet support Gold Coast frequently asked questions">
+    <div class="nbn-faq-inner">
+      <p class="nbn-faq-label">Frequently Asked Questions</p>
+      <h2>NBN &amp; Internet Support Gold Coast &mdash; Frequently Asked Questions</h2>
+      <ul class="nbn-faq-list" role="list">
+
+        <!-- Q1 -->
+        <li class="nbn-faq-item" id="nbn-faq-1">
+          <button class="nbn-faq-question" aria-expanded="false" aria-controls="nbn-faq-1-answer">
+            <h3>My internet provider says the fault is on my side &mdash; can you verify that?</h3>
+            <svg class="nbn-faq-chevron" viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="nbn-faq-answer" id="nbn-faq-1-answer" role="region">
+            <p>Yes &mdash; and this is one of the most common reasons Gold Coast businesses call us. Internet providers will sometimes attribute a fault to &ldquo;customer equipment&rdquo; or &ldquo;internal wiring&rdquo; to avoid dispatching an NBN technician. We test your connection at the NBN NTD or entry point &mdash; before your router &mdash; to establish whether the fault is with the NBN network itself or with your internal setup. If the NBN signal is degraded at the entry point, the fault is on your provider&rsquo;s side and we document that with specific measurements. If the fault is in your internal network or router, we identify and fix that on the same visit. Call <a href="tel:0730418993">07 3041 8993</a> to book an on-site assessment.</p>
+          </div>
+        </li>
+
+        <!-- Q2 -->
+        <li class="nbn-faq-item" id="nbn-faq-2">
+          <button class="nbn-faq-question" aria-expanded="false" aria-controls="nbn-faq-2-answer">
+            <h3>How much does an on-site NBN support visit cost?</h3>
+            <svg class="nbn-faq-chevron" viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="nbn-faq-answer" id="nbn-faq-2-answer" role="region">
+            <p>The call-out fee is $282.00 + GST for a one-hour on-site technician visit at your Gold Coast business premises. This covers travel, on-site diagnosis, end-to-end connection testing, router and internal network checks, documented fault findings and telco liaison where required. If the job takes longer than one hour we quote additional time before proceeding. Call <a href="tel:0730418993">07 3041 8993</a> to discuss your situation before booking if you want to confirm the scope first.</p>
+          </div>
+        </li>
+
+        <!-- Q3 -->
+        <li class="nbn-faq-item" id="nbn-faq-3">
+          <button class="nbn-faq-question" aria-expanded="false" aria-controls="nbn-faq-3-answer">
+            <h3>Do you work with all internet providers &mdash; not just Telstra?</h3>
+            <svg class="nbn-faq-chevron" viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="nbn-faq-answer" id="nbn-faq-3-answer" role="region">
+            <p>Yes. We work with all major internet providers used by Gold Coast businesses &mdash; including Telstra, Aussie Broadband, On The Net, iiNet, TPG and others. We do not replace your provider or change your internet plan. We attend on-site to diagnose the fault, document the evidence and liaise with your existing provider&rsquo;s technical team to get the issue resolved. You keep your current provider &mdash; we give them something specific to act on. Call <a href="tel:0730418993">07 3041 8993</a> and tell us who your provider is &mdash; we will confirm we can work with them before booking.</p>
+          </div>
+        </li>
+
+        <!-- Q4 -->
+        <li class="nbn-faq-item" id="nbn-faq-4">
+          <button class="nbn-faq-question" aria-expanded="false" aria-controls="nbn-faq-4-answer">
+            <h3>Our internet is slow but not down &mdash; is it worth an on-site visit?</h3>
+            <svg class="nbn-faq-chevron" viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="nbn-faq-answer" id="nbn-faq-4-answer" role="region">
+            <p>Often yes. Persistent slow speeds that your provider dismisses as &ldquo;within normal parameters&rdquo; frequently have a diagnosable cause &mdash; line attenuation above acceptable levels, noise on the copper, a misconfigured router, a congested switch or an internal network issue. We measure your sync speed and throughput formally and compare it against what your plan and connection type should deliver. If there is a genuine fault we document it in a way your provider must respond to. If your speeds are genuinely within spec for your connection type and location, we will tell you that honestly and advise whether a plan or provider change is worth considering. Call <a href="tel:0730418993">07 3041 8993</a> to discuss your Gold Coast business internet situation.</p>
+          </div>
+        </li>
+
+        <!-- Q5 -->
+        <li class="nbn-faq-item" id="nbn-faq-5">
+          <button class="nbn-faq-question" aria-expanded="false" aria-controls="nbn-faq-5-answer">
+            <h3>Can you help us set up NBN internet at a new Gold Coast office?</h3>
+            <svg class="nbn-faq-chevron" viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="nbn-faq-answer" id="nbn-faq-5-answer" role="region">
+            <p>Yes. We configure your NBN connection and router at a new Gold Coast business premises &mdash; whether you are a new business, moving offices or switching internet providers. We handle the technical setup including router configuration, internal network connection and testing to confirm you are getting the speeds your plan should deliver. We can also advise on the right plan and provider for your premises based on the NBN connection type available at your new address. Call <a href="tel:0730418993">07 3041 8993</a> with your move date and new address and we will advise what to expect.</p>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+  </section>
+
+  <script>
+  (function() {
+    var items = document.querySelectorAll('.nbn-faq-item');
+    items.forEach(function(item) {
+      var btn = item.querySelector('.nbn-faq-question');
+      btn.addEventListener('click', function() {
+        var isOpen = item.classList.contains('open');
+        items.forEach(function(i) {
+          i.classList.remove('open');
+          i.querySelector('.nbn-faq-question').setAttribute('aria-expanded', 'false');
+        });
+        if (!isOpen) {
+          item.classList.add('open');
+          btn.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+  })();
+  </script>
+
 
 
 
