@@ -1098,6 +1098,90 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     .dc-cabinet-cards { grid-template-columns: 1fr; }
     .dc-cabinet-section h2 { font-size: 1.4rem; }
   }
+
+  /* ── WHY CHOOSE US ── */
+  .dc-why-section {
+    background: #ffffff;
+    padding: 72px 0;
+  }
+  .dc-why-inner {
+    max-width: 1060px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+  .dc-why-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #00c8e0;
+    margin: 0 0 10px;
+  }
+  .dc-why-section h2 {
+    font-size: 1.7rem;
+    font-weight: 800;
+    color: #0d1f3c;
+    margin: 0 0 36px;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+    max-width: 680px;
+  }
+  .dc-why-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+  .dc-why-card {
+    background: #e6fafd;
+    border-radius: 12px;
+    border-left: 4px solid #00c8e0;
+    padding: 28px 24px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .dc-why-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 28px rgba(13,31,60,0.10);
+  }
+  .dc-why-card-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+  }
+  .dc-why-card-icon {
+    width: 42px;
+    height: 42px;
+    background: #ffffff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  .dc-why-card-icon [data-lucide] {
+    width: 20px;
+    height: 20px;
+    stroke: #00c8e0;
+  }
+  .dc-why-card h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #0d1f3c;
+    margin: 0;
+    line-height: 1.3;
+  }
+  .dc-why-card p {
+    font-size: 0.9rem;
+    color: #4a5568;
+    line-height: 1.7;
+    margin: 0;
+  }
+  @media (max-width: 640px) {
+    .dc-why-inner { padding: 0 24px; }
+    .dc-why-grid { grid-template-columns: 1fr; }
+    .dc-why-section h2 { font-size: 1.4rem; }
+  }
 </style>
 
 <!-- NAV JAVASCRIPT -->
@@ -1392,6 +1476,58 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <p class="dc-cabinet-note">A clean, documented data cabinet is the single highest-impact improvement most Gold Coast small offices can make to their network reliability. Call <a href="tel:0730418993">07 3041 8993</a> to discuss a cabinet build or cleanup.</p>
     </div>
   </section>
+
+  <!-- SECTION 6: WHY CHOOSE US -->
+  <section class="dc-why-section" aria-label="Why Gold Coast Businesses Choose Bcom IT Solutions for Data Cabling">
+    <div class="dc-why-inner">
+      <p class="dc-why-label">Why Choose Us</p>
+      <h2>Why Gold Coast Businesses Choose Bcom IT Solutions for Data Cabling</h2>
+      <div class="dc-why-grid">
+
+        <div class="dc-why-card">
+          <div class="dc-why-card-header">
+            <div class="dc-why-card-icon">
+              <i aria-hidden="true" data-lucide="check-circle"></i>
+            </div>
+            <h3>Tested and Documented at Every Job</h3>
+          </div>
+          <p>Every data outlet tested, every port labelled and a simple cable map handed over at sign-off &mdash; regardless of job size. One extra outlet or a full fit-out, the standard is the same. Future changes at your Gold Coast office are straightforward because the cabling is documented from day one.</p>
+        </div>
+
+        <div class="dc-why-card">
+          <div class="dc-why-card-header">
+            <div class="dc-why-card-icon">
+              <i aria-hidden="true" data-lucide="plus-circle"></i>
+            </div>
+            <h3>No Job Too Small</h3>
+          </div>
+          <p>Single outlet, one access point run, a cabinet tidy-up &mdash; we take on small data cabling jobs that larger contractors will not quote. Every job is done neatly, tested and signed off to the same standard as a full office fit-out.</p>
+        </div>
+
+        <div class="dc-why-card">
+          <div class="dc-why-card-header">
+            <div class="dc-why-card-icon">
+              <i aria-hidden="true" data-lucide="wifi"></i>
+            </div>
+            <h3>WiFi and Network Cabling Together</h3>
+          </div>
+          <p>Access point positioning, Cat6 runs, PoE connections and cabinet patching done in a single engagement &mdash; no coordination between a cabling contractor and a separate network installer. We handle the cabling and understand what the network needs.</p>
+        </div>
+
+        <div class="dc-why-card">
+          <div class="dc-why-card-header">
+            <div class="dc-why-card-icon">
+              <i aria-hidden="true" data-lucide="map-pin"></i>
+            </div>
+            <h3>Local Gold Coast Tradespeople</h3>
+          </div>
+          <p>Our cabling technicians are based on the Gold Coast &mdash; not subcontracted from Brisbane. Local knowledge, local availability and direct responsibility for the quality of the work at your Gold Coast business premises.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
 
 
 
