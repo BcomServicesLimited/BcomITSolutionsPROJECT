@@ -961,6 +961,272 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </section>
 
   <!-- ============================================================
+       SECTION 4 — SERVICES GRID
+       ============================================================ -->
+
+  <style>
+    /* ── SERVICES GRID ── */
+    .services-section-bps {
+      background: #ffffff;
+      padding: 80px 0;
+    }
+    .services-inner-bps {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+    .services-inner-bps h2 {
+      font-size: 1.65rem;
+      font-weight: 700;
+      color: #0d1f3c;
+      line-height: 1.25;
+      margin-bottom: 16px;
+      letter-spacing: -0.01em;
+    }
+    .services-intro-bps {
+      font-size: 0.97rem;
+      color: #374151;
+      line-height: 1.75;
+      margin-bottom: 40px;
+      max-width: 720px;
+    }
+    .services-intro-bps a {
+      color: #00c8e0;
+      text-decoration: underline;
+    }
+    .services-intro-bps a:hover { color: #0d1f3c; }
+    .services-grid-bps {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-bottom: 40px;
+    }
+    .service-card-bps {
+      background: #f8fafb;
+      border-radius: 14px;
+      border-top: 3px solid #00c8e0;
+      padding: 28px 24px;
+      box-shadow: 0 2px 8px rgba(13,31,60,0.05);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .service-card-bps:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 24px rgba(13,31,60,0.10);
+    }
+    .service-card-bps .sc-icon {
+      width: 44px;
+      height: 44px;
+      background: #e6fafd;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 14px;
+    }
+    .service-card-bps .sc-icon [data-lucide] {
+      width: 22px;
+      height: 22px;
+      stroke: #00c8e0;
+    }
+    .service-card-bps h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #0d1f3c;
+      margin-bottom: 10px;
+      line-height: 1.3;
+    }
+    .service-card-bps p {
+      font-size: 0.88rem;
+      color: #374151;
+      line-height: 1.65;
+      margin: 0;
+    }
+    /* ── BOOKING BUTTON CENTRE ── */
+    .bps-booking-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 56px;
+    }
+    /* ── SUPPORTED BRANDS ── */
+    .brands-panel-bps {
+      background: #e6fafd;
+      border-radius: 16px;
+      border: 1px solid #c8f0f7;
+      padding: 40px 36px;
+    }
+    .brands-panel-bps h3 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #0d1f3c;
+      margin-bottom: 24px;
+    }
+    .brands-grid-bps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      margin-bottom: 20px;
+    }
+    .brand-card-bps {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 20px 18px;
+      box-shadow: 0 1px 6px rgba(13,31,60,0.06);
+    }
+    .brand-card-bps .bc-icon {
+      width: 36px;
+      height: 36px;
+      background: #e6fafd;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 10px;
+    }
+    .brand-card-bps .bc-icon [data-lucide] {
+      width: 18px;
+      height: 18px;
+      stroke: #00c8e0;
+    }
+    .brand-card-bps strong {
+      display: block;
+      font-size: 0.92rem;
+      font-weight: 700;
+      color: #0d1f3c;
+      margin-bottom: 6px;
+    }
+    .brand-card-bps p {
+      font-size: 0.82rem;
+      color: #374151;
+      line-height: 1.6;
+      margin: 0;
+    }
+    .brands-note-bps {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.82rem;
+      color: #1e3a5f;
+    }
+    .brands-note-bps a {
+      color: #00c8e0;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .brands-note-bps a:hover { text-decoration: underline; }
+    @media (max-width: 900px) {
+      .services-grid-bps { grid-template-columns: repeat(2, 1fr); }
+      .brands-grid-bps { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 600px) {
+      .services-grid-bps { grid-template-columns: 1fr; }
+      .brands-grid-bps { grid-template-columns: 1fr; }
+      .services-inner-bps h2 { font-size: 1.35rem; }
+    }
+  </style>
+
+  <section class="services-section-bps" aria-label="Business Phone System Services Gold Coast">
+    <div class="services-inner-bps">
+      <h2>Business Phone System Services for Gold Coast Businesses</h2>
+      <p class="services-intro-bps">We supply, install and support business phone systems for Gold Coast businesses — new installations and existing system support. Our primary brand for new PBX installations is LG Ericsson. For maintenance and repairs we also support Alcatel-Lucent, Panasonic and NEC systems. Related services include <a href="pabx-phone-systems-gold-coast.html">PBX system installation Gold Coast</a>, <a href="voip-phone-system-installation-and-support-gold-coast.html">VoIP phone system setup Gold Coast</a> and <a href="phone-line-installation-cabling-gold-coast.html">phone line installation Gold Coast</a>.</p>
+
+      <div class="services-grid-bps">
+
+        <div class="service-card-bps">
+          <div class="sc-icon"><i aria-hidden="true" data-lucide="package"></i></div>
+          <h3>New Phone System Supply &amp; Installation Gold Coast</h3>
+          <p>Supply, installation and full configuration of new business phone systems for Gold Coast businesses — on-site PBX or cloud PBX. LG Ericsson systems supplied for new PBX installations. Handset programming, line configuration and staff walk-through included.</p>
+        </div>
+
+        <div class="service-card-bps">
+          <div class="sc-icon"><i aria-hidden="true" data-lucide="server"></i></div>
+          <h3>On-site PBX Installation Gold Coast</h3>
+          <p>LG Ericsson on-site PBX systems installed at your Gold Coast business premises — correctly sized for your current team with room to expand. Full cabling, handset installation and system configuration included.</p>
+        </div>
+
+        <div class="service-card-bps">
+          <div class="sc-icon"><i aria-hidden="true" data-lucide="cloud"></i></div>
+          <h3>Cloud PBX Setup Gold Coast</h3>
+          <p>Cloud-hosted business phone system configured and deployed for your Gold Coast business. Handsets programmed, extensions set up and call routing configured — ready to use from day one.</p>
+        </div>
+
+        <div class="service-card-bps">
+          <div class="sc-icon"><i aria-hidden="true" data-lucide="wrench"></i></div>
+          <h3>Existing System Repairs &amp; Maintenance Gold Coast</h3>
+          <p>Fault diagnosis, repairs and maintenance on existing Alcatel-Lucent, LG Ericsson, Panasonic and NEC phone systems at Gold Coast businesses — without replacing hardware that is still serviceable.</p>
+        </div>
+
+        <div class="service-card-bps">
+          <div class="sc-icon"><i aria-hidden="true" data-lucide="plus-circle"></i></div>
+          <h3>Handset Additions &amp; Line Changes Gold Coast</h3>
+          <p>Adding extensions, reconfiguring lines or expanding an existing Gold Coast business phone system — handled correctly so your existing system continues to work without disruption.</p>
+        </div>
+
+        <div class="service-card-bps">
+          <div class="sc-icon"><i aria-hidden="true" data-lucide="settings"></i></div>
+          <h3>System Configuration &amp; Reprogramming Gold Coast</h3>
+          <p>Hunt groups, call forwarding, auto-attendant, voicemail and feature configuration on existing and new business phone systems at Gold Coast premises — programmed to match how your business actually operates.</p>
+        </div>
+
+      </div>
+
+      <!-- Booking button -->
+      <div class="bps-booking-wrap">
+        <!-- Google Calendar Appointment Scheduling begin -->
+        <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+        <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+        <script>
+        (function() {
+          var target = document.currentScript;
+          window.addEventListener('load', function() {
+            calendar.schedulingButton.load({
+              url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ21JsFI48SyH1NJO3oZkyuch15utQ__rWaeHMgfxSppgM_GaVeKRe6Kn0v2oN4XjRgl5D256Up7?gv=true',
+              color: '#039BE5',
+              label: 'Book an appointment',
+              target,
+            });
+          });
+        })();
+        </script>
+        <!-- end Google Calendar Appointment Scheduling -->
+      </div>
+
+      <!-- Supported Brands -->
+      <div class="brands-panel-bps">
+        <h3>Phone System Brands We Supply and Support on the Gold Coast</h3>
+        <div class="brands-grid-bps">
+
+          <div class="brand-card-bps">
+            <div class="bc-icon"><i aria-hidden="true" data-lucide="cpu"></i></div>
+            <strong>LG Ericsson</strong>
+            <p>Our primary brand for new PBX installations. Reliable, scalable systems suited to Gold Coast small and medium businesses. Supplied and installed for new system projects.</p>
+          </div>
+
+          <div class="brand-card-bps">
+            <div class="bc-icon"><i aria-hidden="true" data-lucide="cpu"></i></div>
+            <strong>Alcatel-Lucent</strong>
+            <p>Supported for maintenance, repairs, handset additions and configuration changes on existing systems at Gold Coast business premises.</p>
+          </div>
+
+          <div class="brand-card-bps">
+            <div class="bc-icon"><i aria-hidden="true" data-lucide="cpu"></i></div>
+            <strong>Panasonic</strong>
+            <p>Supported for maintenance, repairs, handset additions and configuration changes on existing systems at Gold Coast business premises.</p>
+          </div>
+
+          <div class="brand-card-bps">
+            <div class="bc-icon"><i aria-hidden="true" data-lucide="cpu"></i></div>
+            <strong>NEC</strong>
+            <p>Supported for maintenance, repairs, handset additions and configuration changes on existing systems at Gold Coast business premises.</p>
+          </div>
+
+        </div>
+        <p class="brands-note-bps">Have a brand not listed here? Call <a href="tel:0730418993">07 3041 8993</a> and describe your system — we will advise whether we can support it.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
      BCOM IT SOLUTIONS — FOOTER COMPONENT
      Include at the bottom of every page body, before </body>
      ============================================================ -->
