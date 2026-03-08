@@ -1036,6 +1036,40 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
+  <!-- SECTION 11: CLOSING CTA -->
+  <section class="pabx-cta-banner" aria-label="Contact Bcom IT Solutions for PABX Gold Coast">
+    <div class="pabx-cta-inner">
+      <p class="pabx-cta-label">Gold Coast&rsquo;s Trusted Telecommunications Team</p>
+      <h2>PABX Installation, Relocation, Upgrade and Repair on the Gold Coast</h2>
+      <p class="pabx-cta-subtext">Full PABX lifecycle services for Gold Coast businesses &mdash; LG Ericsson systems for new installations, Alcatel-Lucent, Panasonic and NEC serviced for repairs and upgrades. Moving office? Call us before moving day.</p>
+      <div class="pabx-cta-buttons">
+        <a href="tel:0730418993" class="pabx-cta-btn-primary">
+          <i aria-hidden="true" data-lucide="phone"></i>
+          Call 07 3041 8993
+        </a>
+        <a href="mailto:support@bcomservices.com" class="pabx-cta-btn-secondary">
+          <i aria-hidden="true" data-lucide="mail"></i>
+          Email Us
+        </a>
+      </div>
+      <div class="pabx-reassurance-row">
+        <span class="pabx-reassurance-item">
+          <i aria-hidden="true" data-lucide="server"></i>
+          LG Ericsson, Alcatel-Lucent, Panasonic, NEC
+        </span>
+        <span class="pabx-reassurance-item">
+          <i aria-hidden="true" data-lucide="truck"></i>
+          PABX relocation specialists
+        </span>
+        <span class="pabx-reassurance-item">
+          <i aria-hidden="true" data-lucide="wrench"></i>
+          Repairs, upgrades and expansion
+        </span>
+      </div>
+    </div>
+  </section>
+  <div class="pabx-last-updated">Last updated: March 2026</div>
+
   <!-- ============================================================
      BCOM IT SOLUTIONS — FOOTER COMPONENT
      Include at the bottom of every page body, before </body>
@@ -2184,6 +2218,159 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     text-decoration: none;
   }
   .pabx-faq-answer a:hover { text-decoration: underline; }
+
+  /* ── PABX CLOSING CTA ── */
+  .pabx-cta-banner {
+    position: relative;
+    background: linear-gradient(135deg, #0d1f3c 0%, #1e3a5f 50%, #0d2d3a 100%);
+    border-top: 3px solid #00c8e0;
+    clip-path: polygon(0 6%, 100% 0%, 100% 100%, 0% 100%);
+    padding: 100px 0 72px;
+    text-align: center;
+    overflow: hidden;
+  }
+  .pabx-cta-banner::before {
+    content: '';
+    position: absolute;
+    top: -80px;
+    left: -80px;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(0,200,224,0.12) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .pabx-cta-banner::after {
+    content: '';
+    position: absolute;
+    bottom: -60px;
+    right: -60px;
+    width: 350px;
+    height: 350px;
+    background: radial-gradient(circle, rgba(0,200,224,0.08) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .pabx-cta-inner {
+    position: relative;
+    z-index: 1;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+  .pabx-cta-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #00c8e0;
+    margin: 0 0 16px;
+  }
+  .pabx-cta-banner h2 {
+    font-size: 2.1rem;
+    font-weight: 800;
+    color: #ffffff;
+    margin: 0 0 20px;
+    letter-spacing: -0.03em;
+    line-height: 1.15;
+  }
+  .pabx-cta-subtext {
+    font-size: 1rem;
+    color: rgba(255,255,255,0.75);
+    line-height: 1.7;
+    margin: 0 0 36px;
+  }
+  .pabx-cta-buttons {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+  .pabx-cta-btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #00c8e0;
+    color: #0d1f3c;
+    font-weight: 700;
+    font-size: 0.95rem;
+    padding: 14px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.2s ease, transform 0.2s ease;
+  }
+  .pabx-cta-btn-primary:hover {
+    background: #00b8ce;
+    transform: translateY(-2px);
+  }
+  .pabx-cta-btn-primary [data-lucide] {
+    width: 18px;
+    height: 18px;
+    stroke: #0d1f3c;
+  }
+  .pabx-cta-btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255,255,255,0.10);
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding: 14px 28px;
+    border-radius: 8px;
+    border: 1.5px solid rgba(255,255,255,0.25);
+    text-decoration: none;
+    transition: background 0.2s ease, transform 0.2s ease;
+  }
+  .pabx-cta-btn-secondary:hover {
+    background: rgba(255,255,255,0.18);
+    transform: translateY(-2px);
+  }
+  .pabx-cta-btn-secondary [data-lucide] {
+    width: 18px;
+    height: 18px;
+    stroke: #ffffff;
+  }
+  .pabx-reassurance-row {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-top: 1px solid rgba(255,255,255,0.12);
+    padding-top: 28px;
+  }
+  .pabx-reassurance-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: rgba(255,255,255,0.80);
+    font-family: 'DM Mono', monospace;
+  }
+  .pabx-reassurance-item [data-lucide] {
+    width: 16px;
+    height: 16px;
+    stroke: #00c8e0;
+    flex-shrink: 0;
+  }
+  .pabx-last-updated {
+    text-align: center;
+    padding: 16px 0;
+    background: #ffffff;
+    font-family: 'DM Mono', monospace;
+    font-size: 0.75rem;
+    color: #94a3b8;
+    letter-spacing: 0.04em;
+  }
+  @media (max-width: 640px) {
+    .pabx-cta-banner {
+      clip-path: none;
+      padding: 72px 0 56px;
+    }
+    .pabx-cta-banner h2 { font-size: 1.6rem; }
+    .pabx-reassurance-row { gap: 16px; }
+  }
 </style>
 
 
