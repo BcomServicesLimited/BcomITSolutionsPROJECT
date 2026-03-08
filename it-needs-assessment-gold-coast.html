@@ -1047,6 +1047,181 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </div>
   </section>
+  <!-- SECTION 4: WHAT HAPPENS DURING THE VISIT -->
+  <section class="itna-visit-section" aria-label="IT Needs Assessment — What Happens During the Visit">
+    <style>
+      .itna-visit-section {
+        background: #f8fafb;
+        padding: 72px 0 64px;
+      }
+      .itna-visit-inner {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 0 24px;
+      }
+      .itna-visit-label {
+        font-family: 'DM Mono', monospace;
+        font-size: 0.72rem;
+        font-weight: 600;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #00c8e0;
+        margin: 0 0 10px;
+      }
+      .itna-visit-section h2 {
+        font-size: clamp(1.5rem, 3vw, 2rem);
+        font-weight: 800;
+        color: #0d1f3c;
+        margin: 0 0 20px;
+        line-height: 1.2;
+      }
+      .itna-visit-intro {
+        font-size: 1rem;
+        color: #2d3748;
+        line-height: 1.75;
+        max-width: 680px;
+        margin: 0 0 44px;
+      }
+      .itna-steps-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+        margin-bottom: 40px;
+      }
+      .itna-step-card {
+        background: #ffffff;
+        border-radius: 12px;
+        border-top: 3px solid #00c8e0;
+        padding: 28px 24px 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        transition: transform 0.18s ease, box-shadow 0.18s ease;
+      }
+      .itna-step-card:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 24px rgba(0,200,224,0.12);
+      }
+      .itna-step-number {
+        font-family: 'DM Mono', monospace;
+        font-size: 0.72rem;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        color: #00c8e0;
+        text-transform: uppercase;
+      }
+      .itna-step-icon {
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        background: #e6fafd;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+      }
+      .itna-step-icon svg {
+        width: 22px;
+        height: 22px;
+        stroke: #00c8e0;
+      }
+      .itna-step-card h3 {
+        font-size: 1rem;
+        font-weight: 700;
+        color: #0d1f3c;
+        margin: 0;
+        line-height: 1.35;
+      }
+      .itna-step-body {
+        font-size: 0.93rem;
+        color: #4a5568;
+        line-height: 1.65;
+        margin: 0;
+      }
+      .itna-honesty-block {
+        background: #e6fafd;
+        border-left: 4px solid #00c8e0;
+        border-radius: 12px;
+        padding: 28px 28px 24px;
+      }
+      .itna-honesty-label {
+        font-family: 'DM Mono', monospace;
+        font-size: 0.72rem;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #00c8e0;
+        margin: 0 0 12px;
+      }
+      .itna-honesty-body {
+        font-size: 0.97rem;
+        color: #2d3748;
+        line-height: 1.75;
+        margin: 0;
+        max-width: 760px;
+      }
+      @media (max-width: 768px) {
+        .itna-steps-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+    <div class="itna-visit-inner">
+      <p class="itna-visit-label">The Visit</p>
+      <h2>What Actually Happens During the Visit</h2>
+      <p class="itna-visit-intro">The initial IT needs assessment is a site visit, not a formal audit.
+      There is no checklist, no questionnaire to fill in beforehand and no
+      deliverable at the end beyond a plain-English conversation about what
+      we found. Here is what to expect.</p>
+      <div class="itna-steps-grid">
+        <div class="itna-step-card">
+          <span class="itna-step-number">Step 01</span>
+          <div class="itna-step-icon">
+            <i aria-hidden="true" data-lucide="coffee"></i>
+          </div>
+          <h3>A Conversation About Your Business First</h3>
+          <p class="itna-step-body">Before we look at a single screen, we ask about the business &mdash;
+          how many staff, what software you rely on, what your biggest
+          frustrations are and what you are hoping to get better at.
+          The technology conversation makes more sense once we understand
+          what the business actually needs to do.</p>
+        </div>
+        <div class="itna-step-card">
+          <span class="itna-step-number">Step 02</span>
+          <div class="itna-step-icon">
+            <i aria-hidden="true" data-lucide="search"></i>
+          </div>
+          <h3>A Look at What You Have</h3>
+          <p class="itna-step-body">We walk through your setup &mdash; devices, network, software and
+          how everything connects. We are not running tests or writing
+          a report. We are building a picture of where things stand so
+          we can give you an informed view rather than a generic one.</p>
+        </div>
+        <div class="itna-step-card">
+          <span class="itna-step-number">Step 03</span>
+          <div class="itna-step-icon">
+            <i aria-hidden="true" data-lucide="lightbulb"></i>
+          </div>
+          <h3>An Honest Starting Point &mdash; Not a Sales Pitch</h3>
+          <p class="itna-step-body">At the end of the visit we tell you what we noticed &mdash; the things
+          that look fine, the things worth attention and, if anything stands
+          out as an obvious priority, what a sensible next step looks like.
+          You are under no obligation to do anything with that. We will not
+          follow up with a proposal unless you ask us to.</p>
+        </div>
+      </div>
+      <div class="itna-honesty-block">
+        <p class="itna-honesty-label">What This Is Not</p>
+        <p class="itna-honesty-body">This is not a discovery session designed to uncover problems we can
+        sell you solutions to. It is not a free audit that leads to a report
+        full of recommendations with price tags attached. It is a conversation
+        &mdash; the kind a business owner might have with a trusted IT contact who
+        happens to know what good looks like. If we think you need something,
+        we will say so plainly. If we think your setup is fine, we will say
+        that too.</p>
+      </div>
+    </div>
+  </section>
 
   <!-- ============================================================
      BCOM IT SOLUTIONS — FOOTER COMPONENT
