@@ -705,6 +705,65 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     .dc-hero h1 { font-size: 1.9rem; }
     .dc-trust-strip { gap: 16px; }
   }
+
+  /* ── KEY TAKEAWAYS ── */
+  .dc-takeaways-section {
+    background: #ffffff;
+    padding: 64px 0;
+  }
+  .dc-takeaways-inner {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+  .dc-takeaways-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #00c8e0;
+    margin: 0 0 10px;
+  }
+  .dc-takeaways-section h2 {
+    font-size: 1.7rem;
+    font-weight: 800;
+    color: #0d1f3c;
+    margin: 0 0 28px;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+  }
+  .dc-takeaways-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px 40px;
+  }
+  .dc-takeaways-list li {
+    font-size: 0.93rem;
+    color: #4a5568;
+    line-height: 1.6;
+    padding-left: 20px;
+    position: relative;
+  }
+  .dc-takeaways-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 9px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #00c8e0;
+    flex-shrink: 0;
+  }
+  @media (max-width: 640px) {
+    .dc-takeaways-inner { padding: 0 24px; }
+    .dc-takeaways-list { grid-template-columns: 1fr; }
+    .dc-takeaways-section h2 { font-size: 1.4rem; }
+  }
 </style>
 
 <!-- NAV JAVASCRIPT -->
@@ -797,6 +856,27 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           Data cabinet supply and install
         </span>
       </div>
+    </div>
+  </section>
+
+  <!-- SECTION 2: KEY TAKEAWAYS -->
+  <section class="dc-takeaways-section" aria-label="Data Cabling Gold Coast — Quick Summary">
+    <div class="dc-takeaways-inner">
+      <p class="dc-takeaways-label">Quick Summary</p>
+      <h2>Data Cabling Gold Coast &mdash; Quick Summary</h2>
+      <ul class="dc-takeaways-list">
+        <li>Structured data cabling for Gold Coast small and medium businesses &mdash; Cat5e, Cat6 and fibre installations</li>
+        <li>New office fit-out cabling &mdash; all data outlets installed and labelled before furniture arrives and devices are connected</li>
+        <li>Office relocation cabling &mdash; existing cabling at new premises assessed, extended or replaced to suit the new floor plan</li>
+        <li>Small and odd jobs welcome &mdash; one extra outlet, a single cable run or a tidy-up job is fine, no minimum job size</li>
+        <li>Indoor and outdoor cabling &mdash; internal office runs and external runs between buildings, through conduit or overhead</li>
+        <li>WiFi access point cabling &mdash; Cat6 runs to ceiling or wall-mount access point positions, PoE switch connections included</li>
+        <li>Data cabinet supply and installation &mdash; wall-mount and floor-stand cabinets supplied, installed and fitted out with patch panels, switches and cable management</li>
+        <li>Data cabinet cleanup and remediation &mdash; messy or unlabelled cabinets untangled, re-patched, labelled and documented</li>
+        <li>All cabling tested and certified before sign-off &mdash; every outlet confirmed working, labelled and recorded</li>
+        <li>Separate phone line cabling service also available for traditional phone handset connections</li>
+        <li>Locally owned and operated &mdash; ABN 92 636 893 108</li>
+      </ul>
     </div>
   </section>
 
