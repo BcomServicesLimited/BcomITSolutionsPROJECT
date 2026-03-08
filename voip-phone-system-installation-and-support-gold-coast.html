@@ -1064,6 +1064,42 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   .faq-voip-answer p a:hover { color: #0d1f3c; }
   .faq-voip-answer[hidden] { display: none; }
 
+  /* ── CTA BANNER (VOIP) ── */
+  .cta-voip-banner {
+    background: linear-gradient(135deg, #0d1f3c 0%, #1e3a5f 50%, #0d2d3a 100%);
+    border-top: 3px solid #00c8e0;
+    clip-path: polygon(0 6%, 100% 0%, 100% 100%, 0% 100%);
+    padding: 100px 0 80px;
+    position: relative; overflow: hidden; text-align: center;
+  }
+  .cta-voip-banner::before {
+    content: ''; position: absolute;
+    width: 600px; height: 600px;
+    background: rgba(0,200,224,0.06);
+    border-radius: 50%; top: -200px; left: -200px;
+    filter: blur(80px); pointer-events: none; z-index: 0;
+  }
+  .cta-voip-banner::after {
+    content: ''; position: absolute;
+    width: 400px; height: 400px;
+    background: rgba(0,200,224,0.04);
+    border-radius: 50%; bottom: -100px; right: -100px;
+    filter: blur(60px); pointer-events: none; z-index: 0;
+  }
+  .cta-voip-banner__inner { position: relative; z-index: 1; }
+  .cta-voip-label { font-family: 'DM Mono', monospace; font-size: 0.65rem; color: #00c8e0; text-transform: uppercase; letter-spacing: 0.15em; display: block; margin-bottom: 16px; }
+  .cta-voip-banner h2 { font-size: 2.2rem; font-weight: 700; color: white; margin-bottom: 16px; line-height: 1.2; }
+  .cta-voip-banner p { font-size: 1.05rem; color: rgba(255,255,255,0.75); max-width: 560px; margin: 0 auto 32px; line-height: 1.7; }
+  .cta-voip-buttons { display: flex; align-items: center; justify-content: center; gap: 16px; flex-wrap: wrap; margin-bottom: 32px; }
+  .cta-voip-reassurance { display: flex; align-items: center; justify-content: center; gap: 24px; flex-wrap: wrap; }
+  .cta-voip-reassurance span { display: flex; align-items: center; gap: 6px; font-size: 0.85rem; color: rgba(255,255,255,0.6); }
+  .cta-voip-reassurance [data-lucide] { width: 16px; height: 16px; stroke: rgba(255,255,255,0.5); }
+  .last-updated-voip { text-align: center; font-family: 'DM Mono', monospace; font-size: 0.72rem; color: #94a3b8; padding: 16px 0; background: white; }
+  @media (max-width: 640px) {
+    .cta-voip-banner { clip-path: none; padding: 72px 0 60px; }
+    .cta-voip-banner h2 { font-size: 1.6rem; }
+  }
+
 </style>
 
   <!-- HERO -->
@@ -1468,6 +1504,33 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </div>
   </section>
+
+  <!-- SECTION 9 — CLOSING CTA -->
+  <section class="cta-voip-banner" aria-label="Get a Better Business Phone System on the Gold Coast">
+    <div class="container">
+      <div class="cta-voip-banner__inner">
+        <span class="cta-voip-label fade-up">GOLD COAST'S TRUSTED TELECOMMUNICATIONS TEAM</span>
+        <h2 class="fade-up" style="transition-delay:0.1s">Get a Better Business Phone System for $25/User/Month</h2>
+        <p class="fade-up" style="transition-delay:0.2s">
+          Cloud PBX VoIP for Gold Coast businesses &mdash; unlimited AUS and NZ calls, Microsoft Teams integration, AI attendant, voicemail transcription and sentiment analysis. No lock-in contracts. Bundle with managed IT for one monthly bill.
+        </p>
+        <div class="cta-voip-buttons fade-up" style="transition-delay:0.3s">
+          <a href="tel:0730418993" class="btn-primary" style="display:inline-flex;align-items:center;gap:8px;">
+            <i aria-hidden="true" data-lucide="phone"></i> Call 07 3041 8993
+          </a>
+          <a href="mailto:support@bcomservices.com" class="btn-secondary" style="display:inline-flex;align-items:center;gap:8px;">
+            <i aria-hidden="true" data-lucide="mail"></i> Email Us
+          </a>
+        </div>
+        <div class="cta-voip-reassurance fade-up" style="transition-delay:0.4s">
+          <span><i aria-hidden="true" data-lucide="dollar-sign"></i> $25 + GST/user/month</span>
+          <span><i aria-hidden="true" data-lucide="phone"></i> Unlimited AUS &amp; NZ calls</span>
+          <span><i aria-hidden="true" data-lucide="layers"></i> Bundle with managed IT</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <p class="last-updated-voip">Last updated: March 2026</p>
 
 
   <!-- ============================================================
