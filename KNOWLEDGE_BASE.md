@@ -19,6 +19,24 @@
 
 ---
 
+## 1b. WebP Image Format — True WebP Required
+
+All images on this site must be saved and referenced as `.webp` format. The AI image generation tool (`generate_image`) saves files with a `.webp` extension but internally encodes them as **PNG data**. This causes the `file` command to report `PNG image data` even though the filename ends in `.webp`.
+
+**Rule for all future image generation:** After every `generate_image` call, immediately convert the output to true WebP using Pillow:
+
+```python
+from PIL import Image
+img = Image.open('path/to/image.webp')
+img.save('path/to/image.webp', 'WEBP', quality=88)
+```
+
+Verify with: `file path/to/image.webp` — output must contain `RIFF` and `Web/P image`, not `PNG image data`.
+
+**Never reference `.jpg`, `.jpeg` or `.png` files in any page HTML.** All `src=` attributes for images must point to `.webp` files only.
+
+---
+
 ## 2. Shared Component Integration Rule
 
 ### Fix #1 — Nav and Footer Must Be Inlined, Not Referenced as Comments
