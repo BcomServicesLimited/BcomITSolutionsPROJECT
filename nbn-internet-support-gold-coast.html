@@ -1418,6 +1418,147 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     .nbn-faq-question { padding: 16px 18px; }
     .nbn-faq-answer { padding: 0 18px 16px; }
   }
+
+  /* ── NBN CLOSING CTA ── */
+  .nbn-cta-section {
+    background: linear-gradient(135deg, #0d1f3c 0%, #1e3a5f 55%, #0d2d3a 100%);
+    border-top: 3px solid #00c8e0;
+    clip-path: polygon(0 6%, 100% 0%, 100% 100%, 0% 100%);
+    padding: 96px 0 64px;
+    position: relative;
+    overflow: hidden;
+  }
+  .nbn-cta-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 20% 50%, rgba(0,200,224,0.08) 0%, transparent 60%),
+                radial-gradient(ellipse at 80% 20%, rgba(30,58,95,0.4) 0%, transparent 55%);
+    pointer-events: none;
+  }
+  .nbn-cta-inner {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 40px;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+  }
+  .nbn-cta-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: rgba(0,200,224,0.85);
+    margin: 0 0 14px;
+  }
+  .nbn-cta-section h2 {
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: #ffffff;
+    margin: 0 0 18px;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+  }
+  .nbn-cta-subtext {
+    font-size: 1rem;
+    color: rgba(255,255,255,0.78);
+    line-height: 1.75;
+    max-width: 680px;
+    margin: 0 auto 32px;
+  }
+  .nbn-cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    flex-wrap: wrap;
+    margin-bottom: 36px;
+  }
+  .nbn-cta-btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #00c8e0;
+    color: #0d1f3c;
+    font-weight: 700;
+    font-size: 0.95rem;
+    padding: 13px 26px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.18s ease, transform 0.18s ease;
+  }
+  .nbn-cta-btn-primary:hover {
+    background: #00b8ce;
+    transform: translateY(-2px);
+  }
+  .nbn-cta-btn-primary [data-lucide] {
+    width: 17px;
+    height: 17px;
+    stroke: #0d1f3c;
+  }
+  .nbn-cta-btn-ghost {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: transparent;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: 2px solid rgba(255,255,255,0.35);
+    text-decoration: none;
+    transition: border-color 0.18s ease, transform 0.18s ease;
+  }
+  .nbn-cta-btn-ghost:hover {
+    border-color: rgba(255,255,255,0.65);
+    transform: translateY(-2px);
+  }
+  .nbn-cta-btn-ghost [data-lucide] {
+    width: 17px;
+    height: 17px;
+    stroke: #ffffff;
+  }
+  /* Reassurance row */
+  .nbn-cta-reassurance {
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    flex-wrap: wrap;
+    padding-top: 28px;
+    border-top: 1px solid rgba(255,255,255,0.12);
+    margin-bottom: 20px;
+  }
+  .nbn-cta-reassurance-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: rgba(255,255,255,0.72);
+    font-size: 0.84rem;
+    font-weight: 500;
+  }
+  .nbn-cta-reassurance-item [data-lucide] {
+    width: 16px;
+    height: 16px;
+    stroke: #00c8e0;
+    flex-shrink: 0;
+  }
+  .nbn-cta-last-updated {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.68rem;
+    color: rgba(255,255,255,0.3);
+    margin: 0;
+  }
+  @media (max-width: 640px) {
+    .nbn-cta-section {
+      clip-path: none;
+      padding: 64px 0 48px;
+    }
+    .nbn-cta-inner { padding: 0 24px; }
+    .nbn-cta-section h2 { font-size: 1.4rem; }
+    .nbn-cta-reassurance { gap: 16px; }
+  }
 </style>
 
 <!-- NAV JAVASCRIPT -->
@@ -1979,6 +2120,42 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
      BCOM IT SOLUTIONS — FOOTER COMPONENT
      Include at the bottom of every page body, before </body>
      ============================================================ -->
+
+  <!-- SECTION 8: CLOSING CTA -->
+  <section class="nbn-cta-section" aria-label="Contact Bcom IT Solutions for NBN and internet support on the Gold Coast">
+    <div class="nbn-cta-inner">
+      <p class="nbn-cta-label">Gold Coast&rsquo;s Trusted Telecommunications Team</p>
+      <h2>Stop Waiting on Hold &mdash; Get a Local Technician to Your Gold Coast Business</h2>
+      <p class="nbn-cta-subtext">
+        NBN and internet fault support for Gold Coast businesses &mdash; on-site diagnosis, end-to-end testing, documented evidence and direct telco liaison. We do the job your internet provider can&rsquo;t &mdash; actually show up.
+      </p>
+      <div class="nbn-cta-buttons">
+        <a href="tel:0730418993" class="nbn-cta-btn-primary">
+          <i data-lucide="phone" aria-hidden="true"></i>
+          Call 07 3041 8993
+        </a>
+        <a href="mailto:support@bcomservices.com" class="nbn-cta-btn-ghost">
+          <i data-lucide="mail" aria-hidden="true"></i>
+          Email Us
+        </a>
+      </div>
+      <div class="nbn-cta-reassurance" role="list" aria-label="Service reassurances">
+        <div class="nbn-cta-reassurance-item" role="listitem">
+          <i data-lucide="map-pin" aria-hidden="true"></i>
+          <span>On-site Gold Coast technician</span>
+        </div>
+        <div class="nbn-cta-reassurance-item" role="listitem">
+          <i data-lucide="file-text" aria-hidden="true"></i>
+          <span>Documented fault evidence</span>
+        </div>
+        <div class="nbn-cta-reassurance-item" role="listitem">
+          <i data-lucide="phone-call" aria-hidden="true"></i>
+          <span>We liaise with your telco</span>
+        </div>
+      </div>
+      <p class="nbn-cta-last-updated">Last updated: March 2026</p>
+    </div>
+  </section>
 
 <footer class="site-footer" role="contentinfo">
 
