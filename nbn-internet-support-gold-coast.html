@@ -693,6 +693,66 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     .nbn-hero-sub { font-size: 0.97rem; }
     .nbn-trust-strip { gap: 14px 20px; }
   }
+
+  /* ── NBN KEY TAKEAWAYS ── */
+  .nbn-takeaways-section {
+    background: #ffffff;
+    padding: 64px 0;
+  }
+  .nbn-takeaways-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+  .nbn-takeaways-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #00c8e0;
+    margin: 0 0 10px;
+  }
+  .nbn-takeaways-section h2 {
+    font-size: 1.65rem;
+    font-weight: 800;
+    color: #0d1f3c;
+    margin: 0 0 28px;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+  }
+  .nbn-takeaways-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .nbn-takeaways-grid li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 14px 0;
+    border-bottom: 1px solid #e9eef3;
+    font-size: 0.93rem;
+    color: #374151;
+    line-height: 1.6;
+  }
+  .nbn-takeaways-grid li::before {
+    content: '';
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #00c8e0;
+    flex-shrink: 0;
+    margin-top: 7px;
+  }
+  @media (max-width: 640px) {
+    .nbn-takeaways-inner { padding: 0 24px; }
+    .nbn-takeaways-grid { grid-template-columns: 1fr; }
+    .nbn-takeaways-section h2 { font-size: 1.35rem; }
+  }
 </style>
 
 <!-- NAV JAVASCRIPT -->
@@ -788,6 +848,27 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </div>
   </section>
+
+  <!-- SECTION 2: KEY TAKEAWAYS -->
+  <section class="nbn-takeaways-section" aria-label="NBN and Internet Support Gold Coast — Quick Summary">
+    <div class="nbn-takeaways-inner">
+      <p class="nbn-takeaways-label">Quick Summary</p>
+      <h2>NBN &amp; Internet Support Gold Coast &mdash; Quick Summary</h2>
+      <ul class="nbn-takeaways-grid">
+        <li>On-site NBN and internet fault support for Gold Coast businesses &mdash; a local technician attends your premises, not a call centre</li>
+        <li>Internet providers like Telstra, Aussie Broadband and On The Net do not have on-site support staff for Gold Coast businesses &mdash; we fill that gap</li>
+        <li>We diagnose slow speeds, dropouts, connection failures and NBN hardware faults at your Gold Coast business premises</li>
+        <li>We test your connection end-to-end &mdash; from the NBN NTD or FTTB point through to your router and network &mdash; to identify where the fault actually is</li>
+        <li>We liaise directly with your internet provider on your behalf &mdash; raising fault tickets, escalating jobs and following up so you do not have to spend hours on hold</li>
+        <li>We document test results &mdash; sync speeds, attenuation, packet loss and fault evidence &mdash; so your telco cannot dismiss the fault without data</li>
+        <li>Router and modem configuration &mdash; incorrect router settings are a common cause of poor performance that the telco will not investigate for you</li>
+        <li>NBN connection type support &mdash; FTTP, FTTN, FTTB, FTTC and HFC</li>
+        <li>New NBN connection setup and router configuration for Gold Coast businesses setting up internet for the first time</li>
+        <li>Locally owned and operated &mdash; ABN 92 636 893 108</li>
+      </ul>
+    </div>
+  </section>
+
 
   <!-- ============================================================
      BCOM IT SOLUTIONS — FOOTER COMPONENT
