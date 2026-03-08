@@ -1329,6 +1329,103 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     .dc-steps-grid { grid-template-columns: 1fr; }
     .dc-areas-section h2 { font-size: 1.4rem; }
   }
+
+  /* ── FAQ ACCORDION ── */
+  .dc-faq-section {
+    background: #e6fafd;
+    padding: 72px 0;
+  }
+  .dc-faq-inner {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+  .dc-faq-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #00c8e0;
+    margin: 0 0 10px;
+  }
+  .dc-faq-section h2 {
+    font-size: 1.7rem;
+    font-weight: 800;
+    color: #0d1f3c;
+    margin: 0 0 36px;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+  }
+  .dc-faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .dc-faq-item {
+    background: #ffffff;
+    border-radius: 10px;
+    border-left: 4px solid #00c8e0;
+    overflow: hidden;
+  }
+  .dc-faq-question {
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 20px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    cursor: pointer;
+    text-align: left;
+  }
+  .dc-faq-question h3 {
+    font-size: 0.97rem;
+    font-weight: 700;
+    color: #0d1f3c;
+    margin: 0;
+    line-height: 1.4;
+    flex: 1;
+  }
+  .dc-faq-chevron {
+    width: 20px;
+    height: 20px;
+    stroke: #00c8e0;
+    flex-shrink: 0;
+    transition: transform 0.25s ease;
+  }
+  .dc-faq-item.open .dc-faq-chevron {
+    transform: rotate(180deg);
+  }
+  .dc-faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+    padding: 0 24px;
+  }
+  .dc-faq-item.open .dc-faq-answer {
+    max-height: 600px;
+    padding: 0 24px 20px;
+  }
+  .dc-faq-answer p {
+    font-size: 0.92rem;
+    color: #4a5568;
+    line-height: 1.75;
+    margin: 0;
+  }
+  .dc-faq-answer a {
+    color: #00c8e0;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .dc-faq-answer a:hover { text-decoration: underline; }
+  @media (max-width: 640px) {
+    .dc-faq-inner { padding: 0 24px; }
+    .dc-faq-section h2 { font-size: 1.4rem; }
+    .dc-faq-question { padding: 16px 18px; }
+    .dc-faq-item.open .dc-faq-answer { padding: 0 18px 16px; }
+  }
 </style>
 
 <!-- NAV JAVASCRIPT -->
@@ -1776,6 +1873,89 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     </div>
   </section>
+
+  <!-- SECTION 8: FAQ ACCORDION -->
+  <section class="dc-faq-section" aria-label="Data Cabling Gold Coast — Frequently Asked Questions">
+    <div class="dc-faq-inner">
+      <p class="dc-faq-label">Frequently Asked Questions</p>
+      <h2>Data Cabling Gold Coast &mdash; Frequently Asked Questions</h2>
+
+      <div class="dc-faq-list">
+
+        <div class="dc-faq-item" id="dc-faq-1">
+          <button class="dc-faq-question" aria-expanded="false" aria-controls="dc-faq-answer-1">
+            <h3>What is the difference between data cabling and phone line cabling?</h3>
+            <svg class="dc-faq-chevron" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="dc-faq-answer" id="dc-faq-answer-1" role="region">
+            <p>Data cabling &mdash; also called structured cabling &mdash; uses Cat5e, Cat6 or fibre cable and connects computers, servers, network switches, WiFi access points, IP cameras and VoIP handsets to your network. Phone line cabling uses traditional two or four-core telephone cable to connect analogue or digital handsets to a PBX or PABX phone system. If your office phones are VoIP handsets they connect over Cat6 data cable, not traditional phone cable. If you have a traditional on-site PBX with analogue handsets, you need phone line cabling. Not sure which applies to your Gold Coast setup? Call <a href="tel:0730418993">07 3041 8993</a> and describe your network and phone system &mdash; we will advise the right approach. For phone line cabling see our <a href="phone-line-installation-cabling-gold-coast.html">phone line installation Gold Coast</a> page.</p>
+          </div>
+        </div>
+
+        <div class="dc-faq-item" id="dc-faq-2">
+          <button class="dc-faq-question" aria-expanded="false" aria-controls="dc-faq-answer-2">
+            <h3>Do you take on small cabling jobs &mdash; like one or two extra outlets?</h3>
+            <svg class="dc-faq-chevron" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="dc-faq-answer" id="dc-faq-answer-2" role="region">
+            <p>Yes. A single extra outlet, one cable run to a new desk position or one access point run is a legitimate job and we quote and carry it out to the same standard as a full fit-out. Many Gold Coast cabling contractors set high minimum charges that make small jobs uneconomical to book &mdash; we price small jobs fairly. Call <a href="tel:0730418993">07 3041 8993</a> and describe what you need &mdash; we will give you a straight quote.</p>
+          </div>
+        </div>
+
+        <div class="dc-faq-item" id="dc-faq-3">
+          <button class="dc-faq-question" aria-expanded="false" aria-controls="dc-faq-answer-3">
+            <h3>Can you run cabling for our WiFi access points?</h3>
+            <svg class="dc-faq-chevron" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="dc-faq-answer" id="dc-faq-answer-3" role="region">
+            <p>Yes. We run Cat6 to ceiling or wall-mount access point positions, terminate the cable at the access point end with a keystone or flying lead, and patch back to your data cabinet. We use PoE-capable Cat6 so your access points can be powered over the cable from a PoE switch without a separate power supply at the ceiling. We work with all major access point brands including Ubiquiti, Cisco Meraki, Aruba and Netgear. Call <a href="tel:0730418993">07 3041 8993</a> to discuss access point placement and cabling layout for your Gold Coast office.</p>
+          </div>
+        </div>
+
+        <div class="dc-faq-item" id="dc-faq-4">
+          <button class="dc-faq-question" aria-expanded="false" aria-controls="dc-faq-answer-4">
+            <h3>Our data cabinet is a mess &mdash; can you clean it up without breaking anything?</h3>
+            <svg class="dc-faq-chevron" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="dc-faq-answer" id="dc-faq-answer-4" role="region">
+            <p>Yes &mdash; data cabinet cleanup and remediation is one of our most common jobs for existing Gold Coast offices. We remove dead patch leads, identify and label every active connection before touching anything, re-patch neatly with the correct lead lengths, fit cable management where it is missing and produce a port map at the end so everything is documented. We plan the cleanup to avoid service interruptions &mdash; active connections are never moved without first confirming what they carry. Call <a href="tel:0730418993">07 3041 8993</a> to discuss what the cabinet cleanup would involve for your specific setup.</p>
+          </div>
+        </div>
+
+        <div class="dc-faq-item" id="dc-faq-5">
+          <button class="dc-faq-question" aria-expanded="false" aria-controls="dc-faq-answer-5">
+            <h3>Can you run cabling outside between two buildings on our site?</h3>
+            <svg class="dc-faq-chevron" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="dc-faq-answer" id="dc-faq-answer-5" role="region">
+            <p>Yes. We carry out outdoor and inter-building cable runs using rated outdoor Cat6 or fibre &mdash; installed through conduit where the run is exposed, or via overhead cable where conduit is not practical. Inter-building runs using fibre avoid the earthing and surge issues associated with long copper runs between separate structures. Call <a href="tel:0730418993">07 3041 8993</a> and describe the two locations, the approximate distance and whether there is existing conduit &mdash; we will advise the best approach for your Gold Coast site.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <script>
+  (function() {
+    var items = document.querySelectorAll('.dc-faq-item');
+    items.forEach(function(item) {
+      var btn = item.querySelector('.dc-faq-question');
+      btn.addEventListener('click', function() {
+        var isOpen = item.classList.contains('open');
+        items.forEach(function(i) {
+          i.classList.remove('open');
+          i.querySelector('.dc-faq-question').setAttribute('aria-expanded', 'false');
+        });
+        if (!isOpen) {
+          item.classList.add('open');
+          btn.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+  })();
+  </script>
+
 
 
 
