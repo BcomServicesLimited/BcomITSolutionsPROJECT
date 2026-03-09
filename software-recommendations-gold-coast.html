@@ -1848,6 +1848,202 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </section>
 
   <!-- ============================================================
+     CLOSING CTA SECTION
+     ============================================================ -->
+  <section class="sr-cta-section" aria-label="Independent software advice for Gold Coast businesses">
+    <style>
+      .sr-cta-section {
+        position: relative;
+        background: linear-gradient(135deg, #0d1f3c 0%, #1e3a5f 55%, #0d2d3a 100%);
+        border-top: 3px solid #00c8e0;
+        clip-path: polygon(0 6%, 100% 0%, 100% 100%, 0% 100%);
+        padding: 100px 0 72px;
+        overflow: hidden;
+      }
+      .sr-cta-section::before {
+        content: '';
+        position: absolute;
+        top: -80px;
+        left: -120px;
+        width: 480px;
+        height: 480px;
+        background: radial-gradient(circle, rgba(0,200,224,0.09) 0%, transparent 70%);
+        pointer-events: none;
+      }
+      .sr-cta-section::after {
+        content: '';
+        position: absolute;
+        bottom: -60px;
+        right: -80px;
+        width: 360px;
+        height: 360px;
+        background: radial-gradient(circle, rgba(0,200,224,0.07) 0%, transparent 70%);
+        pointer-events: none;
+      }
+      .sr-cta-inner {
+        position: relative;
+        z-index: 1;
+        max-width: 860px;
+        margin: 0 auto;
+        padding: 0 24px;
+        text-align: center;
+      }
+      .sr-cta-label {
+        font-family: 'DM Mono', monospace;
+        font-size: 0.72rem;
+        font-weight: 600;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: #00c8e0;
+        margin: 0 0 16px;
+      }
+      .sr-cta-section h2 {
+        font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+        font-weight: 800;
+        color: #ffffff;
+        margin: 0 0 18px;
+        line-height: 1.2;
+      }
+      .sr-cta-subtext {
+        font-size: 1.05rem;
+        color: rgba(255,255,255,0.82);
+        line-height: 1.75;
+        max-width: 680px;
+        margin: 0 auto 36px;
+      }
+      .sr-cta-buttons {
+        display: flex;
+        gap: 16px;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 44px;
+      }
+      .sr-cta-btn-primary {
+        display: inline-flex;
+        align-items: center;
+        gap: 9px;
+        background: #00c8e0;
+        color: #0d1f3c;
+        font-family: 'DM Mono', monospace;
+        font-size: 0.9rem;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        padding: 14px 28px;
+        border-radius: 8px;
+        text-decoration: none;
+        transition: background 0.18s ease, transform 0.18s ease;
+      }
+      .sr-cta-btn-primary:hover {
+        background: #00b0c8;
+        transform: translateY(-2px);
+      }
+      .sr-cta-btn-primary [data-lucide] {
+        width: 18px;
+        height: 18px;
+        stroke: #0d1f3c;
+      }
+      .sr-cta-btn-ghost {
+        display: inline-flex;
+        align-items: center;
+        gap: 9px;
+        background: transparent;
+        color: #ffffff;
+        font-family: 'DM Mono', monospace;
+        font-size: 0.9rem;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        padding: 13px 28px;
+        border-radius: 8px;
+        border: 2px solid rgba(255,255,255,0.45);
+        text-decoration: none;
+        transition: border-color 0.18s ease, transform 0.18s ease;
+      }
+      .sr-cta-btn-ghost:hover {
+        border-color: #00c8e0;
+        transform: translateY(-2px);
+      }
+      .sr-cta-btn-ghost [data-lucide] {
+        width: 18px;
+        height: 18px;
+        stroke: #ffffff;
+      }
+      .sr-cta-reassurance {
+        display: flex;
+        gap: 32px;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 32px;
+      }
+      .sr-cta-reassurance-item {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-family: 'DM Mono', monospace;
+        font-size: 0.78rem;
+        color: rgba(255,255,255,0.75);
+        letter-spacing: 0.02em;
+      }
+      .sr-cta-reassurance-item [data-lucide] {
+        width: 16px;
+        height: 16px;
+        stroke: #00c8e0;
+        flex-shrink: 0;
+      }
+      .sr-cta-updated {
+        font-family: 'DM Mono', monospace;
+        font-size: 0.72rem;
+        color: rgba(255,255,255,0.38);
+        letter-spacing: 0.06em;
+      }
+      @media (max-width: 640px) {
+        .sr-cta-section {
+          clip-path: none;
+          padding: 72px 0 60px;
+        }
+        .sr-cta-buttons {
+          flex-direction: column;
+          align-items: center;
+        }
+        .sr-cta-reassurance {
+          flex-direction: column;
+          align-items: center;
+          gap: 16px;
+        }
+      }
+    </style>
+    <div class="sr-cta-inner">
+      <p class="sr-cta-label">IT Consulting &middot; Gold Coast</p>
+      <h2>Independent Software Advice for Your Gold Coast Business</h2>
+      <p class="sr-cta-subtext">Software recommendations by category and personalised stack reviews for Gold Coast small and medium businesses &mdash; no vendor commissions, no referral fees. Find out what your business should be using, what to cancel and what is worth adding.</p>
+      <div class="sr-cta-buttons">
+        <a href="tel:0730418993" class="sr-cta-btn-primary">
+          <i aria-hidden="true" data-lucide="phone"></i>
+          Call 07 3041 8993
+        </a>
+        <a href="mailto:support@bcomservices.com" class="sr-cta-btn-ghost">
+          <i aria-hidden="true" data-lucide="mail"></i>
+          Email Us
+        </a>
+      </div>
+      <div class="sr-cta-reassurance">
+        <span class="sr-cta-reassurance-item">
+          <i aria-hidden="true" data-lucide="shield"></i>
+          No commissions or referral fees
+        </span>
+        <span class="sr-cta-reassurance-item">
+          <i aria-hidden="true" data-lucide="lightbulb"></i>
+          Category recommendations &mdash; M365, Xero, Bitwarden and more
+        </span>
+        <span class="sr-cta-reassurance-item">
+          <i aria-hidden="true" data-lucide="search"></i>
+          Stack review &mdash; identify overlap, gaps and savings
+        </span>
+      </div>
+      <p class="sr-cta-updated">Last updated: March 2026</p>
+    </div>
+  </section>
+
+  <!-- ============================================================
      BCOM IT SOLUTIONS — FOOTER COMPONENT
      Include at the bottom of every page body, before </body>
      ============================================================ -->
