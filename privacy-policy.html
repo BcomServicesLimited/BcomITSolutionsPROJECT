@@ -580,71 +580,354 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </script>
 
 <style>
-  .placeholder-hero {
-    background: #f8fafb;
-    padding: 80px 0 72px;
+  .pp-header {
+    background: linear-gradient(135deg, #0d1f3c 0%, #1e3a5f 60%, #0d2d3a 100%);
+    border-top: 3px solid #00c8e0;
+    padding: 72px 0 56px;
     text-align: center;
-    border-bottom: 1px solid #e2e8f0;
   }
-  .placeholder-hero .container {
+  .pp-header .container {
     max-width: 720px;
     margin: 0 auto;
     padding: 0 24px;
   }
-  .placeholder-hero__badge {
+  .pp-header__badge {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    background: rgba(0,200,224,0.08);
-    border: 1px solid rgba(0,200,224,0.25);
+    background: rgba(0,200,224,0.12);
+    border: 1px solid rgba(0,200,224,0.3);
     border-radius: 20px;
     padding: 6px 14px;
     font-family: 'DM Mono', monospace;
     font-size: 0.72rem;
-    color: #0d1f3c;
-    letter-spacing: 0.04em;
+    color: #00c8e0;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
     margin-bottom: 24px;
   }
-  .placeholder-hero__badge [data-lucide] {
+  .pp-header__badge [data-lucide] {
     width: 13px;
     height: 13px;
     stroke: #00c8e0;
   }
-  .placeholder-hero h1 {
-    font-size: clamp(1.8rem, 4vw, 2.8rem);
+  .pp-header h1 {
+    font-size: clamp(1.8rem, 4vw, 2.6rem);
     font-weight: 700;
-    color: #0d1f3c;
+    color: #ffffff;
     line-height: 1.15;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
     letter-spacing: -0.02em;
   }
-  .placeholder-hero__sub {
-    font-size: 1rem;
-    color: #4a5568;
-    max-width: 540px;
-    margin: 0 auto 0;
-    line-height: 1.75;
+  .pp-header__meta {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.78rem;
+    color: rgba(255,255,255,0.55);
+    line-height: 1.8;
   }
-  .placeholder-hero__sub a {
+  .pp-body {
+    background: #ffffff;
+    padding: 72px 0 80px;
+  }
+  .pp-body .container {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+  .pp-body h2 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #0d1f3c;
+    margin: 48px 0 12px;
+    padding-top: 8px;
+    border-top: 2px solid #e6fafd;
+  }
+  .pp-body h2:first-of-type {
+    margin-top: 0;
+    border-top: none;
+  }
+  .pp-body h3 {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: #0d1f3c;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin: 28px 0 8px;
+  }
+  .pp-body p {
+    font-size: 0.97rem;
+    color: #374151;
+    line-height: 1.8;
+    margin: 0 0 16px;
+  }
+  .pp-body ul {
+    margin: 0 0 16px 0;
+    padding-left: 0;
+    list-style: none;
+  }
+  .pp-body ul li {
+    font-size: 0.97rem;
+    color: #374151;
+    line-height: 1.8;
+    padding-left: 20px;
+    position: relative;
+    margin-bottom: 4px;
+  }
+  .pp-body ul li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 11px;
+    width: 7px;
+    height: 7px;
+    background: #00c8e0;
+    border-radius: 50%;
+  }
+  .pp-body a {
     color: #00c8e0;
     text-decoration: none;
   }
-  .placeholder-hero__sub a:hover {
+  .pp-body a:hover {
     text-decoration: underline;
+  }
+  .pp-contact-box {
+    background: #e6fafd;
+    border-left: 4px solid #00c8e0;
+    border-radius: 12px;
+    padding: 28px 32px;
+    margin-top: 48px;
+  }
+  .pp-contact-box p {
+    margin: 0 0 6px;
+  }
+  .pp-contact-box p:last-child {
+    margin: 0;
+  }
+  @media (max-width: 640px) {
+    .pp-header { padding: 56px 0 40px; }
+    .pp-body { padding: 48px 0 56px; }
   }
 </style>
 <main>
 
-  <!-- PLACEHOLDER HERO -->
-  <section class="placeholder-hero">
+  <!-- PRIVACY POLICY HEADER -->
+  <section class="pp-header">
     <div class="container">
-      <div class="placeholder-hero__badge">
+      <div class="pp-header__badge">
         <i aria-hidden="true" data-lucide="file-text"></i> Legal
       </div>
       <h1>Privacy Policy</h1>
-      <p class="placeholder-hero__sub">
-        This page is being prepared. For any privacy-related enquiries, please contact us at <a href="mailto:support@bcomservices.com">support@bcomservices.com</a> or call <a href="tel:0730418993">07 3041 8993</a>.<br>Bcom IT Solutions Pty Ltd &mdash; ABN 92 636 893 108.
+      <p class="pp-header__meta">
+        BCOM Services Pty Ltd (ABN 92 636 893 108) &mdash; Trading as BCOM Services, BCOM IT Support, and BCOM IT Solutions<br>
+        Last Updated: 9 March 2026 &mdash; Jurisdiction: Australia (Queensland)
       </p>
+    </div>
+  </section>
+
+  <!-- PRIVACY POLICY BODY -->
+  <section class="pp-body">
+    <div class="container">
+
+      <h2>1. Introduction</h2>
+      <p>BCOM Services Pty Ltd (&ldquo;BCOM&rdquo;, &ldquo;we&rdquo;, &ldquo;our&rdquo;, or &ldquo;us&rdquo;) is committed to protecting the privacy and confidentiality of personal information.</p>
+      <p>This Privacy Policy explains how we collect, use, disclose, store, and protect personal information when you use our IT services, telecommunications services, website, or otherwise interact with our business.</p>
+      <p>We handle personal information in accordance with the Privacy Act 1988 (Cth) and the Australian Privacy Principles (APPs). These laws regulate how businesses collect, use, disclose, store, and manage personal information in Australia.</p>
+      <p>This policy applies to all personal information collected by BCOM Services Pty Ltd through our website, telephone communications, email correspondence, support requests, service appointments, remote support sessions, telecommunications services, and any other interaction with our business.</p>
+
+      <h2>2. Personal Information We Collect</h2>
+      <p>In the course of operating our business and delivering IT and telecommunications services, we may collect personal information including the following.</p>
+
+      <h3>Contact and Identity Information</h3>
+      <p>This may include:</p>
+      <ul>
+        <li>Full name</li>
+        <li>Business name</li>
+        <li>Job title or role</li>
+        <li>Residential or business address</li>
+        <li>Email address</li>
+        <li>Telephone numbers</li>
+        <li>Billing contact details</li>
+      </ul>
+
+      <h3>Technical and Device Information</h3>
+      <p>When providing IT services we may collect technical information necessary to diagnose and resolve issues, including:</p>
+      <ul>
+        <li>Device type and specifications</li>
+        <li>Operating system information</li>
+        <li>Installed software and versions</li>
+        <li>Network configuration</li>
+        <li>IP addresses</li>
+        <li>Device identifiers or serial numbers</li>
+        <li>System logs and diagnostic data</li>
+        <li>Error messages and crash reports</li>
+      </ul>
+      <p>This information is collected only where required to provide technical support.</p>
+
+      <h3>Financial and Billing Information</h3>
+      <p>When purchasing services from BCOM we may collect:</p>
+      <ul>
+        <li>Billing address</li>
+        <li>Invoice information</li>
+        <li>Payment records</li>
+        <li>Transaction details related to services provided</li>
+      </ul>
+      <p>Payments may be processed through secure third-party payment processors. BCOM does not store full credit card numbers on internal systems.</p>
+
+      <h3>Service Records</h3>
+      <p>We may keep records relating to services we provide, including:</p>
+      <ul>
+        <li>Service job notes</li>
+        <li>Support history</li>
+        <li>Appointment records</li>
+        <li>Communications with clients</li>
+        <li>Service configuration details</li>
+        <li>System documentation where required to maintain IT systems</li>
+      </ul>
+
+      <h2>3. Remote Support Access</h2>
+      <p>BCOM provides remote IT support services for many clients.</p>
+      <p>When remote support is required, authorised technicians may temporarily access a customer&rsquo;s computer, server, network device, or cloud environment for the purpose of diagnosing and resolving technical issues.</p>
+      <p>Access is limited to what is necessary to perform the requested support work.</p>
+      <p>Technicians do not intentionally access personal files or unrelated data. Any information that may be incidentally viewed during troubleshooting is treated as confidential.</p>
+      <p>Remote sessions may be logged for service documentation, security, and support auditing purposes.</p>
+
+      <h2>4. Telecommunications Services Data</h2>
+      <p>Where BCOM provides telecommunications services such as cloud PBX systems, VoIP phone systems, or business phone services, certain service data may be processed.</p>
+      <p>This may include:</p>
+      <ul>
+        <li>Calling and receiving phone numbers</li>
+        <li>Call timestamps</li>
+        <li>Call duration</li>
+        <li>Voicemail storage</li>
+        <li>Call routing information</li>
+        <li>Telecommunications service usage data</li>
+      </ul>
+      <p>BCOM does not access call content unless call recording has been specifically configured by the customer.</p>
+      <p>Call metadata is used solely for service operation, diagnostics, billing, and maintaining telecommunications services.</p>
+
+      <h2>5. Website Data and Cookies</h2>
+      <p>When you visit our website, certain information may be collected automatically.</p>
+      <p>This may include:</p>
+      <ul>
+        <li>IP address</li>
+        <li>Browser type and version</li>
+        <li>Device type</li>
+        <li>Operating system</li>
+        <li>Pages visited</li>
+        <li>Referring website</li>
+        <li>Time spent on pages</li>
+      </ul>
+      <p>We may use analytics tools and website technologies including cookies to help us understand how visitors use our website.</p>
+      <p>These tools help us improve website functionality, performance, and user experience.</p>
+      <p>You can configure your web browser to refuse cookies or notify you when cookies are being used.</p>
+
+      <h2>6. How We Collect Personal Information</h2>
+      <p>We collect personal information in several ways.</p>
+
+      <h3>Direct Collection</h3>
+      <p>Most personal information is collected directly from you when you:</p>
+      <ul>
+        <li>Contact us by phone or email</li>
+        <li>Submit a support request</li>
+        <li>Book a service appointment</li>
+        <li>Complete forms on our website</li>
+        <li>Engage us to provide services</li>
+        <li>Communicate with us during service delivery</li>
+      </ul>
+
+      <h3>Indirect Collection</h3>
+      <p>In some circumstances we may receive information from:</p>
+      <ul>
+        <li>Authorised representatives or employees of our clients</li>
+        <li>Referral partners</li>
+        <li>Payment providers</li>
+        <li>Publicly available sources</li>
+        <li>Software or service platforms used in delivering IT services</li>
+      </ul>
+
+      <h2>7. Purpose of Collecting Personal Information</h2>
+      <p>We collect and use personal information primarily to operate our business and deliver services.</p>
+      <p>This may include:</p>
+      <ul>
+        <li>Providing IT services such as computer repairs, networking support, cybersecurity services, Microsoft 365 setup and migration, Google Workspace migration, system maintenance, and technical troubleshooting.</li>
+        <li>Providing telecommunications services including business phone systems, VoIP systems, and cloud PBX services.</li>
+        <li>Managing customer relationships including scheduling appointments, responding to enquiries, maintaining service history, and providing ongoing support.</li>
+        <li>Processing payments, issuing invoices, maintaining financial records, and managing business administration.</li>
+        <li>Improving the quality of our services and maintaining secure and reliable systems.</li>
+        <li>Communicating with customers about service updates, technical issues, or operational matters.</li>
+      </ul>
+      <p>We may also send occasional service-related information or updates where permitted by law.</p>
+
+      <h2>8. Disclosure of Personal Information</h2>
+      <p>We may disclose personal information to third parties where reasonably necessary to provide services or operate our business.</p>
+      <p>This may include:</p>
+      <ul>
+        <li>Cloud service providers</li>
+        <li>Software vendors</li>
+        <li>Telecommunications carriers</li>
+        <li>Payment processors</li>
+        <li>IT infrastructure providers</li>
+        <li>Subcontractors assisting with service delivery</li>
+      </ul>
+      <p>All service providers are expected to handle personal information securely and only for authorised purposes.</p>
+      <p>We may also disclose personal information where required or authorised by law.</p>
+
+      <h2>9. Overseas Data Disclosure</h2>
+      <p>Some technology platforms used by BCOM may store data on servers located outside Australia.</p>
+      <p>Where this occurs, we take reasonable steps to ensure that those providers maintain appropriate privacy protections consistent with Australian privacy standards.</p>
+
+      <h2>10. Data Security</h2>
+      <p>BCOM takes reasonable steps to protect personal information from misuse, interference, loss, unauthorised access, modification, or disclosure.</p>
+      <p>Security measures may include:</p>
+      <ul>
+        <li>Secure network infrastructure</li>
+        <li>Encryption where appropriate</li>
+        <li>Multi-factor authentication</li>
+        <li>Restricted access controls</li>
+        <li>Secure backup systems</li>
+        <li>Secure disposal of hardware and data storage devices</li>
+      </ul>
+      <p>If a data breach occurs that is likely to result in serious harm, we will comply with the Notifiable Data Breaches scheme under the Privacy Act.</p>
+
+      <h2>11. Data Retention</h2>
+      <p>Personal information is retained only for as long as necessary to provide services, comply with legal obligations, or maintain business records.</p>
+      <p>Typical retention periods may include:</p>
+      <ul>
+        <li>Financial records retained for up to seven years to comply with taxation requirements.</li>
+        <li>Service records and job notes retained for operational and support purposes.</li>
+        <li>Support logs retained where necessary to maintain systems and service history.</li>
+      </ul>
+      <p>Information that is no longer required will be securely deleted or anonymised.</p>
+
+      <h2>12. Access to Personal Information</h2>
+      <p>You may request access to the personal information we hold about you.</p>
+      <p>Requests can be made by contacting us using the contact details listed below.</p>
+      <p>We will respond within a reasonable timeframe unless there is a lawful reason preventing access.</p>
+
+      <h2>13. Correction of Information</h2>
+      <p>If you believe the personal information we hold about you is inaccurate, incomplete, or out of date, you may request that it be corrected.</p>
+      <p>We will update records where appropriate.</p>
+
+      <h2>14. Privacy Complaints</h2>
+      <p>If you believe your privacy has been breached or you have concerns about how we handle personal information, you may contact us directly.</p>
+      <p>We will acknowledge your complaint and investigate the matter.</p>
+      <p>If you are not satisfied with our response, you may contact the Office of the Australian Information Commissioner (OAIC).</p>
+
+      <h2>15. Contact Details</h2>
+      <div class="pp-contact-box">
+        <p><strong>BCOM Services Pty Ltd</strong><br>ABN 92 636 893 108</p>
+        <p>Gold Coast, Queensland, Australia</p>
+        <p>Phone: <a href="tel:0730418993">07 3041 8993</a></p>
+        <p>Email: <a href="mailto:support@bcomservices.com">support@bcomservices.com</a></p>
+        <p>Website: <a href="https://bcomservices.com.au">https://bcomservices.com.au</a></p>
+      </div>
+
+      <h2>16. Updates to this Policy</h2>
+      <p>BCOM may update this Privacy Policy from time to time to reflect changes in legal requirements, technology, or business operations.</p>
+      <p>The most recent version will always be available on our website.</p>
+      <p>Your continued use of our services after changes are published indicates acceptance of the updated policy.</p>
+
     </div>
   </section>
 
