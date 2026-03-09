@@ -24,7 +24,7 @@ Do not do anything yet. Wait for my next instruction.
 
 | Field | Value |
 |---|---|
-| Business | Bcom IT Solutions Pty Ltd |
+| Business | Bcom Services Pty Ltd |
 | ABN | 92 636 893 108 |
 | Phone | 07 3041 8993 |
 | Email | support@bcomservices.com |
