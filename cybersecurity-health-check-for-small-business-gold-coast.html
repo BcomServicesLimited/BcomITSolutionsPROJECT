@@ -1022,6 +1022,204 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
+  <!-- SECTION 4: WHAT THE ASSESSMENT COVERS -->
+  <section class="cs-covers-section" aria-label="What the Cybersecurity Risk Assessment Covers">
+    <style>
+      .cs-covers-section {
+        background: #f8fafb;
+        padding: 80px 0 72px;
+      }
+      .cs-covers-inner {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 0 24px;
+      }
+      .cs-covers-label {
+        font-family: 'DM Mono', monospace;
+        font-size: 0.72rem;
+        font-weight: 600;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #00c8e0;
+        margin: 0 0 10px;
+      }
+      .cs-covers-section h2 {
+        font-size: clamp(1.5rem, 3vw, 2rem);
+        font-weight: 700;
+        color: #0d1f3c;
+        line-height: 1.2;
+        margin: 0 0 16px;
+        max-width: 700px;
+      }
+      .cs-covers-intro {
+        font-size: 0.97rem;
+        color: #2d3748;
+        line-height: 1.8;
+        max-width: 760px;
+        margin: 0 0 48px;
+      }
+      .cs-covers-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+        margin-bottom: 40px;
+      }
+      .cs-covers-card {
+        background: #ffffff;
+        border-left: 4px solid #00c8e0;
+        border-radius: 12px;
+        padding: 28px 24px 24px;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+      .cs-covers-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 12px 32px rgba(0,0,0,0.08);
+      }
+      .cs-covers-card-icon {
+        width: 40px;
+        height: 40px;
+        background: #e6fafd;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 16px;
+      }
+      .cs-covers-card-icon [data-lucide] {
+        width: 20px;
+        height: 20px;
+        stroke: #00c8e0;
+        stroke-width: 1.75;
+      }
+      .cs-covers-card h3 {
+        font-size: 1rem;
+        font-weight: 700;
+        color: #0d1f3c;
+        margin: 0 0 10px;
+        line-height: 1.3;
+      }
+      .cs-covers-card p {
+        font-size: 0.9rem;
+        color: #4a5568;
+        line-height: 1.7;
+        margin: 0;
+      }
+      .cs-covers-booking {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+      }
+      .cs-covers-callout {
+        background: #e6fafd;
+        border-left: 4px solid #00c8e0;
+        border-radius: 12px;
+        padding: 28px 32px;
+      }
+      .cs-covers-callout-label {
+        font-family: 'DM Mono', monospace;
+        font-size: 0.72rem;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #00c8e0;
+        margin: 0 0 12px;
+        display: block;
+      }
+      .cs-covers-callout p {
+        font-size: 0.95rem;
+        color: #2d3748;
+        line-height: 1.8;
+        margin: 0;
+      }
+      @media (max-width: 900px) {
+        .cs-covers-grid { grid-template-columns: repeat(2, 1fr); }
+      }
+      @media (max-width: 600px) {
+        .cs-covers-grid { grid-template-columns: 1fr; }
+      }
+    </style>
+    <div class="cs-covers-inner">
+      <p class="cs-covers-label">What We Cover</p>
+      <h2>What the Cybersecurity Risk Assessment Covers</h2>
+      <p class="cs-covers-intro">
+        The assessment is structured around the areas that matter most for a Gold Coast small business &mdash; not enterprise security frameworks designed for organisations with dedicated security teams. Each area is reviewed against a practical baseline: what should a well-run small business have in place, and what does this business actually have in place. The gap between those two things is the finding.
+      </p>
+      <div class="cs-covers-grid">
+        <div class="cs-covers-card">
+          <div class="cs-covers-card-icon">
+            <i aria-hidden="true" data-lucide="key"></i>
+          </div>
+          <h3>Account Security</h3>
+          <p>Admin account usage, shared credentials, password practices and multi-factor authentication coverage reviewed across your Microsoft 365, Google Workspace or other business platform accounts. Most small business account security issues are addressable in a single remediation session.</p>
+        </div>
+        <div class="cs-covers-card">
+          <div class="cs-covers-card-icon">
+            <i aria-hidden="true" data-lucide="monitor"></i>
+          </div>
+          <h3>Device Security</h3>
+          <p>Endpoint protection status on staff computers &mdash; whether Windows Defender is correctly configured or a third-party solution is in use, patch and update status, device encryption and whether remote wipe capability exists for laptops that leave the office.</p>
+        </div>
+        <div class="cs-covers-card">
+          <div class="cs-covers-card-icon">
+            <i aria-hidden="true" data-lucide="mail"></i>
+          </div>
+          <h3>Email Security</h3>
+          <p>SPF, DKIM and DMARC DNS record configuration for your business email domain &mdash; the three controls that prevent your domain being used in spoofing and impersonation attacks. Also covers whether business email is operating on a personal account and whether inbound phishing filtering is in place.</p>
+        </div>
+        <div class="cs-covers-card">
+          <div class="cs-covers-card-icon">
+            <i aria-hidden="true" data-lucide="database"></i>
+          </div>
+          <h3>Backup Posture</h3>
+          <p>Whether backups exist for business-critical data, how frequently they run, whether they have been tested and whether Microsoft 365 Exchange, OneDrive and SharePoint data is covered by a third-party backup solution. Sync is not backup &mdash; this is one of the most common gaps found in small business environments.</p>
+        </div>
+        <div class="cs-covers-card">
+          <div class="cs-covers-card-icon">
+            <i aria-hidden="true" data-lucide="wifi"></i>
+          </div>
+          <h3>Network Basics</h3>
+          <p>Router firmware currency, whether guest WiFi is separated from the main business network, remote access configuration and whether any exposed services are creating unnecessary external attack surface.</p>
+        </div>
+        <div class="cs-covers-card">
+          <div class="cs-covers-card-icon">
+            <i aria-hidden="true" data-lucide="users"></i>
+          </div>
+          <h3>Staff Practices</h3>
+          <p>Password reuse, phishing awareness, shared account usage, personal device use for business email and files, and whether offboarding processes for former staff revoke access properly. Staff behaviour is the most common entry point for security incidents in small businesses.</p>
+        </div>
+        <div class="cs-covers-card">
+          <div class="cs-covers-card-icon">
+            <i aria-hidden="true" data-lucide="package"></i>
+          </div>
+          <h3>Software and Patching</h3>
+          <p>End-of-life operating systems and software, unpatched systems, software installed without business oversight and licence compliance. Outdated software with known vulnerabilities is one of the most easily exploited weaknesses in any environment.</p>
+        </div>
+      </div>
+      <div class="cs-covers-booking">
+        <!-- Google Calendar Appointment Scheduling begin -->
+<link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+<script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+<script>
+(function() {
+  var target = document.currentScript;
+  window.addEventListener('load', function() {
+    calendar.schedulingButton.load({
+      url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ21JsFI48SyH1NJO3oZkyuch15utQ__rWaeHMgfxSppgM_GaVeKRe6Kn0v2oN4XjRgl5D256Up7?gv=true',
+      color: '#039BE5',
+      label: 'Book an appointment',
+      target,
+    });
+  })();
+</script>
+<!-- end Google Calendar Appointment Scheduling -->
+      </div>
+      <div class="cs-covers-callout">
+        <span class="cs-covers-callout-label">What This Assessment Is Not</span>
+        <p>This is not a penetration test or a formal compliance audit. It is a practical, structured review of the security controls and practices that matter most for a Gold Coast small business operating on standard commercial IT infrastructure. It does not require specialist tools, network scanning or significant disruption to your team. If the assessment identifies gaps that require more technical remediation &mdash; MFA rollout, Microsoft 365 security baseline configuration, backup setup or ongoing monitoring &mdash; those are separate engagements, quoted clearly and carried out only if you choose to proceed.</p>
+      </div>
+    </div>
+  </section>
+
   <!-- ============================================================
      BCOM IT SOLUTIONS — FOOTER COMPONENT
      Include at the bottom of every page body, before </body>
