@@ -1220,6 +1220,142 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
+  <!-- SECTION 5: WHAT YOU RECEIVE -->
+  <section class="cs-report-section" aria-label="What You Receive — The Findings Report">
+    <style>
+      .cs-report-section {
+        background: #e6fafd;
+        padding: 80px 0 72px;
+      }
+      .cs-report-inner {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 0 24px;
+      }
+      .cs-report-label {
+        font-family: 'DM Mono', monospace;
+        font-size: 0.72rem;
+        font-weight: 600;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #00c8e0;
+        margin: 0 0 10px;
+      }
+      .cs-report-section h2 {
+        font-size: clamp(1.5rem, 3vw, 2rem);
+        font-weight: 700;
+        color: #0d1f3c;
+        line-height: 1.2;
+        margin: 0 0 16px;
+        max-width: 700px;
+      }
+      .cs-report-intro {
+        font-size: 0.97rem;
+        color: #2d3748;
+        line-height: 1.8;
+        max-width: 760px;
+        margin: 0 0 48px;
+      }
+      .cs-report-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+        margin-bottom: 40px;
+      }
+      .cs-report-card {
+        background: #ffffff;
+        border-left: 4px solid #00c8e0;
+        border-radius: 12px;
+        padding: 28px 24px 24px;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+      .cs-report-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 12px 32px rgba(0,0,0,0.08);
+      }
+      .cs-report-card-icon {
+        width: 40px;
+        height: 40px;
+        background: #e6fafd;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 16px;
+      }
+      .cs-report-card-icon [data-lucide] {
+        width: 20px;
+        height: 20px;
+        stroke: #00c8e0;
+        stroke-width: 1.75;
+      }
+      .cs-report-card h3 {
+        font-size: 1rem;
+        font-weight: 700;
+        color: #0d1f3c;
+        margin: 0 0 10px;
+        line-height: 1.3;
+      }
+      .cs-report-card p {
+        font-size: 0.9rem;
+        color: #4a5568;
+        line-height: 1.7;
+        margin: 0;
+      }
+      .cs-report-closing {
+        font-size: 0.95rem;
+        color: #2d3748;
+        line-height: 1.8;
+        max-width: 760px;
+        margin: 0;
+      }
+      .cs-report-closing a {
+        color: #00c8e0;
+        text-decoration: none;
+        font-weight: 600;
+      }
+      .cs-report-closing a:hover {
+        text-decoration: underline;
+      }
+      @media (max-width: 768px) {
+        .cs-report-grid { grid-template-columns: 1fr; }
+      }
+    </style>
+    <div class="cs-report-inner">
+      <p class="cs-report-label">What You Get</p>
+      <h2>What You Receive &mdash; The Findings Report</h2>
+      <p class="cs-report-intro">
+        Every cybersecurity risk assessment for a Gold Coast business produces a written findings report. Not a generic security checklist with your business name added to the header. A document that describes what was found in your specific environment, what it means in plain English and what the recommended next steps are &mdash; in order of priority.
+      </p>
+      <div class="cs-report-grid">
+        <div class="cs-report-card">
+          <div class="cs-report-card-icon">
+            <i aria-hidden="true" data-lucide="file-text"></i>
+          </div>
+          <h3>Specific Findings &mdash; Not a Checklist</h3>
+          <p>The report describes what was found in your environment against each of the seven assessment areas. Where something is in good shape, it says so. Where there is a gap, it describes the gap specifically &mdash; not &ldquo;consider enabling MFA&rdquo; but &ldquo;MFA is not enabled on your Microsoft 365 admin account and these two staff accounts.&rdquo;</p>
+        </div>
+        <div class="cs-report-card">
+          <div class="cs-report-card-icon">
+            <i aria-hidden="true" data-lucide="list"></i>
+          </div>
+          <h3>Prioritised &mdash; What to Fix First</h3>
+          <p>Not everything in a security assessment requires immediate action. The report separates findings into priority tiers &mdash; what needs attention now, what is worth addressing in the next quarter and what is lower risk and can wait. You leave knowing where to start, not overwhelmed by a list of 40 items of equal weight.</p>
+        </div>
+        <div class="cs-report-card">
+          <div class="cs-report-card-icon">
+            <i aria-hidden="true" data-lucide="compass"></i>
+          </div>
+          <h3>Recommendations With a Clear Next Step</h3>
+          <p>Where a finding has a straightforward fix, the report says what it is. Where it involves a more complex remediation &mdash; a cloud migration, an MFA rollout, a backup solution &mdash; it references the relevant service and what that engagement would involve. You are not left with a problem list and no path forward.</p>
+        </div>
+      </div>
+      <p class="cs-report-closing">
+        For Gold Coast businesses on a managed IT arrangement with Bcom, the cybersecurity risk assessment findings feed directly into the ongoing monitoring and maintenance programme &mdash; gaps identified in the assessment become items tracked and addressed through managed IT. See our <a href="managed-it-services-for-small-businesses-gold-coast.html">managed IT services Gold Coast</a> page for details on how ongoing security monitoring works.
+      </p>
+    </div>
+  </section>
+
   <!-- ============================================================
      BCOM IT SOLUTIONS — FOOTER COMPONENT
      Include at the bottom of every page body, before </body>
