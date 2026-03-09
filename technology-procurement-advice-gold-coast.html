@@ -1889,6 +1889,198 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </script>
   </section>
 
+  <!-- SECTION 8: CLOSING CTA -->
+  <section class="tp-cta-banner" aria-label="Technology Procurement Advice Gold Coast — Contact">
+    <style>
+      .tp-cta-banner {
+        position: relative;
+        background: linear-gradient(135deg, #0d1f3c 0%, #1e3a5f 55%, #0d2d3a 100%);
+        border-top: 3px solid #00c8e0;
+        clip-path: polygon(0 6%, 100% 0%, 100% 100%, 0% 100%);
+        padding: 100px 0 72px;
+        overflow: hidden;
+      }
+      .tp-cta-banner::before {
+        content: '';
+        position: absolute;
+        top: -80px;
+        left: -120px;
+        width: 480px;
+        height: 480px;
+        background: radial-gradient(circle, rgba(0,200,224,0.10) 0%, transparent 70%);
+        pointer-events: none;
+      }
+      .tp-cta-banner::after {
+        content: '';
+        position: absolute;
+        bottom: -60px;
+        right: -80px;
+        width: 360px;
+        height: 360px;
+        background: radial-gradient(circle, rgba(0,200,224,0.07) 0%, transparent 70%);
+        pointer-events: none;
+      }
+      .tp-cta-inner {
+        position: relative;
+        z-index: 1;
+        max-width: 860px;
+        margin: 0 auto;
+        padding: 0 24px;
+        text-align: center;
+      }
+      .tp-cta-label {
+        font-family: 'DM Mono', monospace;
+        font-size: 0.72rem;
+        font-weight: 600;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: #00c8e0;
+        margin: 0 0 14px;
+      }
+      .tp-cta-banner h2 {
+        font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+        font-weight: 800;
+        color: #ffffff;
+        margin: 0 0 18px;
+        line-height: 1.15;
+      }
+      .tp-cta-subtext {
+        font-size: 1.05rem;
+        color: rgba(255,255,255,0.82);
+        line-height: 1.7;
+        max-width: 640px;
+        margin: 0 auto 36px;
+      }
+      .tp-cta-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 40px;
+      }
+      .tp-cta-btn-primary {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: #00c8e0;
+        color: #0d1f3c;
+        font-weight: 700;
+        font-size: 0.97rem;
+        padding: 13px 28px;
+        border-radius: 8px;
+        text-decoration: none;
+        transition: background 0.18s ease, transform 0.15s ease;
+        white-space: nowrap;
+      }
+      .tp-cta-btn-primary:hover {
+        background: #00b8ce;
+        transform: translateY(-2px);
+      }
+      .tp-cta-btn-primary [data-lucide] {
+        width: 18px;
+        height: 18px;
+        stroke: #0d1f3c;
+        flex-shrink: 0;
+      }
+      .tp-cta-btn-secondary {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: transparent;
+        color: #ffffff;
+        font-weight: 600;
+        font-size: 0.97rem;
+        padding: 12px 26px;
+        border-radius: 8px;
+        border: 2px solid rgba(255,255,255,0.35);
+        text-decoration: none;
+        transition: border-color 0.18s ease, transform 0.15s ease;
+        white-space: nowrap;
+      }
+      .tp-cta-btn-secondary:hover {
+        border-color: #00c8e0;
+        transform: translateY(-2px);
+      }
+      .tp-cta-btn-secondary [data-lucide] {
+        width: 18px;
+        height: 18px;
+        stroke: #ffffff;
+        flex-shrink: 0;
+      }
+      .tp-cta-reassurance {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px 32px;
+        justify-content: center;
+        margin-bottom: 28px;
+      }
+      .tp-cta-reassurance-item {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 0.88rem;
+        color: rgba(255,255,255,0.75);
+        font-weight: 500;
+      }
+      .tp-cta-reassurance-item [data-lucide] {
+        width: 16px;
+        height: 16px;
+        stroke: #00c8e0;
+        flex-shrink: 0;
+      }
+      .tp-cta-last-updated {
+        font-family: 'DM Mono', monospace;
+        font-size: 0.72rem;
+        color: rgba(255,255,255,0.35);
+        letter-spacing: 0.05em;
+        margin: 0;
+      }
+      @media (max-width: 640px) {
+        .tp-cta-banner {
+          clip-path: none;
+          padding: 72px 0 56px;
+        }
+        .tp-cta-buttons { flex-direction: column; align-items: stretch; }
+        .tp-cta-btn-primary,
+        .tp-cta-btn-secondary { justify-content: center; }
+      }
+    </style>
+    <div class="tp-cta-inner">
+      <p class="tp-cta-label">IT Consulting &middot; Gold Coast</p>
+      <h2>Buy the Right Technology &mdash; Not Whatever Earns Someone Else a Margin</h2>
+      <p class="tp-cta-subtext">Independent technology procurement advice for Gold Coast
+      businesses. Hardware, software, vendor proposals and contracts
+      reviewed by someone with no stake in what you buy. Hourly rate,
+      quoted before the session.</p>
+      <div class="tp-cta-buttons">
+        <a href="tel:0730418993" class="tp-cta-btn-primary">
+          <i aria-hidden="true" data-lucide="phone"></i>
+          Call 07 3041 8993
+        </a>
+        <a href="mailto:support@bcomservices.com" class="tp-cta-btn-secondary">
+          <i aria-hidden="true" data-lucide="mail"></i>
+          Email Us
+        </a>
+      </div>
+      <div class="tp-cta-reassurance">
+        <span class="tp-cta-reassurance-item">
+          <i aria-hidden="true" data-lucide="shield"></i>
+          No vendor commissions or margins
+        </span>
+        <span class="tp-cta-reassurance-item">
+          <i aria-hidden="true" data-lucide="search"></i>
+          Independent proposal review
+        </span>
+        <span class="tp-cta-reassurance-item">
+          <i aria-hidden="true" data-lucide="check-circle"></i>
+          Right purchase, first time
+        </span>
+      </div>
+      <p class="tp-cta-last-updated">Last updated: March 2026</p>
+    </div>
+  </section>
+
     <!-- ============================================================
      BCOM IT SOLUTIONS — FOOTER COMPONENT
      Include at the bottom of every page body, before </body>
