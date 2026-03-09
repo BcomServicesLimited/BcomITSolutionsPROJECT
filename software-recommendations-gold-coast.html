@@ -598,22 +598,127 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 })();
 </script>
 
-  <!-- HERO -->
-  <section style="background:#f8fafb;padding:80px 0;text-align:center;" aria-label="Hero — Software Recommendations">
-    <div class="container" style="max-width:760px;margin:0 auto;padding:0 24px;">
-      <span class="hero-badge" style="display:inline-flex;align-items:center;gap:8px;background:#e6fafd;color:#0d1f3c;font-family:'DM Mono',monospace;font-size:0.72rem;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;padding:6px 14px;border-radius:20px;margin-bottom:24px;">
+  <!-- ============================================================
+     HERO SECTION
+     ============================================================ -->
+  <style>
+    .sr-hero {
+      position: relative;
+      min-height: 75vh;
+      display: flex;
+      align-items: center;
+      background-image: url('software-recommendations-hero.webp');
+      background-size: cover;
+      background-position: center 30%;
+      overflow: hidden;
+    }
+    .sr-hero__overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(30,58,95,0.72) 0%, rgba(13,31,60,0.58) 100%);
+      z-index: 1;
+    }
+    .sr-hero__content {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 56px 24px;
+      text-align: center;
+    }
+    .sr-hero__badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(0,200,224,0.12);
+      border: 1px solid rgba(0,200,224,0.35);
+      border-radius: 20px;
+      padding: 6px 14px;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.72rem;
+      color: #00c8e0;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-bottom: 24px;
+    }
+    .sr-hero__badge .status-dot {
+      width: 7px;
+      height: 7px;
+      background: #00c8e0;
+      border-radius: 50%;
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.4; }
+    }
+    .sr-hero h1 {
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      font-weight: 800;
+      color: #ffffff;
+      line-height: 1.12;
+      margin: 0 0 20px;
+      letter-spacing: -0.02em;
+    }
+    .sr-hero__sub {
+      font-size: 1.05rem;
+      color: rgba(255,255,255,0.85);
+      max-width: 620px;
+      margin: 0 auto 32px;
+      line-height: 1.75;
+    }
+    .sr-hero__booking {
+      margin-bottom: 40px;
+    }
+    .sr-hero__trust {
+      display: flex;
+      justify-content: center;
+      gap: 32px;
+      flex-wrap: wrap;
+    }
+    .sr-hero__trust-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.78rem;
+      color: rgba(255,255,255,0.75);
+      letter-spacing: 0.03em;
+    }
+    .sr-hero__trust-item [data-lucide] {
+      width: 16px;
+      height: 16px;
+      stroke: #00c8e0;
+      flex-shrink: 0;
+    }
+    .sr-hero__img {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      opacity: 0;
+      pointer-events: none;
+    }
+    @media (max-width: 640px) {
+      .sr-hero { min-height: 85vh; }
+      .sr-hero__trust { gap: 16px; }
+      .sr-hero__trust-item { font-size: 0.72rem; }
+    }
+  </style>
+
+  <section class="sr-hero" aria-label="Hero — Software Recommendations Gold Coast">
+    <div class="sr-hero__overlay" aria-hidden="true"></div>
+    <div class="sr-hero__content">
+      <div class="sr-hero__badge">
         <span class="status-dot" aria-hidden="true"></span>
-        Business IT · Gold Coast
-      </span>
-      <h1 style="font-size:clamp(1.8rem,4vw,2.8rem);font-weight:800;color:#0d1f3c;line-height:1.15;margin:0 0 20px;">
-        Software Recommendations <span class="text-gradient">Gold Coast</span>
-      </h1>
-      <p class="hero-sub" style="font-size:1.05rem;color:#4a5568;max-width:560px;margin:0 auto 32px;">
-        This page is coming soon. In the meantime, call us on
-        <a href="tel:0730418993" style="color:#00c8e0;font-weight:600;">07 3041 8993</a> or
-        book online below.
+        Business IT &middot; Gold Coast
+      </div>
+      <h1>Software Recommendations <span class="text-gradient">Gold Coast</span></h1>
+      <p class="sr-hero__sub">
+        Not sure which software your Gold Coast business should be using &mdash; or paying for tools you are not sure you still need? We provide independent, practical software recommendations for small and medium businesses on the Gold Coast. No vendor commissions, no referral fees &mdash; just honest advice on what works, what to avoid and what most Gold Coast businesses your size actually use.
       </p>
-      <!-- Google Calendar Appointment Scheduling begin -->
+      <div class="sr-hero__booking">
+        <!-- Google Calendar Appointment Scheduling begin -->
 <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
 <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
 <script>
@@ -630,7 +735,28 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 })();
 </script>
 <!-- end Google Calendar Appointment Scheduling -->
+      </div>
+      <div class="sr-hero__trust">
+        <div class="sr-hero__trust-item">
+          <i aria-hidden="true" data-lucide="shield"></i>
+          No commissions or referral fees
+        </div>
+        <div class="sr-hero__trust-item">
+          <i aria-hidden="true" data-lucide="lightbulb"></i>
+          Practical recommendations by category
+        </div>
+        <div class="sr-hero__trust-item">
+          <i aria-hidden="true" data-lucide="search"></i>
+          Stack review &mdash; identify overlap and gaps
+        </div>
+      </div>
     </div>
+    <img
+      src="software-recommendations-hero.webp"
+      alt="Software recommendations for Gold Coast small businesses &mdash; Bcom IT Solutions"
+      loading="lazy"
+      class="sr-hero__img"
+    />
   </section>
 
   <!-- ============================================================
