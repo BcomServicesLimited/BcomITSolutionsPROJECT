@@ -580,71 +580,412 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </script>
 
 <style>
-  .placeholder-hero {
-    background: #f8fafb;
-    padding: 80px 0 72px;
+  .tc-header {
+    background: linear-gradient(135deg, #0d1f3c 0%, #1e3a5f 60%, #0d2d3a 100%);
+    border-top: 3px solid #00c8e0;
+    padding: 72px 0 56px;
     text-align: center;
-    border-bottom: 1px solid #e2e8f0;
   }
-  .placeholder-hero .container {
+  .tc-header .container {
     max-width: 720px;
     margin: 0 auto;
     padding: 0 24px;
   }
-  .placeholder-hero__badge {
+  .tc-header__badge {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    background: rgba(0,200,224,0.08);
-    border: 1px solid rgba(0,200,224,0.25);
+    background: rgba(0,200,224,0.12);
+    border: 1px solid rgba(0,200,224,0.3);
     border-radius: 20px;
     padding: 6px 14px;
     font-family: 'DM Mono', monospace;
     font-size: 0.72rem;
-    color: #0d1f3c;
-    letter-spacing: 0.04em;
+    color: #00c8e0;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
     margin-bottom: 24px;
   }
-  .placeholder-hero__badge [data-lucide] {
+  .tc-header__badge [data-lucide] {
     width: 13px;
     height: 13px;
     stroke: #00c8e0;
   }
-  .placeholder-hero h1 {
-    font-size: clamp(1.8rem, 4vw, 2.8rem);
+  .tc-header h1 {
+    font-size: clamp(1.8rem, 4vw, 2.6rem);
     font-weight: 700;
-    color: #0d1f3c;
+    color: #ffffff;
     line-height: 1.15;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
     letter-spacing: -0.02em;
   }
-  .placeholder-hero__sub {
-    font-size: 1rem;
-    color: #4a5568;
-    max-width: 540px;
-    margin: 0 auto 0;
-    line-height: 1.75;
+  .tc-header__meta {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.78rem;
+    color: rgba(255,255,255,0.55);
+    line-height: 1.8;
   }
-  .placeholder-hero__sub a {
+  .tc-body {
+    background: #ffffff;
+    padding: 72px 0 80px;
+  }
+  .tc-body .container {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+  .tc-body h2 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #0d1f3c;
+    margin: 48px 0 12px;
+    padding-top: 8px;
+    border-top: 2px solid #e6fafd;
+  }
+  .tc-body h2:first-of-type {
+    margin-top: 0;
+    border-top: none;
+  }
+  .tc-body h3 {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: #0d1f3c;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin: 28px 0 8px;
+  }
+  .tc-body p {
+    font-size: 0.97rem;
+    color: #374151;
+    line-height: 1.8;
+    margin: 0 0 16px;
+  }
+  .tc-body ul {
+    margin: 0 0 16px 0;
+    padding-left: 0;
+    list-style: none;
+  }
+  .tc-body ul li {
+    font-size: 0.97rem;
+    color: #374151;
+    line-height: 1.8;
+    padding-left: 20px;
+    position: relative;
+    margin-bottom: 4px;
+  }
+  .tc-body ul li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 11px;
+    width: 7px;
+    height: 7px;
+    background: #00c8e0;
+    border-radius: 50%;
+  }
+  .tc-body a {
     color: #00c8e0;
     text-decoration: none;
   }
-  .placeholder-hero__sub a:hover {
+  .tc-body a:hover {
     text-decoration: underline;
+  }
+  .tc-contact-box {
+    background: #e6fafd;
+    border-left: 4px solid #00c8e0;
+    border-radius: 12px;
+    padding: 28px 32px;
+    margin-top: 48px;
+  }
+  .tc-contact-box p {
+    margin: 0 0 6px;
+  }
+  .tc-contact-box p:last-child {
+    margin: 0;
+  }
+  .tc-copyright {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.78rem;
+    color: #6b7280;
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 1px solid #e6fafd;
+  }
+  @media (max-width: 640px) {
+    .tc-header { padding: 56px 0 40px; }
+    .tc-body { padding: 48px 0 56px; }
   }
 </style>
 <main>
 
-  <!-- PLACEHOLDER HERO -->
-  <section class="placeholder-hero">
+  <!-- TERMS AND CONDITIONS HEADER -->
+  <section class="tc-header">
     <div class="container">
-      <div class="placeholder-hero__badge">
+      <div class="tc-header__badge">
         <i aria-hidden="true" data-lucide="file-text"></i> Legal
       </div>
       <h1>Terms and Conditions</h1>
-      <p class="placeholder-hero__sub">
-        This page is being prepared. For any enquiries regarding our terms of service, please contact us at <a href="mailto:support@bcomservices.com">support@bcomservices.com</a> or call <a href="tel:0730418993">07 3041 8993</a>.<br>Bcom IT Solutions Pty Ltd &mdash; ABN 92 636 893 108.
+      <p class="tc-header__meta">
+        Service agreement terms for BCOM Services Pty Ltd IT support and telecommunications services<br>
+        Last Updated: 9 March 2026 &mdash; Effective Date: 9 March 2026 &mdash; Jurisdiction: Australia (Queensland)
       </p>
+    </div>
+  </section>
+
+  <!-- TERMS AND CONDITIONS BODY -->
+  <section class="tc-body">
+    <div class="container">
+
+      <h2>1. Introduction and Acceptance</h2>
+      <p>These Terms and Conditions (&ldquo;Terms&rdquo;) constitute a legally binding agreement between you (&ldquo;Client&rdquo;, &ldquo;Customer&rdquo;, &ldquo;You&rdquo;) and BCOM Services Pty Ltd (ABN: 92 636 893 108) (&ldquo;Company&rdquo;, &ldquo;BCOM&rdquo;, &ldquo;We&rdquo;, &ldquo;Us&rdquo;, &ldquo;Our&rdquo;) for the provision of information technology support services, telecommunications services, and related technical services (&ldquo;Services&rdquo;).</p>
+      <p>BCOM Services Pty Ltd provides IT support, networking, cybersecurity, cloud services, and telecommunications services to residential customers and business clients.</p>
+      <p>By requesting services, accepting a quotation, booking an appointment, or otherwise using our services, you acknowledge that you have read and agree to these Terms and Conditions.</p>
+      <p>These Terms operate under applicable Australian law including:</p>
+      <ul>
+        <li>Competition and Consumer Act 2010 (Australian Consumer Law)</li>
+        <li>Telecommunications Act 1997</li>
+        <li>Privacy Act 1988</li>
+        <li>Fair Trading Act 1989 (QLD)</li>
+      </ul>
+
+      <h2>2. Residential and Business Clients</h2>
+      <p>BCOM Services Pty Ltd provides services to both home users and small business clients.</p>
+      <p>Service offerings, pricing structures, support arrangements, and contractual terms may differ depending on whether services are provided for residential or commercial use.</p>
+      <p>Where services are provided to residential customers, consumer protections under the Australian Consumer Law apply.</p>
+      <p>Where services are provided to business clients, additional service agreements may apply including:</p>
+      <ul>
+        <li>Managed service agreements</li>
+        <li>Telecommunications service agreements</li>
+        <li>Service level agreements (SLAs)</li>
+      </ul>
+      <p>Where a separate written agreement exists, that agreement takes precedence over these Terms.</p>
+
+      <h2>3. Service Description</h2>
+
+      <h3>IT Support Services</h3>
+      <p>BCOM Services Pty Ltd provides professional IT services including:</p>
+      <ul>
+        <li>Computer diagnostics and repair</li>
+        <li>Managed IT support</li>
+        <li>Microsoft 365 setup and migration</li>
+        <li>Google Workspace migrations</li>
+        <li>Network and Wi-Fi installation</li>
+        <li>Cybersecurity solutions</li>
+        <li>Cloud service support</li>
+        <li>Remote and onsite technical support</li>
+      </ul>
+      <p>Remote support may be provided using secure remote access software.</p>
+
+      <h3>Telecommunications Services</h3>
+      <p>Telecommunications services may include:</p>
+      <ul>
+        <li>Cloud PBX systems</li>
+        <li>VoIP phone systems</li>
+        <li>Microsoft Teams Phone systems</li>
+        <li>SIP trunking</li>
+        <li>Telecommunications consulting</li>
+        <li>Business phone system installation</li>
+      </ul>
+      <p>All telecommunications services are provided in accordance with ACMA regulations and the Telecommunications Act 1997.</p>
+
+      <h2>4. Pricing and Fees</h2>
+
+      <h3>Service Charges</h3>
+      <p>Services may include:</p>
+      <ul>
+        <li>Onsite call-out fee</li>
+        <li>Hourly technician labour</li>
+        <li>Remote support fees</li>
+        <li>Fixed project pricing</li>
+      </ul>
+      <p>All pricing is quoted in Australian Dollars (AUD) and includes GST where applicable.</p>
+
+      <h2>5. Payment Terms</h2>
+      <p>Unless otherwise agreed in writing:</p>
+      <ul>
+        <li>Invoices are payable within 14 days</li>
+        <li>Services under $500 may require payment on completion</li>
+        <li>Project work may require up to 100% deposit before commencement</li>
+      </ul>
+      <p>BCOM Services Pty Ltd reserves the right to suspend services where invoices remain more than 30 days overdue.</p>
+      <p>Late payments may incur 1.5% interest per month.</p>
+
+      <h2>6. Hardware Ownership</h2>
+      <p>Hardware, equipment, and software supplied by BCOM Services Pty Ltd remain the property of BCOM Services Pty Ltd until paid in full.</p>
+      <p>BCOM Services Pty Ltd reserves the right to recover equipment where invoices remain unpaid.</p>
+
+      <h2>7. Managed Services and Unlimited Plans</h2>
+      <p>Certain service plans may include:</p>
+      <ul>
+        <li>Unlimited Remote IT Support</li>
+        <li>Unlimited Outbound Calling</li>
+      </ul>
+      <p>These services are provided under a Fair Use Policy.</p>
+
+      <h2>8. Fair Use Policy &mdash; Unlimited Remote IT Support</h2>
+      <p>Unlimited remote IT support is intended for reasonable day-to-day operational IT assistance.</p>
+      <p>Typical covered support includes:</p>
+      <ul>
+        <li>Troubleshooting issues</li>
+        <li>User support</li>
+        <li>Software configuration</li>
+        <li>Remote diagnostics</li>
+        <li>Minor system adjustments</li>
+      </ul>
+      <p>Unlimited support does not include:</p>
+      <ul>
+        <li>Infrastructure rebuilds</li>
+        <li>Major system upgrades</li>
+        <li>Large deployments</li>
+        <li>Cybersecurity incident response</li>
+        <li>Onsite services</li>
+        <li>Training or consulting projects</li>
+      </ul>
+      <p>Where support usage becomes excessive or outside normal operational levels, BCOM Services Pty Ltd may convert work to billable services, recommend a managed services upgrade, or schedule work as a project.</p>
+      <p>Unlimited support refers to absence of hourly billing for covered tasks, not unlimited technician availability.</p>
+
+      <h2>9. Fair Use Policy &mdash; Unlimited Outbound Calling</h2>
+      <p>Where telecommunications services include unlimited outbound calling to Australian and New Zealand numbers, this service is intended for normal business communication.</p>
+      <p>Included calls:</p>
+      <ul>
+        <li>Australian landlines</li>
+        <li>Australian mobile numbers</li>
+        <li>New Zealand landlines</li>
+        <li>New Zealand mobile numbers</li>
+      </ul>
+      <p>Not included:</p>
+      <ul>
+        <li>Telemarketing campaigns</li>
+        <li>Call centres</li>
+        <li>Automated dialling systems</li>
+        <li>Bulk outbound calling</li>
+        <li>Premium rate numbers</li>
+        <li>International destinations outside AU/NZ</li>
+      </ul>
+      <p>BCOM Services Pty Ltd may apply additional charges or modify plans where usage significantly exceeds normal business patterns.</p>
+
+      <h2>10. Telecommunications Carrier Dependency</h2>
+      <p>Telecommunications services rely on third-party carriers, internet providers, and infrastructure networks.</p>
+      <p>BCOM Services Pty Ltd does not control these networks and cannot guarantee uninterrupted service.</p>
+      <p>Service interruptions may occur due to:</p>
+      <ul>
+        <li>NBN outages</li>
+        <li>Internet provider faults</li>
+        <li>Carrier outages</li>
+        <li>Power failures</li>
+        <li>Upstream voice carrier failures</li>
+      </ul>
+      <p>BCOM Services Pty Ltd is not responsible for outages within third-party infrastructure.</p>
+
+      <h2>11. Emergency Services Disclaimer (VoIP)</h2>
+      <p>VoIP and cloud phone services depend on internet connectivity and electrical power.</p>
+      <p>During internet or power outages, access to 000 or 112 emergency services may be unavailable.</p>
+      <p>Clients should maintain alternative communication methods such as mobile phones for emergency use.</p>
+      <p>BCOM Services Pty Ltd does not guarantee emergency call availability during service outages.</p>
+
+      <h2>12. Telephone Number Ownership and Porting</h2>
+      <p>Telephone numbers (DIDs) provided as part of VoIP or cloud services may be supplied through third-party carriers.</p>
+      <p>BCOM Services Pty Ltd does not guarantee permanent ownership of numbers supplied through hosted telecommunications services.</p>
+      <p>Clients may request number porting subject to:</p>
+      <ul>
+        <li>Carrier approval</li>
+        <li>Correct account information</li>
+        <li>Accounts being paid in full</li>
+      </ul>
+      <p>Where services are terminated without porting the number, the number may return to the carrier and may become unavailable.</p>
+
+      <h2>13. Support Availability and Response Times</h2>
+      <p>Standard support hours are Monday to Friday, 8:30 AM &ndash; 5:00 PM AEST, excluding public holidays.</p>
+      <p>Support requests are prioritised according to issue severity and business impact.</p>
+      <p>Typical response targets (not guaranteed):</p>
+      <ul>
+        <li>Critical outage &mdash; same day response where possible</li>
+        <li>Business impact issue &mdash; next business day</li>
+        <li>General support &mdash; within 1&ndash;2 business days</li>
+      </ul>
+      <p>Guaranteed response times only apply where a formal Service Level Agreement (SLA) exists.</p>
+
+      <h2>14. Client Responsibilities</h2>
+      <p>Clients must:</p>
+      <ul>
+        <li>Maintain valid software licences</li>
+        <li>Provide access to systems and equipment when required</li>
+        <li>Maintain adequate data backups unless backup services are contracted</li>
+        <li>Safeguard passwords and system access</li>
+      </ul>
+      <p>Clients must notify BCOM Services Pty Ltd promptly of suspected security incidents.</p>
+
+      <h2>15. Cybersecurity and Ransomware Disclaimer</h2>
+      <p>No IT system can guarantee complete protection from cyber threats including:</p>
+      <ul>
+        <li>Ransomware</li>
+        <li>Malware</li>
+        <li>Phishing attacks</li>
+        <li>Unauthorised access</li>
+        <li>Zero-day vulnerabilities</li>
+      </ul>
+      <p>BCOM Services Pty Ltd cannot guarantee that systems will be immune from cyber incidents.</p>
+      <p>Where cybersecurity recommendations are declined, BCOM Services Pty Ltd is not responsible for incidents resulting from those decisions.</p>
+
+      <h2>16. Right to Refuse Insecure Systems</h2>
+      <p>BCOM Services Pty Ltd may refuse or limit support for systems that pose significant cybersecurity risk, including:</p>
+      <ul>
+        <li>Unsupported operating systems</li>
+        <li>Unlicensed software</li>
+        <li>Systems without basic security protections</li>
+        <li>Systems without critical updates</li>
+      </ul>
+      <p>Clients who decline recommended security upgrades accept the associated risks.</p>
+
+      <h2>17. Data Loss and Business Interruption</h2>
+      <p>Technology systems may experience failures due to hardware faults, software issues, cyber incidents, or third-party service outages.</p>
+      <p>BCOM Services Pty Ltd does not guarantee uninterrupted service or prevention of data loss.</p>
+      <p>To the maximum extent permitted by law, BCOM Services Pty Ltd is not liable for:</p>
+      <ul>
+        <li>Loss of data</li>
+        <li>Loss of revenue</li>
+        <li>Loss of profits</li>
+        <li>Business interruption</li>
+      </ul>
+      <p>except where such loss is directly caused by proven negligence.</p>
+      <p>Clients remain responsible for implementing appropriate backup systems unless backups are provided under a service agreement.</p>
+
+      <h2>18. Privacy and Confidentiality</h2>
+      <p>BCOM Services Pty Ltd complies with the Privacy Act 1988 and the Australian Privacy Principles.</p>
+      <p>Client information is used only for:</p>
+      <ul>
+        <li>Service delivery</li>
+        <li>Billing and administration</li>
+        <li>Legal compliance</li>
+      </ul>
+      <p>BCOM Services Pty Ltd does not sell client data. For full details see our <a href="privacy-policy.html">Privacy Policy</a>.</p>
+
+      <h2>19. Termination of Services</h2>
+      <p>Clients may terminate services with reasonable notice.</p>
+      <p>Ongoing service agreements generally require 30 days written notice.</p>
+      <p>BCOM Services Pty Ltd may terminate services where:</p>
+      <ul>
+        <li>Invoices remain unpaid</li>
+        <li>Terms are breached</li>
+        <li>Illegal activity is requested</li>
+      </ul>
+      <p>All completed work remains payable.</p>
+
+      <h2>20. Governing Law</h2>
+      <p>These Terms are governed by the laws of Queensland and the Commonwealth of Australia.</p>
+
+      <h2>21. Contact Information</h2>
+      <div class="tc-contact-box">
+        <p><strong>BCOM Services Pty Ltd</strong><br>ABN: 92 636 893 108</p>
+        <p>Gold Coast, Queensland, Australia</p>
+        <p>Phone: <a href="tel:0730418993">07 3041 8993</a></p>
+        <p>Email: <a href="mailto:support@bcomservices.com">support@bcomservices.com</a></p>
+        <p>Website: <a href="https://bcomservices.com.au">https://bcomservices.com.au</a></p>
+      </div>
+
+      <p class="tc-copyright">&copy; 2007&ndash;2026 BCOM Services Pty Ltd. All rights reserved.</p>
+
     </div>
   </section>
 
