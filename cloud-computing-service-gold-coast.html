@@ -1694,6 +1694,221 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
+  <!-- SECTION 7: FAQ ACCORDION -->
+  <section class="cm-faq-section" aria-label="Cloud Migration Planning Gold Coast — Frequently Asked Questions">
+    <style>
+      .cm-faq-section {
+        background: #e6fafd;
+        padding: 72px 0 64px;
+      }
+      .cm-faq-inner {
+        max-width: 860px;
+        margin: 0 auto;
+        padding: 0 24px;
+      }
+      .cm-faq-label {
+        font-family: 'DM Mono', monospace;
+        font-size: 0.72rem;
+        font-weight: 600;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #00c8e0;
+        margin: 0 0 10px;
+      }
+      .cm-faq-section h2 {
+        font-size: clamp(1.4rem, 2.8vw, 1.9rem);
+        font-weight: 800;
+        color: #0d1f3c;
+        margin: 0 0 36px;
+        line-height: 1.25;
+      }
+      .cm-faq-list {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        border-top: 1px solid rgba(0,200,224,0.2);
+      }
+      .cm-faq-item {
+        border-bottom: 1px solid rgba(0,200,224,0.2);
+      }
+      .cm-faq-btn {
+        width: 100%;
+        background: none;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        padding: 20px 0;
+        text-align: left;
+      }
+      .cm-faq-btn h3 {
+        font-size: 1rem;
+        font-weight: 700;
+        color: #0d1f3c;
+        margin: 0;
+        line-height: 1.4;
+        flex: 1;
+      }
+      .cm-faq-chevron {
+        flex-shrink: 0;
+        width: 20px;
+        height: 20px;
+        stroke: #00c8e0;
+        stroke-width: 2.5;
+        fill: none;
+        transition: transform 0.25s ease;
+      }
+      .cm-faq-item.open .cm-faq-chevron {
+        transform: rotate(180deg);
+      }
+      .cm-faq-answer {
+        display: none;
+        padding: 0 0 20px;
+        font-size: 0.95rem;
+        color: #4a5568;
+        line-height: 1.75;
+      }
+      .cm-faq-answer a {
+        color: #00c8e0;
+        font-weight: 600;
+        text-decoration: none;
+      }
+      .cm-faq-answer a:hover { text-decoration: underline; }
+      .cm-faq-item.open .cm-faq-answer {
+        display: block;
+      }
+    </style>
+    <div class="cm-faq-inner">
+      <p class="cm-faq-label">Frequently Asked Questions</p>
+      <h2>Cloud Migration Planning Gold Coast &mdash; Frequently Asked Questions</h2>
+      <div class="cm-faq-list">
+
+        <div class="cm-faq-item" id="cm-faq-1">
+          <button class="cm-faq-btn" aria-expanded="false" aria-controls="cm-faq-1-answer">
+            <h3>What is the difference between Microsoft 365 Personal and Microsoft 365 Business?</h3>
+            <svg class="cm-faq-chevron" aria-hidden="true" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="cm-faq-answer" id="cm-faq-1-answer">
+            Microsoft 365 Personal is a single-user subscription designed
+            for individuals &mdash; one account, one set of apps, OneDrive
+            personal storage. It has no admin console, no way to manage
+            other users and no business-grade security controls. Microsoft
+            365 Business is designed for organisations &mdash; each staff member
+            gets their own account, email address and storage, managed
+            from a central admin console. You can add and remove users,
+            control what they can access, enable multi-factor authentication
+            across all accounts and configure security policies. For a Gold
+            Coast business with more than one staff member, Microsoft 365
+            Business is the correct product. If your business is currently
+            running on a Personal account, call
+            <a href="tel:0730418993">07 3041 8993</a> &mdash; the migration is
+            more straightforward than most business owners expect.
+          </div>
+        </div>
+
+        <div class="cm-faq-item" id="cm-faq-2">
+          <button class="cm-faq-btn" aria-expanded="false" aria-controls="cm-faq-2-answer">
+            <h3>Will we lose any email history during the migration?</h3>
+            <svg class="cm-faq-chevron" aria-hidden="true" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="cm-faq-answer" id="cm-faq-2-answer">
+            Not if the migration is planned correctly. Email history is
+            migrated from your existing account &mdash; whether that is a
+            Microsoft 365 Personal account, a legacy IMAP server or
+            Google Workspace &mdash; to the new Microsoft 365 Business accounts
+            before the MX record cutover. This means all historical email
+            is present in the new account before it becomes the live
+            account. We test the migration in a staging state and confirm
+            email history is complete before switching anything over. Call
+            <a href="tel:0730418993">07 3041 8993</a> to discuss how your
+            specific email setup would be migrated.
+          </div>
+        </div>
+
+        <div class="cm-faq-item" id="cm-faq-3">
+          <button class="cm-faq-btn" aria-expanded="false" aria-controls="cm-faq-3-answer">
+            <h3>Can you migrate from Google Workspace to Microsoft 365 &mdash; or the other way around?</h3>
+            <svg class="cm-faq-chevron" aria-hidden="true" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="cm-faq-answer" id="cm-faq-3-answer">
+            Yes to both. Google Workspace to Microsoft 365 migrations
+            involve moving email, calendar, contacts and Google Drive
+            files to the equivalent Microsoft 365 services &mdash; Exchange,
+            Outlook Calendar, and OneDrive or SharePoint. Microsoft 365
+            to Google Workspace migrations move the same data in the
+            other direction. Both involve an MX record cutover that
+            determines when new email starts flowing to the new platform.
+            The cutover is planned and timed to minimise disruption to
+            your Gold Coast business. Call
+            <a href="tel:0730418993">07 3041 8993</a> to discuss which
+            direction you are moving and what the migration would involve.
+          </div>
+        </div>
+
+        <div class="cm-faq-item" id="cm-faq-4">
+          <button class="cm-faq-btn" aria-expanded="false" aria-controls="cm-faq-4-answer">
+            <h3>Does the migration include setting up MFA for our team?</h3>
+            <svg class="cm-faq-chevron" aria-hidden="true" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="cm-faq-answer" id="cm-faq-4-answer">
+            Yes &mdash; MFA setup is included as standard in every migration
+            and new tenancy setup engagement, not offered as an add-on.
+            We enrol every user in MFA before cutover, apply conditional
+            access policies and review the Microsoft Secure Score for
+            the new tenancy. A Microsoft 365 Business tenancy without
+            MFA is significantly more vulnerable to account compromise.
+            We do not hand over an environment that is not configured
+            securely.
+          </div>
+        </div>
+
+        <div class="cm-faq-item" id="cm-faq-5">
+          <button class="cm-faq-btn" aria-expanded="false" aria-controls="cm-faq-5-answer">
+            <h3>Is Microsoft 365 data automatically backed up?</h3>
+            <svg class="cm-faq-chevron" aria-hidden="true" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="cm-faq-answer" id="cm-faq-5-answer">
+            No &mdash; and this is one of the most important things Gold Coast
+            businesses misunderstand about Microsoft 365. Microsoft 365
+            synchronises your data across devices and retains deleted
+            items for a limited period, but it does not provide a
+            conventional backup with point-in-time recovery. If a staff
+            member accidentally deletes a large folder, a ransomware event
+            corrupts files across SharePoint, or an account is compromised
+            and data is wiped, recovery from Microsoft&rsquo;s native tools
+            alone may be limited or impossible. We configure a third-party
+            cloud backup solution covering Exchange, OneDrive and SharePoint
+            as part of every migration engagement. Call
+            <a href="tel:0730418993">07 3041 8993</a> to discuss backup
+            options for your Gold Coast Microsoft 365 environment.
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <script>
+    (function() {
+      var items = document.querySelectorAll('.cm-faq-item');
+      items.forEach(function(item) {
+        var btn = item.querySelector('.cm-faq-btn');
+        btn.addEventListener('click', function() {
+          var isOpen = item.classList.contains('open');
+          items.forEach(function(i) {
+            i.classList.remove('open');
+            i.querySelector('.cm-faq-btn').setAttribute('aria-expanded', 'false');
+          });
+          if (!isOpen) {
+            item.classList.add('open');
+            btn.setAttribute('aria-expanded', 'true');
+          }
+        });
+      });
+    })();
+    </script>
+  </section>
+
   <!-- ============================================================
      BCOM IT SOLUTIONS — FOOTER COMPONENT
      Include at the bottom of every page body, before </body>
