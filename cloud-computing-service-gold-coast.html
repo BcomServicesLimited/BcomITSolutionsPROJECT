@@ -598,22 +598,155 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 })();
 </script>
 
-  <!-- HERO -->
-  <section style="background:#f8fafb;padding:80px 0;text-align:center;" aria-label="Hero — Cloud Migration Planning">
-    <div class="container" style="max-width:760px;margin:0 auto;padding:0 24px;">
-      <span class="hero-badge" style="display:inline-flex;align-items:center;gap:8px;background:#e6fafd;color:#0d1f3c;font-family:'DM Mono',monospace;font-size:0.72rem;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;padding:6px 14px;border-radius:20px;margin-bottom:24px;">
+  <!-- SECTION 1: HERO -->
+  <section class="cm-hero-section" aria-label="Cloud Migration Planning Gold Coast — Hero">
+    <style>
+      .cm-hero-section {
+        position: relative;
+        min-height: 75vh;
+        display: flex;
+        align-items: center;
+        background-image: url('cloud-migration-hero.webp');
+        background-size: cover;
+        background-position: center 30%;
+        overflow: hidden;
+      }
+      .cm-hero-section::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          135deg,
+          rgba(30,58,95,0.72) 0%,
+          rgba(13,31,60,0.58) 100%
+        );
+        z-index: 1;
+      }
+      .cm-hero-inner {
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 80px 24px 64px;
+      }
+      .cm-hero-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: rgba(0,200,224,0.15);
+        border: 1px solid rgba(0,200,224,0.35);
+        color: #e6fafd;
+        font-family: 'DM Mono', monospace;
+        font-size: 0.72rem;
+        font-weight: 600;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        padding: 6px 14px;
+        border-radius: 20px;
+        margin-bottom: 24px;
+      }
+      .cm-hero-badge .status-dot {
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: #00c8e0;
+        animation: cm-pulse 2s infinite;
+        flex-shrink: 0;
+      }
+      @keyframes cm-pulse {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.4; }
+      }
+      .cm-hero-section h1 {
+        font-size: clamp(2rem, 4.5vw, 3.2rem);
+        font-weight: 800;
+        color: #ffffff;
+        line-height: 1.12;
+        margin: 0 0 20px;
+        max-width: 720px;
+      }
+      .cm-hero-section h1 .text-gradient {
+        background: linear-gradient(90deg, #00c8e0, #7ee8f5);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+      .cm-hero-sub {
+        font-size: 1.1rem;
+        color: rgba(255,255,255,0.88);
+        max-width: 640px;
+        line-height: 1.7;
+        margin: 0 0 32px;
+      }
+      .cm-hero-actions {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 14px;
+        margin-bottom: 40px;
+      }
+      .cm-btn-primary {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: #00c8e0;
+        color: #0d1f3c;
+        font-weight: 700;
+        font-size: 0.95rem;
+        padding: 13px 26px;
+        border-radius: 8px;
+        text-decoration: none;
+        transition: background 0.2s, transform 0.15s;
+      }
+      .cm-btn-primary:hover { background: #00b4cc; transform: translateY(-1px); }
+      .cm-btn-primary svg { width: 17px; height: 17px; stroke: #0d1f3c; flex-shrink: 0; }
+      .cm-trust-strip {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        margin-top: 8px;
+      }
+      .cm-trust-item {
+        display: flex;
+        align-items: center;
+        gap: 9px;
+        color: rgba(255,255,255,0.82);
+        font-size: 0.88rem;
+        font-weight: 500;
+      }
+      .cm-trust-item svg {
+        width: 18px;
+        height: 18px;
+        stroke: #00c8e0;
+        flex-shrink: 0;
+      }
+      @media (max-width: 640px) {
+        .cm-hero-inner { padding: 60px 20px 48px; }
+        .cm-hero-actions { flex-direction: column; align-items: flex-start; }
+        .cm-trust-strip { flex-direction: column; gap: 14px; }
+      }
+    </style>
+    <div class="cm-hero-inner">
+      <div class="cm-hero-badge">
         <span class="status-dot" aria-hidden="true"></span>
-        Business IT · Gold Coast
-      </span>
-      <h1 style="font-size:clamp(1.8rem,4vw,2.8rem);font-weight:800;color:#0d1f3c;line-height:1.15;margin:0 0 20px;">
-        Cloud Migration Planning <span class="text-gradient">Gold Coast</span>
-      </h1>
-      <p class="hero-sub" style="font-size:1.05rem;color:#4a5568;max-width:560px;margin:0 auto 32px;">
-        This page is coming soon. In the meantime, call us on
-        <a href="tel:0730418993" style="color:#00c8e0;font-weight:600;">07 3041 8993</a> or
-        book online below.
+        Business IT &middot; Gold Coast
+      </div>
+      <h1>Cloud Migration Planning <span class="text-gradient">Gold Coast</span></h1>
+      <p class="cm-hero-sub">
+        Started your business on a Microsoft 365 Personal account &mdash; and now
+        you have staff, multiple email addresses and files scattered across
+        one shared login? Moving your Gold Coast business to a properly
+        configured Microsoft 365 Business tenancy is not complicated, but
+        it needs to be done right. We plan and execute the migration so
+        nothing is lost and your team is set up correctly from day one.
       </p>
-      <!-- Google Calendar Appointment Scheduling begin -->
+      <div class="cm-hero-actions">
+        <a href="tel:0730418993" class="cm-btn-primary">
+          <i aria-hidden="true" data-lucide="phone"></i>
+          Call 07 3041 8993
+        </a>
+        <!-- Google Calendar Appointment Scheduling begin -->
 <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
 <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
 <script>
@@ -630,7 +763,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 })();
 </script>
 <!-- end Google Calendar Appointment Scheduling -->
+      </div>
+      <div class="cm-trust-strip">
+        <div class="cm-trust-item">
+          <i aria-hidden="true" data-lucide="cloud"></i>
+          Microsoft 365 Business setup and migration
+        </div>
+        <div class="cm-trust-item">
+          <i aria-hidden="true" data-lucide="shield"></i>
+          MFA and security baseline included
+        </div>
+        <div class="cm-trust-item">
+          <i aria-hidden="true" data-lucide="database"></i>
+          No data loss &mdash; migration planned and tested
+        </div>
+      </div>
     </div>
+    <!-- Hero background image (hidden, for SEO alt text) -->
+    <img
+      src="cloud-migration-hero.webp"
+      alt="Cloud migration planning for Gold Coast small businesses &mdash; Bcom IT Solutions"
+      loading="lazy"
+      style="display:none;"
+    >
   </section>
 
   <!-- ============================================================
