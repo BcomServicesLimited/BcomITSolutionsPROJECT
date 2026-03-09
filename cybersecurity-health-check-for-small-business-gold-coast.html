@@ -598,22 +598,131 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 })();
 </script>
 
-  <!-- HERO -->
-  <section style="background:#f8fafb;padding:80px 0;text-align:center;" aria-label="Hero — Cybersecurity Risk Assessment">
-    <div class="container" style="max-width:760px;margin:0 auto;padding:0 24px;">
-      <span class="hero-badge" style="display:inline-flex;align-items:center;gap:8px;background:#e6fafd;color:#0d1f3c;font-family:'DM Mono',monospace;font-size:0.72rem;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;padding:6px 14px;border-radius:20px;margin-bottom:24px;">
+   <!-- SECTION 1: HERO -->
+  <section class="cs-hero-section" aria-label="Cybersecurity Risk Assessment Gold Coast — Hero">
+    <style>
+      .cs-hero-section {
+        position: relative;
+        min-height: 75vh;
+        display: flex;
+        align-items: center;
+        background-image: url('cybersecurity-assessment-hero.webp');
+        background-size: cover;
+        background-position: center 30%;
+        overflow: hidden;
+      }
+      .cs-hero-section::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          135deg,
+          rgba(30,58,95,0.72) 0%,
+          rgba(13,31,60,0.58) 100%
+        );
+        z-index: 1;
+      }
+      .cs-hero-inner {
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 80px 24px 64px;
+      }
+      .cs-hero-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: rgba(0,200,224,0.15);
+        border: 1px solid rgba(0,200,224,0.35);
+        color: #e6fafd;
+        font-family: 'DM Mono', monospace;
+        font-size: 0.72rem;
+        font-weight: 600;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        padding: 6px 14px;
+        border-radius: 20px;
+        margin-bottom: 24px;
+      }
+      .cs-hero-badge .status-dot {
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: #00c8e0;
+        animation: cs-pulse 2s infinite;
+        flex-shrink: 0;
+      }
+      @keyframes cs-pulse {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.4; }
+      }
+      .cs-hero-section h1 {
+        font-size: clamp(2rem, 4.5vw, 3.2rem);
+        font-weight: 800;
+        color: #ffffff;
+        line-height: 1.12;
+        margin: 0 0 20px;
+        max-width: 720px;
+      }
+      .cs-hero-section h1 .text-gradient {
+        background: linear-gradient(90deg, #00c8e0, #7ee8f5);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+      .cs-hero-sub {
+        font-size: 1.1rem;
+        color: rgba(255,255,255,0.88);
+        max-width: 640px;
+        line-height: 1.75;
+        margin: 0 0 32px;
+      }
+      .cs-hero-actions {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 14px;
+        margin-bottom: 40px;
+      }
+      .cs-trust-strip {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        margin-top: 8px;
+      }
+      .cs-trust-item {
+        display: flex;
+        align-items: center;
+        gap: 9px;
+        color: rgba(255,255,255,0.82);
+        font-size: 0.88rem;
+        font-weight: 500;
+      }
+      .cs-trust-item [data-lucide] {
+        width: 18px;
+        height: 18px;
+        stroke: #00c8e0;
+        flex-shrink: 0;
+      }
+      @media (max-width: 640px) {
+        .cs-hero-inner { padding: 60px 20px 48px; }
+        .cs-hero-actions { flex-direction: column; align-items: flex-start; }
+        .cs-trust-strip { flex-direction: column; gap: 14px; }
+      }
+    </style>
+    <div class="cs-hero-inner">
+      <div class="cs-hero-badge">
         <span class="status-dot" aria-hidden="true"></span>
-        Business IT · Gold Coast
-      </span>
-      <h1 style="font-size:clamp(1.8rem,4vw,2.8rem);font-weight:800;color:#0d1f3c;line-height:1.15;margin:0 0 20px;">
-        Cybersecurity Risk Assessment <span class="text-gradient">Gold Coast</span>
-      </h1>
-      <p class="hero-sub" style="font-size:1.05rem;color:#4a5568;max-width:560px;margin:0 auto 32px;">
-        This page is coming soon. In the meantime, call us on
-        <a href="tel:0730418993" style="color:#00c8e0;font-weight:600;">07 3041 8993</a> or
-        book online below.
+        Business IT &middot; Gold Coast
+      </div>
+      <h1>Cybersecurity Risk Assessment <span class="text-gradient">Gold Coast</span></h1>
+      <p class="cs-hero-sub">
+        Most Gold Coast small businesses have never had anyone look at their security properly. Not because they&rsquo;re reckless &mdash; because no one has offered to. A cybersecurity risk assessment gives you a specific, written picture of where your business stands: what&rsquo;s in place, what&rsquo;s missing and what to fix first. No jargon, no scare tactics, no unnecessary alarm. Just an honest view of your actual exposure.
       </p>
-      <!-- Google Calendar Appointment Scheduling begin -->
+      <div class="cs-hero-actions">
+        <!-- Google Calendar Appointment Scheduling begin -->
 <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
 <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
 <script>
@@ -626,12 +735,33 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       label: 'Book an appointment',
       target,
     });
-  });
-})();
+  })();
 </script>
 <!-- end Google Calendar Appointment Scheduling -->
+      </div>
+      <div class="cs-trust-strip">
+        <div class="cs-trust-item">
+          <i aria-hidden="true" data-lucide="shield-check"></i>
+          Specific findings for your business
+        </div>
+        <div class="cs-trust-item">
+          <i aria-hidden="true" data-lucide="file-text"></i>
+          Written report with prioritised recommendations
+        </div>
+        <div class="cs-trust-item">
+          <i aria-hidden="true" data-lucide="search"></i>
+          Accounts, devices, email, backups, network, staff
+        </div>
+      </div>
     </div>
-  </section>
+    <!-- Hero background image (hidden, for SEO alt text) -->
+    <img
+      src="cybersecurity-assessment-hero.webp"
+      alt="Cybersecurity risk assessment for Gold Coast small businesses — Bcom IT Solutions"
+      loading="lazy"
+      style="display:none;"
+    >
+  </section>on>
 
   <!-- ============================================================
      BCOM IT SOLUTIONS — FOOTER COMPONENT
