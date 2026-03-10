@@ -1044,3 +1044,34 @@ The correct filename is voip-phone-system-installation-and-support-gold-coast.ht
 
 Fix applied in: telecommunications-contractor-gold-coast.html
 Commit message: Fix broken internal links -- go-live prep
+
+
+---
+
+## _redirects File Created
+
+| Item | Value |
+|------|-------|
+| File location | Repository root (_redirects) |
+| Total rules | 42 |
+| 301 redirects | 41 |
+| 410 gone | 1 |
+| Live page conflicts | None confirmed |
+| /computer-repairs-gold-coast.html in sources | No |
+| /computer-networking-service-gold-coast.html in sources | No |
+| Destination spot-check | All 5 confirmed present |
+| All 301 destination files exist in repository | Yes |
+| Committed | 2242d0e |
+
+### Destination Spot-Check
+
+| Destination | Status |
+|-------------|--------|
+| /remote-it-support-gold-coast.html | EXISTS |
+| /mesh-network-setup-gold-coast.html | EXISTS |
+| /cloud-computing-service-gold-coast.html | EXISTS |
+| /on-site-computer-repair-gold-coast.html | EXISTS |
+| /artificial-intelligence-service-gold-coast.html | EXISTS |
+
+All 41 destination files for 301 rules confirmed present in the repository.
+The 410 rule self-references /tech-tips-template.html as required by Cloudflare Pages syntax.
