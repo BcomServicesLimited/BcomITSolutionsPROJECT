@@ -462,3 +462,56 @@ This single replacement corrected the domain in all locations simultaneously:
 | `hardware-software-troubleshooting-gold-coast.html` | Already matched — no change |
 | `phone-line-installation-cabling-gold-coast.html` | Already matched — no change |
 | `on-site-technical-support-gold-coast.html` | Already matched — no change |
+
+---
+
+## Task 3 Fixes Applied — OG & Twitter Tags (Final Verification)
+
+**Verification date:** 2026-03-10
+**Total files checked:** 42
+**Result: 42/42 PASS — 0 FAIL**
+
+### Checklist
+
+| Check | Result |
+|---|---|
+| All 42 files have all 10 required OG/Twitter tags | PASS |
+| No `og:url` contains `bcomservices.com.au` | PASS |
+| `og:title` matches `<title>` on every page | PASS |
+| `og:description` matches `<meta name="description">` on every page | PASS |
+| Spot check 5 files (index, about, managed-it, voip, ai) | PASS — all MATCH |
+| `twitter:card` is `summary_large_image` on all pages | PASS |
+| `og:type` is `website` on all pages | PASS |
+| `og:site_name` is `Bcom IT Solutions` on all pages | PASS |
+| No `og:image` or `twitter:image` points to `.jpg`, `.jpeg` or `.png` | PASS |
+| `home-users.html` now has `twitter:image` | PASS |
+| `computer-networking-service-gold-coast.html` `og:title` matches `<title>` | PASS |
+| `computer-repairs-gold-coast.html` `og:title` matches `<title>` | PASS |
+
+### Additional files added in final pass (not in original Category A list)
+
+| File | Action |
+|---|---|
+| `business.html` | Full 10-tag OG block added |
+| `contact.html` | Full 10-tag OG block added |
+| `support.html` | Full 10-tag OG block added |
+
+### Fallback image files (3 files — no hero image in assets)
+
+| File | Fallback image |
+|---|---|
+| `cloud-computing-service-gold-coast.html` | `bcom-og-default.webp` |
+| `cybersecurity-health-check-for-small-business-gold-coast.html` | `bcom-og-default.webp` |
+| `software-recommendations-gold-coast.html` | `bcom-og-default.webp` |
+
+> **Action required:** `bcom-og-default.webp` does not yet exist in the assets folder. A default OG image should be created and saved to `assets/bcom-og-default.webp` before these 3 pages are shared on social media.
+
+### Total files updated across all OG/Twitter fix tasks
+
+| Category | Files | Action |
+|---|---|---|
+| A — Full block added | 32 | 29 original + business.html, contact.html, support.html |
+| B — Stale descriptions synced | 9 | og:description and twitter:description updated |
+| C — Title mismatch fixed | 2 | og:title and twitter:title updated |
+| D — Missing twitter:image | 1 | twitter:image added to home-users.html |
+| Entity encoding normalised | 11 | og:description, og:title synced to match HTML entity format |
