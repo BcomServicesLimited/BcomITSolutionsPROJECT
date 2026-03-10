@@ -135,3 +135,10 @@ All descriptions verified at 120–155 rendered characters. Only `<meta name="de
 | `network-troubleshooting-diagnostics-gold-coast.html` | 166 | 143 | Network troubleshooting and diagnostics across the Gold Coast. On-site fault finding for slow, dropping or unreliable home and office networks. |
 | `hardware-software-troubleshooting-gold-coast.html` | 164 | 146 | Hardware and software troubleshooting for Gold Coast businesses. On-site and remote fault diagnosis, repairs and configuration. Call 07 3041 8993. |
 | `phone-line-installation-cabling-gold-coast.html` | 162 | 134 | Phone line installation and cabling for Gold Coast businesses and offices. New lines, extensions, patch panels and structured cabling. |
+
+### Meta Description Expansions — 2 files (under 120 chars)
+
+| File | Before (chars) | After (chars) | New description |
+|---|---|---|---|
+| `telecommunications-contractor-gold-coast.html` | 103 | 151 | Business telecommunications across the Gold Coast. Phone systems, VoIP, PBX, data cabling and NBN support for Gold Coast businesses. Call 07 3041 8993. |
+| `on-site-technical-support-gold-coast.html` | 113 | 154 | On-site IT support for Gold Coast businesses. We come to your office and fix IT problems fast — same-day available for critical faults. Call 07 3041 8993. |
