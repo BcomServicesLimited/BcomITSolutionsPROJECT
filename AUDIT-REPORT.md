@@ -438,3 +438,27 @@ This single replacement corrected the domain in all locations simultaneously:
 **Fallback image used:** 3 files — `cloud-computing-service-gold-coast.html`, `cybersecurity-health-check-for-small-business-gold-coast.html`, `software-recommendations-gold-coast.html`
 
 **Note:** `bcom-og-default.webp` does not yet exist in assets — this is a placeholder URL. A default OG image should be created and saved to `assets/bcom-og-default.webp` before these 3 pages are shared on social media.
+
+---
+
+## Task 3 Fixes Applied — OG & Twitter Tags (Category B: stale descriptions)
+
+**Fix date:** 2026-03-10
+**Method:** Read current `<meta name="description">` from each file, update `og:description` and `twitter:description` to match exactly. No other tags changed.
+
+| File | Action |
+|---|---|
+| `index.html` | Full 10-tag OG block added (was missing entirely) |
+| `home-users.html` | `og:description` and `twitter:description` updated |
+| `it-support-and-services-gold-coast.html` | `og:description` and `twitter:description` updated |
+| `about.html` | `og:description` and `twitter:description` updated |
+| `on-site-computer-repair-gold-coast.html` | `og:description` and `twitter:description` updated |
+| `os-troubleshooting-repair-gold-coast.html` | `og:description` and `twitter:description` updated |
+| `virus-and-malware-removal-services-gold-coast.html` | `og:description` and `twitter:description` updated |
+| `software-installation-configuration-gold-coast.html` | `og:description` and `twitter:description` updated |
+| `telecommunications-contractor-gold-coast.html` | `og:description` and `twitter:description` updated |
+| `home-wifi-setup-and-troubleshooting-gold-coast.html` | Already matched — no change |
+| `network-troubleshooting-diagnostics-gold-coast.html` | Already matched — no change |
+| `hardware-software-troubleshooting-gold-coast.html` | Already matched — no change |
+| `phone-line-installation-cabling-gold-coast.html` | Already matched — no change |
+| `on-site-technical-support-gold-coast.html` | Already matched — no change |
