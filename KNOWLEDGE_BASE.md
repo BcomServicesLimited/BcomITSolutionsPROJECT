@@ -143,7 +143,7 @@ Every page must include the following in `<head>`, in this order:
 <!-- Page-specific title and description -->
 <title>...</title>
 <meta name="description" content="...">
-<link rel="canonical" href="https://bcomservices.com.au/...">
+<link rel="canonical" href="https://www.bcomservices.com/...">
 <!-- Favicon -->
 <link rel="icon" type="image/gif" href="BcomFavicon.gif">
 <!-- Lucide icons -->
