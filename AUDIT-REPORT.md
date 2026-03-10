@@ -99,3 +99,19 @@
 ---
 
 *Tasks 3–8 findings will be appended below as the audit progresses.*
+
+---
+
+## Task 2 Fixes Applied
+
+**Date applied:** 2026-03-10
+**Rule:** Only `<title>` and `<meta name="description">` tags edited. No other content, H1s, canonical URLs, nav, footer, body content, or schema were touched.
+
+| File | Element | Before | After | Rendered chars |
+|---|---|---|---|---|
+| `computer-consultant-gold-coast.html` | `<title>` | `IT Consultant Gold Coast \| IT Consulting Services \| Bcom IT Solutions` (69 raw, 2 pipes) | `IT Consulting Gold Coast \| Bcom IT Solutions` | 44 ✓ |
+
+**Notes:**
+- Only one fix was instructed in this batch — the double-pipe title on `computer-consultant-gold-coast.html`.
+- All other issues identified in the Task 2 audit (description lengths, remaining title lengths) are pending separate fix instructions.
+- No description changes were made in this batch.
