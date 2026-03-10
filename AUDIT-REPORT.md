@@ -115,3 +115,23 @@
 - Only one fix was instructed in this batch — the double-pipe title on `computer-consultant-gold-coast.html`.
 - All other issues identified in the Task 2 audit (description lengths, remaining title lengths) are pending separate fix instructions.
 - No description changes were made in this batch.
+
+### Meta Description Rewrites — 13 files
+
+All descriptions verified at 120–155 rendered characters. Only `<meta name="description">` tags were edited. No other content was changed.
+
+| File | Before (chars) | After (chars) | New description |
+|---|---|---|---|
+| `index.html` | 211 | 133 | Gold Coast IT support for homes and businesses. Computer repair, WiFi, managed IT and cybersecurity — local team, on-site and remote. |
+| `home-users.html` | 182 | 146 | Residential IT support across the Gold Coast. Computer repair, WiFi setup, networking and troubleshooting for Gold Coast homes. Call 07 3041 8993. |
+| `it-support-and-services-gold-coast.html` | 179 | 145 | Business IT support across the Gold Coast. On-site and remote support, managed IT, hardware troubleshooting and cybersecurity. Call 07 3041 8993. |
+| `about.html` | 197 | 135 | Bcom IT Solutions — locally owned Gold Coast IT company. Experienced technicians supporting homes and businesses across the Gold Coast. |
+| `on-site-computer-repair-gold-coast.html` | 162 | 141 | On-site computer repair across the Gold Coast. Laptop and PC repair, virus removal, data recovery and performance fixes — same-day available. |
+| `os-troubleshooting-repair-gold-coast.html` | 192 | 146 | Windows and macOS troubleshooting and repair across the Gold Coast. Crashes, boot failures, slow startups and OS errors fixed on-site or remotely. |
+| `virus-and-malware-removal-services-gold-coast.html` | 177 | 142 | Virus and malware removal across the Gold Coast. On-site diagnosis, ransomware cleanup, scam checks and security hardening. Call 07 3041 8993. |
+| `software-installation-configuration-gold-coast.html` | 166 | 146 | Software installation and configuration across the Gold Coast. Business and home software setup, licensing and troubleshooting. Call 07 3041 8993. |
+| `home-wifi-setup-and-troubleshooting-gold-coast.html` | 162 | 132 | WiFi installation and troubleshooting for Gold Coast homes. Router setup, dead zone fixes, mesh networks and security configuration. |
+| `network-security-and-firewall-configuration-gold-coast.html` | 211 | 133 | Network security and firewall setup for Gold Coast homes and small offices. WPA3, guest networks, firewall rules and security audits. |
+| `network-troubleshooting-diagnostics-gold-coast.html` | 166 | 143 | Network troubleshooting and diagnostics across the Gold Coast. On-site fault finding for slow, dropping or unreliable home and office networks. |
+| `hardware-software-troubleshooting-gold-coast.html` | 164 | 146 | Hardware and software troubleshooting for Gold Coast businesses. On-site and remote fault diagnosis, repairs and configuration. Call 07 3041 8993. |
+| `phone-line-installation-cabling-gold-coast.html` | 162 | 134 | Phone line installation and cabling for Gold Coast businesses and offices. New lines, extensions, patch panels and structured cabling. |
