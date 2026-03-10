@@ -187,3 +187,25 @@ The following files have titles that appear long in raw HTML due to `&amp;` enco
 | `on-site-technical-support-gold-coast.html` | 154 |
 
 **Task 2 fixes complete.**
+
+---
+
+## Task 3 — Canonical URLs
+
+**Audit date:** 2026-03-10
+**Files checked:** 38 existing files (residential.html — SKIP, file does not exist)
+**Result: 37 PASS / 1 ISSUE**
+
+### PASS
+
+All 37 files below have a single, correctly formed canonical tag matching the expected value exactly — `https://bcomservices.com.au/[filename].html`, no trailing slash, no `www.`, one tag per page.
+
+`business.html` · `home-users.html` · `computer-consultant-gold-coast.html` · `it-support-and-services-gold-coast.html` · `telecommunications-contractor-gold-coast.html` · `support.html` · `about.html` · `contact.html` · `on-site-computer-repair-gold-coast.html` · `os-troubleshooting-repair-gold-coast.html` · `virus-and-malware-removal-services-gold-coast.html` · `software-installation-configuration-gold-coast.html` · `data-backup-recovery-gold-coast.html` · `performance-optimisation-gold-coast.html` · `home-wifi-setup-and-troubleshooting-gold-coast.html` · `mesh-network-setup-gold-coast.html` · `router-and-modem-configuration-gold-coast.html` · `network-security-and-firewall-configuration-gold-coast.html` · `wifi-range-extension-gold-coast.html` · `network-troubleshooting-diagnostics-gold-coast.html` · `remote-it-support-gold-coast.html` · `on-site-technical-support-gold-coast.html` · `hardware-software-troubleshooting-gold-coast.html` · `it-consulting-strategy-gold-coast.html` · `managed-it-services-for-small-businesses-gold-coast.html` · `business-phone-systems-gold-coast.html` · `voip-phone-system-installation-and-support-gold-coast.html` · `phone-line-installation-cabling-gold-coast.html` · `pabx-phone-systems-gold-coast.html` · `network-cabling-for-offices-gold-coast.html` · `nbn-internet-support-gold-coast.html` · `it-needs-assessment-gold-coast.html` · `technology-procurement-advice-gold-coast.html` · `cloud-computing-service-gold-coast.html` · `cybersecurity-health-check-for-small-business-gold-coast.html` · `software-recommendations-gold-coast.html` · `artificial-intelligence-service-gold-coast.html`
+
+### ISSUES FOUND
+
+| File | Severity | Issue | Required fix |
+|---|---|---|---|
+| `index.html` | HIGH | Canonical is `https://bcomservices.com.au/` (domain root, no filename) — expected `https://bcomservices.com.au/index.html` | Change canonical href to `https://bcomservices.com.au/index.html` |
+
+**Note on `residential.html`:** File does not exist in the repository. Listed in Task 1 scope but not present. No action required — this is not an error.
