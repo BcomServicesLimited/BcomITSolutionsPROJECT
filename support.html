@@ -508,15 +508,28 @@
   background: #ffffff; border: 1px solid #e2e8f0;
   border-radius: 14px;
   box-shadow: 0 20px 50px rgba(0,0,0,0.13);
-  display: none; z-index: 999; overflow: hidden;
+  display: block; z-index: 999; overflow: hidden;
   padding-top: 8px; margin-top: -8px;
+  /* Hide — delayed 150ms so cursor can travel into panel */
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.15s ease 0.15s,
+              visibility 0s ease 0.15s;
 }
 .mega-panel::before {
   content: ''; position: absolute;
   top: -8px; left: 0; right: 0; height: 8px;
   background: transparent;
 }
-.nav-has-mega:hover .mega-panel { display: block; }
+/* Show — instant */
+.nav-has-mega:hover .mega-panel {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transition: opacity 0.15s ease 0s,
+              visibility 0s ease 0s;
+}
 .mega-panel.residential { width: 680px; }
 .mega-panel.business    { width: 980px; }
 
@@ -622,6 +635,9 @@
     width: 100% !important; border-radius: 0;
     box-shadow: none; border: none;
     border-top: 1px solid #e2e8f0;
+    /* Reset transition for mobile — JS-controlled display toggle */
+    opacity: 1; visibility: visible; pointer-events: auto;
+    transition: none;
     display: none;
   }
   .mega-panel.mobile-open { display: block; }
