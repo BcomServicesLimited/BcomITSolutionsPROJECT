@@ -1003,3 +1003,44 @@ All 42 files pass every check.
 | LOW | 0 |
 
 No fixes required. No files changed.
+
+
+---
+
+## Internal Links Spot-Check
+
+**Audit date:** 2026-03-10
+**Files scanned:** 44
+
+### Checks Performed
+
+| Check | Scope |
+|-------|-------|
+| href containing bcomservices.com.au | All 44 files |
+| href using http:// to same domain | All 44 files |
+| Relative .html href pointing to non-existent file | All 44 files |
+| Absolute href to own domain pointing to non-existent file | All 44 files |
+| href=index.html occurrences | All 44 files |
+
+### HIGH Issue Found and Fixed
+
+| File | Broken href | Correct href |
+|------|-------------|--------------|
+| telecommunications-contractor-gold-coast.html | voip-phone-systems-gold-coast.html | voip-phone-system-installation-and-support-gold-coast.html |
+
+The broken link was in a service card "Learn more" anchor on line 745.
+The file voip-phone-systems-gold-coast.html does not exist in the repository.
+The correct filename is voip-phone-system-installation-and-support-gold-coast.html.
+
+### Post-Fix Verification
+
+- HIGH issues: 0
+- No href containing bcomservices.com.au found in any anchor tag
+- No http:// internal links found
+- No href=index.html occurrences found
+- All relative .html hrefs resolve to existing files
+
+### Commit
+
+Fix applied in: telecommunications-contractor-gold-coast.html
+Commit message: Fix broken internal links -- go-live prep
