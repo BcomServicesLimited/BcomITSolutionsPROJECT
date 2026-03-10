@@ -847,3 +847,71 @@ All 44 HTML files have syntactically valid JSON-LD blocks.
 
 **HIGH issues: 0 · MEDIUM issues: 1 · LOW issues: 0**
 
+
+---
+
+## Schema Fixes Applied — Issues 1–4
+
+### Issue 1 — Duplicate BreadcrumbList Removed from Footer Sections
+
+| Footer component | BreadcrumbList JSON-LD block removed |
+|---|---|
+| Affected pages resolved | 19 pages (see list below) |
+
+**19 pages fixed:**
+- `artificial-intelligence-service-gold-coast.html`
+- `data-backup-recovery-gold-coast.html`
+- `hardware-software-troubleshooting-gold-coast.html`
+- `home-wifi-setup-and-troubleshooting-gold-coast.html`
+- `it-consulting-strategy-gold-coast.html`
+- `it-needs-assessment-gold-coast.html`
+- `managed-it-services-for-small-businesses-gold-coast.html`
+- `mesh-network-setup-gold-coast.html`
+- `nbn-internet-support-gold-coast.html`
+- `network-cabling-for-offices-gold-coast.html`
+- `network-troubleshooting-diagnostics-gold-coast.html`
+- `pabx-phone-systems-gold-coast.html`
+- `performance-optimisation-gold-coast.html`
+- `phone-line-installation-cabling-gold-coast.html`
+- `remote-it-support-gold-coast.html`
+- `software-installation-configuration-gold-coast.html`
+- `software-recommendations-gold-coast.html`
+- `technology-procurement-advice-gold-coast.html`
+- `voip-phone-system-installation-and-support-gold-coast.html`
+
+**2 pages skipped** (`on-site-technical-support`, `virus-and-malware-removal`) — BreadcrumbList only existed in footer; no duplicate present.
+
+---
+
+### Issue 2 — Duplicate LocalBusiness Blocks Merged on index.html
+
+| index.html | Two LocalBusiness blocks merged into one |
+|---|---|
+| Properties preserved | `@context`, `@type`, `name`, `aggregateRating`, `serviceArea`, `url`, `telephone` |
+
+**Before:** Block 1 contained `aggregateRating` only. Block 2 contained `serviceArea` only.
+**After:** Single merged block containing all properties. `url` set to `https://www.bcomservices.com/`. `telephone` set to `+61730418993`.
+
+---
+
+### Issue 3 — Duplicate Footer Component Removed from wifi-range-extension
+
+| wifi-range-extension-gold-coast.html | Duplicate footer removed |
+|---|---|
+| Schema blocks now | 1× BreadcrumbList, 1× LocalBusiness, 1× FAQPage, 1× HowTo |
+
+Also removed: misplaced `</body>` tag and broken HTML comment fragment that were left over from the duplicate paste.
+
+---
+
+### Issue 4 — Old Domain Fixed in Schema Blocks
+
+| File | Block type | Old domain | New domain |
+|------|------------|------------|------------|
+| `about.html` | LocalBusiness, Organization, WebPage | `bcomservices.com.au` | `www.bcomservices.com` |
+| `business.html` | Service | `bcomservices.com.au` | `www.bcomservices.com` |
+| `contact.html` | LocalBusiness | `bcomservices.com.au` | `www.bcomservices.com` |
+| `support.html` | LocalBusiness | `bcomservices.com.au` | `www.bcomservices.com` |
+
+Zero instances of `bcomservices.com.au` remain in any schema block across all 44 pages.
+
