@@ -646,3 +646,52 @@ All 16 MEDIUM issues identified in the OG & Social Meta audit have been resolved
 ### Final verification result
 
 **40/40 PASS — 0 issues remaining.**
+
+---
+
+## BreadcrumbList Home Item Fix Applied
+
+**Fix date:** 2026-03-10
+**Task:** BreadcrumbList Home Item URL — Task 2 fix
+**Rule:** Position-1 ListItem "item" must be `https://www.bcomservices.com/` (bare root, no filename)
+**Files changed:** 30
+**Verification:** 40/40 PASS — 0 HIGH, 0 MEDIUM issues remaining
+
+| File | Before | After |
+|------|--------|-------|
+| `artificial-intelligence-service-gold-coast.html` | `https://www.bcomservices.com/index.html` | `https://www.bcomservices.com/` |
+| `business-phone-systems-gold-coast.html` | `https://www.bcomservices.com/index.html` | `https://www.bcomservices.com/` |
+| `cloud-computing-service-gold-coast.html` | `https://www.bcomservices.com/index.html` | `https://www.bcomservices.com/` |
+| `contact.html` | `https://www.bcomservices.com/index.html` | `https://www.bcomservices.com/` |
+| `cybersecurity-health-check-for-small-business-gold-coast.html` | `https://www.bcomservices.com/index.html` | `https://www.bcomservices.com/` |
+| `data-backup-recovery-gold-coast.html` | `https://www.bcomservices.com/index.html` | `https://www.bcomservices.com/` |
+| `hardware-software-troubleshooting-gold-coast.html` | `https://www.bcomservices.com/index.html` | `https://www.bcomservices.com/` |
+| `home-wifi-setup-and-troubleshooting-gold-coast.html` | `https://www.bcomservices.com/index.html` | `https://www.bcomservices.com/` |
+| `it-consulting-strategy-gold-coast.html` | `https://www.bcomservices.com/index.html` | `https://www.bcomservices.com/` |
+| `it-needs-assessment-gold-coast.html` | `https://www.bcomservices.com/index.html` | `https://www.bcomservices.com/` |
+| `managed-it-services-for-small-businesses-gold-coast.html` | `https://www.bcomservices.com/index.html` | `https://www.bcomservices.com/` |
+| `mesh-network-setup-gold-coast.html` | `https://www.bcomservices.com/index.html` | `https://www.bcomservices.com/` |
+| `nbn-internet-support-gold-coast.html` | `https://www.bcomservices.com/index.html` | `https://www.bcomservices.com/` |
+| `network-cabling-for-offices-gold-coast.html` | `https://www.bcomservices.com/index.html` | `https://www.bcomservices.com/` |
+| `network-security-and-firewall-configuration-gold-coast.html` | `https://www.bcomservices.com/index.html` | `https://www.bcomservices.com/` |
+| `network-troubleshooting-diagnostics-gold-coast.html` | `https://www.bcomservices.com/index.html` | `https://www.bcomservices.com/` |
+| `on-site-technical-support-gold-coast.html` | `https://www.bcomservices.com/index.html` | `https://www.bcomservices.com/` |
+| `os-troubleshooting-repair-gold-coast.html` | `https://www.bcomservices.com/index.html` | `https://www.bcomservices.com/` |
+| `pabx-phone-systems-gold-coast.html` | `https://www.bcomservices.com/index.html` | `https://www.bcomservices.com/` |
+| `performance-optimisation-gold-coast.html` | `https://www.bcomservices.com/index.html` | `https://www.bcomservices.com/` |
+| `phone-line-installation-cabling-gold-coast.html` | `https://www.bcomservices.com/index.html` | `https://www.bcomservices.com/` |
+| `remote-it-support-gold-coast.html` | `https://www.bcomservices.com/index.html` | `https://www.bcomservices.com/` |
+| `router-and-modem-configuration-gold-coast.html` | `https://www.bcomservices.com/index.html` | `https://www.bcomservices.com/` |
+| `software-installation-configuration-gold-coast.html` | `https://www.bcomservices.com/index.html` | `https://www.bcomservices.com/` |
+| `software-recommendations-gold-coast.html` | `https://www.bcomservices.com/index.html` | `https://www.bcomservices.com/` |
+| `support.html` | `https://www.bcomservices.com/index.html` | `https://www.bcomservices.com/` |
+| `technology-procurement-advice-gold-coast.html` | `https://www.bcomservices.com/index.html` | `https://www.bcomservices.com/` |
+| `virus-and-malware-removal-services-gold-coast.html` | `https://www.bcomservices.com/index.html` | `https://www.bcomservices.com/` |
+| `voip-phone-system-installation-and-support-gold-coast.html` | `https://www.bcomservices.com/index.html` | `https://www.bcomservices.com/` |
+| `wifi-range-extension-gold-coast.html` | `https://www.bcomservices.com/index.html` | `https://www.bcomservices.com/` |
+
+**Notes:**
+- Only the `"item"` value of the position-1 ListItem in each BreadcrumbList JSON-LD block was changed.
+- No other ListItems, properties, canonical tags, OG tags, or visible HTML were modified.
+- 4 files (`ns-article-block.html`, `privacy-policy.html`, `terms-and-conditions.html`, `wifi-article-parts.html`) have no BreadcrumbList block — expected, no action required.
+- 4 files (`computer-consultant-gold-coast.html`, `computer-repairs-gold-coast.html`, `index.html`, `it-support-and-services-gold-coast.html`) have pre-existing FAQPage JSON parse errors (HTML anchor tags in text fields) — these were already present at the rollback point and are outside the scope of this task.
