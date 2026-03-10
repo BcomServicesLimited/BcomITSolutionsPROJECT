@@ -608,3 +608,41 @@ All 39 files pass after the global www domain replacement and index.html fix. Ve
 2. Three pages (`cloud-computing`, `cybersecurity`, `software-recommendations`) use `bcom-og-default.webp` which has not yet been created.
 
 **Fix required before launch:** Correct all 15 `og:image` paths and create `bcom-og-default.webp`.
+
+---
+
+## Open Graph & Social Meta — Fixes Applied
+
+**Date:** 2026-03-10
+
+All 16 MEDIUM issues identified in the OG & Social Meta audit have been resolved.
+
+### og:image and twitter:image path corrections (15 files)
+
+| File | Old path | New path |
+|------|----------|----------|
+| `about.html` | `/bcom-logo.webp` (root) | `assets/images/hero-bg.webp` |
+| `home-users.html` | `/bcom-logo.webp` (root) | `assets/images/hero-bg-home-users.webp` |
+| `computer-consultant-gold-coast.html` | `/hero-bg-consulting.webp` (root) | `assets/images/hero-bg-consulting.webp` |
+| `computer-networking-service-gold-coast.html` | `/hero-bg-networking.webp` (root) | `assets/images/hero-bg-networking.webp` |
+| `computer-repairs-gold-coast.html` | `/hero-bg-computer-repair.webp` (root) | `assets/images/hero-bg-computer-repair.webp` |
+| `on-site-computer-repair-gold-coast.html` | `/hero-bg-computer-repair.webp` (root) | `assets/images/hero-bg-computer-repair.webp` |
+| `os-troubleshooting-repair-gold-coast.html` | `/bcom-assets/it-support-onsite-gold-coast.webp` | `assets/images/it-support-onsite-gold-coast.webp` |
+| `virus-and-malware-removal-services-gold-coast.html` | `/bcom-assets/virus-malware-removal-gold-coast.webp` | `assets/images/virus-malware-removal-gold-coast.webp` |
+| `software-installation-configuration-gold-coast.html` | `/hero-bg-software-installation.webp` (root) | `assets/images/hero-bg-software-installation.webp` |
+| `telecommunications-contractor-gold-coast.html` | `/hero-bg-telecoms.webp` (root) | `assets/images/hero-bg-telecoms.webp` |
+| `cloud-computing-service-gold-coast.html` | `/assets/bcom-og-default.webp` (missing) | `assets/images/hero-bg.webp` (fallback) |
+| `cybersecurity-health-check-for-small-business-gold-coast.html` | `/assets/bcom-og-default.webp` (missing) | `assets/images/hero-bg.webp` (fallback) |
+| `software-recommendations-gold-coast.html` | `/assets/bcom-og-default.webp` (missing) | `assets/images/hero-bg.webp` (fallback) |
+| `contact.html` | `/assets/images/hero-bg-contact.webp` (missing) | `assets/images/hero-bg.webp` (fallback) |
+| `support.html` | `/assets/images/hero-bg-support.webp` (missing) | `assets/images/hero-bg.webp` (fallback) |
+
+### og:url correction (1 file)
+
+| File | Old value | New value |
+|------|-----------|-----------|
+| `index.html` | `https://www.bcomservices.com/` | `https://www.bcomservices.com/index.html` |
+
+### Final verification result
+
+**40/40 PASS — 0 issues remaining.**
