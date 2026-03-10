@@ -543,3 +543,68 @@ All 39 files pass after the global www domain replacement and index.html fix. Ve
 **index.html canonical:** Updated from `https://www.bcomservices.com/` to `https://www.bcomservices.com/index.html`
 
 **Post-fix verification:** 39/39 PASS — zero remaining instances of old domain.
+
+---
+
+## Open Graph & Social Meta
+
+**Audit date:** 2026-03-10
+**Files checked:** 39 existing HTML files (`residential.html` — SKIP, file does not exist)
+**Result: 24 PASS / 15 files with issues (all MEDIUM)**
+
+**Note on severity:** All issues are MEDIUM. No missing tag blocks, no wrong domains, no wrong `og:type`, no empty `content=""` attributes, and no `og:title` or `og:description` mismatches were found. The only category of issue is `og:image` paths that do not resolve to an existing file in the assets folder.
+
+---
+
+### PASS
+
+24 files pass all 12 checks:
+
+`artificial-intelligence-service-gold-coast.html` · `business-phone-systems-gold-coast.html` · `business.html` · `data-backup-recovery-gold-coast.html` · `hardware-software-troubleshooting-gold-coast.html` · `home-wifi-setup-and-troubleshooting-gold-coast.html` · `it-consulting-strategy-gold-coast.html` · `it-needs-assessment-gold-coast.html` · `it-support-and-services-gold-coast.html` · `managed-it-services-for-small-businesses-gold-coast.html` · `mesh-network-setup-gold-coast.html` · `nbn-internet-support-gold-coast.html` · `network-cabling-for-offices-gold-coast.html` · `network-security-and-firewall-configuration-gold-coast.html` · `network-troubleshooting-diagnostics-gold-coast.html` · `on-site-technical-support-gold-coast.html` · `pabx-phone-systems-gold-coast.html` · `performance-optimisation-gold-coast.html` · `phone-line-installation-cabling-gold-coast.html` · `remote-it-support-gold-coast.html` · `router-and-modem-configuration-gold-coast.html` · `technology-procurement-advice-gold-coast.html` · `voip-phone-system-installation-and-support-gold-coast.html` · `wifi-range-extension-gold-coast.html`
+
+---
+
+### ISSUES FOUND
+
+| File | Issue | Severity | Fix Required |
+|------|-------|----------|--------------|
+| `index.html` | `og:url` is `https://www.bcomservices.com/` (bare root) — does not match canonical `https://www.bcomservices.com/index.html` | MEDIUM | Set `og:url` to `https://www.bcomservices.com/index.html` |
+| `about.html` | `og:image` path `https://www.bcomservices.com/bcom-logo.webp` not found in assets | MEDIUM | Update to correct assets path |
+| `home-users.html` | `og:image` path `https://www.bcomservices.com/bcom-logo.webp` not found in assets | MEDIUM | Update to correct assets path |
+| `computer-consultant-gold-coast.html` | `og:image` path `https://www.bcomservices.com/hero-bg-consulting.webp` not found in assets | MEDIUM | Update to correct assets path |
+| `computer-networking-service-gold-coast.html` | `og:image` path `https://www.bcomservices.com/hero-bg-networking.webp` not found in assets | MEDIUM | Update to correct assets path |
+| `computer-repairs-gold-coast.html` | `og:image` path `https://www.bcomservices.com/hero-bg-computer-repair.webp` not found in assets | MEDIUM | Update to correct assets path |
+| `on-site-computer-repair-gold-coast.html` | `og:image` path `https://www.bcomservices.com/hero-bg-computer-repair.webp` not found in assets | MEDIUM | Update to correct assets path |
+| `os-troubleshooting-repair-gold-coast.html` | `og:image` path `https://www.bcomservices.com/bcom-assets/it-support-onsite-gold-coast.webp` not found in assets | MEDIUM | Update to correct assets path |
+| `virus-and-malware-removal-services-gold-coast.html` | `og:image` path `https://www.bcomservices.com/bcom-assets/virus-malware-removal-gold-coast.webp` not found in assets | MEDIUM | Update to correct assets path |
+| `software-installation-configuration-gold-coast.html` | `og:image` path `https://www.bcomservices.com/hero-bg-software-installation.webp` not found in assets | MEDIUM | Update to correct assets path |
+| `telecommunications-contractor-gold-coast.html` | `og:image` path `https://www.bcomservices.com/hero-bg-telecoms.webp` not found in assets | MEDIUM | Update to correct assets path |
+| `cloud-computing-service-gold-coast.html` | `og:image` path `https://www.bcomservices.com/assets/bcom-og-default.webp` not found in assets | MEDIUM | Create `bcom-og-default.webp` or assign a real hero image |
+| `cybersecurity-health-check-for-small-business-gold-coast.html` | `og:image` path `https://www.bcomservices.com/assets/bcom-og-default.webp` not found in assets | MEDIUM | Create `bcom-og-default.webp` or assign a real hero image |
+| `software-recommendations-gold-coast.html` | `og:image` path `https://www.bcomservices.com/assets/bcom-og-default.webp` not found in assets | MEDIUM | Create `bcom-og-default.webp` or assign a real hero image |
+| `contact.html` | `og:image` path `https://www.bcomservices.com/assets/images/hero-bg-contact.webp` not found in assets | MEDIUM | Update to correct assets path or use fallback |
+| `support.html` | `og:image` path `https://www.bcomservices.com/assets/images/hero-bg-support.webp` not found in assets | MEDIUM | Update to correct assets path or use fallback |
+
+---
+
+### Summary
+
+| Category | Count |
+|---|---|
+| Files passing all checks | 24 |
+| Files with `og:image` path not found in assets | 15 |
+| Files with `og:url` not matching canonical | 1 (`index.html`) |
+| Missing tag blocks | 0 |
+| Wrong domain in any tag | 0 |
+| Empty `content=""` attributes | 0 |
+| `og:title` / `og:description` mismatches | 0 |
+
+**HIGH severity issues: 0**
+**MEDIUM severity issues: 16**
+**LOW severity issues: 0**
+
+**Root cause of image path issues:** Two groups —
+1. Pages that had OG tags before the Category A/B fix pass used non-standard image paths (root-level or `/bcom-assets/` paths) that were not updated to the standard `assets/images/` structure.
+2. Three pages (`cloud-computing`, `cybersecurity`, `software-recommendations`) use `bcom-og-default.webp` which has not yet been created.
+
+**Fix required before launch:** Correct all 15 `og:image` paths and create `bcom-og-default.webp`.
