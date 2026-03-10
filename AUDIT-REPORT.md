@@ -970,3 +970,36 @@ Remaining audit tasks: H1 / heading hierarchy check, images and asset references
 |------|-------|--------|-------|
 | index.html | canonical | https://www.bcomservices.com/index.html | https://www.bcomservices.com/ |
 | index.html | og:url | https://www.bcomservices.com/index.html | https://www.bcomservices.com/ |
+
+---
+
+## Images and Assets
+
+**Audit date:** 2026-03-10
+**Files audited:** 42 (excluding ns-article-block.html and wifi-article-parts.html)
+
+### Checks Performed
+
+| Check | Scope |
+|-------|-------|
+| img src format — no .jpg/.jpeg/.png | All 42 files |
+| img non-empty alt attribute | All 42 files |
+| img loading=lazy in body | All 42 files |
+| og:image / twitter:image format (.webp) | All 42 files |
+| Broken img src paths against assets folder | All 42 files |
+| Lucide CDN script in head | All 42 files |
+| CSS filename = design-system.css | All 42 files |
+| GTM script (GTM-KQRG3BSF) in head | All 42 files |
+| GTM noscript immediately after body | All 42 files |
+
+### PASS
+
+All 42 files pass every check.
+
+| Severity | Count |
+|----------|-------|
+| HIGH | 0 |
+| MEDIUM | 0 |
+| LOW | 0 |
+
+No fixes required. No files changed.
