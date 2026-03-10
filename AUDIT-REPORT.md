@@ -142,3 +142,48 @@ All descriptions verified at 120–155 rendered characters. Only `<meta name="de
 |---|---|---|---|
 | `telecommunications-contractor-gold-coast.html` | 103 | 151 | Business telecommunications across the Gold Coast. Phone systems, VoIP, PBX, data cabling and NBN support for Gold Coast businesses. Call 07 3041 8993. |
 | `on-site-technical-support-gold-coast.html` | 113 | 154 | On-site IT support for Gold Coast businesses. We come to your office and fix IT problems fast — same-day available for critical faults. Call 07 3041 8993. |
+
+### Final Verification — All Task 2 Fixes
+
+**Verification date:** 2026-03-10
+**Result: 16/16 PASS — 0 FAIL**
+
+All checks passed:
+- `<title>` present exactly once on every changed file
+- `<meta name="description">` present exactly once on every changed file
+- No tags removed or duplicated
+- No other content changed
+
+**`computer-consultant-gold-coast.html` title check:**
+- Value: `IT Consulting Gold Coast | Bcom IT Solutions`
+- Pipe count: 1 ✓
+- Rendered length: 44 chars ✓
+
+**Title length notes (no changes required):**
+The following files have titles that appear long in raw HTML due to `&amp;` encoding, but render within the 60-character limit. No changes were made to these files:
+`os-troubleshooting-repair-gold-coast.html` (58c rendered) · `software-installation-configuration-gold-coast.html` (68c raw / 64c rendered) · `home-wifi-setup-and-troubleshooting-gold-coast.html` (64c raw / 60c rendered) · `network-troubleshooting-diagnostics-gold-coast.html` (68c raw / 64c rendered) · `hardware-software-troubleshooting-gold-coast.html` (66c raw / 62c rendered) · `business-phone-systems-gold-coast.html` (no change) · `phone-line-installation-cabling-gold-coast.html` (64c raw / 60c rendered)
+
+**`residential.html` — SKIP.** File does not exist in the repository. Not an error. No action required.
+
+**Rendered description character counts — all changed files:**
+
+| File | Desc chars |
+|---|---|
+| `computer-consultant-gold-coast.html` | 137 |
+| `index.html` | 133 |
+| `home-users.html` | 146 |
+| `it-support-and-services-gold-coast.html` | 145 |
+| `about.html` | 135 |
+| `on-site-computer-repair-gold-coast.html` | 141 |
+| `os-troubleshooting-repair-gold-coast.html` | 146 |
+| `virus-and-malware-removal-services-gold-coast.html` | 142 |
+| `software-installation-configuration-gold-coast.html` | 146 |
+| `home-wifi-setup-and-troubleshooting-gold-coast.html` | 132 |
+| `network-security-and-firewall-configuration-gold-coast.html` | 133 |
+| `network-troubleshooting-diagnostics-gold-coast.html` | 143 |
+| `hardware-software-troubleshooting-gold-coast.html` | 146 |
+| `phone-line-installation-cabling-gold-coast.html` | 134 |
+| `telecommunications-contractor-gold-coast.html` | 151 |
+| `on-site-technical-support-gold-coast.html` | 154 |
+
+**Task 2 fixes complete.**
