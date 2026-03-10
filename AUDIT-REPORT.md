@@ -379,3 +379,62 @@ This single replacement corrected the domain in all locations simultaneously:
 | `voip-phone-system-installation-and-support-gold-coast.html` | 10 |
 | `wifi-range-extension-gold-coast.html` | 7 |
 | **Total** | **339** |
+
+---
+
+## Task 3 Fixes Applied — OG & Twitter Tags (Category A: 29 files)
+
+**Fix date:** 2026-03-10
+**Method:** Added complete 10-tag OG/Twitter block to each file after `<meta name="description">`, before `<link rel="canonical">`
+
+**Tag block added to each file:**
+```html
+<meta property="og:type" content="website">
+<meta property="og:title" content="[matches <title>]">
+<meta property="og:description" content="[matches meta description]">
+<meta property="og:url" content="https://bcomservices.com/[filename].html">
+<meta property="og:site_name" content="Bcom IT Solutions">
+<meta property="og:image" content="https://bcomservices.com/assets/images/[hero].webp">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="[matches <title>]">
+<meta name="twitter:description" content="[matches meta description]">
+<meta name="twitter:image" content="https://bcomservices.com/assets/images/[hero].webp">
+```
+
+**Verification: 29/29 PASS**
+
+| File | og:image used | Fallback? |
+|---|---|---|
+| `on-site-computer-repair-gold-coast.html` | `hero-bg-computer-repair.webp` | No |
+| `os-troubleshooting-repair-gold-coast.html` | `it-support-onsite-gold-coast.webp` | No |
+| `virus-and-malware-removal-services-gold-coast.html` | `virus-malware-removal-gold-coast.webp` | No |
+| `software-installation-configuration-gold-coast.html` | `hero-bg-software-installation.webp` | No |
+| `data-backup-recovery-gold-coast.html` | `hero-bg-data-backup-recovery.webp` | No |
+| `performance-optimisation-gold-coast.html` | `hero-bg-performance-optimisation.webp` | No |
+| `home-wifi-setup-and-troubleshooting-gold-coast.html` | `hero-bg-wifi-setup.webp` | No |
+| `mesh-network-setup-gold-coast.html` | `hero-bg-mesh-wifi.webp` | No |
+| `router-and-modem-configuration-gold-coast.html` | `hero-bg-router-modem.webp` | No |
+| `network-security-and-firewall-configuration-gold-coast.html` | `hero-bg-network-security.webp` | No |
+| `wifi-range-extension-gold-coast.html` | `hero-bg-wifi-range-extension.webp` | No |
+| `network-troubleshooting-diagnostics-gold-coast.html` | `hero-bg-network-troubleshooting.webp` | No |
+| `remote-it-support-gold-coast.html` | `hero-bg-remote-it-support.webp` | No |
+| `on-site-technical-support-gold-coast.html` | `hero-bg-onsite-technical-support.webp` | No |
+| `hardware-software-troubleshooting-gold-coast.html` | `hero-bg-hardware-software-troubleshooting.webp` | No |
+| `it-consulting-strategy-gold-coast.html` | `hero-bg-it-consulting-strategy.webp` | No |
+| `managed-it-services-for-small-businesses-gold-coast.html` | `managed-it-services-hero.webp` | No |
+| `business-phone-systems-gold-coast.html` | `business-phone-systems-hero.webp` | No |
+| `voip-phone-system-installation-and-support-gold-coast.html` | `voip-phone-system-hero.webp` | No |
+| `phone-line-installation-cabling-gold-coast.html` | `phone-line-installation-hero.webp` | No |
+| `pabx-phone-systems-gold-coast.html` | `pabx-phone-systems-hero.webp` | No |
+| `network-cabling-for-offices-gold-coast.html` | `data-cabling-hero.webp` | No |
+| `nbn-internet-support-gold-coast.html` | `nbn-internet-support-hero.webp` | No |
+| `it-needs-assessment-gold-coast.html` | `it-needs-assessment-hero.webp` | No |
+| `technology-procurement-advice-gold-coast.html` | `technology-procurement-hero.webp` | No |
+| `cloud-computing-service-gold-coast.html` | `bcom-og-default.webp` | **YES** — no hero image in assets |
+| `cybersecurity-health-check-for-small-business-gold-coast.html` | `bcom-og-default.webp` | **YES** — no hero image in assets |
+| `software-recommendations-gold-coast.html` | `bcom-og-default.webp` | **YES** — no hero image in assets |
+| `artificial-intelligence-service-gold-coast.html` | `ai-integration-hero.webp` | No |
+
+**Fallback image used:** 3 files — `cloud-computing-service-gold-coast.html`, `cybersecurity-health-check-for-small-business-gold-coast.html`, `software-recommendations-gold-coast.html`
+
+**Note:** `bcom-og-default.webp` does not yet exist in assets — this is a placeholder URL. A default OG image should be created and saved to `assets/bcom-og-default.webp` before these 3 pages are shared on social media.
