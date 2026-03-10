@@ -695,3 +695,82 @@ All 16 MEDIUM issues identified in the OG & Social Meta audit have been resolved
 - No other ListItems, properties, canonical tags, OG tags, or visible HTML were modified.
 - 4 files (`ns-article-block.html`, `privacy-policy.html`, `terms-and-conditions.html`, `wifi-article-parts.html`) have no BreadcrumbList block — expected, no action required.
 - 4 files (`computer-consultant-gold-coast.html`, `computer-repairs-gold-coast.html`, `index.html`, `it-support-and-services-gold-coast.html`) have pre-existing FAQPage JSON parse errors (HTML anchor tags in text fields) — these were already present at the rollback point and are outside the scope of this task.
+
+---
+
+## Structured Data Schema — FAQPage, HowTo & JSON Syntax
+
+**Audit date:** 2026-03-10
+**Sections covered:** Task 1 — FAQPage · Task 2 — HowTo · Task 3 — JSON Syntax
+**Files checked:** 44 HTML files
+**HIGH issues found and fixed:** 14 (10 old domain in schema blocks, 4 HTML tags in JSON text fields)
+**MEDIUM issues:** 0
+**Final result:** 35/35 FAQPage PASS · 21/21 HowTo PASS · 44/44 JSON Syntax PASS
+
+---
+
+### PASS
+
+**Task 1 — FAQPage (35 files with FAQPage block — all PASS after fixes)**
+
+`artificial-intelligence-service-gold-coast.html` · `cloud-computing-service-gold-coast.html` · `computer-consultant-gold-coast.html` · `computer-networking-service-gold-coast.html` · `computer-repairs-gold-coast.html` · `cybersecurity-health-check-for-small-business-gold-coast.html` · `data-backup-recovery-gold-coast.html` · `hardware-software-troubleshooting-gold-coast.html` · `home-users.html` · `home-wifi-setup-and-troubleshooting-gold-coast.html` · `index.html` · `it-consulting-strategy-gold-coast.html` · `it-needs-assessment-gold-coast.html` · `it-support-and-services-gold-coast.html` · `managed-it-services-for-small-businesses-gold-coast.html` · `mesh-network-setup-gold-coast.html` · `nbn-internet-support-gold-coast.html` · `network-cabling-for-offices-gold-coast.html` · `network-security-and-firewall-configuration-gold-coast.html` · `network-troubleshooting-diagnostics-gold-coast.html` · `on-site-computer-repair-gold-coast.html` · `on-site-technical-support-gold-coast.html` · `os-troubleshooting-repair-gold-coast.html` · `pabx-phone-systems-gold-coast.html` · `performance-optimisation-gold-coast.html` · `phone-line-installation-cabling-gold-coast.html` · `remote-it-support-gold-coast.html` · `router-and-modem-configuration-gold-coast.html` · `software-installation-configuration-gold-coast.html` · `software-recommendations-gold-coast.html` · `technology-procurement-advice-gold-coast.html` · `telecommunications-contractor-gold-coast.html` · `virus-and-malware-removal-services-gold-coast.html` · `voip-phone-system-installation-and-support-gold-coast.html` · `wifi-range-extension-gold-coast.html`
+
+**Task 2 — HowTo (21 files with HowTo block — all PASS)**
+
+`artificial-intelligence-service-gold-coast.html` · `cloud-computing-service-gold-coast.html` · `cybersecurity-health-check-for-small-business-gold-coast.html` · `hardware-software-troubleshooting-gold-coast.html` · `home-wifi-setup-and-troubleshooting-gold-coast.html` · `it-consulting-strategy-gold-coast.html` · `managed-it-services-for-small-businesses-gold-coast.html` · `mesh-network-setup-gold-coast.html` · `nbn-internet-support-gold-coast.html` · `network-cabling-for-offices-gold-coast.html` · `network-security-and-firewall-configuration-gold-coast.html` · `network-troubleshooting-diagnostics-gold-coast.html` · `on-site-technical-support-gold-coast.html` · `pabx-phone-systems-gold-coast.html` · `phone-line-installation-cabling-gold-coast.html` · `remote-it-support-gold-coast.html` · `router-and-modem-configuration-gold-coast.html` · `software-recommendations-gold-coast.html` · `technology-procurement-advice-gold-coast.html` · `voip-phone-system-installation-and-support-gold-coast.html` · `wifi-range-extension-gold-coast.html`
+
+**Task 3 — JSON Syntax (44/44 PASS after fixes)**
+
+All 44 HTML files have syntactically valid JSON-LD blocks.
+
+---
+
+### ISSUES FOUND
+
+| File | Issue | Severity | Fix Required |
+|------|-------|----------|--------------|
+| `computer-consultant-gold-coast.html` | HTML `<a href="tel:...">` anchor tag in FAQPage answer text — invalid JSON | HIGH | Strip to plain text `07 3041 8993` |
+| `computer-consultant-gold-coast.html` | Old domain `bcomservices.com.au` in WebPage schema block | HIGH | Replace with `www.bcomservices.com` |
+| `computer-networking-service-gold-coast.html` | Old domain `bcomservices.com.au` in Service and WebPage schema blocks | HIGH | Replace with `www.bcomservices.com` |
+| `computer-repairs-gold-coast.html` | HTML `<a href="tel:...">` anchor tag in FAQPage answer text — invalid JSON | HIGH | Strip to plain text `07 3041 8993` |
+| `computer-repairs-gold-coast.html` | Old domain `bcomservices.com.au` in Service and WebPage schema blocks | HIGH | Replace with `www.bcomservices.com` |
+| `home-users.html` | Old domain `bcomservices.com.au` in Service schema block | HIGH | Replace with `www.bcomservices.com` |
+| `index.html` | HTML `<a href="tel:...">` anchor tags (×3) in FAQPage answer text — invalid JSON | HIGH | Strip to plain text `07 3041 8993` |
+| `index.html` | Old domain `bcomservices.com.au` in Article schema block | HIGH | Replace with `www.bcomservices.com` |
+| `it-needs-assessment-gold-coast.html` | Old domain `bcomservices.com.au` in FAQPage answer text and FAQPage schema block | HIGH | Replace with `www.bcomservices.com` |
+| `it-support-and-services-gold-coast.html` | HTML `<a href="tel:...">` anchor tag in FAQPage answer text — invalid JSON | HIGH | Strip to plain text `07 3041 8993` |
+| `it-support-and-services-gold-coast.html` | Old domain `bcomservices.com.au` in WebPage schema block | HIGH | Replace with `www.bcomservices.com` |
+| `on-site-computer-repair-gold-coast.html` | Old domain `bcomservices.com.au` in Service and WebPage schema blocks | HIGH | Replace with `www.bcomservices.com` |
+| `software-installation-configuration-gold-coast.html` | Old domain `bcomservices.com.au` in WebPage schema block | HIGH | Replace with `www.bcomservices.com` |
+| `telecommunications-contractor-gold-coast.html` | Old domain `bcomservices.com.au` in Service and WebPage schema blocks | HIGH | Replace with `www.bcomservices.com` |
+
+**All 14 HIGH issues fixed. 0 MEDIUM issues. 0 LOW issues.**
+
+---
+
+### Files with no FAQPage block (not required)
+
+| File | Note |
+|------|------|
+| `about.html` | Informational page — FAQPage not required |
+| `business-phone-systems-gold-coast.html` | Hub page — FAQPage not required |
+| `business.html` | Hub page — FAQPage not required |
+| `contact.html` | Contact page — FAQPage not required |
+| `support.html` | Support page — FAQPage not required |
+| `ns-article-block.html` | Article partial — not required |
+| `privacy-policy.html` | Legal page — not required |
+| `terms-and-conditions.html` | Legal page — not required |
+| `wifi-article-parts.html` | Article partial — not required |
+
+---
+
+### Fix notes
+
+**Fix 1 — HTML anchor tags stripped from JSON-LD text fields (4 files)**
+
+`<a href="tel:0730418993">07 3041 8993</a>` replaced with plain text `07 3041 8993` in FAQPage answer `"text"` fields. HTML markup is valid in the visible page body but must not appear inside JSON-LD string values — it breaks JSON parsing and causes Google's Rich Results Test to reject the entire schema block.
+
+**Fix 2 — Old domain replaced in JSON-LD blocks (10 files)**
+
+`bcomservices.com.au` replaced with `www.bcomservices.com` in all affected JSON-LD blocks. Only content inside `<script type="application/ld+json">` tags was changed — canonical tags, OG tags, visible HTML, and body content were not touched.
+
