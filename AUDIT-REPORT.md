@@ -961,3 +961,12 @@ Zero instances of `bcomservices.com.au` remain in any schema block across all 44
 ### Schema Audit Status: COMPLETE
 
 Remaining audit tasks: H1 / heading hierarchy check, images and asset references check.
+
+---
+
+## Go-Live Fixes
+
+| File | Field | Before | After |
+|------|-------|--------|-------|
+| index.html | canonical | https://www.bcomservices.com/index.html | https://www.bcomservices.com/ |
+| index.html | og:url | https://www.bcomservices.com/index.html | https://www.bcomservices.com/ |
