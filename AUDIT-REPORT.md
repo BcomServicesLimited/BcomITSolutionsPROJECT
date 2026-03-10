@@ -1075,3 +1075,63 @@ Commit message: Fix broken internal links -- go-live prep
 
 All 41 destination files for 301 rules confirmed present in the repository.
 The 410 rule self-references /tech-tips-template.html as required by Cloudflare Pages syntax.
+
+
+---
+
+## Go-Live Final Status
+
+### Pre-Launch Checklist — Final Status
+
+**COMPLETED IN THIS SESSION:**
+
+- [x] Homepage canonical updated to `https://www.bcomservices.com/`
+- [x] Homepage `og:url` updated to match
+- [x] `sitemap.xml` verified and updated — 42 pages included
+- [x] `robots.txt` verified and updated — correct sitemap URL, 3 disallow rules
+- [x] `_redirects` created — 41 × 301 redirects, 1 × 410 gone rule; two live-page conflicts confirmed absent
+- [x] Images and assets audit complete — HIGH issues found: 0 — MEDIUM issues found: 0 — LOW issues found: 0
+- [x] Internal links spot-check complete — 1 HIGH issue found and fixed (`telecommunications-contractor` broken VoIP link)
+
+**COMPLETED IN PREVIOUS SESSIONS:**
+
+- [x] `KNOWLEDGE_BASE.md` domain updated to `www.bcomservices.com`
+- [x] All HTML files: domain corrected to `www.bcomservices.com`
+- [x] All HTML files: BreadcrumbList Home item `"item"` = `https://www.bcomservices.com/`
+- [x] Duplicate BreadcrumbList removed from footer component (19 pages)
+- [x] Duplicate LocalBusiness merged on `index.html`
+- [x] Duplicate footer removed from `wifi-range-extension-gold-coast.html`
+- [x] Old domain fixed in `about`, `business`, `contact`, `support` schema blocks
+- [x] Old domain fixed in `privacy-policy.html` and `terms-and-conditions.html` body HTML
+- [x] Missing BreadcrumbList added to `on-site-technical-support-gold-coast.html` and `virus-and-malware-removal-services-gold-coast.html`
+- [x] Meta descriptions corrected (length and sync with `og:description`)
+- [x] OG/Twitter tags added to all 29 pages that were missing them
+- [x] Double-pipe title fixed on `computer-consultant-gold-coast.html`
+- [x] HTML anchor tags removed from FAQPage JSON-LD text fields (4 pages)
+- [x] Missing HowTo JSON-LD blocks added to 8 pages
+- [x] JSON-LD syntax validated across all 44 files — 0 errors
+
+**TO DO MANUALLY (cannot be done in Manus):**
+
+- [ ] Cloudflare DNS — confirm `bcomservices.com` and `www.bcomservices.com` are both orange-cloud proxied
+- [ ] Cloudflare Page Rules — confirm 3 rules are in place:
+  - `http://bcomservices.com/*` → `https://www.bcomservices.com/$1`
+  - `https://bcomservices.com/*` → `https://www.bcomservices.com/$1`
+  - `http://www.bcomservices.com/*` → `https://www.bcomservices.com/$1`
+- [ ] Deploy to Cloudflare Pages
+- [ ] Test all 8 redirect URLs in a browser after deploy
+- [ ] Submit sitemap in Google Search Console
+- [ ] Monitor Search Console for crawl errors — first 48 hours
+
+**POST-LAUNCH RECOMMENDED:**
+
+- [ ] Google Rich Results Test — run on 5 sub-pages
+- [ ] PageSpeed Insights — run on homepage and 3 sub-pages
+- [ ] Screaming Frog or broken link checker — full crawl
+- [ ] Google Business Profile — verify NAP matches `www.bcomservices.com`
+
+---
+
+### Audit Complete
+
+All HIGH severity issues resolved. Site is ready for go-live.
