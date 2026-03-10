@@ -774,3 +774,76 @@ All 44 HTML files have syntactically valid JSON-LD blocks.
 
 `bcomservices.com.au` replaced with `www.bcomservices.com` in all affected JSON-LD blocks. Only content inside `<script type="application/ld+json">` tags was changed — canonical tags, OG tags, visible HTML, and body content were not touched.
 
+
+---
+
+## H1 & Heading Hierarchy Audit
+
+**Audit date:** 2026-03-10
+**Files checked:** 44 HTML files
+**PASS:** 43 · **ISSUES:** 1
+
+---
+
+### PASS — H1 and heading hierarchy correct
+
+43 files pass all checks: exactly one H1, H1 contains relevant keyword, no heading levels skipped.
+
+| File | H1 text |
+|------|---------|
+| `about.html` | About Bcom IT Solutions |
+| `artificial-intelligence-service-gold-coast.html` | AI Integration & Setup Gold Coast |
+| `business-phone-systems-gold-coast.html` | Business Phone System Installation Gold Coast |
+| `business.html` | Business IT Services Gold Coast |
+| `cloud-computing-service-gold-coast.html` | Cloud Migration Planning Gold Coast |
+| `computer-consultant-gold-coast.html` | IT Consulting Gold Coast |
+| `computer-networking-service-gold-coast.html` | Computer Networking & WiFi Installation Gold Coast |
+| `computer-repairs-gold-coast.html` | Computer Repair Service Gold Coast |
+| `cybersecurity-health-check-for-small-business-gold-coast.html` | Cybersecurity Risk Assessment Gold Coast |
+| `data-backup-recovery-gold-coast.html` | Data Backup & Recovery Gold Coast |
+| `hardware-software-troubleshooting-gold-coast.html` | Hardware & Software Troubleshooting Gold Coast |
+| `home-users.html` | Residential IT Services Gold Coast |
+| `home-wifi-setup-and-troubleshooting-gold-coast.html` | WiFi Installation & Configuration Gold Coast |
+| `index.html` | IT Support & Services Gold Coast |
+| `it-consulting-strategy-gold-coast.html` | IT Consulting & Strategy Gold Coast |
+| `it-needs-assessment-gold-coast.html` | IT Needs Assessment Gold Coast |
+| `it-support-and-services-gold-coast.html` | IT Support & Services Gold Coast |
+| `managed-it-services-for-small-businesses-gold-coast.html` | Managed IT Services Gold Coast |
+| `mesh-network-setup-gold-coast.html` | Mesh WiFi Systems Gold Coast |
+| `nbn-internet-support-gold-coast.html` | NBN & Internet Support Gold Coast |
+| `network-cabling-for-offices-gold-coast.html` | Data Cabling Gold Coast |
+| `network-security-and-firewall-configuration-gold-coast.html` | Network Security & Firewall Gold Coast |
+| `network-troubleshooting-diagnostics-gold-coast.html` | Network Troubleshooting & Diagnostics Gold Coast |
+| `on-site-computer-repair-gold-coast.html` | On-site Computer Repair Gold Coast |
+| `on-site-technical-support-gold-coast.html` | On-site Technical Support Gold Coast |
+| `os-troubleshooting-repair-gold-coast.html` | OS Troubleshooting & Repair Gold Coast |
+| `pabx-phone-systems-gold-coast.html` | PBX System Installation Gold Coast |
+| `performance-optimisation-gold-coast.html` | Performance Optimisation Gold Coast |
+| `phone-line-installation-cabling-gold-coast.html` | Phone Line Installation & Cabling Gold Coast |
+| `privacy-policy.html` | Privacy Policy |
+| `remote-it-support-gold-coast.html` | Remote IT Support Gold Coast |
+| `router-and-modem-configuration-gold-coast.html` | Router & Modem Setup Gold Coast |
+| `software-installation-configuration-gold-coast.html` | Software Installation & Configuration Gold Coast |
+| `software-recommendations-gold-coast.html` | Software Recommendations Gold Coast |
+| `support.html` | IT Support — Get Help Now |
+| `technology-procurement-advice-gold-coast.html` | Technology Procurement Advice Gold Coast |
+| `telecommunications-contractor-gold-coast.html` | Telecommunications Services Gold Coast |
+| `terms-and-conditions.html` | Terms and Conditions |
+| `virus-and-malware-removal-services-gold-coast.html` | Virus & Malware Removal Gold Coast |
+| `voip-phone-system-installation-and-support-gold-coast.html` | VoIP Setup & Configuration Gold Coast |
+| `wifi-range-extension-gold-coast.html` | WiFi Range Extension Gold Coast |
+| `ns-article-block.html` | Partial — no H1 expected |
+| `wifi-article-parts.html` | Partial — no H1 expected |
+
+---
+
+### ISSUES FOUND
+
+| File | Issue | Severity | Fix Required |
+|------|-------|----------|--------------|
+| `contact.html` | Heading hierarchy skips from H1 directly to H3 — three contact method cards (`Call Us`, `Email Us`, `Book Online`) use `<h3>` with no `<h2>` parent in the section | MEDIUM | The contact methods section has no section-level H2. The H3 cards are inside a `<section aria-labelledby="methods-heading">` but `methods-heading` is never rendered as a visible heading. Consider adding a visually hidden or visible H2 above the method cards, or changing the card headings to H2. |
+
+**Note:** The H3 cards are semantically correct as card headings within a section — this is a MEDIUM issue, not HIGH. The page has exactly one H1, the H1 is correct, and the H2s that follow (`Our Service Area`, `We Service All of the Gold Coast`) are properly sequenced. The only issue is the H1 → H3 jump in the contact methods section.
+
+**HIGH issues: 0 · MEDIUM issues: 1 · LOW issues: 0**
+
