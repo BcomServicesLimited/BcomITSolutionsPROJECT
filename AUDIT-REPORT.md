@@ -312,3 +312,70 @@ These pages have OG tags, but the `og:description` was not updated when the meta
 
 **Total unique files with issues: 38** (some files appear in multiple categories)
 **Total files with no issues at all: 0**
+
+---
+
+## Task 3 Fixes Applied — Canonical Domain Correction
+
+**Fix date:** 2026-03-10
+**Severity:** HIGH
+**Method:** Global find-and-replace across all HTML files
+
+**Find:** `https://bcomservices.com.au/`
+**Replace:** `https://bcomservices.com/`
+
+**Result: 339 replacements across 42 files**
+
+This single replacement corrected the domain in all locations simultaneously:
+- `<link rel="canonical" href="...">` tags
+- `<meta property="og:url" content="...">` tags
+- JSON-LD `"url"` fields (LocalBusiness, BreadcrumbList item URLs)
+- Any other full-domain href or src references
+
+**Verification:** Zero instances of `https://bcomservices.com.au/` remain in any HTML file. PASS.
+
+| File | Replacements |
+|---|---|
+| `about.html` | 7 |
+| `artificial-intelligence-service-gold-coast.html` | 10 |
+| `business-phone-systems-gold-coast.html` | 5 |
+| `business.html` | 3 |
+| `cloud-computing-service-gold-coast.html` | 6 |
+| `computer-consultant-gold-coast.html` | 12 |
+| `computer-networking-service-gold-coast.html` | 8 |
+| `computer-repairs-gold-coast.html` | 8 |
+| `contact.html` | 3 |
+| `cybersecurity-health-check-for-small-business-gold-coast.html` | 6 |
+| `data-backup-recovery-gold-coast.html` | 10 |
+| `hardware-software-troubleshooting-gold-coast.html` | 10 |
+| `home-users.html` | 5 |
+| `home-wifi-setup-and-troubleshooting-gold-coast.html` | 10 |
+| `index.html` | 2 |
+| `it-consulting-strategy-gold-coast.html` | 10 |
+| `it-needs-assessment-gold-coast.html` | 10 |
+| `it-support-and-services-gold-coast.html` | 9 |
+| `managed-it-services-for-small-businesses-gold-coast.html` | 10 |
+| `mesh-network-setup-gold-coast.html` | 10 |
+| `nbn-internet-support-gold-coast.html` | 10 |
+| `network-cabling-for-offices-gold-coast.html` | 10 |
+| `network-security-and-firewall-configuration-gold-coast.html` | 6 |
+| `network-troubleshooting-diagnostics-gold-coast.html` | 10 |
+| `on-site-computer-repair-gold-coast.html` | 9 |
+| `on-site-technical-support-gold-coast.html` | 6 |
+| `os-troubleshooting-repair-gold-coast.html` | 9 |
+| `pabx-phone-systems-gold-coast.html` | 10 |
+| `performance-optimisation-gold-coast.html` | 10 |
+| `phone-line-installation-cabling-gold-coast.html` | 10 |
+| `privacy-policy.html` | 4 |
+| `remote-it-support-gold-coast.html` | 10 |
+| `router-and-modem-configuration-gold-coast.html` | 6 |
+| `software-installation-configuration-gold-coast.html` | 14 |
+| `software-recommendations-gold-coast.html` | 10 |
+| `support.html` | 3 |
+| `technology-procurement-advice-gold-coast.html` | 10 |
+| `telecommunications-contractor-gold-coast.html` | 8 |
+| `terms-and-conditions.html` | 4 |
+| `virus-and-malware-removal-services-gold-coast.html` | 9 |
+| `voip-phone-system-installation-and-support-gold-coast.html` | 10 |
+| `wifi-range-extension-gold-coast.html` | 7 |
+| **Total** | **339** |
