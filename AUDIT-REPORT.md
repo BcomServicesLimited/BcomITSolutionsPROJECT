@@ -915,3 +915,49 @@ Also removed: misplaced `</body>` tag and broken HTML comment fragment that were
 
 Zero instances of `bcomservices.com.au` remain in any schema block across all 44 pages.
 
+
+---
+
+## Post-Fix Schema Verification
+
+### Cross-Check Results
+
+| Check | Result |
+|-------|--------|
+| BreadcrumbList in `<head>` only — no JSON-LD BreadcrumbList in footer | PASS — all 44 pages |
+| Zero instances of `bcomservices.com.au` across all files | PASS — 0 instances |
+| `index.html` — exactly one LocalBusiness block | PASS — 1x |
+| `wifi-range-extension-gold-coast.html` — 1x each schema type | PASS — BC=1, LB=1, FAQ=1, HowTo=1 |
+| All service page schema block counts (1x each type) | PASS — all 34 service pages |
+
+**Notes:**
+- Microdata breadcrumb trail (`<ol itemtype="https://schema.org/BreadcrumbList">`) in page body HTML is correct, expected, and untouched.
+- `voip-phone-system-installation-and-support-gold-coast.html` contains `<!-- JSON-LD: BreadcrumbList -->` as an HTML comment only — not a duplicate block.
+
+---
+
+## Schema Audit — Final Status
+
+### All Issues Resolved
+
+| Issue | Description | Status |
+|-------|-------------|--------|
+| Issue 1 | Duplicate BreadcrumbList in footer (19 pages) | FIXED |
+| Issue 2 | Duplicate LocalBusiness on index.html | FIXED |
+| Issue 3 | Duplicate footer component on wifi-range-extension | FIXED |
+| Issue 4 | Old domain in schema blocks (4 pages) | FIXED |
+| Issue 1 supplement | Missing `<head>` BreadcrumbList on on-site-technical-support and virus-and-malware-removal | FIXED |
+| Privacy/T&Cs body HTML | Old domain `bcomservices.com.au` in body anchor tags | FIXED |
+
+### Confirmed Clean
+
+- All `</script>` tags correct — no escaped forward slashes
+- All JSON-LD blocks parse without syntax errors
+- All BreadcrumbList position-1 items: `https://www.bcomservices.com/`
+- Microdata breadcrumb HTML in page body: correct and untouched
+- All service page schema block counts: 1x each type (BreadcrumbList, LocalBusiness, FAQPage, HowTo)
+- Zero instances of `bcomservices.com.au` anywhere in the repository
+
+### Schema Audit Status: COMPLETE
+
+Remaining audit tasks: H1 / heading hierarchy check, images and asset references check.
