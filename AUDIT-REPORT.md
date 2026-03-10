@@ -209,3 +209,106 @@ All 37 files below have a single, correctly formed canonical tag matching the ex
 | `index.html` | HIGH | Canonical is `https://bcomservices.com.au/` (domain root, no filename) — expected `https://bcomservices.com.au/index.html` | Change canonical href to `https://bcomservices.com.au/index.html` |
 
 **Note on `residential.html`:** File does not exist in the repository. Listed in Task 1 scope but not present. No action required — this is not an error.
+
+---
+
+## Task 4 — Open Graph & Social Meta Tags
+
+**Audit date:** 2026-03-10
+**Files checked:** 38 existing HTML files (residential.html — SKIP)
+**Result: 0 fully PASS / 38 with issues**
+
+**Note on severity:** OG and Twitter Card tags were not part of the original KNOWLEDGE_BASE.md specification for this site. All issues are logged as MEDIUM severity as instructed. These tags are a recommended addition for social sharing and SEO, not a structural defect.
+
+---
+
+### PASS
+
+No files pass all checks. See issues below.
+
+---
+
+### ISSUES FOUND
+
+Issues fall into four distinct categories:
+
+**Category A — All OG and Twitter tags completely absent (29 files)**
+
+These pages have no OG or Twitter Card tags at all. All 10 required tags are missing on each.
+
+| File |
+|---|
+| `index.html` |
+| `business.html` |
+| `support.html` |
+| `contact.html` |
+| `artificial-intelligence-service-gold-coast.html` |
+| `business-phone-systems-gold-coast.html` |
+| `cloud-computing-service-gold-coast.html` |
+| `cybersecurity-health-check-for-small-business-gold-coast.html` |
+| `data-backup-recovery-gold-coast.html` |
+| `hardware-software-troubleshooting-gold-coast.html` |
+| `home-wifi-setup-and-troubleshooting-gold-coast.html` |
+| `it-consulting-strategy-gold-coast.html` |
+| `it-needs-assessment-gold-coast.html` |
+| `managed-it-services-for-small-businesses-gold-coast.html` |
+| `mesh-network-setup-gold-coast.html` |
+| `nbn-internet-support-gold-coast.html` |
+| `network-cabling-for-offices-gold-coast.html` |
+| `network-security-and-firewall-configuration-gold-coast.html` |
+| `network-troubleshooting-diagnostics-gold-coast.html` |
+| `on-site-technical-support-gold-coast.html` |
+| `pabx-phone-systems-gold-coast.html` |
+| `performance-optimisation-gold-coast.html` |
+| `phone-line-installation-cabling-gold-coast.html` |
+| `remote-it-support-gold-coast.html` |
+| `router-and-modem-configuration-gold-coast.html` |
+| `software-recommendations-gold-coast.html` |
+| `technology-procurement-advice-gold-coast.html` |
+| `voip-phone-system-installation-and-support-gold-coast.html` |
+| `wifi-range-extension-gold-coast.html` |
+
+**Category B — OG tags present but og:description is stale (11 files)**
+
+These pages have OG tags, but the `og:description` was not updated when the meta description was rewritten in Task 2. The og:description now contains the old, longer description text.
+
+| File | Severity |
+|---|---|
+| `about.html` | MEDIUM |
+| `computer-consultant-gold-coast.html` | MEDIUM |
+| `computer-networking-service-gold-coast.html` | MEDIUM |
+| `computer-repairs-gold-coast.html` | MEDIUM |
+| `home-users.html` | MEDIUM |
+| `it-support-and-services-gold-coast.html` | MEDIUM |
+| `on-site-computer-repair-gold-coast.html` | MEDIUM |
+| `os-troubleshooting-repair-gold-coast.html` | MEDIUM |
+| `software-installation-configuration-gold-coast.html` | MEDIUM |
+| `telecommunications-contractor-gold-coast.html` | MEDIUM |
+| `virus-and-malware-removal-services-gold-coast.html` | MEDIUM |
+
+**Category C — og:title does not match `<title>` (2 files)**
+
+| File | og:title | `<title>` | Severity |
+|---|---|---|---|
+| `computer-networking-service-gold-coast.html` | `Computer Networking & WiFi Gold Coast \| Bcom IT Solutions` | `WiFi Installation & Networking Gold Coast \| Bcom IT Solutions` | MEDIUM |
+| `computer-repairs-gold-coast.html` | `Computer Repairs Gold Coast \| Bcom IT Solutions` | `Computer Repair Gold Coast \| Bcom IT Solutions` | MEDIUM |
+
+**Category D — twitter:image missing (1 file)**
+
+| File | Severity |
+|---|---|
+| `home-users.html` | MEDIUM |
+
+---
+
+### Summary Table
+
+| Category | Files affected | Severity |
+|---|---|---|
+| All OG/Twitter tags completely absent | 29 | MEDIUM |
+| og:description stale (not updated after Task 2 rewrites) | 11 | MEDIUM |
+| og:title does not match `<title>` | 2 | MEDIUM |
+| twitter:image missing | 1 | MEDIUM |
+
+**Total unique files with issues: 38** (some files appear in multiple categories)
+**Total files with no issues at all: 0**
