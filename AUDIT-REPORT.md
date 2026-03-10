@@ -515,3 +515,31 @@ This single replacement corrected the domain in all locations simultaneously:
 | C — Title mismatch fixed | 2 | og:title and twitter:title updated |
 | D — Missing twitter:image | 1 | twitter:image added to home-users.html |
 | Entity encoding normalised | 11 | og:description, og:title synced to match HTML entity format |
+
+---
+
+## Canonical URLs
+
+**Audit date:** 2026-03-10
+**Correct domain confirmed:** `https://www.bcomservices.com/`
+
+### PASS (post-fix)
+
+All 39 files pass after the global www domain replacement and index.html fix. Verified 39/39.
+
+### ISSUES FOUND (pre-fix)
+
+| File | Issue | Severity | Fix Required |
+|------|-------|----------|--------------|
+| All 39 files | Domain missing `www` — canonical used `https://bcomservices.com/` instead of `https://www.bcomservices.com/` | HIGH | Global find-and-replace applied |
+| `index.html` | Canonical was bare domain root `https://www.bcomservices.com/` instead of `https://www.bcomservices.com/index.html` | HIGH | Fixed directly |
+
+### Fix Applied
+
+**Global replacement:** `https://bcomservices.com/` → `https://www.bcomservices.com/`
+- 427 replacements across 42 files (all HTML + sitemap.xml + llms.txt)
+- Corrected: `<link rel="canonical">`, `<meta property="og:url">`, JSON-LD `"url"` fields, BreadcrumbList `"item"` URLs
+
+**index.html canonical:** Updated from `https://www.bcomservices.com/` to `https://www.bcomservices.com/index.html`
+
+**Post-fix verification:** 39/39 PASS — zero remaining instances of old domain.
