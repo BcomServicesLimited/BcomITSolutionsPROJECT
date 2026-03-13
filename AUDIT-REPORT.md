@@ -1229,3 +1229,37 @@ Checks performed on all 9 pages:
 
 **Task 2 result: PASS — no fixes required. No commit needed.**
 
+
+---
+
+### Task 3 — Schema: LocalBusiness
+
+**Audit date:** 2026-03-13
+
+Checks performed on all 9 pages:
+- LocalBusiness block present (exactly 1, no duplicates)
+- `@type` includes both "LocalBusiness" and "ProfessionalService"
+- `name` format: "Bcom IT Solutions — [Brand] WiFi Gold Coast"
+- `serviceType` present and brand-specific (unique across all 9 pages)
+- `telephone`: "+61730418993"
+- `email`: "support@bcomservices.com"
+- `url` matches page canonical URL exactly
+- `areaServed` includes "Gold Coast"
+- `provider.taxID` includes ABN 92 636 893 108
+
+| Page | Block present | serviceType unique | url correct | No duplicate |
+|---|---|---|---|---|
+| ubiquiti-unifi-wifi-gold-coast.html | ✓ | ✓ Ubiquiti UniFi WiFi Installation and Setup | ✓ | ✓ |
+| grandstream-wifi-gold-coast.html | ✓ | ✓ Grandstream WiFi Installation and Setup | ✓ | ✓ |
+| tp-link-wifi-gold-coast.html | ✓ | ✓ TP-Link WiFi Installation and Setup | ✓ | ✓ |
+| asus-wifi-gold-coast.html | ✓ | ✓ ASUS WiFi Installation and Setup | ✓ | ✓ |
+| netgear-wifi-gold-coast.html | ✓ | ✓ Netgear WiFi Installation and Setup | ✓ | ✓ |
+| d-link-wifi-gold-coast.html | ✓ | ✓ D-Link WiFi Installation and Setup | ✓ | ✓ |
+| linksys-wifi-gold-coast.html | ✓ | ✓ Linksys WiFi Installation and Setup | ✓ | ✓ |
+| aruba-instant-on-wifi-gold-coast.html | ✓ | ✓ Aruba Instant On WiFi Installation and Setup | ✓ | ✓ |
+| synology-wifi-gold-coast.html | ✓ | ✓ Synology WiFi Installation and Setup | ✓ | ✓ |
+
+**Issues found:** NONE — all checks pass. All serviceType values are unique across all 9 pages.
+
+**Task 3 result: PASS — no fixes required. No commit needed.**
+
