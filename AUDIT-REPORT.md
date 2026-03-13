@@ -1432,3 +1432,59 @@ All remaining shared sentences are short boilerplate service statements (phone n
 
 All 9 WiFi brand pages pass all 7 audit tasks as of 2026-03-13.
 
+
+---
+
+## WiFi Brand Pages Audit — Summary
+
+### Audit Completed: 2026-03-13
+### Pages Audited: 9
+
+| Check | Pages passing | Issues found | Issues fixed |
+|-------|--------------|--------------|--------------|
+| Title & meta | 9/9 | 0 | 0 |
+| Canonical | 9/9 | 0 | 0 |
+| OG/Twitter tags | 9/9 | 0 | 0 |
+| GTM present | 9/9 | 0 | 0 |
+| BreadcrumbList | 9/9 | 0 | 0 |
+| LocalBusiness schema | 9/9 | 0 | 0 |
+| FAQPage schema | 9/9 | 1 (duplicate Q5 on 6 pages) | 6 pages fixed |
+| HowTo schema | 9/9 | 0 | 0 |
+| H1 and headings | 9/9 | 0 | 0 |
+| Images (.webp, alt, lazy) | 9/9 | 1 (hero lazy on 7 pages) | 7 pages fixed |
+| Booking buttons × 3 | 9/9 | 0 | 0 |
+| Duplicate content | 9/9 | 1 (shared paragraphs on 4 pages) | 4 pages fixed |
+| Thin content | 9/9 | 0 | 0 |
+| Sitemap | 9/9 | 1 (9 pages missing from sitemap) | Added all 9 |
+| robots.txt | 9/9 | 0 | 0 |
+| llms.txt | 9/9 | 1 (9 pages missing from llms.txt) | Added all 9 |
+| Nav links | — | — | — |
+| Brand pill links | 9/9 | 0 | 0 |
+
+### Issues by Severity
+
+HIGH fixed: 1
+- Hero image `loading="lazy"` on 7 pages (LCP element must not be lazy-loaded)
+
+MEDIUM fixed: 4
+- Duplicate FAQ Q5 across 6 pages
+- Fewer than 2 body internal links on 6 pages
+- Shared body paragraphs (duplicate content) on 4 pages
+- 9 brand pages missing from sitemap.xml and llms.txt
+
+LOW logged: 0
+
+### Remaining Actions (manual — cannot be done in Manus)
+
+- [ ] Deploy updated sitemap.xml and llms.txt
+- [ ] Submit updated sitemap in Google Search Console
+- [ ] Run Google Rich Results Test on 3 brand pages:
+      https://search.google.com/test/rich-results
+      Test: ubiquiti-unifi-wifi-gold-coast.html
+            grandstream-wifi-gold-coast.html
+            asus-wifi-gold-coast.html
+- [ ] Run PageSpeed Insights on homepage and one brand page
+- [ ] Monitor Search Console for crawl errors 48 hours post-deploy
+
+### WiFi Brand Pages Audit: COMPLETE
+
