@@ -106,6 +106,34 @@ Network cabling for Gold Coast offices — structured cabling, Cat6 installation
 https://bcomservices.com.au/nbn-internet-support-gold-coast.html
 NBN internet support for Gold Coast — NBN connection setup, faults and speed troubleshooting.
 
+## WiFi Brand Pages
+https://bcomservices.com.au/ubiquiti-unifi-wifi-gold-coast.html
+Ubiquiti UniFi WiFi installation for Gold Coast — professional UniFi access point setup, controller configuration and mesh networking.
+
+https://bcomservices.com.au/grandstream-wifi-gold-coast.html
+Grandstream WiFi installation for Gold Coast — GWN access point setup, cloud management and business wireless networking.
+
+https://bcomservices.com.au/tp-link-wifi-gold-coast.html
+TP-Link WiFi installation for Gold Coast — Deco mesh, Omada business and Archer router setup and configuration.
+
+https://bcomservices.com.au/asus-wifi-gold-coast.html
+ASUS WiFi installation for Gold Coast — ZenWiFi mesh and ROG router setup, AiMesh configuration and security hardening.
+
+https://bcomservices.com.au/netgear-wifi-gold-coast.html
+Netgear WiFi installation for Gold Coast — Orbi mesh and Nighthawk router setup, Armor security and app configuration.
+
+https://bcomservices.com.au/d-link-wifi-gold-coast.html
+D-Link WiFi installation for Gold Coast — COVR mesh and EAGLE PRO AI router setup, AI band steering and guest network configuration.
+
+https://bcomservices.com.au/linksys-wifi-gold-coast.html
+Linksys WiFi installation for Gold Coast — Velop mesh and Hydra Pro router setup, intelligent mesh and device prioritisation.
+
+https://bcomservices.com.au/aruba-instant-on-wifi-gold-coast.html
+Aruba Instant On WiFi installation for Gold Coast — business-grade access point setup, cloud management and VLAN configuration.
+
+https://bcomservices.com.au/synology-wifi-gold-coast.html
+Synology WiFi installation for Gold Coast — WRX560 and MR2200ac setup, SRM configuration, VPN Server and Threat Prevention.
+
 ## Telecommunications
 https://bcomservices.com.au/telecommunications-contractor-gold-coast.html
 Telecommunications contractor for Gold Coast — phone line installation, cabling and telecoms infrastructure.

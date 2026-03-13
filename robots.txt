@@ -3,3 +3,7 @@ Disallow: /book.html
 Disallow: /search.html
 Disallow: /tech-tips-template.html
 Sitemap: https://www.bcomservices.com/sitemap.xml
+
+# LLMs
+User-agent: *
+Allow: /llms.txt
