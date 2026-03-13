@@ -1263,3 +1263,39 @@ Checks performed on all 9 pages:
 
 **Task 3 result: PASS — no fixes required. No commit needed.**
 
+
+---
+
+### Task 4 — Schema: FAQPage
+
+**Audit date:** 2026-03-13
+
+| Page | 5 questions | All answers populated | No HTML in answers | Unique questions | Issues |
+|---|---|---|---|---|---|
+| ubiquiti-unifi-wifi-gold-coast.html | ✓ | ✓ | ✓ | ✓ | None |
+| grandstream-wifi-gold-coast.html | ✓ | ✓ | ✓ | ✓ | None |
+| tp-link-wifi-gold-coast.html | ✓ | ✓ | ✓ | ✓ | None |
+| asus-wifi-gold-coast.html | ✓ | ✓ | ✓ | ✓ (fixed) | Q5 duplicate — fixed |
+| netgear-wifi-gold-coast.html | ✓ | ✓ | ✓ | ✓ (fixed) | Q5 duplicate — fixed |
+| d-link-wifi-gold-coast.html | ✓ | ✓ | ✓ | ✓ (fixed) | Q5 duplicate — fixed |
+| linksys-wifi-gold-coast.html | ✓ | ✓ | ✓ | ✓ (fixed) | Q5 duplicate — fixed |
+| aruba-instant-on-wifi-gold-coast.html | ✓ | ✓ | ✓ | ✓ (fixed) | Q5 duplicate — fixed |
+| synology-wifi-gold-coast.html | ✓ | ✓ | ✓ | ✓ (fixed) | Q5 duplicate — fixed |
+
+**Cross-site check:** No duplicate questions found against `home-wifi-setup-and-troubleshooting-gold-coast.html`, `mesh-network-setup-gold-coast.html`, or `router-and-modem-configuration-gold-coast.html`.
+
+**Issue found and fixed:** Q5 "Do you service all Gold Coast suburbs?" was identical across 6 pages (asus, netgear, d-link, linksys, aruba-instant-on, synology). Rewritten on each page to brand-specific suburb coverage questions:
+
+| Page | Old Q5 | New Q5 |
+|---|---|---|
+| asus | Do you service all Gold Coast suburbs? | Which Gold Coast suburbs do you install ASUS ZenWiFi in? |
+| netgear | Do you service all Gold Coast suburbs? | Which Gold Coast suburbs do you install Netgear Orbi in? |
+| d-link | Do you service all Gold Coast suburbs? | Which Gold Coast suburbs do you install D-Link WiFi in? |
+| linksys | Do you service all Gold Coast suburbs? | Which Gold Coast suburbs do you install Linksys Velop in? |
+| aruba-instant-on | Do you service all Gold Coast suburbs? | Which Gold Coast suburbs do you install Aruba Instant On in? |
+| synology | Do you service all Gold Coast suburbs? | Which Gold Coast suburbs do you install Synology WiFi in? |
+
+Both the JSON-LD schema and the visible HTML FAQ accordion were updated on all 6 pages. Post-fix verification confirms all 45 questions (9 pages × 5) are now unique.
+
+**Task 4 result: 1 issue found and fixed. Commit: "Fix FAQPage schema — WiFi brand pages audit"**
+
