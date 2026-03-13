@@ -1367,3 +1367,68 @@ Checks performed on all 9 pages:
 
 **Task 6 result: 2 issues found and fixed. Commit: "Fix on-page SEO issues — WiFi brand pages audit"**
 
+
+---
+
+### Task 7 — Duplicate Content Analysis
+
+**Audit date:** 2026-03-13
+
+#### Word Count Check
+
+All 9 pages exceed the 800-word minimum:
+
+| Page | Word count |
+|---|---|
+| ubiquiti-unifi-wifi-gold-coast.html | 2,331 |
+| grandstream-wifi-gold-coast.html | 1,738 |
+| tp-link-wifi-gold-coast.html | 1,661 |
+| asus-wifi-gold-coast.html | 1,398 |
+| netgear-wifi-gold-coast.html | 1,356 |
+| d-link-wifi-gold-coast.html | 1,435 |
+| linksys-wifi-gold-coast.html | 1,396 |
+| aruba-instant-on-wifi-gold-coast.html | 1,465 |
+| synology-wifi-gold-coast.html | 1,534 |
+
+#### Cross-Page Similarity (Pre-Fix)
+
+Initial analysis found 6 page pairs with Jaccard sentence similarity above 15%, driven by two shared body paragraphs:
+
+1. **Climate/construction paragraph** — "The Gold Coast climate presents specific challenges for WiFi. Concrete tilt-slab construction..." — shared across netgear, d-link, linksys, and synology (with minor variation).
+2. **Firmware/installation paragraph** — "The installation process covers more than simply plugging in hardware. We configure your ISP connection settings..." — shared across netgear, d-link, linksys, and synology.
+
+Highest pre-fix similarity: d-link vs linksys at 24.0% (25 shared sentences).
+
+#### Fixes Applied
+
+Both shared paragraphs were rewritten on all 4 affected pages (netgear, d-link, linksys, synology) with brand-specific content referencing each brand's hardware, features, and setup process:
+
+- **Netgear**: Climate paragraph rewritten to reference Orbi's dedicated backhaul band and tilt-slab construction in Coomera/Pimpama. Firmware paragraph rewritten to reference Orbi app, Armor threat protection, and Netgear account registration.
+- **D-Link**: Climate paragraph rewritten to reference COVR backhaul and EAGLE PRO AI band steering. Firmware paragraph rewritten to reference D-Link Wi-Fi app, AI Traffic Optimiser, and COVR node positioning.
+- **Linksys**: Climate paragraph rewritten to reference Velop tri-band backhaul and Linksys app signal strength checking. Firmware paragraph rewritten to reference Velop Pro intelligent mesh and device prioritisation.
+- **Synology**: Climate paragraph rewritten to reference SRM features and Synology mesh capability. Firmware paragraph rewritten to reference VPN Server, Threat Prevention, Safe Access, and SRM package setup.
+
+#### Cross-Page Similarity (Post-Fix)
+
+All remaining shared sentences are short boilerplate service statements (phone number, "same-day service", "we test coverage in every room") that are legitimately consistent across a service business's pages and do not constitute duplicate content risk. The highest post-fix similarity is d-link vs linksys at 15.9%, driven entirely by these short sentences — no shared body paragraphs remain.
+
+**Cross-site check**: No duplicate content found against `home-wifi-setup-and-troubleshooting-gold-coast.html`, `mesh-network-setup-gold-coast.html`, or `router-and-modem-configuration-gold-coast.html`.
+
+**Task 7 result: 1 issue found and fixed (shared body paragraphs on 4 pages). Commit: "Fix duplicate content issues — WiFi brand pages audit"**
+
+---
+
+## Audit Summary
+
+| Task | Result | Issues found | Issues fixed |
+|---|---|---|---|
+| Task 1 — Head Tags | PASS | 0 | 0 |
+| Task 2 — BreadcrumbList schema | PASS | 0 | 0 |
+| Task 3 — LocalBusiness schema | PASS | 0 | 0 |
+| Task 4 — FAQPage schema | FIXED | 1 (duplicate Q5 on 6 pages) | 6 pages fixed |
+| Task 5 — HowTo schema | PASS | 0 | 0 |
+| Task 6 — On-Page SEO | FIXED | 2 (hero lazy on 7 pages; body links on 6 pages) | 13 pages fixed |
+| Task 7 — Duplicate content | FIXED | 1 (shared paragraphs on 4 pages) | 4 pages fixed |
+
+All 9 WiFi brand pages pass all 7 audit tasks as of 2026-03-13.
+
