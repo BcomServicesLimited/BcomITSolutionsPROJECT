@@ -1195,3 +1195,37 @@ All HIGH severity issues resolved. Site is ready for go-live.
 
 **Task 1 result: PASS — no fixes required. No commit needed.**
 
+
+---
+
+### Task 2 — Schema: BreadcrumbList
+
+**Audit date:** 2026-03-13
+
+Checks performed on all 9 pages:
+- BreadcrumbList block present (exactly 1, no duplicates)
+- `@context: "https://schema.org"` and `@type: "BreadcrumbList"`
+- Exactly 4 ListItem entries with sequential positions 1–4
+- Position 1: name "Home", item `https://www.bcomservices.com/`
+- Position 2: name "Residential", item `https://www.bcomservices.com/home-users.html`
+- Position 3: name "Networking & WiFi", item `https://www.bcomservices.com/home-wifi-setup-and-troubleshooting-gold-coast.html`
+- Position 4: name matches page H1 exactly, item matches canonical URL exactly
+- All item URLs use `https://www.bcomservices.com/` (not http, not non-www, not .com.au)
+- JSON syntactically valid, no `<\/script>` escapes
+
+| Page | Block present | 4 items | Pos 1 correct | Pos 3 correct | Pos 4 matches H1 |
+|---|---|---|---|---|---|
+| ubiquiti-unifi-wifi-gold-coast.html | ✓ | ✓ | ✓ | ✓ | ✓ |
+| grandstream-wifi-gold-coast.html | ✓ | ✓ | ✓ | ✓ | ✓ |
+| tp-link-wifi-gold-coast.html | ✓ | ✓ | ✓ | ✓ | ✓ |
+| asus-wifi-gold-coast.html | ✓ | ✓ | ✓ | ✓ | ✓ |
+| netgear-wifi-gold-coast.html | ✓ | ✓ | ✓ | ✓ | ✓ |
+| d-link-wifi-gold-coast.html | ✓ | ✓ | ✓ | ✓ | ✓ |
+| linksys-wifi-gold-coast.html | ✓ | ✓ | ✓ | ✓ | ✓ |
+| aruba-instant-on-wifi-gold-coast.html | ✓ | ✓ | ✓ | ✓ | ✓ |
+| synology-wifi-gold-coast.html | ✓ | ✓ | ✓ | ✓ | ✓ |
+
+**Issues found:** NONE — all checks pass.
+
+**Task 2 result: PASS — no fixes required. No commit needed.**
+
