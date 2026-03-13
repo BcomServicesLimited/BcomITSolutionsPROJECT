@@ -1135,3 +1135,63 @@ The 410 rule self-references /tech-tips-template.html as required by Cloudflare 
 ### Audit Complete
 
 All HIGH severity issues resolved. Site is ready for go-live.
+
+## WiFi Brand Pages Audit
+
+### Task 1 — Head Tags: Title, Meta, Canonical, OG and Twitter
+
+**Audit date:** 2026-03-13
+
+| Page | Title OK | Title len | Meta OK | Meta len | Canonical OK | OG OK | Twitter OK | GTM head | GTM noscript |
+|---|---|---|---|---|---|---|---|---|---|
+| ubiquiti-unifi-wifi-gold-coast.html | ✓ | 50 | ✓ | 150 | ✓ | ✓ | ✓ | ✓ | ✓ |
+| grandstream-wifi-gold-coast.html | ✓ | 47 | ✓ | 133 | ✓ | ✓ | ✓ | ✓ | ✓ |
+| tp-link-wifi-gold-coast.html | ✓ | 43 | ✓ | 150 | ✓ | ✓ | ✓ | ✓ | ✓ |
+| asus-wifi-gold-coast.html | ✓ | 40 | ✓ | 145 | ✓ | ✓ | ✓ | ✓ | ✓ |
+| netgear-wifi-gold-coast.html | ✓ | 43 | ✓ | 138 | ✓ | ✓ | ✓ | ✓ | ✓ |
+| d-link-wifi-gold-coast.html | ✓ | 42 | ✓ | 130 | ✓ | ✓ | ✓ | ✓ | ✓ |
+| linksys-wifi-gold-coast.html | ✓ | 43 | ✓ | 143 | ✓ | ✓ | ✓ | ✓ | ✓ |
+| aruba-instant-on-wifi-gold-coast.html | ✓ | 52 | ✓ | 141 | ✓ | ✓ | ✓ | ✓ | ✓ |
+| synology-wifi-gold-coast.html | ✓ | 44 | ✓ | 152 | ✓ | ✓ | ✓ | ✓ | ✓ |
+
+**Issues found:**
+- GTM `<noscript>` block: Initial audit regex returned false negatives — on re-check all 9 pages already contain the correct GTM noscript block immediately after `<body>`. No fix required.
+
+**All other checks:** PASS — titles unique, meta descriptions unique, canonicals correct (www.bcomservices.com), all OG and Twitter tags present and correct.
+
+**Task 1 result: PASS — no fixes required.**
+
+
+---
+
+## WiFi Brand Pages Audit
+
+### Task 1 — Head Tags: Title, Meta, Canonical, OG and Twitter
+
+**Audit date:** 2026-03-13
+
+| Page | Title OK | Title len | Meta OK | Meta len | Canonical OK | OG OK | Twitter OK | GTM head | GTM noscript |
+|---|---|---|---|---|---|---|---|---|---|
+| ubiquiti-unifi-wifi-gold-coast.html | ✓ | 50 | ✓ | 150 | ✓ | ✓ | ✓ | ✓ | ✓ |
+| grandstream-wifi-gold-coast.html | ✓ | 47 | ✓ | 133 | ✓ | ✓ | ✓ | ✓ | ✓ |
+| tp-link-wifi-gold-coast.html | ✓ | 43 | ✓ | 150 | ✓ | ✓ | ✓ | ✓ | ✓ |
+| asus-wifi-gold-coast.html | ✓ | 40 | ✓ | 145 | ✓ | ✓ | ✓ | ✓ | ✓ |
+| netgear-wifi-gold-coast.html | ✓ | 43 | ✓ | 138 | ✓ | ✓ | ✓ | ✓ | ✓ |
+| d-link-wifi-gold-coast.html | ✓ | 42 | ✓ | 130 | ✓ | ✓ | ✓ | ✓ | ✓ |
+| linksys-wifi-gold-coast.html | ✓ | 43 | ✓ | 143 | ✓ | ✓ | ✓ | ✓ | ✓ |
+| aruba-instant-on-wifi-gold-coast.html | ✓ | 52 | ✓ | 141 | ✓ | ✓ | ✓ | ✓ | ✓ |
+| synology-wifi-gold-coast.html | ✓ | 44 | ✓ | 152 | ✓ | ✓ | ✓ | ✓ | ✓ |
+
+**Checks summary:**
+- All 9 titles: unique, correct format `[Brand] WiFi Gold Coast | Bcom IT Solutions`, 40–52 chars — PASS
+- All 9 meta descriptions: unique, 130–152 chars (within 120–155 target), contain brand name, "Gold Coast" and CTA — PASS
+- All 9 canonicals: `https://www.bcomservices.com/[filename].html` — correct domain, correct filename — PASS
+- All 9 OG tag sets: all 6 tags present (og:title, og:description, og:url, og:image .webp, og:site_name "Bcom IT Solutions", og:type "website") — PASS
+- All 9 Twitter tag sets: all 4 tags present (twitter:card "summary_large_image", twitter:title, twitter:description, twitter:image .webp) — PASS
+- All 9 GTM head scripts: GTM-KQRG3BSF present in `<head>` — PASS
+- All 9 GTM noscript blocks: present immediately after `<body>` — PASS
+
+**Issues found:** NONE — all checks pass.
+
+**Task 1 result: PASS — no fixes required. No commit needed.**
+
