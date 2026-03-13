@@ -1299,3 +1299,34 @@ Both the JSON-LD schema and the visible HTML FAQ accordion were updated on all 6
 
 **Task 4 result: 1 issue found and fixed. Commit: "Fix FAQPage schema — WiFi brand pages audit"**
 
+
+---
+
+### Task 5 — Schema: HowTo
+
+**Audit date:** 2026-03-13
+
+Checks performed on all 9 pages:
+- HowTo block present (exactly 1, no duplicates)
+- `@context: "https://schema.org"` and `@type: "HowTo"`
+- `name` present and brand-specific (references brand name, unique across all 9 pages)
+- `description` present and non-empty
+- Exactly 4 `HowToStep` objects with sequential positions "1"–"4" (as strings)
+- Each step has non-empty `name` and `text`
+
+| Page | Block present | name brand-specific | 4 steps | All steps populated | name unique |
+|---|---|---|---|---|---|
+| ubiquiti-unifi-wifi-gold-coast.html | ✓ | ✓ | ✓ | ✓ | ✓ |
+| grandstream-wifi-gold-coast.html | ✓ | ✓ | ✓ | ✓ | ✓ |
+| tp-link-wifi-gold-coast.html | ✓ | ✓ | ✓ | ✓ | ✓ |
+| asus-wifi-gold-coast.html | ✓ | ✓ | ✓ | ✓ | ✓ |
+| netgear-wifi-gold-coast.html | ✓ | ✓ | ✓ | ✓ | ✓ |
+| d-link-wifi-gold-coast.html | ✓ | ✓ | ✓ | ✓ | ✓ |
+| linksys-wifi-gold-coast.html | ✓ | ✓ | ✓ | ✓ | ✓ |
+| aruba-instant-on-wifi-gold-coast.html | ✓ | ✓ | ✓ | ✓ | ✓ |
+| synology-wifi-gold-coast.html | ✓ | ✓ | ✓ | ✓ | ✓ |
+
+**Issues found:** NONE — all checks pass. All HowTo names are unique and brand-specific.
+
+**Task 5 result: PASS — no fixes required. No commit needed.**
+
