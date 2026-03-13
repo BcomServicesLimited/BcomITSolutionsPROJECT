@@ -1330,3 +1330,40 @@ Checks performed on all 9 pages:
 
 **Task 5 result: PASS — no fixes required. No commit needed.**
 
+
+---
+
+### Task 6 — On-Page SEO Essentials
+
+**Audit date:** 2026-03-13
+
+Checks performed on all 9 pages:
+- Exactly 1 H1 tag with correct format "[Brand] WiFi Gold Coast"
+- ABN 92 636 893 108 present in body
+- "Last updated: March 2026" present
+- At least 2 `<a href="tel:0730418993">` links
+- Hero image does NOT have `loading="lazy"` (LCP element)
+- Residential booking button appears at least 3 times; business booking button absent
+- At least 2 unique internal links in body content (excluding nav/footer)
+- Parent page `home-wifi-setup-and-troubleshooting-gold-coast.html` linked in body
+
+| Page | 1× H1 | ABN | Last updated | 2+ tel links | Hero no lazy | 3× booking | 2+ body links | Parent linked |
+|---|---|---|---|---|---|---|---|---|
+| ubiquiti-unifi | ✓ | ✓ | ✓ | ✓ (10) | ✓ | ✓ | ✓ (3) | ✓ |
+| grandstream | ✓ | ✓ | ✓ | ✓ (8) | ✓ | ✓ | ✓ fixed | ✓ |
+| tp-link | ✓ | ✓ | ✓ | ✓ (8) | ✓ fixed | ✓ | ✓ (3) | ✓ |
+| asus | ✓ | ✓ | ✓ | ✓ (8) | ✓ fixed | ✓ | ✓ (2) | ✓ |
+| netgear | ✓ | ✓ | ✓ | ✓ (8) | ✓ fixed | ✓ | ✓ fixed | ✓ |
+| d-link | ✓ | ✓ | ✓ | ✓ (8) | ✓ fixed | ✓ | ✓ fixed | ✓ |
+| linksys | ✓ | ✓ | ✓ | ✓ (8) | ✓ fixed | ✓ | ✓ fixed | ✓ |
+| aruba-instant-on | ✓ | ✓ | ✓ | ✓ (8) | ✓ fixed | ✓ | ✓ fixed | ✓ |
+| synology | ✓ | ✓ | ✓ | ✓ (8) | ✓ fixed | ✓ | ✓ fixed | ✓ |
+
+**Issues found and fixed:**
+
+1. **Hero image `loading="lazy"` on 7 pages** (tp-link, asus, netgear, d-link, linksys, aruba-instant-on, synology) — removed `loading="lazy"` from hero `<img>` on all 7 pages. The hero image is the LCP element and must not be lazy-loaded.
+
+2. **Fewer than 2 body internal links on 6 pages** (grandstream, netgear, d-link, linksys, aruba-instant-on, synology) — added a contextual `<a href="computer-networking-service-gold-coast.html">` link in the services paragraph of each page. All 6 pages now have 2 unique body internal links.
+
+**Task 6 result: 2 issues found and fixed. Commit: "Fix on-page SEO issues — WiFi brand pages audit"**
+
