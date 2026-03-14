@@ -1488,3 +1488,54 @@ LOW logged: 0
 
 ### WiFi Brand Pages Audit: COMPLETE
 
+
+---
+
+## Google Nest WiFi & Eero Pages Audit — Summary
+
+### Audit Completed: 2026-03-15
+### Pages Audited: 2 (google-nest-wifi-gold-coast.html, eero-wifi-gold-coast.html)
+
+| Check | Pages passing | Issues found | Issues fixed |
+|-------|--------------|--------------|--------------|
+| Title & meta | 2/2 (titles 40-47ch, below 50ch target) | 1 LOW | 0 (user declined) |
+| Canonical | 2/2 | 0 | — |
+| OG/Twitter tags | 2/2 | 0 | — |
+| GTM present (head + noscript) | 2/2 | 0 | — |
+| BreadcrumbList schema | 2/2 | 0 | — |
+| LocalBusiness schema | 2/2 | 0 | — |
+| FAQPage schema | 2/2 | 0 | — |
+| HowTo schema | 2/2 | 0 | — |
+| H1 and headings | 2/2 | 0 | — |
+| Images (.webp, alt, no hero lazy) | 2/2 | 0 | — |
+| Booking buttons x 3 | 2/2 | 0 | — |
+| Duplicate content | 0/2 | 1 HIGH (templated paragraphs shared with brand pages) | 2 pages fixed (7 paragraphs rewritten) |
+| Thin content (1,500+ words) | 2/2 | 0 | — |
+| Sitemap | 2/2 | 0 | — |
+| robots.txt | 2/2 | 0 | — |
+| llms.txt | 2/2 | 0 | — |
+| Nav links | 0/55 pages | 1 HIGH (both pages missing from nav) | 0 (user declined — nav not to be touched) |
+| Brand pill links (mesh page) | 5/7 | 1 MEDIUM (Google Nest + Eero unlinked) | 2 pills linked |
+
+### Issues by Severity
+HIGH fixed: 1 (duplicate content — 7 paragraphs rewritten across both pages)
+MEDIUM fixed: 1 (mesh page brand pills — Google Nest WiFi and Eero now linked)
+LOW logged: 1 (title length below 50ch target — user declined fix)
+HIGH noted (deferred): 1 (nav links missing — user declined fix)
+
+### Commits
+- ca6bdd8 — Fix duplicate content — Google Nest WiFi and Eero pages
+- 63ef05e — Link Google Nest WiFi and Eero pills on mesh page — audit Task 11
+
+### Remaining Actions (manual — cannot be done in Manus)
+- [ ] Add Google Nest WiFi and Eero to the Residential mega menu nav (deferred — user decision)
+- [ ] Deploy updated sitemap.xml and llms.txt to production
+- [ ] Submit updated sitemap in Google Search Console
+- [ ] Run Google Rich Results Test on both new pages:
+      https://search.google.com/test/rich-results
+      Test: google-nest-wifi-gold-coast.html
+            eero-wifi-gold-coast.html
+- [ ] Run PageSpeed Insights on both new pages
+- [ ] Monitor Search Console for crawl errors 48 hours post-deploy
+
+### Google Nest WiFi & Eero Pages Audit: COMPLETE
