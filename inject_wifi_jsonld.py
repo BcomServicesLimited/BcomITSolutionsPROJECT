@@ -19,7 +19,7 @@ local_business = '''{
   "name": "Bcom IT Solutions — WiFi Range Extension Gold Coast",
   "serviceType": "WiFi Range Extension",
   "telephone": "+61730418993",
-  "email": "support@bcomservices.com",
+  "email": "hello@bcomservices.com",
   "url": "https://bcomservices.com.au/wifi-range-extension-gold-coast.html",
   "areaServed": {"@type": "City", "name": "Gold Coast", "addressRegion": "QLD", "addressCountry": "AU"},
   "provider": {"@type": "Organization", "name": "Bcom IT Solutions Pty Ltd", "taxID": "92 636 893 108"}

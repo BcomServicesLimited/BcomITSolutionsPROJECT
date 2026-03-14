@@ -1,7 +1,7 @@
 # Bcom IT Solutions — LLM Access File
 # Business: Bcom Services Pty Ltd | ABN: 92 636 893 108
 # Location: Gold Coast, Queensland, Australia
-# Phone: 07 3041 8993 | Email: support@bcomservices.com
+# Phone: 07 3041 8993 | Email (residential): hello@bcomservices.com | Email (business): office@bcomservices.com
 # Website: https://bcomservices.com.au
 # Services: IT Support · Computer Repair · WiFi & Networking ·
 #   Telecommunications · IT Consulting · Cybersecurity · Cloud Computing ·

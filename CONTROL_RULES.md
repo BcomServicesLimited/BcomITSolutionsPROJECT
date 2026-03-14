@@ -27,7 +27,8 @@ Do not do anything yet. Wait for my next instruction.
 | Business | Bcom Services Pty Ltd |
 | ABN | 92 636 893 108 |
 | Phone | 07 3041 8993 |
-| Email | support@bcomservices.com |
+| Email (residential) | hello@bcomservices.com |
+| Email (business) | office@bcomservices.com |
 | Website | bcomservices.com.au |
 | Location | Gold Coast, Queensland |
 
