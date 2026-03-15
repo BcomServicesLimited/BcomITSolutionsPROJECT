@@ -156,6 +156,12 @@ PABX phone systems for Gold Coast businesses — traditional and IP-PBX installa
 https://bcomservices.com.au/phone-line-installation-cabling-gold-coast.html
 Phone line installation and cabling for Gold Coast — new phone line runs, extensions and PSTN/VoIP cabling.
 
+## PBX Brands Supported
+- LG Ericsson PBX: /lg-ericsson-pbx-gold-coast.html
+- Alcatel-Lucent PBX: /alcatel-lucent-pbx-gold-coast.html
+- Panasonic PBX: /panasonic-pbx-gold-coast.html
+- NEC PBX: /nec-pbx-gold-coast.html
+
 ## Cybersecurity and Cloud
 https://bcomservices.com.au/cybersecurity-health-check-for-small-business-gold-coast.html
 Cybersecurity health check for Gold Coast small businesses — risk assessment, vulnerability review and recommendations.
