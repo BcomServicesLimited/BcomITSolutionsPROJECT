@@ -341,4 +341,30 @@
     <priority>0.7</priority>
   </url>
 
+  <!-- PBX Brand Pages -->
+  <url>
+    <loc>https://www.bcomservices.com/lg-ericsson-pbx-gold-coast.html</loc>
+    <lastmod>2026-03-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.bcomservices.com/alcatel-lucent-pbx-gold-coast.html</loc>
+    <lastmod>2026-03-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.bcomservices.com/panasonic-pbx-gold-coast.html</loc>
+    <lastmod>2026-03-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.bcomservices.com/nec-pbx-gold-coast.html</loc>
+    <lastmod>2026-03-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
 </urlset>
