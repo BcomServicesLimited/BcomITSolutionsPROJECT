@@ -157,10 +157,17 @@ https://bcomservices.com.au/phone-line-installation-cabling-gold-coast.html
 Phone line installation and cabling for Gold Coast — new phone line runs, extensions and PSTN/VoIP cabling.
 
 ## PBX Brands Supported
-- LG Ericsson PBX: /lg-ericsson-pbx-gold-coast.html
-- Alcatel-Lucent PBX: /alcatel-lucent-pbx-gold-coast.html
-- Panasonic PBX: /panasonic-pbx-gold-coast.html
-- NEC PBX: /nec-pbx-gold-coast.html
+https://www.bcomservices.com/lg-ericsson-pbx-gold-coast.html
+LG Ericsson iPECS PBX support, installation and repair for Gold Coast businesses — eMG80, eMG800, UCP and LIK series.
+
+https://www.bcomservices.com/alcatel-lucent-pbx-gold-coast.html
+Alcatel-Lucent OXO Connect and OmniPCX PBX support, maintenance and repair for Gold Coast businesses.
+
+https://www.bcomservices.com/panasonic-pbx-gold-coast.html
+Panasonic KX-TDA, KX-NS and KX-TDE PBX support, maintenance and repair for Gold Coast businesses.
+
+https://www.bcomservices.com/nec-pbx-gold-coast.html
+NEC UNIVERGE SV8100, SV9100 and SL2100 PBX support, maintenance and repair for Gold Coast businesses.
 
 ## Cybersecurity and Cloud
 https://bcomservices.com.au/cybersecurity-health-check-for-small-business-gold-coast.html
