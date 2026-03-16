@@ -471,7 +471,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQRG3BSF"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
 <!-- UTILITY BAR -->
 <div class="utility-bar">
   <div class="utility-inner">
@@ -484,7 +483,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="util-group">
       <span class="util-item">
         <i data-lucide="mail" aria-hidden="true"></i>
-        <a href="mailto:office@bcomservices.com">office@bcomservices.com</a>
+        <a href="mailto:hello@bcomservices.com">hello@bcomservices.com</a>
       </span>
       <span class="util-item">
         <i data-lucide="phone" aria-hidden="true"></i>
@@ -774,7 +773,260 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </nav>
 
+<!-- NAV MEGA MENU CSS — add to design-system.css OR inline in nav.html -->
+<style>
+/* ── UTILITY BAR ── */
+.utility-bar {
+  background: #f0f9fb;
+  border-bottom: 1px solid rgba(0,200,224,0.15);
+  padding: 7px 0;
+  font-family: var(--font-mono);
+  font-size: 0.71rem;
+  color: #4a5568;
+}
+.utility-inner {
+  max-width: 1280px; margin: 0 auto; padding: 0 40px;
+  display: flex; justify-content: space-between; align-items: center;
+}
+.util-group { display: flex; align-items: center; gap: 18px; }
+.util-item  { display: flex; align-items: center; gap: 5px; }
+.util-item [data-lucide] { width: 13px; height: 13px; stroke: var(--cyan); }
+.utility-bar a { color: var(--cyan); text-decoration: none; }
+.utility-bar a:hover { text-decoration: underline; }
 
+/* ── MAIN NAV ── */
+.main-nav {
+  background: #ffffff;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+  position: sticky; top: 0; z-index: 1000;
+}
+.nav-inner {
+  max-width: 1280px; margin: 0 auto; padding: 0 40px;
+  display: flex; align-items: center; height: 70px; gap: 4px;
+}
+.nav-logo {
+  display: flex; align-items: center;
+  text-decoration: none; margin-right: 32px; flex-shrink: 0;
+}
+.nav-logo img { height: 44px; width: auto; display: block; }
+
+/* ── NAV LINKS ── */
+.nav-links { display: flex; align-items: center; gap: 2px; flex: 1; }
+.nav-item  { position: relative; }
+.nav-link  {
+  display: flex; align-items: center; gap: 4px;
+  padding: 6px 14px; font-size: 0.9rem; font-weight: 500;
+  color: var(--navy); text-decoration: none;
+  white-space: nowrap; cursor: pointer; transition: color 0.15s;
+  border: none; background: none;
+  font-family: var(--font-body); position: relative;
+}
+.nav-link::after {
+  content: ''; position: absolute;
+  bottom: -2px; left: 14px; right: 14px; height: 2px;
+  background: var(--cyan); transform: scaleX(0);
+  transition: transform 0.2s ease; border-radius: 2px;
+}
+.nav-item:hover > .nav-link { color: var(--cyan); }
+.nav-item:hover > .nav-link::after { transform: scaleX(1); }
+.nav-link.nav-active { color: var(--cyan); }
+.nav-link.nav-active::after { transform: scaleX(1); }
+.nav-chevron { width: 14px; height: 14px; transition: transform 0.2s; }
+.nav-item:hover > .nav-link .nav-chevron { transform: rotate(180deg); }
+
+.status-dot {
+  width: 8px; height: 8px; background: #22c55e;
+  border-radius: 50%; display: inline-block; margin-right: 3px;
+  animation: status-blink 2s ease-in-out infinite;
+}
+@keyframes status-blink { 0%,100%{opacity:1} 50%{opacity:0.4} }
+
+.nav-right { margin-left: auto; flex-shrink: 0; }
+
+/* ── MEGA PANEL ── */
+.mega-panel {
+  position: absolute; top: 100%; left: 50%;
+  transform: translateX(-50%);
+  background: #ffffff; border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.13);
+  display: block; z-index: 999; overflow: hidden;
+  padding-top: 8px; margin-top: -8px;
+  /* Hide — delayed 150ms so cursor can travel into panel */
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.15s ease 0.15s,
+              visibility 0s ease 0.15s;
+}
+.mega-panel::before {
+  content: ''; position: absolute;
+  top: -8px; left: 0; right: 0; height: 8px;
+  background: transparent;
+}
+/* Show — instant */
+.nav-has-mega:hover .mega-panel {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transition: opacity 0.15s ease 0s,
+              visibility 0s ease 0s;
+}
+.mega-panel.residential { width: 680px; }
+.mega-panel.business    { width: 980px; }
+
+.mega-panel-header {
+  padding: 14px 24px 12px; border-bottom: 1px solid #e2e8f0;
+}
+.mega-panel-label {
+  font-family: var(--font-mono); font-size: 0.65rem;
+  color: var(--cyan); text-transform: uppercase; letter-spacing: 0.1em;
+}
+
+/* ── MEGA COLUMNS ── */
+.mega-cols { display: grid; align-items: start; }
+.mega-cols.cols-2 { grid-template-columns: 1fr 1fr; }
+.mega-cols.cols-3 { grid-template-columns: 1fr 1fr 1fr; }
+.mega-col { padding: 16px 0 10px; border-right: 1px solid #e2e8f0; }
+.mega-col:last-child { border-right: none; }
+
+.mega-col-heading {
+  display: flex; align-items: center; gap: 12px;
+  padding: 6px 20px 14px; text-decoration: none;
+  border-bottom: 1px solid #e2e8f0; margin-bottom: 8px;
+}
+.mega-col-icon {
+  width: 40px; height: 40px; border-radius: 10px;
+  background: #f0f9fb;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0; transition: background 0.15s;
+}
+.mega-col-heading:hover .mega-col-icon { background: rgba(0,200,224,0.12); }
+.mega-col-icon [data-lucide] { width: 18px; height: 18px; stroke: var(--cyan); }
+.mega-col-title {
+  font-size: 0.9rem; font-weight: 700; color: var(--navy);
+  display: block; transition: color 0.15s;
+}
+.mega-col-heading:hover .mega-col-title { color: var(--cyan); }
+.mega-col-desc {
+  font-family: var(--font-mono); font-size: 0.63rem;
+  color: #94a3b8; display: block; margin-top: 2px;
+}
+
+.mega-item {
+  display: flex; align-items: center; gap: 10px;
+  padding: 7px 20px; text-decoration: none;
+  border-left: 3px solid transparent; transition: all 0.12s ease;
+}
+.mega-item:hover { background: #f0f9fb; border-left-color: var(--cyan); }
+.mega-item [data-lucide] {
+  width: 14px; height: 14px; stroke: var(--cyan);
+  flex-shrink: 0; opacity: 0.65; transition: opacity 0.12s;
+}
+.mega-item:hover [data-lucide] { opacity: 1; }
+.mega-item-title {
+  font-size: 0.83rem; font-weight: 500; color: var(--navy);
+  display: block; line-height: 1.25; transition: color 0.12s;
+}
+.mega-item:hover .mega-item-title { color: var(--cyan); }
+.mega-item-desc {
+  font-size: 0.72rem; color: #94a3b8; display: block; margin-top: 1px;
+}
+
+.mega-panel-footer {
+  padding: 10px 24px 12px; border-top: 1px solid #e2e8f0;
+  background: #f0f9fb;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.mega-footer-link {
+  font-size: 0.8rem; font-weight: 600; color: var(--cyan);
+  text-decoration: none; display: flex; align-items: center;
+  gap: 5px; transition: gap 0.15s;
+}
+.mega-footer-link:hover { gap: 8px; }
+.mega-footer-link [data-lucide] { width: 13px; height: 13px; }
+.mega-footer-note {
+  font-family: var(--font-mono); font-size: 0.67rem; color: #64748b;
+  display: flex; align-items: center; gap: 5px;
+}
+.mega-footer-note [data-lucide] { width: 12px; height: 12px; stroke: #22c55e; }
+
+/* ── HAMBURGER (mobile) ── */
+.nav-hamburger {
+  display: none; background: none; border: none;
+  cursor: pointer; padding: 6px; margin-left: auto;
+  color: var(--navy);
+}
+.nav-hamburger [data-lucide] { width: 24px; height: 24px; }
+
+/* ── MOBILE ── */
+@media (max-width: 960px) {
+  .nav-hamburger { display: flex; align-items: center; }
+  .nav-right { display: none; }
+  .nav-links {
+    display: none; flex-direction: column; align-items: stretch;
+    position: absolute; top: 100%; left: 0; right: 0;
+    background: white; box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    padding: 12px 0; gap: 0; z-index: 998;
+  }
+  .nav-links.open { display: flex; }
+  .nav-link { padding: 12px 24px; border-radius: 0; font-size: 0.95rem; }
+  .nav-link::after { display: none; }
+  .mega-panel {
+    position: static; transform: none;
+    width: 100% !important; border-radius: 0;
+    box-shadow: none; border: none;
+    border-top: 1px solid #e2e8f0;
+    /* Reset transition for mobile — JS-controlled display toggle */
+    opacity: 1; visibility: visible; pointer-events: auto;
+    transition: none;
+    display: none;
+  }
+  .mega-panel.mobile-open { display: block; }
+  .mega-cols.cols-2,
+  .mega-cols.cols-3 { grid-template-columns: 1fr; }
+  .mega-col { border-right: none; border-bottom: 1px solid #e2e8f0; padding: 8px 0; }
+  .mega-col:last-child { border-bottom: none; }
+  .mega-col-heading { padding: 10px 20px 10px; margin-bottom: 0; }
+  .mega-item { padding: 8px 32px; }
+  .mega-panel-footer { display: none; }
+  .nav-chevron { margin-left: auto; }
+}
+</style>
+
+<!-- NAV JAVASCRIPT -->
+<script>
+(function () {
+  // Hamburger toggle
+  var hamburger = document.querySelector('.nav-hamburger');
+  var navLinks  = document.getElementById('nav-links');
+  if (hamburger && navLinks) {
+    hamburger.addEventListener('click', function () {
+      var open = navLinks.classList.toggle('open');
+      hamburger.setAttribute('aria-expanded', open);
+    });
+  }
+
+  // Mobile: tap nav-link chevron to toggle mega panel
+  document.querySelectorAll('.nav-has-mega').forEach(function (item) {
+    var link  = item.querySelector('.nav-link');
+    var panel = item.querySelector('.mega-panel');
+    if (!link || !panel) return;
+    link.addEventListener('click', function (e) {
+      if (window.innerWidth <= 960) {
+        e.preventDefault();
+        panel.classList.toggle('mobile-open');
+      }
+    });
+  });
+
+  // Active link highlight
+  var current = window.location.pathname.split('/').pop() || 'index.html';
+  document.querySelectorAll('.nav-link[href]').forEach(function (a) {
+    if (a.getAttribute('href') === current) a.classList.add('nav-active');
+  });
+})();
+</script>
 <!-- NAV MEGA MENU CSS — add to design-system.css OR inline in nav.html -->
 <style>
 /* ── UTILITY BAR ── */
@@ -1836,20 +2088,154 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- ============================================================
        FOOTER — INLINED
        ============================================================ -->
-  <footer class="site-footer" role="contentinfo">
-  <div class="footer-main"><div class="container"><div class="footer-grid">
-    <div class="footer-col footer-col--brand"><a href="index.html" class="footer-logo" aria-label="Bcom IT Solutions — Home"><svg class="footer-logo__icon" width="40" height="24" viewBox="0 0 36 22" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="1" y="1" width="34" height="20" rx="10" fill="white" stroke="white" stroke-width="1.5"/><circle cx="11" cy="11" r="7.5" fill="#1e3a5f" stroke="white" stroke-width="1.5"/></svg><span class="footer-logo__text"><span class="footer-logo__bcom">BCOM</span><span class="footer-logo__its"> IT SOLUTIONS</span></span></a><p class="footer-tagline">Gold Coast's trusted IT partner for homes and businesses.</p><div class="footer-stars" aria-label="Rated 5 stars on Google"><i aria-hidden="true" data-lucide="star" class="star-filled"></i><i aria-hidden="true" data-lucide="star" class="star-filled"></i><i aria-hidden="true" data-lucide="star" class="star-filled"></i><i aria-hidden="true" data-lucide="star" class="star-filled"></i><i aria-hidden="true" data-lucide="star" class="star-filled"></i><span class="footer-stars__label">Rated 5-star on Google</span></div><p class="footer-abn">ABN: 92 636 893 108</p></div>
-    <div class="footer-col"><p class="footer-heading">Home Services</p><ul class="footer-links" role="list"><li><a href="computer-repairs-gold-coast.html" class="footer-link"><i aria-hidden="true" data-lucide="wrench"></i> Computer Repair Gold Coast</a></li><li><a href="computer-networking-service-gold-coast.html" class="footer-link"><i aria-hidden="true" data-lucide="wifi"></i> Networking &amp; WiFi Gold Coast</a></li><li><a href="home-users.html" class="footer-link"><i aria-hidden="true" data-lucide="home"></i> Residential IT Support</a></li></ul></div>
-    <div class="footer-col"><p class="footer-heading">Business Services</p><ul class="footer-links" role="list"><li><a href="it-support-and-services-gold-coast.html" class="footer-link"><i aria-hidden="true" data-lucide="monitor"></i> IT Support Gold Coast</a></li><li><a href="telecommunications-contractor-gold-coast.html" class="footer-link"><i aria-hidden="true" data-lucide="phone-call"></i> Telecommunications Gold Coast</a></li><li><a href="computer-consultant-gold-coast.html" class="footer-link"><i aria-hidden="true" data-lucide="lightbulb"></i> IT Consulting Gold Coast</a></li><li><a href="business.html" class="footer-link"><i aria-hidden="true" data-lucide="building-2"></i> Business IT Hub</a></li></ul></div>
-    <div class="footer-col"><p class="footer-heading">Get in Touch</p><ul class="footer-links footer-links--contact" role="list"><li><a href="tel:0730418993" class="footer-link footer-link--contact"><i aria-hidden="true" data-lucide="phone"></i> 07 3041 8993</a></li><li><a href="mailto:office@bcomservices.com" class="footer-link footer-link--contact"><i aria-hidden="true" data-lucide="mail"></i> office@bcomservices.com</a></li><li class="footer-link footer-link--location"><i aria-hidden="true" data-lucide="map-pin"></i> Gold Coast, Queensland</li></ul><p class="footer-heading footer-heading--areas">Service Areas</p><p class="footer-areas">Southport &middot; Burleigh Heads &middot; Robina &middot; Nerang &middot; Helensvale &middot; Coomera &middot; Palm Beach &middot; Varsity Lakes &middot; Coolangatta &middot; Surfers Paradise &middot; Broadbeach</p></div>
-  </div></div></div>
-  <div class="footer-review"><div class="container"><a href="https://g.page/r/CSc3yhyrbZCaEBM/review" target="_blank" rel="noopener noreferrer" class="footer-review__btn" aria-label="Leave a Google review for Bcom IT Solutions"><i aria-hidden="true" data-lucide="star" class="star-filled"></i> Leave us a Google Review</a><p class="footer-review__helper">Your review helps Gold Coast locals find us — thank you!</p></div></div>
+<footer class="site-footer" role="contentinfo">
+
+  <!-- ── MAIN FOOTER GRID ── -->
+  <div class="footer-main">
+    <div class="container">
+      <div class="footer-grid">
+
+        <!-- COLUMN 1 — Brand -->
+        <div class="footer-col footer-col--brand">
+          <a href="index.html" class="footer-logo" aria-label="Bcom IT Solutions — Home">
+            <svg class="footer-logo__icon" width="40" height="24" viewBox="0 0 36 22" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect x="1" y="1" width="34" height="20" rx="10" fill="white" stroke="white" stroke-width="1.5"/>
+              <circle cx="11" cy="11" r="7.5" fill="#1e3a5f" stroke="white" stroke-width="1.5"/>
+            </svg>
+            <span class="footer-logo__text">
+              <span class="footer-logo__bcom">BCOM</span><span class="footer-logo__its"> IT SOLUTIONS</span>
+            </span>
+          </a>
+
+          <p class="footer-tagline">Gold Coast's trusted IT partner for homes and businesses.</p>
+
+          <div class="footer-stars" aria-label="Rated 5 stars on Google">
+            <i data-lucide="star" class="star-filled"></i>
+            <i data-lucide="star" class="star-filled"></i>
+            <i data-lucide="star" class="star-filled"></i>
+            <i data-lucide="star" class="star-filled"></i>
+            <i data-lucide="star" class="star-filled"></i>
+            <span class="footer-stars__label">Rated 5-star on Google</span>
+          </div>
+
+          <p class="footer-abn">ABN: 92 636 893 108</p>
+        </div>
+
+        <!-- COLUMN 2 — Home Services -->
+        <div class="footer-col">
+          <p class="footer-heading">Home Services</p>
+          <ul class="footer-links" role="list">
+            <li>
+              <a href="computer-repairs-gold-coast.html" class="footer-link">
+                <i data-lucide="wrench"></i> Computer Repair Gold Coast
+              </a>
+            </li>
+            <li>
+              <a href="computer-networking-service-gold-coast.html" class="footer-link">
+                <i data-lucide="wifi"></i> Networking &amp; WiFi Gold Coast
+              </a>
+            </li>
+            <li>
+              <a href="home-users.html" class="footer-link">
+                <i data-lucide="home"></i> Residential IT Support
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- COLUMN 3 — Business Services -->
+        <div class="footer-col">
+          <p class="footer-heading">Business Services</p>
+          <ul class="footer-links" role="list">
+            <li>
+              <a href="it-support-and-services-gold-coast.html" class="footer-link">
+                <i data-lucide="monitor"></i> IT Support Gold Coast
+              </a>
+            </li>
+            <li>
+              <a href="telecommunications-contractor-gold-coast.html" class="footer-link">
+                <i data-lucide="phone-call"></i> Telecommunications Gold Coast
+              </a>
+            </li>
+            <li>
+              <a href="computer-consultant-gold-coast.html" class="footer-link">
+                <i data-lucide="lightbulb"></i> IT Consulting Gold Coast
+              </a>
+            </li>
+            <li>
+              <a href="business.html" class="footer-link">
+                <i data-lucide="building-2"></i> Business IT Hub
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- COLUMN 4 — Contact & Areas -->
+        <div class="footer-col">
+          <p class="footer-heading">Get in Touch</p>
+          <ul class="footer-links footer-links--contact" role="list">
+            <li>
+              <a href="tel:0730418993" class="footer-link footer-link--contact">
+                <i data-lucide="phone"></i> <a href="tel:0730418993">07 3041 8993</a>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:hello@bcomservices.com" class="footer-link footer-link--contact">
+                <i data-lucide="mail"></i> hello@bcomservices.com
+              </a>
+            </li>
+            <li class="footer-link footer-link--location">
+              <i data-lucide="map-pin"></i> Gold Coast, Queensland
+            </li>
+          </ul>
+
+          <p class="footer-heading footer-heading--areas">Service Areas</p>
+          <p class="footer-areas">
+            Southport &middot; Burleigh Heads &middot; Robina &middot; Nerang &middot; Helensvale &middot;
+            Coomera &middot; Palm Beach &middot; Varsity Lakes &middot; Coolangatta &middot;
+            Surfers Paradise &middot; Broadbeach
+          </p>
+        </div>
+
+      </div><!-- /.footer-grid -->
+    </div><!-- /.container -->
+  </div><!-- /.footer-main -->
+
+  <!-- ── GOOGLE REVIEW BUTTON ── -->
+  <div class="footer-review">
+    <div class="container">
+      <a href="https://g.page/r/CSc3yhyrbZCaEBM/review"
+         target="_blank"
+         rel="noopener noreferrer"
+         class="footer-review__btn"
+         aria-label="Leave a Google review for Bcom IT Solutions">
+        <i data-lucide="star" class="star-filled"></i> Leave us a Google Review
+      </a>
+      <p class="footer-review__helper">Your review helps Gold Coast locals find us — thank you!</p>
+    </div>
+  </div>
+
+  <!-- ── DIVIDER ── -->
   <div class="footer-divider" aria-hidden="true"></div>
-  <div class="footer-bottom"><div class="container"><div class="footer-bottom__inner"><span class="footer-bottom__copy">&copy; 2026 Bcom Services Pty Ltd &middot; ABN 92 636 893 108</span><nav class="footer-bottom__legal" aria-label="Legal links"><a href="privacy-policy.html" class="footer-legal-link">Privacy Policy</a><span class="footer-bottom__sep" aria-hidden="true">&middot;</span><a href="terms-and-conditions.html" class="footer-legal-link">Terms of Service</a></nav></div></div></div>
+
+  <!-- ── BOTTOM BAR ── -->
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="footer-bottom__inner">
+        <span class="footer-bottom__copy">
+          &copy; 2026 Bcom Services Pty Ltd &middot; ABN 92 636 893 108
+        </span>
+        <nav class="footer-bottom__legal" aria-label="Legal links">
+          <a href="privacy-policy.html" class="footer-legal-link">Privacy Policy</a>
+          <span class="footer-bottom__sep" aria-hidden="true">&middot;</span>
+          <a href="terms-and-conditions.html" class="footer-legal-link">Terms of Service</a>
+        </nav>
+      </div>
+    </div>
+  </div>
+
 </footer>
-
-
-  <!-- Footer Styles -->
+<!-- Footer Styles -->
   <style>
   .site-footer{background-color:#1e3a5f;color:white;border-top:3px solid #00c8e0}
   .footer-main{padding:64px 0 48px}
