@@ -2,7 +2,7 @@
 # Business: Bcom Services Pty Ltd | ABN: 92 636 893 108
 # Location: Gold Coast, Queensland, Australia
 # Phone: 07 3041 8993 | Email (residential): hello@bcomservices.com | Email (business): office@bcomservices.com
-# Website: https://bcomservices.com.au
+# Website: https://www.bcomservices.com
 # Services: IT Support · Computer Repair · WiFi & Networking ·
 #   Telecommunications · IT Consulting · Cybersecurity · Cloud Computing ·
 #   AI Integration
@@ -10,150 +10,150 @@
 #   Coomera · Palm Beach · Varsity Lakes · Coolangatta · Surfers Paradise · Broadbeach
 
 Allow: /
-Sitemap: https://bcomservices.com.au/sitemap.xml
+Sitemap: https://www.bcomservices.com/sitemap.xml
 
 # --- PAGES ---
 
 ## Homepage
-https://bcomservices.com.au/
+https://www.bcomservices.com/
 IT support and services for Gold Coast homes and businesses — Bcom IT Solutions, locally owned and operated, ABN 92 636 893 108.
 
 ## Hub Pages
-https://bcomservices.com.au/home-users.html
+https://www.bcomservices.com/home-users.html
 IT support for Gold Coast home users — computer repairs, WiFi setup, software help and remote support.
 
-https://bcomservices.com.au/business.html
+https://www.bcomservices.com/business.html
 Business IT services for Gold Coast small and medium businesses — managed IT, consulting, networking, telecoms and AI.
 
 ## IT Support and Consulting
-https://bcomservices.com.au/it-support-and-services-gold-coast.html
+https://www.bcomservices.com/it-support-and-services-gold-coast.html
 IT support and services for Gold Coast businesses and home users — on-site, remote and managed IT support.
 
-https://bcomservices.com.au/computer-consultant-gold-coast.html
+https://www.bcomservices.com/computer-consultant-gold-coast.html
 IT consulting for Gold Coast businesses — independent advice on technology, systems and IT strategy.
 
-https://bcomservices.com.au/it-consulting-strategy-gold-coast.html
+https://www.bcomservices.com/it-consulting-strategy-gold-coast.html
 IT consulting and strategy for Gold Coast small businesses — technology planning, stack reviews and IT roadmaps.
 
-https://bcomservices.com.au/it-needs-assessment-gold-coast.html
+https://www.bcomservices.com/it-needs-assessment-gold-coast.html
 IT needs assessment for Gold Coast businesses — structured review of current systems, risks and technology gaps.
 
-https://bcomservices.com.au/managed-it-services-for-small-businesses-gold-coast.html
+https://www.bcomservices.com/managed-it-services-for-small-businesses-gold-coast.html
 Managed IT services for Gold Coast small businesses — proactive monitoring, support and maintenance.
 
-https://bcomservices.com.au/remote-it-support-gold-coast.html
+https://www.bcomservices.com/remote-it-support-gold-coast.html
 Remote IT support for Gold Coast homes and businesses — fast, secure remote assistance without a site visit.
 
-https://bcomservices.com.au/on-site-technical-support-gold-coast.html
+https://www.bcomservices.com/on-site-technical-support-gold-coast.html
 On-site technical support for Gold Coast businesses — hands-on IT help at your premises.
 
-https://bcomservices.com.au/technology-procurement-advice-gold-coast.html
+https://www.bcomservices.com/technology-procurement-advice-gold-coast.html
 Technology procurement advice for Gold Coast businesses — independent hardware and software sourcing guidance.
 
 ## Computer Repair
-https://bcomservices.com.au/computer-repairs-gold-coast.html
+https://www.bcomservices.com/computer-repairs-gold-coast.html
 Computer repairs for Gold Coast homes and businesses — laptops, desktops, hardware faults and software issues.
 
-https://bcomservices.com.au/on-site-computer-repair-gold-coast.html
+https://www.bcomservices.com/on-site-computer-repair-gold-coast.html
 On-site computer repair for Gold Coast — technician visits to diagnose and fix computers at your location.
 
-https://bcomservices.com.au/os-troubleshooting-repair-gold-coast.html
+https://www.bcomservices.com/os-troubleshooting-repair-gold-coast.html
 Operating system troubleshooting and repair for Gold Coast — Windows and macOS faults, crashes and recovery.
 
-https://bcomservices.com.au/hardware-software-troubleshooting-gold-coast.html
+https://www.bcomservices.com/hardware-software-troubleshooting-gold-coast.html
 Hardware and software troubleshooting for Gold Coast — diagnosis and repair of hardware faults and software conflicts.
 
-https://bcomservices.com.au/performance-optimisation-gold-coast.html
+https://www.bcomservices.com/performance-optimisation-gold-coast.html
 Computer performance optimisation for Gold Coast — speed improvements, startup fixes and system tuning.
 
-https://bcomservices.com.au/virus-and-malware-removal-services-gold-coast.html
+https://www.bcomservices.com/virus-and-malware-removal-services-gold-coast.html
 Virus and malware removal for Gold Coast — safe removal of infections, ransomware and unwanted software.
 
-https://bcomservices.com.au/data-backup-recovery-gold-coast.html
+https://www.bcomservices.com/data-backup-recovery-gold-coast.html
 Data backup and recovery for Gold Coast — backup setup, data recovery and disaster recovery planning.
 
-https://bcomservices.com.au/software-installation-configuration-gold-coast.html
+https://www.bcomservices.com/software-installation-configuration-gold-coast.html
 Software installation and configuration for Gold Coast — setup and configuration of business and personal software.
 
-https://bcomservices.com.au/software-recommendations-gold-coast.html
+https://www.bcomservices.com/software-recommendations-gold-coast.html
 Software recommendations and stack reviews for Gold Coast businesses — independent advice on the right tools.
 
 ## Networking and WiFi
-https://bcomservices.com.au/computer-networking-service-gold-coast.html
+https://www.bcomservices.com/computer-networking-service-gold-coast.html
 Computer networking services for Gold Coast — wired and wireless network setup, configuration and support.
 
-https://bcomservices.com.au/home-wifi-setup-and-troubleshooting-gold-coast.html
+https://www.bcomservices.com/home-wifi-setup-and-troubleshooting-gold-coast.html
 Home WiFi setup and troubleshooting for Gold Coast — router configuration, dead spots and connection issues.
 
-https://bcomservices.com.au/wifi-range-extension-gold-coast.html
+https://www.bcomservices.com/wifi-range-extension-gold-coast.html
 WiFi range extension for Gold Coast homes and offices — extenders, access points and mesh network upgrades.
 
-https://bcomservices.com.au/mesh-network-setup-gold-coast.html
+https://www.bcomservices.com/mesh-network-setup-gold-coast.html
 Mesh network setup for Gold Coast — whole-home and whole-office WiFi coverage using mesh systems.
 
-https://bcomservices.com.au/router-and-modem-configuration-gold-coast.html
+https://www.bcomservices.com/router-and-modem-configuration-gold-coast.html
 Router and modem configuration for Gold Coast — setup, firmware updates and security hardening.
 
-https://bcomservices.com.au/network-troubleshooting-diagnostics-gold-coast.html
+https://www.bcomservices.com/network-troubleshooting-diagnostics-gold-coast.html
 Network troubleshooting and diagnostics for Gold Coast — fault finding, slow network and connectivity issues.
 
-https://bcomservices.com.au/network-security-and-firewall-configuration-gold-coast.html
+https://www.bcomservices.com/network-security-and-firewall-configuration-gold-coast.html
 Network security and firewall configuration for Gold Coast businesses — firewall setup and network access controls.
 
-https://bcomservices.com.au/network-cabling-for-offices-gold-coast.html
+https://www.bcomservices.com/network-cabling-for-offices-gold-coast.html
 Network cabling for Gold Coast offices — structured cabling, Cat6 installation and patch panel setup.
 
-https://bcomservices.com.au/nbn-internet-support-gold-coast.html
+https://www.bcomservices.com/nbn-internet-support-gold-coast.html
 NBN internet support for Gold Coast — NBN connection setup, faults and speed troubleshooting.
 
 ## WiFi Brand Pages
-https://bcomservices.com.au/ubiquiti-unifi-wifi-gold-coast.html
+https://www.bcomservices.com/ubiquiti-unifi-wifi-gold-coast.html
 Ubiquiti UniFi WiFi installation for Gold Coast — professional UniFi access point setup, controller configuration and mesh networking.
 
-https://bcomservices.com.au/grandstream-wifi-gold-coast.html
+https://www.bcomservices.com/grandstream-wifi-gold-coast.html
 Grandstream WiFi installation for Gold Coast — GWN access point setup, cloud management and business wireless networking.
 
-https://bcomservices.com.au/tp-link-wifi-gold-coast.html
+https://www.bcomservices.com/tp-link-wifi-gold-coast.html
 TP-Link WiFi installation for Gold Coast — Deco mesh, Omada business and Archer router setup and configuration.
 
-https://bcomservices.com.au/asus-wifi-gold-coast.html
+https://www.bcomservices.com/asus-wifi-gold-coast.html
 ASUS WiFi installation for Gold Coast — ZenWiFi mesh and ROG router setup, AiMesh configuration and security hardening.
 
-https://bcomservices.com.au/netgear-wifi-gold-coast.html
+https://www.bcomservices.com/netgear-wifi-gold-coast.html
 Netgear WiFi installation for Gold Coast — Orbi mesh and Nighthawk router setup, Armor security and app configuration.
 
-https://bcomservices.com.au/d-link-wifi-gold-coast.html
+https://www.bcomservices.com/d-link-wifi-gold-coast.html
 D-Link WiFi installation for Gold Coast — COVR mesh and EAGLE PRO AI router setup, AI band steering and guest network configuration.
 
-https://bcomservices.com.au/linksys-wifi-gold-coast.html
+https://www.bcomservices.com/linksys-wifi-gold-coast.html
 Linksys WiFi installation for Gold Coast — Velop mesh and Hydra Pro router setup, intelligent mesh and device prioritisation.
 
-https://bcomservices.com.au/aruba-instant-on-wifi-gold-coast.html
+https://www.bcomservices.com/aruba-instant-on-wifi-gold-coast.html
 Aruba Instant On WiFi installation for Gold Coast — business-grade access point setup, cloud management and VLAN configuration.
 
-https://bcomservices.com.au/synology-wifi-gold-coast.html
+https://www.bcomservices.com/synology-wifi-gold-coast.html
 Synology WiFi installation for Gold Coast — WRX560 and MR2200ac setup, SRM configuration, VPN Server and Threat Prevention.
 
-https://bcomservices.com.au/google-nest-wifi-gold-coast.html
+https://www.bcomservices.com/google-nest-wifi-gold-coast.html
 Google Nest WiFi installation for Gold Coast — Nest WiFi Pro mesh setup, Google Home app configuration and whole-home coverage.
 
-https://bcomservices.com.au/eero-wifi-gold-coast.html
+https://www.bcomservices.com/eero-wifi-gold-coast.html
 Eero WiFi installation for Gold Coast — eero 6 and eero Max 7 mesh setup, eero app configuration and TrueMesh coverage.
 
 ## Telecommunications
-https://bcomservices.com.au/telecommunications-contractor-gold-coast.html
+https://www.bcomservices.com/telecommunications-contractor-gold-coast.html
 Telecommunications contractor for Gold Coast — phone line installation, cabling and telecoms infrastructure.
 
-https://bcomservices.com.au/voip-phone-system-installation-and-support-gold-coast.html
+https://www.bcomservices.com/voip-phone-system-installation-and-support-gold-coast.html
 VoIP phone system installation and support for Gold Coast businesses — cloud-based and on-premise VoIP setup.
 
-https://bcomservices.com.au/business-phone-systems-gold-coast.html
+https://www.bcomservices.com/business-phone-systems-gold-coast.html
 Business phone systems for Gold Coast — VoIP, PBX and cloud phone system supply and installation.
 
-https://bcomservices.com.au/pabx-phone-systems-gold-coast.html
+https://www.bcomservices.com/pabx-phone-systems-gold-coast.html
 PABX phone systems for Gold Coast businesses — traditional and IP-PBX installation, configuration and support.
 
-https://bcomservices.com.au/phone-line-installation-cabling-gold-coast.html
+https://www.bcomservices.com/phone-line-installation-cabling-gold-coast.html
 Phone line installation and cabling for Gold Coast — new phone line runs, extensions and PSTN/VoIP cabling.
 
 ## PBX Brands Supported
@@ -170,24 +170,24 @@ https://www.bcomservices.com/nec-pbx-gold-coast.html
 NEC UNIVERGE SV8100, SV9100 and SL2100 PBX support, maintenance and repair for Gold Coast businesses.
 
 ## Cybersecurity and Cloud
-https://bcomservices.com.au/cybersecurity-health-check-for-small-business-gold-coast.html
+https://www.bcomservices.com/cybersecurity-health-check-for-small-business-gold-coast.html
 Cybersecurity health check for Gold Coast small businesses — risk assessment, vulnerability review and recommendations.
 
-https://bcomservices.com.au/cloud-computing-service-gold-coast.html
+https://www.bcomservices.com/cloud-computing-service-gold-coast.html
 Cloud computing services for Gold Coast businesses — cloud migration, Microsoft 365, Google Workspace and cloud setup.
 
 ## AI Integration
-https://bcomservices.com.au/artificial-intelligence-service-gold-coast.html
+https://www.bcomservices.com/artificial-intelligence-service-gold-coast.html
 AI integration and setup for Gold Coast small businesses — voice agents, chatbots, workflow automation and responsible AI governance.
 
 ## About / Support / Contact
-https://bcomservices.com.au/about.html
+https://www.bcomservices.com/about.html
 About Bcom IT Solutions — locally owned Gold Coast IT support business, ABN 92 636 893 108.
 
-https://bcomservices.com.au/support.html
+https://www.bcomservices.com/support.html
 IT support portal for Bcom IT Solutions Gold Coast customers — remote access and support request.
 
-https://bcomservices.com.au/contact.html
+https://www.bcomservices.com/contact.html
 Contact Bcom IT Solutions Gold Coast — phone, email and booking for IT support and consulting.
 
 ## Industries We Support
