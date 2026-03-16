@@ -1,3 +1,21 @@
+---
+## REPOSITORY — SINGLE SOURCE OF TRUTH
+**GitHub repository:** BcomServicesLimited/BcomITSolutionsPROJECT
+**Branch:** main
+**URL:** https://github.com/BcomServicesLimited/BcomITSolutionsPROJECT
+
+There is ONE repository for this project. Do not create,
+reference or push to any other repository.
+
+All work must be committed to this repository before
+ending any session. The local sandbox is temporary and
+resets — GitHub is the only persistent storage.
+
+Nav source of truth: index.html (nav block)
+Footer source of truth: index.html (footer block)
+
+---
+
 # Bcom IT Solutions — Website Build Knowledge Base
 
 **Project:** BcomITSolutionsNEW  
