@@ -1232,6 +1232,207 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </div>
   </section>
+<!-- SECTION 6 — FAQ -->
+<style>
+/* ── FAQ SECTION ── */
+.faq-section {
+  background: #ffffff;
+  padding: 80px 0;
+  border-bottom: 1px solid #f1f5f9;
+}
+.faq-section h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #0d1f3c;
+  line-height: 1.25;
+  margin-bottom: 40px;
+  letter-spacing: -0.01em;
+}
+.faq-list {
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  overflow: hidden;
+}
+.faq-item {
+  border-bottom: 1px solid #e2e8f0;
+}
+.faq-item:last-child { border-bottom: none; }
+.faq-item.is-open {
+  border-left: 4px solid #00c8e0;
+  background: #f8fafb;
+}
+.faq-question {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 22px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  cursor: pointer;
+  text-align: left;
+}
+.faq-question h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #0d1f3c;
+  margin: 0;
+  line-height: 1.4;
+}
+.faq-question:hover h3 { color: #00c8e0; }
+.faq-chevron {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  stroke: #00c8e0;
+  transition: transform 0.25s ease;
+}
+.faq-item.is-open .faq-chevron { transform: rotate(180deg); }
+.faq-answer {
+  padding: 0 24px 22px;
+  font-size: 0.95rem;
+  color: #334155;
+  line-height: 1.75;
+}
+.faq-answer a {
+  color: #00c8e0;
+  font-weight: 600;
+  text-decoration: none;
+}
+.faq-answer a:hover { color: #0d1f3c; }
+@media (max-width: 600px) {
+  .faq-section { padding: 56px 0; }
+  .faq-question { padding: 18px 16px; }
+  .faq-answer { padding: 0 16px 18px; }
+}
+</style>
+  <section class="faq-section" aria-label="IT Support for Retail Gold Coast FAQ">
+    <div class="container">
+      <h2>IT Support for Gold Coast Retail &mdash; Frequently Asked Questions</h2>
+      <div class="faq-list">
+        <div class="faq-item" id="retail-faq-1">
+          <button class="faq-question" aria-expanded="false" aria-controls="retail-faq-1-answer">
+            <h3>Can you support our POS system?</h3>
+            <svg class="faq-chevron" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="faq-answer" id="retail-faq-1-answer" hidden>
+            <p>Yes. We provide network and hardware support for POS systems used by Gold Coast retail businesses &mdash; including Lightspeed Retail, Vend, Square, Shopify POS and other retail platforms. Our support covers the network configuration that the POS system depends on, the hardware (terminals, receipt printers, barcode scanners), and connectivity to cloud-based inventory and reporting. If your POS is not connecting, processing slowly or dropping transactions, call <a href="tel:0730418993">07 3041 8993</a>.</p>
+          </div>
+        </div>
+        <div class="faq-item" id="retail-faq-2">
+          <button class="faq-question" aria-expanded="false" aria-controls="retail-faq-2-answer">
+            <h3>Our EFTPOS keeps dropping out. What causes this?</h3>
+            <svg class="faq-chevron" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="faq-answer" id="retail-faq-2-answer" hidden>
+            <p>EFTPOS dropout is almost always a network issue, not a terminal fault. The most common causes are: the terminal&rsquo;s IP address changing after a router reboot (fix: assign a static IP or DHCP reservation), the terminal sharing a congested WiFi network with customer devices (fix: isolate EFTPOS on a wired or dedicated wireless network), or an NBN fault affecting internet connectivity. We diagnose and resolve EFTPOS connectivity issues for Gold Coast retail businesses &mdash; same day where possible. Call <a href="tel:0730418993">07 3041 8993</a>.</p>
+          </div>
+        </div>
+        <div class="faq-item" id="retail-faq-3">
+          <button class="faq-question" aria-expanded="false" aria-controls="retail-faq-3-answer">
+            <h3>Do we need to separate our customer WiFi from our EFTPOS?</h3>
+            <svg class="faq-chevron" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="faq-answer" id="retail-faq-3-answer" hidden>
+            <p>Yes. PCI DSS requires that cardholder data environments are isolated from untrusted networks &mdash; including customer WiFi. For a Gold Coast retail business, this means your EFTPOS terminal should be on a separate, isolated network segment from the WiFi you provide to customers. This is not complex or expensive to implement correctly &mdash; it requires the right router or switch configuration. Many retail businesses in the Gold Coast are not configured this way, which creates both a compliance risk and a performance issue (customer WiFi congestion affecting EFTPOS). We implement this correctly as standard.</p>
+          </div>
+        </div>
+        <div class="faq-item" id="retail-faq-4">
+          <button class="faq-question" aria-expanded="false" aria-controls="retail-faq-4-answer">
+            <h3>We have two retail locations on the Gold Coast. Can you manage both?</h3>
+            <svg class="faq-chevron" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="faq-answer" id="retail-faq-4-answer" hidden>
+            <p>Yes. We provide IT support for Gold Coast retail businesses operating across multiple locations. We configure each site consistently, provide a single point of contact for IT issues across all locations, and ensure inventory and reporting systems are correctly connected between sites. Whether you have two stores or five, we manage the IT for all of them. Call <a href="tel:0730418993">07 3041 8993</a> to discuss your setup.</p>
+          </div>
+        </div>
+        <div class="faq-item" id="retail-faq-5">
+          <button class="faq-question" aria-expanded="false" aria-controls="retail-faq-5-answer">
+            <h3>How quickly can you respond if our POS goes down during trading hours?</h3>
+            <svg class="faq-chevron" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="faq-answer" id="retail-faq-5-answer" hidden>
+            <p>Same-day response for Gold Coast retail businesses. For managed IT customers, we have a 4-hour response SLA for both remote and on-site support. For ad hoc support, we aim to respond the same day &mdash; POS and EFTPOS faults during trading hours are treated as priority. Call <a href="tel:0730418993">07 3041 8993</a> directly for urgent retail IT issues.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<script>
+  // FAQ accordion
+  (function() {
+    var items = document.querySelectorAll('.faq-item');
+    items.forEach(function(item) {
+      var btn = item.querySelector('.faq-question');
+      var answer = item.querySelector('.faq-answer');
+      if (!btn || !answer) return;
+      btn.addEventListener('click', function() {
+        var isOpen = item.classList.contains('is-open');
+        items.forEach(function(i) {
+          i.classList.remove('is-open');
+          var a = i.querySelector('.faq-answer');
+          var b = i.querySelector('.faq-question');
+          if (a) a.hidden = true;
+          if (b) b.setAttribute('aria-expanded', 'false');
+        });
+        if (!isOpen) {
+          item.classList.add('is-open');
+          answer.hidden = false;
+          btn.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+  })();
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Can you support our POS system?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. We provide network and hardware support for POS systems used by Gold Coast retail businesses including Lightspeed Retail, Vend, Square, Shopify POS and other retail platforms."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Our EFTPOS keeps dropping out. What causes this?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "EFTPOS dropout is almost always a network issue. Common causes are the terminal IP address changing after a router reboot, the terminal sharing a congested WiFi network with customer devices, or an NBN fault. We diagnose and resolve EFTPOS connectivity issues for Gold Coast retail businesses same day where possible."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do we need to separate our customer WiFi from our EFTPOS?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. PCI DSS requires that cardholder data environments are isolated from untrusted networks including customer WiFi. For a Gold Coast retail business this means your EFTPOS terminal should be on a separate isolated network segment from customer WiFi."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "We have two retail locations on the Gold Coast. Can you manage both?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. We provide IT support for Gold Coast retail businesses operating across multiple locations with consistent configuration and a single point of contact for IT issues across all sites."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How quickly can you respond if our POS goes down during trading hours?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Same-day response for Gold Coast retail businesses. For managed IT customers we have a 4-hour response SLA. POS and EFTPOS faults during trading hours are treated as priority."
+      }
+    }
+  ]
+}
+</script>
 <!-- PAGE CONTENT GOES HERE -->
 <footer class="site-footer" role="contentinfo">
 
