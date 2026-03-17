@@ -1535,7 +1535,188 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </div>
   </section>
-<!-- PAGE CONTENT GOES HERE -->
+<!-- SECTION 8 — CLOSING CTA -->
+<style>
+/* ── CLOSING CTA ── */
+.cta-section {
+  position: relative;
+  background: linear-gradient(135deg, #0d1f3c 0%, #1e3a5f 55%, #0d2d3a 100%);
+  border-top: 3px solid #00c8e0;
+  clip-path: polygon(0 6%, 100% 0%, 100% 100%, 0% 100%);
+  padding: 100px 0 80px;
+  overflow: hidden;
+  text-align: center;
+}
+.cta-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 20% 50%, rgba(0,200,224,0.08) 0%, transparent 60%),
+              radial-gradient(ellipse at 80% 50%, rgba(0,200,224,0.06) 0%, transparent 60%);
+  pointer-events: none;
+}
+.cta-section .container { position: relative; z-index: 1; }
+.cta-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #00c8e0;
+  margin-bottom: 16px;
+}
+.cta-section h2 {
+  font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1.2;
+  margin-bottom: 16px;
+  letter-spacing: -0.02em;
+}
+.cta-subtext {
+  font-size: 1rem;
+  color: rgba(255,255,255,0.78);
+  line-height: 1.75;
+  max-width: 600px;
+  margin: 0 auto 36px;
+}
+.cta-buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+.btn-cta-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #00c8e0;
+  color: #0d1f3c;
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 14px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+.btn-cta-primary:hover { background: #00b5cc; transform: translateY(-2px); }
+.btn-cta-primary [data-lucide] { width: 18px; height: 18px; stroke: #0d1f3c; }
+.btn-cta-white {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255,255,255,0.12);
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 14px 28px;
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.25);
+  text-decoration: none;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+.btn-cta-white:hover { background: rgba(255,255,255,0.2); transform: translateY(-2px); }
+.btn-cta-white [data-lucide] { width: 18px; height: 18px; stroke: #ffffff; }
+.reassurance-row {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
+  margin-bottom: 28px;
+}
+.reassurance-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.7);
+}
+.reassurance-item [data-lucide] {
+  width: 16px;
+  height: 16px;
+  stroke: #00c8e0;
+  flex-shrink: 0;
+}
+.cta-updated {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.75rem;
+  color: #94a3b8;
+}
+@media (max-width: 600px) {
+  .cta-section {
+    clip-path: none;
+    padding: 64px 0;
+  }
+  .reassurance-row { gap: 16px; }
+}
+</style>
+  <section class="cta-section" aria-label="Get IT Support for Your Gold Coast Retail Business">
+    <div class="container">
+      <p class="cta-label">Gold Coast&rsquo;s Trusted IT Team</p>
+      <h2>Keep Your POS Running. Keep Your Retail Business Trading.</h2>
+      <p class="cta-subtext">IT support for Gold Coast retail businesses &mdash; POS and EFTPOS connectivity, network setup, payment security, WiFi and ongoing managed IT. Same-day response. No lock-in contracts.</p>
+      <div class="cta-buttons">
+        <a href="tel:0730418993" class="btn-cta-primary">
+          <i aria-hidden="true" data-lucide="phone"></i>
+          Call 07 3041 8993
+        </a>
+        <a href="mailto:office@bcomservices.com" class="btn-cta-white">
+          <i aria-hidden="true" data-lucide="mail"></i>
+          Email Us
+        </a>
+      </div>
+      <div class="reassurance-row">
+        <span class="reassurance-item">
+          <i aria-hidden="true" data-lucide="store"></i>
+          Retail IT specialists
+        </span>
+        <span class="reassurance-item">
+          <i aria-hidden="true" data-lucide="shield-check"></i>
+          PCI DSS network setup
+        </span>
+        <span class="reassurance-item">
+          <i aria-hidden="true" data-lucide="clock"></i>
+          Same-day response
+        </span>
+      </div>
+      <p class="cta-updated">Last updated: March 2026</p>
+    </div>
+  </section>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How to Get IT Support for Your Gold Coast Retail Business",
+  "description": "Steps to engage Bcom IT Solutions for retail IT support on the Gold Coast, including POS setup, EFTPOS connectivity and network security.",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "position": 1,
+      "name": "Call or Book Online",
+      "text": "Call 07 3041 8993 or book an appointment online to discuss your retail IT requirements. We will ask about your POS system, number of EFTPOS terminals, store locations and current network setup."
+    },
+    {
+      "@type": "HowToStep",
+      "position": 2,
+      "name": "On-Site Assessment",
+      "text": "We visit your Gold Coast retail premises to assess your network, POS hardware, EFTPOS connectivity and WiFi. We identify any security gaps including customer WiFi isolation from payment systems."
+    },
+    {
+      "@type": "HowToStep",
+      "position": 3,
+      "name": "Receive a Clear Quote",
+      "text": "We provide a fixed-price quote for the work required. No hidden costs. If you choose ongoing managed IT support, we provide a per-device monthly cost with no lock-in contract."
+    },
+    {
+      "@type": "HowToStep",
+      "position": 4,
+      "name": "Implementation and Handover",
+      "text": "We implement the agreed work, configure your network correctly, test all POS and EFTPOS connectivity, and hand over with clear documentation of your setup."
+    }
+  ]
+}
+</script>
 <footer class="site-footer" role="contentinfo">
 
   <!-- ── MAIN FOOTER GRID ── -->
