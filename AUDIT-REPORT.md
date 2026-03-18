@@ -44,3 +44,57 @@
 - [ ] Confirm `bcomwebsite` (private repo) is not being deployed anywhere active
 
 ### Shared & Global Files Audit: COMPLETE
+
+---
+
+## Industry Pages Pre-Live Audit
+
+### Date: 18 March 2026
+### Pages: 7
+
+| Check | Hospitality | Healthcare | Real Estate | Restaurants | Retail | Trades | Small Biz |
+|---|---|---|---|---|---|---|---|
+| Title | PASS | PASS | PASS | PASS | PASS | PASS | PASS |
+| Meta description | PASS | PASS | PASS | PASS | PASS | PASS | PASS |
+| Canonical | PASS | PASS | PASS | PASS | PASS | PASS | PASS |
+| GTM | PASS | PASS | PASS | PASS | PASS | PASS | PASS |
+| CSS linked | PASS | PASS | PASS | PASS | PASS | PASS | PASS |
+| BreadcrumbList | PASS | PASS | PASS | PASS | PASS | PASS | PASS |
+| BC parent = industries | PASS | PASS | PASS | PASS | PASS | PASS | PASS |
+| LocalBusiness | PASS | PASS | PASS | PASS | PASS | PASS | PASS |
+| email = hello@ | PASS | PASS | PASS | PASS | PASS | PASS | PASS |
+| serviceType correct | PASS | PASS | PASS | PASS | PASS | PASS | PASS |
+| FAQPage schema | PASS | PASS | PASS | PASS | PASS | PASS | PASS |
+| HowTo schema | PASS | PASS | PASS | PASS | PASS | PASS | PASS |
+| H1 correct | PASS | PASS | PASS | PASS | PASS | PASS | PASS |
+| Hero image present | PASS | PASS | PASS | PASS | PASS | PASS | PASS |
+| Hero no lazy | PASS | PASS | PASS | PASS | PASS | PASS | PASS |
+| Content image present | PASS | PASS | PASS | PASS | PASS | PASS | PASS |
+| Business button x 3 | PASS | PASS | PASS | PASS | PASS | PASS | PASS |
+| No residential button | PASS | PASS | PASS | PASS | PASS | PASS | PASS |
+| No placeholder text | PASS | PASS | PASS | PASS | PASS | PASS | PASS |
+| ABN present | PASS | PASS | PASS | PASS | PASS | PASS | PASS |
+| Last updated | PASS | PASS | PASS | PASS | PASS | PASS | PASS |
+| In sitemap (0.8) | PASS | PASS | PASS | PASS | PASS | PASS | PASS |
+| Not blocked robots | PASS | PASS | PASS | PASS | PASS | PASS | PASS |
+| In llms.txt | PASS | PASS | PASS | PASS | PASS | PASS | PASS |
+
+### Issues Fixed
+
+HIGH: 1
+- `it-support-small-business-gold-coast.html`: CTA email button used `support@bcomservices.com` — changed to `hello@bcomservices.com`
+
+MEDIUM: 0
+
+LOW: 0
+
+### Post-Deploy Actions
+
+- [ ] Submit sitemap in Google Search Console
+- [ ] Request indexing for all 7 URLs via URL Inspection tool
+- [ ] Run Google Rich Results Test on all 7 pages
+- [ ] Verify Industries appears in nav on live site
+- [ ] Check Search Console for crawl errors after 48 hours
+- [ ] Monitor for indexing within 2 weeks
+
+### Audit: COMPLETE
