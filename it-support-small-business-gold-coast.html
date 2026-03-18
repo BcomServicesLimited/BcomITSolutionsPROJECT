@@ -1295,6 +1295,218 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
+<style>
+/* ── FAQ SECTION ── */
+.faq-section {
+  background: #ffffff;
+  padding: 80px 0;
+  border-bottom: 1px solid #f1f5f9;
+}
+.faq-section h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #0d1f3c;
+  line-height: 1.25;
+  margin-bottom: 40px;
+  letter-spacing: -0.01em;
+}
+.faq-list {
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  overflow: hidden;
+}
+.faq-item {
+  border-bottom: 1px solid #e2e8f0;
+}
+.faq-item:last-child { border-bottom: none; }
+.faq-item.is-open {
+  border-left: 4px solid #00c8e0;
+  background: #f8fafb;
+}
+.faq-question {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 22px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  cursor: pointer;
+  text-align: left;
+}
+.faq-question h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #0d1f3c;
+  margin: 0;
+  line-height: 1.4;
+}
+.faq-question:hover h3 { color: #00c8e0; }
+.faq-chevron {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  stroke: #00c8e0;
+  transition: transform 0.25s ease;
+}
+.faq-item.is-open .faq-chevron { transform: rotate(180deg); }
+.faq-answer {
+  padding: 0 24px 22px;
+  font-size: 0.95rem;
+  color: #334155;
+  line-height: 1.75;
+}
+.faq-answer p { margin: 0 0 12px; }
+.faq-answer p:last-child { margin-bottom: 0; }
+@media (max-width: 600px) {
+  .faq-section { padding: 56px 0; }
+  .faq-question { padding: 18px 16px; }
+  .faq-answer { padding: 0 16px 18px; }
+}
+</style>
+  <!-- SECTION 6 — FAQ -->
+  <section class="faq-section" aria-label="IT Support for Gold Coast Small Business — FAQ">
+    <div class="container">
+      <h2>IT Support for Gold Coast Small Business &mdash; Frequently Asked Questions</h2>
+      <div class="faq-list">
+        <div class="faq-item" id="sb-faq-1">
+          <button class="faq-question" aria-expanded="false" aria-controls="sb-faq-1-answer">
+            <h3>What IT support do Gold Coast small businesses actually need?</h3>
+            <svg class="faq-chevron" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="faq-answer" id="sb-faq-1-answer" hidden>
+            <p>Most Gold Coast small businesses need four things: reliable business email (Microsoft 365 with your own domain), cloud backup for critical data, basic cybersecurity controls (multi-factor authentication and email security filtering), and a support contact for when hardware or software fails. Beyond that, the requirements depend on the business &mdash; some need a phone system, some need a managed network, some need help with specific software. We assess what your Gold Coast business actually needs rather than selling a standard package.</p>
+          </div>
+        </div>
+        <div class="faq-item" id="sb-faq-2">
+          <button class="faq-question" aria-expanded="false" aria-controls="sb-faq-2-answer">
+            <h3>How much does IT support cost for a Gold Coast small business?</h3>
+            <svg class="faq-chevron" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="faq-answer" id="sb-faq-2-answer" hidden>
+            <p>Ad hoc IT support is typically charged at a call-out fee plus an hourly rate. Managed IT support is priced per device per month and covers monitoring, maintenance and helpdesk. For most Gold Coast small businesses with 5&ndash;15 staff, a managed IT arrangement works out cheaper than ad hoc support over the course of a year &mdash; particularly if IT issues are recurring or unpredictable. Call <a href="tel:0730418993">07 3041 8993</a> for a specific quote based on your device count and requirements.</p>
+          </div>
+        </div>
+        <div class="faq-item" id="sb-faq-3">
+          <button class="faq-question" aria-expanded="false" aria-controls="sb-faq-3-answer">
+            <h3>Do you offer on-site IT support across the Gold Coast?</h3>
+            <svg class="faq-chevron" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="faq-answer" id="sb-faq-3-answer" hidden>
+            <p>Yes. We provide on-site IT support across all Gold Coast suburbs &mdash; Southport, Robina, Broadbeach, Burleigh Heads, Varsity Lakes, Nerang, Helensvale, Coomera, Palm Beach, Coolangatta and everywhere in between. Remote support resolves most issues faster, but when a physical visit is needed we come to your premises.</p>
+          </div>
+        </div>
+        <div class="faq-item" id="sb-faq-4">
+          <button class="faq-question" aria-expanded="false" aria-controls="sb-faq-4-answer">
+            <h3>Can you set up Microsoft 365 for our Gold Coast business?</h3>
+            <svg class="faq-chevron" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="faq-answer" id="sb-faq-4-answer" hidden>
+            <p>Yes. We set up Microsoft 365 for Gold Coast small businesses &mdash; business email with your own domain, Teams, SharePoint, OneDrive and multi-factor authentication. We also migrate from existing webmail, Gmail or legacy Exchange setups. Many Gold Coast small businesses are running Microsoft 365 accounts that were configured incorrectly &mdash; shared mailboxes set up as user accounts, MFA not enabled, no backup. We audit and fix these.</p>
+          </div>
+        </div>
+        <div class="faq-item" id="sb-faq-5">
+          <button class="faq-question" aria-expanded="false" aria-controls="sb-faq-5-answer">
+            <h3>Do you lock clients into long-term IT contracts?</h3>
+            <svg class="faq-chevron" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="faq-answer" id="sb-faq-5-answer" hidden>
+            <p>No. All managed IT arrangements are month-to-month. No 12 or 24-month contracts, no penalties for leaving. If your business circumstances change or the arrangement is not working for your Gold Coast business, you are free to stop at any time.</p>
+          </div>
+        </div>
+        <div class="faq-item" id="sb-faq-6">
+          <button class="faq-question" aria-expanded="false" aria-controls="sb-faq-6-answer">
+            <h3>What cybersecurity does a Gold Coast small business need?</h3>
+            <svg class="faq-chevron" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="faq-answer" id="sb-faq-6-answer" hidden>
+            <p>The core requirements for most Gold Coast small businesses are: multi-factor authentication on all cloud accounts (Microsoft 365, accounting software, banking), email security filtering to block phishing and malware, automated cloud backup that is tested and verified, and basic staff awareness of phishing tactics. These controls cover the majority of the security incidents we see in the Gold Coast small business sector. We implement all of these as part of a managed IT arrangement or as a standalone security setup.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<script>
+(function() {
+  var items = document.querySelectorAll('.faq-item');
+  items.forEach(function(item) {
+    var btn = item.querySelector('.faq-question');
+    var answer = item.querySelector('.faq-answer');
+    btn.addEventListener('click', function() {
+      var isOpen = item.classList.contains('is-open');
+      items.forEach(function(i) {
+        i.classList.remove('is-open');
+        i.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+        i.querySelector('.faq-answer').hidden = true;
+      });
+      if (!isOpen) {
+        item.classList.add('is-open');
+        btn.setAttribute('aria-expanded', 'true');
+        answer.hidden = false;
+      }
+    });
+  });
+})();
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What IT support do Gold Coast small businesses actually need?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most Gold Coast small businesses need four things: reliable business email (Microsoft 365 with your own domain), cloud backup for critical data, basic cybersecurity controls (multi-factor authentication and email security filtering), and a support contact for when hardware or software fails. Beyond that, the requirements depend on the business."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does IT support cost for a Gold Coast small business?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ad hoc IT support is typically charged at a call-out fee plus an hourly rate. Managed IT support is priced per device per month and covers monitoring, maintenance and helpdesk. For most Gold Coast small businesses with 5-15 staff, a managed IT arrangement works out cheaper than ad hoc support over the course of a year."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you offer on-site IT support across the Gold Coast?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. We provide on-site IT support across all Gold Coast suburbs including Southport, Robina, Broadbeach, Burleigh Heads, Varsity Lakes, Nerang, Helensvale, Coomera, Palm Beach and Coolangatta."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you set up Microsoft 365 for our Gold Coast business?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. We set up Microsoft 365 for Gold Coast small businesses including business email with your own domain, Teams, SharePoint, OneDrive and multi-factor authentication. We also migrate from existing webmail, Gmail or legacy Exchange setups."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you lock clients into long-term IT contracts?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. All managed IT arrangements are month-to-month. No 12 or 24-month contracts, no penalties for leaving."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What cybersecurity does a Gold Coast small business need?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The core requirements are: multi-factor authentication on all cloud accounts, email security filtering to block phishing and malware, automated cloud backup that is tested and verified, and basic staff awareness of phishing tactics."
+      }
+    }
+  ]
+}
+</script>
+
+
 
 
 
