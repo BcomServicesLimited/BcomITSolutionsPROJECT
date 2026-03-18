@@ -1771,6 +1771,225 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 <style>
+/* ── FAQ SECTION ── */
+.faq-section {
+  background: #ffffff;
+  padding: 80px 0;
+  border-bottom: 1px solid #f1f5f9;
+}
+.faq-section h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #0d1f3c;
+  line-height: 1.25;
+  margin-bottom: 40px;
+  letter-spacing: -0.01em;
+}
+.faq-list {
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  overflow: hidden;
+}
+.faq-item {
+  border-bottom: 1px solid #e2e8f0;
+}
+.faq-item:last-child { border-bottom: none; }
+.faq-item.is-open {
+  border-left: 4px solid #00c8e0;
+  background: #f8fafb;
+}
+.faq-question {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 22px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  cursor: pointer;
+  text-align: left;
+}
+.faq-question h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #0d1f3c;
+  margin: 0;
+  line-height: 1.4;
+}
+.faq-question:hover h3 { color: #00c8e0; }
+.faq-chevron {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  stroke: #00c8e0;
+  transition: transform 0.25s ease;
+}
+.faq-item.is-open .faq-chevron { transform: rotate(180deg); }
+.faq-answer {
+  padding: 0 24px 22px;
+  font-size: 0.95rem;
+  color: #334155;
+  line-height: 1.75;
+}
+.faq-answer a {
+  color: #00c8e0;
+  font-weight: 600;
+  text-decoration: none;
+}
+.faq-answer a:hover { color: #0d1f3c; }
+@media (max-width: 600px) {
+  .faq-section { padding: 56px 0; }
+  .faq-question { padding: 18px 16px; }
+  .faq-answer { padding: 0 16px 18px; }
+}
+</style>
+
+  <!-- SECTION 7 — FAQ -->
+  <section class="faq-section" aria-label="IT Support for Restaurants Gold Coast — Frequently Asked Questions">
+    <div class="container">
+      <h2>Frequently Asked Questions &mdash; Restaurant IT Support Gold Coast</h2>
+      <div class="faq-list">
+        <div class="faq-item" id="rest-faq-1">
+          <button class="faq-question" aria-expanded="false" aria-controls="rest-faq-1-answer">
+            <h3>Can you support our POS system?</h3>
+            <svg class="faq-chevron" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="faq-answer" id="rest-faq-1-answer" hidden>
+            <p>Yes. We provide network, hardware, and connectivity support for POS systems used by Gold Coast restaurants including Square, Lightspeed, Kounta, Impos, and other hospitality POS platforms. We do not provide software-level support directly with the POS vendor, but we resolve the network and hardware issues that cause most POS failures &mdash; connectivity drops, IP address conflicts, printer communication failures, and hardware faults. Call <a href="tel:0730418993">07 3041 8993</a> to discuss your POS setup.</p>
+          </div>
+        </div>
+        <div class="faq-item" id="rest-faq-2">
+          <button class="faq-question" aria-expanded="false" aria-controls="rest-faq-2-answer">
+            <h3>Our EFTPOS keeps dropping out during service. What causes this?</h3>
+            <svg class="faq-chevron" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="faq-answer" id="rest-faq-2-answer" hidden>
+            <p>EFTPOS dropout in restaurants is almost always a network issue. The most common causes are the terminal IP address changing after a router reboot, the terminal sharing a congested Wi-Fi network with customer devices, or an NBN fault affecting connectivity. In busy restaurant environments, guest Wi-Fi traffic can degrade the performance of EFTPOS terminals that share the same network segment. We diagnose and resolve EFTPOS connectivity issues for Gold Coast restaurants, and configure the network correctly so the problem does not recur. Call <a href="tel:0730418993">07 3041 8993</a> for same-day assistance.</p>
+          </div>
+        </div>
+        <div class="faq-item" id="rest-faq-3">
+          <button class="faq-question" aria-expanded="false" aria-controls="rest-faq-3-answer">
+            <h3>Do we need to separate our guest Wi-Fi from our EFTPOS network?</h3>
+            <svg class="faq-chevron" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="faq-answer" id="rest-faq-3-answer" hidden>
+            <p>Yes. PCI DSS requires that cardholder data environments are isolated from untrusted networks including guest Wi-Fi. For a Gold Coast restaurant, this means your EFTPOS terminals should be on a separate, isolated network segment from your customer-facing Wi-Fi. This also improves EFTPOS reliability &mdash; payment terminals on a dedicated, stable network are far less likely to drop out during a busy service. We implement this correctly as standard for every hospitality client. It is not complex or expensive when done right from the start.</p>
+          </div>
+        </div>
+        <div class="faq-item" id="rest-faq-4">
+          <button class="faq-question" aria-expanded="false" aria-controls="rest-faq-4-answer">
+            <h3>We have multiple venues on the Gold Coast. Can you manage all of them?</h3>
+            <svg class="faq-chevron" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="faq-answer" id="rest-faq-4-answer" hidden>
+            <p>Yes. We provide IT support for Gold Coast restaurant groups operating across multiple venues. We configure each site consistently, provide a single point of contact for IT issues across all locations, and ensure your POS, reporting, and inventory systems are correctly connected between sites. Whether you have two venues or five, we manage the IT for all of them. Call <a href="tel:0730418993">07 3041 8993</a> to discuss your group setup.</p>
+          </div>
+        </div>
+        <div class="faq-item" id="rest-faq-5">
+          <button class="faq-question" aria-expanded="false" aria-controls="rest-faq-5-answer">
+            <h3>How quickly can you respond if our POS goes down during a dinner service?</h3>
+            <svg class="faq-chevron" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="faq-answer" id="rest-faq-5-answer" hidden>
+            <p>We respond fast. For managed IT customers, we have a 4-hour response SLA for both remote and on-site support. For ad hoc support, POS and EFTPOS failures during trading hours are treated as priority and we aim to respond the same day. Most POS issues can be resolved remotely without an on-site visit. When an on-site visit is needed, we prioritise hospitality clients because we understand that every hour of downtime during service costs you real money. Call <a href="tel:0730418993">07 3041 8993</a> directly for urgent restaurant IT issues.</p>
+          </div>
+        </div>
+        <div class="faq-item" id="rest-faq-6">
+          <button class="faq-question" aria-expanded="false" aria-controls="rest-faq-6-answer">
+            <h3>Can you help us set up online ordering integration with our POS?</h3>
+            <svg class="faq-chevron" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="faq-answer" id="rest-faq-6-answer" hidden>
+            <p>We provide network and connectivity support for online ordering integrations including DoorDash, Uber Eats, and direct ordering platforms. We ensure the network configuration supports reliable connectivity between your online ordering platform and your POS system, and troubleshoot connectivity issues when orders stop flowing through. For platform-specific integration questions, we work alongside your POS vendor and ordering platform support teams. Call <a href="tel:0730418993">07 3041 8993</a> to discuss your setup.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<script>
+  // FAQ accordion
+  (function() {
+    var items = document.querySelectorAll('.faq-item');
+    items.forEach(function(item) {
+      var btn = item.querySelector('.faq-question');
+      var answer = item.querySelector('.faq-answer');
+      if (!btn || !answer) return;
+      btn.addEventListener('click', function() {
+        var isOpen = item.classList.contains('is-open');
+        items.forEach(function(i) {
+          i.classList.remove('is-open');
+          var a = i.querySelector('.faq-answer');
+          var b = i.querySelector('.faq-question');
+          if (a) a.hidden = true;
+          if (b) b.setAttribute('aria-expanded', 'false');
+        });
+        if (!isOpen) {
+          item.classList.add('is-open');
+          answer.hidden = false;
+          btn.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+  })();
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Can you support our POS system?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. We provide network, hardware, and connectivity support for POS systems used by Gold Coast restaurants including Square, Lightspeed, Kounta, Impos, and other hospitality POS platforms. We resolve the network and hardware issues that cause most POS failures."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Our EFTPOS keeps dropping out during service. What causes this?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "EFTPOS dropout in restaurants is almost always a network issue. Common causes are the terminal IP address changing after a router reboot, the terminal sharing a congested Wi-Fi network with customer devices, or an NBN fault. We diagnose and resolve EFTPOS connectivity issues for Gold Coast restaurants same day where possible."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do we need to separate our guest Wi-Fi from our EFTPOS network?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. PCI DSS requires that cardholder data environments are isolated from untrusted networks including guest Wi-Fi. For a Gold Coast restaurant, EFTPOS terminals should be on a separate isolated network segment from customer-facing Wi-Fi. We implement this correctly as standard for every hospitality client."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "We have multiple venues on the Gold Coast. Can you manage all of them?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. We provide IT support for Gold Coast restaurant groups operating across multiple venues with consistent configuration and a single point of contact for IT issues across all locations."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How quickly can you respond if our POS goes down during a dinner service?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We respond fast. For managed IT customers we have a 4-hour response SLA. POS and EFTPOS failures during trading hours are treated as priority and we aim to respond the same day. Most POS issues can be resolved remotely without an on-site visit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you help us set up online ordering integration with our POS?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We provide network and connectivity support for online ordering integrations including DoorDash, Uber Eats, and direct ordering platforms. We ensure the network configuration supports reliable connectivity between your online ordering platform and your POS system."
+      }
+    }
+  ]
+}
+</script>
+<style>
 /* ── KEY TAKEAWAYS ── */
 .takeaways-section {
   background: #e6fafd;
