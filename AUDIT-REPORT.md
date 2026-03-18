@@ -98,3 +98,55 @@ LOW: 0
 - [ ] Monitor for indexing within 2 weeks
 
 ### Audit: COMPLETE
+
+---
+
+## New Service Pages Pre-Deployment Audit
+
+**Date:** March 2026
+**Pages audited:** `microsoft-365-setup-gold-coast.html`, `hardware-procurement-setup-gold-coast.html`, `business-wifi-gold-coast.html`
+
+### Audit Results
+
+| Task | Description | Result |
+|------|-------------|--------|
+| Task 1 | Full automated audit (47 checks per page) | 152/159 checks passed |
+| Task 2 | Fix HIGH issues | 4 false positives resolved (HTML entity decoding in audit script) |
+| Task 3 | Fix MEDIUM issues | 3 meta descriptions shortened to 120–160 chars |
+| Task 4 | Schema deep validation | All schemas valid; 2 duplicate schemas removed from hardware page |
+| Task 5 | Final verification | 3/3 pages pass all 27 genuine checks |
+| Task 6 | Audit report | Appended to AUDIT-REPORT.md |
+
+### Issues Found and Fixed
+
+| Severity | Page | Issue | Fix Applied |
+|----------|------|-------|-------------|
+| MEDIUM | `microsoft-365-setup-gold-coast.html` | Meta description 165 chars (limit 160) | Shortened to 148 chars |
+| MEDIUM | `hardware-procurement-setup-gold-coast.html` | Meta description 173 chars (limit 160) | Shortened to 149 chars |
+| MEDIUM | `business-wifi-gold-coast.html` | Meta description 168 chars (limit 160) | Shortened to 146 chars |
+| LOW | `hardware-procurement-setup-gold-coast.html` | Duplicate FAQPage and HowTo schemas in head | 2 duplicate blocks removed |
+
+### Schema Summary (all pages)
+
+| Schema | M365 | Hardware | WiFi |
+|--------|------|----------|------|
+| BreadcrumbList (3 items, pos2=business.html) | OK | OK | OK |
+| LocalBusiness (email=hello@, correct serviceType) | OK | OK | OK |
+| FAQPage (5 questions, no HTML in answers) | OK | OK | OK |
+| HowTo (4 steps) | OK | OK | OK |
+
+### Commits
+
+| Commit | Description |
+|--------|-------------|
+| `c816840` | Fix meta descriptions — new service pages pre-deployment audit |
+| `0f7ddec` | Remove duplicate FAQPage and HowTo schemas from hardware procurement page |
+
+### Post-Deploy Actions
+
+- [ ] Submit updated sitemap in Google Search Console
+- [ ] Request indexing for all 3 URLs via URL Inspection tool
+- [ ] Run Google Rich Results Test on all 3 pages
+- [ ] Monitor Search Console for crawl errors after 48 hours
+
+### Audit: COMPLETE
