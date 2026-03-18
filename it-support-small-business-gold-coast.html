@@ -1549,6 +1549,185 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
+<style>
+/* ── CLOSING CTA ── */
+.cta-section {
+  position: relative;
+  background: linear-gradient(135deg, #0d1f3c 0%, #1e3a5f 55%, #0d2d3a 100%);
+  border-top: 3px solid #00c8e0;
+  clip-path: polygon(0 6%, 100% 0%, 100% 100%, 0% 100%);
+  padding: 100px 0 80px;
+  overflow: hidden;
+  text-align: center;
+}
+.cta-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 20% 50%, rgba(0,200,224,0.08) 0%, transparent 60%),
+              radial-gradient(ellipse at 80% 50%, rgba(0,200,224,0.06) 0%, transparent 60%);
+  pointer-events: none;
+}
+.cta-section .container { position: relative; z-index: 1; }
+.cta-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #00c8e0;
+  margin-bottom: 16px;
+}
+.cta-section h2 {
+  font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1.2;
+  margin-bottom: 16px;
+  letter-spacing: -0.02em;
+}
+.cta-subtext {
+  font-size: 1rem;
+  color: rgba(255,255,255,0.78);
+  line-height: 1.75;
+  max-width: 600px;
+  margin: 0 auto 36px;
+}
+.cta-buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 36px;
+}
+.btn-cta-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #00c8e0;
+  color: #0d1f3c;
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 14px 28px;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+.btn-cta-primary:hover { background: #00b3c8; transform: translateY(-2px); }
+.btn-cta-primary [data-lucide] { width: 18px; height: 18px; }
+.btn-cta-white {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255,255,255,0.1);
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 14px 28px;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.25);
+  text-decoration: none;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+.btn-cta-white:hover { background: rgba(255,255,255,0.18); transform: translateY(-2px); }
+.btn-cta-white [data-lucide] { width: 18px; height: 18px; }
+.reassurance-row {
+  display: flex;
+  gap: 28px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.reassurance-item {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.7);
+  font-family: 'DM Sans', sans-serif;
+}
+.reassurance-item [data-lucide] {
+  width: 16px;
+  height: 16px;
+  stroke: #00c8e0;
+}
+.cta-updated {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.72rem;
+  color: rgba(255,255,255,0.35);
+  margin-top: 16px;
+}
+@media (max-width: 600px) {
+  .cta-section { clip-path: polygon(0 3%, 100% 0%, 100% 100%, 0% 100%); padding: 80px 0 60px; }
+  .cta-buttons { flex-direction: column; align-items: center; }
+  .reassurance-row { gap: 16px; }
+}
+</style>
+  <!-- SECTION 8 — CLOSING CTA -->
+  <section class="cta-section" aria-label="Get IT Support for Your Gold Coast Small Business">
+    <div class="container">
+      <p class="cta-label">Gold Coast&rsquo;s Trusted IT Team</p>
+      <h2>IT Support Built for Gold Coast Small Business</h2>
+      <p class="cta-subtext">Managed IT support, Microsoft 365, cybersecurity, cloud backup and business phone systems for Gold Coast small businesses. Local technicians, same-day response, no lock-in contracts.</p>
+      <div class="cta-buttons">
+        <a href="tel:0730418993" class="btn-cta-primary">
+          <i aria-hidden="true" data-lucide="phone"></i>
+          Call 07 3041 8993
+        </a>
+        <a href="mailto:support@bcomservices.com" class="btn-cta-white">
+          <i aria-hidden="true" data-lucide="mail"></i>
+          Email Us
+        </a>
+      </div>
+      <div class="reassurance-row">
+        <span class="reassurance-item">
+          <i aria-hidden="true" data-lucide="map-pin"></i>
+          Gold Coast Local
+        </span>
+        <span class="reassurance-item">
+          <i aria-hidden="true" data-lucide="clock"></i>
+          Same-Day Response
+        </span>
+        <span class="reassurance-item">
+          <i aria-hidden="true" data-lucide="shield-check"></i>
+          No Lock-in Contracts
+        </span>
+      </div>
+      <p class="cta-updated">Last updated: March 2026</p>
+    </div>
+  </section>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How to Get IT Support for Your Gold Coast Small Business",
+  "description": "Steps to engage Bcom IT Solutions for IT support for your Gold Coast small business.",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "name": "Call or book online",
+      "text": "Call 07 3041 8993 or book an appointment online to discuss your Gold Coast small business IT requirements."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "IT assessment",
+      "text": "We assess your current devices, software, email setup, backup and security to understand what your Gold Coast business needs."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Agree scope and pricing",
+      "text": "We agree the scope of support, devices covered and monthly cost. No lock-in contracts — month to month only."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Onboarding and monitoring begins",
+      "text": "We onboard your devices, configure monitoring and backup, and your Gold Coast small business IT support begins immediately."
+    }
+  ]
+}
+</script>
+
+
 <script>
 (function() {
   var items = document.querySelectorAll('.faq-item');
