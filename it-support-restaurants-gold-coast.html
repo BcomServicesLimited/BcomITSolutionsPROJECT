@@ -2281,6 +2281,396 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <p>Gold Coast restaurants operating across multiple locations need consistent IT setups, centralised access to reporting data, and a single IT provider managing all venues. We provide this. For <a href="managed-it-services-for-small-businesses-gold-coast.html">managed IT services Gold Coast</a> businesses depend on, <a href="cybersecurity-health-check-for-small-business-gold-coast.html">cybersecurity Gold Coast</a>, or <a href="home-wifi-setup-and-troubleshooting-gold-coast.html">Wi-Fi installation Gold Coast</a> &mdash; we cover it all.</p>
     </div>
   </section>
+<style>
+    /* ── HERO ── */
+    .hero {
+      position: relative;
+      min-height: 60vh;
+      background-color: #0d1f3c;
+      background-size: cover;
+      background-position: center center;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(105deg, rgba(30,58,95,0.65) 0%, rgba(13,31,60,0.45) 100%);
+      z-index: 1;
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: radial-gradient(rgba(0,200,224,0.07) 1px, transparent 1px);
+      background-size: 28px 28px;
+      z-index: 2;
+      pointer-events: none;
+    }
+    .hero-content {
+      position: relative;
+      z-index: 3;
+      padding: 56px 0;
+      max-width: 680px;
+    }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(0,200,224,0.35);
+      border-radius: 24px;
+      padding: 6px 16px;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.72rem;
+      color: rgba(255,255,255,0.9);
+      letter-spacing: 0.04em;
+      margin-bottom: 20px;
+    }
+    .hero h1 {
+      font-size: 2.6rem;
+      font-weight: 700;
+      color: white;
+      line-height: 1.15;
+      margin-bottom: 16px;
+      letter-spacing: -0.02em;
+      text-align: left;
+    }
+    .hero-sub {
+      font-size: 1.05rem;
+      color: rgba(255,255,255,0.8);
+      line-height: 1.7;
+      margin-bottom: 28px;
+      max-width: 560px;
+      text-align: left;
+    }
+    .hero-cta-row {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-bottom: 8px;
+    }
+
+    /* ── INDUSTRY CARDS ── */
+    .industries-section {
+      background: white;
+      padding: 80px 0;
+    }
+    .industries-header {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+    .industries-header h2 {
+      font-size: 1.9rem;
+      font-weight: 700;
+      color: #0d1f3c;
+      margin-bottom: 12px;
+    }
+    .industries-cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+    .industry-card {
+      background: #f8fafb;
+      border-radius: 16px;
+      padding: 32px;
+      border-top: 3px solid #00c8e0;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .industry-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+    }
+    .industry-card__icon {
+      width: 52px;
+      height: 52px;
+      background: #e6fafd;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    .industry-card__icon [data-lucide] {
+      width: 24px;
+      height: 24px;
+      stroke: #00c8e0;
+      stroke-width: 1.75;
+    }
+    .industry-card h3 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #0d1f3c;
+      margin-bottom: 10px;
+    }
+    .industry-card h3 a {
+      color: #0d1f3c;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .industry-card h3 a:hover {
+      color: #00c8e0;
+    }
+    .industry-card p {
+      font-size: 0.9rem;
+      color: #4a5568;
+      line-height: 1.7;
+      margin: 0;
+    }
+    @media (max-width: 900px) {
+      .industries-cards { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 600px) {
+      .industries-cards { grid-template-columns: 1fr; }
+    }
+
+    /* ── WHY SECTION ── */
+    .why-section {
+      background: #f8fafb;
+      padding: 80px 0;
+    }
+    .why-header {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+    .why-header h2 {
+      font-size: 1.9rem;
+      font-weight: 700;
+      color: #0d1f3c;
+      margin-bottom: 12px;
+    }
+    .why-cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+    .why-card {
+      background: white;
+      border-radius: 16px;
+      padding: 32px;
+      border-top: 3px solid #00c8e0;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    }
+    .why-card__icon {
+      width: 52px;
+      height: 52px;
+      background: #e6fafd;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    .why-card__icon [data-lucide] {
+      width: 24px;
+      height: 24px;
+      stroke: #00c8e0;
+      stroke-width: 1.75;
+    }
+    .why-card h3 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #0d1f3c;
+      margin-bottom: 10px;
+    }
+    .why-card p {
+      font-size: 0.9rem;
+      color: #4a5568;
+      line-height: 1.7;
+      margin: 0;
+    }
+    @media (max-width: 900px) {
+      .why-cards { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 600px) {
+      .why-cards { grid-template-columns: 1fr; }
+    }
+
+    /* ── CTA BANNER ── */
+    .cta-banner {
+      background: linear-gradient(135deg, #0d1f3c 0%, #1e3a5f 50%, #0d2d3a 100%);
+      border-top: 3px solid #00c8e0;
+      clip-path: polygon(0 6%, 100% 0%, 100% 100%, 0% 100%);
+      padding: 100px 0 80px;
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+    }
+    .cta-banner::before {
+      content: '';
+      position: absolute;
+      width: 600px;
+      height: 600px;
+      background: rgba(0,200,224,0.06);
+      border-radius: 50%;
+      top: -200px;
+      left: -200px;
+      filter: blur(80px);
+      pointer-events: none;
+      z-index: 0;
+    }
+    .cta-banner::after {
+      content: '';
+      position: absolute;
+      width: 400px;
+      height: 400px;
+      background: rgba(0,200,224,0.04);
+      border-radius: 50%;
+      bottom: -100px;
+      right: -100px;
+      filter: blur(60px);
+      pointer-events: none;
+      z-index: 0;
+    }
+    .cta-banner__inner {
+      position: relative;
+      z-index: 1;
+    }
+    .cta-label {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.65rem;
+      color: #00c8e0;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      display: block;
+      margin-bottom: 16px;
+    }
+    .cta-banner h2 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: white;
+      margin-bottom: 16px;
+      line-height: 1.2;
+    }
+    .cta-banner p {
+      font-size: 1.05rem;
+      color: rgba(255,255,255,0.75);
+      max-width: 540px;
+      margin: 0 auto 32px;
+      line-height: 1.7;
+    }
+    .cta-buttons {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-bottom: 16px;
+    }
+    .cta-updated {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.68rem;
+      color: rgba(255,255,255,0.35);
+      margin-top: 24px;
+    }
+
+    /* ── FADE-UP ANIMATION ── */
+    .fade-up {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.55s ease, transform 0.55s ease;
+    }
+    .fade-up.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ── MOBILE STICKY BAR ── */
+    .mobile-sticky-bar {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 2000;
+      background: white;
+      border-top: 2px solid #00c8e0;
+      padding: 10px 16px;
+      gap: 10px;
+    }
+    .mobile-sticky-bar a {
+      flex: 1;
+      text-align: center;
+      padding: 12px 8px;
+      border-radius: 8px;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 700;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+    .mobile-sticky-bar .sticky-call {
+      background: #0d1f3c;
+      color: white;
+    }
+    .mobile-sticky-bar .sticky-book {
+      background: #00c8e0;
+      color: #0d1f3c;
+    }
+    @media (max-width: 768px) {
+      .mobile-sticky-bar { display: flex; }
+      body { padding-bottom: 72px; }
+    }
+  </style>
+
+  <!-- SECTION 6 — WHY CHOOSE US -->
+  <section class="why-section" aria-label="Why Choose Bcom IT Solutions for Restaurant IT Support">
+    <div class="container">
+      <h2>Why Gold Coast Restaurants Choose Bcom IT Solutions</h2>
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="why-card__icon"><i aria-hidden="true" data-lucide="utensils"></i></div>
+          <div class="why-card__body">
+            <h3>Hospitality IT Experience</h3>
+            <p>We understand POS systems, EFTPOS connectivity, kitchen display systems, and the Wi-Fi requirements of a busy restaurant. We have worked with Square, Lightspeed, Kounta, and Impos across Gold Coast hospitality businesses of all sizes.</p>
+          </div>
+        </div>
+        <div class="why-card">
+          <div class="why-card__icon"><i aria-hidden="true" data-lucide="zap"></i></div>
+          <div class="why-card__body">
+            <h3>Fast Response When It Matters</h3>
+            <p>When your POS goes down during a dinner service, you cannot wait until tomorrow. We provide fast remote support and same-day on-site response across the Gold Coast &mdash; because we understand that downtime during service costs you real money.</p>
+          </div>
+        </div>
+        <div class="why-card">
+          <div class="why-card__icon"><i aria-hidden="true" data-lucide="shield-check"></i></div>
+          <div class="why-card__body">
+            <h3>Payment Security Done Correctly</h3>
+            <p>PCI DSS network segmentation implemented as standard &mdash; EFTPOS terminals on an isolated network segment, guest Wi-Fi properly separated. We configure this correctly from the start so your restaurant is not exposed to payment data risk.</p>
+          </div>
+        </div>
+        <div class="why-card">
+          <div class="why-card__icon"><i aria-hidden="true" data-lucide="dollar-sign"></i></div>
+          <div class="why-card__body">
+            <h3>No Lock-in Contracts</h3>
+            <p>Month-to-month terms for ongoing IT support. No 12-month contracts, no exit penalties. If it is not working for your Gold Coast restaurant, you are not trapped. We earn your business each month by delivering a service that keeps your technology running.</p>
+          </div>
+        </div>
+        <div class="why-card">
+          <div class="why-card__icon"><i aria-hidden="true" data-lucide="map-pin"></i></div>
+          <div class="why-card__body">
+            <h3>Local Gold Coast Provider</h3>
+            <p>We are based on the Gold Coast and service restaurants and hospitality businesses from Coomera to Coolangatta. When you need on-site support, we are not flying in from Brisbane &mdash; we are already here.</p>
+          </div>
+        </div>
+        <div class="why-card">
+          <div class="why-card__icon"><i aria-hidden="true" data-lucide="settings"></i></div>
+          <div class="why-card__body">
+            <h3>Proactive, Not Just Reactive</h3>
+            <p>We monitor your systems and address issues before they become service disruptions. Managed IT customers get proactive maintenance, backup monitoring, and security monitoring as standard &mdash; not just a technician who shows up after something breaks.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
     <!-- ============================================================
        FOOTER — INLINED
