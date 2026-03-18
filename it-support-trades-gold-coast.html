@@ -1139,6 +1139,156 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </div>
   </section>
+<style>
+/* ── EXPLAINER SECTION ── */
+.explainer-section {
+  background: #f8fafb;
+  padding: 80px 0;
+  border-bottom: 1px solid #f1f5f9;
+}
+.explainer-section h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #0d1f3c;
+  line-height: 1.25;
+  margin-bottom: 20px;
+  letter-spacing: -0.01em;
+}
+.explainer-intro {
+  font-size: 1.05rem;
+  color: #334155;
+  line-height: 1.75;
+  max-width: 720px;
+  margin-bottom: 48px;
+}
+.explainer-section h3.explainer-sub {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #0d1f3c;
+  margin-bottom: 28px;
+  letter-spacing: -0.01em;
+}
+.compare-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 40px;
+}
+.compare-card {
+  background: #ffffff;
+  border-radius: 14px;
+  border: 1px solid #e2e8f0;
+  border-top: 3px solid #00c8e0;
+  padding: 28px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+.compare-card:hover {
+  box-shadow: 0 8px 32px rgba(0,200,224,0.12);
+  transform: translateY(-3px);
+}
+.compare-card__icon {
+  width: 44px;
+  height: 44px;
+  background: #e6fafd;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.compare-card__icon [data-lucide] {
+  width: 22px;
+  height: 22px;
+  stroke: #00c8e0;
+}
+.compare-card h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #0d1f3c;
+  margin: 0;
+}
+.compare-card__row {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.compare-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.compare-label--without {
+  color: #94a3b8;
+}
+.compare-label--with {
+  color: #00c8e0;
+}
+.compare-card__row p {
+  font-size: 0.9rem;
+  color: #475569;
+  line-height: 1.6;
+  margin: 0;
+}
+.explainer-closing {
+  font-size: 1rem;
+  color: #334155;
+  line-height: 1.75;
+  max-width: 720px;
+}
+.explainer-closing a {
+  color: #00c8e0;
+  font-weight: 600;
+  text-decoration: none;
+}
+.explainer-closing a:hover { color: #0d1f3c; }
+/* ── CONTENT IMAGE ── */
+.content-image {
+  margin: 40px 0;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+}
+.content-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.content-image figcaption {
+  font-size: 0.82rem;
+  color: #64748b;
+  font-family: 'DM Mono', monospace;
+  padding: 12px 16px;
+  background: #f8fafb;
+  border-top: 1px solid #e2e8f0;
+}
+@media (max-width: 900px) {
+  .compare-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 600px) {
+  .compare-grid { grid-template-columns: 1fr; }
+  .explainer-section { padding: 56px 0; }
+}
+</style>
+
+  <!-- SECTION 4 — BODY CONTENT -->
+  <section class="explainer-section" aria-label="IT Support for Gold Coast Trade Businesses">
+    <div class="container">
+      <h2>IT Support for Gold Coast Trade Businesses &mdash; Technology That Works Around Your Schedule</h2>
+      <div class="explainer-intro">
+        <p>The Gold Coast has a substantial and active trade sector &mdash; builders working on the northern growth corridor in Coomera, Pimpama and Ormeau, electricians and plumbers servicing the residential suburbs from Coolangatta to Hope Island, HVAC contractors working the commercial precincts in Southport and Robina, and landscaping businesses operating across the beachside and hinterland suburbs. Most Gold Coast trade businesses are small &mdash; a principal, a couple of staff and a workshop or office &mdash; but they run more technology than they did a decade ago. Job management software in the field, cloud accounting, mobile EFTPOS and email-based quoting have replaced the clipboard and the filing cabinet. When the technology stops working, the business slows.</p>
+        <p>ServiceM8, Tradify and simPRO are the most common job management platforms we see in Gold Coast trade businesses. These systems handle scheduling, quoting, invoicing and field communication &mdash; and they are entirely dependent on the internet working on the mobile device in the field and the workstation back at the office. The most common fault we resolve is a sync issue or connectivity problem that leaves job data out of date between office and field. We configure the mobile devices and the office network to ensure these platforms work reliably.</p>
+        <!-- CONTENT IMAGE PLACEHOLDER — Task 6 inserts here -->
+        <p>Molendinar and Bundall in the central Gold Coast, the Yatala and Ormeau industrial corridor at the northern end, and the Currumbin and Burleigh commercial precincts at the southern end are where many Gold Coast trade business offices and workshops are based. NBN connectivity to commercial premises in these areas can be inconsistent &mdash; we resolve internet faults and advise on connection options for trade business premises across the Gold Coast.</p>
+        <p>Most Gold Coast trade businesses with a permanent office or workshop have a basic Panasonic or LG Ericsson phone system &mdash; one or two lines for inbound customer calls and supplier contact. These systems are often years old and not reconfigured since installation. A voicemail that doesn&rsquo;t divert to mobile after hours, a second line that no longer works, or an auto-attendant message that references a staff member who left three years ago &mdash; these are the common faults we fix. Simple systems, quick fixes.</p>
+        <p class="explainer-closing">Gold Coast trade business owners don&rsquo;t want complex IT. They want email that works, a phone that answers, job management software that syncs in the field and someone to call when something breaks. For <a href="managed-it-services-for-small-businesses-gold-coast.html">managed IT services Gold Coast</a>, <a href="business-phone-systems-gold-coast.html">business phone systems Gold Coast</a>, or <a href="cloud-computing-service-gold-coast.html">cloud computing Gold Coast</a> &mdash; we provide practical solutions that match the scale and budget of a Gold Coast small trade business.</p>
+      </div>
+    </div>
+  </section>
 
 <footer class="site-footer" role="contentinfo">
 
