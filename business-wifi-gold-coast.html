@@ -80,6 +80,52 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 }
   </script>
 <!-- FAQPage schema placeholder -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type": "Question",
+       "name": "What is the difference between business WiFi and a consumer router?",
+       "acceptedAnswer": {"@type": "Answer",
+         "text": "Business access points handle 50-100+ concurrent devices and roam seamlessly across a building. Consumer routers are designed for home use with 10-15 devices and underperform under business device density."}},
+      {"@type": "Question",
+       "name": "Do we need to separate our guest WiFi from our staff and EFTPOS network?",
+       "acceptedAnswer": {"@type": "Answer",
+         "text": "Yes. Guest devices on the same network as EFTPOS creates a PCI DSS compliance issue. We configure VLAN-separated guest, staff and payment networks as standard on all Gold Coast business WiFi installations."}},
+      {"@type": "Question",
+       "name": "Our Gold Coast office has dead zones — can you fix them without rewiring?",
+       "acceptedAnswer": {"@type": "Answer",
+         "text": "Usually yes. Dead zones are almost always an access point placement issue. We survey the premises and reposition or add access points to eliminate coverage gaps without significant disruption."}},
+      {"@type": "Question",
+       "name": "What WiFi brands do you install on the Gold Coast?",
+       "acceptedAnswer": {"@type": "Answer",
+         "text": "We install Ubiquiti UniFi, Aruba Instant On, TP-Link Omada and Grandstream access points. We advise the right brand based on your premises size, device count and management requirements."}},
+      {"@type": "Question",
+       "name": "Can you manage our WiFi remotely after installation?",
+       "acceptedAnswer": {"@type": "Answer",
+         "text": "Yes. Ubiquiti UniFi, Aruba Instant On and TP-Link Omada have cloud management platforms for remote monitoring, updates and troubleshooting. Available in managed IT arrangements and as a standalone service."}}
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "How Business WiFi Installation Works on the Gold Coast",
+    "description": "What to expect when Bcom IT Solutions installs business WiFi at your Gold Coast premises.",
+    "step": [
+      {"@type": "HowToStep", "position": "1", "name": "Site Survey",
+       "text": "We survey the premises — mapping coverage requirements, interference sources and device density."},
+      {"@type": "HowToStep", "position": "2", "name": "Design and Quote",
+       "text": "Access point count, placement and hardware specified. Clear quote provided."},
+      {"@type": "HowToStep", "position": "3", "name": "Installation",
+       "text": "Access points installed and configured — VLANs, SSIDs and security settings all set up."},
+      {"@type": "HowToStep", "position": "4", "name": "Testing and Support",
+       "text": "Coverage tested across the entire premises. Ongoing WiFi support available."}
+    ]
+  }
+  </script>
 </head>
 <body>
 >
@@ -828,5 +874,603 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 </footer>
   <script>lucide.createIcons();</script>
+
+
+<!-- SECTION 4 — BODY CONTENT -->
+  <style>
+/* ── BODY CONTENT SECTION ── */
+.body-content-section {
+  background: #ffffff;
+  padding: 80px 0;
+  border-bottom: 1px solid #f1f5f9;
+}
+.body-content-section .container {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+.body-content-section h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #0d1f3c;
+  line-height: 1.25;
+  margin-bottom: 28px;
+  letter-spacing: -0.01em;
+}
+.body-content-section p {
+  font-size: 1rem;
+  color: #334155;
+  line-height: 1.8;
+  margin-bottom: 24px;
+}
+.body-content-section a {
+  color: #00c8e0;
+  font-weight: 600;
+  text-decoration: none;
+}
+.body-content-section a:hover { color: #0d1f3c; }
+.content-image {
+  margin: 32px 0;
+}
+.content-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  display: block;
+}
+.content-image figcaption {
+  font-size: 0.82rem;
+  color: #94a3b8;
+  margin-top: 8px;
+  text-align: center;
+}
+</style>
+  <section class="body-content-section" aria-label="Business WiFi Installation for Gold Coast Premises">
+    <div class="container">
+      <h2>Business WiFi Installation for Gold Coast Premises</h2>
+      <p>The difference between consumer and business WiFi is most obvious when it stops working. A consumer router placed on a shelf struggles with 10 devices and fails entirely with 30. A business access point from Ubiquiti, Aruba or TP-Link is designed to handle 50&ndash;100 concurrent devices, roam seamlessly between units, and be managed centrally across a multi-floor or multi-site environment. For a Gold Coast office, retail shop or hospitality venue, the access point hardware and the way it is configured determines whether WiFi works reliably or becomes a daily frustration.</p>
+      <p>The most common WiFi problem we resolve for Gold Coast businesses is incorrect access point placement &mdash; a single unit mounted in the reception area trying to cover a 400 square metre office floor, or consumer repeaters creating roaming handoff problems that cause devices to drop connection when staff move between rooms. We survey the premises first, map the coverage requirements and place access points where they will actually work &mdash; not where the cable already runs.</p>
+      <figure class="content-image">
+        <img src="assets/images/business-wifi-gold-coast-content.webp"
+             alt="Business WiFi access point installation Gold Coast"
+             loading="lazy" width="1200" height="675">
+      </figure>
+      <p>Network segmentation is the second most common issue we address. Gold Coast retail shops and hospitality venues frequently run guest WiFi on the same network as their EFTPOS terminals and POS systems. This creates a PCI DSS compliance issue and allows guest device traffic to compete with payment processing bandwidth. We configure VLAN separation between guest, staff and payment device networks as standard on any new Gold Coast business WiFi installation.</p>
+      <p>Hospitality venues have unique WiFi requirements. A Gold Coast hotel with 60 occupied rooms will have 120&ndash;200 WiFi devices connected simultaneously &mdash; phones, laptops and smart TVs per room. A restaurant with 80 covers will spike at 100+ devices during service. We configure access points and channel width specifically for high-density environments &mdash; the default settings that work for a 10-person office will fail in a hospitality setting.</p>
+      <p>We install and support Ubiquiti UniFi, Aruba Instant On, TP-Link Omada and Grandstream WiFi systems across the Gold Coast. Each has different strengths &mdash; UniFi offers the most powerful management platform for complex environments, Aruba Instant On is strong for SMB with cloud management, TP-Link Omada offers the best value for straightforward office setups. We advise based on your premises and requirements. See also: <a href="it-support-hospitality-gold-coast.html">WiFi for Gold Coast hospitality</a>, <a href="it-support-retail-gold-coast.html">WiFi for Gold Coast retail</a> and <a href="computer-networking-service-gold-coast.html">computer networking Gold Coast</a>.</p>
+    </div>
+  </section>
+
+<!-- SECTION 5 — WHY CHOOSE BCOM -->
+  <style>
+/* ── WHY CHOOSE US ── */
+.why-section {
+  background: #f8fafb;
+  padding: 80px 0;
+  border-bottom: 1px solid #f1f5f9;
+}
+.why-section h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #0d1f3c;
+  line-height: 1.25;
+  margin-bottom: 40px;
+  letter-spacing: -0.01em;
+}
+.why-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+.why-card {
+  background: #ffffff;
+  border-radius: 14px;
+  border: 1px solid #e2e8f0;
+  border-left: 4px solid #00c8e0;
+  padding: 28px 28px 28px 24px;
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+.why-card:hover {
+  box-shadow: 0 8px 32px rgba(0,200,224,0.12);
+  transform: translateY(-3px);
+}
+.why-card__icon {
+  width: 48px;
+  height: 48px;
+  background: #e6fafd;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.why-card__icon [data-lucide] {
+  width: 24px;
+  height: 24px;
+  stroke: #00c8e0;
+}
+.why-card__body h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #0d1f3c;
+  margin: 0 0 8px;
+  line-height: 1.3;
+}
+.why-card__body p {
+  font-size: 0.9rem;
+  color: #475569;
+  line-height: 1.65;
+  margin: 0;
+}
+@media (max-width: 700px) {
+  .why-grid { grid-template-columns: 1fr; }
+  .why-section { padding: 56px 0; }
+}
+</style>
+  <section class="why-section" aria-label="Why Gold Coast Businesses Choose Bcom for WiFi">
+    <div class="container">
+      <h2>Why Gold Coast Businesses Choose Bcom for WiFi</h2>
+      <div class="why-grid">
+
+        <div class="why-card">
+          <div class="why-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+          </div>
+          <h3>Site Survey Before Installation</h3>
+          <p>We survey the premises before mounting anything. Correct access point placement from day one.</p>
+        </div>
+
+        <div class="why-card">
+          <div class="why-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3>Network Segmentation as Standard</h3>
+          <p>Guest, staff and payment device networks correctly separated on every Gold Coast WiFi installation.</p>
+        </div>
+
+        <div class="why-card">
+          <div class="why-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-wifi" aria-hidden="true"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" x2="12.01" y1="20" y2="20"/></svg>
+          </div>
+          <h3>Business-Grade Hardware Only</h3>
+          <p>Ubiquiti UniFi, Aruba Instant On and TP-Link Omada &mdash; access points built for business device density.</p>
+        </div>
+
+        <div class="why-card">
+          <div class="why-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <h3>Same-Day Fault Resolution</h3>
+          <p>WiFi down in a retail or hospitality venue cannot wait. We prioritise Gold Coast business WiFi callouts.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+<!-- SECTION 6 — FAQ -->
+  <style>
+/* ── FAQ SECTION ── */
+.faq-section {
+  background: #ffffff;
+  padding: 80px 0;
+  border-bottom: 1px solid #f1f5f9;
+}
+.faq-section h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #0d1f3c;
+  line-height: 1.25;
+  margin-bottom: 40px;
+  letter-spacing: -0.01em;
+}
+.faq-list {
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  overflow: hidden;
+}
+.faq-item {
+  border-bottom: 1px solid #e2e8f0;
+}
+.faq-item:last-child { border-bottom: none; }
+.faq-item.is-open {
+  border-left: 4px solid #00c8e0;
+  background: #f8fafb;
+}
+.faq-question {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 22px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  cursor: pointer;
+  text-align: left;
+}
+.faq-question h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #0d1f3c;
+  margin: 0;
+  line-height: 1.4;
+}
+.faq-question:hover h3 { color: #00c8e0; }
+.faq-chevron {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  stroke: #00c8e0;
+  transition: transform 0.25s ease;
+}
+.faq-item.is-open .faq-chevron { transform: rotate(180deg); }
+.faq-answer {
+  padding: 0 24px 22px;
+  font-size: 0.95rem;
+  color: #334155;
+  line-height: 1.75;
+}
+.faq-answer a {
+  color: #00c8e0;
+  font-weight: 600;
+  text-decoration: none;
+}
+.faq-answer a:hover { color: #0d1f3c; }
+@media (max-width: 600px) {
+  .faq-section { padding: 56px 0; }
+  .faq-question { padding: 18px 16px; }
+  .faq-answer { padding: 0 16px 18px; }
+}
+</style>
+  <section class="faq-section" aria-label="Business WiFi Gold Coast — Frequently Asked Questions">
+    <div class="container">
+      <h2>Business WiFi Gold Coast &mdash; Frequently Asked Questions</h2>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            What is the difference between business WiFi and a consumer router?
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="faq-chevron" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Business access points handle 50&ndash;100+ concurrent devices and roam seamlessly across a building. Consumer routers are designed for home use with 10&ndash;15 devices and underperform under business device density.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Do we need to separate our guest WiFi from our staff and EFTPOS network?
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="faq-chevron" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Yes. Guest devices on the same network as EFTPOS creates a PCI DSS compliance issue. We configure VLAN-separated guest, staff and payment networks as standard on all Gold Coast business WiFi installations.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Our Gold Coast office has dead zones &mdash; can you fix them without rewiring?
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="faq-chevron" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Usually yes. Dead zones are almost always an access point placement issue. We survey the premises and reposition or add access points to eliminate coverage gaps without significant disruption.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            What WiFi brands do you install on the Gold Coast?
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="faq-chevron" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>We install Ubiquiti UniFi, Aruba Instant On, TP-Link Omada and Grandstream access points. We advise the right brand based on your premises size, device count and management requirements.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Can you manage our WiFi remotely after installation?
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="faq-chevron" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Yes. Ubiquiti UniFi, Aruba Instant On and TP-Link Omada have cloud management platforms for remote monitoring, updates and troubleshooting. Available in managed IT arrangements and as a standalone service.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <script>
+  (function() {
+    document.querySelectorAll('.faq-question').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var expanded = this.getAttribute('aria-expanded') === 'true';
+        document.querySelectorAll('.faq-question').forEach(function(b) {
+          b.setAttribute('aria-expanded', 'false');
+          b.closest('.faq-item').classList.remove('open');
+        });
+        if (!expanded) {
+          this.setAttribute('aria-expanded', 'true');
+          this.closest('.faq-item').classList.add('open');
+        }
+      });
+    });
+  })();
+  </script>
+
+<!-- SECTION 7 — SERVICE AREAS -->
+  <style>
+/* ── AREAS SECTION ── */
+.areas-section {
+  background: #e6fafd;
+  padding: 80px 0;
+  border-bottom: 1px solid #c8f0f7;
+}
+.areas-section h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #0d1f3c;
+  line-height: 1.25;
+  margin-bottom: 16px;
+  letter-spacing: -0.01em;
+}
+.areas-body {
+  font-size: 1rem;
+  color: #334155;
+  line-height: 1.75;
+  max-width: 720px;
+  margin-bottom: 28px;
+}
+.areas-body a {
+  color: #00c8e0;
+  font-weight: 600;
+  text-decoration: none;
+}
+.areas-body a:hover { color: #0d1f3c; }
+.suburb-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 36px;
+}
+.suburb-pill {
+  background: #ffffff;
+  border: 1px solid #c8f0f7;
+  border-radius: 20px;
+  padding: 6px 16px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #0d1f3c;
+  white-space: nowrap;
+}
+.areas-booking {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
+}
+@media (max-width: 600px) {
+  .areas-section { padding: 56px 0; }
+}
+</style>
+  <section class="areas-section" aria-label="Business WiFi Installation Across the Gold Coast">
+    <div class="container">
+      <h2>Business WiFi Installation Across the Gold Coast</h2>
+      <p>We install and support business WiFi across the entire Gold Coast &mdash; offices in Southport CBD and Robina, retail and hospitality venues in Broadbeach, Surfers Paradise and Burleigh Heads, and commercial premises from Coolangatta to Coomera.</p>
+      <p>Bcom IT Solutions Pty Ltd &mdash; ABN 92 636 893 108.</p>
+      <div class="suburb-grid">
+            <span class="suburb-pill">Southport</span>
+            <span class="suburb-pill">Surfers Paradise</span>
+            <span class="suburb-pill">Broadbeach</span>
+            <span class="suburb-pill">Burleigh Heads</span>
+            <span class="suburb-pill">Robina</span>
+            <span class="suburb-pill">Varsity Lakes</span>
+            <span class="suburb-pill">Mudgeeraba</span>
+            <span class="suburb-pill">Nerang</span>
+            <span class="suburb-pill">Helensvale</span>
+            <span class="suburb-pill">Coomera</span>
+            <span class="suburb-pill">Oxenford</span>
+            <span class="suburb-pill">Arundel</span>
+            <span class="suburb-pill">Parkwood</span>
+            <span class="suburb-pill">Molendinar</span>
+            <span class="suburb-pill">Labrador</span>
+            <span class="suburb-pill">Runaway Bay</span>
+            <span class="suburb-pill">Biggera Waters</span>
+            <span class="suburb-pill">Hollywell</span>
+            <span class="suburb-pill">Hope Island</span>
+            <span class="suburb-pill">Sanctuary Cove</span>
+            <span class="suburb-pill">Benowa</span>
+            <span class="suburb-pill">Clear Island Waters</span>
+            <span class="suburb-pill">Merrimac</span>
+            <span class="suburb-pill">Carrara</span>
+            <span class="suburb-pill">Worongary</span>
+            <span class="suburb-pill">Palm Beach</span>
+            <span class="suburb-pill">Elanora</span>
+            <span class="suburb-pill">Currumbin</span>
+            <span class="suburb-pill">Tugun</span>
+            <span class="suburb-pill">Coolangatta</span>
+      </div>
+      <!-- Google Calendar Appointment Scheduling begin -->
+<link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+<script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+<script>
+(function() {
+  var target = document.currentScript;
+  window.addEventListener('load', function() {
+    calendar.schedulingButton.load({
+      url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ21JsFI48SyH1NJO3oZkyuch15utQ__rWaeHMgfxSppgM_GaVeKRe6Kn0v2oN4XjRgl5D256Up7?gv=true',
+      color: '#039BE5',
+      label: 'Book an appointment',
+      target,
+    });
+  });
+})();
+</script>
+<!-- end Google Calendar Appointment Scheduling -->
+    </div>
+  </section>
+
+<!-- SECTION 8 — CLOSING CTA -->
+  <style>
+/* ── CLOSING CTA ── */
+.cta-section {
+  position: relative;
+  background: linear-gradient(135deg, #0d1f3c 0%, #1e3a5f 55%, #0d2d3a 100%);
+  border-top: 3px solid #00c8e0;
+  clip-path: polygon(0 6%, 100% 0%, 100% 100%, 0% 100%);
+  padding: 100px 0 80px;
+  overflow: hidden;
+  text-align: center;
+}
+.cta-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 20% 50%, rgba(0,200,224,0.08) 0%, transparent 60%),
+              radial-gradient(ellipse at 80% 50%, rgba(0,200,224,0.06) 0%, transparent 60%);
+  pointer-events: none;
+}
+.cta-section .container { position: relative; z-index: 1; }
+.cta-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #00c8e0;
+  margin-bottom: 16px;
+}
+.cta-section h2 {
+  font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1.2;
+  margin-bottom: 16px;
+  letter-spacing: -0.02em;
+}
+.cta-subtext {
+  font-size: 1rem;
+  color: rgba(255,255,255,0.78);
+  line-height: 1.75;
+  max-width: 600px;
+  margin: 0 auto 36px;
+}
+.cta-buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+.btn-cta-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #00c8e0;
+  color: #0d1f3c;
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 14px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+.btn-cta-primary:hover { background: #00b5cc; transform: translateY(-2px); }
+.btn-cta-primary [data-lucide] { width: 18px; height: 18px; stroke: #0d1f3c; }
+.btn-cta-white {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255,255,255,0.12);
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 14px 28px;
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.25);
+  text-decoration: none;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+.btn-cta-white:hover { background: rgba(255,255,255,0.2); transform: translateY(-2px); }
+.btn-cta-white [data-lucide] { width: 18px; height: 18px; stroke: #ffffff; }
+.reassurance-row {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
+  margin-bottom: 28px;
+}
+.reassurance-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.7);
+}
+.reassurance-item [data-lucide] {
+  width: 16px;
+  height: 16px;
+  stroke: #00c8e0;
+  flex-shrink: 0;
+}
+.cta-updated {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.75rem;
+  color: #94a3b8;
+}
+@media (max-width: 600px) {
+  .cta-section {
+    clip-path: none;
+    padding: 64px 0;
+  }
+  .reassurance-row { gap: 16px; }
+}
+</style>
+  <section class="cta-section" aria-label="Contact Bcom IT Solutions for Business WiFi Gold Coast">
+    <div class="container">
+      <h2>Business WiFi Installation for Your Gold Coast Premises</h2>
+      <p>Site survey, access point installation, VLAN segmentation and fault resolution &mdash; call <a href="tel:0730418993" style="color:#00c8e0;">07 3041 8993</a> or book online.</p>
+      <!-- Google Calendar Appointment Scheduling begin -->
+<link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+<script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+<script>
+(function() {
+  var target = document.currentScript;
+  window.addEventListener('load', function() {
+    calendar.schedulingButton.load({
+      url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ21JsFI48SyH1NJO3oZkyuch15utQ__rWaeHMgfxSppgM_GaVeKRe6Kn0v2oN4XjRgl5D256Up7?gv=true',
+      color: '#039BE5',
+      label: 'Book an appointment',
+      target,
+    });
+  });
+})();
+</script>
+<!-- end Google Calendar Appointment Scheduling -->
+      <div class="cta-reassurance">
+        <div class="reassurance-item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>Gold Coast On-Site</span>
+        </div>
+        <div class="reassurance-item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.5 19.79 19.79 0 0 1 1.61 4.9 2 2 0 0 1 3.6 2.69h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 10a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 17z"/></svg>
+          <span><a href="tel:0730418993">07 3041 8993</a></span>
+        </div>
+        <div class="reassurance-item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          <span><a href="mailto:hello@bcomservices.com">hello@bcomservices.com</a></span>
+        </div>
+        <div class="reassurance-item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar" aria-hidden="true"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>
+          <span>Last updated: March 2026</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
 </body>
 </html>
