@@ -98,3 +98,14 @@
 /computer-repairs-nerang.html                           /computer-repairs-gold-coast.html                            301
 /computer-repairs-bundall.html                          /computer-repairs-gold-coast.html                            301
 /computer-repairs-coomera.html                          /computer-repairs-gold-coast.html                            301
+
+# Old suburb computer repair pages
+/computer-repairs-upper-coomera.html    /computer-repairs-gold-coast.html                            301
+/computer-repairs-palm-beach.html       /computer-repairs-gold-coast.html                            301
+/computer-repairs-varsity-lakes.html    /computer-repairs-gold-coast.html                            301
+/computer-repairs-pacific-pines.html    /computer-repairs-gold-coast.html                            301
+/computer-repairs-paradise-point.html   /computer-repairs-gold-coast.html                            301
+# Old support subdirectory page
+/support/sydney.html                    /support.html                                                301
+# Old blog post — redirect to relevant service page
+/blog/optimising-home-wifi-remote-work-gold-coast.html   /home-wifi-setup-and-troubleshooting-gold-coast.html   301
