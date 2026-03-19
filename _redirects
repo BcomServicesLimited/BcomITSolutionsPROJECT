@@ -61,3 +61,40 @@
 /computer-repairs-pimpama.html                               /computer-repairs-gold-coast.html                301
 /computer-support-currumbin.html                             /computer-repairs-gold-coast.html                301
 /support/index.html                                          /support.html                                    301
+
+# No-.html variants of live pages -> canonical .html URLs
+/home-wifi-setup-and-troubleshooting-gold-coast         /home-wifi-setup-and-troubleshooting-gold-coast.html         301
+/it-support-and-services-gold-coast                     /it-support-and-services-gold-coast.html                     301
+/cloud-computing-service-gold-coast                     /cloud-computing-service-gold-coast.html                     301
+/computer-networking-service-gold-coast                 /computer-networking-service-gold-coast.html                 301
+/privacy-policy                                         /privacy-policy.html                                         301
+/managed-it-services-for-small-businesses-gold-coast    /managed-it-services-for-small-businesses-gold-coast.html    301
+/data-backup-recovery-gold-coast                        /data-backup-recovery-gold-coast.html                        301
+/hardware-software-troubleshooting-gold-coast           /hardware-software-troubleshooting-gold-coast.html           301
+/router-and-modem-configuration-gold-coast              /router-and-modem-configuration-gold-coast.html              301
+/network-security-and-firewall-configuration-gold-coast /network-security-and-firewall-configuration-gold-coast.html 301
+/voip-phone-system-installation-and-support-gold-coast  /voip-phone-system-installation-and-support-gold-coast.html  301
+/network-cabling-for-offices-gold-coast                 /network-cabling-for-offices-gold-coast.html                 301
+/terms-and-conditions                                   /terms-and-conditions.html                                   301
+/computer-repairs-gold-coast                            /computer-repairs-gold-coast.html                            301
+
+# No-.html variants of already-redirected old slugs
+/microsoft-365-setup-and-support-gold-coast             /cloud-computing-service-gold-coast.html                     301
+/macbook-repairs-and-support-gold-coast                 /on-site-computer-repair-gold-coast.html                     301
+/seo-service-gold-coast                                 /it-consulting-strategy-gold-coast.html                      301
+/software-company-gold-coast                            /software-recommendations-gold-coast.html                    301
+/ubiquiti-business-wifi-gold-coast                      /mesh-network-setup-gold-coast.html                          301
+/operating-system-upgrades-windows-macos-gold-coast     /os-troubleshooting-repair-gold-coast.html                   301
+/telecommunications-service-provider-gold-coast         /telecommunications-contractor-gold-coast.html               301
+/ux-design-gold-coast                                   /it-consulting-strategy-gold-coast.html                      301
+
+# Old dead pages with no current redirect
+/services.html                                          /it-support-and-services-gold-coast.html                     301
+/blog.html                                              /index.html                                                  301
+/southern-gold-coast-computer-repairs.html              /computer-repairs-gold-coast.html                            301
+/northern-gold-coast-computer-repairs.html              /computer-repairs-gold-coast.html                            301
+/computer-repairs-southport.html                        /computer-repairs-gold-coast.html                            301
+/computer-repairs-surfers-paradise.html                 /computer-repairs-gold-coast.html                            301
+/computer-repairs-nerang.html                           /computer-repairs-gold-coast.html                            301
+/computer-repairs-bundall.html                          /computer-repairs-gold-coast.html                            301
+/computer-repairs-coomera.html                          /computer-repairs-gold-coast.html                            301
