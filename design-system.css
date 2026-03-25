@@ -620,6 +620,11 @@ section {
 }
 .mega-footer-note [data-lucide] { width: 12px; height: 12px; stroke: #22c55e; }
 
+/* ── BODY SCROLL LOCK when mobile nav is open ── */
+body.nav-open {
+  overflow: hidden;
+}
+
 /* ── HAMBURGER (mobile) ── */
 .nav-hamburger {
   display: none; background: none; border: none;
@@ -638,7 +643,12 @@ section {
     background: white; box-shadow: 0 8px 24px rgba(0,0,0,0.1);
     padding: 12px 0; gap: 0; z-index: 998;
   }
-  .nav-links.open { display: flex; }
+  .nav-links.open {
+    display: flex;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    max-height: calc(100vh - 70px);
+  }
   .nav-link { padding: 12px 24px; border-radius: 0; font-size: 0.95rem; }
   .nav-link::after { display: none; }
   .mega-panel {
@@ -650,6 +660,9 @@ section {
     opacity: 1; visibility: visible; pointer-events: auto;
     transition: none;
     display: none;
+    overflow-y: visible;
+    height: auto;
+    max-height: none;
   }
   .mega-panel.mobile-open { display: block; }
   .mega-cols.cols-2,

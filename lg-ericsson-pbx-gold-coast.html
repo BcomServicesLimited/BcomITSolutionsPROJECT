@@ -703,6 +703,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   if (hamburger && navLinks) {
     hamburger.addEventListener('click', function () {
       var open = navLinks.classList.toggle('open');
+      document.body.classList.toggle('nav-open', open);
       hamburger.setAttribute('aria-expanded', open);
     });
   }
