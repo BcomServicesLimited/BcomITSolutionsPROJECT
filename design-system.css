@@ -192,6 +192,7 @@ section {
 .btn-ghost {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 8px;
   padding: 10px 24px;
   border-radius: 8px;
