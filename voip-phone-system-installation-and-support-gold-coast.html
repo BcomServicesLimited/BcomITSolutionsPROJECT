@@ -2170,21 +2170,23 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </style>
 
 
-  <script>lucide.createIcons();
-  // FAQ Voip accordion
-  (function () {
-    var items = document.querySelectorAll('.faq-voip-item');
-    items.forEach(function (item) {
-      var btn    = item.querySelector('.faq-voip-question');
-      var answer = item.querySelector('.faq-voip-answer');
-      btn.addEventListener('click', function () {
-        var isOpen = item.classList.contains('open');
-        items.forEach(function (i) { i.classList.remove('open'); i.querySelector('.faq-voip-question').setAttribute('aria-expanded','false'); i.querySelector('.faq-voip-answer').hidden = true; });
-        if (!isOpen) { item.classList.add('open'); btn.setAttribute('aria-expanded','true'); answer.hidden = false; }
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    if (typeof lucide !== 'undefined') { lucide.createIcons(); }
+    // FAQ Voip accordion
+    (function () {
+      var items = document.querySelectorAll('.faq-voip-item');
+      items.forEach(function (item) {
+        var btn    = item.querySelector('.faq-voip-question');
+        var answer = item.querySelector('.faq-voip-answer');
+        btn.addEventListener('click', function () {
+          var isOpen = item.classList.contains('open');
+          items.forEach(function (i) { i.classList.remove('open'); i.querySelector('.faq-voip-question').setAttribute('aria-expanded','false'); i.querySelector('.faq-voip-answer').hidden = true; });
+          if (!isOpen) { item.classList.add('open'); btn.setAttribute('aria-expanded','true'); answer.hidden = false; }
+        });
       });
-    });
-  })();
-
+    })();
+  });
   </script>
 </body>
 </html>

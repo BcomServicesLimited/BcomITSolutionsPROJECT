@@ -970,6 +970,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   (function(){var els=document.querySelectorAll('.fade-up');var obs=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target);}});},{threshold:0.15});els.forEach(function(el){obs.observe(el);});})();
   (function(){var items=document.querySelectorAll('.faq-item');items.forEach(function(item){var btn=item.querySelector('.faq-question');var answer=item.querySelector('.faq-answer');btn.addEventListener('click',function(){var isOpen=item.classList.contains('open');items.forEach(function(i){i.classList.remove('open');i.querySelector('.faq-question').setAttribute('aria-expanded','false');i.querySelector('.faq-answer').hidden=true;});if(!isOpen){item.classList.add('open');btn.setAttribute('aria-expanded','true');answer.hidden=false;}});});})();
   </script>
-  <script>lucide.createIcons();</script>
+  <script>document.addEventListener("DOMContentLoaded",function(){if(typeof lucide!=="undefined"){lucide.createIcons();}});</script>
 </body>
 </html>
