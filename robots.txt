@@ -5,3 +5,23 @@ Disallow: /tech-tips-template.html
 Allow: /llms.txt
 
 Sitemap: https://www.bcomservices.com/sitemap.xml
+
+# AI retrieval bots — allow for citations in AI search results
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# AI training bots — allow for brand awareness in AI models
+User-agent: GPTBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
