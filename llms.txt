@@ -18,23 +18,23 @@ Sitemap: https://www.bcomservices.com/sitemap.xml
 
 - [IT Support and Services](https://www.bcomservices.com/it-support-and-services-gold-coast.html): IT support and services for Gold Coast businesses and home users — on-site, remote and managed IT support.
 - [Computer Consultant](https://www.bcomservices.com/computer-consultant-gold-coast.html): IT consulting for Gold Coast businesses — independent advice on technology, systems and IT strategy.
-- [IT Consulting and Strategy](https://www.bcomservices.com/it-consulting-strategy-gold-coast.html): IT consulting and strategy for Gold Coast small businesses — technology planning, stack reviews and IT roadmaps.
+- [IT Consulting and Strategy](https://www.bcomservices.com/it-consulting-strategy-gold-coast.html): Independent IT consulting and strategy for Gold Coast small businesses — no vendor bias, technology planning, stack reviews, and IT roadmaps.
 - [IT Needs Assessment](https://www.bcomservices.com/it-needs-assessment-gold-coast.html): IT needs assessment for Gold Coast businesses — structured review of current systems, risks and technology gaps.
-- [Managed IT Services](https://www.bcomservices.com/managed-it-services-for-small-businesses-gold-coast.html): Managed IT services for Gold Coast small businesses — proactive monitoring, support and maintenance.
+- [Managed IT Services](https://www.bcomservices.com/managed-it-services-for-small-businesses-gold-coast.html): Managed IT services for Gold Coast small businesses — proactive monitoring, unlimited support, predictable pricing, and maintenance vs break-fix comparison.
 - [Remote IT Support](https://www.bcomservices.com/remote-it-support-gold-coast.html): Remote IT support for Gold Coast homes and businesses — fast, secure remote assistance without a site visit.
 - [On-Site Technical Support](https://www.bcomservices.com/on-site-technical-support-gold-coast.html): On-site technical support for Gold Coast businesses — hands-on IT help at your premises.
 - [Technology Procurement Advice](https://www.bcomservices.com/technology-procurement-advice-gold-coast.html): Technology procurement advice for Gold Coast businesses — independent hardware and software sourcing guidance.
 
 ## Computer Repair
 
-- [Computer Repairs](https://www.bcomservices.com/computer-repairs-gold-coast.html): Computer repairs for Gold Coast homes and businesses — laptops, desktops, hardware faults and software issues.
+- [Computer Repairs](https://www.bcomservices.com/computer-repairs-gold-coast.html): Comprehensive on-site computer repair services for Gold Coast residents, covering hardware faults, software issues, virus removal, and data recovery with a no fix, no fee guarantee.
 - [On-Site Computer Repair](https://www.bcomservices.com/on-site-computer-repair-gold-coast.html): On-site computer repair for Gold Coast — technician visits to diagnose and fix computers at your location.
 - [OS Troubleshooting and Repair](https://www.bcomservices.com/os-troubleshooting-repair-gold-coast.html): Operating system troubleshooting and repair for Gold Coast — Windows and macOS faults, crashes and recovery.
 - [Hardware and Software Troubleshooting](https://www.bcomservices.com/hardware-software-troubleshooting-gold-coast.html): Hardware and software troubleshooting for Gold Coast — diagnosis and repair of hardware faults and software conflicts.
 - [Performance Optimisation](https://www.bcomservices.com/performance-optimisation-gold-coast.html): Computer performance optimisation for Gold Coast — speed improvements, startup fixes and system tuning.
 - [Virus and Malware Removal](https://www.bcomservices.com/virus-and-malware-removal-services-gold-coast.html): Virus and malware removal for Gold Coast — safe removal of infections, ransomware and unwanted software.
 - [Data Backup and Recovery](https://www.bcomservices.com/data-backup-recovery-gold-coast.html): Data backup and recovery for Gold Coast — backup setup, data recovery and disaster recovery planning.
-- [Software Installation and Configuration](https://www.bcomservices.com/software-installation-configuration-gold-coast.html): Software installation and configuration for Gold Coast — setup and configuration of business and personal software.
+- [Software Installation and Configuration](https://www.bcomservices.com/software-installation-configuration-gold-coast.html): Software installation, configuration, and rapid troubleshooting for Gold Coast — setup of complex business applications and personal software.
 - [Software Recommendations](https://www.bcomservices.com/software-recommendations-gold-coast.html): Software recommendations and stack reviews for Gold Coast businesses — independent advice on the right tools.
 
 ## Networking and WiFi
@@ -60,9 +60,9 @@ Sitemap: https://www.bcomservices.com/sitemap.xml
 
 ## Cybersecurity and Cloud
 
-- [Cybersecurity Health Check](https://www.bcomservices.com/cybersecurity-health-check-for-small-business-gold-coast.html): Cybersecurity health check for Gold Coast small businesses — risk assessment, vulnerability review and recommendations.
+- [Cybersecurity Health Check](https://www.bcomservices.com/cybersecurity-health-check-for-small-business-gold-coast.html): Cybersecurity health check and ransomware protection for Gold Coast small businesses — risk assessment, immutable backups, and vulnerability review.
 - [Cloud Computing Services](https://www.bcomservices.com/cloud-computing-service-gold-coast.html): Cloud computing services for Gold Coast businesses — cloud migration, Microsoft 365, Google Workspace and cloud setup.
-- [Microsoft 365 Setup](https://www.bcomservices.com/microsoft-365-setup-gold-coast.html): Microsoft 365 Business setup, migration and ongoing support for Gold Coast businesses — email, Teams, SharePoint and OneDrive.
+- [Microsoft 365 Setup](https://www.bcomservices.com/microsoft-365-setup-gold-coast.html): Microsoft 365 Business setup, migration, and hybrid work IT solutions for Gold Coast businesses — email, Teams, SharePoint, OneDrive, and Intune.
 - [Hardware Procurement and Setup](https://www.bcomservices.com/hardware-procurement-setup-gold-coast.html): Hardware procurement and setup for Gold Coast businesses — business-grade laptops, desktops, printers and networking equipment sourced and configured.
 
 ## AI Integration
