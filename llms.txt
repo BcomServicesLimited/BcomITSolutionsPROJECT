@@ -11,8 +11,8 @@ Sitemap: https://www.bcomservices.com/sitemap.xml
 
 ## Hub Pages
 
-- [Home Users](https://www.bcomservices.com/home-users.html): IT support for Gold Coast home users — computer repairs, WiFi setup, software help and remote support.
-- [Business IT Services](https://www.bcomservices.com/business.html): Business IT services for Gold Coast small and medium businesses — managed IT, consulting, networking, telecoms and AI.
+- [Home Users](https://www.bcomservices.com/home-users.html): IT support for Gold Coast home users — computer repairs, WiFi setup, software help and remote support. Covers services available, how to book, response times, and FAQs for residential customers.
+- [Business IT Services](https://www.bcomservices.com/business.html): Business IT services for Gold Coast small and medium businesses — managed IT, consulting, networking, telecoms and AI. Covers full service range, why choose Bcom, and FAQs for business customers.
 
 ## IT Support and Consulting
 
@@ -74,15 +74,15 @@ Sitemap: https://www.bcomservices.com/sitemap.xml
 
 ## About / Support / Contact
 
-- [About](https://www.bcomservices.com/about.html): About Bcom IT Solutions — locally owned Gold Coast IT support business, ABN 92 636 893 108.
-- [Support Portal](https://www.bcomservices.com/support.html): IT support portal for Bcom IT Solutions Gold Coast customers — remote access and support request.
-- [Contact](https://www.bcomservices.com/contact.html): Contact Bcom IT Solutions Gold Coast — phone, email and booking for IT support and consulting.
+- [About](https://www.bcomservices.com/about.html): About Bcom IT Solutions — locally owned Gold Coast IT support business, ABN 92 636 893 108. Covers company background, service philosophy, team, service area, and why Gold Coast homes and businesses choose Bcom.
+- [Support Portal](https://www.bcomservices.com/support.html): IT support portal for Bcom IT Solutions Gold Coast customers — remote access, support request form, response times, and what to expect from a support session.
+- [Contact](https://www.bcomservices.com/contact.html): Contact Bcom IT Solutions Gold Coast — phone 07 3041 8993, email, IT support request form, service area, response times, and FAQs about getting in touch.
 - [Privacy Policy](https://www.bcomservices.com/privacy-policy.html): Privacy policy for Bcom Services Pty Ltd — how we collect, store and use personal information.
 - [Terms and Conditions](https://www.bcomservices.com/terms-and-conditions.html): Terms and conditions for Bcom Services Pty Ltd — service terms, liability and engagement conditions.
 
 ## Industries We Support
 
-- [Industries](https://www.bcomservices.com/industries.html): IT support by industry for Gold Coast businesses — sector-specific technology solutions for hospitality, healthcare, real estate, restaurants, retail, trades and small business.
+- [Industries](https://www.bcomservices.com/industries.html): IT support by industry for Gold Coast businesses — sector-specific technology solutions for hospitality, healthcare, real estate, restaurants, retail, trades and small business. Includes industry-specific challenges, technology recommendations, and FAQs.
 - [IT Support for Hospitality](https://www.bcomservices.com/it-support-hospitality-gold-coast.html): IT support for Gold Coast hotels, motels and hospitality venues — WiFi, phone systems and cybersecurity.
 - [IT Support for Healthcare](https://www.bcomservices.com/it-support-healthcare-gold-coast.html): IT support for Gold Coast medical practices, dental clinics and allied health — cloud, phone systems and cybersecurity.
 - [IT Support for Real Estate](https://www.bcomservices.com/it-support-real-estate-gold-coast.html): IT support for Gold Coast real estate agencies and property managers — cloud, phone systems and IT consulting.
@@ -97,9 +97,9 @@ Sitemap: https://www.bcomservices.com/sitemap.xml
 - [Grandstream WiFi](https://www.bcomservices.com/grandstream-wifi-gold-coast.html): Grandstream WiFi installation for Gold Coast — GWN access point setup, cloud management and business wireless networking.
 - [TP-Link WiFi](https://www.bcomservices.com/tp-link-wifi-gold-coast.html): TP-Link WiFi installation for Gold Coast — Deco mesh, Omada business and Archer router setup and configuration.
 - [ASUS WiFi](https://www.bcomservices.com/asus-wifi-gold-coast.html): ASUS WiFi installation for Gold Coast — ZenWiFi mesh and ROG router setup, AiMesh configuration and security hardening.
-- [Netgear WiFi](https://www.bcomservices.com/netgear-wifi-gold-coast.html): Netgear WiFi installation for Gold Coast — Orbi mesh and Nighthawk router setup, Armor security and app configuration.
-- [D-Link WiFi](https://www.bcomservices.com/d-link-wifi-gold-coast.html): D-Link WiFi installation for Gold Coast — COVR mesh and EAGLE PRO AI router setup, AI band steering and guest network configuration.
-- [Linksys WiFi](https://www.bcomservices.com/linksys-wifi-gold-coast.html): Linksys WiFi installation for Gold Coast — Velop mesh and Hydra Pro router setup, intelligent mesh and device prioritisation.
+- [Netgear WiFi](https://www.bcomservices.com/netgear-wifi-gold-coast.html): Netgear WiFi installation for Gold Coast — Orbi mesh and Nighthawk router setup, Armor security and app configuration. Includes Orbi satellite sync troubleshooting, Armor security tuning, and smart home 2.4GHz configuration.
+- [D-Link WiFi](https://www.bcomservices.com/d-link-wifi-gold-coast.html): D-Link WiFi installation for Gold Coast — COVR mesh and EAGLE PRO AI router setup, AI band steering and guest network configuration. Includes NBN connection setup, COVR mesh node troubleshooting, and firmware recovery.
+- [Linksys WiFi](https://www.bcomservices.com/linksys-wifi-gold-coast.html): Linksys WiFi installation for Gold Coast — Velop mesh and Hydra Pro router setup, intelligent mesh and device prioritisation. Includes Velop setup troubleshooting, double NAT resolution, and QoS configuration.
 - [Aruba Instant On WiFi](https://www.bcomservices.com/aruba-instant-on-wifi-gold-coast.html): Aruba Instant On WiFi installation for Gold Coast — business-grade access point setup, cloud management and VLAN configuration.
 - [Synology WiFi](https://www.bcomservices.com/synology-wifi-gold-coast.html): Synology WiFi installation for Gold Coast — WRX560 and MR2200ac setup, SRM configuration, VPN Server and Threat Prevention.
 - [Google Nest WiFi](https://www.bcomservices.com/google-nest-wifi-gold-coast.html): Google Nest WiFi installation for Gold Coast — Nest WiFi Pro mesh setup, Google Home app configuration and whole-home coverage.
