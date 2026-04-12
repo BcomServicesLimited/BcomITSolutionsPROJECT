@@ -150,3 +150,31 @@ LOW: 0
 - [ ] Monitor Search Console for crawl errors after 48 hours
 
 ### Audit: COMPLETE
+
+---
+
+## Full Site Review
+### Date: 2026-04-12
+### Result: CLEAN (0 real issues remaining)
+
+| Task | Check | Result |
+|---|---|---|
+| Task 1 | Repository cleanup | CLEAN — no backup files, no duplicates, no untracked files |
+| Task 2/3 | Image audit | FIXED — 6 PNG files converted to WebP (~26MB → ~1.4MB) |
+| Task 4 | Metadata consistency | FIXED — 8 title tags corrected (1 HIGH truncated brand, 7 MEDIUM over-length) |
+| Task 5 | Phone/contact consistency | CLEAN — all pages use correct phone and support@bcomservices.com |
+| Task 6 | Brand name/copy | CLEAN — "Bcom Services Pty Ltd" in schema/footer is correct legal name |
+| Task 7 | Schema integrity | CLEAN — all JSON-LD valid, GTM present on all pages |
+| Task 8 | Internal links/navigation | FIXED — 24 broken links resolved across 4 pages |
+| Task 9 | Form/button consistency | CLEAN — all business pages use IT support modal, resi pages use Google Calendar |
+| Task 10 | CSS/design system | CLEAN — all pages have design-system.css, no emojis, no @@include |
+| Task 11 | Sitemap/robots/llms | FIXED — business-wifi-gold-coast.html added to sitemap (71 URLs total) |
+| Task 12 | Final summary | 72 pages — all GTM, canonical, meta desc, design-system, nav, no emojis, no PNG refs |
+
+**Commits in this audit:**
+- `1cf070a` — Task 2/3: Convert PNG images to WebP
+- `24be97c` — Task 4: Fix 8 page title tags
+- `442179a` — Task 8: Fix 24 broken internal links across 4 pages
+- `615bd36` — Task 11: Add business-wifi-gold-coast.html to sitemap
+
+**Note:** `index.html` reports 4 `</footer>` tags — 3 are valid HTML5 `<footer>` elements inside `<article>` review cards. Not an error.
