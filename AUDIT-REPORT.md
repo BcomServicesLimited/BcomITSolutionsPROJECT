@@ -178,3 +178,47 @@ LOW: 0
 - `615bd36` — Task 11: Add business-wifi-gold-coast.html to sitemap
 
 **Note:** `index.html` reports 4 `</footer>` tags — 3 are valid HTML5 `<footer>` elements inside `<article>` review cards. Not an error.
+
+---
+
+## SEO Improvements — April 2026
+
+**Date:** 2026-04-13
+
+### Changes Deployed
+
+| Commit | Description |
+|--------|-------------|
+| `2abb867` | Priority 1: Add street address (9 Ferny Avenue, Surfers Paradise QLD 4217) and `openingHours: Mo-Su 00:00-23:59` to LocalBusiness schema on all 69 applicable HTML pages |
+| `cb95886` | Priority 2–4: Title/meta CTR fixes, new content sections, llms.txt update |
+| `e1bad7d` | Swap Trust Badges and Google Reviews order on homepage (credentials before testimonials) |
+
+### Priority 1 — LocalBusiness Schema
+- Added `"streetAddress"`, full `PostalAddress`, and `"openingHours": "Mo-Su 00:00-23:59"` to all 69 applicable pages
+- Improves Google Local Pack eligibility and LLM entity recognition
+
+### Priority 2 — Title/Meta CTR Fixes
+- `it-support-and-services-gold-coast.html`: new title `IT Support Gold Coast | Same-Day On-Site | Bcom IT Solutions`
+- `it-support-small-business-gold-coast.html`: new title `Small Business IT Support Gold Coast | Bcom IT Solutions`
+- `microsoft-365-setup-gold-coast.html`: meta updated to lead with "migration" keyword
+
+### Priority 3 — Content Push
+- `it-support-and-services-gold-coast.html`: ~280-word section targeting "IT support Gold Coast", 24/7, no fix no fee, address mention
+- `managed-it-services-for-small-businesses-gold-coast.html`: ~250-word section targeting "managed IT services Gold Coast" and "fully managed IT services Gold Coast"
+
+### Priority 4 — llms.txt
+- Added address and 24/7 hours to header entity block
+- Updated descriptions for 4 strengthened pages
+
+### Google Search Console — www vs non-www
+- The "Preferred Domain" setting in GSC was removed by Google years ago. Google determines canonical automatically via 301 redirects, sitemaps, and canonical tags.
+- Cloudflare `_redirects` already has non-www → www 301. All canonical tags point to `https://www.bcomservices.com/...`. Sitemap URLs all use www. Code is correct.
+- **User action required:** Add a Domain Property for `bcomservices.com` in GSC (aggregates all variants). Submit sitemap under the www prefix property. Use URL Inspection to verify Google-selected canonical on key pages.
+
+### Post-Deploy Actions
+- [ ] Add Domain Property for `bcomservices.com` in Google Search Console
+- [ ] Submit sitemap under www.bcomservices.com property
+- [ ] URL Inspection on key pages — verify Google-selected canonical is www version
+- [ ] Request Indexing on any pages still showing non-www canonical
+- [ ] Recheck GSC Performance in 2–4 weeks for CTR and position improvements
+
