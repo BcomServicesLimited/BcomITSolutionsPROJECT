@@ -1,157 +1,100 @@
----
-## REPOSITORY — SINGLE SOURCE OF TRUTH
-**GitHub repository:** BcomServicesLimited/BcomITSolutionsPROJECT
-**Branch:** main
-**URL:** https://github.com/BcomServicesLimited/BcomITSolutionsPROJECT
-
-There is ONE repository for this project. Do not create,
-reference or push to any other repository.
-
-All work must be committed to this repository before
-ending any session. The local sandbox is temporary and
-resets — GitHub is the only persistent storage.
-
-Nav source of truth: index.html (nav block)
-Footer source of truth: index.html (footer block)
-
----
-
 # Bcom IT Solutions — Website Build Knowledge Base
 
 **Project:** BcomITSolutionsNEW  
-**Last updated:** 2026-03-04  
+**Last updated:** 2026-04-12  
 **Purpose:** Permanent reference for all bugs encountered, fixes applied, design decisions made, and standards established during the website build. Every future page build must reference this file alongside `CONTROL_RULES.md`.
 
 ---
 
-## 1. Asset Standards
+## 1. REPOSITORY — SINGLE SOURCE OF TRUTH
+
+**GitHub repository:** BcomServicesLimited/BcomITSolutionsPROJECT  
+**Branch:** main  
+**URL:** https://github.com/BcomServicesLimited/BcomITSolutionsPROJECT
+
+There is ONE repository for this project. Do not create, reference or push to any other repository. All work must be committed to this repository before ending any session. The local sandbox is temporary and resets — GitHub is the only persistent storage.
+
+- **Nav source of truth:** `index.html` (nav block)
+- **Footer source of truth:** `index.html` (footer block)
+
+---
+
+## 2. BRAND REFERENCE
+
+| Field | Value |
+|---|---|
+| Business Name | Bcom Services Pty Ltd |
+| Trading Name | Bcom IT Solutions |
+| ABN | 92 636 893 108 |
+| Phone | 07 3041 8993 |
+| Email | support@bcomservices.com |
+| Website | https://www.bcomservices.com |
+| Location | Gold Coast, Queensland |
+
+**Service Areas:** Southport · Burleigh Heads · Robina · Nerang · Helensvale · Coomera · Palm Beach · Varsity Lakes · Coolangatta · Surfers Paradise · Broadbeach
+
+---
+
+## 3. ASSET STANDARDS
 
 | Asset | File | Location | Notes |
 |---|---|---|---|
-| Logo (original) | `bcom-logo.jpeg` | `/bcom-assets/` | 714 × 296 px, 73.3 KB |
-| Logo (WebP) | `bcom-logo.webp` | `/bcom-assets/` | 13.7 KB — 81% smaller, use this on all pages |
-| Favicon | `BcomFavicon.gif` | `/bcom-assets/` | Animated GIF, 88 frames, 576 × 576 px |
-| Design system | `design-system.css` | `/bcom-assets/` | Single source of truth for all tokens, typography, layout, buttons, cards |
-| Nav component | `nav.html` | `/bcom-assets/` | Standalone file — must be **inlined** into each page (see Fix #1) |
-| Footer component | `footer.html` | `/bcom-assets/` | Standalone file — must be **inlined** into each page (see Fix #1) |
+| Logo (original) | `bcom-logo.jpeg` | `/assets/logo/` | 714 × 296 px, 73.3 KB |
+| Logo (WebP) | `bcom-logo.webp` | `/assets/logo/` | 13.7 KB — 81% smaller, use this on all pages |
+| Favicon | `BcomFavicon.gif` | `/assets/logo/` | Animated GIF, 88 frames, 576 × 576 px |
+| Design system | `design-system.css` | `/` (root) | Single source of truth for all tokens, typography, layout, buttons, cards |
+
+### WebP Image Format — True WebP Required
+
+All images on this site must be saved and referenced as `.webp` format. Never reference `.jpg`, `.jpeg` or `.png` files in any page HTML. All `src=` attributes for images must point to `.webp` files only.
+
+If using AI image generation tools, the output must be converted to true WebP using Pillow or similar tools, as some generators save PNG data with a `.webp` extension.
 
 ---
 
-## 1b. WebP Image Format — True WebP Required
+## 4. SHARED COMPONENT INTEGRATION RULE
 
-All images on this site must be saved and referenced as `.webp` format. The AI image generation tool (`generate_image`) saves files with a `.webp` extension but internally encodes them as **PNG data**. This causes the `file` command to report `PNG image data` even though the filename ends in `.webp`.
+### Nav and Footer Must Be Inlined, Not Referenced as Comments
 
-**Rule for all future image generation:** After every `generate_image` call, immediately convert the output to true WebP using Pillow:
+**Rule for all future pages:** Every new page (`.html`) must have the full contents of the nav block pasted directly after the GTM noscript tag, and the full contents of the footer block pasted directly before `</body>`. 
 
-```python
-from PIL import Image
-img = Image.open('path/to/image.webp')
-img.save('path/to/image.webp', 'WEBP', quality=88)
-```
-
-Verify with: `file path/to/image.webp` — output must contain `RIFF` and `Web/P image`, not `PNG image data`.
-
-**Never reference `.jpg`, `.jpeg` or `.png` files in any page HTML.** All `src=` attributes for images must point to `.webp` files only.
+Do not use `@@include` comments or `<link>` imports for these components. They must be plain HTML inlined into every file.
 
 ---
 
-## 2. Shared Component Integration Rule
+## 5. GOOGLE CALENDAR BOOKING EMBED — CRITICAL BUG
 
-### Fix #1 — Nav and Footer Must Be Inlined, Not Referenced as Comments
+### Escaped Closing Script Tags Break DOM Parsing
 
-**Problem:** `nav.html` and `footer.html` were initially inserted into `index.html` as include comments:
+**Problem:** The Google Calendar booking button embed was previously stored with escaped closing script tags (`<\/script>`). When written directly into HTML, the browser treats `<\/script>` as an unknown tag and does not close the `<script>` block, breaking the page layout.
 
-```html
-<!-- @@include('nav.html') -->
-<!-- @@include('footer.html') -->
-```
-
-These are build-tool directives (e.g., for Gulp/Parcel preprocessors) and **do not work in plain HTML**. The nav and footer were invisible in the browser.
-
-**Fix:** Use a Python script to read each component file and replace the comment placeholder with the full inlined HTML content. Scripts saved at:
-
-- `/home/ubuntu/inline_nav.py`
-- `/home/ubuntu/inline_footer.py`
-
-**Rule for all future pages:** Every new page (`.html`) must have the full contents of `nav.html` pasted directly after the GTM noscript tag, and the full contents of `footer.html` pasted directly before `</body>`. Do not use `@@include` comments or `<link>` imports for these components.
+**Rule for all future pages:** When pasting Google Calendar embed codes, always verify there are no `<\/script>` escape sequences in the HTML. Use `</script>` only.
 
 ---
 
-## 3. Google Calendar Booking Embed — Critical Bug
+## 6. HERO SECTION DESIGN STANDARDS
 
-### Fix #2 — Escaped Closing Script Tags Break DOM Parsing
-
-**Problem:** The Google Calendar booking button embed was stored with escaped closing script tags:
-
-```html
-<script src="...scheduling-button-script.js" async><\/script>
-<script>
-  ...
-<\/script>
-```
-
-The `<\/script>` escape is only valid **inside a JavaScript string literal** (to prevent the parser from ending the script block prematurely). When written directly into HTML, the browser treats `<\/script>` as an unknown tag and **does not close the `<script>` block**. As a result, everything after the first booking embed — including the entire Business services column — was consumed as raw script text and never rendered in the DOM.
-
-**Symptom:** The services section showed only one column (Residential). The Business column had zero DOM presence despite being present in the source file.
-
-**Fix:** Replace all `<\/script>` with `</script>` in every embed occurrence. There were three affected embeds in `index.html`:
-
-1. Residential booking (services section)
-2. Business booking (services section)
-3. Residential booking (service areas section)
-
-**Rule for all future pages:** When pasting Google Calendar embed codes, always verify there are no `<\/script>` escape sequences in the HTML. Use a grep check before finalising any page:
-
-```bash
-grep -n '<\\/script>' filename.html
-```
-
-The result must return zero matches.
+**Rule for all future pages with hero sections:** Use `min-height: 75vh` and overlay opacity values of `0.72` (left) / `0.58` (right) as the baseline. Adjust only if the background image is very light (increase opacity) or very dark (decrease further).
 
 ---
 
-## 4. Hero Section Design Standards
+## 7. SUBURB NAMES — NEVER JAVASCRIPT RENDERED
 
-### Fix #3 — Hero Height and Overlay Contrast
-
-**Problem:** With the sticky nav bar (utility bar ~28px + main nav 68px = ~96px total), a `min-height: 90vh` hero caused the section to appear excessively tall and pushed down the page. The overlay opacity (`0.88` / `0.75`) was also too dark, creating a harsh contrast against the white nav bar above.
-
-**Fix applied to `index.html`:**
-
-| Property | Before | After |
-|---|---|---|
-| `.hero` `min-height` | `90vh` | `75vh` |
-| `.hero-content` `padding` | `80px 0` | `56px 0` |
-| `.hero-overlay` left opacity | `rgba(30,58,95,0.88)` | `rgba(30,58,95,0.72)` |
-| `.hero-overlay` right opacity | `rgba(13,31,60,0.75)` | `rgba(13,31,60,0.58)` |
-
-**Rule for all future pages with hero sections:** Use `min-height: 75vh` and overlay opacity values of `0.72` / `0.58` as the baseline. Adjust only if the background image is very light (increase opacity) or very dark (decrease further).
+All suburb name lists (footer service areas, service areas section pills, LLM entity paragraphs) must be written as **plain HTML text**. They must never be injected via JavaScript (`innerHTML`, template literals, `document.write`, etc.). This is required for Google crawler indexing, LLM entity recognition, and accessibility.
 
 ---
 
-## 5. Services Two-Column Layout
-
-The services section uses a CSS Grid with two `.services-col` children inside `.services-columns`. The decorative centre divider (`.services-divider`) must be positioned **outside** the grid flow using `position: absolute` anchored to the `.services-section` container (which must have `position: relative`). If the divider is placed as a third grid child, it consumes a grid column and pushes the business column off-screen.
-
----
-
-## 6. Suburb Names — Never JavaScript Rendered
-
-All suburb name lists (footer service areas, service areas section pills, LLM entity paragraphs) must be written as **plain HTML text**. They must never be injected via JavaScript (`innerHTML`, template literals, `document.write`, etc.). This is required for:
-
-- Google crawler indexing (Googlebot may not execute all JS)
-- LLM entity recognition
-- Accessibility (screen readers)
-
----
-
-## 7. Page Head Template
+## 8. PAGE HEAD TEMPLATE
 
 Every page must include the following in `<head>`, in this order:
 
 ```html
 <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){...})(window,document,'script','dataLayer','GTM-KQRG3BSF');</script>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KQRG3BSF');</script>
 <!-- End Google Tag Manager -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -163,7 +106,7 @@ Every page must include the following in `<head>`, in this order:
 <meta name="description" content="...">
 <link rel="canonical" href="https://www.bcomservices.com/...">
 <!-- Favicon -->
-<link rel="icon" type="image/gif" href="BcomFavicon.gif">
+<link rel="icon" type="image/gif" href="assets/logo/BcomFavicon.gif">
 <!-- Lucide icons -->
 <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
 <!-- Design system -->
@@ -178,26 +121,7 @@ And at the very bottom of `<body>`, before `</body>`:
 
 ---
 
-## 8. Completed Pages — index.html Section Order
-
-The homepage (`index.html`) is built with sections in the following order:
-
-1. `<head>` — GTM, meta, Lucide, design-system.css
-2. GTM noscript tag
-3. **Nav** (inlined from `nav.html`)
-4. **Hero** — badge, H1, subheading, buttons, trust strip, availability card
-5. **Services** — intro, Residential column, Business column, booking embeds
-6. **Trust** — stats bar (count-up), Google reviews (3 cards), trust badges
-7. **Service Areas** — intro paragraphs, suburb pills, Google Maps embed, coverage card
-8. **FAQ** — accordion, 6 Q&As, FAQPage schema
-9. **SEO Content** — editorial text, Article schema
-10. **Closing CTA** — angled bg, buttons, reassurance row
-11. **Footer** (inlined from `footer.html`)
-12. `lucide.createIcons()` script
-
----
-
-## 9. Schema Inventory — index.html
+## 9. SCHEMA INVENTORY
 
 | Schema Type | Location | Key Values |
 |---|---|---|
@@ -206,11 +130,11 @@ The homepage (`index.html`) is built with sections in the following order:
 | `Review` (×3) | Review cards | `itemprop` markup on each card |
 | `ServiceArea` | Service areas section | 12 suburbs as `City` entities |
 | `FAQPage` | FAQ section | 6 Q&As |
-| `Article` | SEO content section | `dateModified: 2026-03-01`, `areaServed` |
+| `Article` | SEO content section | `dateModified`, `areaServed` |
 
 ---
 
-## 10. Colour & Typography Quick Reference
+## 10. COLOUR & TYPOGRAPHY QUICK REFERENCE
 
 | Token | Value | Usage |
 |---|---|---|
@@ -223,3 +147,47 @@ The homepage (`index.html`) is built with sections in the following order:
 | Very muted | `#94a3b8` | LLM entity paragraphs, helper text |
 | Body font | DM Sans | All paragraph and heading text |
 | Mono font | DM Mono | Labels, ABN, utility bar, FAQ headings |
+
+---
+
+## 11. RECENT SESSION HISTORY & DECISIONS (APRIL 2026)
+
+### Task A: Google Calendar to IT Support Modal Conversion
+- **Decision:** The Google Calendar embed (`AcZssZ21JsFI`) was removed from all 35 business-oriented pages.
+- **Replacement:** Replaced with a custom IT Support Request Modal (`#it-support-modal`) triggered by the "Book an appointment" buttons.
+- **Reason:** To capture more detailed lead information (name, email, phone, company, issue description) before booking, rather than just a calendar slot.
+- **Note:** The 22 residential pages still use the residential Google Calendar embed (`AcZssZ2z99t5`).
+
+### Task B: FormSpree Integration
+- **Decision:** The IT Support Request Modal was wired up to FormSpree (`https://formspree.io/f/xpwqkywd`).
+- **Implementation:** Added JavaScript to handle form submission, prevent default behaviour, send data via fetch, and display a success/error message within the modal.
+
+### Task C: SEO Content Injection (Page 2 Boosts)
+- **Decision:** Added targeted body content and FAQ entries to 4 pages ranking on page 2 of Google to push them to page 1.
+- **Pages Updated:**
+  - `it-consulting-strategy-gold-coast.html` (Target: "it consulting gold coast")
+  - `software-installation-configuration-gold-coast.html` (Target: "software installation and troubleshooting")
+  - `cybersecurity-health-check-for-small-business-gold-coast.html` (Target: "ransomware protection gold coast")
+  - `microsoft-365-setup-gold-coast.html` (Target: "hybrid work it solutions gold coast")
+- **Implementation:** Added 300-400 words of highly relevant, locally-optimised content to each page, matching the existing design system.
+
+### Task D: Computer Repairs Content
+- **Decision:** Added a comprehensive body content section to `computer-repairs-gold-coast.html`.
+- **Implementation:** Covered hardware/software repairs, on-site vs workshop options, and what to expect from a visit, including local suburb mentions.
+
+### Task E: Site Audit & Cleanup
+- **Decision:** Ran a full 12-point site audit across all 72 HTML pages.
+- **Fixes Applied:**
+  - Converted 6 PNG images to WebP (saving ~25MB).
+  - Fixed 8 title tags (truncated brand names, over-length).
+  - Fixed 24 broken internal links across 4 pages.
+  - Added `business-wifi-gold-coast.html` to `sitemap.xml`.
+  - Updated `llms.txt` descriptions for modified pages.
+- **Result:** Site is 100% clean with 0 remaining issues.
+
+### Global Rules Enforced
+- **Email:** All pages use `support@bcomservices.com` (including schema).
+- **Domain:** All pages use `https://www.bcomservices.com`.
+- **Social Media:** No social media icons or links exist on the site.
+- **Emojis:** No emojis are used anywhere; only Lucide SVGs.
+- **Language:** UK English spelling (e.g., "optimisation", "defence").
