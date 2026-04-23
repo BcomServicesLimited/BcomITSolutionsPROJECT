@@ -768,6 +768,120 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       margin-bottom: 0;
     }
 
+    /* ── RELATED SERVICES SECTION ── */
+    .related-services-section {
+      background: #f8fafb;
+      padding: 72px 0;
+      border-top: 1px solid #e2e8f0;
+    }
+    .related-services-header {
+      text-align: center;
+      max-width: 640px;
+      margin: 0 auto 48px;
+    }
+    .related-services-label {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.68rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #00c8e0;
+      display: block;
+      margin-bottom: 12px;
+    }
+    .related-services-header h2 {
+      font-size: 1.7rem;
+      font-weight: 700;
+      color: #0d1f3c;
+      margin-bottom: 12px;
+      line-height: 1.25;
+    }
+    .related-services-header p {
+      font-size: 0.97rem;
+      color: #4a5568;
+      line-height: 1.7;
+    }
+    .related-services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .related-card {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      padding: 28px 24px;
+      background: white;
+      border: 1px solid #e2e8f0;
+      border-top: 3px solid #00c8e0;
+      border-radius: 12px;
+      text-decoration: none;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .related-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 32px rgba(0,0,0,0.1);
+    }
+    .related-card__icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      background: rgba(0,200,224,0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      transition: background 0.2s;
+    }
+    .related-card:hover .related-card__icon {
+      background: #00c8e0;
+    }
+    .related-card__icon [data-lucide] {
+      width: 20px;
+      height: 20px;
+      stroke: #00c8e0;
+      transition: stroke 0.2s;
+    }
+    .related-card:hover .related-card__icon [data-lucide] {
+      stroke: #0d1f3c;
+    }
+    .related-card__body h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #0d1f3c;
+      margin-bottom: 8px;
+      line-height: 1.3;
+    }
+    .related-card__body p {
+      font-size: 0.88rem;
+      color: #4a5568;
+      line-height: 1.7;
+      margin-bottom: 12px;
+    }
+    .related-card__link {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: #00c8e0;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .related-card__link [data-lucide] {
+      width: 13px;
+      height: 13px;
+      transition: transform 0.15s;
+    }
+    .related-card:hover .related-card__link [data-lucide] {
+      transform: translateX(3px);
+    }
+    @media (max-width: 900px) {
+      .related-services-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 600px) {
+      .related-services-grid { grid-template-columns: 1fr; }
+      .related-services-section { padding: 48px 0; }
+    }
+
     /* ── MOBILE STICKY BAR ── */
     .mobile-sticky-bar {
       display: none;
@@ -1806,6 +1920,55 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <p>We serve businesses throughout the Gold Coast — from Southport and Broadbeach to Robina, Coomera, and Coolangatta. Our technicians know the local area, which means faster on-site response times and none of the travel charges that come with providers based in Brisbane or interstate. If your business is in Surfers Paradise, Nerang, Burleigh Heads, Palm Beach, or Varsity Lakes, we can typically reach you within two to four hours of your call.</p>
           <p>The no fix, no fee guarantee applies to every job. If we cannot resolve the issue, you do not pay a call-out charge. That commitment reflects a simple belief: you should only pay for results, not effort. It also means we only take on jobs we are confident we can fix, and we are honest when a problem falls outside our scope. Call us on <a href="tel:0730418993" style="color:#00c8e0;font-weight:600;">07 3041 8993</a> — we answer 24 hours a day.</p>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       RELATED SERVICES — Cross-links to Managed IT, Cybersecurity, M365
+       ============================================================ -->
+  <section class="related-services-section" aria-label="Related IT services Gold Coast">
+    <div class="container">
+      <div class="related-services-header fade-up">
+        <span class="related-services-label">Related Services</span>
+        <h2>Specialist IT Services for Gold Coast Businesses</h2>
+        <p>Our IT support team works alongside these specialist services to give your business complete technology coverage.</p>
+      </div>
+      <div class="related-services-grid">
+
+        <a href="managed-it-services-for-small-businesses-gold-coast.html" class="related-card fade-up">
+          <div class="related-card__icon">
+            <i data-lucide="shield-check" aria-hidden="true"></i>
+          </div>
+          <div class="related-card__body">
+            <h3>Managed IT Services Gold Coast</h3>
+            <p>Proactive monitoring, remote helpdesk and on-site support under a fixed monthly plan. Ideal for businesses that want predictable IT costs and zero downtime.</p>
+            <span class="related-card__link">Learn more <i data-lucide="arrow-right"></i></span>
+          </div>
+        </a>
+
+        <a href="cybersecurity-services-gold-coast.html" class="related-card fade-up">
+          <div class="related-card__icon">
+            <i data-lucide="lock" aria-hidden="true"></i>
+          </div>
+          <div class="related-card__body">
+            <h3>Cybersecurity Services Gold Coast</h3>
+            <p>Risk assessments, endpoint protection, MFA setup, ransomware defence and staff awareness training. Keep your business data safe from modern threats.</p>
+            <span class="related-card__link">Learn more <i data-lucide="arrow-right"></i></span>
+          </div>
+        </a>
+
+        <a href="microsoft-365-setup-gold-coast.html" class="related-card fade-up">
+          <div class="related-card__icon">
+            <i data-lucide="cloud" aria-hidden="true"></i>
+          </div>
+          <div class="related-card__body">
+            <h3>Microsoft 365 Setup Gold Coast</h3>
+            <p>Migration, configuration, user setup and ongoing support for Microsoft 365. We handle the technical side so your team can work from anywhere, securely.</p>
+            <span class="related-card__link">Learn more <i data-lucide="arrow-right"></i></span>
+          </div>
+        </a>
+
       </div>
     </div>
   </section>
