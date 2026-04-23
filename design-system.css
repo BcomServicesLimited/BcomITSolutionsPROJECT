@@ -918,3 +918,46 @@ body.nav-open {
     gap: 8px;
   }
 }
+/* ── FEATURED SERVICES ROW (mega menu) ── */
+.mega-featured {
+  padding: 10px 24px 12px;
+  border-top: 1px solid #e2e8f0;
+  background: #f8fafc;
+}
+.mega-featured-label {
+  font-family: var(--font-mono);
+  font-size: 0.67rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #94a3b8;
+  display: block;
+  margin-bottom: 8px;
+}
+.mega-featured-links {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.mega-featured-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 12px;
+  border-radius: 20px;
+  border: 1px solid rgba(0,200,224,0.3);
+  background: white;
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--navy);
+  text-decoration: none;
+  transition: background 0.15s, border-color 0.15s, color 0.15s;
+}
+.mega-featured-item:hover {
+  background: var(--cyan);
+  border-color: var(--cyan);
+  color: white;
+}
+.mega-featured-item [data-lucide] {
+  width: 13px; height: 13px; flex-shrink: 0;
+}
