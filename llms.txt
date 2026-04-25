@@ -60,6 +60,7 @@ Sitemap: https://www.bcomservices.com/sitemap.xml
 
 ## Cybersecurity and Cloud
 
+- [Cybersecurity Services](https://www.bcomservices.com/cybersecurity-services-gold-coast.html): Cybersecurity services for Gold Coast businesses — risk assessments, endpoint protection, MFA setup, ransomware defence, email security, firewall configuration and staff awareness training.
 - [Cybersecurity Health Check](https://www.bcomservices.com/cybersecurity-health-check-for-small-business-gold-coast.html): Cybersecurity health check and ransomware protection for Gold Coast small businesses — risk assessment, immutable backups, and vulnerability review.
 - [Cloud Computing Services](https://www.bcomservices.com/cloud-computing-service-gold-coast.html): Cloud computing services for Gold Coast businesses — cloud migration, Microsoft 365, Google Workspace and cloud setup.
 - [Microsoft 365 Setup](https://www.bcomservices.com/microsoft-365-setup-gold-coast.html): Microsoft 365 migration, setup and support for Gold Coast businesses — email, Teams, OneDrive and SharePoint configured fast. Covers business licensing, migration from on-premise and hybrid work solutions.
@@ -93,7 +94,7 @@ Sitemap: https://www.bcomservices.com/sitemap.xml
 
 ## Optional
 
-- [Ubiquiti UniFi WiFi](https://www.bcomservices.com/ubiquiti-unifi-wifi-gold-coast.html): Ubiquiti UniFi WiFi installation for Gold Coast — professional UniFi access point setup, controller configuration and mesh networking.
+- [Ubiquiti UniFi WiFi](https://www.bcomservices.com/ubiquiti-unifi-wifi-gold-coast.html): Ubiquiti UniFi WiFi installation for Gold Coast — professional UniFi installer supplying and configuring U6 Pro, U7 Pro, UCG-Ultra, UDM Pro and UniFi switches. WiFi 6 and WiFi 7 access point installation, VLAN setup, guest network configuration and ongoing managed network support for homes and businesses across the Gold Coast.
 - [Grandstream WiFi](https://www.bcomservices.com/grandstream-wifi-gold-coast.html): Grandstream WiFi installation for Gold Coast — GWN access point setup, cloud management and business wireless networking.
 - [TP-Link WiFi](https://www.bcomservices.com/tp-link-wifi-gold-coast.html): TP-Link WiFi installation for Gold Coast — Deco mesh, Omada business and Archer router setup and configuration.
 - [ASUS WiFi](https://www.bcomservices.com/asus-wifi-gold-coast.html): ASUS WiFi installation for Gold Coast — ZenWiFi mesh and ROG router setup, AiMesh configuration and security hardening.

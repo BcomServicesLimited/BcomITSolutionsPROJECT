@@ -4,7 +4,7 @@
   <!-- Homepage -->
   <url>
     <loc>https://www.bcomservices.com/</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-04-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -26,13 +26,13 @@
   <!-- IT Support and Consulting -->
   <url>
     <loc>https://www.bcomservices.com/it-support-and-services-gold-coast.html</loc>
-    <lastmod>2026-04-09</lastmod>
+    <lastmod>2026-04-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.bcomservices.com/computer-consultant-gold-coast.html</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-04-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -194,13 +194,13 @@
   </url>
   <url>
     <loc>https://www.bcomservices.com/telecommunications-contractor-gold-coast.html</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-04-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.bcomservices.com/voip-phone-system-installation-and-support-gold-coast.html</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-04-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -225,6 +225,12 @@
 
   <!-- Cybersecurity and Cloud -->
   <url>
+    <loc>https://www.bcomservices.com/cybersecurity-services-gold-coast.html</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.bcomservices.com/cybersecurity-health-check-for-small-business-gold-coast.html</loc>
     <lastmod>2026-04-23</lastmod>
     <changefreq>monthly</changefreq>
@@ -232,7 +238,7 @@
   </url>
   <url>
     <loc>https://www.bcomservices.com/cloud-computing-service-gold-coast.html</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-04-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -289,7 +295,7 @@
   <!-- WiFi Brand Pages -->
   <url>
     <loc>https://www.bcomservices.com/ubiquiti-unifi-wifi-gold-coast.html</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-04-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
