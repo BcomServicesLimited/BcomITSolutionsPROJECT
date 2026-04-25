@@ -8,14 +8,14 @@ https://bcomservices.com/*    https://www.bcomservices.com/:splat    301
 /it-support-southport-gold-coast.html /it-support-and-services-gold-coast.html 301
 
 /business-network-installation-and-support-gold-coast.html /network-cabling-for-offices-gold-coast.html 301
-/aruba-business-wifi-gold-coast.html /mesh-network-setup-gold-coast.html 301
-/ubiquiti-business-wifi-gold-coast.html /mesh-network-setup-gold-coast.html 301
-/ubiquiti-unifi-wifi-setup-gold-coast.html /mesh-network-setup-gold-coast.html 301
-/google-nest-wifi-setup-gold-coast.html /mesh-network-setup-gold-coast.html 301
+/aruba-business-wifi-gold-coast.html /aruba-instant-on-wifi-gold-coast.html 301
+/ubiquiti-business-wifi-gold-coast.html /ubiquiti-unifi-wifi-gold-coast.html 301
+/ubiquiti-unifi-wifi-setup-gold-coast.html /ubiquiti-unifi-wifi-gold-coast.html 301
+/google-nest-wifi-setup-gold-coast.html /google-nest-wifi-gold-coast.html 301
 
-/microsoft-365-setup-and-support-gold-coast.html /cloud-computing-service-gold-coast.html 301
-/business-email-hosting-and-support-gold-coast.html /cloud-computing-service-gold-coast.html 301
-/email-setup-and-migration-gold-coast.html /cloud-computing-service-gold-coast.html 301
+/microsoft-365-setup-and-support-gold-coast.html /microsoft-365-setup-gold-coast.html 301
+/business-email-hosting-and-support-gold-coast.html /microsoft-365-setup-gold-coast.html 301
+/email-setup-and-migration-gold-coast.html /microsoft-365-setup-gold-coast.html 301
 /software-as-a-service-gold-coast.html /cloud-computing-service-gold-coast.html 301
 /software-installation-and-troubleshooting-gold-coast.html /software-installation-configuration-gold-coast.html 301
 /software-company-gold-coast.html /software-recommendations-gold-coast.html 301
@@ -62,14 +62,12 @@ https://bcomservices.com/*    https://www.bcomservices.com/:splat    301
 /computer-support-currumbin.html                             /computer-repairs-gold-coast.html                301
 /support/index.html                                          /support.html                                    301
 
-# No-.html variants of live pages -> canonical .html URLs
-
 # No-.html variants of already-redirected old slugs
-/microsoft-365-setup-and-support-gold-coast             /cloud-computing-service-gold-coast.html                     301
+/microsoft-365-setup-and-support-gold-coast             /microsoft-365-setup-gold-coast.html                         301
 /macbook-repairs-and-support-gold-coast                 /on-site-computer-repair-gold-coast.html                     301
 /seo-service-gold-coast                                 /it-consulting-strategy-gold-coast.html                      301
 /software-company-gold-coast                            /software-recommendations-gold-coast.html                    301
-/ubiquiti-business-wifi-gold-coast                      /mesh-network-setup-gold-coast.html                          301
+/ubiquiti-business-wifi-gold-coast                      /ubiquiti-unifi-wifi-gold-coast.html                         301
 /operating-system-upgrades-windows-macos-gold-coast     /os-troubleshooting-repair-gold-coast.html                   301
 /telecommunications-service-provider-gold-coast         /telecommunications-contractor-gold-coast.html               301
 /ux-design-gold-coast                                   /it-consulting-strategy-gold-coast.html                      301
