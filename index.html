@@ -139,39 +139,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       animation: fade-up 0.5s ease forwards 0.3s;
     }
 
-    /* Hub Links */
-    .hero-hub-links {
-      display: flex;
-      align-items: center;
-      gap: 20px;
-      flex-wrap: wrap;
-      margin-top: -8px;
-      opacity: 0;
-      animation: fade-up 0.5s ease forwards 0.35s;
-    }
-    .hero-hub-links a {
-      display: inline-flex;
-      align-items: center;
-      gap: 5px;
-      font-size: 0.8rem;
-      font-weight: 500;
-      color: rgba(255,255,255,0.6);
-      text-decoration: none;
-      transition: color 0.2s;
-    }
-    .hero-hub-links a:hover { color: #00c8e0; }
-    .hero-hub-links a [data-lucide] {
-      width: 12px;
-      height: 12px;
-      stroke: #00c8e0;
-      flex-shrink: 0;
-    }
-    .hero-hub-links__divider {
-      width: 1px;
-      height: 12px;
-      background: rgba(255,255,255,0.2);
-    }
-
     /* Trust Strip */
     .hero-trust {
       display: flex;
@@ -1780,21 +1747,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
             <!-- Buttons -->
             <div class="hero-buttons">
-              <a href="tel:0730418993" class="btn-primary">
-                <i data-lucide="phone" aria-hidden="true"></i> Call 07 3041 8993
-              </a>
-              <button class="bcom-request-btn" type="button" aria-haspopup="dialog">
-                Request IT Support
-              </button>
-            </div>
-
-            <!-- Hub Links -->
-            <div class="hero-hub-links" aria-label="Browse by customer type">
-              <a href="home-users.html">
+              <a href="home-users.html" class="btn-primary">
                 <i data-lucide="home" aria-hidden="true"></i> Residential IT Services
               </a>
-              <span class="hero-hub-links__divider" aria-hidden="true"></span>
-              <a href="business.html">
+              <a href="business.html" class="btn-primary">
                 <i data-lucide="briefcase" aria-hidden="true"></i> Business IT Services
               </a>
             </div>
