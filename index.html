@@ -139,6 +139,39 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       animation: fade-up 0.5s ease forwards 0.3s;
     }
 
+    /* Hub Links */
+    .hero-hub-links {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: -8px;
+      opacity: 0;
+      animation: fade-up 0.5s ease forwards 0.35s;
+    }
+    .hero-hub-links a {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: rgba(255,255,255,0.6);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .hero-hub-links a:hover { color: #00c8e0; }
+    .hero-hub-links a [data-lucide] {
+      width: 12px;
+      height: 12px;
+      stroke: #00c8e0;
+      flex-shrink: 0;
+    }
+    .hero-hub-links__divider {
+      width: 1px;
+      height: 12px;
+      background: rgba(255,255,255,0.2);
+    }
+
     /* Trust Strip */
     .hero-trust {
       display: flex;
@@ -1755,6 +1788,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               </button>
             </div>
 
+            <!-- Hub Links -->
+            <div class="hero-hub-links" aria-label="Browse by customer type">
+              <a href="home-users.html">
+                <i data-lucide="home" aria-hidden="true"></i> Residential IT Services
+              </a>
+              <span class="hero-hub-links__divider" aria-hidden="true"></span>
+              <a href="business.html">
+                <i data-lucide="briefcase" aria-hidden="true"></i> Business IT Services
+              </a>
+            </div>
+
             <!-- Trust Strip -->
             <div class="hero-trust" role="list" aria-label="Trust indicators">
               <span class="hero-trust__item" role="listitem">
@@ -1773,53 +1817,49 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
           </div><!-- /.hero-left -->
 
-          <!-- RIGHT COLUMN — Availability Card -->
-          <div class="hero-card" role="complementary" aria-label="Availability information">
+          <!-- RIGHT COLUMN — ISO 42001 AI Governance Promo Card -->
+          <div class="hero-card" role="complementary" aria-label="ISO 42001 AI Governance service">
 
-            <div class="hero-card__title">
-              <span class="status-dot" aria-hidden="true"></span>
-              We're Available Today
+            <!-- Credential badge -->
+            <div style="display:flex;align-items:center;gap:8px;margin-bottom:18px;">
+              <span style="display:inline-flex;align-items:center;gap:6px;background:rgba(245,158,11,0.12);border:1px solid rgba(245,158,11,0.4);border-radius:20px;padding:4px 12px;font-family:'DM Mono',monospace;font-size:0.68rem;color:#f59e0b;letter-spacing:0.05em;">
+                <i data-lucide="award" aria-hidden="true" style="width:12px;height:12px;stroke:#f59e0b;"></i> BSI CERTIFIED
+              </span>
+              <span style="display:inline-flex;align-items:center;gap:6px;background:rgba(0,200,224,0.1);border:1px solid rgba(0,200,224,0.3);border-radius:20px;padding:4px 12px;font-family:'DM Mono',monospace;font-size:0.68rem;color:#00c8e0;letter-spacing:0.05em;">
+                AI GOVERNANCE
+              </span>
             </div>
 
-            <div class="hero-card__services" role="list" aria-label="Services offered">
-              <span class="hero-card__service" role="listitem">
-                <i data-lucide="wrench"></i> Computer Repair
-              </span>
-              <span class="hero-card__service" role="listitem">
-                <i data-lucide="wifi"></i> WiFi Setup
-              </span>
-              <span class="hero-card__service" role="listitem">
-                <i data-lucide="monitor"></i> IT Support
-              </span>
-              <span class="hero-card__service" role="listitem">
-                <i data-lucide="phone-call"></i> Phone Systems
-              </span>
-            </div>
+            <!-- Headline -->
+            <p style="font-family:'DM Sans',sans-serif;font-size:1.05rem;font-weight:700;color:#ffffff;line-height:1.4;margin:0 0 14px;">
+              Using AI without a governance framework is a liability.
+            </p>
 
             <hr class="hero-card__divider" aria-hidden="true">
 
-            <div class="hero-card__response">
-              <i data-lucide="clock"></i>
-              Response time: Usually within 2 hours
+            <!-- Body copy -->
+            <p style="font-family:'DM Sans',sans-serif;font-size:0.88rem;color:rgba(255,255,255,0.75);line-height:1.65;margin:0 0 20px;">
+              ISO/IEC 42001 protects your organisation, satisfies regulators, and builds stakeholder trust. Bcom is Gold Coast&rsquo;s only BSI-certified Lead Implementer.
+            </p>
+
+            <!-- Three proof points -->
+            <div style="display:flex;flex-direction:column;gap:10px;margin-bottom:24px;">
+              <span style="display:flex;align-items:center;gap:8px;font-family:'DM Mono',monospace;font-size:0.73rem;color:rgba(255,255,255,0.65);">
+                <i data-lucide="check-circle" aria-hidden="true" style="width:14px;height:14px;stroke:#00c8e0;flex-shrink:0;"></i> Gap assessment &amp; baseline review
+              </span>
+              <span style="display:flex;align-items:center;gap:8px;font-family:'DM Mono',monospace;font-size:0.73rem;color:rgba(255,255,255,0.65);">
+                <i data-lucide="check-circle" aria-hidden="true" style="width:14px;height:14px;stroke:#00c8e0;flex-shrink:0;"></i> Policy &amp; procedure development
+              </span>
+              <span style="display:flex;align-items:center;gap:8px;font-family:'DM Mono',monospace;font-size:0.73rem;color:rgba(255,255,255,0.65);">
+                <i data-lucide="check-circle" aria-hidden="true" style="width:14px;height:14px;stroke:#00c8e0;flex-shrink:0;"></i> Full AIMS implementation &amp; ongoing management
+              </span>
             </div>
 
-            <!-- Google Calendar Appointment Scheduling begin -->
-            <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
-            <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
-            <script>
-            (function() {
-              var target = document.currentScript;
-              window.addEventListener('load', function() {
-                calendar.schedulingButton.load({
-                  url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ2z99t5yQNIRoRT8rNM3Jv7-WC-MNC35owGsga-okvZmEIG167e9iLOAco3_vHaX44r6eYmGFRA?gv=true',
-                  color: '#039BE5',
-                  label: 'Book an appointment',
-                  target,
-                });
-              });
-            })();
-            </script>
-            <!-- end Google Calendar Appointment Scheduling -->
+            <!-- CTA link -->
+            <a href="iso-42001-ai-governance-gold-coast.html" style="display:inline-flex;align-items:center;gap:8px;background:#00c8e0;color:#0d1f3c;font-family:'DM Sans',sans-serif;font-size:0.88rem;font-weight:700;padding:12px 20px;border-radius:8px;text-decoration:none;width:100%;justify-content:center;box-sizing:border-box;transition:background 0.2s;" onmouseover="this.style.background='#00b0c8'" onmouseout="this.style.background='#00c8e0'">
+              <i data-lucide="arrow-right" aria-hidden="true" style="width:15px;height:15px;"></i>
+              What ISO 42001 means for your business
+            </a>
 
           </div><!-- /.hero-card -->
 
