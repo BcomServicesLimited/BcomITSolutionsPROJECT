@@ -4,7 +4,7 @@
   <!-- Homepage -->
   <url>
     <loc>https://www.bcomservices.com/</loc>
-    <lastmod>2026-04-25</lastmod>
+    <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -12,13 +12,13 @@
   <!-- Hub pages -->
   <url>
     <loc>https://www.bcomservices.com/business.html</loc>
-    <lastmod>2026-04-09</lastmod>
+    <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.bcomservices.com/home-users.html</loc>
-    <lastmod>2026-04-09</lastmod>
+    <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -26,7 +26,7 @@
   <!-- IT Support and Consulting -->
   <url>
     <loc>https://www.bcomservices.com/it-support-and-services-gold-coast.html</loc>
-    <lastmod>2026-04-25</lastmod>
+    <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -200,13 +200,13 @@
   </url>
   <url>
     <loc>https://www.bcomservices.com/voip-phone-system-installation-and-support-gold-coast.html</loc>
-    <lastmod>2026-04-25</lastmod>
+    <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.bcomservices.com/business-phone-systems-gold-coast.html</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -226,7 +226,7 @@
   <!-- Cybersecurity and Cloud -->
   <url>
     <loc>https://www.bcomservices.com/cybersecurity-services-gold-coast.html</loc>
-    <lastmod>2026-04-25</lastmod>
+    <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -261,19 +261,19 @@
   <!-- About / Support / Contact -->
   <url>
     <loc>https://www.bcomservices.com/about.html</loc>
-    <lastmod>2026-04-09</lastmod>
+    <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.bcomservices.com/support.html</loc>
-    <lastmod>2026-04-09</lastmod>
+    <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.bcomservices.com/contact.html</loc>
-    <lastmod>2026-04-09</lastmod>
+    <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -389,7 +389,7 @@
   <!-- Industries Pages -->
   <url>
     <loc>https://www.bcomservices.com/industries.html</loc>
-    <lastmod>2026-04-09</lastmod>
+    <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
