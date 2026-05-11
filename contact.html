@@ -111,301 +111,48 @@
 </script>
 
  <style>
- /* ============================================================
- CONTACT PAGE — OPTION D REDESIGN
- Open asymmetric grid · Editorial type · Restrained colour
- Header / footer / nav: UNTOUCHED
- ============================================================ */
+ /* ── Contact Hero ── */
+ .contact-hero { background:#f8fafb; padding:60px 0; text-align:center; }
+ .contact-hero .container { max-width:720px; margin:0 auto; padding:0 24px; }
+ .contact-hero h1 { font-size:clamp(1.9rem,4vw,2.8rem); font-weight:800; color:#0d1f3c; line-height:1.15; margin:0 0 16px; }
+ .contact-hero .hero-sub { font-size:1.05rem; color:#4a5568; margin:0 0 24px; line-height:1.7; }
+ .contact-avail { display:inline-flex; align-items:center; gap:8px; font-family:'DM Mono',monospace; font-size:0.78rem; color:#4a5568; background:#e6fafd; padding:6px 16px; border-radius:20px; }
 
- /* ── Design tokens ── */
- :root {
- --brand-blue: #1a3fbe;
- --navy: #0d1f3c;
- --slate: #334155;
- --muted: #64748b;
- --rule: #e2e8f0;
- --bg-off: #f7f8fa;
- --font-sans: 'DM Sans', sans-serif;
- --font-mono: 'DM Mono', monospace;
- }
-
- /* ── Contact Hero — asymmetric, generous whitespace ── */
- .contact-hero {
- background: #fff;
- padding: 96px 0 80px;
- }
- .contact-hero .container {
- max-width: 1160px;
- margin: 0 auto;
- padding: 0 48px;
- display: grid;
- grid-template-columns: 1fr 1fr;
- gap: 64px;
- align-items: center;
- }
- .contact-hero__left {}
- .contact-hero__eyebrow {
- display: inline-block;
- font-family: var(--font-mono);
- font-size: 0.72rem;
- font-weight: 600;
- letter-spacing: 0.12em;
- text-transform: uppercase;
- color: var(--brand-blue);
- margin-bottom: 20px;
- }
- .contact-hero h1 {
- font-family: var(--font-sans);
- font-size: clamp(2.4rem, 4.5vw, 3.6rem);
- font-weight: 800;
- color: var(--navy);
- line-height: 1.08;
- letter-spacing: -0.03em;
- margin: 0 0 24px;
- }
- .contact-hero h1 em {
- font-style: normal;
- color: var(--brand-blue);
- }
- .contact-hero .hero-sub {
- font-size: 1.05rem;
- color: var(--slate);
- line-height: 1.75;
- margin: 0 0 32px;
- max-width: 440px;
- }
- .contact-avail {
- display: inline-flex;
- align-items: center;
- gap: 8px;
- font-family: var(--font-mono);
- font-size: 0.72rem;
- letter-spacing: 0.04em;
- color: var(--muted);
- }
- .status-dot {
- width: 8px;
- height: 8px;
- border-radius: 50%;
- background: #22c55e;
- display: inline-block;
- box-shadow: 0 0 0 3px rgba(34,197,94,0.2);
- }
- .contact-hero__right {
- display: flex;
- flex-direction: column;
- gap: 0;
- }
-
- /* ── Contact Method List (replaces cards) ── */
- .contact-methods {
- background: #fff;
- padding: 0;
- }
- .contact-methods .container {
- max-width: 1160px;
- margin: 0 auto;
- padding: 0 48px;
- }
- .method-list {
- display: flex;
- flex-direction: column;
- border: 1px solid var(--rule);
- border-radius: 16px;
- overflow: hidden;
- }
- .method-row {
- display: grid;
- grid-template-columns: 48px 1fr auto;
- align-items: center;
- gap: 24px;
- padding: 28px 32px;
- border-bottom: 1px solid var(--rule);
- background: #fff;
- transition: background 0.15s;
- }
- .method-row:last-child { border-bottom: none; }
- .method-row:hover { background: var(--bg-off); }
- .method-row__icon {
- width: 48px;
- height: 48px;
- border-radius: 12px;
- background: #eef2ff;
- display: flex;
- align-items: center;
- justify-content: center;
- flex-shrink: 0;
- }
- .method-row__icon [data-lucide] {
- width: 22px;
- height: 22px;
- stroke: var(--brand-blue);
- }
- .method-row__body {}
- .method-row__label {
- font-family: var(--font-mono);
- font-size: 0.68rem;
- font-weight: 600;
- letter-spacing: 0.1em;
- text-transform: uppercase;
- color: var(--brand-blue);
- margin-bottom: 4px;
- }
- .method-row h3 {
- font-size: 1rem;
- font-weight: 700;
- color: var(--navy);
- margin: 0 0 2px;
- }
- .method-row__sub {
- font-size: 0.85rem;
- color: var(--muted);
- margin: 0;
- }
- .method-card__btn {
- display: inline-flex;
- align-items: center;
- gap: 8px;
- padding: 10px 22px;
- background: var(--brand-blue);
- color: #fff;
- font-family: var(--font-sans);
- font-size: 0.88rem;
- font-weight: 600;
- border-radius: 8px;
- text-decoration: none;
- white-space: nowrap;
- transition: background 0.15s;
- }
- .method-card__btn:hover { background: #1535a0; color: #fff; }
- .method-card__btn [data-lucide] { width: 15px; height: 15px; stroke: #fff; }
- .method-card__spacer { display: none; }
-
- /* ── Divider between hero+methods and map ── */
- .contact-section-gap { height: 80px; }
+ /* ── Contact Method Cards ── */
+ .contact-methods { background:#fff; padding:56px 0; }
+ .contact-methods .container { max-width:1100px; margin:0 auto; padding:0 24px; }
+ .method-cards { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; align-items:stretch; }
+ .method-card { background:#fff; border-radius:14px; padding:32px 28px; border:1px solid #e2e8f0; display:flex; flex-direction:column; align-items:flex-start; gap:12px; height:100%; box-sizing:border-box; }
+ .method-card__spacer { flex:1; }
+ .method-card__icon { width:48px; height:48px; background:#e6fafd; border-radius:12px; display:flex; align-items:center; justify-content:center; }
+ .method-card__icon [data-lucide] { width:22px; height:22px; stroke:#00c8e0; }
+ .method-card h3 { font-size:1.05rem; font-weight:700; color:#0d1f3c; margin:0; }
+ .method-card__detail { font-size:0.95rem; color:#0d1f3c; font-weight:500; margin:0; }
+ .method-card__sub { font-size:0.85rem; color:#64748b; line-height:1.5; margin:0; }
+ .method-card__btn { display:inline-flex; align-items:center; gap:8px; margin-top:auto; padding:10px 22px; background:#039BE5; color:#fff; font-family:'DM Sans',sans-serif; font-size:0.9rem; font-weight:600; border-radius:6px; text-decoration:none; transition:background 0.15s; }
+ .method-card__btn:hover { background:#0288d1; color:#fff; }
+ .method-card__btn [data-lucide] { width:16px; height:16px; stroke:#fff; }
 
  /* ── Map Section ── */
- .map-section {
- background: var(--bg-off);
- padding: 80px 0;
- }
- .map-section .container {
- max-width: 1160px;
- margin: 0 auto;
- padding: 0 48px;
- }
- .map-section__header {
- display: flex;
- align-items: baseline;
- gap: 16px;
- margin-bottom: 28px;
- }
- .map-section__eyebrow {
- font-family: var(--font-mono);
- font-size: 0.68rem;
- font-weight: 600;
- letter-spacing: 0.12em;
- text-transform: uppercase;
- color: var(--brand-blue);
- }
- .map-section h2 {
- font-size: clamp(1.5rem, 2.5vw, 2rem);
- font-weight: 700;
- color: var(--navy);
- letter-spacing: -0.02em;
- margin: 0;
- }
- .map-address {
- font-family: var(--font-mono);
- font-size: 0.72rem;
- color: var(--muted);
- margin-top: 16px;
- }
+ .map-section { background:#f8fafb; padding:56px 0; border-top:1px solid #e2e8f0; }
+ .map-section .container { max-width:1100px; margin:0 auto; padding:0 24px; }
+ .map-section h2 { font-size:clamp(1.4rem,3vw,2rem); font-weight:700; color:#0d1f3c; margin:0 0 20px; }
+ .map-address { font-family:'DM Mono',monospace; font-size:0.75rem; color:#94a3b8; margin-top:12px; }
 
  /* ── Service Areas ── */
- .service-areas {
- background: #fff;
- padding: 64px 0;
- }
- .service-areas .container {
- max-width: 1160px;
- margin: 0 auto;
- padding: 0 48px;
- }
- .service-areas__header {
- margin-bottom: 28px;
- }
- .service-areas__eyebrow {
- font-family: var(--font-mono);
- font-size: 0.68rem;
- font-weight: 600;
- letter-spacing: 0.12em;
- text-transform: uppercase;
- color: var(--brand-blue);
- display: block;
- margin-bottom: 8px;
- }
- .service-areas h2 {
- font-size: clamp(1.3rem, 2vw, 1.75rem);
- font-weight: 700;
- color: var(--navy);
- letter-spacing: -0.02em;
- margin: 0;
- }
- .suburb-pills {
- display: flex;
- flex-wrap: wrap;
- gap: 10px;
- }
- .suburb-pill {
- display: inline-flex;
- align-items: center;
- background: #f0f4ff;
- border: 1px solid #d0d9f5;
- border-radius: 20px;
- padding: 7px 16px;
- font-size: 0.85rem;
- color: var(--navy);
- font-weight: 500;
- white-space: nowrap;
- }
+ .service-areas { background:#fff; padding:40px 0; border-top:1px solid #e2e8f0; }
+ .service-areas .container { max-width:1100px; margin:0 auto; padding:0 24px; }
+ .service-areas h2 { font-size:clamp(1.2rem,2.5vw,1.6rem); font-weight:700; color:#0d1f3c; margin:0 0 24px; }
+ .suburb-pills { display:flex; flex-wrap:wrap; gap:10px; }
+ .suburb-pill { display:inline-flex; align-items:center; background:#f0f9fb; border:1px solid #e2e8f0; border-radius:20px; padding:7px 16px; font-size:0.85rem; color:#0d1f3c; font-weight:500; white-space:nowrap; }
 
  /* ── btn-outline ── */
- .btn-outline {
- display: inline-flex;
- align-items: center;
- gap: 8px;
- padding: 11px 22px;
- border: 2px solid var(--brand-blue);
- border-radius: 8px;
- background: transparent;
- color: var(--navy);
- font-family: var(--font-sans);
- font-size: 0.9rem;
- font-weight: 600;
- text-decoration: none;
- cursor: pointer;
- transition: background 0.15s, color 0.15s;
- }
- .btn-outline:hover { background: var(--brand-blue); color: #fff; }
+ .btn-outline { display:inline-flex; align-items:center; gap:8px; padding:11px 22px; border:2px solid #00c8e0; border-radius:8px; background:transparent; color:#0d1f3c; font-family:'DM Sans',sans-serif; font-size:0.9rem; font-weight:600; text-decoration:none; cursor:pointer; transition:background 0.15s,color 0.15s; }
+ .btn-outline:hover { background:#00c8e0; color:#0d1f3c; }
 
  /* ── Responsive ── */
- @media (max-width: 960px) {
- .contact-hero .container { grid-template-columns: 1fr; gap: 40px; padding: 0 32px; }
- .contact-hero { padding: 64px 0 48px; }
- .contact-methods .container { padding: 0 32px; }
- .method-row { grid-template-columns: 40px 1fr; gap: 16px; padding: 20px 24px; }
- .method-row .method-card__btn { display: none; }
- .map-section .container,
- .service-areas .container { padding: 0 32px; }
- }
- @media (max-width: 600px) {
- .contact-hero .container,
- .contact-methods .container,
- .map-section .container,
- .service-areas .container { padding: 0 20px; }
- .method-row { padding: 18px 20px; }
- }
+ @media (max-width:960px) { .method-cards { grid-template-columns:1fr 1fr; } }
+ @media (max-width:600px) { .method-cards { grid-template-columns:1fr; } }
  </style>
  <meta name="robots" content="max-image-preview:large">
 
@@ -1074,79 +821,65 @@
  });
 })();
 </script>
- <!-- SECTION 1 — HERO (Option D) -->
+ <!-- SECTION 1 — HERO -->
  <section class="contact-hero" aria-label="Contact bcom ICT">
  <div class="container">
-
- <div class="contact-hero__left">
- <span class="contact-hero__eyebrow">Get in Touch</span>
- <h1>Contact <em>bcom ICT</em></h1>
- <p class="hero-sub">Gold Coast IT support &mdash; call, email, or book online. Fast response, local team, no call centres.</p>
+ <h1>Contact <span class="text-gradient">bcom ICT</span></h1>
+ <p class="hero-sub">Gold Coast IT support &mdash; call, email, or book online.<br>Fast response, local team, no call centres.</p>
  <span class="contact-avail">
  <span class="status-dot" aria-hidden="true"></span>
  Available Now &mdash; Mon&ndash;Fri 8am&ndash;5pm
  </span>
  </div>
+ </section>
 
- <div class="contact-hero__right">
- <!-- SECTION 2 — CONTACT METHODS (inline in hero right column) -->
- <div class="method-list" role="list">
+ <!-- SECTION 2 — CONTACT METHODS -->
+ <section class="contact-methods" aria-labelledby="methods-heading">
+ <div class="container">
+ <div class="method-cards">
 
- <div class="method-row" role="listitem">
- <div class="method-row__icon"><i data-lucide="phone" aria-hidden="true"></i></div>
- <div class="method-row__body">
- <div class="method-row__label">Phone</div>
- <h3>07 3041 8993</h3>
- <p class="method-row__sub">Mon&ndash;Fri 8am&ndash;5pm &middot; Sat by appointment</p>
- </div>
+ <div class="method-card">
+ <div class="method-card__icon"><i data-lucide="phone" aria-hidden="true"></i></div>
+ <h3>Call Us</h3>
+ <p class="method-card__detail">07 3041 8993</p>
+ <p class="method-card__sub">Mon&ndash;Fri 8am&ndash;5pm &middot; Sat by appointment</p>
+ <div class="method-card__spacer"></div>
  <a href="tel:0730418993" class="method-card__btn" aria-label="Call bcom ICT">
  <i data-lucide="phone" aria-hidden="true"></i> Call now
  </a>
  </div>
 
- <div class="method-row" role="listitem">
- <div class="method-row__icon"><i data-lucide="mail" aria-hidden="true"></i></div>
- <div class="method-row__body">
- <div class="method-row__label">Email</div>
- <h3>support@bcomservices.com</h3>
- <p class="method-row__sub">Replies within 2 business hours</p>
- </div>
+ <div class="method-card">
+ <div class="method-card__icon"><i data-lucide="mail" aria-hidden="true"></i></div>
+ <h3>Email Us</h3>
+ <p class="method-card__detail">support@bcomservices.com</p>
+ <p class="method-card__sub">Replies within 2 business hours</p>
+ <div class="method-card__spacer"></div>
  <a href="mailto:support@bcomservices.com" class="method-card__btn" aria-label="Email bcom ICT">
  <i data-lucide="mail" aria-hidden="true"></i> Send email
  </a>
  </div>
 
- <div class="method-row" role="listitem">
- <div class="method-row__icon"><i data-lucide="calendar" aria-hidden="true"></i></div>
- <div class="method-row__body">
- <div class="method-row__label">Book Online</div>
- <h3>Request a Callback</h3>
- <p class="method-row__sub">We call you back within 1 hour</p>
- </div>
- <button class="method-card__btn bcom-request-btn" type="button" aria-haspopup="dialog">
- <i data-lucide="calendar" aria-hidden="true"></i> Book now
- </button>
- </div>
-
- </div>
+ <div class="method-card">
+ <div class="method-card__icon"><i data-lucide="calendar" aria-hidden="true"></i></div>
+ <h3>Book Online</h3>
+ <p class="method-card__sub">Choose a time that suits you</p>
+ <div class="method-card__spacer"></div>
+<!-- IT Support Request Button -->
+<button class="bcom-request-btn" type="button"
+ aria-haspopup="dialog">
+ Request a Callback
+</button>
  </div>
 
+ </div>
  </div>
  </section>
-
- <!-- spacer between hero and map -->
- <div class="contact-section-gap" aria-hidden="true"></div>
-
- <!-- placeholder so existing section references still work -->
- <section class="contact-methods" aria-labelledby="methods-heading" style="display:none;"></section>
 
  <!-- SECTION 3 — MAP -->
  <section class="map-section" aria-labelledby="map-heading">
  <div class="container">
- <div class="map-section__header">
- <span class="map-section__eyebrow">Service Area</span>
- <h2 id="map-heading">Gold Coast &amp; Surrounds</h2>
- </div>
+ <h2 id="map-heading">Our Service Area</h2>
  <iframe
  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d451109.88017319166!2d153.36936139999997!3d-27.9542216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2bf15c9da94c225d%3A0x9a906dab1cca3727!2sBcom%20IT%20Solutions%20%7C%20IT%20Support%20and%20Services%20Gold%20Coast!5e0!3m2!1sen!2sau!4v1772527730869!5m2!1sen!2sau"
  width="100%"
@@ -1164,10 +897,7 @@
  <!-- SECTION 4 — SERVICE AREAS -->
  <section class="service-areas" aria-labelledby="areas-heading">
  <div class="container">
- <div class="service-areas__header">
- <span class="service-areas__eyebrow">Coverage</span>
  <h2 id="areas-heading">We Service All of the Gold Coast</h2>
- </div>
  <div class="suburb-pills" role="list">
  <span class="suburb-pill" role="listitem">Southport</span>
  <span class="suburb-pill" role="listitem">Burleigh Heads</span>
@@ -1185,145 +915,95 @@
  </section>
 
 <!-- ============================================================
- CONTENT EXPANSION — CONTACT PAGE (Option D)
+ CONTENT EXPANSION — CONTACT PAGE
  ============================================================ -->
 <style>
 .contact-content-section {
- background: var(--bg-off, #f7f8fa);
- padding: 96px 0;
+ background: #f8fafb;
+ padding: 80px 0;
+ border-top: 1px solid #e2e8f0;
 }
 .contact-content-section .container {
  max-width: 1160px;
  margin: 0 auto;
- padding: 0 48px;
- display: grid;
- grid-template-columns: 1fr 2fr;
- gap: 80px;
- align-items: start;
-}
-.contact-content-section__sidebar {
- position: sticky;
- top: 32px;
-}
-.contact-content-section__eyebrow {
- font-family: var(--font-mono, 'DM Mono', monospace);
- font-size: 0.68rem;
- font-weight: 600;
- letter-spacing: 0.12em;
- text-transform: uppercase;
- color: var(--brand-blue, #1a3fbe);
- display: block;
- margin-bottom: 12px;
+ padding: 0 40px;
 }
 .contact-content-section h2 {
- font-size: clamp(1.5rem, 2.5vw, 2rem);
+ font-size: 1.75rem;
  font-weight: 700;
- color: var(--navy, #0d1f3c);
- letter-spacing: -0.02em;
- line-height: 1.2;
- margin: 0 0 16px;
-}
-.contact-content-section__sidebar p {
- font-size: 0.9rem;
- color: var(--muted, #64748b);
- line-height: 1.7;
- margin: 0;
-}
-.contact-content-section__body h3 {
- font-size: 1.1rem;
- font-weight: 700;
- color: var(--navy, #0d1f3c);
- margin: 48px 0 12px;
+ color: #0d1f3c;
+ margin-bottom: 20px;
  letter-spacing: -0.01em;
 }
-.contact-content-section__body h3:first-child { margin-top: 0; }
-.contact-content-section__body p {
+.contact-content-section h3 {
+ font-size: 1.15rem;
+ font-weight: 700;
+ color: #0d1f3c;
+ margin: 32px 0 12px;
+}
+.contact-content-section p {
  font-size: 1rem;
- color: var(--slate, #334155);
+ color: #334155;
  line-height: 1.8;
  margin-bottom: 16px;
+ max-width: 760px;
 }
 .contact-response-grid {
  display: grid;
- grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
- gap: 1px;
- margin: 32px 0;
- background: var(--rule, #e2e8f0);
- border: 1px solid var(--rule, #e2e8f0);
- border-radius: 12px;
- overflow: hidden;
+ grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+ gap: 24px;
+ margin: 40px 0;
 }
 .contact-response-card {
  background: #ffffff;
- padding: 24px 20px;
+ border: 1px solid #e2e8f0;
+ border-radius: 12px;
+ padding: 28px 24px;
 }
 .contact-response-card .card-label {
- font-family: var(--font-mono, 'DM Mono', monospace);
- font-size: 0.65rem;
+ font-size: 0.78rem;
  font-weight: 600;
- color: var(--brand-blue, #1a3fbe);
+ color: #00c8e0;
  text-transform: uppercase;
- letter-spacing: 0.1em;
+ letter-spacing: 0.06em;
  margin-bottom: 8px;
 }
 .contact-response-card .card-value {
- font-size: 1rem;
+ font-size: 1.1rem;
  font-weight: 700;
- color: var(--navy, #0d1f3c);
+ color: #0d1f3c;
  margin-bottom: 6px;
 }
 .contact-response-card .card-note {
- font-size: 0.83rem;
- color: var(--muted, #64748b);
- line-height: 1.55;
+ font-size: 0.88rem;
+ color: #64748b;
+ line-height: 1.5;
 }
 .contact-faq-list {
- margin: 48px 0 0;
+ margin: 40px 0 0;
+ border-top: 1px solid #e2e8f0;
 }
 .contact-faq-item {
- border-top: 1px solid var(--rule, #e2e8f0);
+ border-bottom: 1px solid #e2e8f0;
  padding: 20px 0;
 }
-.contact-faq-item:last-child {
- border-bottom: 1px solid var(--rule, #e2e8f0);
-}
 .contact-faq-item h3 {
- font-size: 0.95rem;
+ font-size: 1rem;
  font-weight: 600;
- color: var(--navy, #0d1f3c);
- margin: 0 0 8px;
- letter-spacing: -0.005em;
+ color: #0d1f3c;
+ margin: 0 0 10px;
 }
 .contact-faq-item p {
  margin: 0;
- font-size: 0.92rem;
- color: var(--slate, #334155);
- line-height: 1.7;
-}
-@media (max-width: 960px) {
- .contact-content-section .container {
- grid-template-columns: 1fr;
- gap: 40px;
- padding: 0 32px;
- }
- .contact-content-section { padding: 64px 0; }
- .contact-content-section__sidebar { position: static; }
 }
 @media (max-width: 600px) {
+ .contact-content-section { padding: 56px 0; }
  .contact-content-section .container { padding: 0 20px; }
- .contact-content-section { padding: 48px 0; }
 }
 </style>
 <section class="contact-content-section" aria-label="Contact Information and Response Times">
  <div class="container">
-
- <div class="contact-content-section__sidebar">
- <span class="contact-content-section__eyebrow">Contact Info</span>
- <h2>How to Reach bcom ICT</h2>
- <p>Local Gold Coast team. No call centres, no offshore helpdesks. When you call, you speak to a technician.</p>
- </div>
-
- <div class="contact-content-section__body">
+ <h2>How to Reach bcom ICT on the Gold Coast</h2>
  <p>bcom ICT is a locally owned and operated IT support business serving the Gold Coast. There are no call centres, no offshore helpdesks, and no automated phone trees. When you call, email, or submit a request, you are dealing directly with a local Gold Coast technician who knows the area and understands the kinds of IT issues that affect Gold Coast homes and businesses.</p>
  <p>Whether you are a business in Southport dealing with a server fault, a home user in Burleigh Heads with a slow laptop, or a tradesperson in Nerang who needs a new phone system, the process is the same: contact us, describe the issue, and we will tell you honestly what is involved and how quickly we can help.</p>
 
@@ -1382,9 +1062,6 @@
  <h3>Is there a minimum charge for a support call?</h3>
  <p>For remote support, there is a minimum charge equivalent to one hour of remote support time. For on-site visits, the callout fee applies as a minimum. We will always confirm the likely cost before starting work.</p>
  </div>
- </div>
- </div>
-
  </div>
  </div>
 </section>
