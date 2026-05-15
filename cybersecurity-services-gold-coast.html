@@ -418,44 +418,52 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
  </div>
  <div class="mega-col-text">
  <span class="mega-col-title">IT Consulting</span>
- <span class="mega-col-desc">Strategy, cloud &amp; security</span>
+ <span class="mega-col-desc">Strategy, cloud &amp; cybersecurity</span>
  </div>
  </a>
+ <!-- group: Strategy & Advisory -->
+ <span class="mega-group-label">Strategy &amp; Advisory</span>
  <a href="it-consulting-strategy-gold-coast.html" class="mega-item">
  <i data-lucide="clipboard" aria-hidden="true"></i>
  <span><span class="mega-item-title">IT Consulting &amp; Strategy</span><span class="mega-item-desc">Align tech to your goals</span></span>
- </a>
- <a href="cloud-computing-service-gold-coast.html" class="mega-item">
- <i data-lucide="cloud" aria-hidden="true"></i>
- <span><span class="mega-item-title">Cloud Migration &amp; Microsoft 365</span><span class="mega-item-desc">Move to the cloud safely</span></span>
- </a>
- <a href="cybersecurity-health-check-for-small-business-gold-coast.html" class="mega-item">
- <i data-lucide="shield-check" aria-hidden="true"></i>
- <span><span class="mega-item-title">Cybersecurity Risk Assessment</span><span class="mega-item-desc">Identify &amp; address vulnerabilities</span></span>
  </a>
  <a href="software-recommendations-gold-coast.html" class="mega-item">
  <i data-lucide="lightbulb" aria-hidden="true"></i>
  <span><span class="mega-item-title">Software Recommendations</span><span class="mega-item-desc">Independent software advice</span></span>
  </a>
- <a href="artificial-intelligence-service-gold-coast.html" class="mega-item">
- <i data-lucide="bot" aria-hidden="true"></i>
- <span><span class="mega-item-title">AI Implementation &amp; Optimisation</span><span class="mega-item-desc">Voice agents, chatbots &amp; automation</span></span>
+ <!-- group: Cloud & Microsoft 365 -->
+ <span class="mega-group-label">Cloud &amp; Microsoft 365</span>
+ <a href="cloud-computing-service-gold-coast.html" class="mega-item">
+ <i data-lucide="cloud" aria-hidden="true"></i>
+ <span><span class="mega-item-title">Cloud Migration &amp; Microsoft 365</span><span class="mega-item-desc">Move to the cloud safely</span></span>
  </a>
  <a href="microsoft-365-setup-gold-coast.html" class="mega-item">
  <i data-lucide="grid" aria-hidden="true"></i>
  <span><span class="mega-item-title">Microsoft 365 Setup</span><span class="mega-item-desc">Email, Teams &amp; SharePoint</span></span>
  </a>
+ <!-- group: Cybersecurity & Compliance -->
+ <span class="mega-group-label">Cybersecurity &amp; Compliance</span>
  <a href="cybersecurity-services-gold-coast.html" class="mega-item">
  <i data-lucide="shield-check" aria-hidden="true"></i>
  <span><span class="mega-item-title">Cybersecurity Services</span><span class="mega-item-desc">Protect your business data</span></span>
  </a>
- <a href="iso-42001-ai-governance-gold-coast.html" class="mega-item">
- <i data-lucide="file-check" aria-hidden="true"></i>
- <span><span class="mega-item-title">ISO 42001 AI Governance</span><span class="mega-item-desc">BSI-certified AIMS implementation</span></span>
+ <a href="cybersecurity-health-check-for-small-business-gold-coast.html" class="mega-item">
+ <i data-lucide="shield-check" aria-hidden="true"></i>
+ <span><span class="mega-item-title">Cybersecurity Risk Assessment</span><span class="mega-item-desc">Identify &amp; address vulnerabilities</span></span>
  </a>
  <a href="asic-cybersecurity-compliance-gold-coast.html" class="mega-item">
  <i data-lucide="shield-alert" aria-hidden="true"></i>
  <span><span class="mega-item-title">ASIC Cybersecurity Compliance</span><span class="mega-item-desc">AFS licensee cyber resilience</span></span>
+ </a>
+ <!-- group: AI & Governance -->
+ <span class="mega-group-label">AI &amp; Governance</span>
+ <a href="artificial-intelligence-service-gold-coast.html" class="mega-item">
+ <i data-lucide="bot" aria-hidden="true"></i>
+ <span><span class="mega-item-title">AI Implementation &amp; Optimisation</span><span class="mega-item-desc">Voice agents, chatbots &amp; automation</span></span>
+ </a>
+ <a href="iso-42001-ai-governance-gold-coast.html" class="mega-item">
+ <i data-lucide="file-check" aria-hidden="true"></i>
+ <span><span class="mega-item-title">ISO 42001 AI Governance</span><span class="mega-item-desc">BSI-certified AIMS implementation</span></span>
  </a>
  </div>
 
@@ -610,33 +618,32 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 }
 .mega-panel.residential { width: 680px; }
 .mega-panel.business { width: 980px; }
-.mega-cols {
- display: grid;
- padding: 16px 0 8px;
-}
+.mega-cols { display: grid; align-items: start; }
 .mega-cols.cols-2 { grid-template-columns: 1fr 1fr; }
 .mega-cols.cols-3 { grid-template-columns: 1fr 1fr 1fr; }
-.mega-col {
- padding: 0 0 8px;
- border-right: 1px solid #e2e8f0;
-}
+.mega-col { padding: 16px 0 10px; border-right: 1px solid #e2e8f0; }
 .mega-col:last-child { border-right: none; }
 .mega-col-heading {
- font-family: var(--font-mono);
- font-size: 0.65rem; font-weight: 600;
- text-transform: uppercase; letter-spacing: 0.08em;
- color: #94a3b8; padding: 0 24px 8px;
- display: flex; align-items: center; gap: 8px;
- border-bottom: 1px solid #f1f5f9; margin-bottom: 4px;
+ display: flex; align-items: center; gap: 12px;
+ padding: 6px 20px 14px; text-decoration: none;
+ border-bottom: 1px solid #e2e8f0; margin-bottom: 8px;
 }
-.mega-col-heading a {
- font-size: 0.83rem; font-weight: 600;
- color: var(--navy); text-decoration: none;
- transition: color 0.12s;
+.mega-col-icon {
+ width: 40px; height: 40px; border-radius: 10px;
+ background: #f0f9fb;
+ display: flex; align-items: center; justify-content: center;
+ flex-shrink: 0; transition: background 0.15s;
 }
-.mega-col-heading a:hover { color: var(--cyan); }
-.mega-col-heading [data-lucide] {
- width: 16px; height: 16px; stroke: var(--cyan); flex-shrink: 0;
+.mega-col-heading:hover .mega-col-icon { background: rgba(0,200,224,0.12); }
+.mega-col-icon [data-lucide] { width: 18px; height: 18px; stroke: var(--cyan); }
+.mega-col-title {
+ font-size: 0.9rem; font-weight: 700; color: var(--navy);
+ display: block; transition: color 0.15s;
+}
+.mega-col-heading:hover .mega-col-title { color: var(--cyan); }
+.mega-col-desc {
+ font-family: var(--font-mono); font-size: 0.63rem;
+ color: #94a3b8; display: block; margin-top: 2px;
 }
 .mega-item {
  display: flex; align-items: center; gap: 10px;
@@ -656,6 +663,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 .mega-item:hover .mega-item-title { color: var(--cyan); }
 .mega-item-desc {
  font-size: 0.72rem; color: #94a3b8; display: block; margin-top: 1px;
+}
+.mega-panel-header {
+ padding: 14px 24px 12px; border-bottom: 1px solid #e2e8f0;
+}
+.mega-panel-label {
+ font-family: var(--font-mono); font-size: 0.65rem;
+ color: var(--cyan); text-transform: uppercase; letter-spacing: 0.1em;
 }
 .mega-panel-footer {
  padding: 10px 24px 12px; border-top: 1px solid #e2e8f0;
@@ -700,20 +714,31 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 }
 .mega-featured-item [data-lucide] { width: 13px; height: 13px; flex-shrink: 0; }
 
-/* ── CONTACT BUTTON ── */
-.contact-btn {
- display: inline-flex; align-items: center; gap: 8px;
- background: var(--cyan); color: var(--navy);
- font-family: var(--font-body); font-size: 0.88rem; font-weight: 700;
- padding: 9px 20px; border-radius: 8px;
- text-decoration: none; white-space: nowrap;
- transition: background 0.2s, transform 0.15s;
-}
-.contact-btn:hover { background: #00b0c8; transform: translateY(-1px); }
-.contact-btn [data-lucide] { width: 16px; height: 16px; }
 </style>
 
 <style>
+/* ── GROUP LABELS (sub-headings within a column) ── */
+.mega-group-label {
+ display: block;
+ font-family: var(--font-mono);
+ font-size: 0.6rem;
+ font-weight: 700;
+ text-transform: uppercase;
+ letter-spacing: 0.09em;
+ color: #94a3b8;
+ padding: 10px 20px 4px;
+ border-top: 1px solid #f1f5f9;
+ margin-top: 4px;
+}
+.mega-col > .mega-group-label:first-of-type {
+ border-top: none;
+ margin-top: 0;
+ padding-top: 4px;
+}
+@media (max-width: 960px) {
+ .mega-group-label { padding-left: 32px; }
+}
+
 /* ── HAMBURGER (mobile) ── */
 .nav-hamburger {
  display: none; background: none; border: none;
@@ -758,6 +783,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- NAV JAVASCRIPT -->
 <script>
 (function () {
+ // Hamburger toggle
  var hamburger = document.querySelector('.nav-hamburger');
  var navLinks = document.getElementById('nav-links');
  if (hamburger && navLinks) {
@@ -767,15 +793,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
  hamburger.setAttribute('aria-expanded', open);
  });
  }
- var megaToggles = document.querySelectorAll('.nav-has-mega > .nav-link');
- megaToggles.forEach(function (link) {
+
+ // Mobile: tap nav-link chevron to toggle mega panel
+ document.querySelectorAll('.nav-has-mega').forEach(function (item) {
+ var link = item.querySelector('.nav-link');
+ var panel = item.querySelector('.mega-panel');
+ if (!link || !panel) return;
  link.addEventListener('click', function (e) {
  if (window.innerWidth <= 960) {
  e.preventDefault();
- var panel = link.parentElement.querySelector('.mega-panel');
- if (panel) panel.classList.toggle('mobile-open');
+ panel.classList.toggle('mobile-open');
  }
  });
+ });
+
+ // Active link highlight
+ var current = window.location.pathname.split('/').pop() || 'index.html';
+ document.querySelectorAll('.nav-link[href]').forEach(function (a) {
+ if (a.getAttribute('href') === current) a.classList.add('nav-active');
  });
 })();
 </script>

@@ -603,6 +603,25 @@ section {
   font-size: 0.72rem; color: #94a3b8; display: block; margin-top: 1px;
 }
 
+/* ── GROUP LABELS (sub-headings within a mega-col) ── */
+.mega-group-label {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: #94a3b8;
+  padding: 10px 20px 4px;
+  border-top: 1px solid #f1f5f9;
+  margin-top: 4px;
+}
+.mega-col > .mega-group-label:first-of-type {
+  border-top: none;
+  margin-top: 0;
+  padding-top: 4px;
+}
+
 .mega-panel-footer {
   padding: 10px 24px 12px; border-top: 1px solid #e2e8f0;
   background: #f0f9fb;
@@ -672,6 +691,7 @@ body.nav-open {
   .mega-col:last-child { border-bottom: none; }
   .mega-col-heading { padding: 10px 20px 10px; margin-bottom: 0; }
   .mega-item { padding: 8px 32px; }
+  .mega-group-label { padding-left: 32px; }
   .mega-panel-footer { display: none; }
   .nav-chevron { margin-left: auto; }
 }

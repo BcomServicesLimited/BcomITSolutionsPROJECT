@@ -1640,6 +1640,28 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
  width: 13px; height: 13px; flex-shrink: 0;
 }
 
+/* ── GROUP LABELS (sub-headings within a column) ── */
+.mega-group-label {
+ display: block;
+ font-family: var(--font-mono);
+ font-size: 0.6rem;
+ font-weight: 700;
+ text-transform: uppercase;
+ letter-spacing: 0.09em;
+ color: #94a3b8;
+ padding: 10px 20px 4px;
+ border-top: 1px solid #f1f5f9;
+ margin-top: 4px;
+}
+.mega-col > .mega-group-label:first-of-type {
+ border-top: none;
+ margin-top: 0;
+ padding-top: 4px;
+}
+@media (max-width: 960px) {
+ .mega-group-label { padding-left: 32px; }
+}
+
 /* ── HAMBURGER (mobile) ── */
 .nav-hamburger {
  display: none; background: none; border: none;
