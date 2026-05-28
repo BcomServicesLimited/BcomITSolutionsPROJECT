@@ -25,7 +25,7 @@ Do not do anything yet. Wait for my next instruction.
 | Field | Value |
 |---|---|
 | Business | Bcom Services Pty Ltd |
-| Trading Name | Bcom IT Solutions |
+| Trading Name | bcom ICT |
 | ABN | 92 636 893 108 |
 | Phone | 07 3041 8993 |
 | Email | support@bcomservices.com |
@@ -51,7 +51,7 @@ Do not do anything yet. Wait for my next instruction.
 
 ### Typography & Icons
 - **Fonts:** DM Sans (body) + DM Mono (labels, code, contact details)
-- **Logo:** Toggle switch SVG icon + "BCOM" in navy bold + "IT SOLUTIONS" in cyan
+- **Logo:** Toggle switch SVG icon + "bcom" in navy bold + "ICT" in cyan
 - **Icons:** Lucide SVG — thin line, animated. No emojis anywhere.
 
 ---

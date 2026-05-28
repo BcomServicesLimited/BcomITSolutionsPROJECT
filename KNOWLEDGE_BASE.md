@@ -1,4 +1,4 @@
-# Bcom IT Solutions — Website Build Knowledge Base
+# bcom ICT — Website Build Knowledge Base
 
 **Project:** BcomITSolutionsPROJECT  
 **Last updated:** 2026-05-28  
@@ -24,7 +24,7 @@ There is ONE repository for this project. Do not create, reference or push to an
 | Field | Value |
 |---|---|
 | Business Name | Bcom Services Pty Ltd |
-| Trading Name | Bcom IT Solutions |
+| Trading Name | bcom ICT |
 | ABN | 92 636 893 108 |
 | Phone | 07 3041 8993 |
 | Email | support@bcomservices.com |
