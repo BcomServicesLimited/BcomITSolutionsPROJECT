@@ -978,3 +978,13 @@ body.nav-open {
 .mega-featured-item [data-lucide] {
   width: 13px; height: 13px; flex-shrink: 0;
 }
+
+/* ============================================================
+   HERO CTA ROW — reserve space for async-injected calendar button
+   The Google Calendar inline scheduling button mounts after page
+   load and previously pushed the trust-strip down (CLS source on
+   23 vendor pages). Reserving ~56px keeps the layout stable.
+   ============================================================ */
+.hero-cta-row {
+  min-height: 56px;
+}
