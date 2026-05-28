@@ -25,11 +25,11 @@ Do not do anything yet. Wait for my next instruction.
 | Field | Value |
 |---|---|
 | Business | Bcom Services Pty Ltd |
+| Trading Name | Bcom IT Solutions |
 | ABN | 92 636 893 108 |
 | Phone | 07 3041 8993 |
-| Email (residential) | hello@bcomservices.com |
-| Email (business) | office@bcomservices.com |
-| Website | bcomservices.com.au |
+| Email | support@bcomservices.com |
+| Website | https://www.bcomservices.com |
 | Location | Gold Coast, Queensland |
 
 **Service Areas:** Southport · Burleigh Heads · Robina · Nerang · Helensvale · Coomera · Palm Beach · Varsity Lakes · Coolangatta · Surfers Paradise · Broadbeach
@@ -212,7 +212,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <meta name="geo.placename" content="Gold Coast">
   <title>Page Title | Bcom IT Solutions</title>
   <meta name="description" content="...">
-  <link rel="canonical" href="https://bcomservices.com.au/[filename].html">
+  <link rel="canonical" href="https://www.bcomservices.com/[filename].html">
   <link rel="stylesheet" href="design-system.css">
 </head>
 <body>

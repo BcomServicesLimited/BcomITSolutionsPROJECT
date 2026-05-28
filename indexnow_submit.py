@@ -1,8 +1,11 @@
 #!/usr/bin/env python3
 """
-IndexNow submission script for Bcom IT Solutions (bcomservices.com.au)
+IndexNow submission script for Bcom IT Solutions (www.bcomservices.com)
 Run this script after publishing new pages or making significant updates.
 Bing will crawl the submitted URLs within minutes.
+
+The API_KEY value must match the contents of the .txt file at the repo
+root (e.g. {API_KEY}.txt) — Bing fetches that file to verify ownership.
 
 Usage:
     python3 indexnow_submit.py
@@ -12,8 +15,8 @@ import urllib.request
 import urllib.error
 
 API_KEY = "3d4626b5bf37fa409c81a8349d0e17fe931ceded5724d2591957fd93c7508dbb"
-HOST = "www.bcomservices.com.au"
-BASE_URL = "https://www.bcomservices.com.au"
+HOST = "www.bcomservices.com"
+BASE_URL = "https://www.bcomservices.com"
 
 URLS = [
     f"{BASE_URL}/",

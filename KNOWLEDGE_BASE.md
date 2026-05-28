@@ -1,7 +1,7 @@
 # Bcom IT Solutions — Website Build Knowledge Base
 
-**Project:** BcomITSolutionsNEW  
-**Last updated:** 2026-04-12  
+**Project:** BcomITSolutionsPROJECT  
+**Last updated:** 2026-05-28  
 **Purpose:** Permanent reference for all bugs encountered, fixes applied, design decisions made, and standards established during the website build. Every future page build must reference this file alongside `CONTROL_RULES.md`.
 
 ---
