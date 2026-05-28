@@ -1,13 +1,13 @@
-# Bcom IT Solutions
+# bcom ICT
 
-> Bcom IT Solutions (Bcom Services Pty Ltd, ABN 92 636 893 108) is a locally owned IT support business based on the Gold Coast, Queensland, Australia. Address: 9 Ferny Avenue, Surfers Paradise, QLD 4217. Hours: Open 24/7 — including weekends and public holidays. We provide on-site and remote IT support, computer repair, WiFi and networking, business phone systems (VoIP and PBX), cybersecurity, cloud computing, and AI integration services to homes and businesses across Southport, Burleigh Heads, Robina, Nerang, Helensvale, Coomera, Palm Beach, Varsity Lakes, Coolangatta, Surfers Paradise and Broadbeach. Phone: 07 3041 8993. Email: support@bcomservices.com. Website: https://www.bcomservices.com
+> bcom ICT (Bcom Services Pty Ltd, ABN 92 636 893 108) is a locally owned IT support business based on the Gold Coast, Queensland, Australia. Address: 9 Ferny Avenue, Surfers Paradise, QLD 4217. Hours: Open 24/7 — including weekends and public holidays. We provide on-site and remote IT support, computer repair, WiFi and networking, business phone systems (VoIP and PBX), cybersecurity, cloud computing, and AI integration services to homes and businesses across Southport, Burleigh Heads, Robina, Nerang, Helensvale, Coomera, Palm Beach, Varsity Lakes, Coolangatta, Surfers Paradise and Broadbeach. Phone: 07 3041 8993. Email: support@bcomservices.com. Website: https://www.bcomservices.com
 
 Allow: /
 Sitemap: https://www.bcomservices.com/sitemap.xml
 
 ## Homepage
 
-- [IT Support & Services Gold Coast — Bcom IT Solutions](https://www.bcomservices.com/): IT support and services for Gold Coast homes and businesses — Bcom IT Solutions, locally owned and operated, ABN 92 636 893 108.
+- [IT Support & Services Gold Coast — bcom ICT](https://www.bcomservices.com/): IT support and services for Gold Coast homes and businesses — bcom ICT, locally owned and operated, ABN 92 636 893 108.
 
 ## Hub Pages
 
@@ -77,9 +77,9 @@ Sitemap: https://www.bcomservices.com/sitemap.xml
 
 ## About / Support / Contact
 
-- [About](https://www.bcomservices.com/about.html): About Bcom IT Solutions — locally owned Gold Coast IT support business, ABN 92 636 893 108. Covers company background, service philosophy, team, service area, and why Gold Coast homes and businesses choose Bcom.
-- [Support Portal](https://www.bcomservices.com/support.html): IT support portal for Bcom IT Solutions Gold Coast customers — remote access, support request form, response times, and what to expect from a support session.
-- [Contact](https://www.bcomservices.com/contact.html): Contact Bcom IT Solutions Gold Coast — phone 07 3041 8993, email, IT support request form, service area, response times, and FAQs about getting in touch.
+- [About](https://www.bcomservices.com/about.html): About bcom ICT — locally owned Gold Coast IT support business, ABN 92 636 893 108. Covers company background, service philosophy, team, service area, and why Gold Coast homes and businesses choose bcom ICT.
+- [Support Portal](https://www.bcomservices.com/support.html): IT support portal for bcom ICT Gold Coast customers — remote access, support request form, response times, and what to expect from a support session.
+- [Contact](https://www.bcomservices.com/contact.html): Contact bcom ICT Gold Coast — phone 07 3041 8993, email, IT support request form, service area, response times, and FAQs about getting in touch.
 - [Privacy Policy](https://www.bcomservices.com/privacy-policy.html): Privacy policy for Bcom Services Pty Ltd — how we collect, store and use personal information.
 - [Terms and Conditions](https://www.bcomservices.com/terms-and-conditions.html): Terms and conditions for Bcom Services Pty Ltd — service terms, liability and engagement conditions.
 
@@ -94,7 +94,7 @@ Sitemap: https://www.bcomservices.com/sitemap.xml
 - [IT Support for Trades](https://www.bcomservices.com/it-support-trades-gold-coast.html): IT support for Gold Coast trade businesses and contractors — phone systems, remote access and managed IT.
 - [IT Support for Small Business](https://www.bcomservices.com/it-support-small-business-gold-coast.html): Small business IT support on the Gold Coast — on-site and remote help, no lock-in contracts, covering Surfers Paradise, Robina, Nerang, and surrounding suburbs.
 
-## Optional
+## WiFi Installers (by brand) & PBX Vendor Support
 
 - [Ubiquiti UniFi WiFi](https://www.bcomservices.com/ubiquiti-unifi-wifi-gold-coast.html): Ubiquiti UniFi WiFi installation for Gold Coast — professional UniFi installer supplying and configuring U6 Pro, U7 Pro, UCG-Ultra, UDM Pro and UniFi switches. WiFi 6 and WiFi 7 access point installation, VLAN setup, guest network configuration and ongoing managed network support for homes and businesses across the Gold Coast.
 - [Grandstream WiFi](https://www.bcomservices.com/grandstream-wifi-gold-coast.html): Grandstream WiFi installation for Gold Coast — GWN access point setup, cloud management and business wireless networking.
