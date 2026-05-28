@@ -41,6 +41,9 @@ URLS = [
     f"{BASE_URL}/microsoft-copilot-gold-coast.html",
     f"{BASE_URL}/microsoft-365-setup-gold-coast.html",
     f"{BASE_URL}/cloud-computing-service-gold-coast.html",
+    f"{BASE_URL}/cybersecurity-services-gold-coast.html",
+    f"{BASE_URL}/asic-cybersecurity-compliance-gold-coast.html",
+    f"{BASE_URL}/iso-42001-ai-governance-gold-coast.html",
     f"{BASE_URL}/hardware-procurement-setup-gold-coast.html",
     f"{BASE_URL}/hardware-software-troubleshooting-gold-coast.html",
     f"{BASE_URL}/software-installation-configuration-gold-coast.html",
@@ -131,7 +134,7 @@ def submit():
         print(f"Error: {e}")
 
 if __name__ == "__main__":
-    print(f"IndexNow Submission — Bcom IT Solutions")
+    print(f"IndexNow Submission — bcom ICT")
     print(f"Host: {HOST}")
     print(f"API Key: {API_KEY}")
     print(f"URLs to submit: {len(URLS)}")
