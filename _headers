@@ -1,0 +1,51 @@
+# Cloudflare Pages _headers
+# Sets cache and security headers for www.bcomservices.com.
+# Rules are evaluated top-to-bottom; the LAST matching rule wins.
+
+# ─── Default (HTML pages) ──────────────────────────────────────────────
+# Browser cache 5 min, Cloudflare edge cache 1 h, serve stale up to 24 h
+# while revalidating in the background. Lets SEO/content updates land fast
+# without hammering the origin on every visit.
+/*
+  Cache-Control: public, max-age=300, s-maxage=3600, stale-while-revalidate=86400
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: geolocation=(), microphone=(), camera=()
+
+# ─── Photographic assets — long cache, immutable filenames ─────────────
+/assets/images/*
+  Cache-Control: public, max-age=2592000, immutable
+
+/assets/logo/*
+  Cache-Control: public, max-age=2592000, immutable
+
+/bcom-assets/*
+  Cache-Control: public, max-age=86400
+
+# ─── Stylesheets & scripts — moderate cache (no hash in filename) ──────
+/*.css
+  Cache-Control: public, max-age=3600, s-maxage=86400
+
+/*.js
+  Cache-Control: public, max-age=3600, s-maxage=86400
+
+# ─── Favicons ──────────────────────────────────────────────────────────
+/favicon.ico
+  Cache-Control: public, max-age=604800
+
+/favicon.png
+  Cache-Control: public, max-age=604800
+
+/favicon.webp
+  Cache-Control: public, max-age=604800
+
+# ─── SEO files — short cache so changes propagate fast ─────────────────
+/robots.txt
+  Cache-Control: public, max-age=3600
+
+/sitemap.xml
+  Cache-Control: public, max-age=3600
+
+/llms.txt
+  Cache-Control: public, max-age=3600
