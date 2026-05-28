@@ -23,12 +23,16 @@
 /bcom-assets/*
   Cache-Control: public, max-age=86400
 
-# ─── Stylesheets & scripts — moderate cache (no hash in filename) ──────
+# ─── Stylesheets & scripts ────────────────────────────────────────────
+# Filenames are unhashed, so we MUST NOT pin them in the CDN edge cache —
+# a CSS edit would otherwise stay stale at the edge for s-maxage seconds
+# even after a successful Cloudflare Pages deploy. Browser caches for
+# 1 h, edge revalidates each request, serves stale while doing so.
 /*.css
-  Cache-Control: public, max-age=3600, s-maxage=86400
+  Cache-Control: public, max-age=3600, must-revalidate
 
 /*.js
-  Cache-Control: public, max-age=3600, s-maxage=86400
+  Cache-Control: public, max-age=3600, must-revalidate
 
 # ─── Favicons ──────────────────────────────────────────────────────────
 /favicon.ico
