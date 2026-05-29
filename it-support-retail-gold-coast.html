@@ -1288,7 +1288,64 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
  .faq-answer { padding: 0 16px 18px; }
 }
 </style>
- <section class="faq-section" aria-label="IT Support for Retail Gold Coast FAQ">
+ 
+<!-- COMMON RETAIL IT PROBLEMS -->
+<section class="biz-problems-section" aria-labelledby="retail-problems-heading">
+ <div class="container">
+ <div class="biz-problems-header fade-up">
+ <h2 id="retail-problems-heading">Common Retail IT Problems We Fix on the Gold Coast</h2>
+ <p>Retail IT has its own pattern of failures — POS freezes during the lunchtime rush, EFTPOS terminals refusing payments, inventory systems out of sync with the cloud. Most of them have known causes and known fixes; almost none require replacing the whole setup.</p>
+ </div>
+ <div class="biz-problems-grid">
+
+ <article class="biz-problem-card">
+ <h3>POS terminal freezes during peak trade</h3>
+ <p>Lightspeed, Vend, Square or Kounta locking up mid-transaction is usually one of three things — the terminal hardware is past its useful life, the local Wi-Fi can't keep up with the device count, or background Windows updates are running during trade. We diagnose which it is, get the till working again the same day, and put a maintenance schedule in place so it stops happening at 12:30pm next Saturday.</p>
+ </article>
+
+ <article class="biz-problem-card">
+ <h3>EFTPOS dropping during the rush</h3>
+ <p>Tyro, Smartpay or bank-issued terminals timing out means lost sales and frustrated customers. The fix is almost always network-level: separate the EFTPOS onto its own VLAN with QoS priority so it never competes for airtime with customer Wi-Fi. We do this as standard on every Gold Coast retail IT install — PCI-DSS implications aside, your terminals get a clean path to the bank regardless of how busy the shop floor gets.</p>
+ </article>
+
+ <article class="biz-problem-card">
+ <h3>Inventory system out of sync with the cloud</h3>
+ <p>Stock counts in-store don't match the website, click-and-collect orders show items you don't have, or Shopify / Lightspeed / Cin7 won't push transactions. Usually a sync timeout caused by an intermittent internet connection, a stuck integration credential or an outdated middleware connector. We trace it back to the actual cause rather than just resetting it and hoping.</p>
+ </article>
+
+ <article class="biz-problem-card">
+ <h3>CCTV offline when you most need it</h3>
+ <p>You go to review the footage of an incident and the cameras have been down for three weeks. The usual culprits are a failed PoE switch, a corrupted NVR drive or a router firmware update that quietly broke the camera VLAN. We audit the system properly, fix the actual cause and add basic monitoring so you find out the same day a camera fails — not the day you need the footage.</p>
+ </article>
+
+ <article class="biz-problem-card">
+ <h3>Customer Wi-Fi getting abused</h3>
+ <p>Public Wi-Fi quickly becomes an extension of your business if you don't configure it correctly — passers-by, neighbouring shops and even the building manager start using your connection, slowing trade. We configure a separate guest SSID with bandwidth caps, a captive portal where you want one, and a clear separation so customer Wi-Fi never touches your tills, EFTPOS or back-office systems.</p>
+ </article>
+
+ <article class="biz-problem-card">
+ <h3>Back-office computer running out of disk</h3>
+ <p>The desktop in the office is the last bottleneck no one notices until it stops Xero from opening or stops loyalty exports from running. We clean up the disk, migrate the heavy files to OneDrive or SharePoint, set up automatic backups and recommend a replacement when the hardware genuinely can't keep up — usually a refurbished business-grade desktop sized for retail rather than a brand-new gaming PC.</p>
+ </article>
+
+ </div>
+ </div>
+
+ <style>
+ .biz-problems-section { padding: 64px 0; background: #f8fafb; }
+ .biz-problems-header { max-width: 760px; margin: 0 auto 36px; text-align: center; }
+ .biz-problems-header h2 { font-size: 1.7rem; color: #0d1f3c; margin: 0 0 12px; }
+ .biz-problems-header p { font-size: 1rem; color: #4a5568; line-height: 1.7; margin: 0; }
+ .biz-problems-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+ .biz-problem-card { background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 22px 22px 20px; }
+ .biz-problem-card h3 { font-size: 1.02rem; font-weight: 600; color: #0d1f3c; margin: 0 0 8px; line-height: 1.35; }
+ .biz-problem-card p { font-size: 0.92rem; color: #4a5568; line-height: 1.7; margin: 0; }
+ @media (max-width: 800px) { .biz-problems-grid { grid-template-columns: 1fr; } }
+ </style>
+</section>
+<!-- END RETAIL PROBLEMS -->
+
+<section class="faq-section" aria-label="IT Support for Retail Gold Coast FAQ">
  <div class="container">
  <h2>IT Support for Gold Coast Retail &mdash; Frequently Asked Questions</h2>
  <div class="faq-list">

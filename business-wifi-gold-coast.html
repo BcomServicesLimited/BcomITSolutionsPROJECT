@@ -1288,7 +1288,64 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
  .areas-section { padding: 56px 0; }
 }
 </style>
- <section class="areas-section" aria-label="Business WiFi Installation Across the Gold Coast">
+ 
+<!-- COMMON PROBLEMS SECTION -->
+<section class="biz-problems-section" aria-labelledby="biz-problems-heading">
+ <div class="container">
+ <div class="biz-problems-header fade-up">
+ <h2 id="biz-problems-heading">Common Business WiFi Problems We Fix on the Gold Coast</h2>
+ <p>Most calls about business WiFi on the Gold Coast come down to the same six issues. Each one has a real technical cause and a real fix — and almost always the problem is fixable with the right hardware and configuration, not a full network replacement.</p>
+ </div>
+ <div class="biz-problems-grid">
+
+ <article class="biz-problem-card">
+ <h3>EFTPOS or POS dropping during peak periods</h3>
+ <p>Tyro, Square or Smartpay terminals drop their connection when the venue gets busy — usually because they share the same SSID as customer guest WiFi or staff laptops. The terminal then competes for airtime with dozens of phones, and PCI-DSS requirements aside, you lose sales. We separate payment terminals onto a dedicated VLAN with prioritised QoS so EFTPOS keeps a clean path to the payment processor regardless of how busy guest WiFi gets.</p>
+ </article>
+
+ <article class="biz-problem-card">
+ <h3>Video calls cutting out in meeting rooms</h3>
+ <p>Zoom and Teams calls freeze or drop when the room fills with people, but work fine when it's just one or two. The usual cause is RF interference from the building itself — concrete walls, metal-frame partitions and other Wi-Fi networks bleeding through from neighbouring tenancies. The fix is a proper site survey, correct AP placement, channel planning across 2.4 GHz, 5 GHz and (with Wi-Fi 6E or 7) 6 GHz, and switching staff devices over to the higher bands.</p>
+ </article>
+
+ <article class="biz-problem-card">
+ <h3>Guest WiFi exposing your internal network</h3>
+ <p>Customer-facing WiFi running on the same network as staff devices, EFTPOS and your file server is a PCI-DSS finding waiting to happen — and a real security risk if a guest device is compromised. We configure VLAN-isolated guest networks as standard on every Gold Coast business WiFi installation: guests get internet only, with no visibility of any internal device.</p>
+ </article>
+
+ <article class="biz-problem-card">
+ <h3>Dead spots in storerooms, kitchens and outdoor areas</h3>
+ <p>One AP in the middle of the office never covers the whole site — kitchens, cool rooms, stockrooms and outdoor service areas drop off. We run a coverage survey, identify the dead zones, then either add ceiling-mounted access points where new cabling is feasible or use mesh / outdoor-rated APs (UniFi U7 Outdoor, U6 Mesh) where cabling isn't practical.</p>
+ </article>
+
+ <article class="biz-problem-card">
+ <h3>Staff devices not roaming cleanly between zones</h3>
+ <p>A phone stays connected to a distant AP at one bar of signal even though a closer AP is right above the staff member. The fix is a single SSID across all access points with proper 802.11k / 802.11v / 802.11r roaming features enabled — supported on UniFi, Aruba Instant On, Grandstream GWN and most current business-grade WiFi platforms we install on the Gold Coast.</p>
+ </article>
+
+ <article class="biz-problem-card">
+ <h3>Consumer router struggling with 30+ devices</h3>
+ <p>Home-grade routers (Netgear Nighthawk, Asus RT, TP-Link Archer) handle 10–15 concurrent devices well. Above 30 — common for any Gold Coast retail venue, cafe or office of more than 5 staff — they start dropping connections, slowing throughput and locking up. Business-grade access points handle 100+ concurrent devices per radio without breaking a sweat; we usually replace the consumer router with a UniFi Cloud Gateway plus one or two APs sized to the floor area.</p>
+ </article>
+
+ </div>
+ </div>
+
+ <style>
+ .biz-problems-section { padding: 64px 0; background: #f8fafb; }
+ .biz-problems-header { max-width: 760px; margin: 0 auto 36px; text-align: center; }
+ .biz-problems-header h2 { font-size: 1.7rem; color: #0d1f3c; margin: 0 0 12px; }
+ .biz-problems-header p { font-size: 1rem; color: #4a5568; line-height: 1.7; margin: 0; }
+ .biz-problems-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+ .biz-problem-card { background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 22px 22px 20px; }
+ .biz-problem-card h3 { font-size: 1.02rem; font-weight: 600; color: #0d1f3c; margin: 0 0 8px; line-height: 1.35; }
+ .biz-problem-card p { font-size: 0.92rem; color: #4a5568; line-height: 1.7; margin: 0; }
+ @media (max-width: 800px) { .biz-problems-grid { grid-template-columns: 1fr; } }
+ </style>
+</section>
+<!-- END COMMON PROBLEMS -->
+
+<section class="areas-section" aria-label="Business WiFi Installation Across the Gold Coast">
  <div class="container">
  <h2>Business WiFi Installation Across the Gold Coast</h2>
  <p>We install and support business WiFi across the entire Gold Coast &mdash; offices in Southport CBD and Robina, retail and hospitality venues in Broadbeach, Surfers Paradise and Burleigh Heads, and commercial premises from Coolangatta to Coomera.</p>
