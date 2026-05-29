@@ -2093,14 +2093,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
  <div class="trust-badge">
  <i data-lucide="shield-check"></i>
- <span> Guarantee</span>
+ <span>No-Fix-No-Fee Guarantee</span>
  </div>
 
  <div class="trust-badge__divider" aria-hidden="true"></div>
 
  <div class="trust-badge">
  <i data-lucide="zap"></i>
- <span>Fast response Available</span>
+ <span>24/7 Available</span>
  </div>
 
  <div class="trust-badge__divider" aria-hidden="true"></div>
@@ -2115,13 +2115,93 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
  </section>
  <!-- END TRUST BADGES -->
 
+ <!-- PART B2 — PARTNERS & CERTIFICATIONS -->
+ <section class="partners-section" aria-label="Technology partners and certifications">
+ <div class="container">
+ <p class="partners-eyebrow">Trusted partners &middot; Independent certifications</p>
+ <div class="partners-grid">
+
+ <div class="partner-item" title="Microsoft 365 partner">
+ <i data-lucide="cloud" aria-hidden="true"></i>
+ <span class="partner-label">Microsoft 365 Partner</span>
+ </div>
+ <div class="partner-item" title="Ubiquiti UniFi installer">
+ <i data-lucide="wifi" aria-hidden="true"></i>
+ <span class="partner-label">Ubiquiti UniFi Installer</span>
+ </div>
+ <div class="partner-item" title="LG Ericsson PBX reseller">
+ <i data-lucide="phone" aria-hidden="true"></i>
+ <span class="partner-label">LG Ericsson PBX</span>
+ </div>
+ <div class="partner-item" title="BSI Certified ISO/IEC 42001 AI Management System Lead Implementer">
+ <i data-lucide="shield" aria-hidden="true"></i>
+ <span class="partner-label">BSI ISO 42001 Certified</span>
+ </div>
+ <div class="partner-item" title="ITIL 4 Foundation certified">
+ <i data-lucide="award" aria-hidden="true"></i>
+ <span class="partner-label">ITIL 4 Certified</span>
+ </div>
+ <div class="partner-item" title="ASIC cyber resilience framework aligned">
+ <i data-lucide="shield-check" aria-hidden="true"></i>
+ <span class="partner-label">ASIC Cyber Resilience</span>
+ </div>
+
+ </div>
+ </div>
+
+ <style>
+ .partners-section { padding: 36px 0 28px; background: #f8fafb; border-top: 1px solid #e2e8f0; border-bottom: 1px solid #e2e8f0; }
+ .partners-eyebrow {
+   text-align: center;
+   margin: 0 0 22px;
+   font-family: 'DM Mono', monospace;
+   font-size: 0.72rem;
+   letter-spacing: 0.12em;
+   text-transform: uppercase;
+   color: #64748b;
+ }
+ .partners-grid {
+   display: grid;
+   grid-template-columns: repeat(6, 1fr);
+   gap: 12px 6px;
+   align-items: center;
+ }
+ .partner-item {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   gap: 8px;
+   padding: 14px 6px;
+   border-radius: 10px;
+   background: #ffffff;
+   border: 1px solid #e2e8f0;
+   text-align: center;
+   transition: border-color 0.15s, transform 0.15s;
+ }
+ .partner-item:hover { border-color: #00c8e0; transform: translateY(-1px); }
+ .partner-item [data-lucide] { width: 22px; height: 22px; color: #007a8a; }
+ .partner-label {
+   font-family: 'DM Mono', monospace;
+   font-size: 0.7rem;
+   line-height: 1.3;
+   color: #0d1f3c;
+   font-weight: 500;
+ }
+ @media (max-width: 900px) { .partners-grid { grid-template-columns: repeat(3, 1fr); } }
+ @media (max-width: 500px) { .partners-grid { grid-template-columns: repeat(2, 1fr); } }
+ </style>
+ </section>
+ <!-- END PARTNERS & CERTIFICATIONS -->
+
  <!-- PART C — GOOGLE REVIEWS -->
  <section class="reviews-section section-white" aria-labelledby="reviews-heading">
  <div class="container">
  <div class="reviews-header">
  <h2 id="reviews-heading">What Gold Coast Customers Say</h2>
+ <p class="reviews-eyebrow">Rated 5.0 on Google &middot; 24 reviews <a href="https://g.page/r/CSc3yhyrbZCaEBM/review" target="_blank" rel="noopener noreferrer" class="reviews-eyebrow__link">Leave us a review &rarr;</a></p>
  </div>
- <div class="reviews-grid">
+ <div class="reviews-grid reviews-carousel" role="region" aria-label="Customer reviews carousel" tabindex="0">
 
  <!-- Review 1 -->
  <article class="review-card" itemscope itemtype="https://schema.org/Review">
@@ -2143,7 +2223,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
  <i data-lucide="star" class="star-filled"></i>
  </div>
  <blockquote class="review-card__text" itemprop="reviewBody">
- &ldquo;Bcom fixed our office network the fast response we called. Professional, fast and fairly priced. Highly recommend for any Gold Coast business.&rdquo;
+ &ldquo;bcom ICT fixed our office network the same day we called. Professional, fast and fairly priced. Highly recommend for any Gold Coast business.&rdquo;
  </blockquote>
  <footer class="review-card__author">
  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
@@ -2220,6 +2300,45 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
  </article>
 
  </div>
+
+ <style>
+ .reviews-eyebrow {
+   margin: 4px 0 0;
+   font-family: 'DM Mono', monospace;
+   font-size: 0.78rem;
+   color: #64748b;
+ }
+ .reviews-eyebrow__link {
+   color: #007a8a;
+   font-weight: 600;
+   margin-left: 8px;
+   white-space: nowrap;
+ }
+ .reviews-eyebrow__link:hover { text-decoration: underline; }
+ .reviews-carousel {
+   scroll-snap-type: x mandatory;
+   -webkit-overflow-scrolling: touch;
+   overflow-x: auto;
+   scroll-padding-left: 16px;
+   padding: 4px 16px 24px;
+   margin: 0 -16px;
+   grid-auto-flow: column;
+   grid-auto-columns: minmax(280px, 360px);
+   gap: 16px;
+   scrollbar-color: #00c8e0 #e2e8f0;
+ }
+ .reviews-carousel > .review-card {
+   scroll-snap-align: start;
+   flex: 0 0 auto;
+ }
+ .reviews-carousel::-webkit-scrollbar { height: 8px; }
+ .reviews-carousel::-webkit-scrollbar-track { background: #f0f9fb; border-radius: 4px; }
+ .reviews-carousel::-webkit-scrollbar-thumb { background: rgba(0,200,224,0.55); border-radius: 4px; }
+ .reviews-carousel::-webkit-scrollbar-thumb:hover { background: #00c8e0; }
+ @media (min-width: 901px) {
+   .reviews-carousel { grid-auto-columns: minmax(320px, 1fr); }
+ }
+ </style>
  </div>
  </section>
  <!-- END GOOGLE REVIEWS -->
