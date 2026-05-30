@@ -1772,6 +1772,62 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
  <!-- ============================================================
  FOOTER — INLINED
  ============================================================ -->
+
+<!-- COMMON PROBLEMS SECTION -->
+<section class="biz-problems-section" aria-labelledby="hospitality-problems-heading">
+ <div class="container">
+ <div class="biz-problems-header fade-up">
+ <h2 id="hospitality-problems-heading">Common Hospitality IT Problems We Fix on the Gold Coast</h2>
+ <p>Restaurants, cafes, bars and venues on the Gold Coast tend to call us about the same set of failures — the POS lagging during the dinner rush, EFTPOS dropping mid-payment, booking systems offline at the worst possible moment. Each has a real cause and a real fix; replacing the whole setup is almost never the answer.</p>
+ </div>
+ <div class="biz-problems-grid">
+ <article class="biz-problem-card">
+ <h3>POS slow or freezing during the dinner rush</h3>
+ <p>Lightspeed, Kounta or Square taking 8 seconds to add an item, or freezing as the floor fills up, is usually the local Wi-Fi struggling with device count rather than the POS itself. We separate the POS terminals onto a dedicated SSID + VLAN with priority QoS so the till never competes for airtime with customer guest Wi-Fi — and the order screen stays responsive even at peak.</p>
+ </article>
+
+ <article class="biz-problem-card">
+ <h3>EFTPOS dropping mid-payment</h3>
+ <p>Tyro, Smartpay or bank-supplied terminals timing out mid-transaction means lost sales and frustrated customers. Usually the terminal is sharing a saturated guest Wi-Fi or the cable run to the venue's EFTPOS lives in a faulty patch panel port. We move EFTPOS onto its own VLAN with prioritised QoS and a clean cable run so payments process every time, every shift.</p>
+ </article>
+
+ <article class="biz-problem-card">
+ <h3>Booking system offline when a guest arrives</h3>
+ <p>OpenTable, ResDiary, SevenRooms or Now Book It going offline at 7pm on a Saturday is almost always an internet drop, not the booking platform's fault. We set up a 4G/5G failover (Teltonika, Cradlepoint or a UniFi LTE) so when NBN drops, the booking system, EFTPOS and the floor iPads all stay online without anyone noticing.</p>
+ </article>
+
+ <article class="biz-problem-card">
+ <h3>Kitchen display screen going dark</h3>
+ <p>KDS units freezing or showing blank screens mid-service is usually heat-related — the touchscreen lives near a salamander or fryer and the cheap consumer monitor inside it cooks slowly. We replace with hospitality-grade displays rated for kitchen temperatures, hard-wire them onto the kitchen VLAN and keep a spare on hand.</p>
+ </article>
+
+ <article class="biz-problem-card">
+ <h3>Guest Wi-Fi getting abused by passers-by</h3>
+ <p>Open guest networks attract every phone within 30 metres of the venue, slow down the network for paying guests and create real PCI-DSS issues if they share the network with EFTPOS. We set up captive-portal guest Wi-Fi with bandwidth caps, time limits and full separation from POS, EFTPOS and back-of-house systems.</p>
+ </article>
+
+ <article class="biz-problem-card">
+ <h3>Music, signage or IPTV freezing in dining areas</h3>
+ <p>Spotify for Business, OneMusic players, menu boards or in-room IPTV pausing during service is jarring for guests. Usually a Wi-Fi range issue or a streaming player with an unstable firmware. We hard-wire or relocate the players, switch the noisiest ones to a wired uplink, and keep a tested baseline so service stays uninterrupted.</p>
+ </article>
+
+ </div>
+ </div>
+
+ <style>
+ .biz-problems-section { padding: 64px 0; background: #f8fafb; }
+ .biz-problems-header { max-width: 760px; margin: 0 auto 36px; text-align: center; }
+ .biz-problems-header h2 { font-size: 1.7rem; color: #0d1f3c; margin: 0 0 12px; }
+ .biz-problems-header p { font-size: 1rem; color: #4a5568; line-height: 1.7; margin: 0; }
+ .biz-problems-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+ .biz-problem-card { background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 22px 22px 20px; }
+ .biz-problem-card h3 { font-size: 1.02rem; font-weight: 600; color: #0d1f3c; margin: 0 0 8px; line-height: 1.35; }
+ .biz-problem-card p { font-size: 0.92rem; color: #4a5568; line-height: 1.7; margin: 0; }
+ @media (max-width: 800px) { .biz-problems-grid { grid-template-columns: 1fr; } }
+ </style>
+</section>
+<!-- END COMMON PROBLEMS -->
+
 <footer class="site-footer" role="contentinfo">
 
  <!-- ── MAIN FOOTER GRID ── -->

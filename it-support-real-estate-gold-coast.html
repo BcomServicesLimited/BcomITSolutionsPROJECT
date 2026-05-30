@@ -1941,7 +1941,63 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
  </section>
 
  <!-- SECTION 6 — FAQ -->
- <section class="faq-section" aria-label="IT Support for Gold Coast Real Estate — Frequently Asked Questions">
+ 
+<!-- COMMON PROBLEMS SECTION -->
+<section class="biz-problems-section" aria-labelledby="realestate-problems-heading">
+ <div class="container">
+ <div class="biz-problems-header fade-up">
+ <h2 id="realestate-problems-heading">Common Real Estate IT Problems We Fix on the Gold Coast</h2>
+ <p>Gold Coast agencies and property managers tend to ring us about the same handful of issues — CRM syncing falling over, agents stuck without remote access, e-signatures bouncing, listing photos failing to upload. Each one has a clear, repeatable fix and almost none of them require replacing your software.</p>
+ </div>
+ <div class="biz-problems-grid">
+ <article class="biz-problem-card">
+ <h3>CRM not syncing across desktop, mobile and the portal</h3>
+ <p>Rex, AgentBox, Real Estate Tools or VaultRE failing to sync between the agent's phone, the office desktop and the listing portal is one of the most common calls. Usually an authentication token has expired, the sync agent has crashed, or the API connector between the CRM and a portal (REA, Domain) is throwing silently. We diagnose the actual broken integration and rebuild it cleanly.</p>
+ </article>
+
+ <article class="biz-problem-card">
+ <h3>Agents locked out of office systems while on the road</h3>
+ <p>An agent at an open home needing a contract, a comparable sales list or a customer record from the office is the moment things break. We set up secure remote access via Microsoft 365, OneDrive and SharePoint so the agent reaches what they need from a phone, an iPad or a laptop — with MFA, conditional access and audit logging in place.</p>
+ </article>
+
+ <article class="biz-problem-card">
+ <h3>DocuSign / e-signature emails not arriving</h3>
+ <p>A signing request bouncing or landing in spam delays a contract by hours, sometimes days. Usually a DKIM/SPF/DMARC configuration issue on the agency's domain or a misconfigured DocuSign tenant. We audit the email authentication setup, fix the records and confirm signing emails land in the inbox first time.</p>
+ </article>
+
+ <article class="biz-problem-card">
+ <h3>Listing photos failing to upload to REA / Domain</h3>
+ <p>120 MB of raw photos, slow office NBN and a portal upload that times out at the last 5% is the standard pattern. We pre-process and resize images automatically through a cloud workflow, switch the office onto a higher-tier business NBN or 5G plan where it stacks up, and migrate the photo workflow onto a process that doesn't sit on the receptionist's desktop.</p>
+ </article>
+
+ <article class="biz-problem-card">
+ <h3>360 tours and floorplan tools running slowly</h3>
+ <p>Matterport, Floorplanner or iGUIDE software lagging usually points to underpowered office workstations or storage running out. We rebuild the workstations with sensible RAM and SSD, move heavy assets onto SharePoint or Dropbox Business, and clean up local drives so the tools open in under 10 seconds again.</p>
+ </article>
+
+ <article class="biz-problem-card">
+ <h3>Office multifunction printer dropping off the network</h3>
+ <p>A Konica, Ricoh or Brother MFD that randomly disappears from the network and then reappears is almost always either a DHCP lease issue or a tired ethernet port. We set a fixed reservation, swap the offending switch port, and put the MFD onto its own VLAN so a print queue jam doesn't take down the receptionist's PC.</p>
+ </article>
+
+ </div>
+ </div>
+
+ <style>
+ .biz-problems-section { padding: 64px 0; background: #f8fafb; }
+ .biz-problems-header { max-width: 760px; margin: 0 auto 36px; text-align: center; }
+ .biz-problems-header h2 { font-size: 1.7rem; color: #0d1f3c; margin: 0 0 12px; }
+ .biz-problems-header p { font-size: 1rem; color: #4a5568; line-height: 1.7; margin: 0; }
+ .biz-problems-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+ .biz-problem-card { background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 22px 22px 20px; }
+ .biz-problem-card h3 { font-size: 1.02rem; font-weight: 600; color: #0d1f3c; margin: 0 0 8px; line-height: 1.35; }
+ .biz-problem-card p { font-size: 0.92rem; color: #4a5568; line-height: 1.7; margin: 0; }
+ @media (max-width: 800px) { .biz-problems-grid { grid-template-columns: 1fr; } }
+ </style>
+</section>
+<!-- END COMMON PROBLEMS -->
+
+<section class="faq-section" aria-label="IT Support for Gold Coast Real Estate — Frequently Asked Questions">
  <div class="container">
  <h2>IT Support for Gold Coast Real Estate &mdash; Frequently Asked Questions</h2>
  <div class="faq-list" role="list">

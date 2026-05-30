@@ -1767,6 +1767,62 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
  <!-- ============================================================
  FOOTER — INLINED
  ============================================================ -->
+
+<!-- COMMON PROBLEMS SECTION -->
+<section class="biz-problems-section" aria-labelledby="healthcare-problems-heading">
+ <div class="container">
+ <div class="biz-problems-header fade-up">
+ <h2 id="healthcare-problems-heading">Common Healthcare IT Problems We Fix on the Gold Coast</h2>
+ <p>Gold Coast medical, dental and allied-health practices tend to call us about the same set of issues — practice management software downtime, HICAPS / Medicare claiming offline, patient-data security questions, telehealth quality. We handle each one with the patient-privacy and compliance side built in, not bolted on at the end.</p>
+ </div>
+ <div class="biz-problems-grid">
+ <article class="biz-problem-card">
+ <h3>Practice management software down at 8am</h3>
+ <p>Best Practice, Genie, MediRecords, Medical Director or Dental4Windows refusing to open at the start of a clinic is the worst possible time. Usually the SQL service has not restarted cleanly, the network share is unreachable, or an overnight Windows update has paused mid-install. We work on a fixed restoration playbook — get the practice back up in minutes, then diagnose root cause so it doesn't happen tomorrow.</p>
+ </article>
+
+ <article class="biz-problem-card">
+ <h3>HICAPS or Medicare claiming offline</h3>
+ <p>A HICAPS terminal showing 'comms error' or Tyro Health stalling on an Online Patient Verification means receptionists are taking manual claims and patients are waiting. Usually a connection or VLAN issue on the claim terminal. We separate claim terminals onto a dedicated VLAN with QoS so they stay online through the busiest morning.</p>
+ </article>
+
+ <article class="biz-problem-card">
+ <h3>Patient data backups and compliance (Essential Eight)</h3>
+ <p>Practice records, scans, x-rays and clinical notes need backed up to a secure, encrypted destination — and you need to be able to prove it for AHPRA, RACGP accreditation and insurance. We set up immutable encrypted off-site backups, run quarterly test restores and provide written reports that practice managers can hand to accreditors without scrambling.</p>
+ </article>
+
+ <article class="biz-problem-card">
+ <h3>Telehealth video calls dropping or pixelating</h3>
+ <p>Cliniko, Halaxy or Coviu video consults freezing mid-consult is bad medicine and worse customer experience. Usually upload bandwidth is choked by background OneDrive syncs or NBN contention. We prioritise telehealth traffic via QoS, recommend appropriate webcams and headsets, and where the office's NBN cannot sustain it, set up 5G failover dedicated to telehealth.</p>
+ </article>
+
+ <article class="biz-problem-card">
+ <h3>Cybersecurity for patient data (ASD Essential Eight, OAIC)</h3>
+ <p>Medical and dental practices are regularly targeted by ransomware — a single click on a billing-looking PDF can encrypt patient files and triggers an OAIC mandatory breach notification. We work to the ASD Essential Eight: application control, patching, hardened Microsoft 365, MFA on everything, daily backups, restricted admin and macro security. Aligned, documented, audit-ready.</p>
+ </article>
+
+ <article class="biz-problem-card">
+ <h3>Equipment networking — imaging, intra-orals, vitals monitors</h3>
+ <p>Imaging gear, intra-oral cameras, ultrasound and vitals monitors that need to push DICOM or HL7 data into the practice management system often refuse to talk on a flat network. We design a separate clinical VLAN with proper segmentation, configure DICOM endpoints, and document the topology so adding the next piece of equipment in 18 months takes an hour, not a day.</p>
+ </article>
+
+ </div>
+ </div>
+
+ <style>
+ .biz-problems-section { padding: 64px 0; background: #f8fafb; }
+ .biz-problems-header { max-width: 760px; margin: 0 auto 36px; text-align: center; }
+ .biz-problems-header h2 { font-size: 1.7rem; color: #0d1f3c; margin: 0 0 12px; }
+ .biz-problems-header p { font-size: 1rem; color: #4a5568; line-height: 1.7; margin: 0; }
+ .biz-problems-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+ .biz-problem-card { background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 22px 22px 20px; }
+ .biz-problem-card h3 { font-size: 1.02rem; font-weight: 600; color: #0d1f3c; margin: 0 0 8px; line-height: 1.35; }
+ .biz-problem-card p { font-size: 0.92rem; color: #4a5568; line-height: 1.7; margin: 0; }
+ @media (max-width: 800px) { .biz-problems-grid { grid-template-columns: 1fr; } }
+ </style>
+</section>
+<!-- END COMMON PROBLEMS -->
+
 <footer class="site-footer" role="contentinfo">
 
  <!-- ── MAIN FOOTER GRID ── -->
