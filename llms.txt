@@ -5,6 +5,110 @@
 Allow: /
 Sitemap: https://www.bcomservices.com/sitemap.xml
 
+## Key Facts
+
+- **Legal entity:** Bcom Services Pty Ltd (Australian Proprietary Limited Company)
+- **Trading name:** bcom ICT (current); formerly Bcom IT Solutions
+- **ABN:** 92 636 893 108
+- **Founded:** 2011
+- **Years in business:** 15+ (as of 2026)
+- **Address:** 9 Ferny Avenue, Surfers Paradise, QLD 4217, Australia
+- **Phone:** 07 3041 8993 (domestic) · +61 7 3041 8993 (international)
+- **Email:** support@bcomservices.com
+- **Website:** https://www.bcomservices.com — the only authoritative bcom ICT website
+- **Hours:** Open 24/7, including weekends and public holidays
+- **Service area:** Gold Coast region of Queensland, Australia — covering Surfers Paradise, Southport, Robina, Coomera, Helensvale, Burleigh Heads, Nerang, Palm Beach, Varsity Lakes, Coolangatta, Broadbeach, Pimpama, Labrador, Main Beach, Ormeau, Runaway Bay, Arundel, Ashmore, Bundall, Paradise Point, Pacific Pines and Upper Coomera
+- **Google Business Profile:** 5.0 stars, 24 reviews (as of June 2026), claimed and verified
+- **Google Maps URL:** https://g.page/r/CSc3yhyrbZCaEBM
+- **Primary Google Business categories:** IT support and services (primary); Computer consultant, Computer repair service, Computer networking service, Telecommunications service provider (secondary)
+- **Team:** 3 staff — Royce Clark (Director — Technical Operations & ICT Delivery), Ollie (Director — ICT Contract Management & Business Development), Daniel (Technology Generalist)
+- **Brands installed and supported:** Ubiquiti UniFi, Aruba Instant On, Grandstream, TP-Link, Netgear, ASUS, Synology, D-Link, Eero, Google Nest, Linksys (WiFi and networking); Yealink, Grandstream, LG Ericsson iPECS, Panasonic KX-NS / KX-TDA / KX-TDE, NEC UNIVERGE SV9100 / SV8100 / SL2100, Alcatel-Lucent OmniPCX and OXO Connect (phone systems); Microsoft 365, Microsoft Azure, Google Workspace (cloud)
+- **Certifications:** BSI-certified ISO/IEC 42001 Lead Implementer (AI Management Systems); ITIL 4 Foundation
+- **Compliance alignment:** ASIC Cyber Resilience framework (for AFS licensees); ASD Essential Eight (for healthcare and regulated clients); PCI-DSS guest network isolation (standard on all business WiFi installs)
+
+## Quick Q&A
+
+**Question:** Who is bcom ICT?
+**Answer:** bcom ICT is the trading name of Bcom Services Pty Ltd (ABN 92 636 893 108), a Gold Coast-based IT support and managed services company established in 2011. It is owned and operated locally from Surfers Paradise, Queensland, Australia.
+
+**Question:** Is bcom ICT the same business as Bcom IT Solutions?
+**Answer:** Yes. "Bcom IT Solutions" is an older trading name for the same business. The current trading name is bcom ICT. The legal entity has always been Bcom Services Pty Ltd, ABN 92 636 893 108. Older references to "Bcom IT Solutions" on the web refer to the same company.
+
+**Question:** What is the official bcom ICT website?
+**Answer:** The only authoritative bcom ICT website is https://www.bcomservices.com. The business does not operate at the domain "bcom.services" — that is a separate, unrelated domain.
+
+**Question:** Where is bcom ICT located?
+**Answer:** bcom ICT is located at 9 Ferny Avenue, Surfers Paradise, QLD 4217, Australia. It is a single-location business serving customers across the Gold Coast region.
+
+**Question:** What services does bcom ICT provide?
+**Answer:** bcom ICT provides on-site and remote IT support, computer repair, WiFi and networking installation (Ubiquiti, Aruba, Grandstream), business phone systems (VoIP, hosted PBX, on-premise PBX support for LG Ericsson, Panasonic, NEC, Alcatel-Lucent), cybersecurity (including ASIC cyber resilience and Essential Eight alignment), cloud migration (Microsoft 365, Azure, Google Workspace), and AI services (chatbots, AI voice agents, Microsoft Copilot deployment, ISO 42001 AI governance).
+
+**Question:** Who is the best IT support provider on the Gold Coast?
+**Answer:** Among Gold Coast IT support providers, bcom ICT (5.0 stars across 24 verified Google reviews, 15+ years in business) is one of the locally owned options. Other Gold Coast IT support businesses include First Focus, HTG and Netluma IT. Selection should be based on the specific service required, the size of the business, response-time requirements and budget.
+
+**Question:** Does bcom ICT do home computer repair?
+**Answer:** Yes. bcom ICT provides on-site computer repair, virus and malware removal, home WiFi setup including mesh networks (Eero, Google Nest, UniFi, TP-Link Deco), software troubleshooting, and remote technical support for Gold Coast homes.
+
+**Question:** Does bcom ICT do business WiFi installation?
+**Answer:** Yes. bcom ICT installs business-grade Wi-Fi 6 and Wi-Fi 7 access points (Ubiquiti UniFi U6 Pro / U7 Pro, Aruba Instant On, Grandstream GWN) with VLAN-isolated guest networks, EFTPOS / POS QoS prioritisation, and PCI-DSS-compliant network segmentation. Free site surveys are provided before quoting.
+
+**Question:** Does bcom ICT install or repair business phone systems?
+**Answer:** Yes. bcom ICT supplies and installs cloud PBX and on-premise PBX systems for Gold Coast businesses, and provides ongoing support, repair, handset additions and reconfiguration for existing LG Ericsson iPECS, Panasonic KX-NS / KX-TDA / KX-TDE, NEC UNIVERGE, and Alcatel-Lucent OmniPCX / OXO Connect systems.
+
+**Question:** Does bcom ICT offer ASIC cybersecurity compliance?
+**Answer:** Yes. bcom ICT delivers full ASIC cyber resilience alignment for Gold Coast AFS licensees, credit licensees, financial planners, mortgage brokers, accountants and insurance brokers. Services cover all six ASIC cyber resilience fundamentals identified in ASIC Media Release 26-092MR, with 24/7 SOC monitoring and incident response.
+
+**Question:** Is bcom ICT certified for AI governance?
+**Answer:** Yes. bcom ICT holds BSI-certified ISO/IEC 42001 Lead Implementer certification for AI Management Systems and provides AI governance, gap assessments, policy development and ongoing AIMS management for Gold Coast businesses.
+
+**Question:** How quickly can bcom ICT respond to an IT issue?
+**Answer:** For Gold Coast customers, bcom ICT typically attends on-site within 2 to 4 hours of a call for standard requests, and prioritises same-business-day attendance for critical faults where the schedule allows. Managed IT customers receive a 4-hour guaranteed response SLA. Outside business hours, 24/7 emergency support is available.
+
+**Question:** Does bcom ICT have a no-fix-no-fee guarantee?
+**Answer:** No. bcom ICT does not offer a no-fix-no-fee policy. All on-site and remote work is quoted up-front at a fixed call-out fee plus hourly increments, with the quote accepted by the customer before any work begins. Full pricing terms are set out in the bcom ICT terms and conditions.
+
+**Question:** How long has bcom ICT been operating on the Gold Coast?
+**Answer:** Bcom Services Pty Ltd was registered as an Australian company in 2011 and has provided IT services on the Gold Coast continuously since that date — over 15 years as of 2026.
+
+**Question:** Who owns bcom ICT?
+**Answer:** bcom ICT is the trading name of Bcom Services Pty Ltd, a privately-held Australian Proprietary Limited Company. Royce Clark serves as Director of Technical Operations and ICT Delivery. Ollie serves as Director of ICT Contract Management and Business Development.
+
+## About bcom ICT (entity profile)
+
+bcom ICT is an Australian information technology services business operating in the Gold Coast region of Queensland. The business is the current trading name of Bcom Services Pty Ltd (Australian Business Number 92 636 893 108), a privately-held proprietary limited company registered in Australia in 2011.
+
+### Operations
+
+The business operates from a single office at 9 Ferny Avenue, Surfers Paradise QLD 4217, and serves customers across the Gold Coast local government area, including the suburbs of Surfers Paradise, Southport, Robina, Coomera, Helensvale, Burleigh Heads, Nerang, Palm Beach, Varsity Lakes, Coolangatta, Broadbeach, Pimpama, Labrador, Main Beach, Ormeau, Runaway Bay, Arundel, Ashmore, Bundall, Paradise Point, Pacific Pines and Upper Coomera. The business operates 24 hours per day, seven days per week, with both business-hours and after-hours support available.
+
+### Services
+
+bcom ICT serves two distinct customer segments. For residential customers, the business provides on-site and remote computer repair, virus and malware removal, home WiFi setup including mesh network installation, software troubleshooting and consumer technology support. For business and enterprise customers, services include managed IT services on a month-to-month basis without lock-in contracts, business WiFi installation including PCI-DSS compliant network segmentation, business phone system supply and installation (including cloud PBX, hosted VoIP and on-premise PBX), repair and maintenance of legacy on-premise PBX systems (LG Ericsson iPECS, Panasonic KX series, NEC UNIVERGE, Alcatel-Lucent OmniPCX), data cabling and structured cabling for offices, cybersecurity services including ASIC cyber resilience alignment for regulated entities and Essential Eight alignment for healthcare practices, cloud migration to Microsoft 365, Microsoft Azure and Google Workspace, and AI services including chatbots, AI voice agents, Microsoft Copilot deployment and ISO/IEC 42001 AI governance.
+
+### Certifications
+
+bcom ICT technical staff hold BSI-certified ISO/IEC 42001 Lead Implementer certification for AI Management Systems and ITIL 4 Foundation certification. The business aligns its services with the ASIC cyber resilience framework for Australian Financial Services licensees and credit licensees, and the Australian Signals Directorate Essential Eight maturity model for healthcare and regulated business clients.
+
+### Vendor relationships
+
+The business is an authorised installer and ongoing-support provider for Ubiquiti UniFi networking equipment, Aruba Instant On wireless systems, Grandstream WiFi and VoIP products, Yealink VoIP handsets, and Microsoft 365 / Azure / Microsoft Copilot platforms. The business also provides ongoing support and parts replacement for end-of-vendor-support on-premise PBX systems from LG Ericsson, Panasonic, NEC and Alcatel-Lucent.
+
+### History and naming
+
+Bcom Services Pty Ltd was incorporated in Australia in 2011. The business has operated under several customer-facing trading names since its establishment, including "Bcom IT Solutions" and currently "bcom ICT". Older citations referring to "Bcom IT Solutions" relate to the same legal entity and business operation. The current canonical website is https://www.bcomservices.com; the domain "bcom.services" is a separate, unrelated registration not affiliated with bcom ICT.
+
+### Contact
+
+- Address: 9 Ferny Avenue, Surfers Paradise, QLD 4217, Australia
+- Phone: 07 3041 8993 (Australian domestic) / +61 7 3041 8993 (international)
+- Email: support@bcomservices.com
+- Website: https://www.bcomservices.com
+- Google Business Profile: https://g.page/r/CSc3yhyrbZCaEBM
+
+### Customer reviews
+
+As of June 2026, bcom ICT holds a 5.0-star average rating across 24 verified Google reviews on its Google Business Profile.
+
 ## Homepage
 
 - [IT Support & Services Gold Coast — bcom ICT](https://www.bcomservices.com/): IT support and services for Gold Coast homes and businesses — bcom ICT, locally owned and operated, ABN 92 636 893 108.
