@@ -12,7 +12,7 @@ Sitemap: https://www.bcomservices.com/sitemap.xml
 ## Hub Pages
 
 - [Home Users](https://www.bcomservices.com/home-users): IT support for Gold Coast home users — computer repairs, WiFi setup, software help and remote support. Covers services available, how to book, response times, and FAQs for residential customers.
-- [Business IT Services](https://www.bcomservices.com/business): Business IT services for Gold Coast small and medium businesses — managed IT, consulting, networking, telecoms and AI. Covers full service range, why choose Bcom, and FAQs for business customers.
+- [Business IT Services](https://www.bcomservices.com/business): Business IT services for Gold Coast small and medium businesses — managed IT, consulting, networking, telecoms and AI. Covers full service range, why choose bcom, and FAQs for business customers.
 
 ## IT Support and Consulting
 
