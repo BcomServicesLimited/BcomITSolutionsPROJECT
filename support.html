@@ -482,9 +482,29 @@
  <span class="status-dot" aria-hidden="true"></span>
  Available Now &mdash; 24/7 Support
  </span>
- <div class="support-hero__cta" style="margin-top:32px;">
- <a href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2z99t5yQNIRoRT8rNM3Jv7-WC-MNC35owGsga-okvZmEIG167e9iLOAco3_vHaX44r6eYmGFRA?gv=true" target="_blank" rel="noopener noreferrer" class="btn-primary">
- <i data-lucide="calendar" aria-hidden="true"></i> Book On-Site Service
+ <div class="support-hero__cta" style="margin-top:32px;display:flex;flex-wrap:wrap;gap:12px;justify-content:center;">
+ <button class="bcom-request-btn btn-primary" type="button" aria-haspopup="dialog">
+ <i data-lucide="phone-call" aria-hidden="true"></i> Request a Call Back
+ </button>
+ <!-- Google Calendar Appointment Scheduling begin -->
+ <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+ <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+ <script>
+ (function() {
+ var target = document.currentScript;
+ window.addEventListener('load', function() {
+ calendar.schedulingButton.load({
+ url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ2z99t5yQNIRoRT8rNM3Jv7-WC-MNC35owGsga-okvZmEIG167e9iLOAco3_vHaX44r6eYmGFRA?gv=true',
+ color: '#039BE5',
+ label: 'Book On-Site Support',
+ target,
+ });
+ });
+ })();
+ </script>
+ <!-- end Google Calendar Appointment Scheduling -->
+ <a href="https://sos.splashtop.com" target="_blank" rel="noopener noreferrer" class="btn-white">
+ <i data-lucide="monitor" aria-hidden="true"></i> Start Remote Session
  </a>
  </div>
  </div>
