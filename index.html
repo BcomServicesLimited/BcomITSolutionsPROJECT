@@ -1640,12 +1640,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
  <!-- Buttons -->
  <div class="hero-buttons">
- <a href="home-users" class="btn-primary">
- <i data-lucide="monitor" aria-hidden="true"></i> IT &amp; Technical Support
+ <a href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2z99t5yQNIRoRT8rNM3Jv7-WC-MNC35owGsga-okvZmEIG167e9iLOAco3_vHaX44r6eYmGFRA?gv=true" target="_blank" rel="noopener noreferrer" class="btn-primary">
+ <i data-lucide="calendar" aria-hidden="true"></i> Book On-Site Tech
  </a>
- <a href="business" class="btn-primary">
- <i data-lucide="briefcase" aria-hidden="true"></i> Managed Services &amp; Telecoms
- </a>
+ <button type="button" class="btn-white bcom-request-btn" aria-haspopup="dialog">
+ <i data-lucide="briefcase" aria-hidden="true"></i> Get a Business IT Quote
+ </button>
  </div>
 
  <!-- Trust Strip -->
@@ -3316,5 +3316,49 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
  </script>
 
  <script>document.addEventListener("DOMContentLoaded",function(){if(typeof lucide!=="undefined"){lucide.createIcons();}});</script>
+
+ <!-- ============================================================
+ MOBILE STICKY BAR (visible <= 768px)
+ ============================================================ -->
+ <div class="mobile-sticky-bar" role="complementary" aria-label="Quick contact">
+ <a href="tel:0730418993" class="sticky-call">
+ <i aria-hidden="true" data-lucide="phone"></i> Call Now
+ </a>
+ <a href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2z99t5yQNIRoRT8rNM3Jv7-WC-MNC35owGsga-okvZmEIG167e9iLOAco3_vHaX44r6eYmGFRA?gv=true" target="_blank" rel="noopener noreferrer" class="sticky-book">
+ <i aria-hidden="true" data-lucide="calendar"></i> Book Online
+ </a>
+ </div>
+ <style>
+ .mobile-sticky-bar {
+ display: none;
+ position: fixed;
+ bottom: 0; left: 0; right: 0;
+ z-index: 2000;
+ background: white;
+ border-top: 2px solid #00c8e0;
+ padding: 10px 16px;
+ gap: 10px;
+ }
+ .mobile-sticky-bar a {
+ flex: 1;
+ text-align: center;
+ padding: 12px 8px;
+ border-radius: 8px;
+ font-family: 'DM Sans', sans-serif;
+ font-size: 0.95rem;
+ font-weight: 700;
+ text-decoration: none;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ gap: 8px;
+ }
+ .mobile-sticky-bar .sticky-call { background: #0d1f3c; color: white; }
+ .mobile-sticky-bar .sticky-book { background: #00c8e0; color: #0d1f3c; }
+ @media (max-width: 768px) {
+ .mobile-sticky-bar { display: flex; }
+ body { padding-bottom: 72px; }
+ }
+ </style>
 </body>
 </html>
