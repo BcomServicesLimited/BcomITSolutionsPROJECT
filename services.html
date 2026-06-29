@@ -482,9 +482,23 @@
  <button class="bcom-request-btn btn-primary" type="button" aria-haspopup="dialog">
  <i data-lucide="phone-call" aria-hidden="true"></i> Book a Call Back
  </button>
- <a href="/#book-onsite-tech" class="btn-white">
- <i data-lucide="calendar" aria-hidden="true"></i> Book On-Site Service
- </a>
+ <!-- Google Calendar Appointment Scheduling begin -->
+ <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+ <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+ <script>
+ (function() {
+ var target = document.currentScript;
+ window.addEventListener('load', function() {
+ calendar.schedulingButton.load({
+ url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ2z99t5yQNIRoRT8rNM3Jv7-WC-MNC35owGsga-okvZmEIG167e9iLOAco3_vHaX44r6eYmGFRA?gv=true',
+ color: '#039BE5',
+ label: 'Book On-Site Service',
+ target,
+ });
+ });
+ })();
+ </script>
+ <!-- end Google Calendar Appointment Scheduling -->
  </div>
  </div>
 </section>
@@ -637,9 +651,23 @@
  <button class="bcom-request-btn btn-primary" type="button" aria-haspopup="dialog">
  <i data-lucide="phone-call" aria-hidden="true"></i> Book a Call Back
  </button>
- <a href="/#book-onsite-tech" class="btn-white">
- <i data-lucide="calendar" aria-hidden="true"></i> Book On-Site Service
- </a>
+ <!-- Google Calendar Appointment Scheduling begin -->
+ <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+ <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+ <script>
+ (function() {
+ var target = document.currentScript;
+ window.addEventListener('load', function() {
+ calendar.schedulingButton.load({
+ url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ2z99t5yQNIRoRT8rNM3Jv7-WC-MNC35owGsga-okvZmEIG167e9iLOAco3_vHaX44r6eYmGFRA?gv=true',
+ color: '#039BE5',
+ label: 'Book On-Site Service',
+ target,
+ });
+ });
+ })();
+ </script>
+ <!-- end Google Calendar Appointment Scheduling -->
  </div>
  </div>
 </section>
