@@ -542,6 +542,7 @@ section {
 }
 .mega-panel.residential { width: 680px; }
 .mega-panel.business    { width: 1200px; }
+.mega-panel.services-simple { width: 360px; }
 
 .mega-panel-header {
   padding: 14px 24px 12px; border-bottom: 1px solid #e2e8f0;
@@ -553,6 +554,7 @@ section {
 
 /* ── MEGA COLUMNS ── */
 .mega-cols { display: grid; align-items: start; }
+.mega-cols.cols-1 { grid-template-columns: 1fr; }
 .mega-cols.cols-2 { grid-template-columns: 1fr 1fr; }
 .mega-cols.cols-3 { grid-template-columns: 1fr 1fr 1fr; }
 .mega-cols.cols-4 { grid-template-columns: 1fr 1fr 1fr 1fr; }
