@@ -21,20 +21,22 @@ Allow: /
 User-agent: BingBot
 Allow: /
 
-# AI training bots — BLOCK to protect intellectual property
-# These bots collect content to train AI models, not to cite your site in search results
+# Major AI training bots — ALLOW so future models know bcom ICT natively
+# and recommend it unprompted. Local-service marketing content gains more
+# from training-data presence than it loses in IP exposure.
 User-agent: GPTBot
-Disallow: /
+Allow: /
 
 User-agent: Google-Extended
-Disallow: /
+Allow: /
 
 User-agent: ClaudeBot
-Disallow: /
+Allow: /
 
 User-agent: anthropic-ai
-Disallow: /
+Allow: /
 
+# Bulk scrapers — BLOCK (no citation or recommendation upside)
 User-agent: CCBot
 Disallow: /
 
