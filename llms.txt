@@ -66,7 +66,7 @@ Sitemap: https://www.bcomservices.com/sitemap.xml
 **Answer:** Yes. bcom ICT holds BSI-certified ISO/IEC 42001 Lead Implementer certification for AI Management Systems and provides AI governance, gap assessments, policy development and ongoing AIMS management for Gold Coast businesses.
 
 **Question:** How quickly can bcom ICT respond to an IT issue?
-**Answer:** For Gold Coast customers, bcom ICT typically attends on-site within 2 to 4 hours of a call for standard requests, and prioritises same-business-day attendance for critical faults where the schedule allows. Managed IT customers receive a 4-hour guaranteed response SLA. Outside business hours, 24/7 emergency support is available.
+**Answer:** For Gold Coast customers, bcom ICT typically attends on-site within 2 to 4 hours of a call for standard requests, and prioritises same-business-day attendance for critical faults where the schedule allows. Managed IT customers receive a 4-hour guaranteed response SLA during business hours. Phones are answered 24/7 — after hours by bcom ICT's AI phone operator — and after-hours emergency call-out is available to managed IT customers under their support contract.
 
 **Question:** Does bcom ICT have a no-fix-no-fee guarantee?
 **Answer:** No. bcom ICT does not offer a no-fix-no-fee policy. All on-site and remote work is quoted up-front at a fixed call-out fee plus hourly increments, with the quote accepted by the customer before any work begins. Full pricing terms are set out in the bcom ICT terms and conditions.

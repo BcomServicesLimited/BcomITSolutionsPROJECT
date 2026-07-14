@@ -464,9 +464,23 @@
  <button class="bcom-request-btn btn-primary" type="button" aria-haspopup="dialog">
  <i data-lucide="phone-call" aria-hidden="true"></i> Book a Call Back
  </button>
- <a href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ21JsFI48SyH1NJO3oZkyuch15utQ__rWaeHMgfxSppgM_GaVeKRe6Kn0v2oN4XjRgl5D256Up7?gv=true" target="_blank" rel="noopener noreferrer" class="btn-white">
- <i data-lucide="calendar" aria-hidden="true"></i> Book a Consultation
- </a>
+ <!-- Google Calendar Appointment Scheduling begin -->
+ <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+ <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+ <script>
+ (function() {
+ var target = document.currentScript;
+ window.addEventListener('load', function() {
+ calendar.schedulingButton.load({
+ url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ21JsFI48SyH1NJO3oZkyuch15utQ__rWaeHMgfxSppgM_GaVeKRe6Kn0v2oN4XjRgl5D256Up7?gv=true',
+ color: '#0277a8',
+ label: 'Book a Consultation',
+ target,
+ });
+ });
+ })();
+ </script>
+ <!-- end Google Calendar Appointment Scheduling -->
  </div>
  </div>
 </section>
@@ -480,7 +494,7 @@
  <div class="card">
  <div class="icon-circle"><i data-lucide="phone" aria-hidden="true"></i></div>
  <h3 style="margin:0 0 6px;font-size:1.05rem;">Phone &mdash; answered 24/7</h3>
- <p style="margin:0;color:#475569;font-size:0.93rem;">07 3041 8993 is answered around the clock, including weekends and public holidays. No call centres, no phone trees.</p>
+ <p style="margin:0;color:#475569;font-size:0.93rem;">07 3041 8993 is answered around the clock &mdash; by our team during business hours and by our AI phone operator after hours, who logs your job on the spot. Work is actioned during business hours.</p>
  </div>
  <div class="card">
  <div class="icon-circle"><i data-lucide="clock" aria-hidden="true"></i></div>
@@ -490,7 +504,7 @@
  <div class="card">
  <div class="icon-circle"><i data-lucide="shield-check" aria-hidden="true"></i></div>
  <h3 style="margin:0 0 6px;font-size:1.05rem;">Managed IT &mdash; 4-hour SLA</h3>
- <p style="margin:0;color:#475569;font-size:0.93rem;">Managed clients get a guaranteed 4-hour response on every support request, remote or on-site, with priority scheduling over ad hoc work.</p>
+ <p style="margin:0;color:#475569;font-size:0.93rem;">Managed clients get a guaranteed 4-hour response during business hours on every support request, remote or on-site &mdash; plus after-hours emergency call-out under their support contract.</p>
  </div>
  <div class="card">
  <div class="icon-circle"><i data-lucide="monitor" aria-hidden="true"></i></div>
