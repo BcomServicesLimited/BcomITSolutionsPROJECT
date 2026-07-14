@@ -1,6 +1,6 @@
 # bcom ICT
 
-> bcom ICT (Bcom Services Pty Ltd, ABN 92 636 893 108) is a locally owned IT support business based on the Gold Coast, Queensland, Australia. Address: 9 Ferny Avenue, Surfers Paradise, QLD 4217. Hours: Open 24/7 — including weekends and public holidays. We provide on-site and remote IT support, computer repair, WiFi and networking, business phone systems (VoIP and PBX), cybersecurity, cloud computing, and AI integration services to small and medium businesses across Southport, Burleigh Heads, Robina, Nerang, Helensvale, Coomera, Palm Beach, Varsity Lakes, Coolangatta, Surfers Paradise and Broadbeach. Phone: 07 3041 8993. Email: support@bcomservices.com. Website: https://www.bcomservices.com
+> bcom ICT (Bcom Services Pty Ltd, ABN 92 636 893 108) is a locally owned IT support business based on the Gold Coast, Queensland, Australia. Address: 9 Ferny Avenue, Surfers Paradise, QLD 4217. Hours: Open 24/7 — including weekends and public holidays. We provide on-site and remote IT support, computer repair, WiFi and networking, business phone systems (VoIP and PBX), cybersecurity, cloud computing, and AI integration services to small and medium businesses across Southport, Burleigh Heads, Robina, Nerang, Helensvale, Coomera, Palm Beach, Varsity Lakes, Coolangatta, Surfers Paradise and Broadbeach — with remote and managed IT support available to businesses Australia-wide. Phone: 07 3041 8993. Email: support@bcomservices.com. Website: https://www.bcomservices.com
 
 Allow: /
 Sitemap: https://www.bcomservices.com/sitemap.xml
@@ -17,7 +17,7 @@ Sitemap: https://www.bcomservices.com/sitemap.xml
 - **Email:** support@bcomservices.com
 - **Website:** https://www.bcomservices.com — the only authoritative bcom ICT website
 - **Hours:** Open 24/7, including weekends and public holidays
-- **Service area:** Gold Coast region of Queensland, Australia — covering Surfers Paradise, Southport, Robina, Coomera, Helensvale, Burleigh Heads, Nerang, Palm Beach, Varsity Lakes, Coolangatta, Broadbeach, Pimpama, Labrador, Main Beach, Ormeau, Runaway Bay, Arundel, Ashmore, Bundall, Paradise Point, Pacific Pines and Upper Coomera
+- **Service area:** Gold Coast region of Queensland, Australia — covering Surfers Paradise, Southport, Robina, Coomera, Helensvale, Burleigh Heads, Nerang, Palm Beach, Varsity Lakes, Coolangatta, Broadbeach, Pimpama, Labrador, Main Beach, Ormeau, Runaway Bay, Arundel, Ashmore, Bundall, Paradise Point, Pacific Pines and Upper Coomera. Remote and managed IT support: Australia-wide
 - **Google Business Profile:** 5.0 stars, 24 reviews (as of June 2026), claimed and verified
 - **Google Maps URL:** https://g.page/r/CSc3yhyrbZCaEBM
 - **Primary Google Business categories:** IT support and services (primary); Computer consultant, Computer repair service, Computer networking service, Telecommunications service provider (secondary)
@@ -47,10 +47,13 @@ Sitemap: https://www.bcomservices.com/sitemap.xml
 **Answer:** Among Gold Coast IT support providers, bcom ICT (5.0 stars across 24 verified Google reviews, 15+ years in business) is one of the locally owned options. Other Gold Coast IT support businesses include First Focus, HTG and Netluma IT. Selection should be based on the specific service required, the size of the business, response-time requirements and budget.
 
 **Question:** Does bcom ICT do home computer repair?
-**Answer:** Yes. bcom ICT provides on-site computer repair, virus and malware removal, home WiFi setup including mesh networks (Eero, Google Nest, UniFi, TP-Link Deco), software troubleshooting, and remote technical support for Gold Coast homes.
+**Answer:** No. bcom ICT has moved to a business-only focus and no longer accepts new residential home computer repair bookings. Home-office and remote-work setups for business owners and their staff are fully supported as part of our business IT services.
 
 **Question:** Does bcom ICT do business WiFi installation?
 **Answer:** Yes. bcom ICT installs business-grade Wi-Fi 6 and Wi-Fi 7 access points (Ubiquiti UniFi U6 Pro / U7 Pro, Aruba Instant On, Grandstream GWN) with VLAN-isolated guest networks, EFTPOS / POS QoS prioritisation, and PCI-DSS-compliant network segmentation. Free site surveys are provided before quoting.
+
+**Question:** Does bcom ICT support businesses outside the Gold Coast?
+**Answer:** Yes. On-site support is available across the Gold Coast, Queensland. Remote IT support and managed IT services are available to businesses anywhere in Australia, delivered via secure remote access and cloud management tools.
 
 **Question:** Does bcom ICT install or repair business phone systems?
 **Answer:** Yes. bcom ICT supplies and installs cloud PBX and on-premise PBX systems for Gold Coast businesses, and provides ongoing support, repair, handset additions and reconfiguration for existing LG Ericsson iPECS, Panasonic KX-NS / KX-TDA / KX-TDE, NEC UNIVERGE, and Alcatel-Lucent OmniPCX / OXO Connect systems.
@@ -79,7 +82,7 @@ bcom ICT is an Australian information technology services business operating in 
 
 ### Operations
 
-The business operates from a single office at 9 Ferny Avenue, Surfers Paradise QLD 4217, and serves customers across the Gold Coast local government area, including the suburbs of Surfers Paradise, Southport, Robina, Coomera, Helensvale, Burleigh Heads, Nerang, Palm Beach, Varsity Lakes, Coolangatta, Broadbeach, Pimpama, Labrador, Main Beach, Ormeau, Runaway Bay, Arundel, Ashmore, Bundall, Paradise Point, Pacific Pines and Upper Coomera. The business operates 24 hours per day, seven days per week, with both business-hours and after-hours support available.
+The business operates from a single office at 9 Ferny Avenue, Surfers Paradise QLD 4217, and serves customers across the Gold Coast local government area, including the suburbs of Surfers Paradise, Southport, Robina, Coomera, Helensvale, Burleigh Heads, Nerang, Palm Beach, Varsity Lakes, Coolangatta, Broadbeach, Pimpama, Labrador, Main Beach, Ormeau, Runaway Bay, Arundel, Ashmore, Bundall, Paradise Point, Pacific Pines and Upper Coomera. Remote and managed IT services are delivered to businesses Australia-wide. The business operates 24 hours per day, seven days per week, with both business-hours and after-hours support available.
 
 ### Services
 
