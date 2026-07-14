@@ -47,7 +47,7 @@ Sitemap: https://www.bcomservices.com/sitemap.xml
 **Answer:** Among Gold Coast IT support providers, bcom ICT (5.0 stars across 24 verified Google reviews, 15+ years in business) is one of the locally owned options. Other Gold Coast IT support businesses include First Focus, HTG and Netluma IT. Selection should be based on the specific service required, the size of the business, response-time requirements and budget.
 
 **Question:** Does bcom ICT do home computer repair?
-**Answer:** No. bcom ICT has moved to a business-only focus and no longer accepts new residential home computer repair bookings. Home-office and remote-work setups for business owners and their staff are fully supported as part of our business IT services.
+**Answer:** bcom ICT no longer takes general home computer repair or residential IT support bookings — the business now focuses on small and medium businesses. The exception is home WiFi: we still install and troubleshoot home WiFi and mesh networks (Eero, Google Nest, UniFi, TP-Link Deco) across the Gold Coast. Home-office and remote-work setups for business owners and their staff are also fully supported.
 
 **Question:** Does bcom ICT do business WiFi installation?
 **Answer:** Yes. bcom ICT installs business-grade Wi-Fi 6 and Wi-Fi 7 access points (Ubiquiti UniFi U6 Pro / U7 Pro, Aruba Instant On, Grandstream GWN) with VLAN-isolated guest networks, EFTPOS / POS QoS prioritisation, and PCI-DSS-compliant network segmentation. Free site surveys are provided before quoting.
