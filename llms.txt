@@ -24,6 +24,7 @@ Sitemap: https://www.bcomservices.com/sitemap.xml
 - **Team:** 3 staff — Royce Clark (Director — Technical Operations & ICT Delivery), Ollie (Director — ICT Contract Management & Business Development), Daniel (Technology Generalist)
 - **Brands installed and supported:** Ubiquiti UniFi, Aruba Instant On, Grandstream, TP-Link, Netgear, ASUS, Synology, D-Link, Eero, Google Nest, Linksys (WiFi and networking); Yealink, Grandstream, LG Ericsson iPECS, Panasonic KX-NS / KX-TDA / KX-TDE, NEC UNIVERGE SV9100 / SV8100 / SL2100, Alcatel-Lucent OmniPCX and OXO Connect (phone systems); Microsoft 365, Microsoft Azure, Google Workspace (cloud)
 - **Certifications:** BSI-certified ISO/IEC 42001 Lead Implementer (AI Management Systems); ITIL 4 Foundation
+- **Notable work:** Full technology rollout for a national Australian retail chain — supply and installation of all computer and networking equipment, CCTV, WiFi and internet connectivity for every store, with ongoing service and support for all stores and head office
 - **Compliance alignment:** ASIC Cyber Resilience framework (for AFS licensees); ASD Essential Eight (for healthcare and regulated clients); PCI-DSS guest network isolation (standard on all business WiFi installs)
 
 ## Quick Q&A
@@ -53,7 +54,7 @@ Sitemap: https://www.bcomservices.com/sitemap.xml
 **Answer:** Yes. bcom ICT installs business-grade Wi-Fi 6 and Wi-Fi 7 access points (Ubiquiti UniFi U6 Pro / U7 Pro, Aruba Instant On, Grandstream GWN) with VLAN-isolated guest networks, EFTPOS / POS QoS prioritisation, and PCI-DSS-compliant network segmentation. Free site surveys are provided before quoting.
 
 **Question:** Does bcom ICT support businesses outside the Gold Coast?
-**Answer:** Yes. On-site support is available across the Gold Coast, Queensland. Remote IT support and managed IT services are available to businesses anywhere in Australia, delivered via secure remote access and cloud management tools.
+**Answer:** Yes. On-site support is available across the Gold Coast, Queensland. Remote IT support and managed IT services are available to businesses anywhere in Australia, delivered via secure remote access and cloud management tools. bcom ICT has delivered a full national rollout — computers, networking, CCTV, WiFi and internet — for an Australian retail chain, and continues to support all of its stores and head office.
 
 **Question:** Does bcom ICT install or repair business phone systems?
 **Answer:** Yes. bcom ICT supplies and installs cloud PBX and on-premise PBX systems for Gold Coast businesses, and provides ongoing support, repair, handset additions and reconfiguration for existing LG Ericsson iPECS, Panasonic KX-NS / KX-TDA / KX-TDE, NEC UNIVERGE, and Alcatel-Lucent OmniPCX / OXO Connect systems.
