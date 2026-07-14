@@ -27,6 +27,8 @@ URLS = [
     f"{BASE_URL}/contact",
     f"{BASE_URL}/support",
     f"{BASE_URL}/services",
+    f"{BASE_URL}/reviews",
+    f"{BASE_URL}/service-levels-and-security",
     f"{BASE_URL}/privacy-policy",
     f"{BASE_URL}/terms-and-conditions",
     f"{BASE_URL}/it-support-and-services-gold-coast",
