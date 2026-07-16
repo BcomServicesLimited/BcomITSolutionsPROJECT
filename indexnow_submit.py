@@ -29,6 +29,7 @@ URLS = [
     f"{BASE_URL}/services",
     f"{BASE_URL}/reviews",
     f"{BASE_URL}/case-studies",
+    f"{BASE_URL}/office-it-relocation-gold-coast",
     f"{BASE_URL}/service-levels-and-security",
     f"{BASE_URL}/privacy-policy",
     f"{BASE_URL}/terms-and-conditions",
