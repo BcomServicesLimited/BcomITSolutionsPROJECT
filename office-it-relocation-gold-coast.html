@@ -24,11 +24,11 @@
  <meta property="og:description" content="Office IT relocation for Gold Coast businesses — cabling, WiFi, phones and workstations moved, reconnected and tested with minimal downtime. 07 3041 8993.">
  <meta property="og:url" content="https://www.bcomservices.com/office-it-relocation-gold-coast">
  <meta property="og:site_name" content="bcom ICT">
- <meta property="og:image" content="https://www.bcomservices.com/assets/images/hero-bg.webp">
+ <meta property="og:image" content="https://www.bcomservices.com/assets/images/pbx-installation-gold-coast.webp">
  <meta name="twitter:card" content="summary_large_image">
  <meta name="twitter:title" content="Office IT Relocation Services Gold Coast | bcom ICT">
  <meta name="twitter:description" content="Office IT relocation for Gold Coast businesses — cabling, WiFi, phones and workstations moved, reconnected and tested with minimal downtime. 07 3041 8993.">
- <meta name="twitter:image" content="https://www.bcomservices.com/assets/images/hero-bg.webp">
+ <meta name="twitter:image" content="https://www.bcomservices.com/assets/images/pbx-installation-gold-coast.webp">
  <link rel="canonical" href="https://www.bcomservices.com/office-it-relocation-gold-coast">
  <link rel="icon" href="favicon.ico" type="image/x-icon"><link rel="icon" href="favicon.png" type="image/png">
  <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -38,6 +38,7 @@
  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap" media="print" onload="this.media='all'">
  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap"></noscript>
  <link rel="stylesheet" href="design-system.css">
+ <link rel="preload" as="image" href="assets/images/pbx-installation-gold-coast.webp" fetchpriority="high">
 
  <script type="application/ld+json">
  {
@@ -513,11 +514,77 @@
 })();
 </script>
  <!-- SECTION 1 — HERO -->
-<section class="support-hero" aria-label="Office IT Relocation Gold Coast">
- <div class="container">
+<style>
+ .relo-hero {
+ position: relative;
+ background-image: url('assets/images/pbx-installation-gold-coast.webp');
+ background-size: cover;
+ background-position: center 35%;
+ min-height: 480px;
+ display: flex;
+ align-items: center;
+ }
+ .relo-hero::before {
+ content: '';
+ position: absolute;
+ inset: 0;
+ background: linear-gradient(135deg, rgba(30,58,95,0.78) 0%, rgba(13,31,60,0.62) 100%);
+ z-index: 0;
+ }
+ .relo-hero-inner {
+ position: relative;
+ z-index: 1;
+ max-width: 1100px;
+ margin: 0 auto;
+ padding: 64px 40px;
+ width: 100%;
+ }
+ .relo-hero-badge {
+ display: inline-flex;
+ align-items: center;
+ gap: 8px;
+ background: rgba(0,200,224,0.15);
+ border: 1px solid rgba(0,200,224,0.35);
+ color: #e6fafd;
+ font-family: 'DM Mono', monospace;
+ font-size: 0.72rem;
+ font-weight: 600;
+ letter-spacing: 0.08em;
+ text-transform: uppercase;
+ padding: 6px 14px;
+ border-radius: 20px;
+ margin-bottom: 24px;
+ }
+ .relo-hero-badge .status-dot {
+ width: 7px; height: 7px; border-radius: 50%;
+ background: #00c8e0; display: inline-block;
+ }
+ .relo-hero h1 {
+ font-size: clamp(2rem, 4.5vw, 3rem);
+ font-weight: 800;
+ color: #ffffff;
+ line-height: 1.15;
+ margin: 0 0 18px;
+ max-width: 720px;
+ letter-spacing: -0.01em;
+ }
+ .relo-hero .hero-sub {
+ font-size: 1.08rem;
+ color: rgba(255,255,255,0.88);
+ line-height: 1.7;
+ margin: 0 0 28px;
+ max-width: 640px;
+ }
+ @media (max-width: 600px) {
+ .relo-hero-inner { padding: 48px 20px; }
+ }
+</style>
+<section class="relo-hero" aria-label="Office IT Relocation Gold Coast">
+ <div class="relo-hero-inner">
+ <span class="relo-hero-badge"><span class="status-dot" aria-hidden="true"></span> Business IT &middot; Gold Coast</span>
  <h1>Office IT Relocation <span class="text-gradient">Gold Coast</span></h1>
  <p class="hero-sub">Moving premises? We move your entire IT estate &mdash; cabling, WiFi, phones, internet and workstations &mdash; planned, relocated and tested so your team walks in Monday and works.</p>
- <div class="support-hero__cta" style="margin-top:24px;display:flex;flex-wrap:wrap;gap:12px;justify-content:center;">
+ <div style="display:flex;flex-wrap:wrap;gap:12px;">
  <button class="bcom-request-btn btn-primary" type="button" aria-haspopup="dialog">
  <i data-lucide="phone-call" aria-hidden="true"></i> Book a Call Back
  </button>
