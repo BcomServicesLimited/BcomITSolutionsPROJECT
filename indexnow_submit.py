@@ -21,7 +21,6 @@ BASE_URL = "https://www.bcomservices.com"
 URLS = [
     f"{BASE_URL}/",
     f"{BASE_URL}/business",
-    f"{BASE_URL}/home-users",
     f"{BASE_URL}/industries",
     f"{BASE_URL}/about",
     f"{BASE_URL}/contact",

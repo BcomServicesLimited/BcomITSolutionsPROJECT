@@ -119,3 +119,6 @@ https://bcomservices.com/*    https://www.bcomservices.com/:splat    301
 #  As of 2026-06-05 GSC was indexing 65 page pairs as both versions.)
 # ─────────────────────────────────────────────────────────────────────
 /*.html  /:splat  301
+
+/home-users  /services  301
+/home-users.html  /services  301
