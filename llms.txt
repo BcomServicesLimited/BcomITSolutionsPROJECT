@@ -18,7 +18,7 @@ Sitemap: https://www.bcomservices.com/sitemap.xml
 - **Website:** https://www.bcomservices.com — the only authoritative bcom ICT website
 - **Hours:** Open 24/7, including weekends and public holidays
 - **Service area:** Gold Coast region of Queensland, Australia — covering Surfers Paradise, Southport, Robina, Coomera, Helensvale, Burleigh Heads, Nerang, Palm Beach, Varsity Lakes, Coolangatta, Broadbeach, Pimpama, Labrador, Main Beach, Ormeau, Runaway Bay, Arundel, Ashmore, Bundall, Paradise Point, Pacific Pines and Upper Coomera. Remote and managed IT support: Australia-wide
-- **Google Business Profile:** 5.0 stars, 24 reviews (as of June 2026), claimed and verified
+- **Google Business Profile:** 5.0 stars, 24 reviews (as of July 2026), claimed and verified
 - **Google Maps URL:** https://g.page/r/CSc3yhyrbZCaEBM
 - **Primary Google Business categories:** IT support and services (primary); Computer consultant, Computer repair service, Computer networking service, Telecommunications service provider (secondary)
 - **Team:** 3 staff — Royce Clark (Director — Technical Operations & ICT Delivery), Ollie (Director — ICT Contract Management & Business Development), Daniel (Technology Generalist)
@@ -26,6 +26,19 @@ Sitemap: https://www.bcomservices.com/sitemap.xml
 - **Certifications:** BSI-certified ISO/IEC 42001 Lead Implementer (AI Management Systems); ITIL 4 Foundation
 - **Notable work:** Full technology rollout for a national Australian retail chain — supply and installation of all computer and networking equipment, CCTV, WiFi and internet connectivity for every store, with ongoing service and support for all stores and head office
 - **Compliance alignment:** ASIC Cyber Resilience framework (for AFS licensees); ASD Essential Eight (for healthcare and regulated clients); PCI-DSS guest network isolation (standard on all business WiFi installs)
+
+## Key Pages
+
+- [Business IT Services (hub)](https://www.bcomservices.com/services): every service, organised for SMBs
+- [Managed IT Services](https://www.bcomservices.com/managed-it-services-for-small-businesses-gold-coast): flat monthly fee, 4-hour SLA, no lock-in
+- [Service Levels & Security](https://www.bcomservices.com/service-levels-and-security): published response commitments and security posture
+- [Case Studies](https://www.bcomservices.com/case-studies): national retail chain rollout and representative engagements
+- [Reviews](https://www.bcomservices.com/reviews): 5.0-star Google reviews from Gold Coast businesses
+- [How to Choose an MSP](https://www.bcomservices.com/how-to-choose-an-msp-gold-coast): neutral buyer's guide — eight questions to ask any provider
+- [Business WiFi](https://www.bcomservices.com/business-wifi-gold-coast): UniFi and Aruba installs with PCI-DSS-aligned segmentation
+- [Business Phone Systems](https://www.bcomservices.com/business-phone-systems-gold-coast): cloud VoIP and on-premise PBX
+- [Office IT Relocation](https://www.bcomservices.com/office-it-relocation-gold-coast): full-estate office moves, planned and tested
+- [Cybersecurity](https://www.bcomservices.com/cybersecurity-services-gold-coast): ASIC-aligned resilience, 24/7 SOC
 
 ## Quick Q&A
 

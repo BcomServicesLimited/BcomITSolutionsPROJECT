@@ -36,6 +36,32 @@ Allow: /
 User-agent: anthropic-ai
 Allow: /
 
+# AI search / user-triggered agents (2026 UAs) — ALLOW for live answers
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: DuckAssistBot
+Allow: /
+
+User-agent: MistralAI-User
+Allow: /
+
+# Additional training/assistant crawlers — ALLOW per training-presence strategy
+User-agent: meta-externalagent
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: Google-CloudVertexBot
+Allow: /
+
 # Bulk scrapers — BLOCK (no citation or recommendation upside)
 User-agent: CCBot
 Disallow: /
